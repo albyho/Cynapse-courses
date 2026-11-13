@@ -27,8 +27,8 @@ No submodules are required. Clone the repository and open the course directory:
 git clone https://github.com/albyho/Cynapse-courses.git
 ```
 
-Open `Cynapse-courses/rust-by-example` in the Client. It requires Rust `1.85.0`
-or newer (`rustup` is recommended).
+Open `Cynapse-courses/rust-by-example` in the `Cynapse Client`. It requires
+Rust `1.85.0` or newer (`rustup` is recommended).
 
 ### agent-desktop-source-analysis
 
@@ -46,8 +46,8 @@ If the repository is already cloned, initialize the submodule:
 git submodule update --init --recursive
 ```
 
-Open `Cynapse-courses/agent-desktop-source-analysis` in the Client. The
-submodule is pinned to commit `b43ac4f6e892ef608f8851428613c4009f0e84c7`; you
+Open `Cynapse-courses/agent-desktop-source-analysis` in the `Cynapse Client`.
+The submodule is pinned to commit `b43ac4f6e892ef608f8851428613c4009f0e84c7`; you
 may instead download that revision yourself and place it at
 `agent-desktop-source-analysis/resources/agent-desktop`.
 
