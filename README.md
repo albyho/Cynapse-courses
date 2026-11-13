@@ -13,6 +13,9 @@ published here. Course resources may be normal files or pinned git submodules.
 | 通过例子学 Rust（中文版） | `0.20.15` | [`rust-by-example/`](rust-by-example/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis/`](agent-desktop-source-analysis/) |
 
+> `rust-by-example` is an in-progress adaptation. It currently covers the
+> introduction and chapters 1–4 only, not the complete Rust by Example book.
+
 ## Using a course
 
 Install [Cynapse Client](https://github.com/albyho/Cynapse-release/releases) and
