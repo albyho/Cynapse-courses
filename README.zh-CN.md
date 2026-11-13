@@ -50,6 +50,21 @@ git submodule update --init --recursive
 submodule 固定到提交 `b43ac4f6e892ef608f8851428613c4009f0e84c7`；也可以自行下载
 该版本并放到 `agent-desktop-source-analysis/resources/agent-desktop`。
 
+### 更新
+
+```sh
+git pull --ff-only
+git submodule sync --recursive
+git submodule update --init --recursive
+```
+
+打开课程前可以核对 agent-desktop 的提交：
+
+```sh
+git -C agent-desktop-source-analysis/resources/agent-desktop rev-parse HEAD
+# b43ac4f6e892ef608f8851428613c4009f0e84c7
+```
+
 ## 课程包结构
 
 ```text

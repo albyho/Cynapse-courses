@@ -51,6 +51,21 @@ submodule is pinned to commit `b43ac4f6e892ef608f8851428613c4009f0e84c7`; you
 may instead download that revision yourself and place it at
 `agent-desktop-source-analysis/resources/agent-desktop`.
 
+### Updating
+
+```sh
+git pull --ff-only
+git submodule sync --recursive
+git submodule update --init --recursive
+```
+
+Verify the agent-desktop revision before opening the course:
+
+```sh
+git -C agent-desktop-source-analysis/resources/agent-desktop rev-parse HEAD
+# b43ac4f6e892ef608f8851428613c4009f0e84c7
+```
+
 ## Package layout
 
 ```text
