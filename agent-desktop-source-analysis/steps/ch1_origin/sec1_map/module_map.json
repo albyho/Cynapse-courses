@@ -1,0 +1,447 @@
+{
+  "step_id": "module_map",
+  "title": "模块地图：一张表看懂分层",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5287,
+              "caption": "第一章从一个文件开始。lib.rs 不实现功能，只是一张<c.aqua>模块地图</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 3
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 4094,
+              "caption": "<c.aqua>actionability</c.aqua>：判断一个元素当前能不能安全操作。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 4
+      },
+      "end": {
+        "line": 4
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 11000,
+              "duration_ms": 3531,
+              "caption": "actions：定义动作本身，比如点击、输入、滚动。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 5
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 15000,
+              "duration_ms": 4097,
+              "caption": "adapter：平台适配接口，核心只通过它接触操作系统。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 6
+      },
+      "end": {
+        "line": 6
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 20000,
+              "duration_ms": 3464,
+              "caption": "commands：对外的命令实现，snapshot 就在里面。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 7
+      },
+      "end": {
+        "line": 7
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 24000,
+              "duration_ms": 2406,
+              "caption": "context：一次命令的运行上下文。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 8
+      },
+      "end": {
+        "line": 8
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 27000,
+              "duration_ms": 3107,
+              "caption": "cursor_overlay：鼠标提示层，让操作看得见。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 9
+      },
+      "end": {
+        "line": 9
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 2557,
+              "caption": "input：键盘、剪贴板等输入处理。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 10
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 34000,
+              "duration_ms": 2659,
+              "caption": "locator：在实时界面里定位元素。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 11
+      },
+      "end": {
+        "line": 11
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 2904,
+              "caption": "notifications：系统通知的读取与处理。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 12
+      },
+      "end": {
+        "line": 12
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 40000,
+              "duration_ms": 2448,
+              "caption": "ref_action：按<c.aqua>引用</c.aqua>执行动作。",
+              "speech_edits": [
+                {
+                  "i": 15,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 13
+      },
+      "end": {
+        "line": 13
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 4014,
+              "caption": "refs：<c.aqua>引用</c.aqua>的分配、查找与失效，第 1.3 节会展开。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 14
+      },
+      "end": {
+        "line": 14
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 48000,
+              "duration_ms": 2083,
+              "caption": "response：对外的返回结构。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 15
+      },
+      "end": {
+        "line": 15
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 51000,
+              "duration_ms": 3636,
+              "caption": "session：会话管理，快照和<c.aqua>引用</c.aqua>都挂在会话下。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 16
+      },
+      "end": {
+        "line": 16
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 3298,
+              "caption": "snapshot：观察与<c.aqua>快照</c.aqua>，第 1.2 节会展开。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 17
+      },
+      "end": {
+        "line": 17
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 59000,
+              "duration_ms": 3074,
+              "caption": "storage：持久化，<c.aqua>引用</c.aqua>表和快照要落盘。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 18
+      },
+      "end": {
+        "line": 18
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 4176,
+              "caption": "system：系统与进程信息，用来确认应用没有重启。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 19
+      },
+      "end": {
+        "line": 19
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 68000,
+              "duration_ms": 2399,
+              "caption": "trace：可回放的调试记录。",
+              "speech_edits": [
+                {
+                  "i": 10,
+                  "s": "调",
+                  "p": "TIAO2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
+      "start": {
+        "line": 20
+      },
+      "end": {
+        "line": 20
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec1_map",
+          "clips": [
+            {
+              "offset_ms": 71000,
+              "duration_ms": 1793,
+              "caption": "tree：无障碍树的模型。"
+            },
+            {
+              "offset_ms": 73000,
+              "duration_ms": 4170,
+              "caption": "这些模块是<c.aqua>并列</c.aqua>的：各自负责一件事，不是层层嵌套。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

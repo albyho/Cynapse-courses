@@ -1,0 +1,70 @@
+{
+  "step_id": "ch5_intro",
+  "title": "本章地图：记录、回放与恢复",
+  "actions": [
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "INTRO.md",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 4500,
+              "caption": "第 5 章，<c.aqua>可观测与恢复：trace、回放与会话</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": { "line": 5 },
+      "end": { "line": 13 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "前四章讲系统怎么工作；这一章讲它怎么被观察、怎么从故障里回来：trace、回放、会话与租约。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": { "line": 17 },
+      "end": { "line": 24 },
+      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "trace 是结构化事件，不是日志字符串：命令、动作、派发前后状态、截图和 refmap；写入前会递归脱敏，文件也有大小上限。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": { "line": 28 },
+      "end": { "line": 35 },
+      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "回放先按文件名排 segment，再合并成一条时间线，标注来源、检测未配对命令；导出 HTML 时由 viewer 渲染。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": { "line": 39 },
+      "end": { "line": 46 },
+      "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "会话是一组持久状态：session.json、trace、截图、refmap、GC；交互租约保证桌面变更串行化，崩溃后还能判断哪些会话活着。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": { "line": 50 },
+      "end": { "line": 54 },
+      "narration": { "after": { "clips": [{ "duration_ms": 7500, "caption": "三节：5.1 记录、5.2 回放、5.3 会话；先看写入，再看读取，最后看租约。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": { "line": 58 },
+      "end": { "line": 60 },
+      "narration": { "after": { "clips": [{ "duration_ms": 7000, "caption": "读法：不逐行读 viewer.js，先看它怎么接事件、怎么选一行；看到 sanitize、budget、lease 先问它在防哪种事故。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": { "line": 66 },
+      "end": { "line": 69 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "读完应能区分事件与 artifact、说清合并与导出、解释 manifest 与租约，并判断故障属于记录缺失、记录不可信还是状态未恢复。" }] } }
+    },
+    { "type": "CLEAR_REVEAL" }
+  ]
+}

@@ -1,0 +1,929 @@
+{
+  "step_id": "what_it_is",
+  "title": "是什么：目标与核心概念",
+  "actions": [
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "INTRO.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 3098,
+              "caption": "先看导读：<c.aqua>agent-desktop 源码分析 · 导读</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 5
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 4000,
+              "duration_ms": 7515,
+              "caption": "课程只分析 <c.aqua>b43ac4f6</c.aqua> 一个版本，不做回滚：源码分析需要稳定的行号和调用链。",
+              "speech_edits": [
+                {
+                  "i": 34,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 37,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 7
+      },
+      "end": {
+        "line": 13
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 12000,
+              "duration_ms": 9419,
+              "caption": "历史<c.aqua>按需查</c.aqua>：a346f242 是骨架，218503a7 是 47 条评审，4c598cde 把单文件拆成目录。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 17
+      },
+      "end": {
+        "line": 19
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 22000,
+              "duration_ms": 5917,
+              "caption": "目标：不截图、不像素匹配；读<c.aqua>无障碍树</c.aqua>，结构化成 JSON，可操作元素带 ref。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 21
+      },
+      "end": {
+        "line": 37
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 28000,
+              "duration_ms": 8305,
+              "caption": "<c.aqua>循环在调用方</c.aqua>：snapshot 读取树，返回 tree、refmap 和 snapshot id；行动时按 @snapshot:eN 解析、预检、派发。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "调",
+                  "p": "DIAO4"
+                },
+                {
+                  "i": 49,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 39
+      },
+      "end": {
+        "line": 39
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 5826,
+              "caption": "所以一次交互是<c.aqua>观察、行动、再观察</c.aqua>；库只提供能力，不决定下一步。",
+              "speech_edits": [
+                {
+                  "i": 10,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 41
+      },
+      "end": {
+        "line": 41
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 4797,
+              "caption": "<c.aqua>同一套核心</c.aqua>同时服务 CLI 和 C 库，代码阅读对两者都成立。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 45
+      },
+      "end": {
+        "line": 50
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 48000,
+              "duration_ms": 7535,
+              "caption": "截图的问题是<c.aqua>不可验证</c.aqua>：两次识别可能不同、失败只能靠看、坐标会失效、隐私容易进图。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 52
+      },
+      "end": {
+        "line": 52
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 56000,
+              "duration_ms": 5330,
+              "caption": "树把观察变成<c.aqua>可断言的数据</c.aqua>，把操作变成对具体元素的引用。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 54
+      },
+      "end": {
+        "line": 54
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 62000,
+              "duration_ms": 6990,
+              "caption": "代价是树<c.aqua>会过期</c.aqua>、元素会重建、ref 会失效；后面大部分设计都在处理这个代价。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 56
+      },
+      "end": {
+        "line": 64
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 69000,
+              "duration_ms": 4929,
+              "caption": "<c.aqua>失败关闭</c.aqua>是循环的一部分：身份不匹配时不猜，回到观察。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 68
+      },
+      "end": {
+        "line": 77
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 74000,
+              "duration_ms": 6820,
+              "caption": "ref 只是某次快照里的<c.aqua>短标识</c.aqua>；RefMap 保存的是重新识别所需的证据，不是坐标。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 79
+      },
+      "end": {
+        "line": 84
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 81000,
+              "duration_ms": 5805,
+              "caption": "可操作定义很克制；跨快照必须限定；证据不是坐标；解析<c.aqua>失败关闭</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 86
+      },
+      "end": {
+        "line": 87
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 87000,
+              "duration_ms": 5882,
+              "caption": "下钻替换子树引用，所以必须<c.aqua>完整观察</c.aqua>；部分结果只允许全量快照。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 116
+      },
+      "end": {
+        "line": 122
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 93000,
+              "duration_ms": 3531,
+              "caption": "<c.aqua>五个切面</c.aqua>：分层、观察、引用、动作、平台适配。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 124
+      },
+      "end": {
+        "line": 124
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 97000,
+              "duration_ms": 3355,
+              "caption": "第 1 章覆盖<c.aqua>前四个</c.aqua>，平台适配留到后续。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 141
+      },
+      "end": {
+        "line": 146
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 101000,
+              "duration_ms": 5696,
+              "caption": "读法：先看<c.aqua>快照的形状</c.aqua>，再看引用分配，再看执行，最后才进平台 crate。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 148
+      },
+      "end": {
+        "line": 148
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 107000,
+              "duration_ms": 3570,
+              "caption": "可以<c.aqua>刻意忽略</c.aqua>测试、skills、npm、benchmarks、probes。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 150
+      },
+      "end": {
+        "line": 158
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 111000,
+              "duration_ms": 6040,
+              "caption": "shared/ 首次开始 Unit 时复制到工作区，带 .git；课程<c.aqua>只读</c.aqua>，避免行号漂移。",
+              "speech_edits": [
+                {
+                  "i": 40,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 160
+      },
+      "end": {
+        "line": 161
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 118000,
+              "duration_ms": 4046,
+              "caption": "shared/ 不进开发者仓库，分发时由<c.aqua>打包流程</c.aqua>带入。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "../resources/agent-desktop/README.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 123000,
+              "duration_ms": 2244,
+              "caption": "这就是项目首页，<c.aqua>agent-desktop</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 4
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 126000,
+              "duration_ms": 5574,
+              "caption": "一句话定位：给 agent 的 computer use，通过<c.aqua>无障碍树</c.aqua>操作三个桌面平台。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 132000,
+              "duration_ms": 2463,
+              "caption": "徽章：Vercel Labs、npm、<c.aqua>Apache-2.0</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 12
+      },
+      "end": {
+        "line": 12
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 135000,
+              "duration_ms": 6298,
+              "caption": "核心机制：不截图，读树返回<c.aqua>带 ref 的 JSON</c.aqua>；循环在调用方，库内没有模型。",
+              "speech_edits": [
+                {
+                  "i": 29,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 14
+      },
+      "end": {
+        "line": 14
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 142000,
+              "duration_ms": 5124,
+              "caption": "安全提醒：快照、剪贴板、截图和调试产物可能含<c.aqua>私有内容</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 15,
+                  "s": "调",
+                  "p": "TIAO2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 148000,
+              "duration_ms": 4463,
+              "caption": "接着翻到 <c.aqua>Concepts</c.aqua>，概念表。它只统一叫法，不规定行为。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 7
+      },
+      "end": {
+        "line": 12
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 153000,
+              "duration_ms": 6527,
+              "caption": "无障碍树是 OS 暴露的结构；<c.aqua>Snapshot</c.aqua> 是某一刻的树，连同这次分配的 ref 持久化。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 13
+      },
+      "end": {
+        "line": 20
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 160000,
+              "duration_ms": 6539,
+              "caption": "视觉调试产物只用于人看，不改结果；<c.aqua>Snapshot ID</c.aqua> 只在会话命名空间内有效。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "调",
+                  "p": "TIAO2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 21
+      },
+      "end": {
+        "line": 28
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 167000,
+              "duration_ms": 7544,
+              "caption": "<c.aqua>Surface</c.aqua> 是可单独观察的层；Window Rectangle 在 Linux 上排除阴影，移动和缩放按同一矩形报告。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 29
+      },
+      "end": {
+        "line": 35
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 175000,
+              "duration_ms": 5980,
+              "caption": "Drill-down 只观察子树；Partial Observation 只允许全量快照，下钻<c.aqua>必须完整</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 46,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 90
+      },
+      "end": {
+        "line": 96
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 181000,
+              "duration_ms": 5499,
+              "caption": "<c.aqua>Ref</c.aqua> 是分配给可操作或可下钻节点的短标识；可操作有严格定义。",
+              "speech_edits": [
+                {
+                  "i": 14,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 97
+      },
+      "end": {
+        "line": 99
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 187000,
+              "duration_ms": 2803,
+              "caption": "RefMap 保存 ref 到<c.aqua>身份证据</c.aqua>的映射。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 100
+      },
+      "end": {
+        "line": 104
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 190000,
+              "duration_ms": 4518,
+              "caption": "<c.aqua>稳定文本身份</c.aqua>：名称和描述可作证据，可变的值不算。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 105
+      },
+      "end": {
+        "line": 111
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 195000,
+              "duration_ms": 6477,
+              "caption": "Stale Ref 表示证据不足；Strict Resolution <c.aqua>失败关闭</c.aqua>，是旧观察与实时桌面的边界。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/CONCEPTS.md",
+      "start": {
+        "line": 113
+      },
+      "end": {
+        "line": 118
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 202000,
+              "duration_ms": 6253,
+              "caption": "Re-identification：macOS 取回元素地址，其他平台用 <c.aqua>capture proof</c.aqua>，并要求唯一匹配。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "../resources/agent-desktop/docs/faq.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 209000,
+              "duration_ms": 4889,
+              "caption": "最后是 <c.aqua>agent-desktop FAQ</c.aqua>，用问答把最容易混的规则再讲一遍。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/docs/faq.md",
+      "start": {
+        "line": 35
+      },
+      "end": {
+        "line": 37
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 214000,
+              "duration_ms": 10309,
+              "caption": "现在跳到 docs/faq.md。这里用最短的话重复一遍 <c.aqua>ref</c.aqua> 规则：按深度优先分配，形如 @s8f3k2p9:e1，必须整串传给动作。",
+              "speech_edits": [
+                {
+                  "i": 24,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/docs/faq.md",
+      "start": {
+        "line": 39
+      },
+      "end": {
+        "line": 43
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 225000,
+              "duration_ms": 9416,
+              "caption": "哪些元素会拿到 <c.aqua>ref</c.aqua>？角色在白名单里，或者声明了主操作。ref 只在会话内有效；过期就重新 snapshot，再拿新 ref。",
+              "speech_edits": [
+                {
+                  "i": 44,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

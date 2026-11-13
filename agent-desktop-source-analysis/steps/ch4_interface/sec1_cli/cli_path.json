@@ -1,0 +1,33 @@
+{
+  "step_id": "cli_path",
+  "title": "CLI：从参数到 envelope",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/src/main.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "先看 CLI 的主线：参数怎么变成命令，结果怎么变成信封。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/main.rs",
+      "start": { "line": 77 },
+      "end": { "line": 89 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "run 先处理 Windows 私有文件能力，然后解析参数；如果子命令是 mcp，就直接交给 mcp::serve，不再走普通命令。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/main.rs",
+      "start": { "line": 90 },
+      "end": { "line": 116 },
+      "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "普通命令：解析 Cli、初始化日志、取出子命令、处理 stdin，再 execute；finish 负责把结果写成 envelope 并决定退出码。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/main.rs",
+      "start": { "line": 118 },
+      "end": { "line": 121 },
+      "narration": { "after": { "clips": [{ "duration_ms": 7500, "caption": "root_command 把 Cli 的命令树和 mcp 子命令拼在一起；mcp 不在 Commands 里，因为它服务命令，而不是一条命令。" }] } }
+    },
+    { "type": "CLEAR_REVEAL" }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "step_id": "ch1_intro",
+  "title": "本章地图：观察、引用与失效",
+  "actions": [
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "INTRO.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 4362,
+              "caption": "第 1 章，<c.aqua>观察、引用与失效</c.aqua>。三个词就是这一章的顺序。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 11
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 5000,
+              "duration_ms": 9926,
+              "caption": "第 1 章只讲观察这一侧：观察经过哪些层、引用怎么分配和失效、没看全时结果怎么表示。预检和派发放到第 2 章。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 15
+      },
+      "end": {
+        "line": 30
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 15000,
+              "duration_ms": 8315,
+              "caption": "完整链路先放在这里当背景：snapshot 读树，返回 tree、<c.aqua>ref</c.aqua>map 和 snapshot id；后面两步行动属于第 2 章。",
+              "speech_edits": [
+                {
+                  "i": 58,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 32
+      },
+      "end": {
+        "line": 32
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 24000,
+              "duration_ms": 5530,
+              "caption": "链路里有<c.aqua>两次观察</c.aqua>；本章只处理第一次观察，以及它产出的引用。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 36
+      },
+      "end": {
+        "line": 44
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 30000,
+              "duration_ms": 9339,
+              "caption": "五节按“观察 → 引用 → 完整性 → 失效”排：1.1 模块地图、1.2 观察、1.3 引用、1.4 完整性、1.5 下钻与失效。",
+              "speech_edits": [
+                {
+                  "i": 61,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 48
+      },
+      "end": {
+        "line": 51
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 40000,
+              "duration_ms": 6439,
+              "caption": "阅读约定：只读、按行讲、先跳过平台分支；失败也是设计，先问它在保护什么。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 55
+      },
+      "end": {
+        "line": 62
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 47000,
+              "duration_ms": 7857,
+              "caption": "关键对象先扫一眼：SnapshotResult、RefMap、RefEntry 属于本章；p<c.aqua>ref</c.aqua>light、ActionRequest、dispatch 留到第 2 章。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 66
+      },
+      "end": {
+        "line": 72
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 9480,
+              "caption": "读每节带着三个问题：旧<c.aqua>快照</c.aqua>还能用吗？判断依赖坐标还是身份证据？失败该重试、恢复，还是关闭？",
+              "speech_edits": [
+                {
+                  "i": 13,
+                  "s": "还",
+                  "p": "HAI2"
+                },
+                {
+                  "i": 24,
+                  "s": "还",
+                  "p": "HAI2"
+                },
+                {
+                  "i": 34,
+                  "s": "重",
+                  "p": "CHONG2"
+                },
+                {
+                  "i": 40,
+                  "s": "还",
+                  "p": "HAI2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 84
+      },
+      "end": {
+        "line": 89
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 65000,
+              "duration_ms": 7627,
+              "caption": "读完应能说清 snapshot 三条分支、四个完整性字段、下钻规则，以及 <c.aqua>ref</c.aqua> 过期后的两种结局。",
+              "speech_edits": [
+                {
+                  "i": 30,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 93
+      },
+      "end": {
+        "line": 95
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 73000,
+              "duration_ms": 7095,
+              "caption": "如果第一次接触：无障碍树就是操作系统的“界面目录”，每个控件是带角色的条目。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 97
+      },
+      "end": {
+        "line": 97
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 81000,
+              "duration_ms": 6581,
+              "caption": "<c.aqua>快照</c.aqua>是某一刻把目录抄下来并贴临时编号；它不是截图，记录结构不是像素。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 99
+      },
+      "end": {
+        "line": 99
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin",
+          "clips": [
+            {
+              "offset_ms": 88000,
+              "duration_ms": 5896,
+              "caption": "<c.aqua>ref</c.aqua> 是那个临时编号，只在这次快照里有效；跨命令使用必须带快照 id。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

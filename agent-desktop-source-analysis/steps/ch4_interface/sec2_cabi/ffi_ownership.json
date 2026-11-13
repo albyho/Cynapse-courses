@@ -1,0 +1,152 @@
+{
+  "step_id": "ffi_ownership",
+  "title": "FFI 的所有权、线程与 API 分层",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 6000,
+              "caption": "第 4.2 节讲了 ABI 和错误模型，这里补三个最容易踩的边界：谁释放、哪个线程能调、API 分几层。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
+      "start": {
+        "line": 9
+      },
+      "end": {
+        "line": 15
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9500,
+              "caption": "adapter 可以跨线程调用，但原生元素句柄是线程绑定的：在哪个线程解析，就在哪个线程使用和释放；桌面变更仍由跨进程租约串行化。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/ffi/src/resource.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "谁负责释放？FFI 用一个分配登记表来兜底。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/resource.rs",
+      "start": {
+        "line": 6
+      },
+      "end": {
+        "line": 16
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9000,
+              "caption": "每种返回给 C 的堆对象都登记了种类和地址：字符串、树节点、动作步骤、通知动作……释放时按种类回收，重复释放或释放错类型会被发现。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "再看生命周期：创建和销毁成对出现。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
+      "start": {
+        "line": 166
+      },
+      "end": {
+        "line": 209
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9000,
+              "caption": "ad_adapter_create 返回不透明句柄，ad_adapter_destroy 释放；带 session 的版本把 refmap 限定到会话。句柄由调用方持有，跨线程共享要自己同步。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "最后看 ABI 版本怎么约束调用方。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 51
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9000,
+              "caption": "AD_ABI_VERSION_MAJOR 是 7；新函数和新结果码只做加法，删除符号或改结构布局才升主版本。ad_init 校验不匹配就返回 INVALID_ARGS，调用方应停止后续调用。",
+              "speech_edits": [
+                {
+                  "i": 62,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

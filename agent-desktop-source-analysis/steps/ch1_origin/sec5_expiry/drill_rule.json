@@ -1,0 +1,134 @@
+{
+  "step_id": "drill_rule",
+  "title": "规则：下钻为什么不能部分",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 91000,
+              "duration_ms": 6495,
+              "caption": "这一节只看一条规则：下钻为什么不能像全量<c.aqua>快照</c.aqua>那样返回部分结果。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                },
+                {
+                  "i": 12,
+                  "s": "为",
+                  "p": "WEI4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 42
+      },
+      "end": {
+        "line": 49
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 98000,
+              "duration_ms": 6492,
+              "caption": "注释先给结论：下钻必须观察完整棵子树，否则完全不改已存的引用表。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 50
+      },
+      "end": {
+        "line": 57
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 105000,
+              "duration_ms": 10874,
+              "caption": "原因是下钻在“替换”引用：删旧、写新。只写一半，引用表就会半新半旧，谁都不知道哪个还能用。部分结果只允许全量<c.aqua>快照</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                },
+                {
+                  "i": 41,
+                  "s": "还",
+                  "p": "HAI2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 236
+      },
+      "end": {
+        "line": 248
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 116000,
+              "duration_ms": 9110,
+              "caption": "失败时返回 Timeout，并在建议里给出两条路：调大 --timeout-ms，或者下钻更窄的子树。旧引用表原样保留。",
+              "speech_edits": [
+                {
+                  "i": 25,
+                  "s": "调",
+                  "p": "DIAO4"
+                },
+                {
+                  "i": 44,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

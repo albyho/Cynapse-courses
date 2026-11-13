@@ -1,0 +1,118 @@
+{
+  "step_id": "batch_cdp_ffi",
+  "title": "批处理、CDP 与 FFI 边界",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/src/batch/mod.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 6000,
+              "caption": "除了单条命令，还有 batch：一次进程执行多条命令，但不是事务。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/batch/mod.rs",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 22
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9000,
+              "caption": "preparation 先校验所有条目，execution 再逐条执行；前面的条目成功、后面的失败不会回滚。结果按条目返回，失败会标明位置。",
+              "speech_edits": [
+                {
+                  "i": 13,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/src/cli/mod.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "再看 Chromium/Electron 的边界：桌面 UI 归 agent-desktop，web 内容交给 agent-browser。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/cli/mod.rs",
+      "start": {
+        "line": 105
+      },
+      "end": {
+        "line": 108
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8000,
+              "caption": "launch 的 --cdp 会验证 DevTools 端口，把 web 内容交给 agent-browser；agent-desktop 只继续负责原生窗口和无障碍树。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "最后回到 FFI 的线程边界。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
+      "start": {
+        "line": 9
+      },
+      "end": {
+        "line": 15
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8500,
+              "caption": "adapter 可以跨线程调用，但原生元素句柄是线程绑定的：在哪个线程解析，就在哪个线程释放；桌面变更由跨进程租约串行化。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

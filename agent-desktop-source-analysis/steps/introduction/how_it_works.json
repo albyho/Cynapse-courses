@@ -1,0 +1,500 @@
+{
+  "step_id": "how_it_works",
+  "title": "怎么跑：调用链、命令与代码位置",
+  "actions": [
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "../resources/agent-desktop/README.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 235000,
+              "duration_ms": 4185,
+              "caption": "又回到 <c.aqua>agent-desktop</c.aqua> 的首页，这次从工程结构往里看。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 82
+      },
+      "end": {
+        "line": 89
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 240000,
+              "duration_ms": 6270,
+              "caption": "调用方要么调 CLI，要么在进程内调 C 库；两条路都走<c.aqua>同一个 core</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "调",
+                  "p": "DIAO4"
+                },
+                {
+                  "i": 5,
+                  "s": "调",
+                  "p": "DIAO4"
+                },
+                {
+                  "i": 17,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            },
+            {
+              "offset_ms": 247000,
+              "duration_ms": 5813,
+              "caption": "core 只通过 <c.aqua>PlatformAdapter</c.aqua> 接触操作系统；每个二进制只为一个平台构建。",
+              "speech_edits": [
+                {
+                  "i": 38,
+                  "s": "为",
+                  "p": "WEI4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 91
+      },
+      "end": {
+        "line": 99
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 253000,
+              "duration_ms": 6698,
+              "caption": "面向 agent 的用法：二进制自带<c.aqua>与版本匹配</c.aqua>的指南，先读 desktop 和 platform 两份 skill。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 101
+      },
+      "end": {
+        "line": 105
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 260000,
+              "duration_ms": 2621,
+              "caption": "也可以把 skill 安装进 agent <c.aqua>harness</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 107
+      },
+      "end": {
+        "line": 114
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 263000,
+              "duration_ms": 4485,
+              "caption": "失败命令只在 error.disposition.retry 为 <c.aqua>safe</c.aqua> 时重试。",
+              "speech_edits": [
+                {
+                  "i": 31,
+                  "s": "为",
+                  "p": "WEI2"
+                },
+                {
+                  "i": 39,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 116
+      },
+      "end": {
+        "line": 124
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 268000,
+              "duration_ms": 5213,
+              "caption": "<c.aqua>MCP</c.aqua> 把每个命令暴露成同名 tool，走 stdio，返回同一个 JSON envelope。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 126
+      },
+      "end": {
+        "line": 128
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 274000,
+              "duration_ms": 4895,
+              "caption": "60 个命令名，<c.aqua>56 个可运行</c.aqua>；剩下四个是按住键或鼠标。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 130
+      },
+      "end": {
+        "line": 134
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 279000,
+              "duration_ms": 5228,
+              "caption": "Observe 只观察；Act on a ref 是<c.aqua>语义动作</c.aqua>，后面两条路径在 core 里汇合。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 135
+      },
+      "end": {
+        "line": 140
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 285000,
+              "duration_ms": 4642,
+              "caption": "其余是应用窗口、通知、剪贴板、等待、会话和<c.aqua>系统命令</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 142
+      },
+      "end": {
+        "line": 148
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 290000,
+              "duration_ms": 4437,
+              "caption": "三个平台后端对应<c.aqua>三套无障碍 API</c.aqua>：AX、UI Automation、AT-SPI。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 150
+      },
+      "end": {
+        "line": 150
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 295000,
+              "duration_ms": 4016,
+              "caption": "每个平台页还说明 <c.aqua>headless</c.aqua>、--headed 和拒绝的边界。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "还",
+                  "p": "HAI2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 152
+      },
+      "end": {
+        "line": 154
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 300000,
+              "duration_ms": 4777,
+              "caption": "C 库每次发布带 <c.aqua>libagent_desktop_ffi</c.aqua>，可以在进程内调用。",
+              "speech_edits": [
+                {
+                  "i": 36,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/README.md",
+      "start": {
+        "line": 156
+      },
+      "end": {
+        "line": 164
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 305000,
+              "duration_ms": 5572,
+              "caption": "ABI 有<c.aqua>主版本校验</c.aqua>，示例里的 ad_init(7) 就是在核对头文件和库。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "../resources/agent-desktop/Cargo.toml"
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/Cargo.toml",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 4
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 311000,
+              "duration_ms": 3109,
+              "caption": "<c.aqua>六个成员</c.aqua>：core、三个平台后端、ffi、src（CLI）。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/Cargo.toml",
+      "start": {
+        "line": 6
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 315000,
+              "duration_ms": 5139,
+              "caption": "版本 <c.aqua>1.2.0</c.aqua>、Apache-2.0、edition 2024、最低 Rust 1.89。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "../resources/agent-desktop/docs/json-output.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 321000,
+              "duration_ms": 4407,
+              "caption": "接下来是 <c.aqua>JSON output contract</c.aqua>，所有命令共用的输出契约。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/docs/json-output.md",
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 15
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 326000,
+              "duration_ms": 6000,
+              "caption": "再跳到 docs/json-output.md，看每个命令对外的统一形状：version、ok、command、data。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/docs/json-output.md",
+      "start": {
+        "line": 17
+      },
+      "end": {
+        "line": 41
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 332000,
+              "duration_ms": 9507,
+              "caption": "失败也是同一个信封：<c.aqua>error.code</c.aqua>、message、suggestion、disposition。调用方先看 retry 是不是 safe，再决定要不要重试。",
+              "speech_edits": [
+                {
+                  "i": 52,
+                  "s": "调",
+                  "p": "DIAO4"
+                },
+                {
+                  "i": 79,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../resources/agent-desktop/docs/json-output.md",
+      "start": {
+        "line": 43
+      },
+      "end": {
+        "line": 53
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 342000,
+              "duration_ms": 9216,
+              "caption": "这里还写明了部分快照的契约：2.2 起超时不再报 TIMEOUT，而是 ok:true、complete:false，带 truncated 和 <c.aqua>nodes_observed</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "还",
+                  "p": "HAI2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

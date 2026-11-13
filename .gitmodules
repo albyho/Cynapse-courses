@@ -1,0 +1,3 @@
+[submodule "agent-desktop-source-analysis/resources/agent-desktop"]
+	path = agent-desktop-source-analysis/resources/agent-desktop
+	url = https://github.com/vercel-labs/agent-desktop.git

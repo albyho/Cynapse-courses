@@ -1,0 +1,150 @@
+{
+  "step_id": "act_pipeline",
+  "title": "派发：五步管线与交互策略",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 6000,
+              "caption": "最后一步，把观察、引用和预检串成一条<c.aqua>完整管线</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
+      "start": {
+        "line": 21
+      },
+      "end": {
+        "line": 23
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8500,
+              "caption": "注释写清<c.aqua>五步</c.aqua>：RefStore 读取、RefMap 查找、严格元素解析、实时可操作性预检、派发。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
+      "start": {
+        "line": 25
+      },
+      "end": {
+        "line": 26
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "ref 必须带快照限定；裸 @eN 会以 <c.aqua>INVALID_ARGS</c.aqua> 拒绝。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
+      "start": {
+        "line": 28
+      },
+      "end": {
+        "line": 31
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "交互策略是“调用方要求”和“动作自身要求”的 join：取更严格的那一个。语义动作默认严格 <c.aqua>headless</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
+      "start": {
+        "line": 32
+      },
+      "end": {
+        "line": 45
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "代码里就是 base.join(caller_policy)，再组装 <c.aqua>ActionRequest</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
+      "start": {
+        "line": 46
+      },
+      "end": {
+        "line": 52
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "构造 ActionRequest：动作、策略、超时；verified_point 与 expected_process 先留空。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
+      "start": {
+        "line": 53
+      },
+      "end": {
+        "line": 62
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "交给 execute_<c.aqua>ref</c.aqua>_action_with_context；ref_id 与 timeout 一起传入。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

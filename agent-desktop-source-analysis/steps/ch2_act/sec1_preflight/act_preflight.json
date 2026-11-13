@@ -1,0 +1,220 @@
+{
+  "step_id": "act_preflight",
+  "title": "行动前：可操作性预检",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 6000,
+              "caption": "引用解析出来之后，动作不会立刻发出去。先过一遍<c.aqua>可操作性预检</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
+      "start": {
+        "line": 52
+      },
+      "end": {
+        "line": 64
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "<c.aqua>preflight_resolved</c.aqua> 拿到目标、动作请求和稳定性期望，跑一次带 trace 的检查；稳定性期望的意思是“这个元素要稳定多久才算能操作”。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/ref_action_actionability.rs"
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/ref_action_actionability.rs",
+      "start": {
+        "line": 27
+      },
+      "end": {
+        "line": 66
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8000,
+              "caption": "跳到 ref_action_<c.aqua>actionability</c.aqua>.rs。预检真正跑的是 check_report_with_trace，ref_action 里的函数只负责包 trace 和转成预检结果。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
+      "start": {
+        "line": 67
+      },
+      "end": {
+        "line": 79
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "dispatch 先确认进程实例还在：应用一旦重启，旧<c.aqua>引用</c.aqua>就作废。确认后解析出真实元素句柄。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "还",
+                  "p": "HAI2"
+                },
+                {
+                  "i": 23,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
+      "start": {
+        "line": 80
+      },
+      "end": {
+        "line": 90
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7000,
+              "caption": "解析成功或失败都会记进 trace；trace 是可回放的调试记录，出问题能倒查。",
+              "speech_edits": [
+                {
+                  "i": 29,
+                  "s": "调",
+                  "p": "TIAO2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
+      "start": {
+        "line": 91
+      },
+      "end": {
+        "line": 99
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7000,
+              "caption": "<c.aqua>预检</c.aqua>失败时，先判断错误是否属于可滚动恢复的范围。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
+      "start": {
+        "line": 100
+      },
+      "end": {
+        "line": 115
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "滚动恢复：先 <c.aqua>scroll_ref_into_view</c.aqua>，拿不到句柄就重新解析。",
+              "speech_edits": [
+                {
+                  "i": 34,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
+      "start": {
+        "line": 116
+      },
+      "end": {
+        "line": 126
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "用滚后的目标再做一次 stable_p<c.aqua>ref</c.aqua>light，仍失败就 after_scroll 报错。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
+      "start": {
+        "line": 128
+      },
+      "end": {
+        "line": 136
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8000,
+              "caption": "如果这次投递是语义操作，就把策略降为 <c.aqua>headless</c.aqua>——不弹窗、不移动真实光标，只做语义动作；同时把已验证点和预期进程写进请求。",
+              "speech_edits": [
+                {
+                  "i": 17,
+                  "s": "为",
+                  "p": "WEI4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

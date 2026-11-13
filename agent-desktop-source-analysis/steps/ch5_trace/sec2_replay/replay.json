@@ -1,0 +1,50 @@
+{
+  "step_id": "replay",
+  "title": "回放：segment 合并与 HTML 导出",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_read/mod.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "trace 写完之后，怎么读回来？先看 trace_read 的模块分工。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_read/mod.rs",
+      "start": { "line": 1 },
+      "end": { "line": 8 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "budget、html、merge、segment 四块：segment 读单个文件，merge 合并，html 导出，budget 限制体积。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_read/mod.rs",
+      "start": { "line": 19 },
+      "end": { "line": 23 },
+      "narration": { "after": { "clips": [{ "duration_ms": 7500, "caption": "ReadOptions 只有两个旋钮：尾部保留多少条、按哪个事件前缀过滤。合并时还标注来源、检测未配对的命令。" }] } }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_read/html.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "再跳到 html.rs，看导出入口。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_read/html.rs",
+      "start": { "line": 62 },
+      "end": { "line": 153 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "export_html 把合并后的事件写成页面，并嵌入可读取的截图；导出统计会说明截断和跳过了什么。" }] } }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_read/viewer.js",
+      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "最后看 viewer 的交互：它只负责渲染和选中，不做任何协议判断。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_read/viewer.js",
+      "start": { "line": 192 },
+      "end": { "line": 199 },
+      "narration": { "after": { "clips": [{ "duration_ms": 7500, "caption": "点击一行就 select 该行：清掉旧选中、标记新行、滚到可见、刷新详情面板。回放的“定位”就是这么实现的。" }] } }
+    },
+    { "type": "CLEAR_REVEAL" }
+  ]
+}

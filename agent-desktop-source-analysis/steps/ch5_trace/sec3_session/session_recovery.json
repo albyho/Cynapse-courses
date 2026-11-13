@@ -1,0 +1,43 @@
+{
+  "step_id": "session_recovery",
+  "title": "会话：manifest、GC 与交互租约",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/session/mod.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "最后一节：会话怎么表示，崩溃后怎么判断它还活着。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/session/mod.rs",
+      "start": { "line": 23 },
+      "end": { "line": 30 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "每个会话目录里有一个 session.json。注释特意说明：读取失败和“确实不存在”必须区分，否则会把每个会话都当成已结束。" }] } }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/session/manifest.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "看 manifest 的字段。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/session/manifest.rs",
+      "start": { "line": 6 },
+      "end": { "line": 19 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "id、创建/结束时间、trace 模式、artifact 模式、光标层配置；GC 和恢复都靠这些字段判断会话状态。" }] } }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/session/interaction_lease.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "再跳到 interaction_lease.rs，看并发怎么被串行化。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/session/interaction_lease.rs",
+      "start": { "line": 9 },
+      "end": { "line": 17 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "InteractionLease 持有进程守卫、文件锁和 deadline；拿不到租约就等待或失败，不会两个动作同时操作真实输入。" }] } }
+    },
+    { "type": "CLEAR_REVEAL" }
+  ]
+}

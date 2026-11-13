@@ -1,0 +1,31 @@
+{
+  "step_id": "visual_debug",
+  "title": "可视调试：把一次观察画出来",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/src/visual_debug/mod.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "trace 是事件流；可视调试是把一次观察画成可检查的 HTML。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/visual_debug/mod.rs",
+      "start": { "line": 1 },
+      "end": { "line": 24 },
+      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "capture 负责截图与节点数据，render 生成页面，options 控制边界、过滤和输出路径；它只用于 snapshot 或 click 的调试。" }] } }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_artifacts.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "trace 里的 artifact 目录和它是什么关系？" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/trace/trace_artifacts.rs",
+      "start": { "line": 46 },
+      "end": { "line": 62 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "trace 会话把 refmap 和截图分别放在 refmaps/ 与 screens/；可视调试生成的是独立 HTML，把同一批证据按人可读的方式排在一起。" }] } }
+    },
+    { "type": "CLEAR_REVEAL" }
+  ]
+}

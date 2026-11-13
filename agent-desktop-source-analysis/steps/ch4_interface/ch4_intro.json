@@ -1,0 +1,197 @@
+{
+  "step_id": "ch4_intro",
+  "title": "本章地图：三种形态，一个内核",
+  "actions": [
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "INTRO.md",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 4900,
+              "caption": "第 4 章，<c.aqua>对外接口：CLI、C ABI 与 MCP</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 13
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8500,
+              "caption": "这一章讲 core 怎么被外面调用：CLI、C ABI、MCP。三者共享同一套命令和同一个 JSON envelope。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 17
+      },
+      "end": {
+        "line": 25
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8500,
+              "caption": "CLI 给人调试和脚本用；C ABI 让其他语言在进程内调用；MCP 让 agent 通过 tool 调用，但最终仍然落到 CLI 命令上。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 29
+      },
+      "end": {
+        "line": 37
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8500,
+              "caption": "CLI 主线很短：处理平台子进程入口、构建命令树、解析参数、执行、输出 envelope 并决定退出码。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 41
+      },
+      "end": {
+        "line": 48
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9500,
+              "caption": "C ABI 把 adapter 暴露成 C 函数：ad_init 校验 ABI，create/destroy 管理生命周期，失败写线程本地 last-error，panic 不跨边界。",
+              "speech_edits": [
+                {
+                  "i": 33,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 52
+      },
+      "end": {
+        "line": 57
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9000,
+              "caption": "MCP 是 stdio 上的 JSON-RPC：每个叶子命令一个同名 tool，参数换算成 CLI 参数，全局标志启动时固定，支持取消。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 61
+      },
+      "end": {
+        "line": 65
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7500,
+              "caption": "三节：4.1 CLI、4.2 C ABI、4.3 MCP；先看传输，再看边界规则。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 69
+      },
+      "end": {
+        "line": 71
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 7000,
+              "caption": "读法：先看 CLI 主线，再看 FFI 的版本与错误模型，最后看 MCP 协议层。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 77
+      },
+      "end": {
+        "line": 80
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8000,
+              "caption": "读完应能说清 CLI 路径、ABI 校验、MCP 落点，并判断问题属于传输层还是命令层。",
+              "speech_edits": [
+                {
+                  "i": 18,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

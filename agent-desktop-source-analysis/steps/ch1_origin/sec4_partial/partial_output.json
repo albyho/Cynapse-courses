@@ -1,0 +1,166 @@
+{
+  "step_id": "partial_output",
+  "title": "出口：返回值怎么表示没看全",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 4276,
+              "caption": "先看一次观察的“出口”：调用方最终拿到的 JSON。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 135
+      },
+      "end": {
+        "line": 141
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 5000,
+              "duration_ms": 7145,
+              "caption": "返回值里有 <c.aqua>complete</c.aqua>、ref_count、snapshot_id：调用方第一眼就能判断这次观察可不可信。",
+              "speech_edits": [
+                {
+                  "i": 37,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 145
+      },
+      "end": {
+        "line": 151
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 9860,
+              "caption": "没看全时补两个字段：truncated 告诉调用方结果被截断，nodes_observed 说明看到了多少；<c.aqua>identity_unproven</c.aqua> 只给布尔标记。",
+              "speech_edits": [
+                {
+                  "i": 22,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 23000,
+              "duration_ms": 5259,
+              "caption": "现在跳到源头：这些字段不是命令临时拼的，来自 SnapshotResult。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
+      "start": {
+        "line": 15
+      },
+      "end": {
+        "line": 25
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 29000,
+              "duration_ms": 9330,
+              "caption": "complete、nodes_observed、<c.aqua>identity_unproven</c.aqua> 在结构体里就是分开的字段——部分观察从源头就是一种正式结果，不是异常。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "../../resources/agent-desktop/docs/json-output.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 39000,
+              "duration_ms": 3198,
+              "caption": "接着看 <c.aqua>JSON output contract</c.aqua>，输出契约本身。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/docs/json-output.md",
+      "start": {
+        "line": 43
+      },
+      "end": {
+        "line": 53
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 10623,
+              "caption": "同样的规则也写在对外契约里：从 2.2 起，预算耗尽返回 ok:true、complete:false，并带 truncated 和 <c.aqua>nodes_observed</c.aqua>；消费方必须读 complete。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

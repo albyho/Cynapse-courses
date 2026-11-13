@@ -12,4 +12,13 @@ The adapted content is distributed under the MIT OR Apache-2.0 license.
 Cynapse-specific additions and course assembly are Copyright (c) 2026
 Cynapse contributors.
 
-See LICENSE-MIT and LICENSE-APACHE for the full license texts.
+The agent-desktop course references the official agent-desktop repository as a
+pinned git submodule:
+
+    https://github.com/vercel-labs/agent-desktop
+
+That upstream source is distributed under the Apache-2.0 license; see its
+repository for the full text.
+
+See LICENSE-MIT and LICENSE-APACHE for the licenses for this repository's
+course content.

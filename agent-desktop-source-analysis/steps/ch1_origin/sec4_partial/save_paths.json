@@ -1,0 +1,129 @@
+{
+  "step_id": "save_paths",
+  "title": "保存：部分快照怎么落盘",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 93000,
+              "duration_ms": 4435,
+              "caption": "这一节回答：已经读到一半的结果，怎么保存才不坏事。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
+      "start": {
+        "line": 28
+      },
+      "end": {
+        "line": 34
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 98000,
+              "duration_ms": 5589,
+              "caption": "<c.aqua>save_refmap</c.aqua> 只做一个判断：complete 走普通保存，不完整走 detached 保存。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/refs_store.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 104000,
+              "duration_ms": 5343,
+              "caption": "现在跳到 <c.aqua>ref</c.aqua>s_store.rs。先看两条路共同做什么，再看它们的差别。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/refs_store.rs",
+      "start": {
+        "line": 58
+      },
+      "end": {
+        "line": 64
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 110000,
+              "duration_ms": 7709,
+              "caption": "共同动作：生成新的 snapshot id、写入<c.aqua>快照</c.aqua>、更新 latest、清理旧快照。两种保存都不是“只写不认”。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/refs_store.rs",
+      "start": {
+        "line": 46
+      },
+      "end": {
+        "line": 48
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 118000,
+              "duration_ms": 4258,
+              "caption": "普通路径直接拿写锁，锁的 deadline 继承当前命令。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/refs_store.rs",
+      "start": {
+        "line": 50
+      },
+      "end": {
+        "line": 56
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec4_partial",
+          "clips": [
+            {
+              "offset_ms": 123000,
+              "duration_ms": 8281,
+              "caption": "<c.aqua>detached</c.aqua> 的差别只在锁：写锁使用独立 deadline，所以命令已经超时，恢复路径仍然能把部分快照落盘。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

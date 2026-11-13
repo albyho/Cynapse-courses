@@ -1,0 +1,263 @@
+{
+  "step_id": "surfaces_skeleton",
+  "title": "表面与两遍观察：菜单、弹窗与骨架",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_surface.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5919,
+              "caption": "真实桌面不只有主窗口：菜单、弹窗、sheet、alert 都可能不在同一棵树里。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_surface.rs",
+      "start": {
+        "line": 4
+      },
+      "end": {
+        "line": 32
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 11207,
+              "caption": "SnapshotSurface 把这些层分开：window、application、menu、sheet、alert、popover、focused，以及各平台的 shell 区域。观察时选错 surface，就会得到“元素不存在”。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/list_surfaces.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 18000,
+              "duration_ms": 5241,
+              "caption": "所以有 list-surfaces：先问应用暴露了哪些层，再决定观察哪一层。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/list_surfaces.rs",
+      "start": {
+        "line": 8
+      },
+      "end": {
+        "line": 15
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 24000,
+              "duration_ms": 6403,
+              "caption": "list_surfaces 解析应用、拿进程身份，再让 adapter 枚举 surface；返回 pid 和 surfaces 列表。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 3821,
+              "caption": "再说“两遍观察”：dense 应用不要一上来读全树。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 34
+      },
+      "end": {
+        "line": 51
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 35000,
+              "duration_ms": 7844,
+              "caption": "skeleton 生效时深度被压到 3 层：先拿一张浅骨架，看清结构，再按 ref 下钻到关心的区域。",
+              "speech_edits": [
+                {
+                  "i": 43,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 5076,
+              "caption": "下钻仍然遵守第 1 章的规则：替换子树引用，必须完整。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 42
+      },
+      "end": {
+        "line": 57
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 49000,
+              "duration_ms": 8693,
+              "caption": "所以两遍观察是：skeleton 看结构 → 按 ref 下钻 → 变化后重新下钻；菜单和弹窗则换 surface 单独观察。",
+              "speech_edits": [
+                {
+                  "i": 30,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                },
+                {
+                  "i": 40,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/open_system_surface.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 58000,
+              "duration_ms": 7214,
+              "caption": "有些 shell 区域默认不出现，需要先打开：开始菜单、Dock、通知中心。这就是 open-system-surface。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/open_system_surface.rs",
+      "start": {
+        "line": 8
+      },
+      "end": {
+        "line": 42
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 66000,
+              "duration_ms": 12534,
+              "caption": "它先拿交互租约，再按当前策略打开 surface，并返回实际承载它的窗口身份；打开依赖运行中的构建暴露了什么，而不是 supported_surfaces 的静态列表。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/find.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 79000,
+              "duration_ms": 4790,
+              "caption": "最后看搜索的作用域：find 不是跨所有 surface 的全局搜索。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/find.rs",
+      "start": {
+        "line": 35
+      },
+      "end": {
+        "line": 53
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec6_surfaces",
+          "clips": [
+            {
+              "offset_ms": 84000,
+              "duration_ms": 10894,
+              "caption": "FindArgs 明确带 surface 和 root；root 与 surface 互斥，并且先检查该 surface 是否受支持。搜索只在选定的这一层里进行，跨层要先换 surface。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

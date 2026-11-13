@@ -1,0 +1,317 @@
+{
+  "step_id": "observe_command",
+  "title": "观察入口：snapshot 命令",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 4697,
+              "caption": "先从对外的 snapshot 命令读起。snapshot 是观察的<c.aqua>唯一入口</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 12
+      },
+      "end": {
+        "line": 17
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 5000,
+              "duration_ms": 9288,
+              "caption": "前五个字段：app、window_id 选目标；max_depth 控制深度；include_bounds 决定是否带边界；interactive_only 只保留可交互节点。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 18
+      },
+      "end": {
+        "line": 21
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 15000,
+              "duration_ms": 7111,
+              "caption": "后四个：compact 压缩输出；surface 选界面层；skeleton 只取骨架；root_ref 从已有引用<c.aqua>下钻</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 59,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 22
+      },
+      "end": {
+        "line": 25
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 23000,
+              "duration_ms": 5963,
+              "caption": "timeout_ms 的注释说明它是观察截止时间：冷启动 Chromium 可能需要更久。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 26
+      },
+      "end": {
+        "line": 31
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 29000,
+              "duration_ms": 6948,
+              "caption": "timeout_ms 本身，以及 <c.aqua>force_electron_a11y</c.aqua>：调用方显式要求打开 Chromium 的无障碍树。",
+              "speech_edits": [
+                {
+                  "i": 37,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 34
+      },
+      "end": {
+        "line": 40
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 36000,
+              "duration_ms": 4543,
+              "caption": "tree_options 先处理 skeleton：生效时把深度<c.aqua>硬性压到 3 层</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 42
+      },
+      "end": {
+        "line": 46
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 41000,
+              "duration_ms": 4042,
+              "caption": "TreeOptions 的前四项：深度、边界、可交互过滤、压缩。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 47
+      },
+      "end": {
+        "line": 50
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 46000,
+              "duration_ms": 3736,
+              "caption": "后三项：surface、skeleton、force_renderer_accessibility。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 65
+      },
+      "end": {
+        "line": 74
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 50000,
+              "duration_ms": 7460,
+              "caption": "执行前先校验 root_<c.aqua>ref</c.aqua>：不能和 wait 选择器同时用，不能和 surface 同时用，格式必须合法。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 76
+      },
+      "end": {
+        "line": 78
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 58000,
+              "duration_ms": 2625,
+              "caption": "再让 adapter 确认它支持这个 surface。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 80
+      },
+      "end": {
+        "line": 89
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 61000,
+              "duration_ms": 3892,
+              "caption": "带 root_ref：走 <c.aqua>snapshot_ref</c.aqua> 下钻，并把 timeout 传进去。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 91
+      },
+      "end": {
+        "line": 104
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 65000,
+              "duration_ms": 3903,
+              "caption": "带 wait 选择器：走 wait_selector，等目标出现或消失。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
+      "start": {
+        "line": 106
+      },
+      "end": {
+        "line": 118
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec2_observe",
+          "clips": [
+            {
+              "offset_ms": 69000,
+              "duration_ms": 4844,
+              "caption": "都不带：做一次全量<c.aqua>快照</c.aqua>，再由 format_result 变成对外的 JSON。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

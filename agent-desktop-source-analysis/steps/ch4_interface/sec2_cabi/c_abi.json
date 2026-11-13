@@ -1,0 +1,138 @@
+{
+  "step_id": "c_abi",
+  "title": "C ABI：把同一套能力交给别的语言",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 6000,
+              "caption": "C ABI 不是再写一套命令，而是把 adapter 暴露成 C 函数。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 15
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8500,
+              "caption": "文档先说明受众：Python、Swift、Go、Node、C++。线程规则也写在这里：adapter 可跨线程，但原生元素句柄必须在使用它的线程释放。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
+      "start": {
+        "line": 16
+      },
+      "end": {
+        "line": 33
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9500,
+              "caption": "构建必须用 release-ffi：cdylib 需要 panic=unwind，才能让 trap_panic 接住 panic；错误模型是线程本地 last-error，像 errno 一样只在下一次失败时轮换。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "跳到 abi_version.rs，看版本校验。",
+              "speech_edits": [
+                {
+                  "i": 21,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
+      "start": {
+        "line": 21
+      },
+      "end": {
+        "line": 51
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9000,
+              "caption": "ad_abi_version 返回打包的主版本；ad_init 对比调用方的期望值，不一致就返回 INVALID_ARGS 并写 last-error，提醒不要再调用其他函数。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "再看一个具体导出：创建 adapter。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
+      "start": {
+        "line": 158
+      },
+      "end": {
+        "line": 168
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8000,
+              "caption": "ad_adapter_create 返回裸指针，所有权归调用方，必须用 ad_adapter_destroy 释放；panic 被边界接住，转成 last-error。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

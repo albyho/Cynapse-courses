@@ -1,0 +1,38 @@
+{
+  "step_id": "windows_end_to_end",
+  "title": "Windows：一个真实后端怎么实现",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/windows/src/lib.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "现在看一个真实后端。先看 Windows crate 的模块划分。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/windows/src/lib.rs",
+      "start": { "line": 1 },
+      "end": { "line": 9 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "actions、adapter、input、notifications、system、tree：和契约里的能力一一对应，adapter 是总装配点。" }] } }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/windows/src/adapter.rs",
+      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "跳到 adapter.rs，看它如何实现 ObservationOps。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/windows/src/adapter.rs",
+      "start": { "line": 58 },
+      "end": { "line": 217 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "impl ObservationOps 从 observe_tree 开始：Windows 后端在这里读 UI Automation 树；后面的 get_tree、hit_test 都是同一套能力。" }] } }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/windows/src/adapter.rs",
+      "start": { "line": 218 },
+      "end": { "line": 235 },
+      "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "再往下是 impl ActionOps：execute_action 真正执行语义动作，scroll_into_view 负责把元素滚进视口。" }] } }
+    },
+    { "type": "CLEAR_REVEAL" }
+  ]
+}

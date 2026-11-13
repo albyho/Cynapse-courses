@@ -1,0 +1,387 @@
+{
+  "step_id": "observe_drilldown",
+  "title": "下钻：在已有快照里换一个子树",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 3441,
+              "caption": "带 root_ref 的观察走另一条路径：<c.aqua>下钻</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 22,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 42
+      },
+      "end": {
+        "line": 49
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 4000,
+              "duration_ms": 6088,
+              "caption": "注释先定规则：下钻要观察<c.aqua>完整棵子树</c.aqua>，否则完全不改已存的引用表。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 50
+      },
+      "end": {
+        "line": 57
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 11000,
+              "duration_ms": 6595,
+              "caption": "部分结果只允许全量快照；<c.aqua>下钻</c.aqua>替换引用，所以必须完整，失败也不破坏旧引用。",
+              "speech_edits": [
+                {
+                  "i": 13,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 65
+      },
+      "end": {
+        "line": 73
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 18000,
+              "duration_ms": 7664,
+              "caption": "实现从<c.aqua>引用</c.aqua>开始：把 @snapshot:eN 拆开，加载这次快照的编号表，再找到那个元素的身份档案。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 75
+      },
+      "end": {
+        "line": 86
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 6085,
+              "caption": "然后按 deadline 做一次<c.aqua>下钻</c.aqua>捕获；deadline 就是这次观察最多能花多久。",
+              "speech_edits": [
+                {
+                  "i": 17,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 87
+      },
+      "end": {
+        "line": 102
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 33000,
+              "duration_ms": 4651,
+              "caption": "配置的 options 与 source：沿用目标条目的平台与窗口来源。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 103
+      },
+      "end": {
+        "line": 108
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 38000,
+              "duration_ms": 7679,
+              "caption": "scope 告诉分配器：这棵子树挂在哪个<c.aqua>引用</c.aqua>下、在窗口树里的什么位置；capture 指向新的证明。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 110
+      },
+      "end": {
+        "line": 120
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 46000,
+              "duration_ms": 4310,
+              "caption": "update_existing_snapshot 先删旧子树<c.aqua>引用</c.aqua>，再重新分配。",
+              "speech_edits": [
+                {
+                  "i": 34,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 121
+      },
+      "end": {
+        "line": 134
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 51000,
+              "duration_ms": 4485,
+              "caption": "复制 refmap、把树里的<c.aqua>引用</c.aqua>限定到当前快照、记录 trace。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 136
+      },
+      "end": {
+        "line": 144
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 56000,
+              "duration_ms": 5167,
+              "caption": "返回 SnapshotResult，complete 固定为 true：下钻没有<c.aqua>部分成功</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 29,
+                  "s": "为",
+                  "p": "WEI4"
+                },
+                {
+                  "i": 37,
+                  "s": "钻",
+                  "p": "ZUAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 161
+      },
+      "end": {
+        "line": 167
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 62000,
+              "duration_ms": 5916,
+              "caption": "<c.aqua>drill_capture</c.aqua> 先校验观察请求：深度、边界等参数不合法就直接失败。",
+              "speech_edits": [
+                {
+                  "i": 15,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 168
+      },
+      "end": {
+        "line": 174
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 68000,
+              "duration_ms": 6337,
+              "caption": "第一选择是 token 路径：元素自带稳定 token 时，只读它的子树，证明成本最低。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 175
+      },
+      "end": {
+        "line": 180
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 75000,
+              "duration_ms": 7174,
+              "caption": "没有 token 就在整窗观察里定位根；观察不完整就直接 <c.aqua>drill_incomplete</c.aqua>，不返回部分结果。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 181
+      },
+      "end": {
+        "line": 190
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 83000,
+              "duration_ms": 4259,
+              "caption": "找到根在观察里的路径，记录路径前缀和节点数。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
+      "start": {
+        "line": 191
+      },
+      "end": {
+        "line": 198
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec5_expiry",
+          "clips": [
+            {
+              "offset_ms": 88000,
+              "duration_ms": 2033,
+              "caption": "投影子树，返回 DrillCapture。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

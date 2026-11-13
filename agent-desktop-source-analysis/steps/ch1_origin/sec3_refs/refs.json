@@ -1,0 +1,304 @@
+{
+  "step_id": "refs",
+  "title": "引用：分配、限定与失效",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/mod.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 4586,
+              "caption": "观察产出的核心是<c.aqua>引用</c.aqua>。refs 模块负责分配、查找和删除。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/mod.rs",
+      "start": {
+        "line": 41
+      },
+      "end": {
+        "line": 44
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 5000,
+              "duration_ms": 8881,
+              "caption": "<c.aqua>RefMap</c.aqua> 就是一张查找表：一边是 ref 字符串，另一边是元素的身份档案；外加一个计数器，用来发下一个编号。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/mod.rs",
+      "start": {
+        "line": 46
+      },
+      "end": {
+        "line": 52
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 14000,
+              "duration_ms": 2303,
+              "caption": "new 初始化空表和 0 计数器。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/mod.rs",
+      "start": {
+        "line": 54
+      },
+      "end": {
+        "line": 57
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 17000,
+              "duration_ms": 8836,
+              "caption": "<c.aqua>try_allocate</c.aqua> 先检查这份身份档案是否完整（进程、角色、稳定名称），再申请编号；检查失败不会浪费一个编号。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/refs_validate.rs"
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/refs_validate.rs",
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 19
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 9296,
+              "caption": "跳到 <c.aqua>ref</c.aqua>s_validate.rs。校验不是空壳：pid 必须为正、进程实例不能为空、角色必须合法，否则条目直接无效。",
+              "speech_edits": [
+                {
+                  "i": 20,
+                  "s": "校",
+                  "p": "JIAO4"
+                },
+                {
+                  "i": 33,
+                  "s": "为",
+                  "p": "WEI4"
+                },
+                {
+                  "i": 42,
+                  "s": "为",
+                  "p": "WEI4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/mod.rs",
+      "start": {
+        "line": 73
+      },
+      "end": {
+        "line": 81
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 36000,
+              "duration_ms": 6813,
+              "caption": "分配就是计数器加一，拼出 @eN，写进表里；计数器溢出会直接失败，不会从头回绕。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/mod.rs",
+      "start": {
+        "line": 107
+      },
+      "end": {
+        "line": 112
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 5595,
+              "caption": "<c.aqua>remove_by_root_ref</c.aqua> 的注释：删除被替换的子树和它挂出去的引用，根保留。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/mod.rs",
+      "start": {
+        "line": 113
+      },
+      "end": {
+        "line": 124
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 49000,
+              "duration_ms": 4242,
+              "caption": "实现从根条目开始，遍历<c.aqua>引用</c.aqua>表，标记要删的条目。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/ref_token.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 54000,
+              "duration_ms": 5223,
+              "caption": "本地编号离开快照时必须带上作用域，这就是 <c.aqua>ref_token</c.aqua> 的职责。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/ref_token.rs",
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 8
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 60000,
+              "duration_ms": 2383,
+              "caption": "<c.aqua>qualify_ref_id</c.aqua> 把 @eN 变成 @snapshot:eN。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/ref_token.rs",
+      "start": {
+        "line": 10
+      },
+      "end": {
+        "line": 17
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 3468,
+              "caption": "qualify_tree_refs 递归改写整棵树里的<c.aqua>引用</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/ref_token.rs",
+      "start": {
+        "line": 19
+      },
+      "end": {
+        "line": 26
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 67000,
+              "duration_ms": 4531,
+              "caption": "resolve_ref_target 先去掉 @，再按 :e 拆成<c.aqua>快照</c.aqua> id 和元素编号。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/crates/core/src/refs/ref_token.rs",
+      "start": {
+        "line": 27
+      },
+      "end": {
+        "line": 32
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_origin_sec3_refs",
+          "clips": [
+            {
+              "offset_ms": 72000,
+              "duration_ms": 4703,
+              "caption": "<c.aqua>快照</c.aqua> id 必须合法，元素编号必须是本地 @eN，否则 invalid_ref。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}

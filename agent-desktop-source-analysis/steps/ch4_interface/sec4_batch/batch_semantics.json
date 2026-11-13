@@ -1,0 +1,152 @@
+{
+  "step_id": "batch_semantics",
+  "title": "Batch 完整语义：先校验、非事务、逐条读",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/src/batch/preparation.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 6000,
+              "caption": "batch 的第一原则是：所有条目先校验，再运行第一条。",
+              "speech_edits": [
+                {
+                  "i": 18,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/batch/preparation.rs",
+      "start": {
+        "line": 9
+      },
+      "end": {
+        "line": 41
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9500,
+              "caption": "上限是 1MB / 64 条；prepare 逐条检查 JSON、命令名、参数、ref 语法和权限。任何一条失败就整批拒绝，nothing runs；但校验不接触真实桌面。",
+              "speech_edits": [
+                {
+                  "i": 76,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/src/batch/execution.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "校验通过后才进入执行循环，超时从整批开始算。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "校",
+                  "p": "JIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/batch/execution.rs",
+      "start": {
+        "line": 15
+      },
+      "end": {
+        "line": 31
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 9000,
+              "caption": "Deadline 按 --timeout-ms 建立（默认 60s），prepare 也在这个预算里；然后逐条 dispatch，各条目共享同一个上下文。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/batch/execution.rs",
+      "start": {
+        "line": 97
+      },
+      "end": {
+        "line": 129
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 10000,
+              "caption": "默认某条失败后继续跑；--stop-on-error 才在第一条失败处停下。超时把下一条标成 not_started/deadline；输出超限也会停。batch 不是事务，已经执行的条目不会回滚。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "../../resources/agent-desktop/src/batch/result_entry.rs",
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 5500,
+              "caption": "结果逐条返回，所以调用方必须读每一条的 ok。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "../../resources/agent-desktop/src/batch/result_entry.rs",
+      "start": {
+        "line": 51
+      },
+      "end": {
+        "line": 91
+      },
+      "narration": {
+        "after": {
+          "clips": [
+            {
+              "duration_ms": 8500,
+              "caption": "每条保留自己的 error 与 disposition；batch 自己不重试。最后汇总 completed / not_started / stopped，把失败位置说清楚。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CLEAR_REVEAL"
+    }
+  ]
+}
