@@ -4,7 +4,7 @@ English | [简体中文](README.zh-CN.md)
 
 Clean, runtime-only [Cynapse](https://github.com/albyho/Cynapse-release) Course
 Packages. Authoring notes, tests, source maps, and local runtime state are not
-published here. External course resources are pinned as git submodules.
+published here. Course resources may be normal files or pinned git submodules.
 
 ## Courses
 
@@ -74,7 +74,7 @@ git -C agent-desktop-source-analysis/resources/agent-desktop rev-parse HEAD
 ├── steps/             Step JSON artifacts
 ├── seeds/             Unit starting files
 ├── assets/narration/  Shared Ogg narration tracks
-├── resources/         Optional external resources (pinned submodules)
+├── resources/         Optional resources (files or pinned submodules)
 └── workspace/         Runtime Workspace (empty in this repository)
 ```
 
@@ -87,9 +87,10 @@ python courses/publish_course.py courses/<course> D:\dev\alby\Cynapse-courses
 ```
 
 The helper copies only runtime content and skips `authoring/`, `tests/`,
-generated narration reports, caches, and `workspace/` state. Git repositories
-under `resources/` are left out; the helper prints their remote URL and pinned
-commit so they can be added as submodules.
+generated narration reports, caches, and `workspace/` state. Ordinary
+`resources/` files are copied normally; Git repositories under `resources/` are
+left out, and the helper prints their remote URL and pinned commit so they can
+be added as submodules.
 
 ## Source and license
 

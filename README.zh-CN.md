@@ -4,7 +4,7 @@
 
 面向 [Cynapse](https://github.com/albyho/Cynapse-release) 的干净、仅运行时
 Course Package。作者工具、测试、Source Map 和本地运行状态不会发布到这里；
-外部课程资源以固定提交的 git submodule 引用。
+课程资源可以是普通文件，也可以是固定提交的 git submodule。
 
 ## 课程
 
@@ -73,7 +73,7 @@ git -C agent-desktop-source-analysis/resources/agent-desktop rev-parse HEAD
 ├── steps/             Step JSON
 ├── seeds/             Unit 初始文件
 ├── assets/narration/  共享 Ogg 旁白音轨
-├── resources/         可选外部资源（固定为 submodule）
+├── resources/         可选资源（普通文件或固定 submodule）
 └── workspace/         运行时 Workspace（本仓库中为空）
 ```
 
@@ -86,8 +86,8 @@ python courses/publish_course.py courses/<课程> D:\dev\alby\Cynapse-courses
 ```
 
 脚本只复制运行时内容，跳过 `authoring/`、`tests/`、生成的字幕报告、缓存和
-`workspace/` 运行状态。`resources/` 下的 Git 仓库不会被复制，脚本会打印其远程
-地址和固定提交，供后续以 submodule 方式引用。
+`workspace/` 运行状态。`resources/` 下的普通文件会正常复制；Git 仓库不会被复制，
+脚本会打印其远程地址和固定提交，供后续以 submodule 方式引用。
 
 ## 来源与许可
 
