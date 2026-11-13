@@ -1,5 +1,7 @@
 # Cynapse Courses
 
+English | [简体中文](README.zh-CN.md)
+
 Clean, runtime-only [Cynapse](https://github.com/albyho/Cynapse-release) Course
 Packages. Each directory is self-contained and can be opened directly by the
 Cynapse Client; authoring notes, tests, source maps, and local runtime state are
