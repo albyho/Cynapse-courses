@@ -1,0 +1,35 @@
+{
+  "step_id": "unsafe",
+  "title": "简介: 不安全操作",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 32
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_chapters",
+          "clips": [
+            {
+              "offset_ms": 447000,
+              "duration_ms": 2081,
+              "caption": "第 22 章《不安全操作》。"
+            },
+            {
+              "offset_ms": 450000,
+              "duration_ms": 7776,
+              "caption": "unsafe 不是“危险模式”开关，而是明确告诉编译器：某段代码由我们承担额外的<c.aqua>不变量证明</c.aqua>。"
+            },
+            {
+              "offset_ms": 458000,
+              "duration_ms": 9811,
+              "caption": "裸指针解引用、不安全函数、FFI 和汇编都可能出现在这里；阅读时先找清<c.aqua>必须满足的安全前提</c.aqua>，再判断收益是否值得。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

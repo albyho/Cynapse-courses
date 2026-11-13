@@ -1,0 +1,330 @@
+{
+  "step_id": "pex_fix",
+  "title": "修正错误并新增打印",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "print.rs"
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "print.rs",
+      "start": {
+        "line": 26
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 11000,
+              "duration_ms": 5473,
+              "caption": "第一个错误：println! 里用到了 {1}，却只提供了一个参数。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "println!",
+                  "p": "println 宏"
+                },
+                {
+                  "i": 20,
+                  "s": "{1}",
+                  "p": "大括号一"
+                },
+                {
+                  "i": 31,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            },
+            {
+              "offset_ms": 17000,
+              "duration_ms": 3170,
+              "caption": "把漏掉的第二个参数补在 \"Bond\" 后面。",
+              "speech_edits": [
+                {
+                  "i": 7,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "print.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "\"Bond\"",
+        "placement": "after"
+      },
+      "text": ", \"James\"",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 21000,
+              "duration_ms": 1520,
+              "caption": "补上 , \"James\"。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "print.rs",
+      "start": {
+        "line": 35
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 23000,
+              "duration_ms": 5589,
+              "caption": "第二个错误：Structure 没有实现 Display，不能用 {} 直接打印。",
+              "speech_edits": [
+                {
+                  "i": 33,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            },
+            {
+              "offset_ms": 29000,
+              "duration_ms": 2982,
+              "caption": "按书上的做法，先把这行注释掉。",
+              "speech_edits": [
+                {
+                  "i": 10,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "print.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "println!(\"This struct",
+        "placement": "before"
+      },
+      "text": "// ",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 32000,
+              "duration_ms": 1681,
+              "caption": "在行首输入 // 。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 6,
+                  "s": "//",
+                  "p": "双斜杠"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "print.rs",
+      "start": {
+        "line": 36
+      },
+      "end": {
+        "line": 37
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 34000,
+              "duration_ms": 4940,
+              "caption": "练习还要求再写一行打印 Pi 的近似值，保留三位小数。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 12,
+                  "s": "Pi",
+                  "p": "PAI4"
+                }
+              ]
+            },
+            {
+              "offset_ms": 39000,
+              "duration_ms": 2010,
+              "caption": "把这行加到 main 的最后。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "print.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "// 改正 ^ 注释掉此行。",
+        "placement": "after"
+      },
+      "text": "\n\n    let pi = 3.141592;\n    println!(\"Pi is roughly {:.3}\", pi);\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 42000,
+              "duration_ms": 2779,
+              "caption": "输入 let 和新的一行 println!。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 13,
+                  "s": "println!",
+                  "p": "println 宏"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc print.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 45000,
+              "duration_ms": 1650,
+              "caption": "重新编译。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 47000,
+              "duration_ms": 1646,
+              "caption": "这次编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./print",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "My name is Bond, James Bond",
+        "Pi is roughly 3.142"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 49000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_exercise",
+          "clips": [
+            {
+              "offset_ms": 50000,
+              "duration_ms": 5145,
+              "caption": "程序依次输出了格式化结果，以及 Pi is roughly 3.142。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "Pi",
+                  "p": "PAI4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 5000
+    }
+  ]
+}

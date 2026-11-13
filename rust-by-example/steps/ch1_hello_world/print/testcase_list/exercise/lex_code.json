@@ -1,0 +1,171 @@
+{
+  "step_id": "lex_code",
+  "title": "打印元素下标",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "list_demo.rs"
+    },
+    {
+      "type": "DELETE_TEXT",
+      "path": "list_demo.rs",
+      "effect": "instant",
+      "target": {
+        "start": {
+          "line": 18
+        },
+        "end": {
+          "line": 18
+        },
+        "expected_text": "            write!(f, \"{}\", v)?;"
+      },
+      "target_hold_ms": 250,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_exercise",
+          "clips": [
+            {
+              "offset_ms": 22000,
+              "duration_ms": 5878,
+              "caption": "循环里已经有 count 这个下标，只要在打印元素之前先把下标打出来。"
+            },
+            {
+              "offset_ms": 28000,
+              "duration_ms": 5671,
+              "caption": "原来这一行只打印值，把它改成两行：先打印下标，再打印值。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 15,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "list_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "position",
+        "line": 18,
+        "column": 0
+      },
+      "text": "            write!(f, \"{}: \", count)?;\n            write!(f, \"{}\", v)?;",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_exercise",
+          "clips": [
+            {
+              "offset_ms": 34000,
+              "duration_ms": 2889,
+              "caption": "删掉旧语句，输入两行新语句。",
+              "speech_edits": [
+                {
+                  "i": 9,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc list_demo.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_exercise",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 514,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_exercise",
+          "clips": [
+            {
+              "offset_ms": 38000,
+              "duration_ms": 1249,
+              "caption": "编译成功。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./list_demo",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "[0: 1, 1: 2, 2: 3]"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_exercise",
+          "clips": [
+            {
+              "offset_ms": 40000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_exercise",
+          "clips": [
+            {
+              "offset_ms": 41000,
+              "duration_ms": 5265,
+              "caption": "输出变成 [0: 1, 1: 2, 2: 3]。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "[0: 1, 1: 2, 2: 3]",
+                  "p": "方括号 0 冒号 1 逗号 1 冒号 2 逗号 2 冒号 3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 4000
+    }
+  ]
+}

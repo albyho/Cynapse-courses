@@ -1,0 +1,750 @@
+{
+  "id": "rust_by_example_zh_cn",
+  "title": "通过例子学 Rust（中文版）",
+  "version": "0.20.15",
+  "workspace": "workspace",
+  "adapters": [
+    "vscode"
+  ],
+  "environment": [
+    {
+      "id": "rustc",
+      "command": "rustc --version",
+      "minimum_version": "1.85.0",
+      "install_hint": "安装或升级 Rust 1.85 或更高版本：https://rustup.rs/"
+    }
+  ],
+  "children": [
+    {
+      "id": "introduction",
+      "title": "简介",
+      "environment": [],
+      "steps": [
+        {
+          "step_file": "steps/introduction/rust.json"
+        },
+        {
+          "step_file": "steps/introduction/book.json"
+        },
+        {
+          "step_file": "steps/introduction/hello_world.json"
+        },
+        {
+          "step_file": "steps/introduction/primitives.json"
+        },
+        {
+          "step_file": "steps/introduction/custom_types.json"
+        },
+        {
+          "step_file": "steps/introduction/variable_bindings.json"
+        },
+        {
+          "step_file": "steps/introduction/type_system.json"
+        },
+        {
+          "step_file": "steps/introduction/conversions.json"
+        },
+        {
+          "step_file": "steps/introduction/expressions.json"
+        },
+        {
+          "step_file": "steps/introduction/flow_control.json"
+        },
+        {
+          "step_file": "steps/introduction/functions.json"
+        },
+        {
+          "step_file": "steps/introduction/modules.json"
+        },
+        {
+          "step_file": "steps/introduction/crates.json"
+        },
+        {
+          "step_file": "steps/introduction/cargo.json"
+        },
+        {
+          "step_file": "steps/introduction/attributes.json"
+        },
+        {
+          "step_file": "steps/introduction/generics.json"
+        },
+        {
+          "step_file": "steps/introduction/scopes.json"
+        },
+        {
+          "step_file": "steps/introduction/traits.json"
+        },
+        {
+          "step_file": "steps/introduction/macros.json"
+        },
+        {
+          "step_file": "steps/introduction/error_handling.json"
+        },
+        {
+          "step_file": "steps/introduction/std_types.json"
+        },
+        {
+          "step_file": "steps/introduction/std_misc.json"
+        },
+        {
+          "step_file": "steps/introduction/testing.json"
+        },
+        {
+          "step_file": "steps/introduction/unsafe.json"
+        },
+        {
+          "step_file": "steps/introduction/compatibility.json"
+        },
+        {
+          "step_file": "steps/introduction/meta.json"
+        },
+        {
+          "step_file": "steps/introduction/departure.json"
+        }
+      ],
+      "assets": [
+        {
+          "id": "narration_introduction_rust",
+          "path": "assets/narration/introduction/rust.ogg"
+        },
+        {
+          "id": "narration_introduction_book",
+          "path": "assets/narration/introduction/book.ogg"
+        },
+        {
+          "id": "narration_introduction_chapters",
+          "path": "assets/narration/introduction/chapters.ogg"
+        },
+        {
+          "id": "narration_introduction_departure",
+          "path": "assets/narration/introduction/departure.ogg"
+        }
+      ]
+    },
+    {
+      "id": "ch1_hello_world",
+      "title": "1 Hello World",
+      "assets": [
+        {
+          "id": "narration_ch1_hello_world",
+          "path": "assets/narration/ch1_hello_world/narration.ogg"
+        }
+      ],
+      "steps": [
+        {
+          "step_file": "steps/ch1_hello_world/hello_intro.json"
+        },
+        {
+          "step_file": "steps/ch1_hello_world/hello_code.json"
+        }
+      ],
+      "children": [
+        {
+          "id": "exercise",
+          "title": "动手试一试：再打印一行",
+          "assets": [
+            {
+              "id": "narration_ch1_hello_world_exercise",
+              "path": "assets/narration/ch1_hello_world/exercise/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch1_hello_world/exercise/ex_intro.json"
+            },
+            {
+              "step_file": "steps/ch1_hello_world/exercise/ex_code.json"
+            }
+          ]
+        },
+        {
+          "id": "comment",
+          "title": "1.1 注释",
+          "assets": [
+            {
+              "id": "narration_ch1_hello_world_comment",
+              "path": "assets/narration/ch1_hello_world/comment/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch1_hello_world/comment/comment_intro.json"
+            },
+            {
+              "step_file": "steps/ch1_hello_world/comment/comment_code.json"
+            }
+          ],
+          "children": [
+            {
+              "id": "exercise",
+              "title": "动手试一试：取消注释",
+              "assets": [
+                {
+                  "id": "narration_ch1_hello_world_comment_exercise",
+                  "path": "assets/narration/ch1_hello_world/comment/exercise/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch1_hello_world/comment/exercise/cex_intro.json"
+                },
+                {
+                  "step_file": "steps/ch1_hello_world/comment/exercise/cex_toggle.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "1.2 格式化输出",
+          "assets": [
+            {
+              "id": "narration_ch1_hello_world_print",
+              "path": "assets/narration/ch1_hello_world/print/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch1_hello_world/print/print_intro.json"
+            },
+            {
+              "step_file": "steps/ch1_hello_world/print/print_code.json"
+            }
+          ],
+          "children": [
+            {
+              "id": "exercise",
+              "title": "动手试一试：修正并扩展",
+              "assets": [
+                {
+                  "id": "narration_ch1_hello_world_print_exercise",
+                  "path": "assets/narration/ch1_hello_world/print/exercise/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch1_hello_world/print/exercise/pex_intro.json"
+                },
+                {
+                  "step_file": "steps/ch1_hello_world/print/exercise/pex_fix.json"
+                }
+              ]
+            },
+            {
+              "id": "print_debug",
+              "title": "1.2.1 调试（Debug）",
+              "assets": [
+                {
+                  "id": "narration_ch1_hello_world_print_print_debug",
+                  "path": "assets/narration/ch1_hello_world/print/print_debug/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch1_hello_world/print/print_debug/dbg_intro.json"
+                },
+                {
+                  "step_file": "steps/ch1_hello_world/print/print_debug/dbg_code.json"
+                }
+              ]
+            },
+            {
+              "id": "print_display",
+              "title": "1.2.2 显示（Display）",
+              "assets": [
+                {
+                  "id": "narration_ch1_hello_world_print_print_display",
+                  "path": "assets/narration/ch1_hello_world/print/print_display/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch1_hello_world/print/print_display/disp_intro.json"
+                },
+                {
+                  "step_file": "steps/ch1_hello_world/print/print_display/disp_code.json"
+                }
+              ],
+              "children": [
+                {
+                  "id": "exercise",
+                  "title": "动手试一试：复数",
+                  "assets": [
+                    {
+                      "id": "narration_ch1_hello_world_print_print_display_exercise",
+                      "path": "assets/narration/ch1_hello_world/print/print_display/exercise/narration.ogg"
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "step_file": "steps/ch1_hello_world/print/print_display/exercise/dex_intro.json"
+                    },
+                    {
+                      "step_file": "steps/ch1_hello_world/print/print_display/exercise/dex_code.json"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "testcase_list",
+              "title": "1.2.3 测试实例：List",
+              "assets": [
+                {
+                  "id": "narration_ch1_hello_world_print_testcase_list",
+                  "path": "assets/narration/ch1_hello_world/print/testcase_list/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch1_hello_world/print/testcase_list/list_intro.json"
+                },
+                {
+                  "step_file": "steps/ch1_hello_world/print/testcase_list/list_code.json"
+                }
+              ],
+              "children": [
+                {
+                  "id": "exercise",
+                  "title": "动手试一试：带下标",
+                  "assets": [
+                    {
+                      "id": "narration_ch1_hello_world_print_testcase_list_exercise",
+                      "path": "assets/narration/ch1_hello_world/print/testcase_list/exercise/narration.ogg"
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/lex_intro.json"
+                    },
+                    {
+                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/lex_baseline.json"
+                    },
+                    {
+                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/lex_code.json"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fmt",
+              "title": "1.2.4 格式化",
+              "assets": [
+                {
+                  "id": "narration_ch1_hello_world_print_fmt",
+                  "path": "assets/narration/ch1_hello_world/print/fmt/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch1_hello_world/print/fmt/fmt_intro.json"
+                },
+                {
+                  "step_file": "steps/ch1_hello_world/print/fmt/fmt_code.json"
+                }
+              ],
+              "children": [
+                {
+                  "id": "exercise",
+                  "title": "动手试一试：为 Color 实现 Display",
+                  "assets": [
+                    {
+                      "id": "narration_ch1_hello_world_print_fmt_exercise",
+                      "path": "assets/narration/ch1_hello_world/print/fmt/exercise/narration.ogg"
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "step_file": "steps/ch1_hello_world/print/fmt/exercise/fex_intro.json"
+                    },
+                    {
+                      "step_file": "steps/ch1_hello_world/print/fmt/exercise/fex_code.json"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch2_primitives",
+      "title": "2 原生类型",
+      "assets": [
+        {
+          "id": "narration_ch2_primitives",
+          "path": "assets/narration/ch2_primitives/narration.ogg"
+        }
+      ],
+      "steps": [
+        {
+          "step_file": "steps/ch2_primitives/primitives_intro.json"
+        },
+        {
+          "step_file": "steps/ch2_primitives/primitives_code.json"
+        }
+      ],
+      "children": [
+        {
+          "id": "literals",
+          "title": "2.1 字面量和运算符",
+          "assets": [
+            {
+              "id": "narration_ch2_primitives_literals",
+              "path": "assets/narration/ch2_primitives/literals/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch2_primitives/literals/literals_intro.json"
+            },
+            {
+              "step_file": "steps/ch2_primitives/literals/literals_code.json"
+            }
+          ]
+        },
+        {
+          "id": "tuples",
+          "title": "2.2 元组",
+          "assets": [
+            {
+              "id": "narration_ch2_primitives_tuples",
+              "path": "assets/narration/ch2_primitives/tuples/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch2_primitives/tuples/tuples_intro.json"
+            },
+            {
+              "step_file": "steps/ch2_primitives/tuples/tuples_code.json"
+            }
+          ],
+          "children": [
+            {
+              "id": "exercise",
+              "title": "动手试一试：为 Matrix 实现 Display 并转置",
+              "assets": [
+                {
+                  "id": "narration_ch2_primitives_tuples_exercise",
+                  "path": "assets/narration/ch2_primitives/tuples/exercise/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch2_primitives/tuples/exercise/tex_intro.json"
+                },
+                {
+                  "step_file": "steps/ch2_primitives/tuples/exercise/tex_display.json"
+                },
+                {
+                  "step_file": "steps/ch2_primitives/tuples/exercise/tex_transpose.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "array",
+          "title": "2.3 数组和切片",
+          "assets": [
+            {
+              "id": "narration_ch2_primitives_array",
+              "path": "assets/narration/ch2_primitives/array/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch2_primitives/array/array_intro.json"
+            },
+            {
+              "step_file": "steps/ch2_primitives/array/array_code.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch3_custom_types",
+      "title": "3 自定义类型",
+      "children": [
+        {
+          "id": "structs",
+          "title": "3.1 结构体",
+          "assets": [
+            {
+              "id": "narration_ch3_custom_types_structs",
+              "path": "assets/narration/ch3_custom_types/structs/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch3_custom_types/structs/structs_intro.json"
+            },
+            {
+              "step_file": "steps/ch3_custom_types/structs/structs_def.json"
+            },
+            {
+              "step_file": "steps/ch3_custom_types/structs/structs_use.json"
+            }
+          ],
+          "children": [
+            {
+              "id": "exercise",
+              "title": "动手试一试：面积与正方形",
+              "assets": [
+                {
+                  "id": "narration_ch3_custom_types_structs_exercise",
+                  "path": "assets/narration/ch3_custom_types/structs/exercise/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch3_custom_types/structs/exercise/sex_intro.json"
+                },
+                {
+                  "step_file": "steps/ch3_custom_types/structs/exercise/sex_area.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "enum",
+          "title": "3.2 枚举",
+          "assets": [
+            {
+              "id": "narration_ch3_custom_types_enum",
+              "path": "assets/narration/ch3_custom_types/enum/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch3_custom_types/enum/enum_intro.json"
+            },
+            {
+              "step_file": "steps/ch3_custom_types/enum/enum_code.json"
+            },
+            {
+              "step_file": "steps/ch3_custom_types/enum/enum_alias.json"
+            }
+          ],
+          "children": [
+            {
+              "id": "enum_use",
+              "title": "3.2.1 使用 use",
+              "assets": [
+                {
+                  "id": "narration_ch3_custom_types_enum_enum_use",
+                  "path": "assets/narration/ch3_custom_types/enum/enum_use/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch3_custom_types/enum/enum_use/enum_use_intro.json"
+                },
+                {
+                  "step_file": "steps/ch3_custom_types/enum/enum_use/enum_use_code.json"
+                }
+              ]
+            },
+            {
+              "id": "c_like",
+              "title": "3.2.2 C 风格用法",
+              "assets": [
+                {
+                  "id": "narration_ch3_custom_types_enum_c_like",
+                  "path": "assets/narration/ch3_custom_types/enum/c_like/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch3_custom_types/enum/c_like/c_like_intro.json"
+                },
+                {
+                  "step_file": "steps/ch3_custom_types/enum/c_like/c_like_code.json"
+                }
+              ]
+            },
+            {
+              "id": "testcase_linked_list",
+              "title": "3.2.3 测试实例：链表",
+              "assets": [
+                {
+                  "id": "narration_ch3_custom_types_enum_testcase_linked_list",
+                  "path": "assets/narration/ch3_custom_types/enum/testcase_linked_list/narration.ogg"
+                }
+              ],
+              "steps": [
+                {
+                  "step_file": "steps/ch3_custom_types/enum/testcase_linked_list/list_intro.json"
+                },
+                {
+                  "step_file": "steps/ch3_custom_types/enum/testcase_linked_list/list_code.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "constants",
+          "title": "3.3 常量",
+          "assets": [
+            {
+              "id": "narration_ch3_custom_types_constants",
+              "path": "assets/narration/ch3_custom_types/constants/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch3_custom_types/constants/consts_intro.json"
+            },
+            {
+              "step_file": "steps/ch3_custom_types/constants/consts_write.json"
+            },
+            {
+              "step_file": "steps/ch3_custom_types/constants/consts_error.json"
+            },
+            {
+              "step_file": "steps/ch3_custom_types/constants/consts_fix.json"
+            },
+            {
+              "step_file": "steps/ch3_custom_types/constants/consts_wrapup.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch4_variable_bindings",
+      "title": "4 变量绑定",
+      "assets": [
+        {
+          "id": "narration_ch4_variable_bindings",
+          "path": "assets/narration/ch4_variable_bindings/narration.ogg"
+        }
+      ],
+      "steps": [
+        {
+          "step_file": "steps/ch4_variable_bindings/bindings_intro.json"
+        },
+        {
+          "step_file": "steps/ch4_variable_bindings/bindings_code.json"
+        }
+      ],
+      "children": [
+        {
+          "id": "mut",
+          "title": "4.1 可变变量",
+          "assets": [
+            {
+              "id": "narration_ch4_variable_bindings_mut",
+              "path": "assets/narration/ch4_variable_bindings/mut/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch4_variable_bindings/mut/mut_intro.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/mut/mut_write.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/mut/mut_error.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/mut/mut_fix.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/mut/mut_wrapup.json"
+            }
+          ]
+        },
+        {
+          "id": "scope",
+          "title": "4.2 作用域和遮蔽",
+          "assets": [
+            {
+              "id": "narration_ch4_variable_bindings_scope",
+              "path": "assets/narration/ch4_variable_bindings/scope/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch4_variable_bindings/scope/scope_intro.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/scope/scope_write.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/scope/scope_error.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/scope/scope_fix.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/scope/scope_wrapup.json"
+            }
+          ]
+        },
+        {
+          "id": "declare",
+          "title": "4.3 变量先声明",
+          "assets": [
+            {
+              "id": "narration_ch4_variable_bindings_declare",
+              "path": "assets/narration/ch4_variable_bindings/declare/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch4_variable_bindings/declare/declare_intro.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/declare/declare_write.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/declare/declare_error.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/declare/declare_fix.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/declare/declare_wrapup.json"
+            }
+          ]
+        },
+        {
+          "id": "freeze",
+          "title": "4.4 冻结",
+          "assets": [
+            {
+              "id": "narration_ch4_variable_bindings_freeze",
+              "path": "assets/narration/ch4_variable_bindings/freeze/narration.ogg"
+            }
+          ],
+          "steps": [
+            {
+              "step_file": "steps/ch4_variable_bindings/freeze/freeze_intro.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/freeze/freeze_write.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/freeze/freeze_error.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/freeze/freeze_fix.json"
+            },
+            {
+              "step_file": "steps/ch4_variable_bindings/freeze/freeze_wrapup.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "step_id": "literals_code",
+  "title": "位运算与可读性",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "literals.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "literals.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "literals.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fn main() {\n    // 整数相加\n    println!(\"1 + 2 = {}\", 1u32 + 2);\n\n    // 整数相减\n    println!(\"1 - 2 = {}\", 1i32 - 2);\n    // 试一试 ^ 尝试将 `1i32` 改为 `1u32`，体会为什么类型声明这么重要\n\n    // 短路求值的布尔逻辑\n    println!(\"true AND false is {}\", true && false);\n    println!(\"true OR false is {}\", true || false);\n    println!(\"NOT true is {}\", !true);\n\n    // 位运算\n    println!(\"0011 AND 0101 is {:04b}\", 0b0011u32 & 0b0101);\n    println!(\"0011 OR 0101 is {:04b}\", 0b0011u32 | 0b0101);\n    println!(\"0011 XOR 0101 is {:04b}\", 0b0011u32 ^ 0b0101);\n    println!(\"1 << 5 is {}\", 1u32 << 5);\n    println!(\"0x80 >> 2 is 0x{:x}\", 0x80u32 >> 2);\n\n    // 使用下划线改善数字的可读性！\n    println!(\"One million is written as {}\", 1_000_000u32);\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 38000,
+              "duration_ms": 4338,
+              "caption": "接下来在 literals.rs 里写入字面量和运算符的示例。"
+            },
+            {
+              "offset_ms": 43000,
+              "duration_ms": 4480,
+              "caption": "示例会覆盖整数加减、布尔短路求值和四种位运算。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 48000,
+              "duration_ms": 3531,
+              "caption": "逐行写入整数、布尔和位运算的示例。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "literals.rs",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 7
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 52000,
+              "duration_ms": 9727,
+              "caption": "先看整数加减：1u32 + 2 是无符号，1i32 - 2 是有符号；把 1i32 改成 1u32 就会在减法处下溢。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "+",
+                  "p": "JIA1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "literals.rs",
+      "start": {
+        "line": 9
+      },
+      "end": {
+        "line": 12
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 62000,
+              "duration_ms": 6443,
+              "caption": "布尔运算使用短路求值：&& 左边为 false 时不再算右边，|| 左边为 true 时也一样。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "literals.rs",
+      "start": {
+        "line": 14
+      },
+      "end": {
+        "line": 19
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 69000,
+              "duration_ms": 8714,
+              "caption": "位运算按二进制逐位处理：&、|、^ 分别是与、或、异或，<< 和 >> 负责左右移位；{:04b} 把结果补足四位二进制。",
+              "speech_edits": [
+                {
+                  "i": 9,
+                  "s": "处",
+                  "p": "CHU3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "literals.rs",
+      "start": {
+        "line": 21
+      },
+      "end": {
+        "line": 22
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 78000,
+              "duration_ms": 8707,
+              "caption": "数字里的下划线只是可读性分隔，1_000_000u32 和 1000000u32 完全等价。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc literals.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 87000,
+              "duration_ms": 596,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 88000,
+              "duration_ms": 893,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./literals",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "1 + 2 = 3",
+        "1 - 2 = -1",
+        "true AND false is false",
+        "0011 AND 0101 is 0001",
+        "1 << 5 is 32",
+        "One million is written as 1000000"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 89000,
+              "duration_ms": 2476,
+              "caption": "运行程序，逐个核对输出。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 92000,
+              "duration_ms": 4300,
+              "caption": "加法和减法、短路求值、四种位运算，结果都对得上。"
+            },
+            {
+              "offset_ms": 97000,
+              "duration_ms": 5012,
+              "caption": "最后一行的 One million 是 1000000，下划线在输出里不会出现。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 9000
+    }
+  ]
+}

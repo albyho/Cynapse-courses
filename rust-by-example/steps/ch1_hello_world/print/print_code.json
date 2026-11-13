@@ -1,0 +1,322 @@
+{
+  "step_id": "print_code",
+  "title": "演示格式化输出",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "print_demo.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "print_demo.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "print_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fn main() {\n    // 通常情况下，`{}` 会被任意变量内容所替换。\n    // 变量内容会转化成字符串。\n    println!(\"{} days\", 31);\n\n    // 用变量替换字符串有多种写法。\n    // 比如可以使用位置参数。\n    println!(\"{0}, this is {1}. {1}, this is {0}\", \"Alice\", \"Bob\");\n\n    // 可以使用命名参数。\n    println!(\"{subject} {verb} {object}\",\n             object=\"the lazy dog\",\n             subject=\"the quick brown fox\",\n             verb=\"jumps over\");\n\n    // 可以在 `:` 后面指定特殊的格式。\n    println!(\"{} of {:b} people know binary, the other half don't\", 1, 2);\n\n    // 你可以按指定宽度来右对齐文本。\n    // 下面语句输出 \"     1\"，5 个空格后面连着 1。\n    println!(\"{number:>width$}\", number=1, width=6);\n\n    // 你可以在数字左边补 0。下面语句输出 \"000001\"。\n    println!(\"{number:>0width$}\", number=1, width=6);\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 24000,
+              "duration_ms": 3848,
+              "caption": "接下来在 print_demo.rs 里写入一组格式化示例。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 28000,
+              "duration_ms": 5082,
+              "caption": "逐行写入位置参数、命名参数和宽度对齐的示例。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 6,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 11,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "print_demo.rs",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 4
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 34000,
+              "duration_ms": 7979,
+              "caption": "最普通的 {} 会把后面的值转成字符串再填进去，31 就落在 {} 的位置。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "{}",
+                  "p": "一对大括号"
+                },
+                {
+                  "i": 31,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "print_demo.rs",
+      "start": {
+        "line": 6
+      },
+      "end": {
+        "line": 8
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 42000,
+              "duration_ms": 8385,
+              "caption": "位置参数用 {0}、{1} 指定第几个值，同一值可以重复使用，所以 Alice 和 Bob 会交换位置。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 10,
+                  "s": "{1}",
+                  "p": "大括号一"
+                },
+                {
+                  "i": 26,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "print_demo.rs",
+      "start": {
+        "line": 10
+      },
+      "end": {
+        "line": 14
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 51000,
+              "duration_ms": 7852,
+              "caption": "命名参数把名字写在 {} 里，再在参数列表用 name=value 绑定；顺序不影响结果。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 10,
+                  "s": "{}",
+                  "p": "一对大括号"
+                },
+                {
+                  "i": 17,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "print_demo.rs",
+      "start": {
+        "line": 16
+      },
+      "end": {
+        "line": 17
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 59000,
+              "duration_ms": 8057,
+              "caption": "{:b} 把整数按二进制输出：2 写成 10，所以这一行显示 1 of 10 people know binary。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "{:b}",
+                  "p": "大括号冒号 b"
+                },
+                {
+                  "i": 27,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "print_demo.rs",
+      "start": {
+        "line": 19
+      },
+      "end": {
+        "line": 24
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 68000,
+              "duration_ms": 9564,
+              "caption": "{number:>width$} 按宽度右对齐，{number:>0width$} 在左边补 0；所以一个输出五个空格加 1，另一个输出 000001。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc print_demo.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 78000,
+              "duration_ms": 514,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 79000,
+              "duration_ms": 1249,
+              "caption": "编译成功。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./print_demo",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "31 days"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 81000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 82000,
+              "duration_ms": 3191,
+              "caption": "观察不同格式字符串的输出差异。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "差",
+                  "p": "CHA1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 4000
+    }
+  ]
+}

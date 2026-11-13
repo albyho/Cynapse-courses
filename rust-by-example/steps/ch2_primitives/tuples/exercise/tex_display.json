@@ -1,0 +1,218 @@
+{
+  "step_id": "tex_display",
+  "title": "为 Matrix 实现 Display",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "tuples.rs"
+    },
+    {
+      "type": "REPLACE_TEXT",
+      "path": "tuples.rs",
+      "effect": "typewriter",
+      "target": {
+        "start": {
+          "text": "println!(\"{:?}\", matrix)"
+        },
+        "end": {
+          "text": "println!(\"{:?}\", matrix)"
+        },
+        "expected_text": "println!(\"{:?}\", matrix)"
+      },
+      "text": "println!(\"{}\", matrix);",
+      "speed_ms": 40,
+      "edit_mode": "delete_then_type",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 8000,
+              "duration_ms": 9031,
+              "caption": "当前用的是 {:?}，输出的是 Matrix(1.1, 1.2, 2.1, 2.2) 这样的结构。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "{:?}",
+                  "p": "大括号冒号问号"
+                },
+                {
+                  "i": 16,
+                  "s": "Matrix(1.1, 1.2, 2.1, 2.2)",
+                  "p": "Matrix 圆括号 1.1 逗号 1.2 逗号 2.1 逗号 2.2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 18000,
+              "duration_ms": 5513,
+              "caption": "把打印从 {:?} 换成 {}，并把末尾补上分号。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "{:?}",
+                  "p": "大括号冒号问号"
+                },
+                {
+                  "i": 13,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 24000,
+              "duration_ms": 2534,
+              "caption": "删掉旧的打印语句，输入新的。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "tuples.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "fn main() {",
+        "placement": "before"
+      },
+      "text": "impl std::fmt::Display for Matrix {\n    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {\n        write!(f, \"( {} {} )\\n( {} {} )\", self.0, self.1, self.2, self.3)\n    }\n}\n\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 27000,
+              "duration_ms": 5474,
+              "caption": "在 Matrix 定义之后实现 Display，按两行两列把四个浮点数排开。",
+              "speech_edits": [
+                {
+                  "i": 26,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 33000,
+              "duration_ms": 2635,
+              "caption": "逐行写入 Matrix 的 Display 实现。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc tuples.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 36000,
+              "duration_ms": 596,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 893,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./tuples",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "( 1.1 1.2 )",
+        "( 2.1 2.2 )"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 38000,
+              "duration_ms": 2275,
+              "caption": "运行，看 Matrix 的新输出。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 41000,
+              "duration_ms": 4464,
+              "caption": "Matrix 现在按两行两列打印，正是练习要求的形状。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 5000
+    }
+  ]
+}

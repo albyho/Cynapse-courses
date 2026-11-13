@@ -1,0 +1,49 @@
+{
+  "step_id": "cargo",
+  "title": "简介: cargo",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 22
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_chapters",
+          "clips": [
+            {
+              "offset_ms": 225000,
+              "duration_ms": 1747,
+              "caption": "第 12 章《cargo》。"
+            },
+            {
+              "offset_ms": 227000,
+              "duration_ms": 6614,
+              "caption": "cargo 把<c.aqua>依赖解析、构建、运行和测试</c.aqua>串成日常工作流，并负责与 crates.io 协作。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 234000,
+              "duration_ms": 12551,
+              "caption": "这一章不是完整手册，而是建立<c.aqua>项目工具的心智模型</c.aqua>；阅读时重点关注项目配置如何影响构建结果，以及命令之间如何共享同一份包信息。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "重",
+                  "p": "ZHONG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

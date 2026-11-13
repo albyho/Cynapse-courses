@@ -1,0 +1,66 @@
+{
+  "step_id": "conversions",
+  "title": "简介: 类型转换",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 16
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_chapters",
+          "clips": [
+            {
+              "offset_ms": 101000,
+              "duration_ms": 1974,
+              "caption": "第 6 章《类型转换》。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "转",
+                  "p": "ZHUAN3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 103000,
+              "duration_ms": 6832,
+              "caption": "类型之间不会靠随意强转悄悄变化，Rust 更常用<c.aqua>From、Into 等 trait</c.aqua>表达转换意图。",
+              "speech_edits": [
+                {
+                  "i": 43,
+                  "s": "转",
+                  "p": "ZHUAN3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 110000,
+              "duration_ms": 10414,
+              "caption": "阅读时要分清哪些转换总是成功、哪些可能失败，以及为什么把<c.aqua>转换能力写进 trait</c.aqua>后，调用方能够更安全地复用。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "转",
+                  "p": "ZHUAN3"
+                },
+                {
+                  "i": 28,
+                  "s": "转",
+                  "p": "ZHUAN3"
+                },
+                {
+                  "i": 42,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

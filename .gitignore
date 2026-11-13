@@ -1,0 +1,3 @@
+# Course runtime state is local to the learner.
+*/workspace/*
+!*/workspace/.gitkeep

@@ -1,0 +1,205 @@
+{
+  "step_id": "disp_code",
+  "title": "为类型实现 Display",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "display_demo.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "display_demo.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "display_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "use std::fmt; // 导入 `fmt`\n\n// 带有两个数字的结构体。推导出 `Debug`，以便与 `Display` 的输出进行比较。\n#[derive(Debug)]\nstruct MinMax(i64, i64);\n\n// 实现 `MinMax` 的 `Display`。\nimpl fmt::Display for MinMax {\n    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n        // 使用 `self.number` 来表示各个数据。\n        write!(f, \"({}, {})\", self.0, self.1)\n    }\n}\n\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_print_display",
+          "clips": [
+            {
+              "offset_ms": 17000,
+              "duration_ms": 4521,
+              "caption": "接下来在 display_demo.rs 里为 MinMax 和 Point2D 实现 Display。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display",
+          "clips": [
+            {
+              "offset_ms": 22000,
+              "duration_ms": 7970,
+              "caption": "先看 MinMax：元组结构体加 Debug 推导，再为它实现 Display，用 write! 把两个字段按 (a, b) 写进缓冲区。",
+              "speech_edits": [
+                {
+                  "i": 42,
+                  "s": "write!",
+                  "p": "write 宏"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "display_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "// 为了比较，定义一个含有具名字段的结构体。\n#[derive(Debug)]\nstruct Point2D {\n    x: f64,\n    y: f64,\n}\n\n// 类似地对 `Point2D` 实现 `Display`\nimpl fmt::Display for Point2D {\n    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n        // 自定义格式，使得仅显示 `x` 和 `y` 的值。\n        write!(f, \"x: {}, y: {}\", self.x, self.y)\n    }\n}\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display",
+          "clips": [
+            {
+              "offset_ms": 30000,
+              "duration_ms": 5476,
+              "caption": "Point2D 换成具名字段，Display 里改写输出格式，只显示 x 和 y 的值。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "display_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fn main() {\n    let minmax = MinMax(0, 14);\n\n    println!(\"Compare structures:\");\n    println!(\"Display: {}\", minmax);\n    println!(\"Debug: {:?}\", minmax);\n\n    let big_range =   MinMax(-300, 300);\n    let small_range = MinMax(-3, 3);\n\n    println!(\"The big range is {big} and the small is {small}\",\n             small = small_range,\n             big = big_range);\n\n    let point = Point2D { x: 3.3, y: 7.2 };\n\n    println!(\"Compare points:\");\n    println!(\"Display: {}\", point);\n    println!(\"Debug: {:?}\", point);\n\n    // 报错。`Debug` 和 `Display` 都被实现了，但 `{:b}` 需要 `fmt::Binary`\n    // 得到实现。这语句不能运行。\n    // println!(\"What does Point2D look like in binary: {:b}?\", point);\n}\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display",
+          "clips": [
+            {
+              "offset_ms": 36000,
+              "duration_ms": 6111,
+              "caption": "main 里先打印 MinMax 的 Display 与 Debug，再用命名参数同时打印两个区间。",
+              "speech_edits": [
+                {
+                  "i": 39,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            },
+            {
+              "offset_ms": 43000,
+              "duration_ms": 7665,
+              "caption": "最后对比 Point2D 的两种呈现，并说明注释里的 {:b} 需要额外实现 fmt::Binary。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "{:b}",
+                  "p": "大括号冒号 b"
+                },
+                {
+                  "i": 42,
+                  "s": "::",
+                  "p": "双冒号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc display_demo.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_print_display",
+          "clips": [
+            {
+              "offset_ms": 51000,
+              "duration_ms": 514,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_print_display",
+          "clips": [
+            {
+              "offset_ms": 52000,
+              "duration_ms": 1249,
+              "caption": "编译成功。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./display_demo",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "x: 3.3, y: 7.2"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_print_display",
+          "clips": [
+            {
+              "offset_ms": 54000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_print_display",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 3843,
+              "caption": "对比同一个值在 Display 和 Debug 下的不同呈现。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 4000
+    }
+  ]
+}

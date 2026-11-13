@@ -1,0 +1,148 @@
+{
+  "step_id": "scope_write",
+  "title": "写入作用域示例",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "scope.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "scope.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "scope.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fn main() {\n    // 此绑定生存于 main 函数中\n    let long_lived_binding = 1;\n\n    // 这是一个代码块，比 main 函数拥有更小的作用域\n    {\n        // 此绑定只存在于本代码块\n        let short_lived_binding = 2;\n\n        println!(\"inner short: {}\", short_lived_binding);\n\n        // 此绑定*遮蔽*了外面的绑定\n        let long_lived_binding = 5_f32;\n\n        println!(\"inner long: {}\", long_lived_binding);\n    }\n    // 代码块结束\n\n    // 报错！`short_lived_binding` 在此作用域上不存在\n    println!(\"outer short: {}\", short_lived_binding);\n    // 改正 ^ 注释掉这行\n\n    println!(\"outer long: {}\", long_lived_binding);\n\n    // 此绑定同样*遮蔽*了前面的绑定\n    let long_lived_binding = 'a';\n\n    println!(\"outer long: {}\", long_lived_binding);\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 6493,
+              "caption": "接下来在 scope.rs 里写入外层长生命周期绑定、内层短生命周期绑定的示例。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 38000,
+              "duration_ms": 3460,
+              "caption": "逐行写入嵌套作用域和遮蔽的示例。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "scope.rs",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 3
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 42000,
+              "duration_ms": 3985,
+              "caption": "main 里先声明 long_lived_binding = 1，它活到函数结束。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "scope.rs",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 15
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 46000,
+              "duration_ms": 9164,
+              "caption": "进入内层块，short_lived_binding = 2 只活在这个块里；同名 long_lived_binding = 5_f32 遮蔽外层，内层打印 2 和 5。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "scope.rs",
+      "start": {
+        "line": 16
+      },
+      "end": {
+        "line": 23
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 56000,
+              "duration_ms": 7284,
+              "caption": "块结束后 short_lived_binding 已经失效，再引用会报 E0425；外层的 long_lived_binding 仍是 1。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "scope.rs",
+      "start": {
+        "line": 25
+      },
+      "end": {
+        "line": 28
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 64000,
+              "duration_ms": 6303,
+              "caption": "最后在 main 末尾用字符 'a' 再次遮蔽 long_lived_binding，所以最后一行打印 a。",
+              "speech_edits": [
+                {
+                  "i": 48,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

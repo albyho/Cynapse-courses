@@ -1,0 +1,141 @@
+{
+  "step_id": "declare_write",
+  "title": "写入延迟初始化示例",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "declare.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "declare.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "declare.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fn main() {\n    // 声明一个变量绑定\n    let a_binding;\n\n    {\n        let x = 2;\n\n        // 初始化一个绑定\n        a_binding = x * x;\n    }\n\n    println!(\"a binding: {}\", a_binding);\n\n    let another_binding;\n\n    // 报错！使用了未初始化的绑定\n    println!(\"another binding: {}\", another_binding);\n    // 改正 ^ 注释掉此行\n\n    another_binding = 1;\n\n    println!(\"another binding: {}\", another_binding);\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch4_variable_bindings_declare",
+          "clips": [
+            {
+              "offset_ms": 29000,
+              "duration_ms": 4805,
+              "caption": "接下来在 declare.rs 里先声明 a_binding，在子块里再初始化它。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_declare",
+          "clips": [
+            {
+              "offset_ms": 34000,
+              "duration_ms": 2817,
+              "caption": "逐行写入延迟初始化的示例。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "declare.rs",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 3
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 4769,
+              "caption": "let a_binding; 只声明，不初始化；类型留给后面的赋值推断。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "declare.rs",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare",
+          "clips": [
+            {
+              "offset_ms": 42000,
+              "duration_ms": 5805,
+              "caption": "进入子块，x = 2，再用 a_binding = x * x 初始化；子块结束时 a_binding 仍然有效。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "declare.rs",
+      "start": {
+        "line": 12
+      },
+      "end": {
+        "line": 17
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare",
+          "clips": [
+            {
+              "offset_ms": 48000,
+              "duration_ms": 6040,
+              "caption": "另一个绑定 another_binding 在初始化之前就被打印，编译器会报 E0381。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "declare.rs",
+      "start": {
+        "line": 20
+      },
+      "end": {
+        "line": 22
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 5772,
+              "caption": "先赋值再打印，another_binding 就有值了；这也是延迟初始化的正确顺序。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "step_id": "error_handling",
+  "title": "简介: 错误处理",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 28
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_chapters",
+          "clips": [
+            {
+              "offset_ms": 358000,
+              "duration_ms": 2044,
+              "caption": "第 18 章《错误处理》。",
+              "speech_edits": [
+                {
+                  "i": 9,
+                  "s": "处",
+                  "p": "CHU3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 361000,
+              "duration_ms": 11737,
+              "caption": "Rust 把<c.aqua>可能失败的情况放进类型系统</c.aqua>：panic 处理不可恢复错误或快速失败，Option 表示值可能缺失，Result 要求调用方处理成功与失败。",
+              "speech_edits": [
+                {
+                  "i": 26,
+                  "s": "处",
+                  "p": "CHU3"
+                },
+                {
+                  "i": 64,
+                  "s": "调",
+                  "p": "DIAO4"
+                },
+                {
+                  "i": 67,
+                  "s": "处",
+                  "p": "CHU3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 373000,
+              "duration_ms": 7079,
+              "caption": "阅读例子时先判断失败是否真的异常，再选择<c.aqua>最能表达调用者责任</c.aqua>的那一种。",
+              "speech_edits": [
+                {
+                  "i": 24,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

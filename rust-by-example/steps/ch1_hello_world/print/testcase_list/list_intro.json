@@ -1,0 +1,59 @@
+{
+  "step_id": "list_intro",
+  "title": "遍历容器介绍",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 7533,
+              "caption": "这一节学习为多元素容器实现 Display，观察怎样逐个输出元素并用 ? 传递写入错误。",
+              "speech_edits": [
+                {
+                  "i": 34,
+                  "s": " ? ",
+                  "p": "问号"
+                }
+              ]
+            },
+            {
+              "offset_ms": 8000,
+              "duration_ms": 4531,
+              "caption": "为含有多个元素的容器实现 Display 时，要逐个处理元素。",
+              "speech_edits": [
+                {
+                  "i": 26,
+                  "s": "处",
+                  "p": "CHU3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 13000,
+              "duration_ms": 5054,
+              "caption": "借助 ? 操作符，可以把每次 write! 的错误统一向上传递。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": " ? ",
+                  "p": "问号"
+                },
+                {
+                  "i": 15,
+                  "s": "write!",
+                  "p": "write 宏"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

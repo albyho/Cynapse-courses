@@ -1,0 +1,118 @@
+{
+  "step_id": "cex_intro",
+  "title": "先看初始输出",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "comment.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 8966,
+              "caption": "动手试一试：comment.rs 里已经有带注释的代码。先运行一次看初始输出，再依次取消行注释和块注释。",
+              "speech_edits": [
+                {
+                  "i": 30,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 44,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc comment.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise",
+          "clips": [
+            {
+              "offset_ms": 9000,
+              "duration_ms": 514,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 964,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./comment",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "Is `x` 10 or 100? x = 10"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise",
+          "clips": [
+            {
+              "offset_ms": 11000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise",
+          "clips": [
+            {
+              "offset_ms": 12000,
+              "duration_ms": 3604,
+              "caption": "初始输出只有 x = 10；Hello, world! 还被注释着。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 4000
+    }
+  ]
+}

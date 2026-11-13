@@ -1,0 +1,151 @@
+{
+  "step_id": "enum_alias",
+  "title": "类型别名与 Self",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "operations.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "operations.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "operations.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "enum VeryVerboseEnumOfThingsToDoWithNumbers {\n    Add,\n    Subtract,\n}\n\n// 创建一个类型别名\ntype Operations = VeryVerboseEnumOfThingsToDoWithNumbers;\n\nimpl VeryVerboseEnumOfThingsToDoWithNumbers {\n    fn run(&self, x: i32, y: i32) -> i32 {\n        match self {\n            Self::Add => x + y,\n            Self::Subtract => x - y,\n        }\n    }\n}\n\nfn main() {\n    // 通过别名引用枚举变量，避免写出又长又不方便的枚举名字。\n    let add = Operations::Add;\n    let subtract = Operations::Subtract;\n\n    println!(\"10 + 4 = {}\", add.run(10, 4));\n    println!(\"10 - 4 = {}\", subtract.run(10, 4));\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_enum",
+          "clips": [
+            {
+              "offset_ms": 79000,
+              "duration_ms": 5758,
+              "caption": "接下来在 operations.rs 里把很长的枚举名收进类型别名 Operations。",
+              "speech_edits": [
+                {
+                  "i": 22,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum",
+          "clips": [
+            {
+              "offset_ms": 85000,
+              "duration_ms": 3340,
+              "caption": "逐行写入枚举、类型别名和 run 方法。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 3000
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc operations.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_enum",
+          "clips": [
+            {
+              "offset_ms": 89000,
+              "duration_ms": 602,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum",
+          "clips": [
+            {
+              "offset_ms": 90000,
+              "duration_ms": 1301,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./operations",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "10 + 4 = 14",
+        "10 - 4 = 6"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_enum",
+          "clips": [
+            {
+              "offset_ms": 92000,
+              "duration_ms": 612,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum",
+          "clips": [
+            {
+              "offset_ms": 93000,
+              "duration_ms": 4917,
+              "caption": "两个变体分别算出 14 和 6，说明别名不影响行为。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 5000
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "step_id": "hello_code",
+  "title": "编写并运行 Hello World",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "hello.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "hello.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "hello.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "// 这是注释内容，将会被编译器忽略掉\n\n// 这段代码支持编辑，可自由修改。\n\n// 这是主函数\nfn main() {\n    // 调用编译生成的可执行文件时，这里的语句将被运行。\n\n    // 将文本打印到控制台\n    println!(\"Hello World!\");\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 4224,
+              "caption": "接下来在 hello.rs 里写入主函数和一行 println!。",
+              "speech_edits": [
+                {
+                  "i": 22,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 24,
+                  "s": "println!",
+                  "p": "println 宏"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world",
+          "clips": [
+            {
+              "offset_ms": 18000,
+              "duration_ms": 3541,
+              "caption": "先写注释和 main 函数，再把打印语句放进去。"
+            },
+            {
+              "offset_ms": 22000,
+              "duration_ms": 3787,
+              "caption": "println! 是一个宏，负责把文本输出到控制台。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "println!",
+                  "p": "println 宏"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 3000
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc hello.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 3164,
+              "caption": "用 rustc 把源码编译成可执行程序。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world",
+          "clips": [
+            {
+              "offset_ms": 30000,
+              "duration_ms": 1871,
+              "caption": "编译成功，没有报错。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./hello",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "Hello World!"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world",
+          "clips": [
+            {
+              "offset_ms": 32000,
+              "duration_ms": 2626,
+              "caption": "运行生成的可执行程序。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 7,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world",
+          "clips": [
+            {
+              "offset_ms": 35000,
+              "duration_ms": 2042,
+              "caption": "控制台输出了 Hello World!。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 4000
+    }
+  ]
+}

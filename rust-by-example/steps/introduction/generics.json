@@ -1,0 +1,42 @@
+{
+  "step_id": "generics",
+  "title": "简介: 泛型",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 24
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_chapters",
+          "clips": [
+            {
+              "offset_ms": 267000,
+              "duration_ms": 1397,
+              "caption": "第 14 章《泛型》。"
+            },
+            {
+              "offset_ms": 269000,
+              "duration_ms": 5313,
+              "caption": "泛型让函数和类型<c.aqua>适配多种具体类型，同时避免复制相似实现</c.aqua>。"
+            },
+            {
+              "offset_ms": 275000,
+              "duration_ms": 14262,
+              "caption": "真正的难点不是尖括号语法，而是理解类型参数什么时候表示任意类型、什么时候需要<c.aqua>通过约束缩小范围</c.aqua>；阅读时把“适用于什么”和“为什么仍能检查”放在一起看。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "step_id": "freeze_intro",
+  "title": "不可变绑定会冻结数据",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_freeze",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6812,
+              "caption": "这一节学习冻结，观察同名不可变绑定遮蔽数据后，原数据为何暂时无法修改。"
+            },
+            {
+              "offset_ms": 7000,
+              "duration_ms": 8046,
+              "caption": "当数据被同名不可变绑定遮蔽时，原数据就被冻结，在不可变绑定离开作用域之前无法修改。"
+            },
+            {
+              "offset_ms": 16000,
+              "duration_ms": 4795,
+              "caption": "等不可变绑定出了作用域，外层的可变绑定才恢复可写。"
+            },
+            {
+              "offset_ms": 21000,
+              "duration_ms": 4933,
+              "caption": "下面在冻结期内故意改写，看 E0384，再注释掉这行。"
+            },
+            {
+              "offset_ms": 26000,
+              "duration_ms": 4862,
+              "caption": "这个例子运行本身不产生输出，重点是类型检查。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 14,
+                  "s": "重",
+                  "p": "ZHONG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

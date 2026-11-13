@@ -1,0 +1,52 @@
+{
+  "step_id": "book",
+  "title": "这本书怎么学",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 7
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_book",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5703,
+              "caption": "《通过例子学 Rust》用一系列<c.aqua>可运行程序</c.aqua>解释语言概念和基础库。",
+              "speech_edits": [
+                {
+                  "i": 18,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 7463,
+              "caption": "我们看到一段代码时，可以同时关注<c.aqua>写法、编译结果与运行输出</c.aqua>，再把三者联系起来。",
+              "speech_edits": [
+                {
+                  "i": 25,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 14000,
+              "duration_ms": 3557,
+              "caption": "后续我们会保持这种<c.aqua>边观察边理解</c.aqua>的方式。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "step_id": "consts_error",
+  "title": "观察真实报错",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "consts.rs"
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc consts.rs",
+      "accepted_exit_codes": [
+        1
+      ],
+      "expected_output": [
+        "E0070"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_constants",
+          "clips": [
+            {
+              "offset_ms": 60000,
+              "duration_ms": 2750,
+              "caption": "先编译，最后一行是故意写的。",
+              "speech_edits": [
+                {
+                  "i": 7,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch3_custom_types_constants",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 4932,
+              "caption": "编译器直接指出不能给常量赋值，错误码是 E0070。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 5000
+    }
+  ]
+}

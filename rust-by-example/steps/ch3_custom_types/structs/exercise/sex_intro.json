@@ -1,0 +1,22 @@
+{
+  "step_id": "sex_intro",
+  "title": "练习说明",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "structs.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_structs_exercise",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 8883,
+              "caption": "动手试一试：structs.rs 里 Rectangle 和 Point 都已定义好。接下来把这两个类型组合起来，算出可打印的面积结果。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

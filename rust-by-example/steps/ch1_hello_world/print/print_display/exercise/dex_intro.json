@@ -1,0 +1,29 @@
+{
+  "step_id": "dex_intro",
+  "title": "练习说明",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "display_demo.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 10920,
+              "caption": "动手试一试：display_demo.rs 里 MinMax 和 Point2D 都已经实现好 Display，仿照 Point2D 增加一个复数结构体，最终打印成 a + bi 的形式。",
+              "speech_edits": [
+                {
+                  "i": 83,
+                  "s": "a + bi",
+                  "p": "a JIA1 b i"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

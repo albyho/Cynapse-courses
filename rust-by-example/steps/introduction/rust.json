@@ -1,0 +1,68 @@
+{
+  "step_id": "rust",
+  "title": "认识 Rust",
+  "actions": [
+    {
+      "type": "OPEN_FILE_WITH_PREVIEW",
+      "path": "INTRO.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_rust",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6393,
+              "caption": "屏幕上是《通过例子学 Rust》的简介页，标题是「简介 · 通过例子学 Rust（中文版）」。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 5
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_rust",
+          "clips": [
+            {
+              "offset_ms": 7000,
+              "duration_ms": 7735,
+              "caption": "Rust 注重<c.aqua>安全、速度和并发</c.aqua>，核心目标之一是用<c.aqua>内存安全</c.aqua>减少常见错误，同时<c.aqua>不依赖垃圾回收</c.aqua>。"
+            },
+            {
+              "offset_ms": 15000,
+              "duration_ms": 6672,
+              "caption": "Rust 既关心<c.aqua>程序运行得足够快</c.aqua>，也要求<c.aqua>编译器在开发阶段提前指出许多风险</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 22000,
+              "duration_ms": 9075,
+              "caption": "在接下来的学习中，我们会通过<c.aqua>可运行的例子</c.aqua>直接观察 Rust 的安全、速度和编译期检查，而不是先背语法。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

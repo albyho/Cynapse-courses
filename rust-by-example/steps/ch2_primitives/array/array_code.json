@@ -1,0 +1,223 @@
+{
+  "step_id": "array_code",
+  "title": "长度、内存与借用",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "array.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "array.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "array.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "use std::mem;\n\n// 此函数借用一个 slice\nfn analyze_slice(slice: &[i32]) {\n    println!(\"first element of the slice: {}\", slice[0]);\n    println!(\"the slice has {} elements\", slice.len());\n}\n\nfn main() {\n    // 定长数组（类型标记是多余的）\n    let xs: [i32; 5] = [1, 2, 3, 4, 5];\n\n    // 所有元素可以初始化成相同的值\n    let ys: [i32; 500] = [0; 500];\n\n    // 下标从 0 开始\n    println!(\"first element of the array: {}\", xs[0]);\n    println!(\"second element of the array: {}\", xs[1]);\n\n    // `len` 返回数组的大小\n    println!(\"array size: {}\", xs.len());\n\n    // 数组是在栈中分配的\n    println!(\"array occupies {} bytes\", mem::size_of_val(&xs));\n\n    // 数组可以自动被借用成为 slice\n    println!(\"borrow the whole array as a slice\");\n    analyze_slice(&xs);\n\n    // slice 可以指向数组的一部分\n    println!(\"borrow a section of the array as a slice\");\n    analyze_slice(&ys[1 .. 4]);\n\n    // 越界的下标会引发致命错误（panic）\n    // println!(\"{}\", xs[5]);\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_array",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 6689,
+              "caption": "接下来在 array.rs 里写入定长数组、长度、内存占用和切片借用的示例。",
+              "speech_edits": [
+                {
+                  "i": 18,
+                  "s": "长",
+                  "p": "CHANG2"
+                },
+                {
+                  "i": 22,
+                  "s": "长",
+                  "p": "CHANG2"
+                },
+                {
+                  "i": 30,
+                  "s": "切",
+                  "p": "QIE1"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch2_primitives_array",
+          "clips": [
+            {
+              "offset_ms": 38000,
+              "duration_ms": 3515,
+              "caption": "逐行写入数组、切片和借用的示例。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 7,
+                  "s": "切",
+                  "p": "QIE1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 3000
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc array.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_array",
+          "clips": [
+            {
+              "offset_ms": 42000,
+              "duration_ms": 596,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives_array",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 893,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./array",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "first element of the array: 1",
+        "second element of the array: 2",
+        "array size: 5",
+        "array occupies 20 bytes",
+        "borrow the whole array as a slice",
+        "first element of the slice: 1",
+        "the slice has 5 elements",
+        "borrow a section of the array as a slice",
+        "first element of the slice: 0",
+        "the slice has 3 elements"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_array",
+          "clips": [
+            {
+              "offset_ms": 44000,
+              "duration_ms": 3152,
+              "caption": "运行，注意每一行输出的含义。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 7,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives_array",
+          "clips": [
+            {
+              "offset_ms": 48000,
+              "duration_ms": 4686,
+              "caption": "数组长度是 5，五个 i32 在栈上正好占 20 字节。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 53000,
+              "duration_ms": 4939,
+              "caption": "整个数组可以借成切片，第一段打印首元素 1 和长度 5。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "切",
+                  "p": "QIE1"
+                },
+                {
+                  "i": 23,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 58000,
+              "duration_ms": 3182,
+              "caption": "ys 的一段借出 3 个元素，首元素是 0。"
+            },
+            {
+              "offset_ms": 62000,
+              "duration_ms": 5662,
+              "caption": "最后一行越界访问已经注释掉：取消注释会看到运行时 panic。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 22,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 10000
+    }
+  ]
+}

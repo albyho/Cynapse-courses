@@ -1,0 +1,57 @@
+{
+  "step_id": "comment_intro",
+  "title": "注释介绍",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6897,
+              "caption": "这一节学习行注释和块注释的写法，并观察注释怎样改变一段表达式的值。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 7000,
+              "duration_ms": 5923,
+              "caption": "行注释以 // 开头，块注释用 /* 和 */ 包住。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 5,
+                  "s": "//",
+                  "p": "双斜杠"
+                },
+                {
+                  "i": 16,
+                  "s": "/*",
+                  "p": "块注释开始"
+                },
+                {
+                  "i": 21,
+                  "s": "*/",
+                  "p": "块注释结束"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

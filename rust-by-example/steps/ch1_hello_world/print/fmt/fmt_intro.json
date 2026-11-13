@@ -1,0 +1,52 @@
+{
+  "step_id": "fmt_intro",
+  "title": "格式化 trait 介绍",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6077,
+              "caption": "这一节学习格式化 trait，观察不同类型怎样由各自的 trait 决定输出外观。"
+            },
+            {
+              "offset_ms": 7000,
+              "duration_ms": 4731,
+              "caption": "格式化能力由 trait 实现，每种参数类型对应一种 trait。",
+              "speech_edits": [
+                {
+                  "i": 18,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            },
+            {
+              "offset_ms": 12000,
+              "duration_ms": 5326,
+              "caption": "最常用的 Display 处理未指定类型的情况，也就是 {}。",
+              "speech_edits": [
+                {
+                  "i": 13,
+                  "s": "处",
+                  "p": "CHU3"
+                },
+                {
+                  "i": 28,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

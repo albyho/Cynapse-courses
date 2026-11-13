@@ -1,0 +1,45 @@
+{
+  "step_id": "bindings_intro",
+  "title": "let 绑定与类型推导",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5727,
+              "caption": "这一节学习变量绑定与类型推导，观察 let 怎样把值绑定到名字上。"
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 8674,
+              "caption": "Rust 用静态类型保证类型安全；变量绑定的类型多数时候会被编译器推断出来，只在必要时显式标注。"
+            },
+            {
+              "offset_ms": 15000,
+              "duration_ms": 6817,
+              "caption": "用 `let` 可以把字面量、表达式的结果绑到变量上，也可以把已有绑定复制到新绑定。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "`let`",
+                  "p": "let"
+                }
+              ]
+            },
+            {
+              "offset_ms": 22000,
+              "duration_ms": 10478,
+              "caption": "未使用的绑定会触发警告，变量名加下划线前缀就能关掉这个警告——本章后面的页面会进一步展开可变性、作用域与先声明。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

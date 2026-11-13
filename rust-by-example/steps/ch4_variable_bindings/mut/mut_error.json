@@ -1,0 +1,61 @@
+{
+  "step_id": "mut_error",
+  "title": "观察 E0384",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "mut.rs"
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc mut.rs",
+      "accepted_exit_codes": [
+        1
+      ],
+      "expected_output": [
+        "E0384"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch4_variable_bindings_mut",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 2715,
+              "caption": "先编译，最后一行是故意写的。",
+              "speech_edits": [
+                {
+                  "i": 7,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_mut",
+          "clips": [
+            {
+              "offset_ms": 40000,
+              "duration_ms": 5551,
+              "caption": "编译器指出不能对不可变变量二次赋值，错误码是 E0384。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 5000
+    }
+  ]
+}

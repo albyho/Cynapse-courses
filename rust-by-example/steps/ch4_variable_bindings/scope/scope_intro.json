@@ -1,0 +1,52 @@
+{
+  "step_id": "scope_intro",
+  "title": "代码块与作用域",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 7908,
+              "caption": "在可变变量之后，这一节学习作用域和遮蔽，观察绑定怎样随代码块开始和结束生效、失效。"
+            },
+            {
+              "offset_ms": 8000,
+              "duration_ms": 7827,
+              "caption": "绑定只活在声明它的代码块里，块结束绑定就失效；`{}` 围起来的语句就是一个块。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "`{}`",
+                  "p": "一对大括号"
+                }
+              ]
+            },
+            {
+              "offset_ms": 16000,
+              "duration_ms": 6504,
+              "caption": "同一名字可以在内层重新绑定，这叫遮蔽，内层的新值会暂时盖住外层。",
+              "speech_edits": [
+                {
+                  "i": 9,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 23000,
+              "duration_ms": 7328,
+              "caption": "下面故意在块外面引用只在块里存在的绑定，看编译器报 E0425，再注释掉这行。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

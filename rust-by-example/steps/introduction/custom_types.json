@@ -1,0 +1,35 @@
+{
+  "step_id": "custom_types",
+  "title": "简介: 自定义类型",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 13
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_chapters",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 1916,
+              "caption": "第 3 章《自定义类型》。"
+            },
+            {
+              "offset_ms": 39000,
+              "duration_ms": 9915,
+              "caption": "当程序不再满足于单个原生值时，就可以<c.aqua>用 struct 组织字段，用 enum 表示一组互斥可能</c.aqua>，并用 const 或 static 保存共享常量。"
+            },
+            {
+              "offset_ms": 49000,
+              "duration_ms": 8285,
+              "caption": "留意<c.aqua>数据形状与语义</c.aqua>如何被类型直接写出来，这能帮助我们读懂后续的模式匹配和方法实现。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

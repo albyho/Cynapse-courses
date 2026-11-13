@@ -1,0 +1,21 @@
+{
+  "step_id": "freeze_wrapup",
+  "title": "收尾：E0384",
+  "actions": [
+    {
+      "type": "PRESENT",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch4_variable_bindings_freeze",
+          "clips": [
+            {
+              "offset_ms": 72000,
+              "duration_ms": 9021,
+              "caption": "E0384 说明冻结期内不能写入；注释掉冻结期赋值后，外层可变绑定恢复可写，程序通过类型检查。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "step_id": "fex_code",
+  "title": "为 Color 实现 Display",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "fmt_demo.rs"
+    },
+    {
+      "type": "DELETE_TEXT",
+      "path": "fmt_demo.rs",
+      "target": {
+        "cursor": {
+          "line": 45,
+          "column": 20,
+          "count": 1
+        }
+      },
+      "direction": "delete",
+      "effect": "typewriter",
+      "speed_ms": 120,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 12000,
+              "duration_ms": 3564,
+              "caption": "这次练习要让 Color 也能用 {} 打印。",
+              "speech_edits": [
+                {
+                  "i": 17,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            },
+            {
+              "offset_ms": 16000,
+              "duration_ms": 4720,
+              "caption": "先改打印语句，删掉 {:?} 里的冒号和问号。",
+              "speech_edits": [
+                {
+                  "i": 10,
+                  "s": "{:?}",
+                  "p": "大括号冒号问号"
+                }
+              ]
+            },
+            {
+              "offset_ms": 21000,
+              "duration_ms": 6149,
+              "caption": "{:?} 和 {} 差的是冒号和问号，改完再补 Display 实现。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "{:?}",
+                  "p": "大括号冒号问号"
+                },
+                {
+                  "i": 7,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 28000,
+              "duration_ms": 1550,
+              "caption": "先删掉问号。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "DELETE_TEXT",
+      "path": "fmt_demo.rs",
+      "target": {
+        "cursor": {
+          "line": 45,
+          "column": 19,
+          "count": 1
+        }
+      },
+      "direction": "delete",
+      "effect": "typewriter",
+      "speed_ms": 120,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 30000,
+              "duration_ms": 1086,
+              "caption": "再删掉冒号。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "fmt_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "impl Display for Color {\n    fn fmt(&self, f: &mut Formatter) -> fmt::Result {\n        write!(f, \"RGB ({}, {}, {}) 0x{:02X}{:02X}{:02X}\",\n               self.red, self.green, self.blue,\n               self.red, self.green, self.blue)\n    }\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 32000,
+              "duration_ms": 7568,
+              "caption": "在文件末尾新增 Color 的 Display 实现，用 :02X 把每个字节补零成两位十六进制。",
+              "speech_edits": [
+                {
+                  "i": 29,
+                  "s": ":02X",
+                  "p": "冒号零二大写 X"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 40000,
+              "duration_ms": 2624,
+              "caption": "逐行写入 Color 的 Display 实现。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc fmt_demo.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 514,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 44000,
+              "duration_ms": 1249,
+              "caption": "编译成功。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./fmt_demo",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "RGB (128, 255, 90) 0x80FF5A",
+        "RGB (0, 3, 254) 0x0003FE",
+        "RGB (0, 0, 0) 0x000000"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 46000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 47000,
+              "duration_ms": 5808,
+              "caption": "颜色也按 RGB (r, g, b) 0xRRGGBB 的形式输出了。",
+              "speech_edits": [
+                {
+                  "i": 9,
+                  "s": "(r, g, b)",
+                  "p": "圆括号 r 逗号 g 逗号 b"
+                },
+                {
+                  "i": 19,
+                  "s": "0xRRGGBB",
+                  "p": "十六进制 RGB 颜色值"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 6000
+    }
+  ]
+}

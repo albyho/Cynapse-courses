@@ -1,0 +1,178 @@
+{
+  "step_id": "primitives_code",
+  "title": "类型标注与推断",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "primitives.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "primitives.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "primitives.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fn main() {\n    // 变量可以给出类型说明。\n    let logical: bool = true;\n\n    let a_float: f64 = 1.0;  // 常规说明\n    let an_integer   = 5i32; // 后缀说明\n\n    // 否则会按默认方式决定类型。\n    let default_float   = 3.0; // `f64`\n    let default_integer = 7;   // `i32`\n\n    // 类型也可根据上下文自动推断。\n    let mut inferred_type = 12; // 根据下一行的赋值推断为 i64 类型\n    inferred_type = 4294967296i64;\n\n    // 可变的（mutable）变量，其值可以改变。\n    let mut mutable = 12; // Mutable `i32`\n    mutable = 21;\n    println!(\"mutable before shadowing = {}\", mutable);\n\n    // 报错！变量的类型并不能改变。\n    // mutable = true;\n\n    // 但可以用遮蔽（shadow）来覆盖前面的变量。\n    let mutable = true;\n    println!(\"mutable after shadowing = {}\", mutable);\n\n    println!(\"logical = {}\", logical);\n    println!(\"a_float = {}, an_integer = {}\", a_float, an_integer);\n    println!(\"default_float = {}, default_integer = {}\", default_float, default_integer);\n    println!(\"inferred_type = {}\", inferred_type);\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 5617,
+              "caption": "接下来在 primitives.rs 里写入类型标注、后缀、默认值和推断的示例。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch2_primitives",
+          "clips": [
+            {
+              "offset_ms": 49000,
+              "duration_ms": 3957,
+              "caption": "逐行写入类型标注、默认值和推断的示例。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 3000
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc primitives.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives",
+          "clips": [
+            {
+              "offset_ms": 53000,
+              "duration_ms": 839,
+              "caption": "先编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives",
+          "clips": [
+            {
+              "offset_ms": 54000,
+              "duration_ms": 3230,
+              "caption": "编译通过，说明这些标注和推断都成立。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./primitives",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "logical = true",
+        "a_float = 1, an_integer = 5",
+        "default_float = 3, default_integer = 7",
+        "inferred_type = 4294967296",
+        "mutable before shadowing = 21",
+        "mutable after shadowing = true"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives",
+          "clips": [
+            {
+              "offset_ms": 58000,
+              "duration_ms": 2834,
+              "caption": "运行，看看每个变量的实际值。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives",
+          "clips": [
+            {
+              "offset_ms": 61000,
+              "duration_ms": 3781,
+              "caption": "输出里 logical 是 true，a_float 是 1，an_integer 是 5。"
+            },
+            {
+              "offset_ms": 65000,
+              "duration_ms": 9841,
+              "caption": "inferred_type 是 4294967296，说明编译器真的把它推成了 i64；mutable 在遮蔽前是 21，遮蔽后是 true。"
+            },
+            {
+              "offset_ms": 75000,
+              "duration_ms": 9769,
+              "caption": "示例里那行报错的赋值已经注释掉：变量类型不会因为赋值而改变，要换类型得用遮蔽重新声明。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 23,
+                  "s": "为",
+                  "p": "WEI4"
+                },
+                {
+                  "i": 34,
+                  "s": "得",
+                  "p": "DEI3"
+                },
+                {
+                  "i": 38,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 9000
+    }
+  ]
+}

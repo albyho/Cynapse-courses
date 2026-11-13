@@ -1,0 +1,54 @@
+{
+  "step_id": "meta",
+  "title": "简介: 补充",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 34
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_chapters",
+          "clips": [
+            {
+              "offset_ms": 489000,
+              "duration_ms": 1412,
+              "caption": "第 24 章《补充》。"
+            },
+            {
+              "offset_ms": 491000,
+              "duration_ms": 5901,
+              "caption": "这一章关注编程之外但同样重要的工具：<c.aqua>文档、测试和基准测试</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "重",
+                  "p": "ZHONG4"
+                }
+              ]
+            },
+            {
+              "offset_ms": 497000,
+              "duration_ms": 10299,
+              "caption": "rustdoc 让库的公开接口可阅读，测试证明行为，基准测量性能；它们共同把“能运行”推进到<c.aqua>“可理解、可验证、可维护”</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 41,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

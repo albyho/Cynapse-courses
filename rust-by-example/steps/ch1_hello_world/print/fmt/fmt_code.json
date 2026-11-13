@@ -1,0 +1,183 @@
+{
+  "step_id": "fmt_code",
+  "title": "为 City 实现 Display",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "fmt_demo.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "fmt_demo.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "fmt_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "use std::fmt::{self, Formatter, Display};\n\nstruct City {\n    name: &'static str,\n    // 纬度\n    lat: f32,\n    // 经度\n    lon: f32,\n}\n\nimpl Display for City {\n    // `f` 是一个缓冲区（buffer），此方法必须将格式化后的字符串写入其中\n    fn fmt(&self, f: &mut Formatter) -> fmt::Result {\n        let lat_c = if self.lat >= 0.0 { 'N' } else { 'S' };\n        let lon_c = if self.lon >= 0.0 { 'E' } else { 'W' };\n\n        // `write!` 和 `format!` 类似，但它会将格式化后的字符串写入\n        // 一个缓冲区（即第一个参数f）中。\n        write!(f, \"{}: {:.3}°{} {:.3}°{}\",\n               self.name, self.lat.abs(), lat_c, self.lon.abs(), lon_c)\n    }\n}\n\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 18000,
+              "duration_ms": 5081,
+              "caption": "接下来在 fmt_demo.rs 里为 City 实现 Display，Color 暂时用 Debug 打印。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 24000,
+              "duration_ms": 9800,
+              "caption": "City 存名字、纬度、经度；Display 先用两个条件判断挑出南北纬和东西经，再用 write! 按三位小数把经纬度写进缓冲区。",
+              "speech_edits": [
+                {
+                  "i": 44,
+                  "s": "write!",
+                  "p": "write 宏"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "fmt_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "#[derive(Debug)]\nstruct Color {\n    red: u8,\n    green: u8,\n    blue: u8,\n}\n\nfn main() {\n    for city in [\n        City { name: \"Dublin\", lat: 53.347778, lon: -6.259722 },\n        City { name: \"Oslo\", lat: 59.95, lon: 10.75 },\n        City { name: \"Vancouver\", lat: 49.25, lon: -123.1 },\n    ].iter() {\n        println!(\"{}\", *city);\n    }\n    for color in [\n        Color { red: 128, green: 255, blue: 90 },\n        Color { red: 0, green: 3, blue: 254 },\n        Color { red: 0, green: 0, blue: 0 },\n    ].iter() {\n        // 在添加了针对 fmt::Display 的实现后，请改用 {} 检验效果。\n        println!(\"{:?}\", *color)\n    }\n}\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 34000,
+              "duration_ms": 10074,
+              "caption": "Color 只推导了 Debug；main 把三座城市和三个颜色放进数组循环打印，颜色这一页先用 {:?} 观察结构体形式。",
+              "speech_edits": [
+                {
+                  "i": 49,
+                  "s": "{:?}",
+                  "p": "大括号冒号问号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc fmt_demo.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 45000,
+              "duration_ms": 514,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 46000,
+              "duration_ms": 1249,
+              "caption": "编译成功。"
+            },
+            {
+              "offset_ms": 48000,
+              "duration_ms": 3957,
+              "caption": "刚才的警告是在说 Color 的三个字段从未被读取。"
+            },
+            {
+              "offset_ms": 52000,
+              "duration_ms": 10617,
+              "caption": "字段只被派生的 Debug 使用，而 rustc 的 dead_code 分析会忽略派生实现；这不是编译错误，练习实现 Display 后字段就会被真正读取。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "dead_code",
+                  "p": "dead code"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./fmt_demo",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "Dublin: 53.348"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 64000,
+              "duration_ms": 3237,
+              "caption": "城市用 Display 输出，颜色先用 Debug 输出。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 4000
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "step_id": "print_intro",
+  "title": "格式化宏介绍",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 8140,
+              "caption": "这一节学习 Rust 的格式化输出，认识 std::fmt 里的打印宏，并观察占位符怎样把值填进输出。",
+              "speech_edits": [
+                {
+                  "i": 24,
+                  "s": "::",
+                  "p": "双冒号"
+                }
+              ]
+            },
+            {
+              "offset_ms": 9000,
+              "duration_ms": 8167,
+              "caption": "format!、print!、println!、eprint!、eprintln! 共用一套格式语法，格式是否正确在编译期就被检查。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "format!",
+                  "p": "format 宏"
+                },
+                {
+                  "i": 8,
+                  "s": "print!",
+                  "p": "print 宏"
+                },
+                {
+                  "i": 15,
+                  "s": "println!",
+                  "p": "println 宏"
+                },
+                {
+                  "i": 24,
+                  "s": "eprint!",
+                  "p": "eprint 宏"
+                },
+                {
+                  "i": 32,
+                  "s": "eprintln!",
+                  "p": "eprintln 宏"
+                }
+              ]
+            },
+            {
+              "offset_ms": 18000,
+              "duration_ms": 5008,
+              "caption": "下面演示位置参数、命名参数，以及宽度和对齐格式。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 11,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

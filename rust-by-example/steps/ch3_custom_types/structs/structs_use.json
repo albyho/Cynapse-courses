@@ -1,0 +1,219 @@
+{
+  "step_id": "structs_use",
+  "title": "字段访问、更新与解构",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "structs.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "structs.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before",
+        "index": 3
+      },
+      "text": "    // 使用简单的写法初始化字段，并创建结构体\n    let name = String::from(\"Peter\");\n    let age = 27;\n    let peter = Person { name, age };\n\n    // 以 Debug 方式打印结构体\n    println!(\"{:?}\", peter);\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 78000,
+              "duration_ms": 6823,
+              "caption": "main 里用字段名与变量同名的简写构造 Person，再用 Debug 打印整个结构体的字段。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "structs.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before",
+        "index": 5
+      },
+      "text": "    // 实例化结构体 `Point`\n    let point: Point = Point { x: 10.3, y: 0.4 };\n\n    // 访问 point 的字段\n    println!(\"point coordinates: ({}, {})\", point.x, point.y);\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 85000,
+              "duration_ms": 4582,
+              "caption": "Point 实例化之后，用点号访问字段，读出两个坐标分量。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "structs.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before",
+        "index": 8
+      },
+      "text": "    // 使用结构体更新语法创建新的 point，\n    // 这样可以用到之前的 point 的字段\n    let bottom_right = Point { x: 5.2, ..point };\n\n    // `bottom_right.y` 与 `point.y` 一样，因为这个字段就是从 `point` 中来的\n    println!(\"second point: ({}, {})\", bottom_right.x, bottom_right.y);\n\n    // 使用 `let` 绑定来解构 point\n    let Point { x: left_edge, y: top_edge } = point;\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 90000,
+              "duration_ms": 7687,
+              "caption": "更新语法只写要改的字段，其余用 ..point 从旧值搬过来；let 配合模式把字段解构成两个变量。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "structs.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before",
+        "index": 12
+      },
+      "text": "    let _rectangle = Rectangle {\n        // 结构体的实例化也是一个表达式\n        top_left: Point { x: left_edge, y: top_edge },\n        bottom_right: bottom_right,\n    };\n\n    // 实例化一个单元结构体\n    let _unit = Unit;\n\n    // 实例化一个元组结构体\n    let pair = Pair(1, 0.1);\n\n    // 访问元组结构体的字段\n    println!(\"pair contains {:?} and {:?}\", pair.0, pair.1);\n\n    // 解构一个元组结构体\n    let Pair(integer, decimal) = pair;\n\n    println!(\"pair contains {:?} and {:?}\", integer, decimal);\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 98000,
+              "duration_ms": 7103,
+              "caption": "最后是嵌套结构体、单元结构体和元组结构体：后者用 .0、.1 访问，也能一次解构。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc structs.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 106000,
+              "duration_ms": 602,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 107000,
+              "duration_ms": 1301,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./structs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "Person { name: \"Peter\", age: 27 }",
+        "point coordinates: (10.3, 0.4)",
+        "second point: (5.2, 0.4)",
+        "pair contains 1 and 0.1"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 109000,
+              "duration_ms": 2370,
+              "caption": "运行，逐行核对输出。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 4,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 112000,
+              "duration_ms": 2403,
+              "caption": "Person 按 Debug 打印出全部字段。"
+            },
+            {
+              "offset_ms": 115000,
+              "duration_ms": 7088,
+              "caption": "point 的坐标是 (10.3, 0.4)，更新语法造出的第二个点借用了它的 y。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "(10.3, 0.4)",
+                  "p": "圆括号 10.3 逗号 0.4"
+                }
+              ]
+            },
+            {
+              "offset_ms": 123000,
+              "duration_ms": 4788,
+              "caption": "元组结构体 Pair 既能用下标访问，也能解构成两个变量。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 7000
+    }
+  ]
+}

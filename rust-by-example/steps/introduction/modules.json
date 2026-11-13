@@ -1,0 +1,35 @@
+{
+  "step_id": "modules",
+  "title": "简介: 模块",
+  "actions": [
+    {
+      "type": "REVEAL_TEXT",
+      "path": "INTRO.md",
+      "start": {
+        "line": 20
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_chapters",
+          "clips": [
+            {
+              "offset_ms": 185000,
+              "duration_ms": 1355,
+              "caption": "第 10 章《模块》。"
+            },
+            {
+              "offset_ms": 187000,
+              "duration_ms": 6839,
+              "caption": "模块把函数、类型和其他项分层次组织起来，并通过<c.aqua>可见性控制谁能访问什么</c.aqua>。"
+            },
+            {
+              "offset_ms": 194000,
+              "duration_ms": 9550,
+              "caption": "阅读例子时，先画出模块树，再观察 <c.aqua>pub 改变了哪条访问路径</c.aqua>；这样会比逐个记语法更容易理解大型 Rust 项目的结构。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

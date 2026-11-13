@@ -1,0 +1,15 @@
+Cynapse Courses
+===============
+
+The course content in this repository is adapted from Rust by Example
+(Chinese), maintained by the Rust Chinese community:
+
+    https://github.com/rust-lang-cn/rust-by-example-cn
+
+Copyright (c) The Rust Project Developers and contributors.
+
+The adapted content is distributed under the MIT OR Apache-2.0 license.
+Cynapse-specific additions and course assembly are Copyright (c) 2026
+Cynapse contributors.
+
+See LICENSE-MIT and LICENSE-APACHE for the full license texts.

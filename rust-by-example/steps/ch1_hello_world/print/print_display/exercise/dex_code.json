@@ -1,0 +1,155 @@
+{
+  "step_id": "dex_code",
+  "title": "增加复数结构体",
+  "actions": [
+    {
+      "type": "OPEN_FILE",
+      "path": "display_demo.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "display_demo.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "    println!(\"Debug: {:?}\", point);",
+        "placement": "after"
+      },
+      "text": "\n    // 动手试一试：仿照 Point2D，增加一个复数结构体并实现 Display。\n    #[derive(Debug)]\n    struct Complex {\n        real: f64,\n        imag: f64,\n    }\n\n    impl fmt::Display for Complex {\n        fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n            write!(f, \"{} + {}i\", self.real, self.imag)\n        }\n    }\n\n    let complex = Complex { real: 3.3, imag: 7.2 };\n    println!(\"Display: {}\", complex);\n    println!(\"Debug: {:?}\", complex);\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 11000,
+              "duration_ms": 5166,
+              "caption": "定义复数结构体 Complex 并实现 Display，打印成 a + bi 的形式。",
+              "speech_edits": [
+                {
+                  "i": 32,
+                  "s": "a + bi",
+                  "p": "a JIA1 b i"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 17000,
+              "duration_ms": 3930,
+              "caption": "逐行写入 Complex 的定义、Display 实现和打印。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc display_demo.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 21000,
+              "duration_ms": 514,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 22000,
+              "duration_ms": 1249,
+              "caption": "编译成功。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./display_demo",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "3.3 + 7.2i",
+        "Complex { real: 3.3, imag: 7.2 }"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 24000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 25000,
+              "duration_ms": 8852,
+              "caption": "输出包含 Display: 3.3 + 7.2i 与 Debug: Complex { real: 3.3, imag: 7.2 }。",
+              "speech_edits": [
+                {
+                  "i": 18,
+                  "s": "+",
+                  "p": "JIA1"
+                },
+                {
+                  "i": 34,
+                  "s": "Complex { real: 3.3, imag: 7.2 }",
+                  "p": "Complex 左大括号 real 冒号 3.3 逗号 imag 冒号 7.2 右大括号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 5000
+    }
+  ]
+}

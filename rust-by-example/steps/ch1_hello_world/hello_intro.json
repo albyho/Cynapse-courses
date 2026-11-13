@@ -1,0 +1,35 @@
+{
+  "step_id": "hello_intro",
+  "title": "Hello World 介绍",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5320,
+              "caption": "第 1 章先做第一件事：写出 main 函数，让终端打印一行文本。",
+              "speech_edits": [
+                {
+                  "i": 29,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 6236,
+              "caption": "整章有三件事与六个小节：1.1 注释，1.2 格式化输出及其四个小节。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "step_id": "comment_code",
+  "title": "演示注释的影响",
+  "actions": [
+    {
+      "type": "CREATE_FILE",
+      "path": "comment.rs"
+    },
+    {
+      "type": "OPEN_FILE",
+      "path": "comment.rs"
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "comment.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fn main() {\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 2675,
+              "caption": "先写出 main 的空壳，函数体留空。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 16000,
+              "duration_ms": 4586,
+              "caption": "main 的括号成对写好，后面每一段都插在右大括号之前。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "comment.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before"
+      },
+      "text": "    // 这是行注释的例子\n    // 注意有两个斜线在本行的开头\n    // 在这里面的所有内容都不会被编译器读取\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 21000,
+              "duration_ms": 5999,
+              "caption": "行注释以两条斜线开头，斜线之后到行尾的内容都不参与编译。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 16,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "comment.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before"
+      },
+      "text": "    // println!(\"Hello, world!\");\n\n    // 去掉本行开头的两条斜线，这行代码就会重新参与编译与运行。\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 27000,
+              "duration_ms": 7394,
+              "caption": "这一行代码被注释掉了：去掉开头的两条斜线，它就重新参与编译和运行。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 23,
+                  "s": "重",
+                  "p": "CHONG2"
+                },
+                {
+                  "i": 31,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "comment.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before"
+      },
+      "text": "    /*\n     * 这是另外一种注释——块注释。一般而言，行注释是推荐的注释格式，\n     * 不过块注释在临时注释大块代码特别有用。/* 块注释可以 /* 嵌套, */ */\n     * 所以只需很少按键就可注释掉这些 main() 函数中的行。/*/*/* 自己试试！*/*/*/\n     */\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 35000,
+              "duration_ms": 7716,
+              "caption": "块注释用 /* 和 */ 包住，而且可以嵌套：内层的注释符不影响外层边界。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "/*",
+                  "p": "块注释开始"
+                },
+                {
+                  "i": 10,
+                  "s": "*/",
+                  "p": "块注释结束"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "comment.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before"
+      },
+      "text": "    /*\n    注意，上面的例子中纵向都有 `*`，这只是一种风格，实际上这并不是必须的。\n    */\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 4307,
+              "caption": "块注释里纵向的星号只是排版风格，语法上并不要求。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "INSERT_TEXT",
+      "path": "comment.rs",
+      "effect": "typewriter",
+      "speed_ms": 40,
+      "target": {
+        "kind": "literal",
+        "text": "}",
+        "placement": "before"
+      },
+      "text": "    // 观察块注释是如何简单地对表达式进行修改的，行注释则不能这样。\n    // 删除注释分隔符将会改变结果。\n    let x = 5 + /* 90 + */ 5;\n    println!(\"Is `x` 10 or 100? x = {}\", x);\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 48000,
+              "duration_ms": 5812,
+              "caption": "块注释还能作用在表达式中间：包住 90 + 之后，x 只剩 5 + 5。",
+              "speech_edits": [
+                {
+                  "i": 20,
+                  "s": "+",
+                  "p": "JIA1"
+                },
+                {
+                  "i": 32,
+                  "s": "+",
+                  "p": "JIA1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_ENSURE",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc comment.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 54000,
+              "duration_ms": 514,
+              "caption": "编译。"
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 1249,
+              "caption": "编译成功。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TERMINAL_CMD",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./comment",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "x = 10"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 57000,
+              "duration_ms": 640,
+              "caption": "运行。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 58000,
+              "duration_ms": 3635,
+              "caption": "输出说明：块注释可以临时改变表达式的值。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "duration_ms": 4000
+    }
+  ]
+}

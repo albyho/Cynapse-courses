@@ -1,0 +1,52 @@
+{
+  "step_id": "enum_intro",
+  "title": "枚举的变体",
+  "actions": [
+    {
+      "type": "OPEN_PREVIEW",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 8508,
+              "caption": "在结构体之后，这一节学习枚举，观察一组互斥取值怎样携带不同形式的数据，并由 match 分别处理。",
+              "speech_edits": [
+                {
+                  "i": 46,
+                  "s": "处",
+                  "p": "CHU3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 9000,
+              "duration_ms": 8380,
+              "caption": "enum 从若干个互斥的取值里选一个，每个变体都可以带数据：单元形式、元组形式或具名字段形式。"
+            },
+            {
+              "offset_ms": 18000,
+              "duration_ms": 5066,
+              "caption": "match 按变体分别处理，并顺势把变体里的数据解构出来。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "处",
+                  "p": "CHU3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 24000,
+              "duration_ms": 5578,
+              "caption": "枚举名字太长时可以起一个类型别名，实现块里则用 Self 指代自身。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
