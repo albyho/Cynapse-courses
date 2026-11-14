@@ -10,10 +10,10 @@ published here. Course resources may be normal files or pinned git submodules.
 
 | Course | Version | Package |
 | --- | --- | --- |
-| 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example/`](rust-by-example/) |
+| 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis/`](agent-desktop-source-analysis/) |
 
-> `rust-by-example` is an in-progress adaptation. It currently covers the
+> `rust-by-example-zh-cn` is an in-progress adaptation. It currently covers the
 > introduction and chapters 1–4 only, not the complete Rust by Example book.
 
 ## Using a course
@@ -22,7 +22,7 @@ Install [Cynapse Client](https://github.com/albyho/Cynapse-release/releases) and
 the Cynapse VS Code Adapter first. Keep each package's `workspace/` directory
 local; it contains runtime state and is intentionally not tracked here.
 
-### rust-by-example
+### rust-by-example-zh-cn
 
 No submodules are required. Clone the repository and open the course directory:
 
@@ -30,7 +30,7 @@ No submodules are required. Clone the repository and open the course directory:
 git clone https://github.com/albyho/Cynapse-courses.git
 ```
 
-Open `Cynapse-courses/rust-by-example` in the `Cynapse Client`. It requires
+Open `Cynapse-courses/rust-by-example-zh-cn` in the `Cynapse Client`. It requires
 Rust `1.85.0` or newer (`rustup` is recommended).
 
 ### agent-desktop-source-analysis

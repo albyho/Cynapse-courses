@@ -10,10 +10,10 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 
 | 课程 | 版本 | 课程包 |
 | --- | --- | --- |
-| 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example/`](rust-by-example/) |
+| 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis/`](agent-desktop-source-analysis/) |
 
-> `rust-by-example` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
+> `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
 > 其余章节尚未发布。
 
 ## 使用课程
@@ -22,7 +22,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 Cynapse VS Code Adapter。每个课程包的 `workspace/` 保留在本地，它保存运行状态，
 本仓库不会跟踪其中的内容。
 
-### rust-by-example
+### rust-by-example-zh-cn
 
 不需要 submodule。克隆仓库后直接打开课程目录：
 
@@ -30,7 +30,7 @@ Cynapse VS Code Adapter。每个课程包的 `workspace/` 保留在本地，它�
 git clone https://github.com/albyho/Cynapse-courses.git
 ```
 
-在 Cynapse Client 中打开 `Cynapse-courses/rust-by-example`。还需要 Rust
+在 Cynapse Client 中打开 `Cynapse-courses/rust-by-example-zh-cn`。还需要 Rust
 `1.85.0` 或更高版本（推荐使用 `rustup`）。
 
 ### agent-desktop-source-analysis
