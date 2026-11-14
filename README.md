@@ -11,7 +11,7 @@ published here. Course resources may be normal files or pinned git submodules.
 | Course | Version | Package |
 | --- | --- | --- |
 | 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) |
-| agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis/`](agent-desktop-source-analysis/) |
+| agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) |
 
 > `rust-by-example-zh-cn` is an in-progress adaptation. It currently covers the
 > introduction and chapters 1–4 only, not the complete Rust by Example book.
@@ -33,7 +33,7 @@ git clone https://github.com/albyho/Cynapse-courses.git
 Open `Cynapse-courses/rust-by-example-zh-cn` in the `Cynapse Client`. It requires
 Rust `1.85.0` or newer (`rustup` is recommended).
 
-### agent-desktop-source-analysis
+### agent-desktop-source-analysis-zh-cn
 
 This course reads the official
 [`vercel-labs/agent-desktop`](https://github.com/vercel-labs/agent-desktop)
@@ -49,10 +49,10 @@ If the repository is already cloned, initialize the submodule:
 git submodule update --init --recursive
 ```
 
-Open `Cynapse-courses/agent-desktop-source-analysis` in the `Cynapse Client`.
+Open `Cynapse-courses/agent-desktop-source-analysis-zh-cn` in the `Cynapse Client`.
 The submodule is pinned to commit `b43ac4f6e892ef608f8851428613c4009f0e84c7`; you
 may instead download that revision yourself and place it at
-`agent-desktop-source-analysis/resources/agent-desktop`.
+`agent-desktop-source-analysis-zh-cn/resources/agent-desktop`.
 
 ### Updating
 
@@ -65,7 +65,7 @@ git submodule update --init --recursive
 Verify the agent-desktop revision before opening the course:
 
 ```sh
-git -C agent-desktop-source-analysis/resources/agent-desktop rev-parse HEAD
+git -C agent-desktop-source-analysis-zh-cn/resources/agent-desktop rev-parse HEAD
 # b43ac4f6e892ef608f8851428613c4009f0e84c7
 ```
 

@@ -11,7 +11,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 | 课程 | 版本 | 课程包 |
 | --- | --- | --- |
 | 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) |
-| agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis/`](agent-desktop-source-analysis/) |
+| agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) |
 
 > `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
 > 其余章节尚未发布。
@@ -33,7 +33,7 @@ git clone https://github.com/albyho/Cynapse-courses.git
 在 Cynapse Client 中打开 `Cynapse-courses/rust-by-example-zh-cn`。还需要 Rust
 `1.85.0` 或更高版本（推荐使用 `rustup`）。
 
-### agent-desktop-source-analysis
+### agent-desktop-source-analysis-zh-cn
 
 本课程通过固定 submodule 读取
 [`vercel-labs/agent-desktop`](https://github.com/vercel-labs/agent-desktop) 的
@@ -49,9 +49,9 @@ git clone --recurse-submodules https://github.com/albyho/Cynapse-courses.git
 git submodule update --init --recursive
 ```
 
-在 Cynapse Client 中打开 `Cynapse-courses/agent-desktop-source-analysis`。
+在 Cynapse Client 中打开 `Cynapse-courses/agent-desktop-source-analysis-zh-cn`。
 submodule 固定到提交 `b43ac4f6e892ef608f8851428613c4009f0e84c7`；也可以自行下载
-该版本并放到 `agent-desktop-source-analysis/resources/agent-desktop`。
+该版本并放到 `agent-desktop-source-analysis-zh-cn/resources/agent-desktop`。
 
 ### 更新
 
@@ -64,7 +64,7 @@ git submodule update --init --recursive
 打开课程前可以核对 agent-desktop 的提交：
 
 ```sh
-git -C agent-desktop-source-analysis/resources/agent-desktop rev-parse HEAD
+git -C agent-desktop-source-analysis-zh-cn/resources/agent-desktop rev-parse HEAD
 # b43ac4f6e892ef608f8851428613c4009f0e84c7
 ```
 
