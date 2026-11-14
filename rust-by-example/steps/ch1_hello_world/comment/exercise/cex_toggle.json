@@ -69,7 +69,8 @@
           "line": 6,
           "column": 4,
           "count": 3
-        }
+        },
+        "expected_text": "// "
       },
       "direction": "delete",
       "effect": "typewriter",
@@ -249,7 +250,8 @@
           "line": 22,
           "column": 16,
           "count": 3
-        }
+        },
+        "expected_text": "/* "
       },
       "direction": "delete",
       "effect": "typewriter",
@@ -299,7 +301,8 @@
           "line": 22,
           "column": 20,
           "count": 3
-        }
+        },
+        "expected_text": " */"
       },
       "direction": "delete",
       "effect": "typewriter",

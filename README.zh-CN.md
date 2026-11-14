@@ -10,7 +10,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 
 | 课程 | 版本 | 课程包 |
 | --- | --- | --- |
-| 通过例子学 Rust（中文版） | `0.20.15` | [`rust-by-example/`](rust-by-example/) |
+| 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example/`](rust-by-example/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis/`](agent-desktop-source-analysis/) |
 
 > `rust-by-example` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；

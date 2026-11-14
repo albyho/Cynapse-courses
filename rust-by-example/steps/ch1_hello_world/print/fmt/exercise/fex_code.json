@@ -14,7 +14,8 @@
           "line": 45,
           "column": 20,
           "count": 1
-        }
+        },
+        "expected_text": "?"
       },
       "direction": "delete",
       "effect": "typewriter",
@@ -86,7 +87,8 @@
           "line": 45,
           "column": 19,
           "count": 1
-        }
+        },
+        "expected_text": ":"
       },
       "direction": "delete",
       "effect": "typewriter",

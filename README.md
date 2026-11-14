@@ -10,7 +10,7 @@ published here. Course resources may be normal files or pinned git submodules.
 
 | Course | Version | Package |
 | --- | --- | --- |
-| 通过例子学 Rust（中文版） | `0.20.15` | [`rust-by-example/`](rust-by-example/) |
+| 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example/`](rust-by-example/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis/`](agent-desktop-source-analysis/) |
 
 > `rust-by-example` is an in-progress adaptation. It currently covers the
