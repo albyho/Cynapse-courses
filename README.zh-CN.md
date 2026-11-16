@@ -12,7 +12,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 | --- | --- | --- |
 | 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) |
-| 信号处理路线图（中文版） | `0.2.2` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) |
+| 信号处理路线图（中文版） | `0.2.3` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) |
 
 > `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
 > 其余章节尚未发布。

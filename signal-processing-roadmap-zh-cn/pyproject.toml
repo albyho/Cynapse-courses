@@ -1,0 +1,8 @@
+[project]
+name = "signal-processing-roadmap-zh-cn"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<3",
+]

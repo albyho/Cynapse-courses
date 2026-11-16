@@ -12,7 +12,7 @@ published here. Course resources may be normal files or pinned git submodules.
 | --- | --- | --- |
 | 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) |
-| 信号处理路线图（中文版） | `0.2.2` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) |
+| 信号处理路线图（中文版） | `0.2.3` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) |
 
 > `rust-by-example-zh-cn` is an in-progress adaptation. It currently covers the
 > introduction and chapters 1–4 only, not the complete Rust by Example book.

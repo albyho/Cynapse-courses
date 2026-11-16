@@ -4,6 +4,8 @@ Published Course Packages. Versions match each package's `manifest.json`.
 
 ## 2026-11-16
 
+- `signal-processing-roadmap-zh-cn` 0.2.3: include `pyproject.toml` and
+  `pylock.toml` so the JupyterLab Course Environment can be provisioned.
 - `signal-processing-roadmap-zh-cn` 0.2.2: initial release with the silent
   welcome animation, introduction, and Week 1 signal-processing lessons.
 
