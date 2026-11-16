@@ -1,0 +1,131 @@
+{
+  "step_id": "sec3_answer",
+  "title": "一个可行答案",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_answer",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_answer",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nt = np.linspace(0, 1, 500)  # 生成 0 到 1 秒的均匀时间点\nx1 = np.sin(2 * np.pi * 1.0 * t)  # 1 Hz 的基准信号\n\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 148000,
+              "duration_ms": 3254,
+              "caption": "先准备<c.aqua>时间轴</c.aqua>和 1 Hz 的基准<c.aqua>信号</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "x_task = 0.6 * np.sin(2 * np.pi * 1.0 * (t - 0.2))  # 振幅缩小到 0.6 并向右移动 0.2 秒\n\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 152000,
+              "duration_ms": 5551,
+              "caption": "把<c.aqua>振幅</c.aqua>乘以 0.6，并用 t-0.2 把整个波形向右移动 0.2 秒。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "幅",
+                  "p": "FU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x1, label=\"x1\")\nplt.plot(t, x_task, label=\"0.6 * x1 shifted right by 0.2 s\")\nplt.title(\"Scale and time shift\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 158000,
+              "duration_ms": 6318,
+              "caption": "把原<c.aqua>信号</c.aqua>和变换后的信号画在一起，检查<c.aqua>振幅</c.aqua>和位置是否都符合预期。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "幅",
+                  "p": "FU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "cynapse_sec3_answer",
+      "to_cell_id": "cynapse_sec3_answer",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 165000,
+              "duration_ms": 9638,
+              "caption": "一种写法是 0.6 乘以 sin(2π 乘以 1 乘以 (t 减 0.2))。<c.aqua>观察</c.aqua>：<c.aqua>振幅</c.aqua>变成 0.6，波形整体右移；<c.aqua>周期</c.aqua>仍然是 1 秒。",
+              "speech_edits": [
+                {
+                  "i": 43,
+                  "s": "幅",
+                  "p": "FU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

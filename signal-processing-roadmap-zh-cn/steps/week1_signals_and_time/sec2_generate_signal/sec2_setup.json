@@ -1,0 +1,265 @@
+{
+  "step_id": "sec2_setup",
+  "title": "生成 1 秒正弦信号",
+  "actions": [
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_formula",
+      "cell_type": "markdown",
+      "source": "## 正弦信号的三个参数\n\n$$x(t) = A \\sin(2 \\pi f t + \\phi)$$\n\n- `A`：振幅（Amplitude）\n- `f`：频率（Frequency），单位 Hz\n- `T = 1 / f`：周期（Period），单位 s\n- `omega = 2 pi f`：角频率（Angular frequency），单位 rad/s\n- `phi`：初相位（Phase）\n"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n",
+      "speed_ms": 28
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fs = 100  # 采样率：每秒 100 个样本\nduration = 1.0  # 信号持续 1 秒\nt = np.arange(0, duration, 1 / fs)  # 生成 0 到 1 秒的采样时间点\n\n",
+      "speed_ms": 28,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 60000,
+              "duration_ms": 4288,
+              "caption": "先建立<c.aqua>采样时间</c.aqua>轴：每秒 100 个<c.aqua>样本</c.aqua>，持续 1 秒。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "采",
+                  "p": "CAI3"
+                },
+                {
+                  "i": 7,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "A = 1.0  # 振幅 A 控制波形高低\nf = 2.0  # 频率 f 控制每秒的周期数\nphi = 0.0  # 初相位 phi 控制起点位置\nx = A * np.sin(2 * np.pi * f * t + phi)  # 正弦公式：A·sin(2πft+φ)\n\n",
+      "speed_ms": 28,
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 65000,
+              "duration_ms": 1964,
+              "caption": "接下来写正弦公式。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "弦",
+                  "p": "XIAN2"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 67000,
+              "duration_ms": 5062,
+              "caption": "注意这一行同时包含<c.aqua>振幅</c.aqua> A、<c.aqua>频率</c.aqua> f 和<c.aqua>初相位</c.aqua> phi。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 10,
+                  "s": "幅",
+                  "p": "FU2"
+                },
+                {
+                  "i": 15,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 21,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "print(\"samples:\", t.size)\nprint(\"period (s):\", 1 / f)\nprint(\"angular frequency (rad/s):\", 2 * np.pi * f)\n",
+      "speed_ms": 28,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 73000,
+              "duration_ms": 4765,
+              "caption": "最后打印<c.aqua>样本</c.aqua>数、<c.aqua>周期</c.aqua>和<c.aqua>角频率</c.aqua>，运行后逐项核对。",
+              "speech_edits": [
+                {
+                  "i": 13,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 16,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec2_setup",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 78000,
+              "duration_ms": 9891,
+              "caption": "先建立 1 秒的<c.aqua>时间轴</c.aqua>，再按<c.aqua>振幅</c.aqua>、<c.aqua>频率</c.aqua>和初相位生成正弦信号。运行后先看样本数量和周期。",
+              "speech_edits": [
+                {
+                  "i": 10,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                },
+                {
+                  "i": 15,
+                  "s": "幅",
+                  "p": "FU2"
+                },
+                {
+                  "i": 18,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 21,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 26,
+                  "s": "弦",
+                  "p": "XIAN2"
+                },
+                {
+                  "i": 31,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 38,
+                  "s": "量",
+                  "p": "LIANG4"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 88000,
+              "duration_ms": 11153,
+              "caption": "我们以每秒 100 个<c.aqua>样本</c.aqua>生成 1 秒数据，也就是 100 个时间点。A 等于 1，f 等于 2 Hz，phi 等于 0。2 Hz 表示每秒 2 个完整<c.aqua>周期</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 100000,
+              "duration_ms": 7094,
+              "caption": "运行后先确认<c.aqua>样本</c.aqua>数量和<c.aqua>周期</c.aqua>。周期 T 等于 1 除以 f，所以这里是 0.5 秒。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 9,
+                  "s": "量",
+                  "p": "LIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

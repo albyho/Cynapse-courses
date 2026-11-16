@@ -1,0 +1,142 @@
+{
+  "step_id": "sec2_seed",
+  "title": "先看 Notebook 的 Seed",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "intro",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 30000,
+              "duration_ms": 6348,
+              "caption": "intro Cell 先说明本单元要生成什么<c.aqua>信号</c.aqua>；接着是 Seed 提供的两个基础 Cell。",
+              "speech_edits": [
+                {
+                  "i": 26,
+                  "s": "着",
+                  "p": "ZHE5"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_imports",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 5036,
+              "caption": "setup_imports 负责导入 NumPy 和 Matplotlib，后面的绘图都依赖它。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_imports",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 3840,
+              "caption": "运行后没有可见输出，但两个库已经可以使用。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 47000,
+              "duration_ms": 6852,
+              "caption": "setup_exercise 准备练习用的<c.aqua>时间轴</c.aqua> t；后面的动手试一试会直接使用这个变量。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 54000,
+              "duration_ms": 5188,
+              "caption": "运行后 t 已经准备好，练习不需要再手动创建<c.aqua>时间轴</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 24,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

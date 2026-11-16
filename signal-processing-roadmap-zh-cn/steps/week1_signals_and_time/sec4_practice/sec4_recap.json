@@ -1,0 +1,80 @@
+{
+  "step_id": "sec4_recap",
+  "title": "第 1 周小结",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_answer",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 134000,
+              "duration_ms": 5308,
+              "caption": "第 1 周到这里结束。你应该能生成、绘制、组合和变换简单<c.aqua>信号</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 140000,
+              "duration_ms": 5961,
+              "caption": "接下来会进入<c.aqua>采样</c.aqua>、频谱和滤波器，逐步解释这些波形怎样被分析。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "采",
+                  "p": "CAI3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 146000,
+              "duration_ms": 6394,
+              "caption": "如果刚才的步骤想再看一遍，可以用 <c.aqua>Stop</c.aqua> 后<c.aqua>重放</c.aqua>，检查 Cell 不会重复。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "重",
+                  "p": "CHONG2"
+                },
+                {
+                  "i": 36,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "lesson.ipynb"
+    }
+  ]
+}

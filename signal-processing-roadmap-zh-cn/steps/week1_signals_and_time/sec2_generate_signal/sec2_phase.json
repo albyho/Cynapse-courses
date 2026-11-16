@@ -1,0 +1,164 @@
+{
+  "step_id": "sec2_phase",
+  "title": "只改相位会怎样",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_phase",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_phase",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_phase",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "x_phase = A * np.sin(2 * np.pi * f * t + np.pi / 2)  # 只把初相位换成 π/2\n\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 169000,
+              "duration_ms": 6109,
+              "caption": "只改<c.aqua>初相位</c.aqua>：在正弦公式里加上 π/2，<c.aqua>频率</c.aqua>和<c.aqua>振幅</c.aqua>保持不变。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 8,
+                  "s": "弦",
+                  "p": "XIAN2"
+                },
+                {
+                  "i": 20,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 23,
+                  "s": "幅",
+                  "p": "FU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_phase",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"phase = 0\")\nplt.plot(t, x_phase, label=\"phase = pi/2\")\nplt.title(\"Changing phase\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # 区分多条曲线\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 176000,
+              "duration_ms": 4637,
+              "caption": "把<c.aqua>相位</c.aqua> 0 和 π/2 两条曲线放在同一张图上比较。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec2_phase",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 181000,
+              "duration_ms": 8777,
+              "caption": "这次只改<c.aqua>相位</c.aqua>，把 phi 设为 π/2；<c.aqua>频率</c.aqua>保持不变。先<c.aqua>观察</c.aqua>波形整体移动，不要把它误认为频率变化。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 21,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 45,
+                  "s": "率",
+                  "p": "LV4"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 190000,
+              "duration_ms": 13996,
+              "caption": "现在只改<c.aqua>初相位</c.aqua>，把 phi 设为 π/2。波形会整体向左移动，但<c.aqua>频率</c.aqua>和<c.aqua>周期</c.aqua>不变。相位描述的是起点在周期中的位置，不要把相位移动误认为频率变化。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 33,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 40,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 59,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 67,
+                  "s": "率",
+                  "p": "LV4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

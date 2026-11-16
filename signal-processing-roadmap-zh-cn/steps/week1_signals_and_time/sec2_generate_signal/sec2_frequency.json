@@ -1,0 +1,144 @@
+{
+  "step_id": "sec2_frequency",
+  "title": "改变频率：2 Hz 与 4 Hz",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_frequency",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_frequency",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_frequency",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "x_4hz = A * np.sin(2 * np.pi * 4.0 * t + phi)  # 同样参数下把频率换成 4 Hz\n\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 135000,
+              "duration_ms": 4038,
+              "caption": "先只把<c.aqua>频率</c.aqua>换成 4 Hz，其他参数保持原样。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 15,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_frequency",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"f = 2 Hz\")  # 把数据画成曲线\nplt.plot(t, x_4hz, label=\"f = 4 Hz\")\nplt.title(\"Changing frequency\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # 区分多条曲线\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 140000,
+              "duration_ms": 6135,
+              "caption": "再把 2 Hz 和 4 Hz 两条曲线画在一起，比较同样时间内<c.aqua>周期</c.aqua>的数量。",
+              "speech_edits": [
+                {
+                  "i": 35,
+                  "s": "量",
+                  "p": "LIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec2_frequency",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 147000,
+              "duration_ms": 7560,
+              "caption": "接下来只改<c.aqua>频率</c.aqua>：从 2 Hz 换成 4 Hz。先<c.aqua>预测</c.aqua><c.aqua>周期</c.aqua>会变成多少，再运行比较两条曲线。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 36,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 155000,
+              "duration_ms": 13949,
+              "caption": "把<c.aqua>频率</c.aqua>从 2 Hz 改成 4 Hz，其他参数不变。<c.aqua>周期</c.aqua> T 等于 1 除以 f，所以周期从 0.5 秒变成 0.25 秒；<c.aqua>角频率</c.aqua> omega 等于 2πf。频率越高，同样时间内周期越多。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 20,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 63,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 79,
+                  "s": "率",
+                  "p": "LV4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

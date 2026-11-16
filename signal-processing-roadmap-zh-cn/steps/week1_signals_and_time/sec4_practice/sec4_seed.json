@@ -1,0 +1,154 @@
+{
+  "step_id": "sec4_seed",
+  "title": "先看 Notebook 的 Seed",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "intro",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 6139,
+              "caption": "intro Cell 先说明综合练习的目标：组合两个正弦成分并解释参数。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "弦",
+                  "p": "XIAN2"
+                },
+                {
+                  "i": 33,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_imports",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 33000,
+              "duration_ms": 7549,
+              "caption": "setup_imports 和前面单元相同，已经在之前的章节讲过；这里直接运行确认环境可用。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "相",
+                  "p": "XIANG1"
+                },
+                {
+                  "i": 38,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_imports",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 41000,
+              "duration_ms": 3931,
+              "caption": "运行后没有可见输出，但基础库已经加载。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 45000,
+              "duration_ms": 5464,
+              "caption": "setup_exercise 准备练习用的<c.aqua>时间轴</c.aqua> t；综合练习会从 t_task = t 开始。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 51000,
+              "duration_ms": 4147,
+              "caption": "运行后 t 已经准备好，可以直接开始构造<c.aqua>信号</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

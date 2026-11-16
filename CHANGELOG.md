@@ -2,6 +2,11 @@
 
 Published Course Packages. Versions match each package's `manifest.json`.
 
+## 2026-11-16
+
+- `signal-processing-roadmap-zh-cn` 0.2.2: initial release with the silent
+  welcome animation, introduction, and Week 1 signal-processing lessons.
+
 ## 2026-11-15
 
 - `rust-by-example` 0.20.16: the chapter 1 comment and formatting exercises now

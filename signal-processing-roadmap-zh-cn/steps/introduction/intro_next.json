@@ -1,0 +1,58 @@
+{
+  "step_id": "intro_next",
+  "title": "进入第 1 周",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_next",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 8649,
+              "caption": "现在先不急着套公式。进入第 1 周前，先问自己：如果只给你一串随时间变化的数，你会怎样<c.aqua>观察</c.aqua>它？"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 72000,
+              "duration_ms": 7799,
+              "caption": "下一步是 1.1 <c.aqua>信号</c.aqua>与<c.aqua>时间轴</c.aqua>。我们会把同一组<c.aqua>样本</c.aqua>画在时间轴上，比较两种画法。",
+              "speech_edits": [
+                {
+                  "i": 14,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                },
+                {
+                  "i": 29,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    }
+  ]
+}

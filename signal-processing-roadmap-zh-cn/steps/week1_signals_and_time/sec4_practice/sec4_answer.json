@@ -1,0 +1,171 @@
+{
+  "step_id": "sec4_answer",
+  "title": "一个可行示例",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_answer",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_answer",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nt_task = np.linspace(0, 1, 500)  # 从 Seed 提供的时间轴开始\n\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 92000,
+              "duration_ms": 3195,
+              "caption": "先准备 0 到 1 秒的均匀<c.aqua>时间轴</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "low = 0.8 * np.sin(2 * np.pi * 1.0 * t_task + np.pi / 4)  # 低频成分：1 Hz，振幅 0.8\nhigh = 0.3 * np.sin(2 * np.pi * 4.0 * t_task)  # 高频成分：4 Hz，振幅 0.3\nx_task = low + high  # 低频和高频成分叠加\n\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 96000,
+              "duration_ms": 7766,
+              "caption": "低频成分 1 Hz、<c.aqua>振幅</c.aqua> 0.8，并加 π/4 <c.aqua>相位</c.aqua>；高频成分 4 Hz、振幅 0.3；最后逐点<c.aqua>相加</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "幅",
+                  "p": "FU2"
+                },
+                {
+                  "i": 24,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 38,
+                  "s": "幅",
+                  "p": "FU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))\nplt.plot(t_task, low, label=\"low: 1 Hz, A=0.8, phase=pi/4\")\nplt.plot(t_task, high, label=\"high: 4 Hz, A=0.3\")\nplt.plot(t_task, x_task, label=\"sum\")\nplt.title(\"A signal with low and high frequency components\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 104000,
+              "duration_ms": 6171,
+              "caption": "把两个成分和合成<c.aqua>信号</c.aqua>画在一起，检查高频细节是否骑在低频起伏上。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "cynapse_sec4_answer",
+      "to_cell_id": "cynapse_sec4_answer",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 111000,
+              "duration_ms": 8987,
+              "caption": "先看一个可行示例，再对照你自己的参数和图形；重点不是唯一答案，而是能否解释每个参数。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 22,
+                  "s": "重",
+                  "p": "ZHONG4"
+                },
+                {
+                  "i": 39,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 120000,
+              "duration_ms": 13322,
+              "caption": "这是一个可行示例：低频 1 Hz <c.aqua>振幅</c.aqua> 0.8，高频 4 Hz 振幅 0.3，并给低频加 π/4 <c.aqua>相位</c.aqua>。两条曲线叠加后，高频细节骑在低频起伏上；这不是唯一答案。",
+              "speech_edits": [
+                {
+                  "i": 18,
+                  "s": "幅",
+                  "p": "FU2"
+                },
+                {
+                  "i": 33,
+                  "s": "幅",
+                  "p": "FU2"
+                },
+                {
+                  "i": 49,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

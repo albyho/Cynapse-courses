@@ -12,6 +12,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 | --- | --- | --- |
 | 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) |
+| 信号处理路线图（中文版） | `0.2.2` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) |
 
 > `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
 > 其余章节尚未发布。
@@ -19,8 +20,8 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 ## 使用课程
 
 先安装 [Cynapse Client](https://github.com/albyho/Cynapse-release/releases) 和
-Cynapse VS Code Adapter。每个课程包的 `workspace/` 保留在本地，它保存运行状态，
-本仓库不会跟踪其中的内容。
+对应的 Cynapse Adapter（VS Code 或 JupyterLab）。每个课程包的 `workspace/` 保留在本地，
+它保存运行状态，本仓库不会跟踪其中的内容。
 
 ### rust-by-example-zh-cn
 
@@ -52,6 +53,12 @@ git submodule update --init --recursive
 在 Cynapse Client 中打开 `Cynapse-courses/agent-desktop-source-analysis-zh-cn`。
 submodule 固定到提交 `b43ac4f6e892ef608f8851428613c4009f0e84c7`；也可以自行下载
 该版本并放到 `agent-desktop-source-analysis-zh-cn/resources/agent-desktop`。
+
+### signal-processing-roadmap-zh-cn
+
+本课程在 JupyterLab 中运行，需要 Cynapse JupyterLab Adapter；不需要 submodule。
+在 Cynapse Client 中打开 `Cynapse-courses/signal-processing-roadmap-zh-cn`。每个 Unit
+使用独立的 Notebook、Kernel 和 Workspace。
 
 ### 更新
 
@@ -97,6 +104,8 @@ python courses/publish_course.py courses/<课程> D:\dev\alby\Cynapse-courses
 Rust 课程改编自
 [Rust by Example（中文版）](https://github.com/rust-lang-cn/rust-by-example-cn)，
 页面观察日期为 2026-11-03，按 MIT OR Apache-2.0 许可分发。agent-desktop 课程以
-固定 submodule 引用上游源码，并保留其 Apache-2.0 许可。详见
+固定 submodule 引用上游源码，并保留其 Apache-2.0 许可。信号处理课程参考
+[Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap)
+的章节骨架和主题，讲解、Notebook 和练习为原创。详见
 [`NOTICE`](NOTICE)、[`LICENSE-MIT`](LICENSE-MIT) 和
 [`LICENSE-APACHE`](LICENSE-APACHE)。

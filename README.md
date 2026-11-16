@@ -12,6 +12,7 @@ published here. Course resources may be normal files or pinned git submodules.
 | --- | --- | --- |
 | 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) |
+| 信号处理路线图（中文版） | `0.2.2` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) |
 
 > `rust-by-example-zh-cn` is an in-progress adaptation. It currently covers the
 > introduction and chapters 1–4 only, not the complete Rust by Example book.
@@ -19,8 +20,9 @@ published here. Course resources may be normal files or pinned git submodules.
 ## Using a course
 
 Install [Cynapse Client](https://github.com/albyho/Cynapse-release/releases) and
-the Cynapse VS Code Adapter first. Keep each package's `workspace/` directory
-local; it contains runtime state and is intentionally not tracked here.
+the matching Cynapse Adapter (VS Code or JupyterLab) first. Keep each package's
+`workspace/` directory local; it contains runtime state and is intentionally not
+tracked here.
 
 ### rust-by-example-zh-cn
 
@@ -53,6 +55,13 @@ Open `Cynapse-courses/agent-desktop-source-analysis-zh-cn` in the `Cynapse Clien
 The submodule is pinned to commit `b43ac4f6e892ef608f8851428613c4009f0e84c7`; you
 may instead download that revision yourself and place it at
 `agent-desktop-source-analysis-zh-cn/resources/agent-desktop`.
+
+### signal-processing-roadmap-zh-cn
+
+This course runs in JupyterLab and requires the Cynapse JupyterLab Adapter. No
+submodules are required. Open
+`Cynapse-courses/signal-processing-roadmap-zh-cn` in the `Cynapse Client`; each
+Unit keeps its own Notebook, Kernel, and Workspace.
 
 ### Updating
 
@@ -101,5 +110,9 @@ The Rust course is adapted from
 [Rust by Example (Chinese)](https://github.com/rust-lang-cn/rust-by-example-cn),
 observed on 2026-11-03, and is distributed under the MIT OR Apache-2.0 license.
 The agent-desktop course links its upstream source as a pinned submodule and
-keeps that repository's Apache-2.0 license. See [`NOTICE`](NOTICE),
-[`LICENSE-MIT`](LICENSE-MIT), and [`LICENSE-APACHE`](LICENSE-APACHE).
+keeps that repository's Apache-2.0 license. The signal-processing course
+references
+[Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap)
+for its chapter structure and topics; its lessons and notebooks are original.
+See [`NOTICE`](NOTICE), [`LICENSE-MIT`](LICENSE-MIT), and
+[`LICENSE-APACHE`](LICENSE-APACHE).

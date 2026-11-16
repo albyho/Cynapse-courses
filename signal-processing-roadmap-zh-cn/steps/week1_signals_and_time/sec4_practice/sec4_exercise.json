@@ -1,0 +1,93 @@
+{
+  "step_id": "sec4_exercise",
+  "title": "动手试一试：两个成分",
+  "actions": [
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_exercise",
+      "cell_type": "code",
+      "source": "# 任务：构造一个由两个正弦组成的信号\n# - 低频成分：频率约 1 Hz\n# - 高频成分：频率约 4 Hz\n# - 至少一个成分带相位或时移\n# 要求：画图、标题、坐标轴、图例\n# 完成标准：两个成分都能在图中辨认；能用一句话解释每个参数\n# 基础时间轴 t 已由 Seed 的 setup_exercise 准备好；可以从 t_task = t 开始\n\nt_task = t\n# low = ...\n# high = ...\n# x_task = ...\n# plt.plot(...)\n# plt.legend()\n# plt.show()\n"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 56000,
+              "duration_ms": 8836,
+              "caption": "构造一个由两个正弦组成的<c.aqua>信号</c.aqua>：一个低频成分，一个高频成分；至少一个成分带<c.aqua>相位</c.aqua>或<c.aqua>时移</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "弦",
+                  "p": "XIAN2"
+                },
+                {
+                  "i": 36,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 65000,
+              "duration_ms": 11200,
+              "caption": "画出波形，补上标题、坐标轴标签和图例。<c.aqua>完成标准</c.aqua>是两个成分都能在图中辨认，并能解释每个参数；运行成功后再点继续。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                },
+                {
+                  "i": 42,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 46,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "requires_human": true
+}

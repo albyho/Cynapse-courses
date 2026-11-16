@@ -1,0 +1,84 @@
+{
+  "step_id": "sec1_seed",
+  "title": "先看 Notebook 的 Seed",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "intro",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 34000,
+              "duration_ms": 5504,
+              "caption": "打开教学 <c.aqua>Notebook</c.aqua> 后先看开头：intro Cell 说明这个单元要<c.aqua>观察</c.aqua>什么。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_imports",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 40000,
+              "duration_ms": 6873,
+              "caption": "setup_imports 是基础环境，只负责导入 NumPy 和 Matplotlib；后面的代码不再重复导入。",
+              "speech_edits": [
+                {
+                  "i": 52,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_imports",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 47000,
+              "duration_ms": 5836,
+              "caption": "运行后没有可见输出，但 NumPy 和 Matplotlib 已经在当前 <c.aqua>Kernel</c.aqua> 中可用。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

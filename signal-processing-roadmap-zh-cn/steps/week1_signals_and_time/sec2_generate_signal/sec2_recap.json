@@ -1,0 +1,95 @@
+{
+  "step_id": "sec2_recap",
+  "title": "小结：正弦信号的参数",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 253000,
+              "duration_ms": 6633,
+              "caption": "这一节记住三件事：<c.aqua>振幅</c.aqua>决定高低，<c.aqua>频率</c.aqua>决定疏密，<c.aqua>相位</c.aqua>决定起点位置。",
+              "speech_edits": [
+                {
+                  "i": 10,
+                  "s": "幅",
+                  "p": "FU2"
+                },
+                {
+                  "i": 17,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 23,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 260000,
+              "duration_ms": 6843,
+              "caption": "<c.aqua>周期</c.aqua>等于<c.aqua>频率</c.aqua>的倒数，<c.aqua>角频率</c.aqua>等于 2π 乘以频率；它们描述同一个变化速度。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 12,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 22,
+                  "s": "率",
+                  "p": "LV4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 267000,
+              "duration_ms": 5264,
+              "caption": "下一节把这些<c.aqua>信号</c.aqua><c.aqua>相加</c.aqua>、缩放、平移和<c.aqua>反转</c.aqua>，观察组合后的波形。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "lesson.ipynb"
+    }
+  ]
+}

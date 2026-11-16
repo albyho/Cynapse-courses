@@ -1,0 +1,186 @@
+{
+  "step_id": "sec1_samples",
+  "title": "样本、时间与振幅",
+  "actions": [
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_concept",
+      "cell_type": "markdown",
+      "source": "## 连续与离散\n\n- **连续信号**：每个时刻都有值。\n- **离散信号**：只在采样时刻有值。\n- **样本序号** `n`：第几个样本，从 0 开始。\n- **采样时间** `t`：样本对应的真实时间。\n- **振幅** `x[n]`：样本的高度。\n"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n",
+      "speed_ms": 30
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "n = np.arange(8)  # 样本序号从 0 开始\nt = 0.5 * n  # 采样间隔 0.5 秒，把序号换算成时间\nx = np.array([0, 1, 2, 1, 0, -1, -2, -1])  # 每个样本对应的振幅\n\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 53000,
+              "duration_ms": 6477,
+              "caption": "先建立<c.aqua>样本序号</c.aqua>、<c.aqua>采样时间</c.aqua>和<c.aqua>振幅</c.aqua>；注意 t 是每个样本对应的真实时间。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "采",
+                  "p": "CAI3"
+                },
+                {
+                  "i": 14,
+                  "s": "幅",
+                  "p": "FU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "print(\"n =\", n)\nprint(\"t =\", t)\nprint(\"x =\", x)\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 60000,
+              "duration_ms": 5640,
+              "caption": "把三个数组打印出来，下一步先检查它们的长度和对应关系。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec1_samples",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 66000,
+              "duration_ms": 6234,
+              "caption": "先运行这段代码，看看 8 个<c.aqua>样本</c.aqua>的序号、时间和<c.aqua>振幅</c.aqua>怎样一一对应。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 24,
+                  "s": "幅",
+                  "p": "FU2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 73000,
+              "duration_ms": 10439,
+              "caption": "这里用 8 个<c.aqua>样本</c.aqua>表示一个<c.aqua>离散信号</c.aqua>。n 是<c.aqua>样本序号</c.aqua>，t 是采样时间。采样间隔是 0.5 秒，所以第 4 个样本在 1.5 秒。",
+              "speech_edits": [
+                {
+                  "i": 29,
+                  "s": "采",
+                  "p": "CAI3"
+                },
+                {
+                  "i": 34,
+                  "s": "采",
+                  "p": "CAI3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 84000,
+              "duration_ms": 5941,
+              "caption": "运行后先看打印出的数组，确认序号、时间和<c.aqua>振幅</c.aqua>是一一对应的。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 21,
+                  "s": "幅",
+                  "p": "FU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

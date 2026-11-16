@@ -1,0 +1,81 @@
+{
+  "step_id": "intro_signal",
+  "title": "信号与信号处理",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_title",
+      "align": "start"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 8711,
+              "caption": "欢迎来到<c.aqua>信号</c.aqua>处理路线图。这里不要求你先学完复杂数学，我们会从能够看见、能够画出的信号开始。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "处",
+                  "p": "CHU3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_signal",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 9000,
+              "duration_ms": 8849,
+              "caption": "<c.aqua>信号</c.aqua>可以理解为随时间或空间变化的量：声音的波形、心电图的起伏、雷达回波、传感器读数，都是信号。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 18000,
+              "duration_ms": 7091,
+              "caption": "<c.aqua>信号</c.aqua>处理做的事可以概括为：生成或采集、<c.aqua>观察</c.aqua>、变换、分析，最后用于判断或应用。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "处",
+                  "p": "CHU3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

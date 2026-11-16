@@ -1,0 +1,70 @@
+{
+  "step_id": "sec1_recap",
+  "title": "小结：样本与时间轴",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_exercise",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 128000,
+              "duration_ms": 9201,
+              "caption": "记住三件事：<c.aqua>信号</c.aqua>是随时间变化的量；<c.aqua>离散信号</c.aqua>用<c.aqua>样本</c.aqua>和采样间隔描述；stem 比 plot 更适合显示离散样本。",
+              "speech_edits": [
+                {
+                  "i": 25,
+                  "s": "采",
+                  "p": "CAI3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 138000,
+              "duration_ms": 6200,
+              "caption": "下一节开始生成真正的<c.aqua>正弦信号</c.aqua>，并<c.aqua>观察</c.aqua><c.aqua>频率</c.aqua>和相位怎样改变波形。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "弦",
+                  "p": "XIAN2"
+                },
+                {
+                  "i": 19,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 21,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "lesson.ipynb"
+    }
+  ]
+}

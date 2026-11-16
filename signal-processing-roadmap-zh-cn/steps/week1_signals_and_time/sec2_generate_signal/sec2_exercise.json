@@ -1,0 +1,85 @@
+{
+  "step_id": "sec2_exercise",
+  "title": "动手试一试：先预测再验证",
+  "actions": [
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_exercise",
+      "cell_type": "code",
+      "source": "# 任务：选一组 A、f、phi，先写下预测，再画图验证\n# 要求：至少改变一次频率和一次相位，并用图例区分两条曲线\n# 完成标准：两条曲线；图例、标题、两个轴标签；能说出哪条曲线体现了频率变化、哪条体现了相位变化\n# 基础时间轴 t 已由 Seed 的 setup_exercise 准备好，可直接使用 t\n\n# A_ex = ...\n# f_ex = ...\n# phi_ex = ...\n# x_ex = ...\n# plt.plot(...)\n# plt.legend()\n# plt.show()\n"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 204000,
+              "duration_ms": 9148,
+              "caption": "自己选一组 A、f、phi，先<c.aqua>预测</c.aqua>波形，再写代码验证。至少改变一次<c.aqua>频率</c.aqua>和一次<c.aqua>相位</c.aqua>，并用图例区分两条曲线。",
+              "speech_edits": [
+                {
+                  "i": 34,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 38,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 214000,
+              "duration_ms": 10093,
+              "caption": "<c.aqua>完成标准</c.aqua>：图有标题和两个轴标签；你能指出哪条曲线体现<c.aqua>频率</c.aqua>变化、哪条体现<c.aqua>相位</c.aqua>变化。运行观察后点继续。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 35,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 41,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "requires_human": true
+}

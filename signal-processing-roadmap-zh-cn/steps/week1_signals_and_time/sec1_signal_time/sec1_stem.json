@@ -1,0 +1,47 @@
+{
+  "step_id": "sec1_stem",
+  "title": "用茎叶图表示离散样本",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_stem",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_stem",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_stem",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))  # 创建画布并设置尺寸\nplt.stem(t, x)  # 用竖线表示离散样本\nplt.title(\"Same signal drawn with stem\")  # 写清图表达的内容\nplt.xlabel(\"Time (s)\")  # 标明横轴和单位\nplt.ylabel(\"Amplitude\")  # 标明纵轴和单位\nplt.grid(True, alpha=0.3)  # 加网格方便读数\nplt.tight_layout()  # 避免标签被裁掉\nplt.show()  # 渲染并显示图像\n",
+      "speed_ms": 35
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec1_stem",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 101000,
+              "duration_ms": 7896,
+              "caption": "stem 把每个<c.aqua>样本</c.aqua>画成一根竖线，更适合表示<c.aqua>离散信号</c.aqua>。同一组数，换一种画法，表达的含义更准确。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "step_id": "sec3_shift",
+  "title": "时移：波形整体平移",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_shift",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_shift",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_shift",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "x_shifted = np.sin(2 * np.pi * f1 * (t - 0.25))  # 用 t-0.25 把波形向右平移\n\nplt.figure(figsize=(7, 3))\nplt.plot(t, x1, label=\"x1\")\nplt.plot(t, x_shifted, label=\"x1 shifted right by 0.25 s\")\nplt.title(\"Time shift\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 30
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec3_shift",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 97000,
+              "duration_ms": 6887,
+              "caption": "接下来把 1 Hz 波形向右平移 0.25 秒；只改变发生时间，不改变<c.aqua>频率</c.aqua>和形状。",
+              "speech_edits": [
+                {
+                  "i": 36,
+                  "s": "率",
+                  "p": "LV4"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 104000,
+              "duration_ms": 11492,
+              "caption": "<c.aqua>时移</c.aqua>是把整个波形沿<c.aqua>时间轴</c.aqua>平移。这里把 t 换成 t 减 0.25，波形向右移动 0.25 秒。<c.aqua>频率</c.aqua>和形状不变，只是发生的时间变了。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                },
+                {
+                  "i": 48,
+                  "s": "率",
+                  "p": "LV4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

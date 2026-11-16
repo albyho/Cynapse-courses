@@ -1,0 +1,161 @@
+{
+  "step_id": "sec2_answer",
+  "title": "一个可行答案",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nt = np.linspace(0, 1, 500)  # 生成 0 到 1 秒的均匀时间点\nx = np.sin(2 * np.pi * 2.0 * t)\n\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 225000,
+              "duration_ms": 3248,
+              "caption": "先准备<c.aqua>时间轴</c.aqua>和 2 Hz 的参考<c.aqua>信号</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "A_ex = 0.8\nf_ex = 1.5\nphi_ex = np.pi / 4\nx_ex = A_ex * np.sin(2 * np.pi * f_ex * t + phi_ex)  # 把选定的 A、f、phi 代入正弦公式\n\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 229000,
+              "duration_ms": 5516,
+              "caption": "把一组可行的<c.aqua>振幅</c.aqua>、<c.aqua>频率</c.aqua>和<c.aqua>相位</c.aqua>代入同一个正弦公式。",
+              "speech_edits": [
+                {
+                  "i": 7,
+                  "s": "幅",
+                  "p": "FU2"
+                },
+                {
+                  "i": 10,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 12,
+                  "s": "相",
+                  "p": "XIANG4"
+                },
+                {
+                  "i": 20,
+                  "s": "弦",
+                  "p": "XIAN2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"A=1, f=2 Hz, phase=0\")\nplt.plot(t, x_ex, label=\"A=0.8, f=1.5 Hz, phase=pi/4\")\nplt.title(\"One possible answer\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # 区分多条曲线\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 235000,
+              "duration_ms": 5369,
+              "caption": "把参考答案和原<c.aqua>信号</c.aqua>画在一起，比较参数改变后的差异。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 22,
+                  "s": "差",
+                  "p": "CHA1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "cynapse_sec2_answer",
+      "to_cell_id": "cynapse_sec2_answer",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 241000,
+              "duration_ms": 11365,
+              "caption": "下面是一组可行答案：A 等于 0.8，f 等于 1.5 Hz，phi 等于 π/4。它不是唯一答案；重点是你能用<c.aqua>周期</c.aqua>、<c.aqua>频率</c.aqua>和<c.aqua>相位</c.aqua>解释图形。",
+              "speech_edits": [
+                {
+                  "i": 50,
+                  "s": "重",
+                  "p": "ZHONG4"
+                },
+                {
+                  "i": 60,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 62,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

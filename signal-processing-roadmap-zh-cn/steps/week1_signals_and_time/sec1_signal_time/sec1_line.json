@@ -1,0 +1,54 @@
+{
+  "step_id": "sec1_line",
+  "title": "用折线连接样本",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_line",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_line",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_line",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))  # 创建画布并设置尺寸\nplt.plot(t, x, marker=\"o\")  # 把数据画成曲线\nplt.title(\"Same signal drawn with plot\")  # 写清图表达的内容\nplt.xlabel(\"Time (s)\")  # 标明横轴和单位\nplt.ylabel(\"Amplitude\")  # 标明纵轴和单位\nplt.grid(True, alpha=0.3)  # 加网格方便读数\nplt.tight_layout()  # 避免标签被裁掉\nplt.show()  # 渲染并显示图像\n",
+      "speed_ms": 35
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec1_line",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 90000,
+              "duration_ms": 10810,
+              "caption": "用 plot 把点连起来，能看到整体趋势，但连线会让人误以为两个<c.aqua>样本</c.aqua>之间也有数据。注意横轴现在是时间 t，不是<c.aqua>样本序号</c.aqua> n。",
+              "speech_edits": [
+                {
+                  "i": 44,
+                  "s": "轴",
+                  "p": "ZHOU2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

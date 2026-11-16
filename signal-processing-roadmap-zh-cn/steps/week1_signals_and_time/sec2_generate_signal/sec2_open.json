@@ -1,0 +1,133 @@
+{
+  "step_id": "sec2_open",
+  "title": "先看三个参数",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_title",
+      "align": "start"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6052,
+              "caption": "这是 1.2 的 Intro <c.aqua>Notebook</c.aqua>；标题 Cell 标明本单元要生成和绘制简单<c.aqua>信号</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_goal",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 7000,
+              "duration_ms": 7478,
+              "caption": "这一节生成<c.aqua>正弦信号</c.aqua>。你只需要先抓住三个参数：<c.aqua>振幅</c.aqua> A、<c.aqua>频率</c.aqua> f、初相位 phi。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "弦",
+                  "p": "XIAN2"
+                },
+                {
+                  "i": 19,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 23,
+                  "s": "幅",
+                  "p": "FU2"
+                },
+                {
+                  "i": 28,
+                  "s": "率",
+                  "p": "LV4"
+                },
+                {
+                  "i": 33,
+                  "s": "相",
+                  "p": "XIANG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 15000,
+              "duration_ms": 6679,
+              "caption": "公式是 x(t) 等于 A 乘以 sin(2πft 加 phi)。先不要背，先看每个参数改变时图怎么变。",
+              "speech_edits": [
+                {
+                  "i": 42,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_next",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 22000,
+              "duration_ms": 7046,
+              "caption": "最后的公式 Cell 是回看用的参考；接下来会在教学 <c.aqua>Notebook</c.aqua> 里逐行把它写成代码。",
+              "speech_edits": [
+                {
+                  "i": 38,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    }
+  ]
+}
