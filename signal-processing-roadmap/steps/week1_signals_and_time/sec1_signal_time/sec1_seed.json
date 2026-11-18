@@ -1,0 +1,70 @@
+{
+  "step_id": "sec1_seed",
+  "title": "Start with the Seed notebook",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "intro",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 30000,
+              "duration_ms": 4524,
+              "caption": "Once the lesson notebook is open, look at the top: the intro cell says what this unit <c.aqua>observes</c.aqua>."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_imports",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 35000,
+              "duration_ms": 5235,
+              "caption": "setup_imports is the base environment; it only imports NumPy and Matplotlib, and later cells do not import again."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_imports",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 41000,
+              "duration_ms": 4190,
+              "caption": "Running it shows no output, but NumPy and Matplotlib are now available in this kernel."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "step_id": "sec4_recap",
+  "title": "Week 1 summary",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_answer",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 113000,
+              "duration_ms": 5132,
+              "caption": "That is the end of Week 1. You should now be able to generate, plot, combine and transform simple <c.aqua>signals</c.aqua>."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 119000,
+              "duration_ms": 4890,
+              "caption": "Next comes <c.aqua>sampling</c.aqua>, spectra and filters, which explain step by step how these waveforms are analyzed."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 124000,
+              "duration_ms": 4357,
+              "caption": "If you want to see any of these steps again, use <c.aqua>Stop</c.aqua> and <c.aqua>replay</c.aqua>; the cells are not duplicated."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "lesson.ipynb"
+    }
+  ]
+}

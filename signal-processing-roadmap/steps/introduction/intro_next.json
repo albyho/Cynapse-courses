@@ -1,0 +1,46 @@
+{
+  "step_id": "intro_next",
+  "title": "Entering Week 1",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_next",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 50000,
+              "duration_ms": 5748,
+              "caption": "No formulas yet. Before entering Week 1, ask yourself: given only a series of values over time, how would you look at it?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 56000,
+              "duration_ms": 6303,
+              "caption": "The next step is 1.1 Signals and the Time Axis. We put the same <c.aqua>samples</c.aqua> on a <c.aqua>time axis</c.aqua> and compare two ways of drawing them."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    }
+  ]
+}

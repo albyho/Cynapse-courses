@@ -1,0 +1,67 @@
+{
+  "step_id": "intro_signal",
+  "title": "Signals and signal processing",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_title",
+      "align": "start"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5950,
+              "caption": "Welcome to Signal Processing Roadmap. We do not assume the full mathematics first; we start with <c.aqua>signals</c.aqua> we can see and draw."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_signal",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 6006,
+              "caption": "A <c.aqua>signal</c.aqua> is a quantity that changes over time or space: a sound wave, the rise and fall of an ECG, a radar echo, a sensor reading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 5866,
+              "caption": "Signal processing comes down to this: generate or acquire, <c.aqua>observe</c.aqua>, transform, analyze, then use the result to judge or apply."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

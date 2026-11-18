@@ -1,0 +1,91 @@
+{
+  "step_id": "sec2_frequency",
+  "title": "Change the frequency: 2 Hz versus 4 Hz",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_frequency",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_frequency",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_frequency",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "x_4hz = A * np.sin(2 * np.pi * 4.0 * t + phi)  # same parameters, frequency changed to 4 Hz\n\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 109000,
+              "duration_ms": 3597,
+              "caption": "Change only the <c.aqua>frequency</c.aqua> to 4 Hz and keep the other parameters as they are."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_frequency",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"f = 2 Hz\")  # plot the data as a curve\nplt.plot(t, x_4hz, label=\"f = 4 Hz\")\nplt.title(\"Changing frequency\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # tell multiple curves apart\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 113000,
+              "duration_ms": 4362,
+              "caption": "Then draw 2 Hz and 4 Hz on the same figure and compare how many cycles fit in the same time."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec2_frequency",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 118000,
+              "duration_ms": 5742,
+              "caption": "Next change only the <c.aqua>frequency</c.aqua>, from 2 Hz to 4 Hz. Predict the new <c.aqua>period</c.aqua> first, then run and compare the two curves."
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 124000,
+              "duration_ms": 11224,
+              "caption": "Change the <c.aqua>frequency</c.aqua> from 2 Hz to 4 Hz, other parameters unchanged. The <c.aqua>period</c.aqua> T is 1 over f, so it drops from 0.5 s to 0.25 s; the <c.aqua>angular frequency</c.aqua> is 2πf. Higher frequency, more cycles in the same time."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "step_id": "sec2_phase",
+  "title": "What happens if only the phase changes",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_phase",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_phase",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_phase",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "x_phase = A * np.sin(2 * np.pi * f * t + np.pi / 2)  # only the initial phase changes to π/2\n\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 136000,
+              "duration_ms": 4804,
+              "caption": "Change only the <c.aqua>initial phase</c.aqua>: add π/2 inside the sine formula and keep <c.aqua>frequency</c.aqua> and <c.aqua>amplitude</c.aqua>."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_phase",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"phase = 0\")\nplt.plot(t, x_phase, label=\"phase = pi/2\")\nplt.title(\"Changing phase\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # tell multiple curves apart\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 141000,
+              "duration_ms": 2931,
+              "caption": "Put the <c.aqua>phase</c.aqua> 0 and π/2 curves on one figure and compare."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec2_phase",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 144000,
+              "duration_ms": 6607,
+              "caption": "This time change only the <c.aqua>phase</c.aqua>, phi to π/2, and keep the <c.aqua>frequency</c.aqua>. Watch the whole waveform move, without reading it as a frequency change."
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 151000,
+              "duration_ms": 10552,
+              "caption": "Now change only the <c.aqua>initial phase</c.aqua>, phi set to π/2. The whole waveform shifts left, while <c.aqua>frequency</c.aqua> and <c.aqua>period</c.aqua> stay put. Phase describes where the start sits in the cycle; do not mistake a phase shift for a frequency change."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

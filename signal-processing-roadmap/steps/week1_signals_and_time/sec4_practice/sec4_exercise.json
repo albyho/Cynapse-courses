@@ -1,0 +1,64 @@
+{
+  "step_id": "sec4_exercise",
+  "title": "Try it: two components",
+  "actions": [
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_exercise",
+      "cell_type": "code",
+      "source": "# Task: build a signal made of two sines\n# - low frequency component: around 1 Hz\n# - high frequency component: around 4 Hz\n# - at least one component with a phase or a time shift\n# Requirements: a figure, title, axis labels, legend\n# Success criteria: both components are visible in the figure; every parameter can be explained in one sentence\n# The base time axis t is ready from the Seed's setup_exercise; start from t_task = t\n\nt_task = t\n# low = ...\n# high = ...\n# x_task = ...\n# plt.plot(...)\n# plt.legend()\n# plt.show()\n"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 48000,
+              "duration_ms": 6258,
+              "caption": "Build a <c.aqua>signal</c.aqua> made of two sines: a low <c.aqua>frequency</c.aqua> component and a high frequency component; at least one with a <c.aqua>phase</c.aqua> or a time shift."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 7747,
+              "caption": "Draw the waveform and add a title, axis labels and a legend. Success criteria: both components are visible and every parameter explained. Continue once it runs."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "requires_human": true
+}

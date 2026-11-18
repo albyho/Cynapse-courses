@@ -1,0 +1,61 @@
+{
+  "step_id": "sec2_recap",
+  "title": "Summary: the parameters of a sine signal",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 199000,
+              "duration_ms": 5695,
+              "caption": "Three things to keep from this section: <c.aqua>amplitude</c.aqua> sets the height, <c.aqua>frequency</c.aqua> sets the density, <c.aqua>phase</c.aqua> sets where it starts."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 205000,
+              "duration_ms": 6729,
+              "caption": "The <c.aqua>period</c.aqua> is the reciprocal of the <c.aqua>frequency</c.aqua>, and the <c.aqua>angular frequency</c.aqua> is 2π times the frequency; they describe the same rate of change."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 212000,
+              "duration_ms": 4671,
+              "caption": "The next section adds, scales, shifts and reverses these <c.aqua>signals</c.aqua>, and watches the combined waveform."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "lesson.ipynb"
+    }
+  ]
+}

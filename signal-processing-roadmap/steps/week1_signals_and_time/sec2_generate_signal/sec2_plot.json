@@ -1,0 +1,91 @@
+{
+  "step_id": "sec2_plot",
+  "title": "Draw the sine waveform",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_plot",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_plot",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_plot",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))  # create the figure and set its size\nplt.plot(t, x)  # plot the data as a curve\n\n",
+      "speed_ms": 35,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 87000,
+              "duration_ms": 4515,
+              "caption": "Put time t on the horizontal axis and <c.aqua>amplitude</c.aqua> x on the vertical axis, and draw the curve first."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_plot",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.title(\"Sine wave: A=1, f=2 Hz, phase=0\")  # state what the figure shows\nplt.xlabel(\"Time (s)\")  # label the horizontal axis and its unit\nplt.ylabel(\"Amplitude\")  # label the vertical axis and its unit\nplt.grid(True, alpha=0.3)  # add a grid so values are easy to read\nplt.tight_layout()  # keep labels from being clipped\nplt.show()  # render and show the figure\n",
+      "speed_ms": 35,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 92000,
+              "duration_ms": 3380,
+              "caption": "Then add a title and axis labels, so a reader knows what each axis means."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec2_plot",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 96000,
+              "duration_ms": 4176,
+              "caption": "Now plot the x just generated, and <c.aqua>predict</c.aqua> first how many full cycles fit in one second."
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 101000,
+              "duration_ms": 7869,
+              "caption": "Draw the waveform. One second should hold two full cycles. The horizontal axis is time, the vertical axis is <c.aqua>amplitude</c.aqua>; look for peaks, troughs and zero crossings."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

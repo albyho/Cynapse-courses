@@ -1,0 +1,56 @@
+{
+  "step_id": "sec2_exercise",
+  "title": "Try it: predict, then verify",
+  "actions": [
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_exercise",
+      "cell_type": "code",
+      "source": "# Task: choose A, f and phi, write your prediction, then plot to verify\n# Requirements: change the frequency at least once and the phase at least once, and tell the two curves apart with a legend\n# Success criteria: two curves; legend, title, both axis labels; you can say which curve shows the frequency change and which shows the phase change\n# The base time axis t is ready from the Seed's setup_exercise; use t directly\n\n# A_ex = ...\n# f_ex = ...\n# phi_ex = ...\n# x_ex = ...\n# plt.plot(...)\n# plt.legend()\n# plt.show()\n"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 162000,
+              "duration_ms": 7222,
+              "caption": "Choose your own A, f and phi, <c.aqua>predict</c.aqua> the waveform, then verify it in code. Change the <c.aqua>frequency</c.aqua> at least once and the <c.aqua>phase</c.aqua> at least once, and use a legend."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 170000,
+              "duration_ms": 7707,
+              "caption": "Success criteria: a title and both axis labels; you can point out which curve shows the <c.aqua>frequency</c.aqua> change and which the <c.aqua>phase</c.aqua> change. Run it, look, then continue."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "requires_human": true
+}

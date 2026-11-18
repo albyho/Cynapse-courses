@@ -13,11 +13,16 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 | 通过例子学 Rust（中文版） | `0.20.16` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) | [Rust by Example（中文版）](https://github.com/rust-lang-cn/rust-by-example-cn) |
 | agent-desktop 源码分析 | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
 | 信号处理路线图（中文版） | `0.2.3` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
+| 信号处理路线图（英文版） | `0.2.3` | [`signal-processing-roadmap/`](signal-processing-roadmap/) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 
 > `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
 > 其余章节尚未发布。
 
 > `signal-processing-roadmap-zh-cn` 目前只包含简介和第 1 周（章），尚未覆盖完整路线图。
+
+> `signal-processing-roadmap` 是同一门课的英文版：Course Tree、Step 与 Cell ID、
+> 旁白区间都与中文包一致，只换了文案、代码注释和英文音色。它同样只覆盖简介和
+> 第 1 周；两个包的根 `manifest.id` 不同，进度互不影响。
 
 ## 使用课程
 
@@ -63,6 +68,14 @@ submodule 固定到提交 `b43ac4f6e892ef608f8851428613c4009f0e84c7`；也可以
 使用独立的 Notebook、Kernel 和 Workspace。本课程改编自
 [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap)，
 目前只包含简介和第 1 周（章）。
+
+### signal-processing-roadmap
+
+`signal-processing-roadmap-zh-cn` 的英文版。在 JupyterLab 中运行，需要 Cynapse
+JupyterLab Adapter；不需要 submodule。在 Cynapse Client 中打开
+`Cynapse-courses/signal-processing-roadmap`。Node Path、`step_id`、Cell ID 和旁白
+区间与中文包一一对应，同一个 Step 在两个包里位置相同，只有文案、代码注释和音色
+不同。进度按课程包分别记录，切换语言不会带过去。
 
 ### 更新
 

@@ -2,6 +2,13 @@
 
 Published Course Packages. Versions match each package's `manifest.json`.
 
+## 2026-11-19
+
+- `signal-processing-roadmap` 0.2.3: initial English release. Same Course Tree,
+  Step and Cell IDs, and narration timing as `signal-processing-roadmap-zh-cn`;
+  English copy, code comments, and narration voice. The distinct root `id` keeps
+  the two editions' progress separate.
+
 ## 2026-11-16
 
 - `signal-processing-roadmap-zh-cn` 0.2.3: include `pyproject.toml` and

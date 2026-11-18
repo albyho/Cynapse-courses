@@ -1,0 +1,46 @@
+{
+  "step_id": "sec1_recap",
+  "title": "Summary: samples and the time axis",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_exercise",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 105000,
+              "duration_ms": 8321,
+              "caption": "Three things to keep: a <c.aqua>signal</c.aqua> is a quantity that changes over time; a <c.aqua>discrete signal</c.aqua> is described by <c.aqua>samples</c.aqua> and the sample interval; stem suits discrete samples better than plot."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 114000,
+              "duration_ms": 4946,
+              "caption": "The next section generates real <c.aqua>sine signals</c.aqua> and watches how <c.aqua>frequency</c.aqua> and <c.aqua>phase</c.aqua> change the waveform."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "lesson.ipynb"
+    }
+  ]
+}

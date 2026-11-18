@@ -1,0 +1,109 @@
+{
+  "step_id": "sec3_seed",
+  "title": "Start with the Seed notebook",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "intro",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 4710,
+              "caption": "Start with the intro cell: this unit watches how <c.aqua>signals</c.aqua> are added, scaled, shifted and reversed."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_imports",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 4832,
+              "caption": "setup_imports only imports NumPy and Matplotlib; it is the shared environment for every later cell."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_imports",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 36000,
+              "duration_ms": 2746,
+              "caption": "Running it shows no output, but the base libraries are loaded."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 39000,
+              "duration_ms": 5806,
+              "caption": "setup_exercise prepares the exercise <c.aqua>time axis</c.aqua> t and a 1 Hz reference <c.aqua>signal</c.aqua> x1; the hands-on step uses both directly."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 45000,
+              "duration_ms": 3333,
+              "caption": "After running, t and x1 exist, so the exercise can start right away."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

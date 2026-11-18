@@ -1,0 +1,107 @@
+{
+  "step_id": "sec1_open",
+  "title": "Start with the time axis",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_title",
+      "align": "start"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5428,
+              "caption": "This is the Intro notebook for 1.1; the title cell states that the unit is about <c.aqua>signals</c.aqua> and the <c.aqua>time axis</c.aqua>."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_goal",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 3635,
+              "caption": "This unit answers one question: how do we put a <c.aqua>signal</c.aqua> on a <c.aqua>time axis</c.aqua> and <c.aqua>observe</c.aqua> it."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 6421,
+              "caption": "First, continuous versus discrete: a <c.aqua>continuous signal</c.aqua> has a value at every instant; a <c.aqua>discrete signal</c.aqua> has values only at the <c.aqua>sample times</c.aqua>."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 17000,
+              "duration_ms": 5250,
+              "caption": "A <c.aqua>discrete signal</c.aqua> is described by three quantities: the <c.aqua>sample index</c.aqua> n, the <c.aqua>sample time</c.aqua> t, and the amplitude x."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_next",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 23000,
+              "duration_ms": 6029,
+              "caption": "The closing observation task: draw the same values with plot and with stem, and compare which drawing fits discrete <c.aqua>samples</c.aqua>."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    }
+  ]
+}

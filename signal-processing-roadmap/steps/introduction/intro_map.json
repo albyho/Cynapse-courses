@@ -1,0 +1,93 @@
+{
+  "step_id": "intro_map",
+  "title": "Course map and how to learn",
+  "actions": [
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_source",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 19000,
+              "duration_ms": 5496,
+              "caption": "This course follows the open source project Signal processing roadmap; we borrow its chapter skeleton and topics."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 25000,
+              "duration_ms": 7421,
+              "caption": "The original repository supplies the topic order; the walkthroughs, notebooks, exercises and figures here are newly written, not a translation or a mirror."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_map",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 33000,
+              "duration_ms": 4776,
+              "caption": "The <c.aqua>course map</c.aqua> has 16 weeks in two halves, foundations and applications; we start with Week 1."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 38000,
+              "duration_ms": 4401,
+              "caption": "Each subsection is one <c.aqua>learning unit</c.aqua> with its own notebook, kernel and separate workspace."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction",
+          "clips": [
+            {
+              "offset_ms": 43000,
+              "duration_ms": 6328,
+              "caption": "Follow the steps: read, edit, run. Hands-on exercises are yours to do, then continue. After a <c.aqua>Stop</c.aqua> you can <c.aqua>replay</c.aqua> from the current step."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

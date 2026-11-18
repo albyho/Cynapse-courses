@@ -1,0 +1,188 @@
+{
+  "id": "signal_processing_roadmap",
+  "title": "Signal Processing Roadmap",
+  "version": "0.2.3",
+  "workspace": "workspace",
+  "adapters": [
+    "jupyterlab"
+  ],
+  "children": [
+    {
+      "id": "welcome",
+      "title": "Welcome",
+      "steps": [
+        {
+          "step_file": "steps/welcome/welcome_demo.json"
+        }
+      ]
+    },
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "steps": [
+        {
+          "step_file": "steps/introduction/intro_signal.json"
+        },
+        {
+          "step_file": "steps/introduction/intro_map.json"
+        },
+        {
+          "step_file": "steps/introduction/intro_next.json"
+        }
+      ],
+      "assets": [
+        {
+          "id": "narration_introduction",
+          "path": "assets/narration/introduction.ogg"
+        }
+      ]
+    },
+    {
+      "id": "week1_signals_and_time",
+      "title": "Week 1: Signals and Time",
+      "children": [
+        {
+          "id": "sec1_signal_time",
+          "title": "1.1 Signals and the Time Axis",
+          "steps": [
+            {
+              "step_file": "steps/week1_signals_and_time/sec1_signal_time/sec1_open.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec1_signal_time/sec1_seed.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec1_signal_time/sec1_samples.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec1_signal_time/sec1_line.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec1_signal_time/sec1_stem.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec1_signal_time/sec1_exercise.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec1_signal_time/sec1_recap.json"
+            }
+          ],
+          "assets": [
+            {
+              "id": "narration_sec1_signal_time",
+              "path": "assets/narration/week1_signals_and_time/sec1_signal_time.ogg"
+            }
+          ]
+        },
+        {
+          "id": "sec2_generate_signal",
+          "title": "1.2 Generating and Plotting Simple Signals",
+          "steps": [
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_open.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_seed.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_setup.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_plot.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_frequency.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_phase.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_exercise.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_answer.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec2_generate_signal/sec2_recap.json"
+            }
+          ],
+          "assets": [
+            {
+              "id": "narration_sec2_generate_signal",
+              "path": "assets/narration/week1_signals_and_time/sec2_generate_signal.ogg"
+            }
+          ]
+        },
+        {
+          "id": "sec3_combine_transform",
+          "title": "1.3 Combining and Transforming Signals",
+          "steps": [
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_open.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_seed.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_add.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_scale.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_shift.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_reverse.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_exercise.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_answer.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec3_combine_transform/sec3_recap.json"
+            }
+          ],
+          "assets": [
+            {
+              "id": "narration_sec3_combine_transform",
+              "path": "assets/narration/week1_signals_and_time/sec3_combine_transform.ogg"
+            }
+          ]
+        },
+        {
+          "id": "sec4_practice",
+          "title": "1.4 Putting It All Together",
+          "steps": [
+            {
+              "step_file": "steps/week1_signals_and_time/sec4_practice/sec4_open.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec4_practice/sec4_seed.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec4_practice/sec4_exercise.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec4_practice/sec4_observe.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec4_practice/sec4_answer.json"
+            },
+            {
+              "step_file": "steps/week1_signals_and_time/sec4_practice/sec4_recap.json"
+            }
+          ],
+          "assets": [
+            {
+              "id": "narration_sec4_practice",
+              "path": "assets/narration/week1_signals_and_time/sec4_practice.ogg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

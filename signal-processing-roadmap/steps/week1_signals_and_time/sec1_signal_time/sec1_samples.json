@@ -1,0 +1,131 @@
+{
+  "step_id": "sec1_samples",
+  "title": "Samples, time and amplitude",
+  "actions": [
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_concept",
+      "cell_type": "markdown",
+      "source": "## Continuous and discrete\n\n- **Continuous signal**: a value at every instant.\n- **Discrete signal**: values only at the sample times.\n- **Sample index** `n`: which sample, starting at 0.\n- **Sample time** `t`: the real time that sample was taken at.\n- **Amplitude** `x[n]`: the height of the sample.\n"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n",
+      "speed_ms": 30
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "n = np.arange(8)  # sample index starts at 0\nt = 0.5 * n  # a 0.5 s sample interval turns the index into time\nx = np.array([0, 1, 2, 1, 0, -1, -2, -1])  # the amplitude of each sample\n\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 46000,
+              "duration_ms": 5032,
+              "caption": "First set up the <c.aqua>sample index</c.aqua>, the <c.aqua>sample time</c.aqua> and the <c.aqua>amplitude</c.aqua>; note that t is the real time of each sample."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_samples",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "print(\"n =\", n)\nprint(\"t =\", t)\nprint(\"x =\", x)\n",
+      "speed_ms": 30,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 52000,
+              "duration_ms": 3697,
+              "caption": "Print the three arrays; the next step checks their lengths and how they line up."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec1_samples",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 56000,
+              "duration_ms": 4247,
+              "caption": "Run this cell first and see how the index, time and <c.aqua>amplitude</c.aqua> of the 8 <c.aqua>samples</c.aqua> line up."
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 61000,
+              "duration_ms": 8725,
+              "caption": "Here 8 <c.aqua>samples</c.aqua> stand for one <c.aqua>discrete signal</c.aqua>. n is the <c.aqua>sample index</c.aqua> and t is the sample time. The sample interval is 0.5 s, so the 4th sample sits at 1.5 s."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 70000,
+              "duration_ms": 4714,
+              "caption": "After running, read the printed arrays and confirm that index, time and <c.aqua>amplitude</c.aqua> line up one to one."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

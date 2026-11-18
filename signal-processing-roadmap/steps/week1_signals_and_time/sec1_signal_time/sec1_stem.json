@@ -1,0 +1,47 @@
+{
+  "step_id": "sec1_stem",
+  "title": "Show discrete samples as a stem plot",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_stem",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_stem",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_stem",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))  # create the figure and set its size\nplt.stem(t, x)  # draw vertical lines for discrete samples\nplt.title(\"Same signal drawn with stem\")  # state what the figure shows\nplt.xlabel(\"Time (s)\")  # label the horizontal axis and its unit\nplt.ylabel(\"Amplitude\")  # label the vertical axis and its unit\nplt.grid(True, alpha=0.3)  # add a grid so values are easy to read\nplt.tight_layout()  # keep labels from being clipped\nplt.show()  # render and show the figure\n",
+      "speed_ms": 35
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec1_stem",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 83000,
+              "duration_ms": 6342,
+              "caption": "stem draws each <c.aqua>sample</c.aqua> as a vertical line, which suits a <c.aqua>discrete signal</c.aqua> better. Same values, different drawing, more accurate meaning."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

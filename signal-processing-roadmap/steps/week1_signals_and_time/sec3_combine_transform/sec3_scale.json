@@ -1,0 +1,47 @@
+{
+  "step_id": "sec3_scale",
+  "title": "Scaling: changing the amplitude",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_scale",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_scale",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec3_scale",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "x_scaled = 0.5 * x1  # multiply every sample by 0.5, halving the amplitude\n\nplt.figure(figsize=(7, 3))\nplt.plot(t, x1, label=\"x1\")\nplt.plot(t, x_scaled, label=\"0.5 * x1\")\nplt.title(\"Scaling amplitude\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 35
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec3_scale",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec3_combine_transform",
+          "clips": [
+            {
+              "offset_ms": 73000,
+              "duration_ms": 7739,
+              "caption": "Scaling multiplies every <c.aqua>sample</c.aqua> by the same constant. Times 0.5 halves the <c.aqua>amplitude</c.aqua> and keeps the shape. Note this scales the amplitude, not time."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

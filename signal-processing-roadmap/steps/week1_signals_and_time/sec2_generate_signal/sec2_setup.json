@@ -1,0 +1,163 @@
+{
+  "step_id": "sec2_setup",
+  "title": "Generate a one-second sine signal",
+  "actions": [
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_formula",
+      "cell_type": "markdown",
+      "source": "## The three parameters of a sine signal\n\n$$x(t) = A \\sin(2 \\pi f t + \\phi)$$\n\n- `A`: amplitude\n- `f`: frequency, in Hz\n- `T = 1 / f`: period, in s\n- `omega = 2 pi f`: angular frequency, in rad/s\n- `phi`: initial phase\n"
+    },
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n",
+      "speed_ms": 28
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "fs = 100  # sample rate: 100 samples per second\nduration = 1.0  # the signal lasts one second\nt = np.arange(0, duration, 1 / fs)  # sample times from 0 to 1 second\n\n",
+      "speed_ms": 28,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 49000,
+              "duration_ms": 3930,
+              "caption": "First build the <c.aqua>sample time</c.aqua> axis: 100 <c.aqua>samples</c.aqua> per second, lasting one second."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "A = 1.0  # amplitude A sets how tall the wave gets\nf = 2.0  # frequency f sets cycles per second\nphi = 0.0  # initial phase phi sets where the wave starts\nx = A * np.sin(2 * np.pi * f * t + phi)  # sine formula: A·sin(2πft+φ)\n\n",
+      "speed_ms": 28,
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 53000,
+              "duration_ms": 1721,
+              "caption": "Now write the sine formula."
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 4147,
+              "caption": "Note this line carries the <c.aqua>amplitude</c.aqua> A, the <c.aqua>frequency</c.aqua> f and the <c.aqua>initial phase</c.aqua> phi at once."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_setup",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "print(\"samples:\", t.size)\nprint(\"period (s):\", 1 / f)\nprint(\"angular frequency (rad/s):\", 2 * np.pi * f)\n",
+      "speed_ms": 28,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 60000,
+              "duration_ms": 4986,
+              "caption": "Finally print the <c.aqua>sample</c.aqua> count, the <c.aqua>period</c.aqua> and the <c.aqua>angular frequency</c.aqua>, then check each one after running."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec2_setup",
+      "narration": {
+        "before": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 65000,
+              "duration_ms": 7639,
+              "caption": "First build a one-second <c.aqua>time axis</c.aqua>, then generate the sine from <c.aqua>amplitude</c.aqua>, <c.aqua>frequency</c.aqua> and initial phase. After running, check the sample count and the period."
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 73000,
+              "duration_ms": 7701,
+              "caption": "We generate one second of data at 100 <c.aqua>samples</c.aqua> per second, so 100 time points. A is 1, f is 2 Hz, phi is 0. 2 Hz means two full cycles per second."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 81000,
+              "duration_ms": 5043,
+              "caption": "After running, confirm the <c.aqua>sample</c.aqua> count and the <c.aqua>period</c.aqua>. The period T is 1 over f, so 0.5 s here."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

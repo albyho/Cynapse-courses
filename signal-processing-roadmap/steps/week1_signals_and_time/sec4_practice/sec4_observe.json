@@ -1,0 +1,50 @@
+{
+  "step_id": "sec4_observe",
+  "title": "Write down your observation",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_observe",
+      "cell_type": "markdown",
+      "source": "## My observation\n\n- Parameters I used:\n- I predicted I would see:\n- I actually saw:\n- If prediction and result differ, a likely reason:\n"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec4_observe",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 5806,
+              "caption": "In the Markdown cell below, write three sentences: which parameters you used; what you predicted; what you actually saw."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 69000,
+              "duration_ms": 4511,
+              "caption": "If prediction and result differ, check the formula and the <c.aqua>sample time</c.aqua> axis first. Then continue."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "requires_human": true
+}

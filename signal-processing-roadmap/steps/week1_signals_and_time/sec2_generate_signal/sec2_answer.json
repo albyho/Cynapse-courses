@@ -1,0 +1,103 @@
+{
+  "step_id": "sec2_answer",
+  "title": "One working answer",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nt = np.linspace(0, 1, 500)  # uniform time points from 0 to 1 second\nx = np.sin(2 * np.pi * 2.0 * t)\n\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 178000,
+              "duration_ms": 2625,
+              "caption": "First prepare the <c.aqua>time axis</c.aqua> and a 2 Hz reference <c.aqua>signal</c.aqua>."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "A_ex = 0.8\nf_ex = 1.5\nphi_ex = np.pi / 4\nx_ex = A_ex * np.sin(2 * np.pi * f_ex * t + phi_ex)  # plug the chosen A, f and phi into the sine formula\n\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 181000,
+              "duration_ms": 3886,
+              "caption": "Put one working set of <c.aqua>amplitude</c.aqua>, <c.aqua>frequency</c.aqua> and <c.aqua>phase</c.aqua> into the same sine formula."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec2_answer",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"A=1, f=2 Hz, phase=0\")\nplt.plot(t, x_ex, label=\"A=0.8, f=1.5 Hz, phase=pi/4\")\nplt.title(\"One possible answer\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # tell multiple curves apart\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
+      "speed_ms": 0,
+      "narration": {
+        "during": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 185000,
+              "duration_ms": 4352,
+              "caption": "Draw the worked answer with the original <c.aqua>signal</c.aqua> and compare what the parameters changed."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "cynapse_sec2_answer",
+      "to_cell_id": "cynapse_sec2_answer",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 190000,
+              "duration_ms": 8999,
+              "caption": "Here is one working answer: A is 0.8, f is 1.5 Hz, phi is π/4. It is not the only answer; what matters is that you can explain the figure with <c.aqua>period</c.aqua>, <c.aqua>frequency</c.aqua> and <c.aqua>phase</c.aqua>."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "step_id": "sec1_line",
+  "title": "Connect the samples with a line",
+  "actions": [
+    {
+      "type": "JupyterLabCellInsert",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_line",
+      "cell_type": "code",
+      "source": ""
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_line",
+      "align": "top-center"
+    },
+    {
+      "type": "JupyterLabCellInsertText",
+      "path": "lesson.ipynb",
+      "cell_id": "cynapse_sec1_line",
+      "target": {
+        "kind": "end_of_file"
+      },
+      "text": "plt.figure(figsize=(7, 3))  # create the figure and set its size\nplt.plot(t, x, marker=\"o\")  # plot the data as a curve\nplt.title(\"Same signal drawn with plot\")  # state what the figure shows\nplt.xlabel(\"Time (s)\")  # label the horizontal axis and its unit\nplt.ylabel(\"Amplitude\")  # label the vertical axis and its unit\nplt.grid(True, alpha=0.3)  # add a grid so values are easy to read\nplt.tight_layout()  # keep labels from being clipped\nplt.show()  # render and show the figure\n",
+      "speed_ms": 35
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "cynapse_sec1_line",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec1_signal_time",
+          "clips": [
+            {
+              "offset_ms": 75000,
+              "duration_ms": 7455,
+              "caption": "plot joins the points, which shows the overall trend, but the line suggests data between two <c.aqua>samples</c.aqua>. Note the horizontal axis is time t, not <c.aqua>sample index</c.aqua> n."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

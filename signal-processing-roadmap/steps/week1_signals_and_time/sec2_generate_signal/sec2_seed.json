@@ -1,0 +1,109 @@
+{
+  "step_id": "sec2_seed",
+  "title": "Start with the Seed notebook",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "intro",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 25000,
+              "duration_ms": 4322,
+              "caption": "The intro cell says which <c.aqua>signal</c.aqua> this unit generates; then come two base cells from the Seed."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_imports",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 30000,
+              "duration_ms": 4280,
+              "caption": "setup_imports imports NumPy and Matplotlib; all the plotting that follows depends on it."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_imports",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 35000,
+              "duration_ms": 3057,
+              "caption": "Running it shows no output, but both libraries are ready to use."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 39000,
+              "duration_ms": 5027,
+              "caption": "setup_exercise prepares the exercise <c.aqua>time axis</c.aqua> t; the hands-on step later uses this variable directly."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 45000,
+              "duration_ms": 3836,
+              "caption": "After running, t is ready; the exercise does not need to build a <c.aqua>time axis</c.aqua> by hand."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

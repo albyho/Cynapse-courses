@@ -1,0 +1,109 @@
+{
+  "step_id": "sec4_seed",
+  "title": "Start with the Seed notebook",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "lesson.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "intro",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 4822,
+              "caption": "The intro cell states the goal of the exercise: combine two sine components and explain the parameters."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_imports",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 5862,
+              "caption": "setup_imports is the same as in earlier units and was covered before; here we just run it to confirm the environment works."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_imports",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 2746,
+              "caption": "Running it shows no output, but the base libraries are loaded."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "lesson.ipynb",
+      "cell_id": "setup_exercise",
+      "align": "top-center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 40000,
+              "duration_ms": 4616,
+              "caption": "setup_exercise prepares the exercise <c.aqua>time axis</c.aqua> t; the integrative exercise starts from t_task = t."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellRun",
+      "path": "lesson.ipynb",
+      "from_cell_id": "setup_imports",
+      "to_cell_id": "setup_exercise",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec4_practice",
+          "clips": [
+            {
+              "offset_ms": 45000,
+              "duration_ms": 2544,
+              "caption": "After running, t is ready, so building the <c.aqua>signal</c.aqua> can start."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

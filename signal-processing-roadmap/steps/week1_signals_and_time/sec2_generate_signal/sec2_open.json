@@ -1,0 +1,92 @@
+{
+  "step_id": "sec2_open",
+  "title": "Start with the three parameters",
+  "actions": [
+    {
+      "type": "JupyterLabOpenNotebook",
+      "path": "INTRO.ipynb"
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_title",
+      "align": "start"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5557,
+              "caption": "This is the Intro notebook for 1.2; the title cell states that the unit generates and plots simple <c.aqua>signals</c.aqua>."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_goal",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 5506,
+              "caption": "This section generates <c.aqua>sine signals</c.aqua>. Hold on to three parameters first: <c.aqua>amplitude</c.aqua> A, <c.aqua>frequency</c.aqua> f, initial phase phi."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 12000,
+              "duration_ms": 6499,
+              "caption": "The formula is x(t) equals A times sin(2πft plus phi). Do not memorize it yet; watch how the figure changes as each parameter changes."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCellSelect",
+      "path": "INTRO.ipynb",
+      "cell_id": "intro_next",
+      "align": "center"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "after": {
+          "asset_id": "narration_sec2_generate_signal",
+          "clips": [
+            {
+              "offset_ms": 19000,
+              "duration_ms": 5204,
+              "caption": "The closing formula cell is a reference to look back at; next we write it line by line in the lesson notebook."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "JupyterLabCloseDocument",
+      "path": "INTRO.ipynb"
+    }
+  ]
+}
