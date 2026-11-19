@@ -1,7 +1,7 @@
 {
   "id": "signal_processing_roadmap",
   "title": "Signal Processing Roadmap",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "workspace": "workspace",
   "adapters": [
     "jupyterlab"

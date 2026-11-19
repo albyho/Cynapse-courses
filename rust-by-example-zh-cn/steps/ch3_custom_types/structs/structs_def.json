@@ -3,20 +3,19 @@
   "title": "写出三种结构体",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "structs.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "structs.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "structs.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "#[derive(Debug)]\nstruct Person {\n    name: String,\n    age: u8,\n}\n\n// 单元结构体\nstruct Unit;\n\n// 元组结构体\nstruct Pair(i32, f32);\n\n// 带有两个字段的结构体\nstruct Point {\n    x: f32,\n    y: f32,\n}\n\n// 结构体可以作为另一个结构体的字段\n#[allow(dead_code)]\nstruct Rectangle {\n    // 可以在空间中给定左上角和右下角在空间中的位置来指定矩形。\n    top_left: Point,\n    bottom_right: Point,\n}\n\nfn main() {\n}\n",
       "narration": {
@@ -43,7 +42,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "structs.rs",
       "start": {
         "line": 1
@@ -77,7 +76,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "structs.rs",
       "start": {
         "line": 7
@@ -99,7 +98,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "structs.rs",
       "start": {
         "line": 13
@@ -121,7 +120,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "structs.rs",
       "start": {
         "line": 19
@@ -150,7 +149,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "structs.rs",
       "start": {
         "line": 27

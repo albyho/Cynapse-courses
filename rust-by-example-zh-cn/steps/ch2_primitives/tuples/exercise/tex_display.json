@@ -3,23 +3,27 @@
   "title": "为 Matrix 实现 Display",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "tuples.rs"
     },
     {
-      "type": "REPLACE_TEXT",
+      "type": "ReplaceText",
       "path": "tuples.rs",
-      "effect": "typewriter",
       "target": {
         "start": {
-          "text": "println!(\"{:?}\", matrix)"
+          "at": {
+            "text": "println!(\"{:?}\", matrix)"
+          }
         },
         "end": {
-          "text": "println!(\"{:?}\", matrix)"
+          "at": {
+            "text": "println!(\"{:?}\", matrix)"
+          },
+          "placement": "after"
         },
-        "expected_text": "println!(\"{:?}\", matrix)"
+        "expected_text": "println!(\"{:?}\", matrix)\n"
       },
-      "text": "println!(\"{}\", matrix);",
+      "text": "println!(\"{}\", matrix);\n",
       "speed_ms": 40,
       "edit_mode": "delete_then_type",
       "narration": {
@@ -75,13 +79,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "tuples.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "fn main() {",
+        "at": {
+          "text": "fn main() {"
+        },
         "placement": "before"
       },
       "text": "impl std::fmt::Display for Matrix {\n    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {\n        write!(f, \"( {} {} )\\n( {} {} )\", self.0, self.1, self.2, self.3)\n    }\n}\n\n",
@@ -123,12 +127,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc tuples.rs",
@@ -161,7 +165,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./tuples",
@@ -211,7 +215,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 5000
     }
   ]

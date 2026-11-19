@@ -3,7 +3,7 @@
   "title": "const 与 static",
   "actions": [
     {
-      "type": "OPEN_PREVIEW",
+      "type": "OpenPreview",
       "path": "INTRO.md",
       "view": "current",
       "narration": {

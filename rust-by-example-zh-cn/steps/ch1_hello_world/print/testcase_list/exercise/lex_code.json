@@ -3,21 +3,21 @@
   "title": "打印元素下标",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "list_demo.rs"
     },
     {
-      "type": "DELETE_TEXT",
+      "type": "DeleteText",
       "path": "list_demo.rs",
-      "effect": "instant",
       "target": {
         "start": {
           "line": 18
         },
         "end": {
-          "line": 18
+          "line": 18,
+          "placement": "after"
         },
-        "expected_text": "            write!(f, \"{}\", v)?;"
+        "expected_text": "            write!(f, \"{}\", v)?;\n"
       },
       "target_hold_ms": 250,
       "narration": {
@@ -51,16 +51,14 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "list_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "position",
         "line": 18,
-        "column": 0
+        "at": 0
       },
-      "text": "            write!(f, \"{}: \", count)?;\n            write!(f, \"{}\", v)?;",
+      "text": "            write!(f, \"{}: \", count)?;\n            write!(f, \"{}\", v)?;\n",
       "narration": {
         "during": {
           "asset_id": "narration_ch1_hello_world_print_testcase_list_exercise",
@@ -82,7 +80,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc list_demo.rs",
@@ -115,7 +113,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./list_demo",
@@ -164,7 +162,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]

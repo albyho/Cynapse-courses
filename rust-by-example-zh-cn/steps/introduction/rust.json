@@ -3,7 +3,7 @@
   "title": "认识 Rust",
   "actions": [
     {
-      "type": "OPEN_FILE_WITH_PREVIEW",
+      "type": "OpenFileWithPreview",
       "path": "INTRO.md",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 3

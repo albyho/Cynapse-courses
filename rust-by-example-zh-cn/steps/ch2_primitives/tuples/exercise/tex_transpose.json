@@ -3,7 +3,7 @@
   "title": "挑战：补上 transpose",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "tuples.rs",
       "narration": {
         "after": {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     }

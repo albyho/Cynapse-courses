@@ -3,7 +3,7 @@
   "title": "use 的作用",
   "actions": [
     {
-      "type": "OPEN_PREVIEW",
+      "type": "OpenPreview",
       "path": "INTRO.md",
       "view": "current",
       "narration": {

@@ -3,7 +3,7 @@
   "title": "挑战：注释掉非法赋值",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "consts.rs",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     }

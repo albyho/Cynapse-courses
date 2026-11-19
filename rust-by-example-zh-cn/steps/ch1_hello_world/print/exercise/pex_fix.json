@@ -3,11 +3,11 @@
   "title": "修正错误并新增打印",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "print.rs"
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "print.rs",
       "start": {
         "line": 26
@@ -55,13 +55,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "print.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "\"Bond\"",
+        "at": {
+          "text": "\"Bond\""
+        },
         "placement": "after"
       },
       "text": ", \"James\"",
@@ -79,7 +79,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "print.rs",
       "start": {
         "line": 35
@@ -117,13 +117,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "print.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "println!(\"This struct",
+        "at": {
+          "text": "println!(\"This struct"
+        },
         "placement": "before"
       },
       "text": "// ",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "print.rs",
       "start": {
         "line": 36
@@ -192,13 +192,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "print.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "// 改正 ^ 注释掉此行。",
+        "at": {
+          "text": "// 改正 ^ 注释掉此行。"
+        },
         "placement": "after"
       },
       "text": "\n\n    let pi = 3.141592;\n    println!(\"Pi is roughly {:.3}\", pi);\n",
@@ -228,12 +228,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc print.rs",
@@ -273,7 +273,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./print",
@@ -323,7 +323,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 5000
     }
   ]

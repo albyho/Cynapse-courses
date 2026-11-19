@@ -24,7 +24,7 @@
       "path": "DEMO.ipynb",
       "cell_id": "dsp_demo",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation, PillowWriter\nfrom IPython.display import Image, display\nfrom pathlib import Path\n\nfs = 200  # sample rate: 100 samples per second\nt = np.linspace(0, 2, fs, endpoint=False)  # uniform time points from 0 to 1 second\nf = 3  # frequency f sets cycles per second\n\nfig, ax = plt.subplots(figsize=(8, 3))\nline, = ax.plot([], [], linewidth=2)\nsamples, = ax.plot([], [], \"o\", markersize=4)\nax.set(xlim=(0, 2), ylim=(-1.4, 1.4))\nax.set_xlabel(\"Time (s)\")\nax.set_ylabel(\"Amplitude\")\n\ndef update(frame):\n    phase = 4 * np.pi * frame / 60\n    y = np.sin(2 * np.pi * f * t + phase)\n    line.set_data(t, y)\n    sample_t = t[::10]\n    samples.set_data(sample_t, y[::10])\n    ax.set_title(f\"Sine wave and its samples (frame {frame})\")\n    return line, samples\n\nanim = FuncAnimation(\n    fig, update, frames=60, interval=50, blit=True\n)\n\nout = Path(\"dsp_demo.gif\")\nanim.save(out, writer=PillowWriter(fps=20))\nplt.close(fig)\ndisplay(Image(filename=str(out)))\n",
       "speed_ms": 2

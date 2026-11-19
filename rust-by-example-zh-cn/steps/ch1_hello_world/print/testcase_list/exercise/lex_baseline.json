@@ -3,16 +3,16 @@
   "title": "先看初始输出",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "list_demo.rs"
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc list_demo.rs",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./list_demo",
@@ -94,7 +94,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]

@@ -3,16 +3,16 @@
   "title": "观察 E0381",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "declare.rs"
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc declare.rs",
@@ -47,7 +47,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 5000
     }
   ]

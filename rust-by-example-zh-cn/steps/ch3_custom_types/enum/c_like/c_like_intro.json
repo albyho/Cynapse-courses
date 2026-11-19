@@ -3,7 +3,7 @@
   "title": "辨别值",
   "actions": [
     {
-      "type": "OPEN_PREVIEW",
+      "type": "OpenPreview",
       "path": "INTRO.md",
       "view": "current",
       "narration": {

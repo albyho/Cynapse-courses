@@ -35,7 +35,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_add",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nfs = 100  # sample rate: 100 samples per second\nt = np.arange(0, 1.0, 1 / fs)  # sample times from 0 to 1 second\n\n",
       "speed_ms": 25
@@ -45,7 +45,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_add",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "f1 = 1.0\nf2 = 3.0\nx1 = np.sin(2 * np.pi * f1 * t)  # a 1 Hz reference signal\nx2 = 0.5 * np.sin(2 * np.pi * f2 * t)  # second component: 3 Hz, amplitude 0.5\nx_sum = x1 + x2  # add the two signals sample by sample\n\n",
       "speed_ms": 25,
@@ -67,7 +67,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_add",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x1, label=\"1 Hz\")\nplt.plot(t, x2, label=\"3 Hz, amplitude 0.5\")\nplt.plot(t, x_sum, label=\"sum\")\nplt.title(\"Adding two signals\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 25,

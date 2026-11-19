@@ -3,20 +3,19 @@
   "title": "演示注释的影响",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "comment.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "comment.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "comment.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n}\n",
       "narration": {
@@ -43,13 +42,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "comment.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
+        "at": {
+          "text": "}"
+        },
         "placement": "before"
       },
       "text": "    // 这是行注释的例子\n    // 注意有两个斜线在本行的开头\n    // 在这里面的所有内容都不会被编译器读取\n\n",
@@ -79,13 +78,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "comment.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
+        "at": {
+          "text": "}"
+        },
         "placement": "before"
       },
       "text": "    // println!(\"Hello, world!\");\n\n    // 去掉本行开头的两条斜线，这行代码就会重新参与编译与运行。\n\n",
@@ -120,13 +119,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "comment.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
+        "at": {
+          "text": "}"
+        },
         "placement": "before"
       },
       "text": "    /*\n     * 这是另外一种注释——块注释。一般而言，行注释是推荐的注释格式，\n     * 不过块注释在临时注释大块代码特别有用。/* 块注释可以 /* 嵌套, */ */\n     * 所以只需很少按键就可注释掉这些 main() 函数中的行。/*/*/* 自己试试！*/*/*/\n     */\n\n",
@@ -156,13 +155,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "comment.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
+        "at": {
+          "text": "}"
+        },
         "placement": "before"
       },
       "text": "    /*\n    注意，上面的例子中纵向都有 `*`，这只是一种风格，实际上这并不是必须的。\n    */\n\n",
@@ -180,13 +179,13 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "comment.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
+        "at": {
+          "text": "}"
+        },
         "placement": "before"
       },
       "text": "    // 观察块注释是如何简单地对表达式进行修改的，行注释则不能这样。\n    // 删除注释分隔符将会改变结果。\n    let x = 5 + /* 90 + */ 5;\n    println!(\"Is `x` 10 or 100? x = {}\", x);\n",
@@ -216,12 +215,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc comment.rs",
@@ -254,7 +253,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./comment",
@@ -296,7 +295,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]

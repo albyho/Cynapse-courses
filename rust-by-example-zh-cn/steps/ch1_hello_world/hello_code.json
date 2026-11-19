@@ -3,20 +3,19 @@
   "title": "编写并运行 Hello World",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "hello.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "hello.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "hello.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "// 这是注释内容，将会被编译器忽略掉\n\n// 这段代码支持编辑，可自由修改。\n\n// 这是主函数\nfn main() {\n    // 调用编译生成的可执行文件时，这里的语句将被运行。\n\n    // 将文本打印到控制台\n    println!(\"Hello World!\");\n}\n",
       "narration": {
@@ -67,16 +66,16 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 3000
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc hello.rs",
@@ -116,7 +115,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./hello",
@@ -163,7 +162,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]

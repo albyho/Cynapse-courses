@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_shift",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "x_shifted = np.sin(2 * np.pi * f1 * (t - 0.25))  # 用 t-0.25 把波形向右平移\n\nplt.figure(figsize=(7, 3))\nplt.plot(t, x1, label=\"x1\")\nplt.plot(t, x_shifted, label=\"x1 shifted right by 0.25 s\")\nplt.title(\"Time shift\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 30

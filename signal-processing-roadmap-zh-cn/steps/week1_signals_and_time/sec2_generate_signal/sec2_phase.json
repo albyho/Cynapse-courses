@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_phase",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "x_phase = A * np.sin(2 * np.pi * f * t + np.pi / 2)  # 只把初相位换成 π/2\n\n",
       "speed_ms": 30,
@@ -64,7 +64,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_phase",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"phase = 0\")\nplt.plot(t, x_phase, label=\"phase = pi/2\")\nplt.title(\"Changing phase\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # 区分多条曲线\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 30,

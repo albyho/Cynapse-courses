@@ -35,7 +35,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_setup",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n",
       "speed_ms": 28
@@ -45,7 +45,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_setup",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fs = 100  # 采样率：每秒 100 个样本\nduration = 1.0  # 信号持续 1 秒\nt = np.arange(0, duration, 1 / fs)  # 生成 0 到 1 秒的采样时间点\n\n",
       "speed_ms": 28,
@@ -79,7 +79,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_setup",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "A = 1.0  # 振幅 A 控制波形高低\nf = 2.0  # 频率 f 控制每秒的周期数\nphi = 0.0  # 初相位 phi 控制起点位置\nx = A * np.sin(2 * np.pi * f * t + phi)  # 正弦公式：A·sin(2πft+φ)\n\n",
       "speed_ms": 28,
@@ -140,7 +140,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_setup",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "print(\"samples:\", t.size)\nprint(\"period (s):\", 1 / f)\nprint(\"angular frequency (rad/s):\", 2 * np.pi * f)\n",
       "speed_ms": 28,

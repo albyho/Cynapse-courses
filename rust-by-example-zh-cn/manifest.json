@@ -1,7 +1,7 @@
 {
   "id": "rust_by_example_zh_cn",
   "title": "通过例子学 Rust（中文版）",
-  "version": "0.20.16",
+  "version": "0.20.17",
   "workspace": "workspace",
   "adapters": [
     "vscode"

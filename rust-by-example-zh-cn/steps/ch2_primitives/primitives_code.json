@@ -3,20 +3,19 @@
   "title": "类型标注与推断",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "primitives.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "primitives.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "primitives.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n    // 变量可以给出类型说明。\n    let logical: bool = true;\n\n    let a_float: f64 = 1.0;  // 常规说明\n    let an_integer   = 5i32; // 后缀说明\n\n    // 否则会按默认方式决定类型。\n    let default_float   = 3.0; // `f64`\n    let default_integer = 7;   // `i32`\n\n    // 类型也可根据上下文自动推断。\n    let mut inferred_type = 12; // 根据下一行的赋值推断为 i64 类型\n    inferred_type = 4294967296i64;\n\n    // 可变的（mutable）变量，其值可以改变。\n    let mut mutable = 12; // Mutable `i32`\n    mutable = 21;\n    println!(\"mutable before shadowing = {}\", mutable);\n\n    // 报错！变量的类型并不能改变。\n    // mutable = true;\n\n    // 但可以用遮蔽（shadow）来覆盖前面的变量。\n    let mutable = true;\n    println!(\"mutable after shadowing = {}\", mutable);\n\n    println!(\"logical = {}\", logical);\n    println!(\"a_float = {}, an_integer = {}\", a_float, an_integer);\n    println!(\"default_float = {}, default_integer = {}\", default_float, default_integer);\n    println!(\"inferred_type = {}\", inferred_type);\n}\n",
       "narration": {
@@ -50,16 +49,16 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 3000
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc primitives.rs",
@@ -92,7 +91,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./primitives",
@@ -171,7 +170,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 9000
     }
   ]

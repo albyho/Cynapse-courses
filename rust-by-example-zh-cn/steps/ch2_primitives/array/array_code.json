@@ -3,20 +3,19 @@
   "title": "长度、内存与借用",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "array.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "array.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "array.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "use std::mem;\n\n// 此函数借用一个 slice\nfn analyze_slice(slice: &[i32]) {\n    println!(\"first element of the slice: {}\", slice[0]);\n    println!(\"the slice has {} elements\", slice.len());\n}\n\nfn main() {\n    // 定长数组（类型标记是多余的）\n    let xs: [i32; 5] = [1, 2, 3, 4, 5];\n\n    // 所有元素可以初始化成相同的值\n    let ys: [i32; 500] = [0; 500];\n\n    // 下标从 0 开始\n    println!(\"first element of the array: {}\", xs[0]);\n    println!(\"second element of the array: {}\", xs[1]);\n\n    // `len` 返回数组的大小\n    println!(\"array size: {}\", xs.len());\n\n    // 数组是在栈中分配的\n    println!(\"array occupies {} bytes\", mem::size_of_val(&xs));\n\n    // 数组可以自动被借用成为 slice\n    println!(\"borrow the whole array as a slice\");\n    analyze_slice(&xs);\n\n    // slice 可以指向数组的一部分\n    println!(\"borrow a section of the array as a slice\");\n    analyze_slice(&ys[1 .. 4]);\n\n    // 越界的下标会引发致命错误（panic）\n    // println!(\"{}\", xs[5]);\n}\n",
       "narration": {
@@ -72,16 +71,16 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 3000
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc array.rs",
@@ -114,7 +113,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./array",
@@ -216,7 +215,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 10000
     }
   ]

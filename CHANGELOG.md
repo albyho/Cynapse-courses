@@ -2,6 +2,15 @@
 
 Published Course Packages. Versions match each package's `manifest.json`.
 
+## 2026-11-20
+
+- `rust-by-example-zh-cn` 0.20.17: migrate actions to PascalCase names and the
+  unified text-edit anchor shape (`eof` and `at`); lesson content is unchanged.
+- `signal-processing-roadmap-zh-cn` 0.2.4: migrate actions to PascalCase names
+  and the unified text-edit anchor shape; lesson content is unchanged.
+- `signal-processing-roadmap` 0.2.4: the same action migration for the English
+  edition; lesson content is unchanged.
+
 ## 2026-11-19
 
 - `signal-processing-roadmap` 0.2.3: initial English release. Same Course Tree,

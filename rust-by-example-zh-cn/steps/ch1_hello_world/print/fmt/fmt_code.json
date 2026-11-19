@@ -3,20 +3,19 @@
   "title": "为 City 实现 Display",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "fmt_demo.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "fmt_demo.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "fmt_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "use std::fmt::{self, Formatter, Display};\n\nstruct City {\n    name: &'static str,\n    // 纬度\n    lat: f32,\n    // 经度\n    lon: f32,\n}\n\nimpl Display for City {\n    // `f` 是一个缓冲区（buffer），此方法必须将格式化后的字符串写入其中\n    fn fmt(&self, f: &mut Formatter) -> fmt::Result {\n        let lat_c = if self.lat >= 0.0 { 'N' } else { 'S' };\n        let lon_c = if self.lon >= 0.0 { 'E' } else { 'W' };\n\n        // `write!` 和 `format!` 类似，但它会将格式化后的字符串写入\n        // 一个缓冲区（即第一个参数f）中。\n        write!(f, \"{}: {:.3}°{} {:.3}°{}\",\n               self.name, self.lat.abs(), lat_c, self.lon.abs(), lon_c)\n    }\n}\n\n",
       "narration": {
@@ -50,12 +49,11 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "fmt_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "#[derive(Debug)]\nstruct Color {\n    red: u8,\n    green: u8,\n    blue: u8,\n}\n\nfn main() {\n    for city in [\n        City { name: \"Dublin\", lat: 53.347778, lon: -6.259722 },\n        City { name: \"Oslo\", lat: 59.95, lon: 10.75 },\n        City { name: \"Vancouver\", lat: 49.25, lon: -123.1 },\n    ].iter() {\n        println!(\"{}\", *city);\n    }\n    for color in [\n        Color { red: 128, green: 255, blue: 90 },\n        Color { red: 0, green: 3, blue: 254 },\n        Color { red: 0, green: 0, blue: 0 },\n    ].iter() {\n        // 在添加了针对 fmt::Display 的实现后，请改用 {} 检验效果。\n        println!(\"{:?}\", *color)\n    }\n}\n",
       "narration": {
@@ -79,12 +77,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc fmt_demo.rs",
@@ -134,7 +132,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./fmt_demo",
@@ -176,7 +174,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]

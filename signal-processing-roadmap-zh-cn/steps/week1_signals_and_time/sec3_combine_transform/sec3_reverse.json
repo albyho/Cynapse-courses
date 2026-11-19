@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_reverse",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "n_rev = np.arange(9)  # 有限长序列的样本序号\nx_rev_source = np.array([0, 1, 2, 3, 2, 1, 0, -1, -2])  # 原始有限长序列\nx_rev = x_rev_source[::-1]  # 把样本顺序倒过来\n\nplt.figure(figsize=(7, 3))\nplt.stem(n_rev, x_rev_source, label=\"original\")  # 用竖线表示离散样本\nplt.stem(n_rev, x_rev, label=\"reversed\")  # 用竖线表示离散样本\nplt.title(\"Reversing sample order\")\nplt.xlabel(\"Sample index n\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 30

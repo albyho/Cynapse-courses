@@ -35,7 +35,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_setup",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n",
       "speed_ms": 28
@@ -45,7 +45,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_setup",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fs = 100  # sample rate: 100 samples per second\nduration = 1.0  # the signal lasts one second\nt = np.arange(0, duration, 1 / fs)  # sample times from 0 to 1 second\n\n",
       "speed_ms": 28,
@@ -67,7 +67,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_setup",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "A = 1.0  # amplitude A sets how tall the wave gets\nf = 2.0  # frequency f sets cycles per second\nphi = 0.0  # initial phase phi sets where the wave starts\nx = A * np.sin(2 * np.pi * f * t + phi)  # sine formula: A·sin(2πft+φ)\n\n",
       "speed_ms": 28,
@@ -99,7 +99,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_setup",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "print(\"samples:\", t.size)\nprint(\"period (s):\", 1 / f)\nprint(\"angular frequency (rad/s):\", 2 * np.pi * f)\n",
       "speed_ms": 28,

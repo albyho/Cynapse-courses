@@ -3,20 +3,19 @@
   "title": "类型别名与 Self",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "operations.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "operations.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "operations.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "enum VeryVerboseEnumOfThingsToDoWithNumbers {\n    Add,\n    Subtract,\n}\n\n// 创建一个类型别名\ntype Operations = VeryVerboseEnumOfThingsToDoWithNumbers;\n\nimpl VeryVerboseEnumOfThingsToDoWithNumbers {\n    fn run(&self, x: i32, y: i32) -> i32 {\n        match self {\n            Self::Add => x + y,\n            Self::Subtract => x - y,\n        }\n    }\n}\n\nfn main() {\n    // 通过别名引用枚举变量，避免写出又长又不方便的枚举名字。\n    let add = Operations::Add;\n    let subtract = Operations::Subtract;\n\n    println!(\"10 + 4 = {}\", add.run(10, 4));\n    println!(\"10 - 4 = {}\", subtract.run(10, 4));\n}\n",
       "narration": {
@@ -57,11 +56,11 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 3000
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc operations.rs",
@@ -94,7 +93,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./operations",
@@ -144,7 +143,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 5000
     }
   ]

@@ -3,20 +3,19 @@
   "title": "写入冻结示例",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "freeze.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "freeze.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "freeze.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n    let mut _mutable_integer = 7i32;\n\n    {\n        // 被不可变的 `_mutable_integer` 遮蔽\n        let _mutable_integer = _mutable_integer;\n\n        // 报错！`_mutable_integer` 在本作用域被冻结\n        _mutable_integer = 50;\n        // 改正 ^ 注释掉上面这行\n\n        // `_mutable_integer` 离开作用域\n    }\n\n    // 正常运行！ `_mutable_integer` 在这个作用域没有冻结\n    _mutable_integer = 3;\n}\n",
       "narration": {
@@ -50,7 +49,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "freeze.rs",
       "start": {
         "line": 1
@@ -72,7 +71,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "freeze.rs",
       "start": {
         "line": 4
@@ -94,7 +93,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "freeze.rs",
       "start": {
         "line": 12

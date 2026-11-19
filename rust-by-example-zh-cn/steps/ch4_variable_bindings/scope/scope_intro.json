@@ -3,7 +3,7 @@
   "title": "代码块与作用域",
   "actions": [
     {
-      "type": "OPEN_PREVIEW",
+      "type": "OpenPreview",
       "path": "INTRO.md",
       "view": "current",
       "narration": {

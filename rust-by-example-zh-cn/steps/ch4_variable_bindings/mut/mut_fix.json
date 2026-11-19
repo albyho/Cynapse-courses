@@ -3,7 +3,7 @@
   "title": "挑战：修复不可变赋值",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "mut.rs",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     }

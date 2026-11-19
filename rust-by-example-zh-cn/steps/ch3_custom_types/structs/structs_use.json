@@ -3,19 +3,19 @@
   "title": "字段访问、更新与解构",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "structs.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "structs.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
-        "placement": "before",
-        "index": 3
+        "at": {
+          "text": "}",
+          "index": 3
+        },
+        "placement": "before"
       },
       "text": "    // 使用简单的写法初始化字段，并创建结构体\n    let name = String::from(\"Peter\");\n    let age = 27;\n    let peter = Person { name, age };\n\n    // 以 Debug 方式打印结构体\n    println!(\"{:?}\", peter);\n\n",
       "narration": {
@@ -32,15 +32,15 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "structs.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
-        "placement": "before",
-        "index": 5
+        "at": {
+          "text": "}",
+          "index": 5
+        },
+        "placement": "before"
       },
       "text": "    // 实例化结构体 `Point`\n    let point: Point = Point { x: 10.3, y: 0.4 };\n\n    // 访问 point 的字段\n    println!(\"point coordinates: ({}, {})\", point.x, point.y);\n\n",
       "narration": {
@@ -57,15 +57,15 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "structs.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
-        "placement": "before",
-        "index": 8
+        "at": {
+          "text": "}",
+          "index": 8
+        },
+        "placement": "before"
       },
       "text": "    // 使用结构体更新语法创建新的 point，\n    // 这样可以用到之前的 point 的字段\n    let bottom_right = Point { x: 5.2, ..point };\n\n    // `bottom_right.y` 与 `point.y` 一样，因为这个字段就是从 `point` 中来的\n    println!(\"second point: ({}, {})\", bottom_right.x, bottom_right.y);\n\n    // 使用 `let` 绑定来解构 point\n    let Point { x: left_edge, y: top_edge } = point;\n\n",
       "narration": {
@@ -82,15 +82,15 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "structs.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "}",
-        "placement": "before",
-        "index": 12
+        "at": {
+          "text": "}",
+          "index": 12
+        },
+        "placement": "before"
       },
       "text": "    let _rectangle = Rectangle {\n        // 结构体的实例化也是一个表达式\n        top_left: Point { x: left_edge, y: top_edge },\n        bottom_right: bottom_right,\n    };\n\n    // 实例化一个单元结构体\n    let _unit = Unit;\n\n    // 实例化一个元组结构体\n    let pair = Pair(1, 0.1);\n\n    // 访问元组结构体的字段\n    println!(\"pair contains {:?} and {:?}\", pair.0, pair.1);\n\n    // 解构一个元组结构体\n    let Pair(integer, decimal) = pair;\n\n    println!(\"pair contains {:?} and {:?}\", integer, decimal);\n",
       "narration": {
@@ -107,12 +107,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc structs.rs",
@@ -145,7 +145,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./structs",
@@ -212,7 +212,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 7000
     }
   ]

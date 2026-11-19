@@ -3,20 +3,19 @@
   "title": "写入延迟初始化示例",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "declare.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "declare.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "declare.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n    // 声明一个变量绑定\n    let a_binding;\n\n    {\n        let x = 2;\n\n        // 初始化一个绑定\n        a_binding = x * x;\n    }\n\n    println!(\"a binding: {}\", a_binding);\n\n    let another_binding;\n\n    // 报错！使用了未初始化的绑定\n    println!(\"another binding: {}\", another_binding);\n    // 改正 ^ 注释掉此行\n\n    another_binding = 1;\n\n    println!(\"another binding: {}\", another_binding);\n}\n",
       "narration": {
@@ -50,7 +49,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "declare.rs",
       "start": {
         "line": 1
@@ -72,7 +71,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "declare.rs",
       "start": {
         "line": 5
@@ -94,7 +93,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "declare.rs",
       "start": {
         "line": 12
@@ -116,7 +115,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "declare.rs",
       "start": {
         "line": 20

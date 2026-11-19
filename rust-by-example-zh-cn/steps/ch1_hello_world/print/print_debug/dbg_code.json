@@ -3,20 +3,19 @@
   "title": "演示 Debug 打印",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "debug_demo.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "debug_demo.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "debug_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "// 推导 `Structure` 的 `fmt::Debug` 实现。\n// `Structure` 是一个包含单个 `i32` 的结构体。\n#[derive(Debug)]\nstruct Structure(i32);\n\n// 将 `Structure` 放到结构体 `Deep` 中。然后使 `Deep` 也能够打印。\n#[derive(Debug)]\nstruct Deep(Structure);\n\nfn main() {\n    // 使用 `{:?}` 打印和使用 `{}` 类似。\n    println!(\"{:?} months in a year.\", 12);\n    println!(\"{1:?} {0:?} is the {actor:?} name.\",\n             \"Slater\",\n             \"Christian\",\n             actor=\"actor's\");\n\n    // `Structure` 也可以打印！\n    println!(\"Now {:?} will print!\", Structure(3));\n\n    // 使用 `derive` 的一个问题是不能控制输出的形式。\n    // 假如我只想展示一个 `7` 怎么办？\n    println!(\"Now {:?} will print!\", Deep(Structure(7)));\n}\n",
       "narration": {
@@ -57,7 +56,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "debug_demo.rs",
       "start": {
         "line": 1
@@ -86,7 +85,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "debug_demo.rs",
       "start": {
         "line": 10
@@ -130,7 +129,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "debug_demo.rs",
       "start": {
         "line": 18
@@ -152,12 +151,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc debug_demo.rs",
@@ -190,7 +189,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./debug_demo",
@@ -232,7 +231,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]

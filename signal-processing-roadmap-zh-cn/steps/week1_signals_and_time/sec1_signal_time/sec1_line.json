@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec1_line",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))  # 创建画布并设置尺寸\nplt.plot(t, x, marker=\"o\")  # 把数据画成曲线\nplt.title(\"Same signal drawn with plot\")  # 写清图表达的内容\nplt.xlabel(\"Time (s)\")  # 标明横轴和单位\nplt.ylabel(\"Amplitude\")  # 标明纵轴和单位\nplt.grid(True, alpha=0.3)  # 加网格方便读数\nplt.tight_layout()  # 避免标签被裁掉\nplt.show()  # 渲染并显示图像\n",
       "speed_ms": 35

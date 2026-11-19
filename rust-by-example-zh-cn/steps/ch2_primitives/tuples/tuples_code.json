@@ -3,20 +3,19 @@
   "title": "构造、访问与解构",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "tuples.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "tuples.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "tuples.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "// 元组可以充当函数的参数和返回值\nfn reverse(pair: (i32, bool)) -> (bool, i32) {\n    // 可以使用 `let` 把一个元组的成员绑定到一些变量\n    let (integer, boolean) = pair;\n\n    (boolean, integer)\n}\n\n",
       "narration": {
@@ -50,12 +49,11 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "tuples.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "// 在 “动手试一试” 的练习中要用到下面这个结构体。\n#[derive(Debug)]\nstruct Matrix(f32, f32, f32, f32);\n\n",
       "narration": {
@@ -72,12 +70,11 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "tuples.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n    // 包含各种不同类型的元组\n    let long_tuple = (1u8, 2u16, 3u32, 4u64,\n                      -1i8, -2i16, -3i32, -4i64,\n                      0.1f32, 0.2f64,\n                      'a', true);\n\n    // 通过元组的下标来访问具体的值\n    println!(\"long tuple first value: {}\", long_tuple.0);\n    println!(\"long tuple second value: {}\", long_tuple.1);\n\n    // 元组也可以充当元组的元素\n    let tuple_of_tuples = ((1u8, 2u16, 2u32), (4u64, -1i8), -2i16);\n\n    // 元组可以打印\n    println!(\"tuple of tuples: {:?}\", tuple_of_tuples);\n\n    // 但很长的元组无法打印\n    // let too_long_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);\n    // println!(\"too long tuple: {:?}\", too_long_tuple);\n    // 试一试 ^ 取消上面两行的注释，阅读编译器给出的错误信息。\n\n    let pair = (1, true);\n    println!(\"pair is {:?}\", pair);\n\n    println!(\"the reversed pair is {:?}\", reverse(pair));\n\n    // 创建单元素元组需要一个额外的逗号，这是为了和被括号包含的字面量作区分。\n    println!(\"one element tuple: {:?}\", (5u32,));\n    println!(\"just an integer: {:?}\", (5u32));\n\n    // 元组可以被解构（deconstruct），从而将值绑定给变量\n    let tuple = (1, \"hello\", 4.5, true);\n\n    let (a, b, c, d) = tuple;\n    println!(\"{:?}, {:?}, {:?}, {:?}\", a, b, c, d);\n\n    let matrix = Matrix(1.1, 1.2, 2.1, 2.2);\n    println!(\"{:?}\", matrix)\n\n}\n",
       "narration": {
@@ -118,12 +115,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc tuples.rs",
@@ -156,7 +153,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./tuples",
@@ -250,7 +247,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 10000
     }
   ]

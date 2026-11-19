@@ -3,7 +3,7 @@
   "title": "格式化宏介绍",
   "actions": [
     {
-      "type": "OPEN_PREVIEW",
+      "type": "OpenPreview",
       "path": "INTRO.md",
       "view": "current",
       "narration": {

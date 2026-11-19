@@ -3,7 +3,7 @@
   "title": "let 绑定与类型推导",
   "actions": [
     {
-      "type": "OPEN_PREVIEW",
+      "type": "OpenPreview",
       "path": "INTRO.md",
       "view": "current",
       "narration": {

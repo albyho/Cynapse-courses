@@ -3,17 +3,17 @@
   "title": "增加复数结构体",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "display_demo.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "display_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "literal",
-        "text": "    println!(\"Debug: {:?}\", point);",
+        "at": {
+          "text": "    println!(\"Debug: {:?}\", point);"
+        },
         "placement": "after"
       },
       "text": "\n    // 动手试一试：仿照 Point2D，增加一个复数结构体并实现 Display。\n    #[derive(Debug)]\n    struct Complex {\n        real: f64,\n        imag: f64,\n    }\n\n    impl fmt::Display for Complex {\n        fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n            write!(f, \"{} + {}i\", self.real, self.imag)\n        }\n    }\n\n    let complex = Complex { real: 3.3, imag: 7.2 };\n    println!(\"Display: {}\", complex);\n    println!(\"Debug: {:?}\", complex);\n",
@@ -55,12 +55,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc display_demo.rs",
@@ -93,7 +93,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./display_demo",
@@ -148,7 +148,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 5000
     }
   ]

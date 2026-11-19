@@ -35,7 +35,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_add",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nfs = 100  # 采样率：每秒 100 个样本\nt = np.arange(0, 1.0, 1 / fs)  # 生成 0 到 1 秒的采样时间点\n\n",
       "speed_ms": 25
@@ -45,7 +45,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_add",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "f1 = 1.0\nf2 = 3.0\nx1 = np.sin(2 * np.pi * f1 * t)  # 1 Hz 的基准信号\nx2 = 0.5 * np.sin(2 * np.pi * f2 * t)  # 3 Hz、振幅 0.5 的第二成分\nx_sum = x1 + x2  # 两个信号逐点相加\n\n",
       "speed_ms": 25,
@@ -67,7 +67,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_add",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x1, label=\"1 Hz\")\nplt.plot(t, x2, label=\"3 Hz, amplitude 0.5\")\nplt.plot(t, x_sum, label=\"sum\")\nplt.title(\"Adding two signals\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 25,

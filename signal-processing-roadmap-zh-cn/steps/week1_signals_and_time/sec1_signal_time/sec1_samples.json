@@ -35,7 +35,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec1_samples",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n",
       "speed_ms": 30
@@ -45,7 +45,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec1_samples",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "n = np.arange(8)  # 样本序号从 0 开始\nt = 0.5 * n  # 采样间隔 0.5 秒，把序号换算成时间\nx = np.array([0, 1, 2, 1, 0, -1, -2, -1])  # 每个样本对应的振幅\n\n",
       "speed_ms": 30,
@@ -79,7 +79,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec1_samples",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "print(\"n =\", n)\nprint(\"t =\", t)\nprint(\"x =\", x)\n",
       "speed_ms": 30,

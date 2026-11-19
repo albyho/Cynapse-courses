@@ -3,7 +3,7 @@
   "title": "准备出发吧",
   "actions": [
     {
-      "type": "PRESENT",
+      "type": "Present",
       "narration": {
         "during": {
           "asset_id": "narration_introduction_departure",

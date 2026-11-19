@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_frequency",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "x_4hz = A * np.sin(2 * np.pi * 4.0 * t + phi)  # same parameters, frequency changed to 4 Hz\n\n",
       "speed_ms": 30,
@@ -42,7 +42,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_frequency",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"f = 2 Hz\")  # plot the data as a curve\nplt.plot(t, x_4hz, label=\"f = 4 Hz\")\nplt.title(\"Changing frequency\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # tell multiple curves apart\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 30,

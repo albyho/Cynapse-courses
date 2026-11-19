@@ -3,7 +3,7 @@
   "title": "简介: 特质 trait",
   "actions": [
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 26

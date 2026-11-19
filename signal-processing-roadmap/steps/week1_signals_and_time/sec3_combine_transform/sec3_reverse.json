@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_reverse",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "n_rev = np.arange(9)  # sample index of a finite-length sequence\nx_rev_source = np.array([0, 1, 2, 3, 2, 1, 0, -1, -2])  # the original finite-length sequence\nx_rev = x_rev_source[::-1]  # reverse the sample order\n\nplt.figure(figsize=(7, 3))\nplt.stem(n_rev, x_rev_source, label=\"original\")  # draw vertical lines for discrete samples\nplt.stem(n_rev, x_rev, label=\"reversed\")  # draw vertical lines for discrete samples\nplt.title(\"Reversing sample order\")\nplt.xlabel(\"Sample index n\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 30

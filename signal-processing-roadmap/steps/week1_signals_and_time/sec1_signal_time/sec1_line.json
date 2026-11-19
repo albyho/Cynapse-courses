@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec1_line",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))  # create the figure and set its size\nplt.plot(t, x, marker=\"o\")  # plot the data as a curve\nplt.title(\"Same signal drawn with plot\")  # state what the figure shows\nplt.xlabel(\"Time (s)\")  # label the horizontal axis and its unit\nplt.ylabel(\"Amplitude\")  # label the vertical axis and its unit\nplt.grid(True, alpha=0.3)  # add a grid so values are easy to read\nplt.tight_layout()  # keep labels from being clipped\nplt.show()  # render and show the figure\n",
       "speed_ms": 35

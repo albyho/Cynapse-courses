@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nt = np.linspace(0, 1, 500)  # uniform time points from 0 to 1 second\nx1 = np.sin(2 * np.pi * 1.0 * t)  # a 1 Hz reference signal\n\n",
       "speed_ms": 0,
@@ -42,7 +42,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "x_task = 0.6 * np.sin(2 * np.pi * 1.0 * (t - 0.2))  # shrink the amplitude to 0.6 and shift right by 0.2 s\n\n",
       "speed_ms": 0,
@@ -64,7 +64,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x1, label=\"x1\")\nplt.plot(t, x_task, label=\"0.6 * x1 shifted right by 0.2 s\")\nplt.title(\"Scale and time shift\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 0,

@@ -3,7 +3,7 @@
   "title": "简介: 表达式",
   "actions": [
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 17

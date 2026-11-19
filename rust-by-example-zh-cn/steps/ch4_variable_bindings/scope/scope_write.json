@@ -3,20 +3,19 @@
   "title": "写入作用域示例",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "scope.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "scope.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "scope.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n    // 此绑定生存于 main 函数中\n    let long_lived_binding = 1;\n\n    // 这是一个代码块，比 main 函数拥有更小的作用域\n    {\n        // 此绑定只存在于本代码块\n        let short_lived_binding = 2;\n\n        println!(\"inner short: {}\", short_lived_binding);\n\n        // 此绑定*遮蔽*了外面的绑定\n        let long_lived_binding = 5_f32;\n\n        println!(\"inner long: {}\", long_lived_binding);\n    }\n    // 代码块结束\n\n    // 报错！`short_lived_binding` 在此作用域上不存在\n    println!(\"outer short: {}\", short_lived_binding);\n    // 改正 ^ 注释掉这行\n\n    println!(\"outer long: {}\", long_lived_binding);\n\n    // 此绑定同样*遮蔽*了前面的绑定\n    let long_lived_binding = 'a';\n\n    println!(\"outer long: {}\", long_lived_binding);\n}\n",
       "narration": {
@@ -50,7 +49,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "scope.rs",
       "start": {
         "line": 1
@@ -72,7 +71,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "scope.rs",
       "start": {
         "line": 5
@@ -94,7 +93,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "scope.rs",
       "start": {
         "line": 16
@@ -116,7 +115,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "scope.rs",
       "start": {
         "line": 25

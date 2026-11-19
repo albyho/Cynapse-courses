@@ -3,7 +3,7 @@
   "title": "简介: Hello World",
   "actions": [
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 11

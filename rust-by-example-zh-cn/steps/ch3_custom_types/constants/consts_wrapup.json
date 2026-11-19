@@ -3,7 +3,7 @@
   "title": "收尾：const 的边界",
   "actions": [
     {
-      "type": "PRESENT",
+      "type": "Present",
       "narration": {
         "before": {
           "asset_id": "narration_ch3_custom_types_constants",

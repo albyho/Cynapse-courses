@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec4_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nt_task = np.linspace(0, 1, 500)  # start from the time axis the Seed provides\n\n",
       "speed_ms": 0,
@@ -42,7 +42,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec4_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "low = 0.8 * np.sin(2 * np.pi * 1.0 * t_task + np.pi / 4)  # low frequency component: 1 Hz, amplitude 0.8\nhigh = 0.3 * np.sin(2 * np.pi * 4.0 * t_task)  # high frequency component: 4 Hz, amplitude 0.3\nx_task = low + high  # a low and a high frequency component added together\n\n",
       "speed_ms": 0,
@@ -64,7 +64,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec4_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))\nplt.plot(t_task, low, label=\"low: 1 Hz, A=0.8, phase=pi/4\")\nplt.plot(t_task, high, label=\"high: 4 Hz, A=0.3\")\nplt.plot(t_task, x_task, label=\"sum\")\nplt.title(\"A signal with low and high frequency components\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 0,

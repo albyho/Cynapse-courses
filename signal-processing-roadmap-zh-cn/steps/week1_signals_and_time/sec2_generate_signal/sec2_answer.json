@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nt = np.linspace(0, 1, 500)  # 生成 0 到 1 秒的均匀时间点\nx = np.sin(2 * np.pi * 2.0 * t)\n\n",
       "speed_ms": 0,
@@ -49,7 +49,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "A_ex = 0.8\nf_ex = 1.5\nphi_ex = np.pi / 4\nx_ex = A_ex * np.sin(2 * np.pi * f_ex * t + phi_ex)  # 把选定的 A、f、phi 代入正弦公式\n\n",
       "speed_ms": 0,
@@ -93,7 +93,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"A=1, f=2 Hz, phase=0\")\nplt.plot(t, x_ex, label=\"A=0.8, f=1.5 Hz, phase=pi/4\")\nplt.title(\"One possible answer\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # 区分多条曲线\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 0,

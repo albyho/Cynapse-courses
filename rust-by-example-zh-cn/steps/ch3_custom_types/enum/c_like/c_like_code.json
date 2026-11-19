@@ -3,20 +3,19 @@
   "title": "转成整数",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "c_like.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "c_like.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "c_like.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "// 该属性用于隐藏对未使用代码的警告。\n#![allow(dead_code)]\n\n// 拥有隐式辨别值（implicit discriminator，从 0 开始）的 enum\nenum Number {\n    Zero,\n    One,\n    Two,\n}\n\n// 拥有显式辨别值（explicit discriminator）的 enum\nenum Color {\n    Red = 0xff0000,\n    Green = 0x00ff00,\n    Blue = 0x0000ff,\n}\n\nfn main() {\n    // `enum` 可以转成整型。\n    println!(\"zero is {}\", Number::Zero as i32);\n    println!(\"one is {}\", Number::One as i32);\n\n    println!(\"roses are #{:06x}\", Color::Red as i32);\n    println!(\"violets are #{:06x}\", Color::Blue as i32);\n}\n",
       "narration": {
@@ -55,16 +54,16 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 3000
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc c_like.rs",
@@ -97,7 +96,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./c_like",
@@ -147,7 +146,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 7000
     }
   ]

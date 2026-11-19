@@ -3,7 +3,7 @@
   "title": "挑战：追加一行打印",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "hello.rs",
       "narration": {
         "after": {
@@ -43,7 +43,7 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     }

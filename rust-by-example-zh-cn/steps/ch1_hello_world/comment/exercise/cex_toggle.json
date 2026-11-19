@@ -3,11 +3,11 @@
   "title": "取消注释并运行",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "comment.rs"
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "comment.rs",
       "start": {
         "line": 6
@@ -62,7 +62,7 @@
       }
     },
     {
-      "type": "DELETE_TEXT",
+      "type": "DeleteText",
       "path": "comment.rs",
       "target": {
         "cursor": {
@@ -73,7 +73,6 @@
         "expected_text": "// "
       },
       "direction": "delete",
-      "effect": "typewriter",
       "speed_ms": 120,
       "narration": {
         "during": {
@@ -96,7 +95,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc comment.rs",
@@ -136,7 +135,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./comment",
@@ -178,11 +177,11 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "comment.rs",
       "start": {
         "line": 22
@@ -243,7 +242,7 @@
       }
     },
     {
-      "type": "DELETE_TEXT",
+      "type": "DeleteText",
       "path": "comment.rs",
       "target": {
         "cursor": {
@@ -254,7 +253,6 @@
         "expected_text": "/* "
       },
       "direction": "delete",
-      "effect": "typewriter",
       "speed_ms": 120,
       "narration": {
         "before": {
@@ -294,7 +292,7 @@
       }
     },
     {
-      "type": "DELETE_TEXT",
+      "type": "DeleteText",
       "path": "comment.rs",
       "target": {
         "cursor": {
@@ -305,7 +303,6 @@
         "expected_text": " */"
       },
       "direction": "delete",
-      "effect": "typewriter",
       "speed_ms": 120,
       "narration": {
         "before": {
@@ -345,7 +342,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc comment.rs",
@@ -385,7 +382,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./comment",
@@ -427,7 +424,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]

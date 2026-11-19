@@ -3,7 +3,7 @@
   "title": "简介: 原生类型",
   "actions": [
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 12

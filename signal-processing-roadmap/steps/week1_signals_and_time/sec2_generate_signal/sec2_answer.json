@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nt = np.linspace(0, 1, 500)  # uniform time points from 0 to 1 second\nx = np.sin(2 * np.pi * 2.0 * t)\n\n",
       "speed_ms": 0,
@@ -42,7 +42,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "A_ex = 0.8\nf_ex = 1.5\nphi_ex = np.pi / 4\nx_ex = A_ex * np.sin(2 * np.pi * f_ex * t + phi_ex)  # plug the chosen A, f and phi into the sine formula\n\n",
       "speed_ms": 0,
@@ -64,7 +64,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec2_answer",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "plt.figure(figsize=(7, 3))\nplt.plot(t, x, label=\"A=1, f=2 Hz, phase=0\")\nplt.plot(t, x_ex, label=\"A=0.8, f=1.5 Hz, phase=pi/4\")\nplt.title(\"One possible answer\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()  # tell multiple curves apart\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 0,

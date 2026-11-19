@@ -3,7 +3,7 @@
   "title": "收尾：E0384",
   "actions": [
     {
-      "type": "PRESENT",
+      "type": "Present",
       "narration": {
         "before": {
           "asset_id": "narration_ch4_variable_bindings_freeze",

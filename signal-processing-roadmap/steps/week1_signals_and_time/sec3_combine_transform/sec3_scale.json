@@ -20,7 +20,7 @@
       "path": "lesson.ipynb",
       "cell_id": "cynapse_sec3_scale",
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "x_scaled = 0.5 * x1  # multiply every sample by 0.5, halving the amplitude\n\nplt.figure(figsize=(7, 3))\nplt.plot(t, x1, label=\"x1\")\nplt.plot(t, x_scaled, label=\"0.5 * x1\")\nplt.title(\"Scaling amplitude\")\nplt.xlabel(\"Time (s)\")\nplt.ylabel(\"Amplitude\")\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n",
       "speed_ms": 35

@@ -3,20 +3,19 @@
   "title": "写入可变示例",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "mut.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "mut.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "mut.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n    let _immutable_binding = 1;\n    let mut mutable_binding = 1;\n\n    println!(\"Before mutation: {}\", mutable_binding);\n\n    // 正确代码\n    mutable_binding += 1;\n\n    println!(\"After mutation: {}\", mutable_binding);\n\n    // 错误！\n    _immutable_binding += 1;\n    // 改正 ^ 将此行注释掉\n}\n",
       "narration": {
@@ -50,7 +49,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 3000
     }
   ]

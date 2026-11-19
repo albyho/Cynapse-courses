@@ -3,7 +3,7 @@
   "title": "这本书怎么学",
   "actions": [
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 5

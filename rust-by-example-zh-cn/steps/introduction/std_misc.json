@@ -3,7 +3,7 @@
   "title": "简介: 标准库更多介绍",
   "actions": [
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 30

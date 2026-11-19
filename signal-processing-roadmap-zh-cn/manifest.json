@@ -1,7 +1,7 @@
 {
   "id": "signal_processing_roadmap_zh_cn",
   "title": "信号处理路线图（中文版）",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "workspace": "workspace",
   "adapters": [
     "jupyterlab"

@@ -3,20 +3,19 @@
   "title": "演示格式化输出",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "print_demo.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "print_demo.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "print_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n    // 通常情况下，`{}` 会被任意变量内容所替换。\n    // 变量内容会转化成字符串。\n    println!(\"{} days\", 31);\n\n    // 用变量替换字符串有多种写法。\n    // 比如可以使用位置参数。\n    println!(\"{0}, this is {1}. {1}, this is {0}\", \"Alice\", \"Bob\");\n\n    // 可以使用命名参数。\n    println!(\"{subject} {verb} {object}\",\n             object=\"the lazy dog\",\n             subject=\"the quick brown fox\",\n             verb=\"jumps over\");\n\n    // 可以在 `:` 后面指定特殊的格式。\n    println!(\"{} of {:b} people know binary, the other half don't\", 1, 2);\n\n    // 你可以按指定宽度来右对齐文本。\n    // 下面语句输出 \"     1\"，5 个空格后面连着 1。\n    println!(\"{number:>width$}\", number=1, width=6);\n\n    // 你可以在数字左边补 0。下面语句输出 \"000001\"。\n    println!(\"{number:>0width$}\", number=1, width=6);\n}\n",
       "narration": {
@@ -60,7 +59,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "print_demo.rs",
       "start": {
         "line": 1
@@ -94,7 +93,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "print_demo.rs",
       "start": {
         "line": 6
@@ -133,7 +132,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "print_demo.rs",
       "start": {
         "line": 10
@@ -172,7 +171,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "print_demo.rs",
       "start": {
         "line": 16
@@ -206,7 +205,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "print_demo.rs",
       "start": {
         "line": 19
@@ -228,12 +227,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc print_demo.rs",
@@ -266,7 +265,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./print_demo",
@@ -315,7 +314,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]

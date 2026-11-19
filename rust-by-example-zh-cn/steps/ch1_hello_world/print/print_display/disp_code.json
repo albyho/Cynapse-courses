@@ -3,20 +3,19 @@
   "title": "为类型实现 Display",
   "actions": [
     {
-      "type": "CREATE_FILE",
+      "type": "CreateFile",
       "path": "display_demo.rs"
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "display_demo.rs"
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "display_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "use std::fmt; // 导入 `fmt`\n\n// 带有两个数字的结构体。推导出 `Debug`，以便与 `Display` 的输出进行比较。\n#[derive(Debug)]\nstruct MinMax(i64, i64);\n\n// 实现 `MinMax` 的 `Display`。\nimpl fmt::Display for MinMax {\n    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n        // 使用 `self.number` 来表示各个数据。\n        write!(f, \"({}, {})\", self.0, self.1)\n    }\n}\n\n",
       "narration": {
@@ -50,12 +49,11 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "display_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "// 为了比较，定义一个含有具名字段的结构体。\n#[derive(Debug)]\nstruct Point2D {\n    x: f64,\n    y: f64,\n}\n\n// 类似地对 `Point2D` 实现 `Display`\nimpl fmt::Display for Point2D {\n    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n        // 自定义格式，使得仅显示 `x` 和 `y` 的值。\n        write!(f, \"x: {}, y: {}\", self.x, self.y)\n    }\n}\n\n",
       "narration": {
@@ -72,12 +70,11 @@
       }
     },
     {
-      "type": "INSERT_TEXT",
+      "type": "InsertText",
       "path": "display_demo.rs",
-      "effect": "typewriter",
       "speed_ms": 40,
       "target": {
-        "kind": "end_of_file"
+        "eof": true
       },
       "text": "fn main() {\n    let minmax = MinMax(0, 14);\n\n    println!(\"Compare structures:\");\n    println!(\"Display: {}\", minmax);\n    println!(\"Debug: {:?}\", minmax);\n\n    let big_range =   MinMax(-300, 300);\n    let small_range = MinMax(-3, 3);\n\n    println!(\"The big range is {big} and the small is {small}\",\n             small = small_range,\n             big = big_range);\n\n    let point = Point2D { x: 3.3, y: 7.2 };\n\n    println!(\"Compare points:\");\n    println!(\"Display: {}\", point);\n    println!(\"Debug: {:?}\", point);\n\n    // 报错。`Debug` 和 `Display` 都被实现了，但 `{:b}` 需要 `fmt::Binary`\n    // 得到实现。这语句不能运行。\n    // println!(\"What does Point2D look like in binary: {:b}?\", point);\n}\n",
       "narration": {
@@ -118,12 +115,12 @@
       }
     },
     {
-      "type": "TERMINAL_ENSURE",
+      "type": "TerminalEnsure",
       "session_key": "main",
       "cwd": "."
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "rustc display_demo.rs",
@@ -156,7 +153,7 @@
       }
     },
     {
-      "type": "TERMINAL_CMD",
+      "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
       "command": "./display_demo",
@@ -198,7 +195,7 @@
       }
     },
     {
-      "type": "WAIT",
+      "type": "Wait",
       "duration_ms": 4000
     }
   ]
