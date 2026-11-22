@@ -10,10 +10,10 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 
 | 课程 | 版本 | 课程包 | 来源 |
 | --- | --- | --- | --- |
-| 通过例子学 Rust（中文版） | `0.20.21` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) | [Rust by Example（中文版）](https://github.com/rust-lang-cn/rust-by-example-cn) |
-| agent-desktop 源码分析（中文版） | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
-| 信号处理路线图（中文版） | `0.2.4` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
-| 信号处理路线图（英文版） | `0.2.4` | [`signal-processing-roadmap/`](signal-processing-roadmap/) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
+| 通过例子学 Rust（中文版） | `0.20.21` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.21) | [Rust by Example（中文版）](https://github.com/rust-lang-cn/rust-by-example-cn) |
+| agent-desktop 源码分析（中文版） | `0.39.0` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/agent-desktop-source-analysis-zh-cn-0.39.0) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
+| 信号处理路线图（中文版） | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-zh-cn-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
+| 信号处理路线图（英文版） | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 
 > `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
 > 其余章节尚未发布。
@@ -29,6 +29,9 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 先安装 [Cynapse Client](https://github.com/albyho/Cynapse-release/releases) 和
 对应的 Cynapse Adapter（VS Code 或 JupyterLab）。每个课程包的 `workspace/` 保留在本地，
 它保存运行状态，本仓库不会跟踪其中的内容。
+
+上表「课程包」列提供每门课的 zip 下载。解压后得到 `<课程名>/` 目录，在 Cynapse
+Client 中打开该目录即可。只有需要全部课程或固定资源 submodule 时才需要克隆本仓库。
 
 ### rust-by-example-zh-cn
 

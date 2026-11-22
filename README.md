@@ -10,10 +10,10 @@ published here. Course resources may be normal files or pinned git submodules.
 
 | Course | Version | Package | Source |
 | --- | --- | --- | --- |
-| Rust by Example (Chinese) | `0.20.21` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) | [Rust by Example (Chinese)](https://github.com/rust-lang-cn/rust-by-example-cn) |
-| agent-desktop Source Analysis (Chinese) | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
-| Signal Processing Roadmap (Chinese) | `0.2.4` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
-| Signal Processing Roadmap (English) | `0.2.4` | [`signal-processing-roadmap/`](signal-processing-roadmap/) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
+| Rust by Example (Chinese) | `0.20.21` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.21) | [Rust by Example (Chinese)](https://github.com/rust-lang-cn/rust-by-example-cn) |
+| agent-desktop Source Analysis (Chinese) | `0.39.0` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/agent-desktop-source-analysis-zh-cn-0.39.0) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
+| Signal Processing Roadmap (Chinese) | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-zh-cn-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
+| Signal Processing Roadmap (English) | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 
 > `rust-by-example-zh-cn` is an in-progress adaptation. It currently covers the
 > introduction and chapters 1–4 only, not the complete Rust by Example book.
@@ -32,6 +32,11 @@ Install [Cynapse Client](https://github.com/albyho/Cynapse-release/releases) and
 the matching Cynapse Adapter (VS Code or JupyterLab) first. Keep each package's
 `workspace/` directory local; it contains runtime state and is intentionally not
 tracked here.
+
+Each course also has a downloadable zip linked from the Package column above.
+Extract it to get a `<course-name>/` directory and open that directory in the
+Cynapse Client. Cloning this repository is only needed if you want the full set
+or the pinned resource submodules.
 
 ### rust-by-example-zh-cn
 
