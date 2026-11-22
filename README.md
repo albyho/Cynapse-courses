@@ -8,7 +8,7 @@ published here. Course resources may be normal files or pinned git submodules.
 
 ## Courses
 
-| Course | Version | Package | Source |
+| Course | Version | Package | Based on |
 | --- | --- | --- | --- |
 | Rust by Example (Chinese) | `0.20.21` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.21) | [Rust by Example (Chinese)](https://github.com/rust-lang-cn/rust-by-example-cn) |
 | agent-desktop Source Analysis (Chinese) | `0.39.0` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/agent-desktop-source-analysis-zh-cn-0.39.0) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
@@ -17,10 +17,10 @@ published here. Course resources may be normal files or pinned git submodules.
 
 > `rust-by-example-zh-cn` is an in-progress adaptation. It currently covers the
 > introduction and chapters 1–4 only, not the complete Rust by Example book.
-
+>
 > `signal-processing-roadmap-zh-cn` is an in-progress adaptation. It currently
 > covers the introduction and Week 1 only, not the complete roadmap.
-
+>
 > `signal-processing-roadmap` is the English edition of the same course: one
 > Course Tree, Step and Cell ID set, and narration timing, with English copy and
 > an English voice track. It also covers only the introduction and Week 1. The

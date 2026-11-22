@@ -8,7 +8,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 
 ## 课程
 
-| 课程 | 版本 | 课程包 | 来源 |
+| 课程 | 版本 | 课程包 | 改编自 |
 | --- | --- | --- | --- |
 | 通过例子学 Rust（中文版） | `0.20.21` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.21) | [Rust by Example（中文版）](https://github.com/rust-lang-cn/rust-by-example-cn) |
 | agent-desktop 源码分析（中文版） | `0.39.0` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/agent-desktop-source-analysis-zh-cn-0.39.0) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
@@ -17,9 +17,9 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 
 > `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
 > 其余章节尚未发布。
-
+>
 > `signal-processing-roadmap-zh-cn` 目前只包含简介和第 1 周（章），尚未覆盖完整路线图。
-
+>
 > `signal-processing-roadmap` 是同一门课的英文版：Course Tree、Step 与 Cell ID、
 > 旁白区间都与中文包一致，只换了文案、代码注释和英文音色。它同样只覆盖简介和
 > 第 1 周；两个包的根 `manifest.id` 不同，进度互不影响。
