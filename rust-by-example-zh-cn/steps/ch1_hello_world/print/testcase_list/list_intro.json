@@ -12,8 +12,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7533,
-              "caption": "这一节学习为多元素容器实现 Display，观察怎样逐个输出元素并用 ? 传递写入错误。",
+              "duration_ms": 7221,
+              "caption": "这一节学习为多<c.aqua>元素</c.aqua>容器<c.aqua>实现</c.aqua> Display，观察怎样逐个输出<c.aqua>元素</c.aqua>并用 ? 传递写入错误。",
               "speech_edits": [
                 {
                   "i": 34,
@@ -24,8 +24,8 @@
             },
             {
               "offset_ms": 8000,
-              "duration_ms": 4531,
-              "caption": "为含有多个元素的容器实现 Display 时，要逐个处理元素。",
+              "duration_ms": 4641,
+              "caption": "为含有多个<c.aqua>元素</c.aqua>的容器<c.aqua>实现</c.aqua> Display 时，要逐个处理<c.aqua>元素</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 26,
@@ -36,8 +36,8 @@
             },
             {
               "offset_ms": 13000,
-              "duration_ms": 5054,
-              "caption": "借助 ? 操作符，可以把每次 write! 的错误统一向上传递。",
+              "duration_ms": 4931,
+              "caption": "借助 ? 操作符，可以把每次 write! 的<c.aqua>错误</c.aqua>统一向上传递。",
               "speech_edits": [
                 {
                   "i": 2,

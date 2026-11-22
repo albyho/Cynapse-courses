@@ -3,29 +3,29 @@
   "title": "能力矩阵：默认拒绝与平台差异",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/system.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "平台差异不只在 API，还在“默认行为”：没实现的能力应该明确拒绝。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/system.rs",
       "start": { "line": 10 },
       "end": { "line": 39 },
       "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "SystemOps 的默认实现统一返回 not_supported；权限默认是 Unknown，而不是 Denied。Unknown 会被解释成 PLATFORM_NOT_SUPPORTED，而不是误导性的 PERM_DENIED。" }] } }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/response/error_code.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "回到错误码，看这两个语义的区别。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/response/error_code.rs",
       "start": { "line": 5 },
       "end": { "line": 22 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "PERM_DENIED 是“权限确实缺”；PLATFORM_NOT_SUPPORTED 是“这个平台没实现”；ACTION_NOT_SUPPORTED 是“元素不支持这个动作”。能力矩阵就是按这三层读。" }] } }
     },
-    { "type": "CLEAR_REVEAL" }
+    { "type": "ClearReveal" }
   ]
 }

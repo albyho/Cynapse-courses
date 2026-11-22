@@ -3,6 +3,21 @@
   "title": "观察 E0381",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_declare",
+          "clips": [
+            {
+              "offset_ms": 82000,
+              "duration_ms": 1852,
+              "caption": "打开 declare.rs，先编译。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "OpenFile",
       "path": "declare.rs"
     },
@@ -28,9 +43,9 @@
           "asset_id": "narration_ch4_variable_bindings_declare",
           "clips": [
             {
-              "offset_ms": 61000,
-              "duration_ms": 4730,
-              "caption": "先编译，第一次打印 another_binding 是故意写在赋值之前的。"
+              "offset_ms": 60000,
+              "duration_ms": 4821,
+              "caption": "先编译，第一次<c.aqua>打印</c.aqua> another_binding 是故意写在<c.aqua>赋值</c.aqua>之前的。"
             }
           ]
         },
@@ -38,9 +53,9 @@
           "asset_id": "narration_ch4_variable_bindings_declare",
           "clips": [
             {
-              "offset_ms": 66000,
-              "duration_ms": 5675,
-              "caption": "编译器说 another_binding 在某些路径上没有初始化，错误码 E0381。"
+              "offset_ms": 65000,
+              "duration_ms": 5941,
+              "caption": "<c.aqua>编译器</c.aqua>说 another_binding 在某些路径上没有初始化，<c.aqua>错误码</c.aqua> E0381。"
             }
           ]
         }
@@ -48,7 +63,26 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 5000
+      "duration_ms": 5000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_declare",
+          "clips": [
+            {
+              "offset_ms": 89000,
+              "duration_ms": 5581,
+              "caption": "E0381 的<c.aqua>报错</c.aqua>停在终端，我们对照源码看它指向哪一行。",
+              "speech_edits": [
+                {
+                  "i": 26,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }

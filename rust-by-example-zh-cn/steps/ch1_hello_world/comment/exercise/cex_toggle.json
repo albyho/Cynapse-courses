@@ -3,6 +3,28 @@
   "title": "取消注释并运行",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise",
+          "clips": [
+            {
+              "offset_ms": 90000,
+              "duration_ms": 5823,
+              "caption": "打开 comment.rs，先看清这一行开头的两条斜线把语句变成了<c.aqua>注释</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "OpenFile",
       "path": "comment.rs"
     },
@@ -17,9 +39,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 16000,
-              "duration_ms": 6063,
-              "caption": "这一行开头的两条斜线把语句变成了注释，所以它不会被执行。",
+              "offset_ms": 17000,
+              "duration_ms": 5842,
+              "caption": "这一行开头的两条斜线把语句变成了<c.aqua>注释</c.aqua>，所以它不会被执行。",
               "speech_edits": [
                 {
                   "i": 2,
@@ -35,7 +57,7 @@
             },
             {
               "offset_ms": 23000,
-              "duration_ms": 3969,
+              "duration_ms": 4234,
               "caption": "把这两条斜线删掉，语句就会重新参与编译。",
               "speech_edits": [
                 {
@@ -46,8 +68,8 @@
               ]
             },
             {
-              "offset_ms": 27000,
-              "duration_ms": 4803,
+              "offset_ms": 28000,
+              "duration_ms": 4893,
               "caption": "注意只删 // 和它后面的一个空格，语句本身要保留。",
               "speech_edits": [
                 {
@@ -79,8 +101,8 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 32000,
-              "duration_ms": 2189,
+              "offset_ms": 33000,
+              "duration_ms": 2113,
               "caption": "逐字删掉 // 和空格。",
               "speech_edits": [
                 {
@@ -95,6 +117,11 @@
       }
     },
     {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
       "type": "TerminalCommand",
       "session_key": "main",
       "cwd": ".",
@@ -105,29 +132,12 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment_exercise",
-          "clips": [
-            {
-              "offset_ms": 35000,
-              "duration_ms": 1650,
-              "caption": "重新编译。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
               "offset_ms": 37000,
-              "duration_ms": 964,
+              "duration_ms": 893,
               "caption": "编译通过。"
             }
           ]
@@ -147,29 +157,12 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment_exercise",
-          "clips": [
-            {
-              "offset_ms": 38000,
-              "duration_ms": 640,
-              "caption": "运行。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
               "offset_ms": 39000,
-              "duration_ms": 3028,
+              "duration_ms": 2955,
               "caption": "现在先输出 Hello, world!，再输出 x 的值。"
             }
           ]
@@ -191,9 +184,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 43000,
-              "duration_ms": 12909,
-              "caption": "再看块注释：表达式里剩下的是 5 + /* 90 + */ 5，中间的 90 + 被 /* 和 */ 包着，等于没有参与计算。",
+              "offset_ms": 42000,
+              "duration_ms": 6291,
+              "caption": "再看块<c.aqua>注释</c.aqua>：<c.aqua>表达式</c.aqua>里剩下的是 5 + /* 90 + */ 5",
               "speech_edits": [
                 {
                   "i": 17,
@@ -214,28 +207,45 @@
                   "i": 27,
                   "s": "*/",
                   "p": "块注释结束"
-                },
-                {
-                  "i": 39,
-                  "s": "+",
-                  "p": "JIA1"
-                },
-                {
-                  "i": 43,
-                  "s": "/*",
-                  "p": "块注释开始"
-                },
-                {
-                  "i": 48,
-                  "s": "*/",
-                  "p": "块注释结束"
                 }
               ]
             },
             {
-              "offset_ms": 56000,
-              "duration_ms": 5639,
+              "offset_ms": 49000,
+              "duration_ms": 6059,
               "caption": "删掉这两对分隔符，90 就会真的加进去，结果从 10 变成 100。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise",
+          "clips": [
+            {
+              "offset_ms": 102000,
+              "duration_ms": 6295,
+              "caption": "中间的 90 + 被 /* 和 */ 包着，等于没有参与计算。",
+              "speech_edits": [
+                {
+                  "i": 7,
+                  "s": "+",
+                  "p": "JIA1"
+                },
+                {
+                  "i": 11,
+                  "s": "/*",
+                  "p": "块注释开始"
+                },
+                {
+                  "i": 16,
+                  "s": "*/",
+                  "p": "块注释结束"
+                }
+              ]
             }
           ]
         }
@@ -259,9 +269,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 62000,
-              "duration_ms": 5273,
-              "caption": "先删掉开头的块注释起始符 /* ，连同它后面的空格。",
+              "offset_ms": 56000,
+              "duration_ms": 5374,
+              "caption": "先删掉开头的块<c.aqua>注释</c.aqua>起始符 /* ，连同它后面的空格。",
               "speech_edits": [
                 {
                   "i": 13,
@@ -276,8 +286,8 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 68000,
-              "duration_ms": 2576,
+              "offset_ms": 62000,
+              "duration_ms": 2563,
               "caption": "逐字删掉 /* 和空格。",
               "speech_edits": [
                 {
@@ -309,8 +319,8 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 71000,
-              "duration_ms": 4496,
+              "offset_ms": 65000,
+              "duration_ms": 4519,
               "caption": "再删掉结尾的 */ ，同样带上它前面的空格。",
               "speech_edits": [
                 {
@@ -326,8 +336,8 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 76000,
-              "duration_ms": 2378,
+              "offset_ms": 70000,
+              "duration_ms": 2503,
               "caption": "逐字删掉 */ 和空格。",
               "speech_edits": [
                 {
@@ -350,36 +360,7 @@
         0
       ],
       "expected_output": [],
-      "timeout_ms": 300000,
-      "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment_exercise",
-          "clips": [
-            {
-              "offset_ms": 79000,
-              "duration_ms": 1650,
-              "caption": "重新编译。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
-            }
-          ]
-        },
-        "after": {
-          "asset_id": "narration_ch1_hello_world_comment_exercise",
-          "clips": [
-            {
-              "offset_ms": 81000,
-              "duration_ms": 964,
-              "caption": "编译通过。"
-            }
-          ]
-        }
-      }
+      "timeout_ms": 300000
     },
     {
       "type": "TerminalCommand",
@@ -394,29 +375,12 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment_exercise",
-          "clips": [
-            {
-              "offset_ms": 82000,
-              "duration_ms": 640,
-              "caption": "运行。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 83000,
-              "duration_ms": 1897,
+              "offset_ms": 76000,
+              "duration_ms": 1708,
               "caption": "现在 x 变成 100 了。"
             }
           ]
@@ -425,7 +389,26 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 4000
+      "duration_ms": 4000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise",
+          "clips": [
+            {
+              "offset_ms": 109000,
+              "duration_ms": 5361,
+              "caption": "现在 x 变成 100 了，我们对照源码看这一行是怎么来的。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }

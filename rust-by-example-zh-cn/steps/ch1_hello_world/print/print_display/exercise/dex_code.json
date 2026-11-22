@@ -3,6 +3,36 @@
   "title": "增加复数结构体",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 1618,
+              "caption": "打开 display_demo.rs。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 28000,
+              "duration_ms": 3533,
+              "caption": "准备<c.aqua>定义</c.aqua>复数<c.aqua>结构体</c.aqua> Complex 并<c.aqua>实现</c.aqua> Display。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "OpenFile",
       "path": "display_demo.rs"
     },
@@ -18,13 +48,40 @@
       },
       "text": "\n    // 动手试一试：仿照 Point2D，增加一个复数结构体并实现 Display。\n    #[derive(Debug)]\n    struct Complex {\n        real: f64,\n        imag: f64,\n    }\n\n    impl fmt::Display for Complex {\n        fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n            write!(f, \"{} + {}i\", self.real, self.imag)\n        }\n    }\n\n    let complex = Complex { real: 3.3, imag: 7.2 };\n    println!(\"Display: {}\", complex);\n    println!(\"Debug: {:?}\", complex);\n",
       "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 32000,
+              "duration_ms": 2863,
+              "caption": "仿照 Point2D，先<c.aqua>定义</c.aqua> Complex <c.aqua>结构体</c.aqua>。"
+            },
+            {
+              "offset_ms": 35000,
+              "duration_ms": 2972,
+              "caption": "再<c.aqua>实现</c.aqua> Display，按 a + bi 的格式写。",
+              "speech_edits": [
+                {
+                  "i": 14,
+                  "s": "a + bi",
+                  "p": "a JIA1 b i"
+                }
+              ]
+            },
+            {
+              "offset_ms": 38000,
+              "duration_ms": 3471,
+              "caption": "最后构造复数，分别用 Display 和 Debug <c.aqua>打印</c.aqua>。"
+            }
+          ]
+        },
         "before": {
           "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
           "clips": [
             {
-              "offset_ms": 11000,
-              "duration_ms": 5166,
-              "caption": "定义复数结构体 Complex 并实现 Display，打印成 a + bi 的形式。",
+              "offset_ms": 6000,
+              "duration_ms": 5189,
+              "caption": "<c.aqua>定义</c.aqua>复数<c.aqua>结构体</c.aqua> Complex 并<c.aqua>实现</c.aqua> Display，打印成 a + bi 的形式。",
               "speech_edits": [
                 {
                   "i": 32,
@@ -32,16 +89,11 @@
                   "p": "a JIA1 b i"
                 }
               ]
-            }
-          ]
-        },
-        "during": {
-          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
-          "clips": [
+            },
             {
-              "offset_ms": 17000,
-              "duration_ms": 3930,
-              "caption": "逐行写入 Complex 的定义、Display 实现和打印。",
+              "offset_ms": 12000,
+              "duration_ms": 3852,
+              "caption": "逐行写入 Complex 的<c.aqua>定义</c.aqua>、Display <c.aqua>实现</c.aqua>和<c.aqua>打印</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 1,
@@ -70,22 +122,12 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
-          "clips": [
-            {
-              "offset_ms": 21000,
-              "duration_ms": 514,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
           "clips": [
             {
-              "offset_ms": 22000,
-              "duration_ms": 1249,
+              "offset_ms": 17000,
+              "duration_ms": 1374,
               "caption": "编译成功。"
             }
           ]
@@ -106,40 +148,18 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
-          "clips": [
-            {
-              "offset_ms": 24000,
-              "duration_ms": 640,
-              "caption": "运行。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
           "clips": [
             {
-              "offset_ms": 25000,
-              "duration_ms": 8852,
-              "caption": "输出包含 Display: 3.3 + 7.2i 与 Debug: Complex { real: 3.3, imag: 7.2 }。",
+              "offset_ms": 20000,
+              "duration_ms": 5004,
+              "caption": "输出包含 Display: 3.3 + 7.2i 与 Debug: Complex { real: 3.3",
               "speech_edits": [
                 {
                   "i": 18,
                   "s": "+",
                   "p": "JIA1"
-                },
-                {
-                  "i": 34,
-                  "s": "Complex { real: 3.3, imag: 7.2 }",
-                  "p": "Complex 左大括号 real 冒号 3.3 逗号 imag 冒号 7.2 右大括号"
                 }
               ]
             }
@@ -148,8 +168,23 @@
       }
     },
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise",
+          "clips": [
+            {
+              "offset_ms": 47000,
+              "duration_ms": 1392,
+              "caption": "imag: 7.2 }。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "Wait",
-      "duration_ms": 5000
+      "duration_ms": 4000
     }
   ]
 }

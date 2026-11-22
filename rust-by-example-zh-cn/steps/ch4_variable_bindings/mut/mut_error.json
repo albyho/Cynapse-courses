@@ -3,6 +3,28 @@
   "title": "观察 E0384",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_mut",
+          "clips": [
+            {
+              "offset_ms": 56000,
+              "duration_ms": 3582,
+              "caption": "打开 mut.rs，先编译，<c.aqua>报错</c.aqua>那一行是故意写的。",
+              "speech_edits": [
+                {
+                  "i": 18,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "OpenFile",
       "path": "mut.rs"
     },
@@ -24,30 +46,13 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch4_variable_bindings_mut",
-          "clips": [
-            {
-              "offset_ms": 37000,
-              "duration_ms": 2715,
-              "caption": "先编译，最后一行是故意写的。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch4_variable_bindings_mut",
           "clips": [
             {
-              "offset_ms": 40000,
-              "duration_ms": 5551,
-              "caption": "编译器指出不能对不可变变量二次赋值，错误码是 E0384。"
+              "offset_ms": 39000,
+              "duration_ms": 5531,
+              "caption": "<c.aqua>编译器</c.aqua>指出不能对<c.aqua>不可变</c.aqua><c.aqua>变量</c.aqua>二次赋值，错误码是 E0384。"
             }
           ]
         }
@@ -55,7 +60,26 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 5000
+      "duration_ms": 5000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_mut",
+          "clips": [
+            {
+              "offset_ms": 65000,
+              "duration_ms": 5196,
+              "caption": "E0384 的<c.aqua>报错</c.aqua>停在终端，我们对照源码看它指向哪一行。",
+              "speech_edits": [
+                {
+                  "i": 26,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }

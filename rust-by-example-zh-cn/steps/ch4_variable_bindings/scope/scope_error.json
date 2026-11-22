@@ -3,6 +3,28 @@
   "title": "观察 E0425",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 70000,
+              "duration_ms": 4216,
+              "caption": "打开 scope.rs，先编译，块外面那行<c.aqua>引用</c.aqua>是故意写的。",
+              "speech_edits": [
+                {
+                  "i": 20,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "OpenFile",
       "path": "scope.rs"
     },
@@ -24,30 +46,13 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch4_variable_bindings_scope",
-          "clips": [
-            {
-              "offset_ms": 71000,
-              "duration_ms": 3530,
-              "caption": "先编译，块外面那行引用是故意写的。",
-              "speech_edits": [
-                {
-                  "i": 8,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch4_variable_bindings_scope",
           "clips": [
             {
-              "offset_ms": 75000,
-              "duration_ms": 5400,
-              "caption": "编译器说在当前作用域找不到 short_lived_binding，错误码 E0425。"
+              "offset_ms": 56000,
+              "duration_ms": 5616,
+              "caption": "<c.aqua>编译器</c.aqua>说在当前<c.aqua>作用域</c.aqua>找不到 short_lived_binding，<c.aqua>错误码</c.aqua> E0425。"
             }
           ]
         }
@@ -55,7 +60,26 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 5000
+      "duration_ms": 5000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_scope",
+          "clips": [
+            {
+              "offset_ms": 80000,
+              "duration_ms": 5619,
+              "caption": "E0425 的<c.aqua>报错</c.aqua>停在终端，我们对照源码看它指向哪一行。",
+              "speech_edits": [
+                {
+                  "i": 26,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }

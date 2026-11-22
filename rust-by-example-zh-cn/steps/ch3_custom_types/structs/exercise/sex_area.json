@@ -10,24 +10,39 @@
           "asset_id": "narration_ch3_custom_types_structs_exercise",
           "clips": [
             {
-              "offset_ms": 9000,
-              "duration_ms": 5524,
-              "caption": "rect_area 接受一个 Rectangle，用嵌套解构一次取出左上角和右下角。"
+              "offset_ms": 5000,
+              "duration_ms": 5468,
+              "caption": "rect_area 接受一个 Rectangle，用嵌套<c.aqua>解构</c.aqua>一次取出左上角和右下角。"
             },
             {
-              "offset_ms": 15000,
-              "duration_ms": 2825,
+              "offset_ms": 11000,
+              "duration_ms": 2952,
               "caption": "横纵两个方向的差相乘就是面积。"
             },
             {
-              "offset_ms": 18000,
-              "duration_ms": 4404,
-              "caption": "再在 main 末尾造一个 3 乘 4 的矩形，把面积打印出来。"
+              "offset_ms": 14000,
+              "duration_ms": 4705,
+              "caption": "再在 main 末尾造一个 3 乘 4 的矩形，把面积<c.aqua>打印</c.aqua>出来。"
             },
             {
-              "offset_ms": 23000,
-              "duration_ms": 5614,
-              "caption": "最后用 square 生成一个边长 2 的正方形，再用同一个函数算面积。"
+              "offset_ms": 19000,
+              "duration_ms": 5531,
+              "caption": "最后用 square 生成一个边长 2 的正方形，再用同一个<c.aqua>函数</c.aqua>算面积。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs_exercise",
+          "clips": [
+            {
+              "offset_ms": 25000,
+              "duration_ms": 4659,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
             }
           ]
         }

@@ -12,8 +12,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 8474,
-              "caption": "在格式化输出之后，这一节学习 Debug 打印，观察 {:?} 怎样把结构体和嵌套数据完整输出。",
+              "duration_ms": 8497,
+              "caption": "在<c.aqua>格式化</c.aqua>输出之后，这一节学习 Debug <c.aqua>打印</c.aqua>，观察 {:?} 怎样把<c.aqua>结构体</c.aqua>和嵌套数据完整输出。",
               "speech_edits": [
                 {
                   "i": 27,
@@ -24,8 +24,8 @@
             },
             {
               "offset_ms": 9000,
-              "duration_ms": 6566,
-              "caption": "fmt::Debug 用 {:?} 打印，几乎所有标准库类型都能直接打印。",
+              "duration_ms": 6357,
+              "caption": "fmt::Debug 用 {:?} <c.aqua>打印</c.aqua>，几乎所有标准库<c.aqua>类型</c.aqua>都能直接<c.aqua>打印</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 3,
@@ -41,8 +41,8 @@
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 5516,
-              "caption": "通过 #[derive(Debug)]，可以为自定义类型自动实现 Debug。",
+              "duration_ms": 5491,
+              "caption": "通过 #[derive(Debug)]，可以为自<c.aqua>定义类型</c.aqua>自动<c.aqua>实现</c.aqua> Debug。",
               "speech_edits": [
                 {
                   "i": 3,

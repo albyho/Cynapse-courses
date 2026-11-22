@@ -3,7 +3,7 @@
   "title": "Batch 完整语义：先校验、非事务、逐条读",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/batch/preparation.rs",
       "narration": {
         "after": {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/src/batch/preparation.rs",
       "start": {
         "line": 9
@@ -51,7 +51,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/batch/execution.rs",
       "narration": {
         "after": {
@@ -72,7 +72,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/src/batch/execution.rs",
       "start": {
         "line": 15
@@ -92,7 +92,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/src/batch/execution.rs",
       "start": {
         "line": 97
@@ -112,7 +112,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/batch/result_entry.rs",
       "narration": {
         "after": {
@@ -126,7 +126,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/src/batch/result_entry.rs",
       "start": {
         "line": 51
@@ -146,7 +146,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

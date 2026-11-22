@@ -10,9 +10,9 @@
           "asset_id": "narration_ch1_hello_world_exercise",
           "clips": [
             {
-              "offset_ms": 18000,
-              "duration_ms": 4570,
-              "caption": "在第一个 println! 之后，追加一行打印 I'm a Rustacean!。",
+              "offset_ms": 12000,
+              "duration_ms": 4484,
+              "caption": "在第一个 println! 之后，追加一行<c.aqua>打印</c.aqua> I'm a Rustacean!。",
               "speech_edits": [
                 {
                   "i": 5,
@@ -27,9 +27,9 @@
               ]
             },
             {
-              "offset_ms": 23000,
-              "duration_ms": 2662,
-              "caption": "光标停在 main 函数最后一行下面。",
+              "offset_ms": 17000,
+              "duration_ms": 3116,
+              "caption": "光标停在 main <c.aqua>函数</c.aqua>最后一行下面。",
               "speech_edits": [
                 {
                   "i": 15,
@@ -37,6 +37,21 @@
                   "p": "HANG2"
                 }
               ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_exercise",
+          "clips": [
+            {
+              "offset_ms": 21000,
+              "duration_ms": 4659,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
             }
           ]
         }

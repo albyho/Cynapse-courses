@@ -3,7 +3,7 @@
   "title": "门控：可操作性由哪些检查组成",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "narration": {
         "after": {
@@ -17,7 +17,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 156
@@ -37,7 +37,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 167
@@ -64,7 +64,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 171
@@ -84,7 +84,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 184
@@ -104,7 +104,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 191
@@ -124,7 +124,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 194
@@ -144,7 +144,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 197
@@ -164,7 +164,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 198
@@ -184,7 +184,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 199
@@ -204,7 +204,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "start": {
         "line": 214
@@ -224,7 +224,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/check.rs",
       "narration": {
         "after": {
@@ -238,7 +238,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actionability/check.rs",
       "start": {
         "line": 5
@@ -258,7 +258,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

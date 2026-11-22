@@ -3,8 +3,67 @@
   "title": "演示 Debug 打印",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_debug",
+          "clips": [
+            {
+              "offset_ms": 50000,
+              "duration_ms": 1935,
+              "caption": "我们先新建 debug_demo.rs。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_debug",
+          "clips": [
+            {
+              "offset_ms": 52000,
+              "duration_ms": 2318,
+              "caption": "演示 derive(Debug) 的<c.aqua>打印</c.aqua>效果。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "derive(Debug)",
+                  "p": "derive Debug"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "CreateFile",
       "path": "debug_demo.rs"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_debug",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 3942,
+              "caption": "打开 debug_demo.rs，准备演示 derive(Debug) 的<c.aqua>打印</c.aqua>效果。",
+              "speech_edits": [
+                {
+                  "i": 22,
+                  "s": "derive(Debug)",
+                  "p": "derive Debug"
+                }
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
@@ -13,36 +72,68 @@
     {
       "type": "InsertText",
       "path": "debug_demo.rs",
-      "speed_ms": 40,
+      "speed_ms": 32,
       "target": {
         "eof": true
       },
       "text": "// 推导 `Structure` 的 `fmt::Debug` 实现。\n// `Structure` 是一个包含单个 `i32` 的结构体。\n#[derive(Debug)]\nstruct Structure(i32);\n\n// 将 `Structure` 放到结构体 `Deep` 中。然后使 `Deep` 也能够打印。\n#[derive(Debug)]\nstruct Deep(Structure);\n\nfn main() {\n    // 使用 `{:?}` 打印和使用 `{}` 类似。\n    println!(\"{:?} months in a year.\", 12);\n    println!(\"{1:?} {0:?} is the {actor:?} name.\",\n             \"Slater\",\n             \"Christian\",\n             actor=\"actor's\");\n\n    // `Structure` 也可以打印！\n    println!(\"Now {:?} will print!\", Structure(3));\n\n    // 使用 `derive` 的一个问题是不能控制输出的形式。\n    // 假如我只想展示一个 `7` 怎么办？\n    println!(\"Now {:?} will print!\", Deep(Structure(7)));\n}\n",
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_print_debug",
-          "clips": [
-            {
-              "offset_ms": 22000,
-              "duration_ms": 4198,
-              "caption": "接下来在 debug_demo.rs 里演示 derive(Debug) 的打印效果。",
-              "speech_edits": [
-                {
-                  "i": 23,
-                  "s": "derive(Debug)",
-                  "p": "derive Debug"
-                }
-              ]
-            }
-          ]
-        },
         "during": {
           "asset_id": "narration_ch1_hello_world_print_print_debug",
           "clips": [
             {
+              "offset_ms": 59000,
+              "duration_ms": 3968,
+              "caption": "先给 Structure 推导 Debug，它只有一个 i32 <c.aqua>字段</c.aqua>。"
+            },
+            {
+              "offset_ms": 63000,
+              "duration_ms": 3008,
+              "caption": "再把 Structure 嵌进 Deep，同样推导 Debug。"
+            },
+            {
+              "offset_ms": 67000,
+              "duration_ms": 5389,
+              "caption": "main 里先用 {:?} 打印 12 和带<c.aqua>位置参数</c.aqua>的字符串。",
+              "speech_edits": [
+                {
+                  "i": 9,
+                  "s": "{:?}",
+                  "p": "大括号冒号问号"
+                },
+                {
+                  "i": 24,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            },
+            {
+              "offset_ms": 73000,
+              "duration_ms": 3761,
+              "caption": "接着<c.aqua>打印</c.aqua> Structure(3)，derive 保留了<c.aqua>类型</c.aqua>名。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "着",
+                  "p": "ZHE5"
+                }
+              ]
+            },
+            {
+              "offset_ms": 77000,
+              "duration_ms": 3951,
+              "caption": "最后<c.aqua>打印</c.aqua>嵌套的 Deep，但 derive 不能自<c.aqua>定义</c.aqua>外观。"
+            }
+          ]
+        },
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_print_debug",
+          "clips": [
+            {
               "offset_ms": 27000,
-              "duration_ms": 3801,
-              "caption": "逐行写入 Structure、Deep 和它们的打印语句。",
+              "duration_ms": 3818,
+              "caption": "逐行写入 Structure、Deep 和它们的<c.aqua>打印</c.aqua>语句。",
               "speech_edits": [
                 {
                   "i": 1,
@@ -70,8 +161,8 @@
           "clips": [
             {
               "offset_ms": 31000,
-              "duration_ms": 8707,
-              "caption": "#[derive(Debug)] 自动生成 Debug 实现；Structure 包一个 i32，Deep 又包住 Structure，两层都能打印。",
+              "duration_ms": 3911,
+              "caption": "#[derive(Debug)] 自动生成 Debug <c.aqua>实现</c.aqua>",
               "speech_edits": [
                 {
                   "i": 0,
@@ -79,6 +170,21 @@
                   "p": "井号方括号 derive Debug 属性"
                 }
               ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_debug",
+          "clips": [
+            {
+              "offset_ms": 81000,
+              "duration_ms": 4681,
+              "caption": "Structure 包一个 i32，Deep 又包住 Structure，两层都能<c.aqua>打印</c.aqua>。"
             }
           ]
         }
@@ -98,9 +204,9 @@
           "asset_id": "narration_ch1_hello_world_print_print_debug",
           "clips": [
             {
-              "offset_ms": 40000,
-              "duration_ms": 8290,
-              "caption": "基础值也能用 {:?}；这一行同时用了位置参数 {1:?}、{0:?} 和命名参数 {actor:?}。",
+              "offset_ms": 35000,
+              "duration_ms": 8266,
+              "caption": "基础值也能用 {:?}；这一行同时用了位置<c.aqua>参数</c.aqua> {1:?}、{0:?} 和命名<c.aqua>参数</c.aqua> {actor:?}。",
               "speech_edits": [
                 {
                   "i": 7,
@@ -142,9 +248,39 @@
           "asset_id": "narration_ch1_hello_world_print_print_debug",
           "clips": [
             {
-              "offset_ms": 49000,
-              "duration_ms": 9051,
-              "caption": "Structure 打印成 Structure(3)，Deep 打印成 Deep(Structure(7))；derive 保留了类型名和嵌套结构，但不能自定义外观。"
+              "offset_ms": 44000,
+              "duration_ms": 2090,
+              "caption": "Structure <c.aqua>打印</c.aqua>成 Structure(3)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_debug",
+          "clips": [
+            {
+              "offset_ms": 86000,
+              "duration_ms": 2223,
+              "caption": "Deep <c.aqua>打印</c.aqua>成 Deep(Structure(7))。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_debug",
+          "clips": [
+            {
+              "offset_ms": 89000,
+              "duration_ms": 4490,
+              "caption": "derive 保留了<c.aqua>类型</c.aqua>名和嵌套结构，但不能自<c.aqua>定义</c.aqua>外观。"
             }
           ]
         }
@@ -166,22 +302,12 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_print_debug",
-          "clips": [
-            {
-              "offset_ms": 59000,
-              "duration_ms": 514,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_print_print_debug",
           "clips": [
             {
-              "offset_ms": 60000,
-              "duration_ms": 1249,
+              "offset_ms": 48000,
+              "duration_ms": 1374,
               "caption": "编译成功。"
             }
           ]
@@ -201,23 +327,6 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_print_debug",
-          "clips": [
-            {
-              "offset_ms": 62000,
-              "duration_ms": 640,
-              "caption": "运行。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_print_print_debug",
           "clips": [
@@ -232,7 +341,26 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 4000
+      "duration_ms": 4000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_debug",
+          "clips": [
+            {
+              "offset_ms": 99000,
+              "duration_ms": 4146,
+              "caption": "运行结果停在终端，我们对照源码核对输出。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }

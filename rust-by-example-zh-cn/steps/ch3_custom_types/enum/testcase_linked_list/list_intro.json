@@ -12,18 +12,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5903,
-              "caption": "这一节用枚举实现链表，观察递归操作怎样遍历 Cons 与 Nil 两种变体。"
+              "duration_ms": 5826,
+              "caption": "这一节用<c.aqua>枚举</c.aqua><c.aqua>实现</c.aqua>链表，观察<c.aqua>递归</c.aqua>操作怎样遍历 Cons 与 Nil 两种变体。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 7366,
-              "caption": "链表天然适合用枚举表达：Cons 携带一个元素和一个指向后续节点的 Box，Nil 表示结束。"
+              "duration_ms": 7313,
+              "caption": "链表天然适合用<c.aqua>枚举</c.aqua>表达：Cons 携带一个<c.aqua>元素</c.aqua>和一个指向后续节点的 Box，Nil 表示结束。"
             },
             {
               "offset_ms": 14000,
-              "duration_ms": 4854,
-              "caption": "len 和 stringify 都靠递归处理 tail，Nil 是它们的基准情形。",
+              "duration_ms": 4874,
+              "caption": "len 和 stringify 都靠<c.aqua>递归</c.aqua>处理 tail，Nil 是它们的基准情形。",
               "speech_edits": [
                 {
                   "i": 20,

@@ -3,6 +3,28 @@
   "title": "为 Color 实现 Display",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
+          "clips": [
+            {
+              "offset_ms": 45000,
+              "duration_ms": 4820,
+              "caption": "打开 fmt_demo.rs，这次练习要让 Color 也能用 {} <c.aqua>打印</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 32,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "OpenFile",
       "path": "fmt_demo.rs"
     },
@@ -24,21 +46,9 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
           "clips": [
             {
-              "offset_ms": 12000,
-              "duration_ms": 3564,
-              "caption": "这次练习要让 Color 也能用 {} 打印。",
-              "speech_edits": [
-                {
-                  "i": 17,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
-            },
-            {
-              "offset_ms": 16000,
-              "duration_ms": 4720,
-              "caption": "先改打印语句，删掉 {:?} 里的冒号和问号。",
+              "offset_ms": 8000,
+              "duration_ms": 4660,
+              "caption": "先改<c.aqua>打印</c.aqua>语句，删掉 {:?} 里的冒号和问号。",
               "speech_edits": [
                 {
                   "i": 10,
@@ -48,9 +58,9 @@
               ]
             },
             {
-              "offset_ms": 21000,
-              "duration_ms": 6149,
-              "caption": "{:?} 和 {} 差的是冒号和问号，改完再补 Display 实现。",
+              "offset_ms": 13000,
+              "duration_ms": 6247,
+              "caption": "{:?} 和 {} 差的是冒号和问号，改完再补 Display <c.aqua>实现</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 0,
@@ -70,8 +80,8 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
           "clips": [
             {
-              "offset_ms": 28000,
-              "duration_ms": 1550,
+              "offset_ms": 20000,
+              "duration_ms": 1595,
               "caption": "先删掉问号。"
             }
           ]
@@ -96,8 +106,8 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
           "clips": [
             {
-              "offset_ms": 30000,
-              "duration_ms": 1086,
+              "offset_ms": 22000,
+              "duration_ms": 1445,
               "caption": "再删掉冒号。"
             }
           ]
@@ -117,9 +127,9 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
           "clips": [
             {
-              "offset_ms": 32000,
-              "duration_ms": 7568,
-              "caption": "在文件末尾新增 Color 的 Display 实现，用 :02X 把每个字节补零成两位十六进制。",
+              "offset_ms": 24000,
+              "duration_ms": 7457,
+              "caption": "在文件末尾新增 Color 的 Display <c.aqua>实现</c.aqua>，用 :02X 把每个字节补零成两位十六进制。",
               "speech_edits": [
                 {
                   "i": 29,
@@ -134,9 +144,9 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
           "clips": [
             {
-              "offset_ms": 40000,
-              "duration_ms": 2624,
-              "caption": "逐行写入 Color 的 Display 实现。",
+              "offset_ms": 32000,
+              "duration_ms": 2686,
+              "caption": "逐行写入 Color 的 Display <c.aqua>实现</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 1,
@@ -165,22 +175,12 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
-          "clips": [
-            {
-              "offset_ms": 43000,
-              "duration_ms": 514,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
           "clips": [
             {
-              "offset_ms": 44000,
-              "duration_ms": 1249,
+              "offset_ms": 36000,
+              "duration_ms": 1374,
               "caption": "编译成功。"
             }
           ]
@@ -202,29 +202,12 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
-          "clips": [
-            {
-              "offset_ms": 46000,
-              "duration_ms": 640,
-              "caption": "运行。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_print_fmt_exercise",
           "clips": [
             {
-              "offset_ms": 47000,
-              "duration_ms": 5808,
+              "offset_ms": 39000,
+              "duration_ms": 5771,
               "caption": "颜色也按 RGB (r, g, b) 0xRRGGBB 的形式输出了。",
               "speech_edits": [
                 {
@@ -245,7 +228,7 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 6000
+      "duration_ms": 4000
     }
   ]
 }

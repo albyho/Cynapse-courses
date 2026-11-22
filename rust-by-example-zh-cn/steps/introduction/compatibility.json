@@ -13,19 +13,49 @@
           "asset_id": "narration_introduction_chapters",
           "clips": [
             {
-              "offset_ms": 468000,
-              "duration_ms": 1602,
+              "offset_ms": 290000,
+              "duration_ms": 1872,
               "caption": "第 23 章《兼容性》。"
             },
             {
-              "offset_ms": 470000,
-              "duration_ms": 7977,
-              "caption": "Rust 在演进中尽量保持向前兼容，但语言变化仍可能带来冲突，<c.aqua>原始标识符</c.aqua>就是应对方式之一。"
+              "offset_ms": 292000,
+              "duration_ms": 5241,
+              "caption": "Rust 在演进中尽量保持向前兼容，但语言变化仍可能带来冲突"
             },
             {
-              "offset_ms": 478000,
-              "duration_ms": 10576,
-              "caption": "阅读本章时把兼容性理解为<c.aqua>接口与历史代码之间的约束</c.aqua>：我们不仅要写出今天能编译的代码，也要考虑未来迁移是否可控。"
+              "offset_ms": 298000,
+              "duration_ms": 8161,
+              "caption": "阅读本章时把兼容性理解为<c.aqua>接口</c.aqua>与<c.aqua>历史代码</c.aqua>之间的约束：我们不仅要写出今天能编译的代码。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 29000,
+              "duration_ms": 2751,
+              "caption": "<c.aqua>原始标识符</c.aqua>就是应对方式之一。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 32000,
+              "duration_ms": 2552,
+              "caption": "也要考虑未来迁移是否可控。"
             }
           ]
         }

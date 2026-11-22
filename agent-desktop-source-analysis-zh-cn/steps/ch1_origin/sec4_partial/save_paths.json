@@ -3,7 +3,7 @@
   "title": "保存：部分快照怎么落盘",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 28
@@ -41,7 +41,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/refs/refs_store.rs",
       "narration": {
         "after": {
@@ -57,7 +57,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/refs_store.rs",
       "start": {
         "line": 58
@@ -79,7 +79,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/refs_store.rs",
       "start": {
         "line": 46
@@ -101,7 +101,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/refs_store.rs",
       "start": {
         "line": 50
@@ -123,7 +123,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

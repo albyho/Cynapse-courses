@@ -10,14 +10,29 @@
           "asset_id": "narration_ch2_primitives_tuples_exercise",
           "clips": [
             {
-              "offset_ms": 46000,
-              "duration_ms": 5233,
-              "caption": "仿照 reverse，写一个 transpose：把矩阵右上和左下两个元素交换。"
+              "offset_ms": 45000,
+              "duration_ms": 5012,
+              "caption": "仿照 reverse，写一个 transpose：把矩阵右上和左下两个<c.aqua>元素</c.aqua>交换。"
             },
             {
-              "offset_ms": 52000,
-              "duration_ms": 3858,
-              "caption": "最后把原矩阵和转置后的矩阵一起打印出来。"
+              "offset_ms": 51000,
+              "duration_ms": 3985,
+              "caption": "最后把原矩阵和转置后的矩阵一起<c.aqua>打印</c.aqua>出来。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 72000,
+              "duration_ms": 4659,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
             }
           ]
         }

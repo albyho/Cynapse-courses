@@ -12,8 +12,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 8140,
-              "caption": "这一节学习 Rust 的格式化输出，认识 std::fmt 里的打印宏，并观察占位符怎样把值填进输出。",
+              "duration_ms": 8130,
+              "caption": "这一节学习 Rust 的<c.aqua>格式化</c.aqua>输出，认识 std::fmt 里的<c.aqua>打印宏</c.aqua>，并观察占位符怎样把值填进输出。",
               "speech_edits": [
                 {
                   "i": 24,
@@ -24,8 +24,8 @@
             },
             {
               "offset_ms": 9000,
-              "duration_ms": 8167,
-              "caption": "format!、print!、println!、eprint!、eprintln! 共用一套格式语法，格式是否正确在编译期就被检查。",
+              "duration_ms": 5185,
+              "caption": "format!、print!、println!、eprint!、eprintln! 共用一套格式语法",
               "speech_edits": [
                 {
                   "i": 0,
@@ -55,9 +55,9 @@
               ]
             },
             {
-              "offset_ms": 18000,
-              "duration_ms": 5008,
-              "caption": "下面演示位置参数、命名参数，以及宽度和对齐格式。",
+              "offset_ms": 15000,
+              "duration_ms": 5040,
+              "caption": "下面演示位置<c.aqua>参数</c.aqua>、命名<c.aqua>参数</c.aqua>，以及宽度和对齐格式。",
               "speech_edits": [
                 {
                   "i": 6,
@@ -70,6 +70,21 @@
                   "p": "CAN1"
                 }
               ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print",
+          "clips": [
+            {
+              "offset_ms": 121000,
+              "duration_ms": 2778,
+              "caption": "格式是否正确在编译期就被检查。"
             }
           ]
         }

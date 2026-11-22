@@ -12,13 +12,13 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6077,
-              "caption": "这一节学习格式化 trait，观察不同类型怎样由各自的 trait 决定输出外观。"
+              "duration_ms": 5918,
+              "caption": "这一节学习<c.aqua>格式化</c.aqua> trait，观察不同<c.aqua>类型</c.aqua>怎样由各自的 trait 决定输出外观。"
             },
             {
-              "offset_ms": 7000,
-              "duration_ms": 4731,
-              "caption": "格式化能力由 trait 实现，每种参数类型对应一种 trait。",
+              "offset_ms": 6000,
+              "duration_ms": 4672,
+              "caption": "<c.aqua>格式化</c.aqua>能力由 trait <c.aqua>实现</c.aqua>，每种<c.aqua>参数</c.aqua>类型对应一种 trait。",
               "speech_edits": [
                 {
                   "i": 18,
@@ -28,9 +28,9 @@
               ]
             },
             {
-              "offset_ms": 12000,
-              "duration_ms": 5326,
-              "caption": "最常用的 Display 处理未指定类型的情况，也就是 {}。",
+              "offset_ms": 11000,
+              "duration_ms": 5279,
+              "caption": "最常用的 Display 处理未指定<c.aqua>类型</c.aqua>的情况，也就是 {}。",
               "speech_edits": [
                 {
                   "i": 13,

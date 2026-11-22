@@ -3,6 +3,21 @@
   "title": "写入冻结示例",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_freeze",
+          "clips": [
+            {
+              "offset_ms": 101000,
+              "duration_ms": 5637,
+              "caption": "我们先新建 freeze.rs，写入外层<c.aqua>可变</c.aqua><c.aqua>绑定</c.aqua>、内层同名<c.aqua>不可变</c.aqua>绑定遮蔽。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "CreateFile",
       "path": "freeze.rs"
     },
@@ -19,23 +34,13 @@
       },
       "text": "fn main() {\n    let mut _mutable_integer = 7i32;\n\n    {\n        // 被不可变的 `_mutable_integer` 遮蔽\n        let _mutable_integer = _mutable_integer;\n\n        // 报错！`_mutable_integer` 在本作用域被冻结\n        _mutable_integer = 50;\n        // 改正 ^ 注释掉上面这行\n\n        // `_mutable_integer` 离开作用域\n    }\n\n    // 正常运行！ `_mutable_integer` 在这个作用域没有冻结\n    _mutable_integer = 3;\n}\n",
       "narration": {
-        "before": {
-          "asset_id": "narration_ch4_variable_bindings_freeze",
-          "clips": [
-            {
-              "offset_ms": 31000,
-              "duration_ms": 6311,
-              "caption": "接下来在 freeze.rs 里写入外层可变绑定、内层同名不可变绑定遮蔽的示例。"
-            }
-          ]
-        },
         "during": {
           "asset_id": "narration_ch4_variable_bindings_freeze",
           "clips": [
             {
               "offset_ms": 38000,
-              "duration_ms": 2514,
-              "caption": "逐行写入冻结和遮蔽的示例。",
+              "duration_ms": 2738,
+              "caption": "逐行写入冻结和<c.aqua>遮蔽</c.aqua>的示例。",
               "speech_edits": [
                 {
                   "i": 1,
@@ -63,8 +68,8 @@
           "clips": [
             {
               "offset_ms": 41000,
-              "duration_ms": 3501,
-              "caption": "外层 _mutable_integer 是可变绑定，初始值 7。"
+              "duration_ms": 3456,
+              "caption": "外层 _mutable_integer 是<c.aqua>可变</c.aqua><c.aqua>绑定</c.aqua>，初始值 7。"
             }
           ]
         }
@@ -85,8 +90,8 @@
           "clips": [
             {
               "offset_ms": 45000,
-              "duration_ms": 8028,
-              "caption": "内层用同名的不可变绑定遮蔽它；在离开内层之前，原数据被冻结，写 50 会报 E0384。"
+              "duration_ms": 7969,
+              "caption": "内层用同名的<c.aqua>不可变</c.aqua><c.aqua>绑定</c.aqua><c.aqua>遮蔽</c.aqua>它；在离开内层之前，原数据被冻结，写 50 会报 E0384。"
             }
           ]
         }
@@ -106,9 +111,9 @@
           "asset_id": "narration_ch4_variable_bindings_freeze",
           "clips": [
             {
-              "offset_ms": 54000,
-              "duration_ms": 4493,
-              "caption": "内层块结束后冻结解除，外层可变绑定又能写成 3。"
+              "offset_ms": 53000,
+              "duration_ms": 4395,
+              "caption": "内层块结束后冻结解除，外层<c.aqua>可变</c.aqua><c.aqua>绑定</c.aqua>又能写成 3。"
             }
           ]
         }

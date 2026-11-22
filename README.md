@@ -10,7 +10,7 @@ published here. Course resources may be normal files or pinned git submodules.
 
 | Course | Version | Package | Source |
 | --- | --- | --- | --- |
-| Rust by Example (Chinese) | `0.20.17` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) | [Rust by Example (Chinese)](https://github.com/rust-lang-cn/rust-by-example-cn) |
+| Rust by Example (Chinese) | `0.20.21` | [`rust-by-example-zh-cn/`](rust-by-example-zh-cn/) | [Rust by Example (Chinese)](https://github.com/rust-lang-cn/rust-by-example-cn) |
 | agent-desktop Source Analysis (Chinese) | `0.39.0` | [`agent-desktop-source-analysis-zh-cn/`](agent-desktop-source-analysis-zh-cn/) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
 | Signal Processing Roadmap (Chinese) | `0.2.4` | [`signal-processing-roadmap-zh-cn/`](signal-processing-roadmap-zh-cn/) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 | Signal Processing Roadmap (English) | `0.2.4` | [`signal-processing-roadmap/`](signal-processing-roadmap/) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |

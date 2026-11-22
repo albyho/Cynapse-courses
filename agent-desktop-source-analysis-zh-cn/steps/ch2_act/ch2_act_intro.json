@@ -3,7 +3,7 @@
   "title": "本章地图：看见不等于能操作",
   "actions": [
     {
-      "type": "OPEN_FILE_WITH_PREVIEW",
+      "type": "OpenFileWithPreview",
       "path": "INTRO.md",
       "narration": {
         "after": {
@@ -17,7 +17,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 5
@@ -37,7 +37,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 17
@@ -57,7 +57,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 30
@@ -77,7 +77,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 32
@@ -97,7 +97,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 45
@@ -124,7 +124,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 49
@@ -151,7 +151,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 58
@@ -178,7 +178,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 68
@@ -198,7 +198,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": {
         "line": 74
@@ -218,7 +218,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

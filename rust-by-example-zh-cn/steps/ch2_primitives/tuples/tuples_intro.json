@@ -12,13 +12,13 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5624,
-              "caption": "这一节学习元组，观察怎样把多个不同类型的值打包、取值和解构。"
+              "duration_ms": 5744,
+              "caption": "这一节学习<c.aqua>元组</c.aqua>，观察怎样把多个不同<c.aqua>类型</c.aqua>的值打包、取值和<c.aqua>解构</c.aqua>。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 9563,
-              "caption": "元组把若干个值按顺序放在一起，每个位置可以有各自的类型，整体类型写成 (T1, T2, ...)。",
+              "duration_ms": 9612,
+              "caption": "<c.aqua>元组</c.aqua>把若干个值按顺序放在一起，每个位置可以有各自的<c.aqua>类型</c.aqua>，整体<c.aqua>类型</c.aqua>写成 (T1, T2, ...)。",
               "speech_edits": [
                 {
                   "i": 35,
@@ -29,13 +29,13 @@
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 5273,
-              "caption": "用 .0、.1 这样的下标取值，也可以用 let 一次解构到多个变量。"
+              "duration_ms": 5276,
+              "caption": "用 .0、.1 这样的<c.aqua>下标</c.aqua>取值，也可以用 let 一次<c.aqua>解构</c.aqua>到多个<c.aqua>变量</c.aqua>。"
             },
             {
               "offset_ms": 22000,
-              "duration_ms": 8558,
-              "caption": "函数借助元组返回多个值；单元素元组要写成 (5,)，多出的逗号用来和括号表达式区分。",
+              "duration_ms": 8527,
+              "caption": "<c.aqua>函数</c.aqua>借助<c.aqua>元组</c.aqua>返回多个值；<c.aqua>单元</c.aqua>素元组要写成 (5,)，多出的逗号用来和括号表达式区分。",
               "speech_edits": [
                 {
                   "i": 21,

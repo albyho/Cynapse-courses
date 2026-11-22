@@ -13,29 +13,59 @@
           "asset_id": "narration_introduction_chapters",
           "clips": [
             {
-              "offset_ms": 247000,
-              "duration_ms": 1525,
+              "offset_ms": 158000,
+              "duration_ms": 1398,
               "caption": "第 13 章《属性》。"
             },
             {
-              "offset_ms": 249000,
-              "duration_ms": 7569,
-              "caption": "属性为 crate、模块或项附加<c.aqua>编译期元数据</c.aqua>，能控制警告、条件编译、链接与测试等行为。",
+              "offset_ms": 160000,
+              "duration_ms": 3554,
+              "caption": "属性为 crate、模块或项附加<c.aqua>编译期元数据</c.aqua>"
+            },
+            {
+              "offset_ms": 164000,
+              "duration_ms": 5013,
+              "caption": "注意区分作用于整个 crate 的属性和作用于单个项的属性"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 3960,
+              "caption": "能控制警告、条件编译、链接与测试等行为。",
               "speech_edits": [
                 {
-                  "i": 40,
+                  "i": 17,
                   "s": "行",
                   "p": "XING2"
                 }
               ]
-            },
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
             {
-              "offset_ms": 257000,
-              "duration_ms": 9234,
-              "caption": "注意区分作用于整个 crate 的属性和作用于单个项的属性，并观察<c.aqua>属性参数怎样把编译策略明确写出来</c.aqua>。",
+              "offset_ms": 14000,
+              "duration_ms": 4261,
+              "caption": "并观察属性<c.aqua>参数</c.aqua>怎样把编译策略明确写出来。",
               "speech_edits": [
                 {
-                  "i": 35,
+                  "i": 5,
                   "s": "参",
                   "p": "CAN1"
                 }

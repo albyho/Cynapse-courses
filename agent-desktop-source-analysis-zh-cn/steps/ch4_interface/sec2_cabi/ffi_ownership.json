@@ -3,7 +3,7 @@
   "title": "FFI 的所有权、线程与 API 分层",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
       "narration": {
         "after": {
@@ -17,7 +17,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
       "start": {
         "line": 9
@@ -37,7 +37,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/ffi/src/resource.rs",
       "narration": {
         "after": {
@@ -51,7 +51,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/src/resource.rs",
       "start": {
         "line": 6
@@ -71,7 +71,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
       "narration": {
         "after": {
@@ -85,7 +85,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
       "start": {
         "line": 166
@@ -105,7 +105,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
       "narration": {
         "after": {
@@ -119,7 +119,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
       "start": {
         "line": 5
@@ -146,7 +146,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

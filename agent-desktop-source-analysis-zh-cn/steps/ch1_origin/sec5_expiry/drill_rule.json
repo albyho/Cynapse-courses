@@ -3,7 +3,7 @@
   "title": "规则：下钻为什么不能部分",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "narration": {
         "after": {
@@ -31,7 +31,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 42
@@ -60,7 +60,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 50
@@ -94,7 +94,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 236
@@ -128,7 +128,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

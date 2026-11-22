@@ -13,29 +13,59 @@
           "asset_id": "narration_introduction_chapters",
           "clips": [
             {
-              "offset_ms": 381000,
-              "duration_ms": 2031,
-              "caption": "第 19 章《标准库类型》。"
+              "offset_ms": 237000,
+              "duration_ms": 1881,
+              "caption": "第 19 章《标准库<c.aqua>类型</c.aqua>》。"
             },
             {
-              "offset_ms": 384000,
-              "duration_ms": 9148,
-              "caption": "标准库在原生类型之上提供了 String、Vec、Option、Result、Box 等常用类型，让我们<c.aqua>表达增长、可选、失败和堆分配</c.aqua>。",
+              "offset_ms": 239000,
+              "duration_ms": 5551,
+              "caption": "标准库在原生<c.aqua>类型</c.aqua>之上提供了 String、Vec、Option、Result、Box 等常用<c.aqua>类型</c.aqua>"
+            },
+            {
+              "offset_ms": 245000,
+              "duration_ms": 2871,
+              "caption": "不要把它们当作互不相关的工具"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 175000,
+              "duration_ms": 3554,
+              "caption": "让我们表达<c.aqua>增长</c.aqua>、可选、失败和堆分配。",
               "speech_edits": [
                 {
-                  "i": 55,
+                  "i": 6,
                   "s": "长",
                   "p": "ZHANG3"
                 }
               ]
-            },
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
             {
-              "offset_ms": 394000,
-              "duration_ms": 8416,
-              "caption": "不要把它们当作互不相关的工具，试着从<c.aqua>所有权、分配方式和错误语义</c.aqua>理解每个容器为什么存在。",
+              "offset_ms": 179000,
+              "duration_ms": 5619,
+              "caption": "试着从<c.aqua>所有权</c.aqua>、<c.aqua>分配方式</c.aqua>和<c.aqua>错误语义</c.aqua>理解每个容器为什么存在。",
               "speech_edits": [
                 {
-                  "i": 16,
+                  "i": 1,
                   "s": "着",
                   "p": "ZHE5"
                 }

@@ -3,7 +3,7 @@
   "title": "本章地图：一份核心，三套后端",
   "actions": [
     {
-      "type": "OPEN_FILE_WITH_PREVIEW",
+      "type": "OpenFileWithPreview",
       "path": "INTRO.md",
       "narration": {
         "after": {
@@ -17,54 +17,54 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": { "line": 5 },
       "end": { "line": 17 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "core 从不直接调用操作系统，只通过 PlatformAdapter 接触平台。这样核心逻辑不会被平台细节淹没，测试也能用假 Adapter 驱动。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": { "line": 21 },
       "end": { "line": 34 },
       "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "PlatformAdapter 是四个能力接口的组合：ObservationOps 读树，ActionOps 执行语义动作，InputOps 注入真实输入，SystemOps 管权限、焦点和租约。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": { "line": 38 },
       "end": { "line": 50 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "三个后端目录几乎一样：actions、adapter、input、notifications、system、tree。读一个后端，可以直接对照另外两个；差异在底层 API。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": { "line": 54 },
       "end": { "line": 61 },
       "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "差异集中在四列：无障碍 API、权限、输入注入、窗口身份。窗口身份不能只用句柄，因为句柄会被系统回收给另一个窗口。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": { "line": 65 },
       "end": { "line": 69 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "三节：先看契约，再看 Windows 端到端，最后对照 macOS 和 Linux 的差异。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": { "line": 73 },
       "end": { "line": 75 },
       "narration": { "after": { "clips": [{ "duration_ms": 7500, "caption": "读法：先看 trait 签名，再看 impl 块；不逐行读平台细节，先找和 core 对接的函数。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "INTRO.md",
       "start": { "line": 81 },
       "end": { "line": 84 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "读完应能说出四个接口的职责、找到 Windows 的观察与动作实现，并解释窗口身份为什么需要进程代际。" }] } }
     },
-    { "type": "CLEAR_REVEAL" }
+    { "type": "ClearReveal" }
   ]
 }

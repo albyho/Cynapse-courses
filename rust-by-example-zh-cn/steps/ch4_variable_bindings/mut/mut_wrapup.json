@@ -9,9 +9,9 @@
           "asset_id": "narration_ch4_variable_bindings_mut",
           "clips": [
             {
-              "offset_ms": 49000,
-              "duration_ms": 7218,
-              "caption": "E0384 说明不可变绑定不能二次赋值；注释掉非法行后，可变绑定从 1 变成 2。"
+              "offset_ms": 48000,
+              "duration_ms": 7255,
+              "caption": "E0384 说明<c.aqua>不可变</c.aqua><c.aqua>绑定</c.aqua>不能二次<c.aqua>赋值</c.aqua>；注释掉非法行后，可变绑定从 1 变成 2。"
             }
           ]
         }

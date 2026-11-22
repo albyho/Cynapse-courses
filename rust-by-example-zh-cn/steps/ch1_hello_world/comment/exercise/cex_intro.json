@@ -11,8 +11,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 8966,
-              "caption": "动手试一试：comment.rs 里已经有带注释的代码。先运行一次看初始输出，再依次取消行注释和块注释。",
+              "duration_ms": 9140,
+              "caption": "动手试一试：comment.rs 里已经有带<c.aqua>注释</c.aqua>的代码。先运行一次看初始输出，再依次取消行<c.aqua>注释</c.aqua>和块<c.aqua>注释</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 30,
@@ -46,22 +46,12 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment_exercise",
-          "clips": [
-            {
-              "offset_ms": 9000,
-              "duration_ms": 514,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 10000,
-              "duration_ms": 964,
+              "offset_ms": 11000,
+              "duration_ms": 893,
               "caption": "编译通过。"
             }
           ]
@@ -81,30 +71,13 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment_exercise",
-          "clips": [
-            {
-              "offset_ms": 11000,
-              "duration_ms": 640,
-              "caption": "运行。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_comment_exercise",
           "clips": [
             {
-              "offset_ms": 12000,
-              "duration_ms": 3604,
-              "caption": "初始输出只有 x = 10；Hello, world! 还被注释着。"
+              "offset_ms": 13000,
+              "duration_ms": 3811,
+              "caption": "初始输出只有 x = 10；Hello, world! 还被<c.aqua>注释</c.aqua>着。"
             }
           ]
         }

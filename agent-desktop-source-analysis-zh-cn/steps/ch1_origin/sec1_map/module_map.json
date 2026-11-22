@@ -3,7 +3,7 @@
   "title": "模块地图：一张表看懂分层",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 3
@@ -41,7 +41,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 4
@@ -63,7 +63,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 5
@@ -85,7 +85,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 6
@@ -107,7 +107,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 7
@@ -129,7 +129,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 8
@@ -151,7 +151,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 9
@@ -173,7 +173,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 10
@@ -195,7 +195,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 11
@@ -217,7 +217,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 12
@@ -246,7 +246,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 13
@@ -268,7 +268,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 14
@@ -290,7 +290,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 15
@@ -312,7 +312,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 16
@@ -334,7 +334,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 17
@@ -356,7 +356,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 18
@@ -385,7 +385,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 19
@@ -414,7 +414,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/lib.rs",
       "start": {
         "line": 20
@@ -441,7 +441,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "title": "下钻：在已有快照里换一个子树",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "narration": {
         "after": {
@@ -26,7 +26,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 42
@@ -55,7 +55,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 50
@@ -84,7 +84,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 65
@@ -106,7 +106,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 75
@@ -135,7 +135,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 87
@@ -157,7 +157,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 103
@@ -179,7 +179,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 110
@@ -208,7 +208,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 121
@@ -230,7 +230,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 136
@@ -264,7 +264,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 161
@@ -293,7 +293,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 168
@@ -315,7 +315,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 175
@@ -337,7 +337,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 181
@@ -359,7 +359,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/snapshot_ref.rs",
       "start": {
         "line": 191
@@ -381,7 +381,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

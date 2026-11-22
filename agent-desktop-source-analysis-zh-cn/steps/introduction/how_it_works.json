@@ -3,7 +3,7 @@
   "title": "怎么跑：调用链、命令与代码位置",
   "actions": [
     {
-      "type": "OPEN_FILE_WITH_PREVIEW",
+      "type": "OpenFileWithPreview",
       "path": "../resources/agent-desktop/README.md",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 82
@@ -70,7 +70,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 91
@@ -92,7 +92,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 101
@@ -114,7 +114,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 107
@@ -148,7 +148,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 116
@@ -170,7 +170,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 126
@@ -192,7 +192,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 130
@@ -214,7 +214,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 135
@@ -236,7 +236,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 142
@@ -258,7 +258,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 150
@@ -287,7 +287,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 152
@@ -316,7 +316,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/README.md",
       "start": {
         "line": 156
@@ -345,11 +345,11 @@
       }
     },
     {
-      "type": "OPEN_FILE_WITH_PREVIEW",
+      "type": "OpenFileWithPreview",
       "path": "../resources/agent-desktop/Cargo.toml"
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/Cargo.toml",
       "start": {
         "line": 1
@@ -371,7 +371,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/Cargo.toml",
       "start": {
         "line": 6
@@ -393,7 +393,7 @@
       }
     },
     {
-      "type": "OPEN_FILE_WITH_PREVIEW",
+      "type": "OpenFileWithPreview",
       "path": "../resources/agent-desktop/docs/json-output.md",
       "narration": {
         "after": {
@@ -409,7 +409,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/docs/json-output.md",
       "start": {
         "line": 3
@@ -431,7 +431,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/docs/json-output.md",
       "start": {
         "line": 17
@@ -465,7 +465,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../resources/agent-desktop/docs/json-output.md",
       "start": {
         "line": 43
@@ -494,7 +494,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

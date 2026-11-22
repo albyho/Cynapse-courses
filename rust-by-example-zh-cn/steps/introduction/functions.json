@@ -13,14 +13,14 @@
           "asset_id": "narration_introduction_chapters",
           "clips": [
             {
-              "offset_ms": 163000,
-              "duration_ms": 1697,
-              "caption": "第 9 章《函数》。"
+              "offset_ms": 106000,
+              "duration_ms": 1330,
+              "caption": "第 9 章《<c.aqua>函数</c.aqua>》。"
             },
             {
-              "offset_ms": 165000,
-              "duration_ms": 6853,
-              "caption": "函数把<c.aqua>输入、计算和输出封装成可复用单元</c.aqua>，参数与返回类型都写在签名里。",
+              "offset_ms": 108000,
+              "duration_ms": 6781,
+              "caption": "<c.aqua>函数</c.aqua>把输入、计算和输出封装成可复用<c.aqua>单元</c.aqua>，<c.aqua>参数</c.aqua>与返回类型都写在签名里。",
               "speech_edits": [
                 {
                   "i": 20,
@@ -30,8 +30,8 @@
               ]
             },
             {
-              "offset_ms": 172000,
-              "duration_ms": 6684,
+              "offset_ms": 115000,
+              "duration_ms": 6506,
               "caption": "随后还会接触方法与闭包：前者把行为绑定到类型上，后者<c.aqua>捕获周围环境</c.aqua>。",
               "speech_edits": [
                 {
@@ -42,8 +42,8 @@
               ]
             },
             {
-              "offset_ms": 179000,
-              "duration_ms": 5197,
+              "offset_ms": 122000,
+              "duration_ms": 4990,
               "caption": "阅读时留意<c.aqua>调用边界</c.aqua>，以及最后表达式如何成为返回值。",
               "speech_edits": [
                 {

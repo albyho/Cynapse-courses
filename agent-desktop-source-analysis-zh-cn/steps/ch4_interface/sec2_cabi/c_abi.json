@@ -3,7 +3,7 @@
   "title": "C ABI：把同一套能力交给别的语言",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
       "narration": {
         "after": {
@@ -17,7 +17,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
       "start": {
         "line": 3
@@ -37,7 +37,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
       "start": {
         "line": 16
@@ -57,7 +57,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
       "narration": {
         "after": {
@@ -78,7 +78,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
       "start": {
         "line": 21
@@ -98,7 +98,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
       "narration": {
         "after": {
@@ -112,7 +112,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
       "start": {
         "line": 158
@@ -132,7 +132,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

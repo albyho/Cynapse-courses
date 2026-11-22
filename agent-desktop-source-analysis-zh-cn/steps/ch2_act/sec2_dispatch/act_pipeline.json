@@ -3,7 +3,7 @@
   "title": "派发：五步管线与交互策略",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
       "narration": {
         "after": {
@@ -17,7 +17,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
       "start": {
         "line": 21
@@ -37,7 +37,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
       "start": {
         "line": 25
@@ -57,7 +57,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
       "start": {
         "line": 28
@@ -84,7 +84,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
       "start": {
         "line": 32
@@ -104,7 +104,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
       "start": {
         "line": 46
@@ -124,7 +124,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
       "start": {
         "line": 53
@@ -144,7 +144,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

@@ -12,8 +12,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6897,
-              "caption": "这一节学习行注释和块注释的写法，并观察注释怎样改变一段表达式的值。",
+              "duration_ms": 6754,
+              "caption": "这一节学习行<c.aqua>注释</c.aqua>和块<c.aqua>注释</c.aqua>的写法，并观察<c.aqua>注释</c.aqua>怎样改变一段表达式的值。",
               "speech_edits": [
                 {
                   "i": 5,
@@ -24,8 +24,8 @@
             },
             {
               "offset_ms": 7000,
-              "duration_ms": 5923,
-              "caption": "行注释以 // 开头，块注释用 /* 和 */ 包住。",
+              "duration_ms": 5869,
+              "caption": "行<c.aqua>注释</c.aqua>以 // 开头，块<c.aqua>注释</c.aqua>用 /* 和 */ 包住。",
               "speech_edits": [
                 {
                   "i": 0,

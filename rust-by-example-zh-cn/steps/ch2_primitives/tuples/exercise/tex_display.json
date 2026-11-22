@@ -3,6 +3,28 @@
   "title": "为 Matrix 实现 Display",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 3532,
+              "caption": "打开 tuples.rs，当前用的是 {:?}。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "{:?}",
+                  "p": "大括号冒号问号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "OpenFile",
       "path": "tuples.rs"
     },
@@ -32,7 +54,7 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 9031,
+              "duration_ms": 8676,
               "caption": "当前用的是 {:?}，输出的是 Matrix(1.1, 1.2, 2.1, 2.2) 这样的结构。",
               "speech_edits": [
                 {
@@ -48,9 +70,9 @@
               ]
             },
             {
-              "offset_ms": 18000,
-              "duration_ms": 5513,
-              "caption": "把打印从 {:?} 换成 {}，并把末尾补上分号。",
+              "offset_ms": 17000,
+              "duration_ms": 5567,
+              "caption": "把<c.aqua>打印</c.aqua>从 {:?} 换成 {}，并把末尾补上分号。",
               "speech_edits": [
                 {
                   "i": 5,
@@ -70,9 +92,9 @@
           "asset_id": "narration_ch2_primitives_tuples_exercise",
           "clips": [
             {
-              "offset_ms": 24000,
-              "duration_ms": 2534,
-              "caption": "删掉旧的打印语句，输入新的。"
+              "offset_ms": 23000,
+              "duration_ms": 2495,
+              "caption": "删掉旧的<c.aqua>打印</c.aqua>语句，输入新的。"
             }
           ]
         }
@@ -94,9 +116,9 @@
           "asset_id": "narration_ch2_primitives_tuples_exercise",
           "clips": [
             {
-              "offset_ms": 27000,
-              "duration_ms": 5474,
-              "caption": "在 Matrix 定义之后实现 Display，按两行两列把四个浮点数排开。",
+              "offset_ms": 26000,
+              "duration_ms": 5431,
+              "caption": "在 Matrix <c.aqua>定义</c.aqua>之后<c.aqua>实现</c.aqua> Display，按两行两列把四个<c.aqua>浮点</c.aqua>数排开。",
               "speech_edits": [
                 {
                   "i": 26,
@@ -111,9 +133,9 @@
           "asset_id": "narration_ch2_primitives_tuples_exercise",
           "clips": [
             {
-              "offset_ms": 33000,
-              "duration_ms": 2635,
-              "caption": "逐行写入 Matrix 的 Display 实现。",
+              "offset_ms": 32000,
+              "duration_ms": 2665,
+              "caption": "逐行写入 Matrix 的 Display <c.aqua>实现</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 1,
@@ -142,21 +164,11 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch2_primitives_tuples_exercise",
-          "clips": [
-            {
-              "offset_ms": 36000,
-              "duration_ms": 596,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch2_primitives_tuples_exercise",
           "clips": [
             {
-              "offset_ms": 37000,
+              "offset_ms": 36000,
               "duration_ms": 893,
               "caption": "编译通过。"
             }
@@ -182,7 +194,7 @@
           "asset_id": "narration_ch2_primitives_tuples_exercise",
           "clips": [
             {
-              "offset_ms": 38000,
+              "offset_ms": 37000,
               "duration_ms": 2275,
               "caption": "运行，看 Matrix 的新输出。",
               "speech_edits": [
@@ -199,9 +211,9 @@
           "asset_id": "narration_ch2_primitives_tuples_exercise",
           "clips": [
             {
-              "offset_ms": 41000,
-              "duration_ms": 4464,
-              "caption": "Matrix 现在按两行两列打印，正是练习要求的形状。",
+              "offset_ms": 40000,
+              "duration_ms": 4557,
+              "caption": "Matrix 现在按两行两列<c.aqua>打印</c.aqua>，正是练习要求的形状。",
               "speech_edits": [
                 {
                   "i": 11,
@@ -216,7 +228,7 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 5000
+      "duration_ms": 4000
     }
   ]
 }

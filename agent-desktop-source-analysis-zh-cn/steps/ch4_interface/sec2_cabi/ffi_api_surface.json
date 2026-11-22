@@ -3,85 +3,85 @@
   "title": "FFI API 全表：两层入口与释放配对",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/ffi/include/agent_desktop.h",
       "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "最后补 FFI 的全表：头文件把规则和函数放在一起，先看最上面的五条约定。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/include/agent_desktop.h",
       "start": { "line": 34 },
       "end": { "line": 54 },
       "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "五条：out 字符串用 ad_free_string，adapter 用 ad_adapter_destroy；任意线程可调用，但原生句柄线程绑定；ABI 只在删符号或改布局时升主版本。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/include/agent_desktop.h",
       "start": { "line": 1163 },
       "end": { "line": 1213 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "释放函数按对象成对：action result、adapter、list、tree、image buffer。所有 free 接受 null；重复释放是未定义行为，释放后要把指针置空。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/include/agent_desktop.h",
       "start": { "line": 1348 },
       "end": { "line": 1352 },
       "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "第一层是 JSON 入口：ad_execute_by_ref 返回 char **out，成功和命令级失败都写 envelope，统一用 ad_free_string 释放。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/include/agent_desktop.h",
       "start": { "line": 1424 },
       "end": { "line": 1455 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "ad_snapshot、ad_status 等同属 JSON 层，覆盖 snapshot、execute_by_ref、wait、status、version、trace_show、trace_export。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/include/agent_desktop.h",
       "start": { "line": 1255 },
       "end": { "line": 1291 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "结构体/列表层：ad_launch_app_exact 填调用方的结构体；ad_list_apps 返回不透明 list，list_get 是借用指针，list_free 连内部字符串一起释放。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/ffi/include/agent_desktop.h",
       "start": { "line": 37 },
       "end": { "line": 39 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "借用指针不释放：ad_last_error_* 和 list_get 的条目归库所有。原生句柄必须在产生它的线程上、销毁 adapter 之前释放。" }] } }
     },
     {
-      "type": "OPEN_FILE_WITH_PREVIEW",
+      "type": "OpenFileWithPreview",
       "path": "FFI_API.md",
       "narration": { "after": { "clips": [{ "duration_ms": 5800, "caption": "翻到附录，<c.aqua>FFI API 速查表</c.aqua>。" }, { "duration_ms": 6000, "caption": "最后用一页速查表收束：两层入口、释放配对、错误访问器、线程与 ABI。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "FFI_API.md",
       "start": { "line": 5 },
       "end": { "line": 23 },
       "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "JSON 层八个入口统一 ad_free_string；结构体层每个都有对应的 release/free，结构体内的字符串不单独释放。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "FFI_API.md",
       "start": { "line": 24 },
       "end": { "line": 35 },
       "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "列表和缓冲各自配对：app、display、notification 列表，截图缓冲，以及 adapter 本身。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "FFI_API.md",
       "start": { "line": 36 },
       "end": { "line": 48 },
       "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "错误槽是线程本地的：六个访问器都返回借用指针，只有下一次失败才轮换。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "FFI_API.md",
       "start": { "line": 49 },
       "end": { "line": 62 },
       "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "所有权与线程规则压成几条：free 接受 null、重复 free 是 UB、句柄线程绑定、变更串行化；ABI 7 只做加法。" }] } }
     },
-    { "type": "CLEAR_REVEAL" }
+    { "type": "ClearReveal" }
   ]
 }

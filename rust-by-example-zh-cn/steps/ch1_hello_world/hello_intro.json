@@ -12,8 +12,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5320,
-              "caption": "第 1 章先做第一件事：写出 main 函数，让终端打印一行文本。",
+              "duration_ms": 5304,
+              "caption": "第 1 章先做第一件事：写出 main <c.aqua>函数</c.aqua>，让终端<c.aqua>打印</c.aqua>一行文本。",
               "speech_edits": [
                 {
                   "i": 29,
@@ -24,8 +24,8 @@
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 6236,
-              "caption": "整章有三件事与六个小节：1.1 注释，1.2 格式化输出及其四个小节。"
+              "duration_ms": 6248,
+              "caption": "整章有三件事与六个小节：1.1 <c.aqua>注释</c.aqua>，1.2 <c.aqua>格式化</c.aqua>输出及其四个小节。"
             }
           ]
         }

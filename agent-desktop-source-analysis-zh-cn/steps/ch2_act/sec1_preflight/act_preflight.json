@@ -3,7 +3,7 @@
   "title": "行动前：可操作性预检",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "narration": {
         "after": {
@@ -17,7 +17,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "start": {
         "line": 52
@@ -37,11 +37,11 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/ref_action_actionability.rs"
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/ref_action_actionability.rs",
       "start": {
         "line": 27
@@ -61,7 +61,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "start": {
         "line": 67
@@ -93,7 +93,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "start": {
         "line": 80
@@ -120,7 +120,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "start": {
         "line": 91
@@ -140,7 +140,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "start": {
         "line": 100
@@ -167,7 +167,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "start": {
         "line": 116
@@ -187,7 +187,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "start": {
         "line": 128
@@ -214,7 +214,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

@@ -10,9 +10,24 @@
           "asset_id": "narration_ch4_variable_bindings_mut",
           "clips": [
             {
-              "offset_ms": 46000,
-              "duration_ms": 2108,
+              "offset_ms": 45000,
+              "duration_ms": 2082,
               "caption": "现在轮到我们修正 mut.rs。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_mut",
+          "clips": [
+            {
+              "offset_ms": 71000,
+              "duration_ms": 4659,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
             }
           ]
         }

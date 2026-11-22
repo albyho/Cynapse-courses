@@ -2,6 +2,14 @@
 
 Published Course Packages. Versions match each package's `manifest.json`.
 
+## 2026-11-22
+
+- `rust-by-example-zh-cn` 0.20.21: sync the latest source package; `0.20.17`
+  was stale. Also published per-course zip archives as GitHub Releases.
+- `agent-desktop-source-analysis-zh-cn` 0.39.0, `signal-processing-roadmap` 0.2.4,
+  `signal-processing-roadmap-zh-cn` 0.2.4: re-published at the current source
+  revision and packaged as zip archives for download.
+
 ## 2026-11-20
 
 - `rust-by-example-zh-cn` 0.20.17: migrate actions to PascalCase names and the

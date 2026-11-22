@@ -3,6 +3,21 @@
   "title": "写出三种结构体",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 124000,
+              "duration_ms": 2857,
+              "caption": "我们先新建 structs.rs，先写<c.aqua>类型</c.aqua><c.aqua>定义</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "CreateFile",
       "path": "structs.rs"
     },
@@ -24,8 +39,8 @@
           "clips": [
             {
               "offset_ms": 35000,
-              "duration_ms": 4516,
-              "caption": "先写类型定义，再补一个空的 main，让程序此刻就能编译。"
+              "duration_ms": 4670,
+              "caption": "先写<c.aqua>类型</c.aqua><c.aqua>定义</c.aqua>，再补一个空的 main，让程序此刻就能编译。"
             }
           ]
         },
@@ -34,8 +49,8 @@
           "clips": [
             {
               "offset_ms": 40000,
-              "duration_ms": 7475,
-              "caption": "具名字段的 Person、不带字段的 Unit、元组结构体 Pair，以及用两个角点表示矩形的 Rectangle。"
+              "duration_ms": 7444,
+              "caption": "具名<c.aqua>字段</c.aqua>的 Person、不带<c.aqua>字段</c.aqua>的 Unit、<c.aqua>元组</c.aqua>结构体 Pair，以及用两个角点表示矩形的 Rectangle。"
             }
           ]
         }
@@ -56,8 +71,8 @@
           "clips": [
             {
               "offset_ms": 48000,
-              "duration_ms": 7109,
-              "caption": "Person 是具名字段结构体；#[derive(Debug)] 让它能用 {:?} 打印。",
+              "duration_ms": 7222,
+              "caption": "Person 是具名<c.aqua>字段</c.aqua><c.aqua>结构体</c.aqua>；#[derive(Debug)] 让它能用 {:?} <c.aqua>打印</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 16,
@@ -90,8 +105,8 @@
           "clips": [
             {
               "offset_ms": 56000,
-              "duration_ms": 5671,
-              "caption": "Unit 是单元结构体，没有字段；Pair 是元组结构体，字段用 .0、.1 访问。"
+              "duration_ms": 5697,
+              "caption": "Unit 是<c.aqua>单元</c.aqua><c.aqua>结构体</c.aqua>，没有<c.aqua>字段</c.aqua>；Pair 是元组结构体，字段用 .0、.1 访问。"
             }
           ]
         }
@@ -112,8 +127,8 @@
           "clips": [
             {
               "offset_ms": 62000,
-              "duration_ms": 2855,
-              "caption": "Point 用两个 f32 字段表示坐标。"
+              "duration_ms": 2847,
+              "caption": "Point 用两个 f32 <c.aqua>字段</c.aqua>表示坐标。"
             }
           ]
         }
@@ -134,11 +149,26 @@
           "clips": [
             {
               "offset_ms": 65000,
-              "duration_ms": 7672,
-              "caption": "Rectangle 把两个 Point 嵌进来，分别表示左上角和右下角；#[allow(dead_code)] 暂时关掉未使用警告。",
+              "duration_ms": 4609,
+              "caption": "Rectangle 把两个 Point 嵌进来，分别表示左上角和右下角"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 130000,
+              "duration_ms": 2729,
+              "caption": "#[allow(dead_code)] 暂时关掉未使用警告。",
               "speech_edits": [
                 {
-                  "i": 44,
+                  "i": 8,
                   "s": "dead_code",
                   "p": "dead code"
                 }
@@ -162,9 +192,9 @@
           "asset_id": "narration_ch3_custom_types_structs",
           "clips": [
             {
-              "offset_ms": 73000,
-              "duration_ms": 4504,
-              "caption": "先保留一个空的 main，让这段类型定义此刻就能编译。"
+              "offset_ms": 70000,
+              "duration_ms": 4561,
+              "caption": "先保留一个空的 main，让这段<c.aqua>类型</c.aqua><c.aqua>定义</c.aqua>此刻就能编译。"
             }
           ]
         }

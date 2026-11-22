@@ -3,48 +3,48 @@
   "title": "记录：trace 写什么、存什么",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/trace/mod.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "先看 trace 的写入入口：一次命令怎么变成可回放的事件。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/trace/mod.rs",
       "start": { "line": 20 },
       "end": { "line": 64 },
       "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "TraceConfig 声明是否严格、共享状态；build 负责按配置创建写入器，后面的 emit 都走同一套预算和脱敏。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/trace/mod.rs",
       "start": { "line": 66 },
       "end": { "line": 117 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "emit 是直接写入，emit_lazy 只在这里需要时才构造 JSON；两者最后都进同一个文件与事件序号。" }] } }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/trace/trace_sanitize.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "写入前必过脱敏，跳到 trace_sanitize.rs。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/trace/trace_sanitize.rs",
       "start": { "line": 3 },
       "end": { "line": 23 },
       "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "sanitize_trace_value 递归扫描对象：敏感键替换成脱敏值，数组元素也逐个处理。文件 trace 和 FFI 日志共用这一层。" }] } }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/trace/trace_artifacts.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "再看 artifact：截图和 refmap 不塞进事件里，而是单独落盘。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/trace/trace_artifacts.rs",
       "start": { "line": 170 },
       "end": { "line": 207 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "emit_action_artifacts 在动作前后记录截图与 refmap，并受字节数和数量预算限制；artifact 与事件分开，回放时再按路径关联。" }] } }
     },
-    { "type": "CLEAR_REVEAL" }
+    { "type": "ClearReveal" }
   ]
 }

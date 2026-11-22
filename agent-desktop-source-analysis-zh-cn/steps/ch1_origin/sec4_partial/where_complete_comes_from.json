@@ -3,7 +3,7 @@
   "title": "来源：complete 是谁决定的",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/window_capture.rs",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/window_capture.rs",
       "start": {
         "line": 19
@@ -41,7 +41,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/window_capture.rs",
       "start": {
         "line": 10
@@ -70,7 +70,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/refs/ref_capture_proof.rs",
       "narration": {
         "after": {
@@ -86,7 +86,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/ref_capture_proof.rs",
       "start": {
         "line": 24
@@ -108,7 +108,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

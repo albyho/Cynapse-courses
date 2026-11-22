@@ -12,8 +12,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 9598,
-              "caption": "在元组之后，这一节学习数组和切片，观察定长数组与借用一段数据的切片在类型和访问上的区别。",
+              "duration_ms": 9399,
+              "caption": "在<c.aqua>元组</c.aqua>之后，这一节学习<c.aqua>数组</c.aqua>和<c.aqua>切片</c.aqua>，观察定长数组与借用一段数据的切片在类型和访问上的区别。",
               "speech_edits": [
                 {
                   "i": 14,
@@ -34,7 +34,7 @@
             },
             {
               "offset_ms": 10000,
-              "duration_ms": 5909,
+              "duration_ms": 5895,
               "caption": "数组的长度写在类型里，编译时就确定，元素在内存中连续存放。",
               "speech_edits": [
                 {
@@ -47,7 +47,7 @@
             {
               "offset_ms": 16000,
               "duration_ms": 8571,
-              "caption": "切片本身不拥有数据，它借用数组的一段，长度在运行时才知道，类型写成 &[T]。",
+              "caption": "<c.aqua>切片</c.aqua>本身不拥有数据，它<c.aqua>借用</c.aqua><c.aqua>数组</c.aqua>的一段，长度在运行时才知道，类型写成 &[T]。",
               "speech_edits": [
                 {
                   "i": 0,
@@ -73,7 +73,7 @@
             },
             {
               "offset_ms": 25000,
-              "duration_ms": 5006,
+              "duration_ms": 4989,
               "caption": "两者都从 0 开始编号，越界访问会在运行时直接 panic。",
               "speech_edits": [
                 {

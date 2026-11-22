@@ -12,8 +12,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 9126,
-              "caption": "在认识枚举变体之后，这一节学习 use，观察它怎样把枚举成员引入当前作用域、减少重复的完整路径。",
+              "duration_ms": 9168,
+              "caption": "在认识<c.aqua>枚举</c.aqua><c.aqua>变体</c.aqua>之后，这一节学习 use，观察它怎样把<c.aqua>枚举</c.aqua>成员引入当前作用域、减少重复的完整路径。",
               "speech_edits": [
                 {
                   "i": 40,
@@ -24,12 +24,12 @@
             },
             {
               "offset_ms": 10000,
-              "duration_ms": 5481,
-              "caption": "use 把枚举成员引入当前作用域，之后就不用每次都写完整路径。"
+              "duration_ms": 5500,
+              "caption": "use 把<c.aqua>枚举</c.aqua>成员引入当前<c.aqua>作用域</c.aqua>，之后就不用每次都写完整路径。"
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 9054,
+              "duration_ms": 8880,
               "caption": "use Status::{Poor, Rich} 只引入列出的两个成员；use Work::* 引入全部成员。",
               "speech_edits": [
                 {

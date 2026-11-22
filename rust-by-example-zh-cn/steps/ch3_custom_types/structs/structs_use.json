@@ -3,6 +3,36 @@
   "title": "字段访问、更新与解构",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 133000,
+              "duration_ms": 1567,
+              "caption": "打开 structs.rs。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 135000,
+              "duration_ms": 4544,
+              "caption": "准备在 main 里用<c.aqua>字段</c.aqua>名与<c.aqua>变量</c.aqua>同名的简写构造 Person。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "OpenFile",
       "path": "structs.rs"
     },
@@ -23,9 +53,9 @@
           "asset_id": "narration_ch3_custom_types_structs",
           "clips": [
             {
-              "offset_ms": 78000,
-              "duration_ms": 6823,
-              "caption": "main 里用字段名与变量同名的简写构造 Person，再用 Debug 打印整个结构体的字段。"
+              "offset_ms": 75000,
+              "duration_ms": 6504,
+              "caption": "main 里用<c.aqua>字段</c.aqua>名与<c.aqua>变量</c.aqua>同名的简写构造 Person，再用 Debug <c.aqua>打印</c.aqua>整个结构体的字段。"
             }
           ]
         }
@@ -48,9 +78,9 @@
           "asset_id": "narration_ch3_custom_types_structs",
           "clips": [
             {
-              "offset_ms": 85000,
-              "duration_ms": 4582,
-              "caption": "Point 实例化之后，用点号访问字段，读出两个坐标分量。"
+              "offset_ms": 82000,
+              "duration_ms": 4696,
+              "caption": "Point <c.aqua>实例</c.aqua>化之后，用点号访问<c.aqua>字段</c.aqua>，读出两个坐标分量。"
             }
           ]
         }
@@ -73,9 +103,9 @@
           "asset_id": "narration_ch3_custom_types_structs",
           "clips": [
             {
-              "offset_ms": 90000,
-              "duration_ms": 7687,
-              "caption": "更新语法只写要改的字段，其余用 ..point 从旧值搬过来；let 配合模式把字段解构成两个变量。"
+              "offset_ms": 87000,
+              "duration_ms": 7922,
+              "caption": "更新语法只写要改的字段，其余用 ..point 从旧值搬过来；let 配合模式把字段<c.aqua>解构</c.aqua>成两个变量。"
             }
           ]
         }
@@ -98,9 +128,34 @@
           "asset_id": "narration_ch3_custom_types_structs",
           "clips": [
             {
-              "offset_ms": 98000,
-              "duration_ms": 7103,
-              "caption": "最后是嵌套结构体、单元结构体和元组结构体：后者用 .0、.1 访问，也能一次解构。"
+              "offset_ms": 140000,
+              "duration_ms": 2880,
+              "caption": "先用两个 Point 构造嵌套的 Rectangle。"
+            },
+            {
+              "offset_ms": 143000,
+              "duration_ms": 2179,
+              "caption": "再实例化单元结构体 Unit。"
+            },
+            {
+              "offset_ms": 146000,
+              "duration_ms": 3225,
+              "caption": "<c.aqua>元组结构体</c.aqua> Pair 可以用 .0 和 .1 访问。"
+            },
+            {
+              "offset_ms": 150000,
+              "duration_ms": 2805,
+              "caption": "最后把 Pair <c.aqua>解构</c.aqua>成两个<c.aqua>变量</c.aqua><c.aqua>打印</c.aqua>。"
+            }
+          ]
+        },
+        "before": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 95000,
+              "duration_ms": 7082,
+              "caption": "最后是嵌套<c.aqua>结构体</c.aqua>、<c.aqua>单元</c.aqua><c.aqua>结构体</c.aqua>和元组结构体：后者用 .0、.1 访问，也能一次解构。"
             }
           ]
         }
@@ -122,22 +177,12 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch3_custom_types_structs",
-          "clips": [
-            {
-              "offset_ms": 106000,
-              "duration_ms": 602,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch3_custom_types_structs",
           "clips": [
             {
-              "offset_ms": 107000,
-              "duration_ms": 1301,
+              "offset_ms": 104000,
+              "duration_ms": 893,
               "caption": "编译通过。"
             }
           ]
@@ -164,8 +209,8 @@
           "asset_id": "narration_ch3_custom_types_structs",
           "clips": [
             {
-              "offset_ms": 109000,
-              "duration_ms": 2370,
+              "offset_ms": 105000,
+              "duration_ms": 2354,
               "caption": "运行，逐行核对输出。",
               "speech_edits": [
                 {
@@ -186,14 +231,14 @@
           "asset_id": "narration_ch3_custom_types_structs",
           "clips": [
             {
-              "offset_ms": 112000,
-              "duration_ms": 2403,
-              "caption": "Person 按 Debug 打印出全部字段。"
+              "offset_ms": 108000,
+              "duration_ms": 2421,
+              "caption": "Person 按 Debug <c.aqua>打印</c.aqua>出全部<c.aqua>字段</c.aqua>。"
             },
             {
-              "offset_ms": 115000,
-              "duration_ms": 7088,
-              "caption": "point 的坐标是 (10.3, 0.4)，更新语法造出的第二个点借用了它的 y。",
+              "offset_ms": 111000,
+              "duration_ms": 7093,
+              "caption": "point 的坐标是 (10.3, 0.4)，更新语法造出的第二个点<c.aqua>借用</c.aqua>了它的 y。",
               "speech_edits": [
                 {
                   "i": 11,
@@ -203,9 +248,9 @@
               ]
             },
             {
-              "offset_ms": 123000,
-              "duration_ms": 4788,
-              "caption": "元组结构体 Pair 既能用下标访问，也能解构成两个变量。"
+              "offset_ms": 119000,
+              "duration_ms": 4712,
+              "caption": "<c.aqua>元组结构体</c.aqua> Pair 既能用<c.aqua>下标</c.aqua>访问，也能解构成两个变量。"
             }
           ]
         }
@@ -213,7 +258,26 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 7000
+      "duration_ms": 7000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs",
+          "clips": [
+            {
+              "offset_ms": 158000,
+              "duration_ms": 5865,
+              "caption": "Person 按 Debug <c.aqua>打印</c.aqua>出全部<c.aqua>字段</c.aqua>，我们对照源码看这一行是怎么来的。",
+              "speech_edits": [
+                {
+                  "i": 32,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }

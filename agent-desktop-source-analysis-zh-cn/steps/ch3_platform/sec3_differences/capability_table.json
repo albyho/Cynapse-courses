@@ -3,59 +3,59 @@
   "title": "逐命令能力表：三平台与 Wayland 的边界",
   "actions": [
     {
-      "type": "OPEN_FILE_WITH_PREVIEW",
+      "type": "OpenFileWithPreview",
       "path": "CAPABILITY_MATRIX.md",
       "narration": { "after": { "clips": [{ "duration_ms": 3500, "caption": "这里是附录页，<c.aqua>平台逐命令能力矩阵</c.aqua>。" }, { "duration_ms": 6500, "caption": "这一页把 60 个命令按平台列成表：✓ 默认可用，H 需要 headed，△ 有条件，✕ 关闭或不支持。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
       "start": { "line": 3 },
       "end": { "line": 10 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "四个符号先记住：H 不是更可靠，而是允许物理输入或抢焦点；✕ 是设计上的拒绝，不是缺陷。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
       "start": { "line": 12 },
       "end": { "line": 23 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "观察与截图基本全平台一致；差异在权限与捕获方式：macOS 要屏幕录制，X11 合成窗口下显示器截图受限，Wayland 窗口目标受限。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
       "start": { "line": 25 },
       "end": { "line": 44 },
       "narration": { "after": { "clips": [{ "duration_ms": 10000, "caption": "引用动作里，Windows 的 right-click、type、focus 需要 headed；Linux 的 scroll 在 headless 下被拒绝；double-click 在 macOS 只有 AXOpen 时能 headless。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
       "start": { "line": 46 },
       "end": { "line": 59 },
       "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "指针手势在 macOS / Windows / X11 都需要 headed，Wayland 直接不支持；四个 held-input 命令在所有平台都 fail closed。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
       "start": { "line": 61 },
       "end": { "line": 74 },
       "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "应用与窗口：Linux Wayland 只保留 launch、list-apps、list-windows，窗口控制与 close-app 都拒绝；Windows 对受保护映像拒绝 close-app。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
       "start": { "line": 76 },
       "end": { "line": 95 },
       "narration": { "after": { "clips": [{ "duration_ms": 10000, "caption": "通知类几乎都需要 headed，Linux 还限定 GNOME Shell；剪贴板与 wait 跨平台，但依赖权限、helper 或已打开的通知中心。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
       "start": { "line": 97 },
       "end": { "line": 102 },
       "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "读法：先看命令组，再看 H 与 ✕；不要为了绕过错误自行加 headed，换命令或换平台才是正确恢复。" }] } }
     },
-    { "type": "CLEAR_REVEAL" }
+    { "type": "ClearReveal" }
   ]
 }

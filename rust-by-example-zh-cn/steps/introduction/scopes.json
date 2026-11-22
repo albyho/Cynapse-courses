@@ -13,19 +13,49 @@
           "asset_id": "narration_introduction_chapters",
           "clips": [
             {
-              "offset_ms": 290000,
-              "duration_ms": 2085,
-              "caption": "第 15 章《作用域规则》。"
+              "offset_ms": 181000,
+              "duration_ms": 1838,
+              "caption": "第 15 章《<c.aqua>作用域</c.aqua>规则》。"
             },
             {
-              "offset_ms": 293000,
-              "duration_ms": 6165,
+              "offset_ms": 183000,
+              "duration_ms": 6428,
               "caption": "作用域决定变量何时创建、何时离开、资源何时释放，也<c.aqua>决定借用是否合法</c.aqua>。"
             },
             {
-              "offset_ms": 300000,
-              "duration_ms": 11747,
-              "caption": "所有权、借用和生命周期都建立在这条时间线上；遇到例子时，先标出<c.aqua>每个名字从出现到失效的范围</c.aqua>，再判断移动或借用为什么被允许。"
+              "offset_ms": 190000,
+              "duration_ms": 4140,
+              "caption": "<c.aqua>所有权</c.aqua>、<c.aqua>借用</c.aqua>和<c.aqua>生命周期</c.aqua>都建立在这条时间线上"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 158000,
+              "duration_ms": 4311,
+              "caption": "遇到例子时，先标出每个<c.aqua>名字</c.aqua>从出现到<c.aqua>失效</c.aqua>的范围。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 163000,
+              "duration_ms": 2754,
+              "caption": "再判断移动或<c.aqua>借用</c.aqua>为什么被允许。"
             }
           ]
         }

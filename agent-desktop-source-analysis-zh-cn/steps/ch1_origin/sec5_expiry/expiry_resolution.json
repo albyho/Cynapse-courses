@@ -3,7 +3,7 @@
   "title": "过期：引用怎么被重新识别或拒绝",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/refs/resolve_saved_ref.rs",
       "narration": {
         "after": {
@@ -26,7 +26,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/resolve_saved_ref.rs",
       "start": {
         "line": 96
@@ -55,7 +55,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/resolve_saved_ref.rs",
       "start": {
         "line": 34
@@ -84,7 +84,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/resolve_saved_ref.rs",
       "start": {
         "line": 37
@@ -113,7 +113,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/resolve_saved_ref.rs",
       "start": {
         "line": 100
@@ -142,7 +142,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

@@ -12,18 +12,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 8602,
-              "caption": "在原生类型概览之后，这一节学习字面量和运算符，观察同一类值怎样用不同进制、不同后缀写出来。"
+              "duration_ms": 8755,
+              "caption": "在原生<c.aqua>类型</c.aqua>概览之后，这一节学习<c.aqua>字面量</c.aqua>和运算符，观察同一类值怎样用不同进制、不同后缀写出来。"
             },
             {
               "offset_ms": 9000,
-              "duration_ms": 11134,
-              "caption": "整数、浮点、字符、字符串、布尔和单元类型，都可以用字面量直接写出来；加 0x、0o、0b 前缀就换成十六进制、八进制和二进制记法。"
+              "duration_ms": 5912,
+              "caption": "<c.aqua>整数</c.aqua>、<c.aqua>浮点</c.aqua>、<c.aqua>字符</c.aqua>、字符串、布尔和单元类型，都可以用字面量直接写出来"
             },
             {
-              "offset_ms": 21000,
-              "duration_ms": 7072,
-              "caption": "数字里插下划线只是为了好读，1_000 和 1000 完全等价，编译器不区分。",
+              "offset_ms": 15000,
+              "duration_ms": 7446,
+              "caption": "数字里插下划线只是为了好读，1_000 和 1000 完全等价，<c.aqua>编译器</c.aqua>不区分。",
               "speech_edits": [
                 {
                   "i": 9,
@@ -33,9 +33,24 @@
               ]
             },
             {
-              "offset_ms": 29000,
-              "duration_ms": 8075,
-              "caption": "类型仍然要说清楚：u32 后缀表示 32 位无符号整数，i32 后缀表示 32 位有符号整数。"
+              "offset_ms": 23000,
+              "duration_ms": 8128,
+              "caption": "<c.aqua>类型</c.aqua>仍然要说清楚：u32 后缀表示 32 位无符号<c.aqua>整数</c.aqua>，i32 后缀表示 32 位有符号<c.aqua>整数</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_literals",
+          "clips": [
+            {
+              "offset_ms": 135000,
+              "duration_ms": 5072,
+              "caption": "加 0x、0o、0b 前缀就换成十六进制、八进制和二进制记法。"
             }
           ]
         }

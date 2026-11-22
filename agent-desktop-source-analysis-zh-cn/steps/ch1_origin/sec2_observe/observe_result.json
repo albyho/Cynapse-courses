@@ -3,7 +3,7 @@
   "title": "观察结果：树、引用与完整性",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 15
@@ -41,7 +41,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 21
@@ -63,7 +63,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 28
@@ -92,7 +92,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 36
@@ -114,7 +114,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 42
@@ -136,7 +136,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 54
@@ -158,7 +158,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 69
@@ -180,7 +180,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 72
@@ -202,7 +202,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 80
@@ -224,7 +224,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 87
@@ -246,11 +246,11 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/refs/ref_alloc.rs"
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/refs/ref_alloc.rs",
       "start": {
         "line": 177
@@ -272,7 +272,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/snapshot/mod.rs",
       "start": {
         "line": 89
@@ -294,7 +294,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

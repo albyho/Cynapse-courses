@@ -3,7 +3,7 @@
   "title": "配置面：全局 flag、环境变量与状态目录",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/storage/state_root.rs",
       "narration": {
         "after": {
@@ -17,7 +17,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/storage/state_root.rs",
       "start": {
         "line": 4
@@ -44,7 +44,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/cli/identity.rs",
       "narration": {
         "after": {
@@ -58,7 +58,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/src/cli/identity.rs",
       "start": {
         "line": 3
@@ -78,7 +78,7 @@
       }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/cli/root.rs",
       "narration": {
         "after": {
@@ -92,7 +92,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/src/cli/root.rs",
       "start": {
         "line": 20
@@ -112,7 +112,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

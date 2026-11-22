@@ -1,7 +1,7 @@
 {
   "id": "rust_by_example_zh_cn",
   "title": "通过例子学 Rust（中文版）",
-  "version": "0.20.17",
+  "version": "0.20.21",
   "workspace": "workspace",
   "adapters": [
     "vscode"
@@ -225,6 +225,9 @@
               "steps": [
                 {
                   "step_file": "steps/ch1_hello_world/print/exercise/pex_intro.json"
+                },
+                {
+                  "step_file": "steps/ch1_hello_world/print/exercise/pex_error.json"
                 },
                 {
                   "step_file": "steps/ch1_hello_world/print/exercise/pex_fix.json"

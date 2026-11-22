@@ -3,6 +3,21 @@
   "title": "为 City 实现 Display",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 3245,
+              "caption": "我们先新建 fmt_demo.rs，为 City <c.aqua>实现</c.aqua> Display。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "CreateFile",
       "path": "fmt_demo.rs"
     },
@@ -13,32 +28,79 @@
     {
       "type": "InsertText",
       "path": "fmt_demo.rs",
-      "speed_ms": 40,
+      "speed_ms": 36,
       "target": {
         "eof": true
       },
       "text": "use std::fmt::{self, Formatter, Display};\n\nstruct City {\n    name: &'static str,\n    // 纬度\n    lat: f32,\n    // 经度\n    lon: f32,\n}\n\nimpl Display for City {\n    // `f` 是一个缓冲区（buffer），此方法必须将格式化后的字符串写入其中\n    fn fmt(&self, f: &mut Formatter) -> fmt::Result {\n        let lat_c = if self.lat >= 0.0 { 'N' } else { 'S' };\n        let lon_c = if self.lon >= 0.0 { 'E' } else { 'W' };\n\n        // `write!` 和 `format!` 类似，但它会将格式化后的字符串写入\n        // 一个缓冲区（即第一个参数f）中。\n        write!(f, \"{}: {:.3}°{} {:.3}°{}\",\n               self.name, self.lat.abs(), lat_c, self.lon.abs(), lon_c)\n    }\n}\n\n",
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_fmt",
-          "clips": [
-            {
-              "offset_ms": 18000,
-              "duration_ms": 5081,
-              "caption": "接下来在 fmt_demo.rs 里为 City 实现 Display，Color 暂时用 Debug 打印。"
-            }
-          ]
-        },
         "during": {
           "asset_id": "narration_ch1_hello_world_print_fmt",
           "clips": [
             {
-              "offset_ms": 24000,
-              "duration_ms": 9800,
-              "caption": "City 存名字、纬度、经度；Display 先用两个条件判断挑出南北纬和东西经，再用 write! 按三位小数把经纬度写进缓冲区。",
+              "offset_ms": 39000,
+              "duration_ms": 3451,
+              "caption": "先导入<c.aqua>格式化</c.aqua>需要的 fmt、Formatter 和 Display。"
+            },
+            {
+              "offset_ms": 43000,
+              "duration_ms": 3183,
+              "caption": "接着<c.aqua>定义</c.aqua> City，存名字、纬度和经度。",
               "speech_edits": [
                 {
-                  "i": 44,
+                  "i": 1,
+                  "s": "着",
+                  "p": "ZHE5"
+                }
+              ]
+            },
+            {
+              "offset_ms": 47000,
+              "duration_ms": 4643,
+              "caption": "再为 City <c.aqua>实现</c.aqua> Display，按南北纬和东西经输出三位小数。"
+            }
+          ]
+        },
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 17000,
+              "duration_ms": 5063,
+              "caption": "接下来在 fmt_demo.rs 里为 City <c.aqua>实现</c.aqua> Display，Color 暂时用 Debug <c.aqua>打印</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 52000,
+              "duration_ms": 4116,
+              "caption": "Display 先用两个条件判断挑出南北纬和东西经。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 57000,
+              "duration_ms": 3998,
+              "caption": "再用 write! 按三位小数把经纬度写进缓冲区。",
+              "speech_edits": [
+                {
+                  "i": 3,
                   "s": "write!",
                   "p": "write 宏"
                 }
@@ -51,7 +113,7 @@
     {
       "type": "InsertText",
       "path": "fmt_demo.rs",
-      "speed_ms": 40,
+      "speed_ms": 35,
       "target": {
         "eof": true
       },
@@ -61,12 +123,44 @@
           "asset_id": "narration_ch1_hello_world_print_fmt",
           "clips": [
             {
-              "offset_ms": 34000,
-              "duration_ms": 10074,
-              "caption": "Color 只推导了 Debug；main 把三座城市和三个颜色放进数组循环打印，颜色这一页先用 {:?} 观察结构体形式。",
+              "offset_ms": 61000,
+              "duration_ms": 2675,
+              "caption": "先用 derive 给 Color 加上 Debug <c.aqua>实现</c.aqua>。"
+            },
+            {
+              "offset_ms": 64000,
+              "duration_ms": 3430,
+              "caption": "main 的前半段遍历三座城市，用 Display <c.aqua>打印</c.aqua>。"
+            },
+            {
+              "offset_ms": 68000,
+              "duration_ms": 4948,
+              "caption": "后半段遍历三个颜色，先用 {:?} 观察 Debug 输出。",
               "speech_edits": [
                 {
-                  "i": 49,
+                  "i": 13,
+                  "s": "{:?}",
+                  "p": "大括号冒号问号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 73000,
+              "duration_ms": 8321,
+              "caption": "main 把三座城市和三个颜色放进<c.aqua>数组</c.aqua>循环<c.aqua>打印</c.aqua>，颜色这一页先用 {:?} 观察<c.aqua>结构体</c.aqua>形式。",
+              "speech_edits": [
+                {
+                  "i": 32,
                   "s": "{:?}",
                   "p": "大括号冒号问号"
                 }
@@ -92,16 +186,6 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_fmt",
-          "clips": [
-            {
-              "offset_ms": 45000,
-              "duration_ms": 514,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_print_fmt",
           "clips": [
@@ -113,19 +197,49 @@
             {
               "offset_ms": 48000,
               "duration_ms": 3957,
-              "caption": "刚才的警告是在说 Color 的三个字段从未被读取。"
+              "caption": "刚才的警告是在说 Color 的三个<c.aqua>字段</c.aqua>从未被读取。"
             },
             {
               "offset_ms": 52000,
               "duration_ms": 10617,
-              "caption": "字段只被派生的 Debug 使用，而 rustc 的 dead_code 分析会忽略派生实现；这不是编译错误，练习实现 Display 后字段就会被真正读取。",
+              "caption": "<c.aqua>字段</c.aqua>只被<c.aqua>派生</c.aqua>的 Debug 使用"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 87000,
+              "duration_ms": 3252,
+              "caption": "而 rustc 的 dead_code 分析会忽略<c.aqua>派生实现</c.aqua>。",
               "speech_edits": [
                 {
-                  "i": 27,
+                  "i": 10,
                   "s": "dead_code",
                   "p": "dead code"
                 }
               ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_fmt",
+          "clips": [
+            {
+              "offset_ms": 91000,
+              "duration_ms": 5001,
+              "caption": "这不是编译<c.aqua>错误</c.aqua>，练习<c.aqua>实现</c.aqua> Display 后<c.aqua>字段</c.aqua>就会被真正读取。"
             }
           ]
         }
@@ -144,29 +258,12 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_print_fmt",
-          "clips": [
-            {
-              "offset_ms": 63000,
-              "duration_ms": 640,
-              "caption": "运行。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_print_fmt",
           "clips": [
             {
-              "offset_ms": 64000,
-              "duration_ms": 3237,
+              "offset_ms": 27000,
+              "duration_ms": 3307,
               "caption": "城市用 Display 输出，颜色先用 Debug 输出。"
             }
           ]

@@ -3,6 +3,21 @@
   "title": "演示注释的影响",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 62000,
+              "duration_ms": 4285,
+              "caption": "我们先新建 comment.rs，先写出 main 的空壳，<c.aqua>函数</c.aqua>体留空。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "CreateFile",
       "path": "comment.rs"
     },
@@ -19,22 +34,12 @@
       },
       "text": "fn main() {\n}\n",
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment",
-          "clips": [
-            {
-              "offset_ms": 13000,
-              "duration_ms": 2675,
-              "caption": "先写出 main 的空壳，函数体留空。"
-            }
-          ]
-        },
         "during": {
           "asset_id": "narration_ch1_hello_world_comment",
           "clips": [
             {
               "offset_ms": 16000,
-              "duration_ms": 4586,
+              "duration_ms": 4714,
               "caption": "main 的括号成对写好，后面每一段都插在右大括号之前。"
             }
           ]
@@ -58,8 +63,8 @@
           "clips": [
             {
               "offset_ms": 21000,
-              "duration_ms": 5999,
-              "caption": "行注释以两条斜线开头，斜线之后到行尾的内容都不参与编译。",
+              "duration_ms": 5969,
+              "caption": "行<c.aqua>注释</c.aqua>以两条斜线开头，斜线之后到行尾的内容都不参与编译。",
               "speech_edits": [
                 {
                   "i": 0,
@@ -94,8 +99,8 @@
           "clips": [
             {
               "offset_ms": 27000,
-              "duration_ms": 7394,
-              "caption": "这一行代码被注释掉了：去掉开头的两条斜线，它就重新参与编译和运行。",
+              "duration_ms": 6986,
+              "caption": "这一行代码被<c.aqua>注释</c.aqua>掉了：去掉开头的两条斜线，它就重新参与编译和运行。",
               "speech_edits": [
                 {
                   "i": 2,
@@ -134,9 +139,9 @@
           "asset_id": "narration_ch1_hello_world_comment",
           "clips": [
             {
-              "offset_ms": 35000,
-              "duration_ms": 7716,
-              "caption": "块注释用 /* 和 */ 包住，而且可以嵌套：内层的注释符不影响外层边界。",
+              "offset_ms": 34000,
+              "duration_ms": 7420,
+              "caption": "块<c.aqua>注释</c.aqua>用 /* 和 */ 包住，而且可以嵌套：内层的<c.aqua>注释</c.aqua>符不影响外层<c.aqua>边界</c.aqua>。",
               "speech_edits": [
                 {
                   "i": 5,
@@ -170,9 +175,9 @@
           "asset_id": "narration_ch1_hello_world_comment",
           "clips": [
             {
-              "offset_ms": 43000,
-              "duration_ms": 4307,
-              "caption": "块注释里纵向的星号只是排版风格，语法上并不要求。"
+              "offset_ms": 42000,
+              "duration_ms": 4632,
+              "caption": "块<c.aqua>注释</c.aqua>里纵向的星号只是排版风格，语法上并不要求。"
             }
           ]
         }
@@ -194,9 +199,9 @@
           "asset_id": "narration_ch1_hello_world_comment",
           "clips": [
             {
-              "offset_ms": 48000,
-              "duration_ms": 5812,
-              "caption": "块注释还能作用在表达式中间：包住 90 + 之后，x 只剩 5 + 5。",
+              "offset_ms": 47000,
+              "duration_ms": 6149,
+              "caption": "块<c.aqua>注释</c.aqua>还能作用在<c.aqua>表达式</c.aqua>中间：包住 90 + 之后，x 只剩 5 + 5。",
               "speech_edits": [
                 {
                   "i": 20,
@@ -230,22 +235,12 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment",
-          "clips": [
-            {
-              "offset_ms": 54000,
-              "duration_ms": 514,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_comment",
           "clips": [
             {
               "offset_ms": 55000,
-              "duration_ms": 1249,
+              "duration_ms": 1374,
               "caption": "编译成功。"
             }
           ]
@@ -265,30 +260,13 @@
       ],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch1_hello_world_comment",
-          "clips": [
-            {
-              "offset_ms": 57000,
-              "duration_ms": 640,
-              "caption": "运行。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch1_hello_world_comment",
           "clips": [
             {
               "offset_ms": 58000,
-              "duration_ms": 3635,
-              "caption": "输出说明：块注释可以临时改变表达式的值。"
+              "duration_ms": 3666,
+              "caption": "输出说明：块<c.aqua>注释</c.aqua>可以临时改变<c.aqua>表达式</c.aqua>的值。"
             }
           ]
         }
@@ -296,7 +274,26 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 4000
+      "duration_ms": 4000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_comment",
+          "clips": [
+            {
+              "offset_ms": 77000,
+              "duration_ms": 7221,
+              "caption": "输出说明：块<c.aqua>注释</c.aqua>可以临时改变<c.aqua>表达式</c.aqua>的值，我们对照源码看这一行是怎么来的。",
+              "speech_edits": [
+                {
+                  "i": 29,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }

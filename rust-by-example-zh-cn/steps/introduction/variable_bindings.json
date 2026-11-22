@@ -13,26 +13,71 @@
           "asset_id": "narration_introduction_chapters",
           "clips": [
             {
-              "offset_ms": 58000,
-              "duration_ms": 1844,
-              "caption": "第 4 章《变量绑定》。"
+              "offset_ms": 42000,
+              "duration_ms": 1833,
+              "caption": "第 4 章《<c.aqua>变量</c.aqua><c.aqua>绑定</c.aqua>》。"
             },
             {
-              "offset_ms": 60000,
-              "duration_ms": 3812,
+              "offset_ms": 44000,
+              "duration_ms": 3740,
               "caption": "变量绑定让我们用 let 把<c.aqua>值与名字连接起来</c.aqua>。"
             },
             {
-              "offset_ms": 64000,
-              "duration_ms": 14273,
-              "caption": "Rust 强调静态类型安全，但编译器通常能从上下文推断类型；阅读例子时，不妨关注<c.aqua>绑定何时可重新赋值、何时只是创建新的名字</c.aqua>，以及类型为什么仍然保持一致。",
+              "offset_ms": 48000,
+              "duration_ms": 4867,
+              "caption": "Rust 强调<c.aqua>静态类型</c.aqua>安全，但<c.aqua>编译器</c.aqua>通常能从上下文推断类型"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 220000,
+              "duration_ms": 1433,
+              "caption": "阅读例子时"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 222000,
+              "duration_ms": 5091,
+              "caption": "不妨关注<c.aqua>绑定</c.aqua>何时可<c.aqua>重新赋值</c.aqua>、何时只是创建新的名字。",
               "speech_edits": [
                 {
-                  "i": 45,
+                  "i": 9,
                   "s": "重",
                   "p": "CHONG2"
                 }
               ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 228000,
+              "duration_ms": 2736,
+              "caption": "以及<c.aqua>类型</c.aqua>为什么仍然保持一致。"
             }
           ]
         }

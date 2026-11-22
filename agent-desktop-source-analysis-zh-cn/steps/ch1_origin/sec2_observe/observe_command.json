@@ -3,7 +3,7 @@
   "title": "观察入口：snapshot 命令",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "narration": {
         "after": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 12
@@ -41,7 +41,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 18
@@ -70,7 +70,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 22
@@ -92,7 +92,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 26
@@ -121,7 +121,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 34
@@ -143,7 +143,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 42
@@ -165,7 +165,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 47
@@ -187,7 +187,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 65
@@ -216,7 +216,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 76
@@ -238,7 +238,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 80
@@ -267,7 +267,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 91
@@ -289,7 +289,7 @@
       }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/snapshot.rs",
       "start": {
         "line": 106
@@ -311,7 +311,7 @@
       }
     },
     {
-      "type": "CLEAR_REVEAL"
+      "type": "ClearReveal"
     }
   ]
 }

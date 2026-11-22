@@ -3,6 +3,36 @@
   "title": "复制、字面量与未使用警告",
   "actions": [
     {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings",
+          "clips": [
+            {
+              "offset_ms": 64000,
+              "duration_ms": 2354,
+              "caption": "我们先新建 variable_bindings.rs。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings",
+          "clips": [
+            {
+              "offset_ms": 67000,
+              "duration_ms": 2274,
+              "caption": "写入 let <c.aqua>绑定</c.aqua>、复制和<c.aqua>字面量</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "CreateFile",
       "path": "variable_bindings.rs"
     },
@@ -19,23 +49,50 @@
       },
       "text": "fn main() {\n    let an_integer = 1u32;\n    let a_boolean = true;\n    let unit = ();\n\n    // 将 `an_integer` 复制到 `copied_integer`\n    let copied_integer = an_integer;\n\n    println!(\"An integer: {:?}\", copied_integer);\n    println!(\"A boolean: {:?}\", a_boolean);\n    println!(\"Meet the unit value: {:?}\", unit);\n\n    // 编译器会对未使用的变量绑定产生警告；可以给变量名加上下划线前缀来消除警告。\n    let _unused_variable = 3u32;\n\n    let noisy_unused_variable = 2u32;\n    // 改正 ^ 在变量名前加上下划线以消除警告\n}\n",
       "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings",
+          "clips": [
+            {
+              "offset_ms": 75000,
+              "duration_ms": 2982,
+              "caption": "先写<c.aqua>整数</c.aqua>、<c.aqua>布尔</c.aqua>和<c.aqua>单元</c.aqua>值三个绑定。"
+            },
+            {
+              "offset_ms": 78000,
+              "duration_ms": 2804,
+              "caption": "复制<c.aqua>绑定</c.aqua>后，把三个值依次<c.aqua>打印</c.aqua>。"
+            },
+            {
+              "offset_ms": 81000,
+              "duration_ms": 3732,
+              "caption": "未使用的<c.aqua>绑定</c.aqua>加下划线前缀就能消除警告。"
+            },
+            {
+              "offset_ms": 85000,
+              "duration_ms": 3978,
+              "caption": "noisy_unused_variable 会留下警告，下一行提示改法。",
+              "speech_edits": [
+                {
+                  "i": 30,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
         "before": {
           "asset_id": "narration_ch4_variable_bindings",
           "clips": [
             {
               "offset_ms": 33000,
-              "duration_ms": 5366,
-              "caption": "接下来在 variable_bindings.rs 里写入 let 绑定、复制和字面量的示例。"
-            }
-          ]
-        },
-        "during": {
-          "asset_id": "narration_ch4_variable_bindings",
-          "clips": [
+              "duration_ms": 5229,
+              "caption": "接下来在 variable_bindings.rs 里写入 let <c.aqua>绑定</c.aqua>、复制和<c.aqua>字面量</c.aqua>的示例。"
+            },
             {
               "offset_ms": 39000,
-              "duration_ms": 4201,
-              "caption": "逐行写入 let 绑定、复制和未使用变量的示例。",
+              "duration_ms": 4167,
+              "caption": "逐行写入 let <c.aqua>绑定</c.aqua>、复制和未使用<c.aqua>变量</c.aqua>的示例。",
               "speech_edits": [
                 {
                   "i": 1,
@@ -68,23 +125,13 @@
       "expected_output": [],
       "timeout_ms": 300000,
       "narration": {
-        "before": {
-          "asset_id": "narration_ch4_variable_bindings",
-          "clips": [
-            {
-              "offset_ms": 44000,
-              "duration_ms": 560,
-              "caption": "编译。"
-            }
-          ]
-        },
         "after": {
           "asset_id": "narration_ch4_variable_bindings",
           "clips": [
             {
               "offset_ms": 45000,
-              "duration_ms": 5342,
-              "caption": "编译通过；那个没用到的 noisy 变量只会带来警告，不会拦下编译。"
+              "duration_ms": 5525,
+              "caption": "编译通过；那个没用到的 noisy <c.aqua>变量</c.aqua>只会带来警告，不会拦下编译。"
             }
           ]
         }
@@ -110,7 +157,7 @@
           "clips": [
             {
               "offset_ms": 51000,
-              "duration_ms": 2366,
+              "duration_ms": 2354,
               "caption": "运行，逐行核对输出。",
               "speech_edits": [
                 {
@@ -132,8 +179,8 @@
           "clips": [
             {
               "offset_ms": 54000,
-              "duration_ms": 5327,
-              "caption": "an_integer 是 1，a_boolean 是 true，单元值 () 也打印出来了。",
+              "duration_ms": 4878,
+              "caption": "an_integer 是 1，a_boolean 是 true，<c.aqua>单元</c.aqua>值 () 也<c.aqua>打印</c.aqua>出来了。",
               "speech_edits": [
                 {
                   "i": 36,
@@ -143,9 +190,9 @@
               ]
             },
             {
-              "offset_ms": 60000,
-              "duration_ms": 4429,
-              "caption": "把未使用的变量命名成 _ 开头，就能消除编译器警告。"
+              "offset_ms": 59000,
+              "duration_ms": 4293,
+              "caption": "把未使用的<c.aqua>变量</c.aqua>命名成 _ 开头，就能消除<c.aqua>编译器</c.aqua>警告。"
             }
           ]
         }
@@ -153,7 +200,7 @@
     },
     {
       "type": "Wait",
-      "duration_ms": 6000
+      "duration_ms": 4000
     }
   ]
 }

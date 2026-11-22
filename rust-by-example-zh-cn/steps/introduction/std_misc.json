@@ -13,14 +13,14 @@
           "asset_id": "narration_introduction_chapters",
           "clips": [
             {
-              "offset_ms": 403000,
-              "duration_ms": 2119,
+              "offset_ms": 248000,
+              "duration_ms": 2116,
               "caption": "第 20 章《标准库更多介绍》。"
             },
             {
-              "offset_ms": 406000,
-              "duration_ms": 7534,
-              "caption": "除了常见容器，标准库还覆盖<c.aqua>线程、通道、路径、文件输入输出、子进程和参数处理</c.aqua>。",
+              "offset_ms": 251000,
+              "duration_ms": 7547,
+              "caption": "除了常见容器，标准库还覆盖<c.aqua>线程</c.aqua>、通道、路径、文件输入输出、子进程和参数处理。",
               "speech_edits": [
                 {
                   "i": 1,
@@ -40,12 +40,42 @@
               ]
             },
             {
-              "offset_ms": 414000,
-              "duration_ms": 11887,
-              "caption": "这一章展示程序怎样与外部世界协作；阅读时留意<c.aqua>数据如何跨线程或进程移动</c.aqua>，以及 I/O 和路径错误为什么会成为类型设计的一部分。",
+              "offset_ms": 259000,
+              "duration_ms": 3272,
+              "caption": "这一章展示程序怎样与外部世界协作"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 166000,
+              "duration_ms": 3490,
+              "caption": "阅读时留意<c.aqua>数据</c.aqua>如何<c.aqua>跨线程</c.aqua>或<c.aqua>跨进程</c.aqua>移动。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_departure",
+          "clips": [
+            {
+              "offset_ms": 170000,
+              "duration_ms": 4809,
+              "caption": "以及 I/O 和路径<c.aqua>错误</c.aqua>为什么会成为<c.aqua>类型</c.aqua>设计的一部分。",
               "speech_edits": [
                 {
-                  "i": 52,
+                  "i": 17,
                   "s": "为",
                   "p": "WEI2"
                 }

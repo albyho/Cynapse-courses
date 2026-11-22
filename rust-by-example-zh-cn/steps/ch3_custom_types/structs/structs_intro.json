@@ -12,28 +12,28 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6182,
-              "caption": "这一节学习结构体，观察三种写法怎样组织具名字段、元组字段和空字段。"
+              "duration_ms": 6374,
+              "caption": "这一节学习<c.aqua>结构体</c.aqua>，观察三种写法怎样组织具名<c.aqua>字段</c.aqua>、<c.aqua>元组</c.aqua>字段和空字段。"
             },
             {
               "offset_ms": 7000,
-              "duration_ms": 8637,
-              "caption": "自定义类型这一章分三节：3.1 结构体，3.2 枚举，其中又分 use、C 风格和链表三个小节，3.3 常量。"
+              "duration_ms": 8574,
+              "caption": "自<c.aqua>定义类型</c.aqua>这一章分三节：3.1 <c.aqua>结构体</c.aqua>，3.2 枚举，其中又分 use、C 风格和链表三个小节，3.3 常量。"
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 7434,
-              "caption": "结构体有三种写法：具名字段的经典结构体、元组结构体，以及不带字段的单元结构体。"
+              "duration_ms": 7288,
+              "caption": "<c.aqua>结构体</c.aqua>有三种写法：具名<c.aqua>字段</c.aqua>的经典<c.aqua>结构体</c.aqua>、元组结构体，以及不带字段的单元结构体。"
             },
             {
               "offset_ms": 24000,
-              "duration_ms": 5597,
-              "caption": "具名字段用 . 访问，元组结构体用 .0、.1 访问，两者都能被 let 解构。"
+              "duration_ms": 5622,
+              "caption": "具名<c.aqua>字段</c.aqua>用 . 访问，<c.aqua>元组结构体</c.aqua>用 .0、.1 访问，两者都能被 let 解构。"
             },
             {
               "offset_ms": 30000,
-              "duration_ms": 4300,
-              "caption": "更新语法 ..point 会把其余字段从另一个值里搬过来。"
+              "duration_ms": 4403,
+              "caption": "更新语法 ..point 会把其余<c.aqua>字段</c.aqua>从另一个值里搬过来。"
             }
           ]
         }

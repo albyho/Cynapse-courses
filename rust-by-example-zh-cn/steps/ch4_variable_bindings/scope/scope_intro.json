@@ -12,13 +12,13 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7908,
-              "caption": "在可变变量之后，这一节学习作用域和遮蔽，观察绑定怎样随代码块开始和结束生效、失效。"
+              "duration_ms": 7838,
+              "caption": "在<c.aqua>可变</c.aqua><c.aqua>变量</c.aqua>之后，这一节学习<c.aqua>作用域</c.aqua>和遮蔽，观察绑定怎样随代码块开始和结束生效、失效。"
             },
             {
               "offset_ms": 8000,
-              "duration_ms": 7827,
-              "caption": "绑定只活在声明它的代码块里，块结束绑定就失效；`{}` 围起来的语句就是一个块。",
+              "duration_ms": 7877,
+              "caption": "<c.aqua>绑定</c.aqua>只活在<c.aqua>声明</c.aqua>它的<c.aqua>代码块</c.aqua>里，块结束绑定就失效；`{}` 围起来的语句就是一个块。",
               "speech_edits": [
                 {
                   "i": 23,
@@ -29,8 +29,8 @@
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 6504,
-              "caption": "同一名字可以在内层重新绑定，这叫遮蔽，内层的新值会暂时盖住外层。",
+              "duration_ms": 6429,
+              "caption": "同一名字可以在内层重新<c.aqua>绑定</c.aqua>，这叫<c.aqua>遮蔽</c.aqua>，内层的新值会暂时盖住外层。",
               "speech_edits": [
                 {
                   "i": 9,
@@ -41,8 +41,8 @@
             },
             {
               "offset_ms": 23000,
-              "duration_ms": 7328,
-              "caption": "下面故意在块外面引用只在块里存在的绑定，看编译器报 E0425，再注释掉这行。"
+              "duration_ms": 7499,
+              "caption": "下面故意在块外面<c.aqua>引用</c.aqua>只在块里存在的<c.aqua>绑定</c.aqua>，看<c.aqua>编译器</c.aqua>报 E0425，再注释掉这行。"
             }
           ]
         }

@@ -3,60 +3,60 @@
   "title": "契约：PlatformAdapter 由什么组成",
   "actions": [
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/mod.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "先看契约本身：PlatformAdapter 到底要求后端实现什么。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/mod.rs",
       "start": { "line": 39 },
       "end": { "line": 41 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "它本身是空 trait，只把四个能力接口组合起来；任何实现了这四个接口的类型，自动成为 PlatformAdapter。" }] } }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/observation.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "现在跳到 observation.rs，看观察能力要求什么。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/observation.rs",
       "start": { "line": 30 },
       "end": { "line": 36 },
       "narration": { "after": { "clips": [{ "duration_ms": 7500, "caption": "ObservationOps 负责观察：判断界面层、获取焦点应用，以及后面读树、列窗口、解析元素。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/observation.rs",
       "start": { "line": 54 },
       "end": { "line": 60 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "observe_tree 是观察的核心入口：拿到目标、树选项和 deadline，返回一次观察。各平台只在这一层不同。" }] } }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/actions.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "再跳到 actions.rs，看动作能力。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/actions.rs",
       "start": { "line": 25 },
       "end": { "line": 41 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "ActionOps 只要求两件事：执行动作，以及把元素滚进视口。预检和派发都在 core，平台只负责真正落地。" }] } }
     },
     {
-      "type": "OPEN_FILE",
+      "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/system.rs",
       "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "最后看 system.rs：权限、焦点、光标层和交互租约。" }] } }
     },
     {
-      "type": "REVEAL_TEXT",
+      "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/adapter/system.rs",
       "start": { "line": 10 },
       "end": { "line": 36 },
       "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "SystemOps 提供系统级能力：光标层、获取交互租约、权限报告。租约保证同一时间只有一个动作在操作真实输入。" }] } }
     },
-    { "type": "CLEAR_REVEAL" }
+    { "type": "ClearReveal" }
   ]
 }
