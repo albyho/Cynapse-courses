@@ -2,9 +2,7 @@
 
 [English](README.md) | 简体中文
 
-面向 [Cynapse](https://github.com/albyho/Cynapse) 的干净、仅运行时
-Course Package。作者工具、测试、Source Map 和本地运行状态不会发布到这里；
-课程资源可以是普通文件，也可以是固定提交的 git submodule。
+面向 [Cynapse](https://github.com/albyho/Cynapse) 的干净、仅运行时 Course Package。作者工具、测试、Source Map 和本地运行状态不会发布到这里；课程资源可以是普通文件，也可以是固定提交的 git submodule。
 
 ## 课程
 
@@ -15,14 +13,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 | 信号处理路线图（中文版） | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-zh-cn-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 | 信号处理路线图（英文版） | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 
-> `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；
-> 其余章节尚未发布。
->
-> `signal-processing-roadmap-zh-cn` 目前只包含简介和第 1 周（章），尚未覆盖完整路线图。
->
-> `signal-processing-roadmap` 是同一门课的英文版：Course Tree、Step 与 Cell ID、
-> 旁白区间都与中文包一致，只换了文案、代码注释和英文音色。它同样只覆盖简介和
-> 第 1 周；两个包的根 `manifest.id` 不同，进度互不影响。
+> `rust-by-example-zh-cn` 目前只包含简介和第 1–4 章，并非完整的《通过例子学 Rust》；> 其余章节尚未发布。> > `signal-processing-roadmap-zh-cn` 目前只包含简介和第 1 周（章），尚未覆盖完整路线图。> > `signal-processing-roadmap` 是同一门课的英文版：Course Tree、Step 与 Cell ID、> 旁白区间都与中文包一致，只换了文案、代码注释和英文音色。它同样只覆盖简介和 > 第 1 周；两个包的根 `manifest.id` 不同，进度互不影响。
 
 ## 使用课程
 
@@ -31,8 +22,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 对应的 Cynapse Adapter（VS Code 或 JupyterLab）。每个课程包的 `workspace/` 保留在本地，
 它保存运行状态，本仓库不会跟踪其中的内容。
 
-上表「课程包」列提供每门课的 zip 下载。解压后得到 `<课程名>/` 目录，在 Cynapse
-Client 中打开该目录即可。只有需要全部课程或固定资源 submodule 时才需要克隆本仓库。
+上表「课程包」列提供每门课的 zip 下载。解压后得到 `<课程名>/` 目录，在 Cynapse Client 中打开该目录即可。只有需要全部课程或固定资源 submodule 时才需要克隆本仓库。
 
 ### rust-by-example-zh-cn
 
@@ -42,14 +32,11 @@ Client 中打开该目录即可。只有需要全部课程或固定资源 submod
 git clone https://github.com/albyho/Cynapse-courses.git
 ```
 
-在 Cynapse Client 中打开 `Cynapse-courses/rust-by-example-zh-cn`。还需要 Rust
-`1.85.0` 或更高版本（推荐使用 `rustup`）。
+在 Cynapse Client 中打开 `Cynapse-courses/rust-by-example-zh-cn`。还需要 Rust `1.85.0` 或更高版本（推荐使用 `rustup`）。
 
 ### agent-desktop-source-analysis-zh-cn
 
-本课程通过固定 submodule 读取
-[`vercel-labs/agent-desktop`](https://github.com/vercel-labs/agent-desktop) 的
-官方源码。克隆时初始化 submodule：
+本课程通过固定 submodule 读取 [`vercel-labs/agent-desktop`](https://github.com/vercel-labs/agent-desktop) 的官方源码。克隆时初始化 submodule：
 
 ```powershell
 git clone --recurse-submodules https://github.com/albyho/Cynapse-courses.git
@@ -61,9 +48,7 @@ git clone --recurse-submodules https://github.com/albyho/Cynapse-courses.git
 git submodule update --init --recursive
 ```
 
-在 Cynapse Client 中打开 `Cynapse-courses/agent-desktop-source-analysis-zh-cn`。
-submodule 固定到提交 `b43ac4f6e892ef608f8851428613c4009f0e84c7`；也可以自行下载
-该版本并放到 `agent-desktop-source-analysis-zh-cn/resources/agent-desktop`。
+在 Cynapse Client 中打开 `Cynapse-courses/agent-desktop-source-analysis-zh-cn`。submodule 固定到提交 `b43ac4f6e892ef608f8851428613c4009f0e84c7`；也可以自行下载该版本并放到 `agent-desktop-source-analysis-zh-cn/resources/agent-desktop`。
 
 ### signal-processing-roadmap-zh-cn
 
@@ -75,11 +60,7 @@ submodule 固定到提交 `b43ac4f6e892ef608f8851428613c4009f0e84c7`；也可以
 
 ### signal-processing-roadmap
 
-`signal-processing-roadmap-zh-cn` 的英文版。在 JupyterLab 中运行，需要 Cynapse
-JupyterLab Adapter；不需要 submodule。在 Cynapse Client 中打开
-`Cynapse-courses/signal-processing-roadmap`。Node Path、`step_id`、Cell ID 和旁白
-区间与中文包一一对应，同一个 Step 在两个包里位置相同，只有文案、代码注释和音色
-不同。进度按课程包分别记录，切换语言不会带过去。
+`signal-processing-roadmap-zh-cn` 的英文版。在 JupyterLab 中运行，需要 Cynapse JupyterLab Adapter；不需要 submodule。在 Cynapse Client 中打开 `Cynapse-courses/signal-processing-roadmap`。Node Path、`step_id`、Cell ID 和旁白区间与中文包一一对应，同一个 Step 在两个包里位置相同，只有文案、代码注释和音色不同。进度按课程包分别记录，切换语言不会带过去。
 
 ### 更新
 
