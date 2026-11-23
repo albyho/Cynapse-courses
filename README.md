@@ -2,7 +2,7 @@
 
 English | [简体中文](README.zh-CN.md)
 
-Clean, runtime-only [Cynapse](https://github.com/albyho/Cynapse-release) Course
+Clean, runtime-only [Cynapse](https://github.com/albyho/Cynapse) Course
 Packages. Authoring notes, tests, source maps, and local runtime state are not
 published here. Course resources may be normal files or pinned git submodules.
 
@@ -10,7 +10,7 @@ published here. Course resources may be normal files or pinned git submodules.
 
 | Course | Version | Package | Based on |
 | --- | --- | --- | --- |
-| Rust by Example (Chinese) | `0.20.21` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.21) | [Rust by Example (Chinese)](https://github.com/rust-lang-cn/rust-by-example-cn) |
+| Rust by Example (Chinese) | `0.20.21` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.21) | [Rust by Example (Chinese)](https://rustwiki.org/zh-CN/rust-by-example/) |
 | agent-desktop Source Analysis (Chinese) | `0.39.0` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/agent-desktop-source-analysis-zh-cn-0.39.0) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
 | Signal Processing Roadmap (Chinese) | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-zh-cn-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 | Signal Processing Roadmap (English) | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
@@ -28,7 +28,7 @@ published here. Course resources may be normal files or pinned git submodules.
 
 ## Using a course
 
-Install [Cynapse Client](https://github.com/albyho/Cynapse-release/releases) and
+Install [Cynapse Client](https://github.com/albyho/Cynapse/releases) and
 the matching Cynapse Adapter (VS Code or JupyterLab) first. Keep each package's
 `workspace/` directory local; it contains runtime state and is intentionally not
 tracked here.
@@ -133,8 +133,10 @@ be added as submodules.
 ## Source and license
 
 The Rust course is adapted from
-[Rust by Example (Chinese)](https://github.com/rust-lang-cn/rust-by-example-cn),
-observed on 2026-11-03, and is distributed under the MIT OR Apache-2.0 license.
+[Rust by Example (Chinese)](https://rustwiki.org/zh-CN/rust-by-example/),
+observed on 2026-11-03. Its upstream source and license are
+[rust-lang-cn/rust-by-example-cn](https://github.com/rust-lang-cn/rust-by-example-cn)
+(MIT OR Apache-2.0).
 The agent-desktop course links its upstream source as a pinned submodule and
 keeps that repository's Apache-2.0 license. The signal-processing courses
 (Chinese and English) reference

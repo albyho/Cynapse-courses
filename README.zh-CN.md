@@ -2,7 +2,7 @@
 
 [English](README.md) | 简体中文
 
-面向 [Cynapse](https://github.com/albyho/Cynapse-release) 的干净、仅运行时
+面向 [Cynapse](https://github.com/albyho/Cynapse) 的干净、仅运行时
 Course Package。作者工具、测试、Source Map 和本地运行状态不会发布到这里；
 课程资源可以是普通文件，也可以是固定提交的 git submodule。
 
@@ -10,7 +10,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 
 | 课程 | 版本 | 课程包 | 改编自 |
 | --- | --- | --- | --- |
-| 通过例子学 Rust（中文版） | `0.20.21` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.21) | [Rust by Example（中文版）](https://github.com/rust-lang-cn/rust-by-example-cn) |
+| 通过例子学 Rust（中文版） | `0.20.21` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.21) | [Rust by Example（中文版）](https://rustwiki.org/zh-CN/rust-by-example/) |
 | agent-desktop 源码分析（中文版） | `0.39.0` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/agent-desktop-source-analysis-zh-cn-0.39.0) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
 | 信号处理路线图（中文版） | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-zh-cn-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 | 信号处理路线图（英文版） | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
@@ -26,7 +26,7 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 
 ## 使用课程
 
-先安装 [Cynapse Client](https://github.com/albyho/Cynapse-release/releases) 和
+先安装 [Cynapse Client](https://github.com/albyho/Cynapse/releases) 和
 对应的 Cynapse Adapter（VS Code 或 JupyterLab）。每个课程包的 `workspace/` 保留在本地，
 它保存运行状态，本仓库不会跟踪其中的内容。
 
@@ -122,8 +122,10 @@ python courses/publish_course.py courses/<课程> D:\dev\alby\Cynapse-courses
 ## 来源与许可
 
 Rust 课程改编自
-[Rust by Example（中文版）](https://github.com/rust-lang-cn/rust-by-example-cn)，
-页面观察日期为 2026-11-03，按 MIT OR Apache-2.0 许可分发。agent-desktop 课程以
+[Rust by Example（中文版）](https://rustwiki.org/zh-CN/rust-by-example/)，
+页面观察日期为 2026-11-03；上游源码与许可见
+[rust-lang-cn/rust-by-example-cn](https://github.com/rust-lang-cn/rust-by-example-cn)
+（MIT OR Apache-2.0）。agent-desktop 课程以
 固定 submodule 引用上游源码，并保留其 Apache-2.0 许可。信号处理课程参考
 [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap)
 的章节骨架和主题，讲解、Notebook 和练习为原创。详见
