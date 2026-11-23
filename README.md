@@ -116,20 +116,6 @@ git -C agent-desktop-source-analysis-zh-cn/resources/agent-desktop rev-parse HEA
 └── workspace/         Runtime Workspace (empty in this repository)
 ```
 
-## Adding a course
-
-Publish a source package with the helper from the Cynapse source repository:
-
-```powershell
-python courses/publish_course.py courses/<course> D:\dev\alby\Cynapse-courses
-```
-
-The helper copies only runtime content and skips `authoring/`, `tests/`,
-generated narration reports, caches, and `workspace/` state. Ordinary
-`resources/` files are copied normally; Git repositories under `resources/` are
-left out, and the helper prints their remote URL and pinned commit so they can
-be added as submodules.
-
 ## Source and license
 
 The Rust course is adapted from

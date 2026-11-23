@@ -107,18 +107,6 @@ git -C agent-desktop-source-analysis-zh-cn/resources/agent-desktop rev-parse HEA
 └── workspace/         运行时 Workspace（本仓库中为空）
 ```
 
-## 添加课程
-
-在 Cynapse 源码仓库中使用辅助脚本发布源课程包：
-
-```powershell
-python courses/publish_course.py courses/<课程> D:\dev\alby\Cynapse-courses
-```
-
-脚本只复制运行时内容，跳过 `authoring/`、`tests/`、生成的字幕报告、缓存和
-`workspace/` 运行状态。`resources/` 下的普通文件会正常复制；Git 仓库不会被复制，
-脚本会打印其远程地址和固定提交，供后续以 submodule 方式引用。
-
 ## 来源与许可
 
 Rust 课程改编自
