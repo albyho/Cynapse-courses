@@ -28,8 +28,9 @@ published here. Course resources may be normal files or pinned git submodules.
 
 ## Using a course
 
-Install [Cynapse Client](https://github.com/albyho/Cynapse/releases) and
-the matching Cynapse Adapter (VS Code or JupyterLab) first. Keep each package's
+Install [Cynapse Client](https://apps.microsoft.com/detail/9p145r16w33t) from the
+Microsoft Store, or the zip from [Releases](https://github.com/albyho/Cynapse/releases),
+together with the matching Cynapse Adapter (VS Code or JupyterLab) first. Keep each package's
 `workspace/` directory local; it contains runtime state and is intentionally not
 tracked here.
 

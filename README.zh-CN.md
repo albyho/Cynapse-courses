@@ -26,7 +26,8 @@ Course Package。作者工具、测试、Source Map 和本地运行状态不会�
 
 ## 使用课程
 
-先安装 [Cynapse Client](https://github.com/albyho/Cynapse/releases) 和
+先从 [Microsoft Store](https://apps.microsoft.com/detail/9p145r16w33t) 或
+[Releases](https://github.com/albyho/Cynapse/releases) 安装 Cynapse Client，再装
 对应的 Cynapse Adapter（VS Code 或 JupyterLab）。每个课程包的 `workspace/` 保留在本地，
 它保存运行状态，本仓库不会跟踪其中的内容。
 
