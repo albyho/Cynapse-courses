@@ -1,0 +1,65 @@
+{
+  "step_id": "025_compatibility",
+  "title": "简介: 兼容性",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 31
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_025_compatibility",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 1794,
+              "caption": "第 23 章《兼容性》。"
+            },
+            {
+              "offset_ms": 2000,
+              "duration_ms": 3306,
+              "caption": "这一章看 Rust 怎样在演进中保持兼容。"
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 2689,
+              "caption": "这一章会看语言变化可能带来的冲突。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_025_compatibility",
+          "clips": [
+            {
+              "offset_ms": 9000,
+              "duration_ms": 3378,
+              "caption": "这一章会看接口和历史代码之间的约束。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_025_compatibility",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 2712,
+              "caption": "也要考虑未来迁移是不是可控。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

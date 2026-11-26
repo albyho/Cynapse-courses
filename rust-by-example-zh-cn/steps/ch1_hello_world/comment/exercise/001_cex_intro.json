@@ -1,0 +1,91 @@
+{
+  "step_id": "001_cex_intro",
+  "title": "先看初始输出",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "comment.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise_001_cex_intro",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 9140,
+              "caption": "动手试一试：comment.rs 里已经有带<c.aqua>注释</c.aqua>的代码。先运行一次看初始输出，再依次取消行<c.aqua>注释</c.aqua>和块<c.aqua>注释</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 30,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 44,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc comment.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise_001_cex_intro",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 893,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./comment",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "Is `x` 10 or 100? x = 10"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_comment_exercise_001_cex_intro",
+          "clips": [
+            {
+              "offset_ms": 11000,
+              "duration_ms": 3811,
+              "caption": "初始输出只有 x = 10；Hello, world! 还被<c.aqua>注释</c.aqua>着。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Wait",
+      "duration_ms": 4000
+    }
+  ]
+}

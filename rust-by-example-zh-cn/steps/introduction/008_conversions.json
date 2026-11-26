@@ -1,0 +1,108 @@
+{
+  "step_id": "008_conversions",
+  "title": "简介: 类型转换",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 14
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_008_conversions",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 1912,
+              "caption": "第 6 章《类型转换》。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "转",
+                  "p": "ZHUAN3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 2000,
+              "duration_ms": 2927,
+              "caption": "这一章看不同类型之间怎样转换。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "转",
+                  "p": "ZHUAN3"
+                }
+              ]
+            },
+            {
+              "offset_ms": 5000,
+              "duration_ms": 2946,
+              "caption": "先记住一点：Rust 不会悄悄帮你强转。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_008_conversions",
+          "clips": [
+            {
+              "offset_ms": 8000,
+              "duration_ms": 4405,
+              "caption": "这一章会看哪些转换总能成功，哪些可能失败。",
+              "speech_edits": [
+                {
+                  "i": 7,
+                  "s": "转",
+                  "p": "ZHUAN3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_008_conversions",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 3089,
+              "caption": "转换的意图通常写在类型或方法上。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "转",
+                  "p": "ZHUAN3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_008_conversions",
+          "clips": [
+            {
+              "offset_ms": 17000,
+              "duration_ms": 2948,
+              "caption": "后面的例子会反复用到这个区别。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

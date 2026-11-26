@@ -1,0 +1,57 @@
+{
+  "step_id": "026_meta",
+  "title": "简介: 补充",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 32
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_026_meta",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 1493,
+              "caption": "第 24 章《补充》。"
+            },
+            {
+              "offset_ms": 2000,
+              "duration_ms": 3016,
+              "caption": "这一章是文档和基准测试这些主题。"
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 2913,
+              "caption": "这一章会看编程之外同样重要的工具。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "重",
+                  "p": "ZHONG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_026_meta",
+          "clips": [
+            {
+              "offset_ms": 9000,
+              "duration_ms": 4719,
+              "caption": "这一章会看它们怎样让代码变得可理解、可验证、可维护。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

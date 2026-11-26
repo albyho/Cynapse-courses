@@ -1,0 +1,282 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
+  "audio": "assets/narration/ch1_hello_world/print/fmt/002_fmt_code.ogg",
+  "source_duration_ms": 80307,
+  "input_hash": "f1454631eac09037c4360af134f933f66813feb490e79f619dfd578c753a8162",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 6020,
+      "caption": "Display 决定类型用 {} 打印时的样子，实现它就能自定义输出。",
+      "speech_edits": [
+        {
+          "i": 14,
+          "s": "{}",
+          "p": "一对大括号"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "af3727c14d33bb35c9a7386396ae03a931704a98affa8b6a0261d3cbf4b75b86"
+    },
+    {
+      "offset_ms": 7000,
+      "duration_ms": 5063,
+      "caption": "接下来在 fmt_demo.rs 里为 City <c.aqua>实现</c.aqua> Display，Color 暂时用 Debug <c.aqua>打印</c.aqua>。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 3,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "7d323cc86d27d86609a269930e955c1402f6605b52df56b9e94c8734269c1a2d"
+    },
+    {
+      "offset_ms": 13000,
+      "duration_ms": 3451,
+      "caption": "先导入<c.aqua>格式化</c.aqua>需要的 fmt、Formatter 和 Display。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "e89947e5ba3dde9399d9c75597df809f870e7866c5bfb9f5cb29bed010a6204d"
+    },
+    {
+      "offset_ms": 17000,
+      "duration_ms": 3183,
+      "caption": "接着<c.aqua>定义</c.aqua> City，存名字、纬度和经度。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "着",
+          "p": "ZHE5"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 1
+      },
+      "cache_key": "71010b319de7c61914871f62962be5ca1f681ad8c61ce33b234a3b872438674c"
+    },
+    {
+      "offset_ms": 21000,
+      "duration_ms": 4643,
+      "caption": "再为 City <c.aqua>实现</c.aqua> Display，按南北纬和东西经输出三位小数。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 2
+      },
+      "cache_key": "4b64a6916d2dca90fdb6653e969f855ae22b819867ebf73e49924e3e36810ee8"
+    },
+    {
+      "offset_ms": 26000,
+      "duration_ms": 4116,
+      "caption": "Display 先用两个条件判断挑出南北纬和东西经。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 4,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "51ad1742fc53a7cfd61c756d9bb482364783a29bb6b0c0e84450017fc4db0a17"
+    },
+    {
+      "offset_ms": 31000,
+      "duration_ms": 3998,
+      "caption": "再用 write! 按三位小数把经纬度写进缓冲区。",
+      "speech_edits": [
+        {
+          "i": 3,
+          "s": "write!",
+          "p": "write 宏"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 5,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "312b850c46583e04395f9470db9710d42f3cb7c218468473648429d0791c292a"
+    },
+    {
+      "offset_ms": 35000,
+      "duration_ms": 2675,
+      "caption": "先用 derive 给 Color 加上 Debug <c.aqua>实现</c.aqua>。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 6,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "a4c0c2c4f3811cac5b6b01162d0eb025f0dc346bbfd104be0f1fb12cddb36f2b"
+    },
+    {
+      "offset_ms": 38000,
+      "duration_ms": 3430,
+      "caption": "main 的前半段遍历三座城市，用 Display <c.aqua>打印</c.aqua>。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 6,
+        "phase": "during",
+        "clip_index": 1
+      },
+      "cache_key": "61bd11882900d861f051632bf54188d9ce8a4108a24840f11ef30324df0ae1ed"
+    },
+    {
+      "offset_ms": 42000,
+      "duration_ms": 4948,
+      "caption": "后半段遍历三个颜色，先用 {:?} 观察 Debug 输出。",
+      "speech_edits": [
+        {
+          "i": 13,
+          "s": "{:?}",
+          "p": "大括号冒号问号"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 6,
+        "phase": "during",
+        "clip_index": 2
+      },
+      "cache_key": "5d9fdaa13262694cb2869d8c636b7d2f5919111b06406237e43fdf26a4ac4342"
+    },
+    {
+      "offset_ms": 47000,
+      "duration_ms": 8321,
+      "caption": "main 把三座城市和三个颜色放进<c.aqua>数组</c.aqua>循环<c.aqua>打印</c.aqua>，颜色这一页先用 {:?} 观察<c.aqua>结构体</c.aqua>形式。",
+      "speech_edits": [
+        {
+          "i": 32,
+          "s": "{:?}",
+          "p": "大括号冒号问号"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 7,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "90233a09b6eab22147a5d0aa102e60888c354617fda25e13b634ba14900d020e"
+    },
+    {
+      "offset_ms": 56000,
+      "duration_ms": 1374,
+      "caption": "编译成功。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 9,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "c0b3685bb2571ca50331a036fbf522664fecae8b6a448684d31b0786ae9897f7"
+    },
+    {
+      "offset_ms": 58000,
+      "duration_ms": 4163,
+      "caption": "刚才的警告是在说 Color 的三个<c.aqua>字段</c.aqua>从未被读取。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 9,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "2173c3efb80c84bcdb95444448747326ebe2291754d6a5a2ec40ab920ba3360e"
+    },
+    {
+      "offset_ms": 63000,
+      "duration_ms": 2213,
+      "caption": "<c.aqua>字段</c.aqua>只被<c.aqua>派生</c.aqua>的 Debug 使用",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 9,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "70fd1b806a40232179c5af532b2e806596ad5f8f3e0eb3e8ae534a33e176b9ee"
+    },
+    {
+      "offset_ms": 66000,
+      "duration_ms": 3252,
+      "caption": "而 rustc 的 dead_code 分析会忽略<c.aqua>派生实现</c.aqua>。",
+      "speech_edits": [
+        {
+          "i": 10,
+          "s": "dead_code",
+          "p": "dead code"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 10,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "3e505d826cd5bedf02881ffd1dd54e970a73d56e8559aa27219115c1a8ad2464"
+    },
+    {
+      "offset_ms": 70000,
+      "duration_ms": 5001,
+      "caption": "这不是编译<c.aqua>错误</c.aqua>，练习<c.aqua>实现</c.aqua> Display 后<c.aqua>字段</c.aqua>就会被真正读取。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 11,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "355462960ce98e9a277e4b8e929693beb9443cb4bbf30ab525225c8a8ae8dd97"
+    },
+    {
+      "offset_ms": 76000,
+      "duration_ms": 3307,
+      "caption": "城市用 Display 输出，颜色先用 Debug 输出。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json",
+        "action_index": 12,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "e11e8e67882570636cf3e4bbeb0bc194b8a02424c3c9eb9c1828b400876e0a77"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch1_hello_world_comment_001_comment_intro",
+  "audio": "assets/narration/ch1_hello_world/comment/001_comment_intro.ogg",
+  "source_duration_ms": 13869,
+  "input_hash": "79e59deecb34cbbcc21d9deb329ae2cb5a0d69a4ca0af890d7617a32c11088ec",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 6754,
+      "caption": "这一节学习行<c.aqua>注释</c.aqua>和块<c.aqua>注释</c.aqua>的写法，并观察<c.aqua>注释</c.aqua>怎样改变一段表达式的值。",
+      "speech_edits": [
+        {
+          "i": 5,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/comment/001_comment_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "86f2364e5efc370521d32d7d57d4106f0414b681388741fbd134b707a96b5c21"
+    },
+    {
+      "offset_ms": 7000,
+      "duration_ms": 5869,
+      "caption": "行<c.aqua>注释</c.aqua>以 // 开头，块<c.aqua>注释</c.aqua>用 /* 和 */ 包住。",
+      "speech_edits": [
+        {
+          "i": 0,
+          "s": "行",
+          "p": "HANG2"
+        },
+        {
+          "i": 5,
+          "s": "//",
+          "p": "双斜杠"
+        },
+        {
+          "i": 16,
+          "s": "/*",
+          "p": "块注释开始"
+        },
+        {
+          "i": 21,
+          "s": "*/",
+          "p": "块注释结束"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/comment/001_comment_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "8aa77634ed6b59b353e332c75e18192981eb4c3a3ef28a8e4252568b2d37d7d8"
+    }
+  ]
+}

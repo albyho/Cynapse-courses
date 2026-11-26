@@ -1,0 +1,65 @@
+{
+  "step_id": "024_unsafe",
+  "title": "简介: 不安全操作",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 30
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_024_unsafe",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 2088,
+              "caption": "第 22 章《不安全操作》。"
+            },
+            {
+              "offset_ms": 3000,
+              "duration_ms": 2954,
+              "caption": "这一章看哪些操作需要显式标记。"
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 3076,
+              "caption": "这一章看它出现在这类场景的原因。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_024_unsafe",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 4431,
+              "caption": "这一章会看每段不安全代码要满足什么安全前提。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_024_unsafe",
+          "clips": [
+            {
+              "offset_ms": 15000,
+              "duration_ms": 1785,
+              "caption": "再判断收益是否值得。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

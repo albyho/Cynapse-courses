@@ -1,0 +1,63 @@
+{
+  "step_id": "004_declare_fix",
+  "title": "挑战：注释掉未初始化引用",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "declare.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare_004_declare_fix",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 2458,
+              "caption": "现在轮到我们修正 declare.rs。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_declare_004_declare_fix",
+          "clips": [
+            {
+              "offset_ms": 3000,
+              "duration_ms": 4610,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    }
+  ],
+  "challenge": {
+    "instructions": "让 declare.rs 通过，终端输出 a binding: 4、another binding: 1。",
+    "checks": [
+      {
+        "type": "COMMAND",
+        "session_key": "main",
+        "cwd": ".",
+        "command": "rustc declare.rs; ./declare",
+        "accepted_exit_codes": [
+          0
+        ],
+        "expected_output": [
+          "a binding: 4",
+          "another binding: 1"
+        ],
+        "timeout_ms": 300000
+      }
+    ],
+    "hint": "在初始化之前的 `println!(\"another binding: {}\", another_binding);` 前加 `// `，把这次打印注释掉。",
+    "allow_skip": true
+  }
+}

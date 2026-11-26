@@ -1,0 +1,83 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_introduction_026_meta",
+  "audio": "assets/narration/introduction/026_meta.ogg",
+  "source_duration_ms": 14719,
+  "input_hash": "45650e87f4189a892b7bb77eadc26732a8970b75c9dc7040f5329c0538a58c3d",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 1493,
+      "caption": "第 24 章《补充》。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/026_meta.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "90889ed0e2d763f6919d8ec1a88f95d381b737d29f3d7482abb9a358af8460df"
+    },
+    {
+      "offset_ms": 2000,
+      "duration_ms": 3016,
+      "caption": "这一章是文档和基准测试这些主题。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/026_meta.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "4a3513256785f64895f70f8b2440b26a89a4deb1d8add7bdbdc877fca702cc00"
+    },
+    {
+      "offset_ms": 6000,
+      "duration_ms": 2913,
+      "caption": "这一章会看编程之外同样重要的工具。",
+      "speech_edits": [
+        {
+          "i": 11,
+          "s": "重",
+          "p": "ZHONG4"
+        }
+      ],
+      "target": {
+        "step_file": "steps/introduction/026_meta.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "5b9c9fbe8140288029a5ed06efe203b7b7cbfc5a5abfc0780d2bb4d15256658e"
+    },
+    {
+      "offset_ms": 9000,
+      "duration_ms": 4719,
+      "caption": "这一章会看它们怎样让代码变得可理解、可验证、可维护。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/026_meta.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "0da7052d1e86bd0efa39034dd98450ecb815c8312e12674e58b866223639021c"
+    }
+  ]
+}

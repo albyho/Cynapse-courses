@@ -1,0 +1,103 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_introduction_013_crates",
+  "audio": "assets/narration/introduction/013_crates.ogg",
+  "source_duration_ms": 23928,
+  "input_hash": "152a9f08774821f886c47d993c7c9b780418598fc3cd4d79c49ef9e45acb0986",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 1380,
+      "caption": "第 11 章《crate》。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/013_crates.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "6833f202929619861cbdd1aa6f5ab24ce4368d7ab0cdf0262346e02cd5b9d14a"
+    },
+    {
+      "offset_ms": 2000,
+      "duration_ms": 2128,
+      "caption": "crate 是 Rust 中的编译单元。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/013_crates.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "a6bf98d8a0619eb0e8d4bac1d4d57993cd0839f771ef88ff5c23cdc2576c2a0a"
+    },
+    {
+      "offset_ms": 5000,
+      "duration_ms": 2414,
+      "caption": "这一章学习怎样创建一个库。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/013_crates.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "77ad17db6b669e5a73308c387bbb5c192eade4aab0c184db2e884f775aa8b3b5"
+    },
+    {
+      "offset_ms": 8000,
+      "duration_ms": 4156,
+      "caption": "这一章会看模块要先纳入 crate，才一起参与编译。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/013_crates.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "2c58a1ca944c57808f622a7ff981a50efa9c98b83a5f7ec7ea5d29411ec88248"
+    },
+    {
+      "offset_ms": 13000,
+      "duration_ms": 5100,
+      "caption": "理解了这层边界，就能判断一个文件为什么不能独立编译。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/013_crates.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "159b2575a1a6554cf04fc2289a2636c52084e0b9bb0f083df37cebdc87710452"
+    },
+    {
+      "offset_ms": 19000,
+      "duration_ms": 3928,
+      "caption": "也能看出项目里为什么同时需要模块和 crate。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/013_crates.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "987aae91ed829dd5619b250cb6ada448eb4dfe199d376d72e2076b9d9efd5edd"
+    }
+  ]
+}

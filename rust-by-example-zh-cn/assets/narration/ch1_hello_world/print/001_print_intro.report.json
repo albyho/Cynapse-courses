@@ -1,0 +1,120 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch1_hello_world_print_001_print_intro",
+  "audio": "assets/narration/ch1_hello_world/print/001_print_intro.ogg",
+  "source_duration_ms": 24778,
+  "input_hash": "df937d56caf31651e7d75317fb4c16ff43b90a8117ea6eeb5e8ed0348eeaac60",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 8130,
+      "caption": "这一节学习 Rust 的<c.aqua>格式化</c.aqua>输出，认识 std::fmt 里的<c.aqua>打印宏</c.aqua>，并观察占位符怎样把值填进输出。",
+      "speech_edits": [
+        {
+          "i": 24,
+          "s": "::",
+          "p": "双冒号"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/001_print_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "24b398bc64d7b6224c6795eb34ee1b219ce7b61923745b093197ddf26ebcfc43"
+    },
+    {
+      "offset_ms": 9000,
+      "duration_ms": 5185,
+      "caption": "format!、print!、println!、eprint!、eprintln! 共用一套格式语法",
+      "speech_edits": [
+        {
+          "i": 0,
+          "s": "format!",
+          "p": "format 宏"
+        },
+        {
+          "i": 8,
+          "s": "print!",
+          "p": "print 宏"
+        },
+        {
+          "i": 15,
+          "s": "println!",
+          "p": "println 宏"
+        },
+        {
+          "i": 24,
+          "s": "eprint!",
+          "p": "eprint 宏"
+        },
+        {
+          "i": 32,
+          "s": "eprintln!",
+          "p": "eprintln 宏"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/001_print_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "293739cdb83752e00e7abbe7dfa011078a745c536e5ba9fda1384f568d3051c2"
+    },
+    {
+      "offset_ms": 15000,
+      "duration_ms": 5040,
+      "caption": "下面演示位置<c.aqua>参数</c.aqua>、命名<c.aqua>参数</c.aqua>，以及宽度和对齐格式。",
+      "speech_edits": [
+        {
+          "i": 6,
+          "s": "参",
+          "p": "CAN1"
+        },
+        {
+          "i": 11,
+          "s": "参",
+          "p": "CAN1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/001_print_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "1f25395a50a1eee9994fb676cc6e30747a8c37b3c3e9e34234b5fc9497f1a6bc"
+    },
+    {
+      "offset_ms": 21000,
+      "duration_ms": 2778,
+      "caption": "格式是否正确在编译期就被检查。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/001_print_intro.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "9eb4d8cf3503c237c169b1d4fbae191b96940fc792797bf749348104c50350a8"
+    }
+  ]
+}

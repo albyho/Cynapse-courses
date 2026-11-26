@@ -1,0 +1,60 @@
+{
+  "step_id": "027_departure",
+  "title": "开始动手",
+  "actions": [
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_027_departure",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 3168,
+              "caption": "全书的目录，我们刚才快速过了一遍。"
+            },
+            {
+              "offset_ms": 4000,
+              "duration_ms": 3141,
+              "caption": "接下来从第 1 章 Hello World 开始动手。"
+            },
+            {
+              "offset_ms": 8000,
+              "duration_ms": 2665,
+              "caption": "每一章都会配上可以运行的小例子。",
+              "speech_edits": [
+                {
+                  "i": 10,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_027_departure",
+          "clips": [
+            {
+              "offset_ms": 11000,
+              "duration_ms": 5009,
+              "caption": "我们会在编辑器和终端里，亲眼看着代码被编译、运行。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

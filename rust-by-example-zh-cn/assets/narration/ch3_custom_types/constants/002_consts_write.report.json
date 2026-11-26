@@ -1,0 +1,173 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch3_custom_types_constants_002_consts_write",
+  "audio": "assets/narration/ch3_custom_types/constants/002_consts_write.ogg",
+  "source_duration_ms": 48438,
+  "input_hash": "ea5af000c4f472636b58dbbbe44347abb9929d596aa13513fc74fa141eac26b1",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 5725,
+      "caption": "常量和静态变量在函数外声明，类型必须写清楚，函数里也能读取。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "baa2a20eac357345bfe1d076543f9301160ec049008f2a3a858471b8ecb8cc4c"
+    },
+    {
+      "offset_ms": 6000,
+      "duration_ms": 2660,
+      "caption": "逐行写入<c.aqua>常量</c.aqua>、static 和 is_big。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 3,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "a3194b046878d11ec402912d4730c8a747c7fb4c3e0010dcbc8b3899da518e96"
+    },
+    {
+      "offset_ms": 9000,
+      "duration_ms": 3683,
+      "caption": "先在函数外声明 static LANGUAGE 和 const THRESHOLD。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "fafb1dcaf67d884e4bb59b4d82f1c982afd62de0286747af3a17120cec73f6f5"
+    },
+    {
+      "offset_ms": 13000,
+      "duration_ms": 2868,
+      "caption": "is_big <c.aqua>函数</c.aqua>读取<c.aqua>常量</c.aqua> THRESHOLD 做比较。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 1
+      },
+      "cache_key": "aec8fa80565ff11fd7e2c6b4fd6db6b6dc82b360ad1b3f28db4817dbb4430498"
+    },
+    {
+      "offset_ms": 16000,
+      "duration_ms": 3589,
+      "caption": "main 里<c.aqua>打印</c.aqua>两个<c.aqua>常量</c.aqua>，并用 is_big 判断 16。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 2
+      },
+      "cache_key": "6c9e6f4ac52347ce2d9606f4912eb02f0a8f771ee69ae7859115ffe82e49bc76"
+    },
+    {
+      "offset_ms": 20000,
+      "duration_ms": 4987,
+      "caption": "给 const <c.aqua>赋值</c.aqua>的那行保持<c.aqua>注释</c.aqua>，下一页会观察 E0070。",
+      "speech_edits": [
+        {
+          "i": 12,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 3
+      },
+      "cache_key": "408ea8fbeace265c4398e38b010a9eb2d82f841894c2968f70845b35b6bea13e"
+    },
+    {
+      "offset_ms": 25000,
+      "duration_ms": 5115,
+      "caption": "static LANGUAGE 和 const THRESHOLD 都在全局<c.aqua>作用域</c.aqua>，<c.aqua>类型</c.aqua>必须写清楚。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 4,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "a31190af24ac2a9ee7bcde6b9088d4c9c203d5c57e63205832f36df7b027b3a3"
+    },
+    {
+      "offset_ms": 31000,
+      "duration_ms": 4488,
+      "caption": "is_big 直接比较 n > THRESHOLD，<c.aqua>函数</c.aqua>内部也能访问全局<c.aqua>常量</c.aqua>。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 5,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "0a135c5ad709cf745b4202d1c6f645311196a7a537a7a05d8a0db859bf3189b8"
+    },
+    {
+      "offset_ms": 36000,
+      "duration_ms": 4658,
+      "caption": "main 读取<c.aqua>静态</c.aqua><c.aqua>字符串</c.aqua>和<c.aqua>常量</c.aqua>，再根据 is_big 打印 big 或 small。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 6,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "3fd6451483128c46695bfca93c40ac5a545b08cc569eb39fcd091d162d2a0d6c"
+    },
+    {
+      "offset_ms": 41000,
+      "duration_ms": 6438,
+      "caption": "最后一行给 THRESHOLD <c.aqua>赋值</c.aqua>是故意的；const <c.aqua>不可变</c.aqua>，下一步会看到 E0070。",
+      "speech_edits": [
+        {
+          "i": 3,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch3_custom_types/constants/002_consts_write.json",
+        "action_index": 7,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "89a07daa0d404976a8966822a707c3c628586866fbc3d5de89a197b54a5406c9"
+    }
+  ]
+}

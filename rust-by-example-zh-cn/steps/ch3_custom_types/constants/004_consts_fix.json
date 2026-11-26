@@ -1,0 +1,64 @@
+{
+  "step_id": "004_consts_fix",
+  "title": "挑战：注释掉非法赋值",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "consts.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_constants_004_consts_fix",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 2303,
+              "caption": "现在轮到我们修正 consts.rs。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_constants_004_consts_fix",
+          "clips": [
+            {
+              "offset_ms": 3000,
+              "duration_ms": 4610,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    }
+  ],
+  "challenge": {
+    "instructions": "让 consts.rs 通过，终端输出 This is Rust、The threshold is 10、16 is big；THRESHOLD 仍然是常量。",
+    "checks": [
+      {
+        "type": "COMMAND",
+        "session_key": "main",
+        "cwd": ".",
+        "command": "rustc consts.rs; ./consts",
+        "accepted_exit_codes": [
+          0
+        ],
+        "expected_output": [
+          "This is Rust",
+          "The threshold is 10",
+          "16 is big"
+        ],
+        "timeout_ms": 300000
+      }
+    ],
+    "hint": "在 `THRESHOLD = 5;` 前加 `// `，把非法赋值注释掉。",
+    "allow_skip": true
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "step_id": "001_rust",
+  "title": "认识 Rust",
+  "actions": [
+    {
+      "type": "OpenFileWithPreview",
+      "path": "INTRO.md",
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_001_rust",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 4744,
+              "caption": "今天我们开始学习《通过例子学 Rust》这本官方电子教程。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 3
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_001_rust",
+          "clips": [
+            {
+              "offset_ms": 5000,
+              "duration_ms": 2137,
+              "caption": "Rust 注重<c.aqua>安全</c.aqua>、<c.aqua>速度</c.aqua>和<c.aqua>并发</c.aqua>。"
+            },
+            {
+              "offset_ms": 8000,
+              "duration_ms": 2291,
+              "caption": "它用<c.aqua>内存安全</c.aqua>实现这些目标。"
+            },
+            {
+              "offset_ms": 11000,
+              "duration_ms": 1950,
+              "caption": "同时<c.aqua>不依赖</c.aqua><c.aqua>垃圾回收</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_001_rust",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 3548,
+              "caption": "内存安全把许多常见错误挡在编译阶段。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_001_rust",
+          "clips": [
+            {
+              "offset_ms": 17000,
+              "duration_ms": 3774,
+              "caption": "不依赖垃圾回收，则让运行开销更可预测。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_001_rust",
+          "clips": [
+            {
+              "offset_ms": 21000,
+              "duration_ms": 3215,
+              "caption": "这些特性让<c.aqua>Rust</c.aqua>适合编写系统级程序。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_001_rust",
+          "clips": [
+            {
+              "offset_ms": 25000,
+              "duration_ms": 2925,
+              "caption": "这三点会贯穿后面的每一个例子。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

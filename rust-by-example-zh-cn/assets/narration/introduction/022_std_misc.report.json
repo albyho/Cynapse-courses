@@ -1,0 +1,96 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_introduction_022_std_misc",
+  "audio": "assets/narration/introduction/022_std_misc.ogg",
+  "source_duration_ms": 17803,
+  "input_hash": "861b7124bcbeb2902f687bfaf593e1c8109fe0f2c15398a917d992c2f598b2d8",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 2335,
+      "caption": "第 20 章《标准库更多介绍》。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/022_std_misc.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "8ed44053256879973c2409589a12d69cbef0b411b38372848be42bce8dcf4e9c"
+    },
+    {
+      "offset_ms": 3000,
+      "duration_ms": 2827,
+      "caption": "这一章更多讲文件处理、线程这些内容。",
+      "speech_edits": [
+        {
+          "i": 8,
+          "s": "处",
+          "p": "CHU3"
+        }
+      ],
+      "target": {
+        "step_file": "steps/introduction/022_std_misc.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "036ccfb0d94c20f4ca41be99021625bb8ec0113e79e47bd2844fe07cff6f3199"
+    },
+    {
+      "offset_ms": 6000,
+      "duration_ms": 2994,
+      "caption": "这一章会看程序怎样和外部世界协作。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/022_std_misc.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "401128003d8ccaea92f7973d98d5d49cb72c399a5f0a1764462286a9b44ac0b6"
+    },
+    {
+      "offset_ms": 9000,
+      "duration_ms": 3971,
+      "caption": "这一章会看数据怎样在线程或进程之间移动。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/022_std_misc.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "a6189f1691075ea7059df39ea9cce5522bdf970dd475914302be27631514d28d"
+    },
+    {
+      "offset_ms": 13000,
+      "duration_ms": 3803,
+      "caption": "以及输入输出错误为什么会出现在类型里。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/022_std_misc.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "4fff3152875be7148a0a813c8b368491e4ccbb520573d0f32ec06617763f89d2"
+    }
+  ]
+}

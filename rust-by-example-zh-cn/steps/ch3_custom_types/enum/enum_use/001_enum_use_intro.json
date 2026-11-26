@@ -1,0 +1,52 @@
+{
+  "step_id": "001_enum_use_intro",
+  "title": "use 的作用",
+  "actions": [
+    {
+      "type": "OpenPreview",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_enum_use_001_enum_use_intro",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 9124,
+              "caption": "在认识<c.aqua>枚举</c.aqua><c.aqua>变体</c.aqua>之后，这一节学习 use，观察它怎样把<c.aqua>枚举</c.aqua>成员引入当前作用域、减少重复的完整路径。",
+              "speech_edits": [
+                {
+                  "i": 40,
+                  "s": "重",
+                  "p": "CHONG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 10000,
+              "duration_ms": 5546,
+              "caption": "use 把<c.aqua>枚举</c.aqua>成员引入当前<c.aqua>作用域</c.aqua>，之后就不用每次都写完整路径。"
+            },
+            {
+              "offset_ms": 16000,
+              "duration_ms": 8834,
+              "caption": "use Status::{Poor, Rich} 只引入列出的两个成员；use Work::* 引入全部成员。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "Status::{Poor, Rich}",
+                  "p": "Status 双冒号左大括号 Poor 逗号 Rich 右大括号"
+                },
+                {
+                  "i": 40,
+                  "s": "Work::*",
+                  "p": "Work 双冒号星号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch1_hello_world_print_testcase_list_001_list_intro",
+  "audio": "assets/narration/ch1_hello_world/print/testcase_list/001_list_intro.ogg",
+  "source_duration_ms": 18931,
+  "input_hash": "bfec2ac77b2b26e7d7b7b66d11d26107cbfe2e5ef2376b9b9b6dff4098eca3df",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 7221,
+      "caption": "这一节学习为多<c.aqua>元素</c.aqua>容器<c.aqua>实现</c.aqua> Display，观察怎样逐个输出<c.aqua>元素</c.aqua>并用 ? 传递写入错误。",
+      "speech_edits": [
+        {
+          "i": 34,
+          "s": " ? ",
+          "p": "问号"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/testcase_list/001_list_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "da4c87ee2f4f061f4bdcb7cd5cfbdf01193e2e6602f33d8d9ab0bc9d4817d079"
+    },
+    {
+      "offset_ms": 8000,
+      "duration_ms": 4641,
+      "caption": "为含有多个<c.aqua>元素</c.aqua>的容器<c.aqua>实现</c.aqua> Display 时，要逐个处理<c.aqua>元素</c.aqua>。",
+      "speech_edits": [
+        {
+          "i": 26,
+          "s": "处",
+          "p": "CHU3"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/testcase_list/001_list_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "367f55fe0e9b1646ae940e2eb0cd3c398d0c112e141eac23dbdba4f4dd7306f3"
+    },
+    {
+      "offset_ms": 13000,
+      "duration_ms": 4931,
+      "caption": "借助 ? 操作符，可以把每次 write! 的<c.aqua>错误</c.aqua>统一向上传递。",
+      "speech_edits": [
+        {
+          "i": 2,
+          "s": " ? ",
+          "p": "问号"
+        },
+        {
+          "i": 15,
+          "s": "write!",
+          "p": "write 宏"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/testcase_list/001_list_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "8f840dcd3a7f913fe5b1672d9b4643e123690e884ed54c2d58c5a422aea05db1"
+    }
+  ]
+}

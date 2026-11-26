@@ -1,0 +1,51 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch4_variable_bindings_freeze_004_freeze_fix",
+  "audio": "assets/narration/ch4_variable_bindings/freeze/004_freeze_fix.ogg",
+  "source_duration_ms": 8610,
+  "input_hash": "0b65a7df9dd3124c25668b0a2a318b0e819e42dda986a48a1e626c4e754b4132",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 2329,
+      "caption": "现在轮到我们修正 freeze.rs。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/freeze/004_freeze_fix.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "292e193d3472962fdd93e7fd6d501733279cff1bd4db5d01d767cb0bc7336d88"
+    },
+    {
+      "offset_ms": 3000,
+      "duration_ms": 4610,
+      "caption": "终端留给我们自己动手，改完代码后在这里编译验证。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/freeze/004_freeze_fix.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "1d1c252a8692b07a70dbf9784daf68fef285423450080d513dcb129bd31fe871"
+    }
+  ]
+}

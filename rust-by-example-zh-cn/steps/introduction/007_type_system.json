@@ -1,0 +1,72 @@
+{
+  "step_id": "007_type_system",
+  "title": "简介: 类型系统",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 13
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_007_type_system",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 1444,
+              "caption": "第 5 章《类型系统》。"
+            },
+            {
+              "offset_ms": 2000,
+              "duration_ms": 2902,
+              "caption": "这一章学习怎样改变和定义类型。"
+            },
+            {
+              "offset_ms": 5000,
+              "duration_ms": 2775,
+              "caption": "先把前面的类型规则串起来看。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_007_type_system",
+          "clips": [
+            {
+              "offset_ms": 8000,
+              "duration_ms": 4696,
+              "caption": "这一章会看类型别名和推断分别在什么时候派上用场。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_007_type_system",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 4345,
+              "caption": "重点是理解类型从哪里来，不是记住所有写法。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "重",
+                  "p": "ZHONG4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

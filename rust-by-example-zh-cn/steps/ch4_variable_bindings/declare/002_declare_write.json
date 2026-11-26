@@ -1,0 +1,155 @@
+{
+  "step_id": "002_declare_write",
+  "title": "写入延迟初始化示例",
+  "actions": [
+    {
+      "type": "CreateFile",
+      "path": "declare.rs"
+    },
+    {
+      "type": "OpenFile",
+      "path": "declare.rs"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_declare_002_declare_write",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6424,
+              "caption": "绑定可以先声明、后初始化，类型留给赋值推断，但读取必须在初始化之后。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "InsertText",
+      "path": "declare.rs",
+      "speed_ms": 40,
+      "target": {
+        "eof": true
+      },
+      "text": "fn main() {\n    // 声明一个变量绑定\n    let a_binding;\n\n    {\n        let x = 2;\n\n        // 初始化一个绑定\n        a_binding = x * x;\n    }\n\n    println!(\"a binding: {}\", a_binding);\n\n    let another_binding;\n\n    // 报错！使用了未初始化的绑定\n    println!(\"another binding: {}\", another_binding);\n    // 改正 ^ 注释掉此行\n\n    another_binding = 1;\n\n    println!(\"another binding: {}\", another_binding);\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch4_variable_bindings_declare_002_declare_write",
+          "clips": [
+            {
+              "offset_ms": 7000,
+              "duration_ms": 4733,
+              "caption": "接下来在 declare.rs 里先<c.aqua>声明</c.aqua> a_binding，在子块里再初始化它。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_declare_002_declare_write",
+          "clips": [
+            {
+              "offset_ms": 12000,
+              "duration_ms": 2827,
+              "caption": "逐行写入延迟初始化的示例。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "declare.rs",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 3
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare_002_declare_write",
+          "clips": [
+            {
+              "offset_ms": 15000,
+              "duration_ms": 4766,
+              "caption": "let a_binding; 只<c.aqua>声明</c.aqua>，不初始化；<c.aqua>类型</c.aqua>留给后面的<c.aqua>赋值</c.aqua>推断。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "declare.rs",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare_002_declare_write",
+          "clips": [
+            {
+              "offset_ms": 20000,
+              "duration_ms": 5777,
+              "caption": "进入子块，x = 2，再用 a_binding = x * x 初始化；子块结束时 a_binding 仍然有效。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "declare.rs",
+      "start": {
+        "line": 12
+      },
+      "end": {
+        "line": 17
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare_002_declare_write",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 6127,
+              "caption": "另一个<c.aqua>绑定</c.aqua> another_binding 在初始化之前就被<c.aqua>打印</c.aqua>，<c.aqua>编译器</c.aqua>会报 E0381。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "declare.rs",
+      "start": {
+        "line": 20
+      },
+      "end": {
+        "line": 22
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_declare_002_declare_write",
+          "clips": [
+            {
+              "offset_ms": 33000,
+              "duration_ms": 5916,
+              "caption": "先赋值再打印，another_binding 就有值了；这也是延迟初始化的正确顺序。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

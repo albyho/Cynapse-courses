@@ -1,0 +1,63 @@
+{
+  "step_id": "004_mut_fix",
+  "title": "挑战：修复不可变赋值",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "mut.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_mut_004_mut_fix",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 2139,
+              "caption": "现在轮到我们修正 mut.rs。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_mut_004_mut_fix",
+          "clips": [
+            {
+              "offset_ms": 3000,
+              "duration_ms": 4610,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    }
+  ],
+  "challenge": {
+    "instructions": "让 mut.rs 通过，终端输出 Before mutation: 1 与 After mutation: 2；_immutable_binding 仍然不可变。",
+    "checks": [
+      {
+        "type": "COMMAND",
+        "session_key": "main",
+        "cwd": ".",
+        "command": "rustc mut.rs; ./mut",
+        "accepted_exit_codes": [
+          0
+        ],
+        "expected_output": [
+          "Before mutation: 1",
+          "After mutation: 2"
+        ],
+        "timeout_ms": 300000
+      }
+    ],
+    "hint": "在 `_immutable_binding += 1;` 前加 `// `，把非法自增注释掉。",
+    "allow_skip": true
+  }
+}

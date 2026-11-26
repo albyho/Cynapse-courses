@@ -1,0 +1,43 @@
+{
+  "step_id": "005_consts_wrapup",
+  "title": "收尾：const 的边界",
+  "actions": [
+    {
+      "type": "Present",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_constants_005_consts_wrapup",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 3751,
+              "caption": "E0070 说明 const 不能在运行时<c.aqua>赋值</c.aqua>",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_constants_005_consts_wrapup",
+          "clips": [
+            {
+              "offset_ms": 4000,
+              "duration_ms": 4767,
+              "caption": "<c.aqua>注释</c.aqua>掉非法<c.aqua>赋值</c.aqua>后，程序<c.aqua>打印</c.aqua> Rust、阈值 10 和 16 is big。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

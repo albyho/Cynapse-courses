@@ -1,0 +1,78 @@
+{
+  "step_id": "003_freeze_error",
+  "title": "观察 E0384",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "freeze.rs"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_freeze_003_freeze_error",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5989,
+              "caption": "绑定被借用时在借用期间就被冻结，不能改动，否则会破坏借用规则。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc freeze.rs",
+      "accepted_exit_codes": [
+        1
+      ],
+      "expected_output": [
+        "E0384"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_variable_bindings_freeze_003_freeze_error",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 5712,
+              "caption": "<c.aqua>编译器</c.aqua>说不能对处于冻结状态的<c.aqua>绑定</c.aqua>二次<c.aqua>赋值</c.aqua>，错误码 E0384。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Wait",
+      "duration_ms": 5000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_freeze_003_freeze_error",
+          "clips": [
+            {
+              "offset_ms": 12000,
+              "duration_ms": 5636,
+              "caption": "E0384 的<c.aqua>报错</c.aqua>停在终端，我们对照源码看它指向哪一行。",
+              "speech_edits": [
+                {
+                  "i": 26,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

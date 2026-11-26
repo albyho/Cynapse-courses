@@ -1,0 +1,426 @@
+{
+  "step_id": "002_list_code",
+  "title": "为 List 实现 Display",
+  "actions": [
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6006,
+              "caption": "标准库的 Vec 想用 {} 打印，得为包装它的类型自己实现 Display。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 7000,
+              "duration_ms": 2260,
+              "caption": "为包含 Vec 的 List <c.aqua>实现</c.aqua> Display。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CreateFile",
+      "path": "list_demo.rs"
+    },
+    {
+      "type": "OpenFile",
+      "path": "list_demo.rs"
+    },
+    {
+      "type": "InsertText",
+      "path": "list_demo.rs",
+      "speed_ms": 32,
+      "target": {
+        "eof": true
+      },
+      "text": "use std::fmt; // 导入 `fmt` 模块。\n\n// 定义一个包含单个 `Vec` 的结构体 `List`。\nstruct List(Vec<i32>);\n\nimpl fmt::Display for List {\n    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n        // 使用元组的下标获取值，并创建一个 `vec` 的引用。\n        let vec = &self.0;\n\n        write!(f, \"[\")?;\n\n        // 使用 `v` 对 `vec` 进行迭代，并用 `count` 记录迭代次数。\n        for (count, v) in vec.iter().enumerate() {\n            // 对每个元素（第一个元素除外）加上逗号。\n            // 使用 `?` 或 `try!` 来返回错误。\n            if count != 0 { write!(f, \", \")?; }\n            write!(f, \"{}\", v)?;\n        }\n\n        // 加上配对中括号，并返回一个 fmt::Result 值。\n        write!(f, \"]\")\n    }\n}\n\nfn main() {\n    let v = List(vec![1, 2, 3]);\n    println!(\"{}\", v);\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 4134,
+              "caption": "接下来在 list_demo.rs 里为包含 Vec 的 List <c.aqua>实现</c.aqua> Display。"
+            },
+            {
+              "offset_ms": 15000,
+              "duration_ms": 3340,
+              "caption": "逐行写入 List <c.aqua>定义</c.aqua>、Display <c.aqua>实现</c.aqua>和 main。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 19000,
+              "duration_ms": 1634,
+              "caption": "先导入 fmt 模块。"
+            },
+            {
+              "offset_ms": 21000,
+              "duration_ms": 2238,
+              "caption": "<c.aqua>定义</c.aqua> List，里面只包一个 Vec。"
+            },
+            {
+              "offset_ms": 24000,
+              "duration_ms": 3737,
+              "caption": "<c.aqua>实现</c.aqua> Display：先写左中括号，再准备遍历<c.aqua>元素</c.aqua>。"
+            },
+            {
+              "offset_ms": 28000,
+              "duration_ms": 3991,
+              "caption": "循环里用 count 判断逗号，用 ? 传递写入<c.aqua>错误</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 17,
+                  "s": " ? ",
+                  "p": "问号"
+                }
+              ]
+            },
+            {
+              "offset_ms": 32000,
+              "duration_ms": 2707,
+              "caption": "最后补上右中括号并返回结果。"
+            },
+            {
+              "offset_ms": 35000,
+              "duration_ms": 6153,
+              "caption": "main 构造 List(vec![1, 2, 3])，<c.aqua>打印</c.aqua>出 [1, 2, 3]。",
+              "speech_edits": [
+                {
+                  "i": 17,
+                  "s": "[1, 2, 3]",
+                  "p": "方括号 1 逗号 2 逗号 3"
+                },
+                {
+                  "i": 32,
+                  "s": "[1, 2, 3]",
+                  "p": "方括号 1 逗号 2 逗号 3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "list_demo.rs",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 4
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 42000,
+              "duration_ms": 7595,
+              "caption": "List 是一个<c.aqua>元组结构体</c.aqua>，里面包着 Vec<i32>；要自<c.aqua>定义</c.aqua>输出，就得为它实现 fmt::Display。",
+              "speech_edits": [
+                {
+                  "i": 45,
+                  "s": "::",
+                  "p": "双冒号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "list_demo.rs",
+      "start": {
+        "line": 6
+      },
+      "end": {
+        "line": 9
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 50000,
+              "duration_ms": 5334,
+              "caption": "fmt 接收 &self 和 Formatter；用 &self.0 <c.aqua>借用</c.aqua>里面的 Vec，后面才能迭代。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "list_demo.rs",
+      "start": {
+        "line": 11
+      },
+      "end": {
+        "line": 19
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 56000,
+              "duration_ms": 1659,
+              "caption": "先写左中括号"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 58000,
+              "duration_ms": 4072,
+              "caption": "enumerate 同时给出<c.aqua>下标</c.aqua>和值，count 不为 0 时补逗号。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 3084,
+              "caption": "再用 write! 把每个<c.aqua>元素</c.aqua>写进 Formatter。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "write!",
+                  "p": "write 宏"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "list_demo.rs",
+      "start": {
+        "line": 21
+      },
+      "end": {
+        "line": 22
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 67000,
+              "duration_ms": 3271,
+              "caption": "最后补右中括号，返回 fmt::Result。",
+              "speech_edits": [
+                {
+                  "i": 14,
+                  "s": "::",
+                  "p": "双冒号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "list_demo.rs",
+      "start": {
+        "line": 26
+      },
+      "end": {
+        "line": 29
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 71000,
+              "duration_ms": 3536,
+              "caption": "main 构造 List(vec![1, 2, 3])",
+              "speech_edits": [
+                {
+                  "i": 17,
+                  "s": "[1, 2, 3]",
+                  "p": "方括号 1 逗号 2 逗号 3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 75000,
+              "duration_ms": 4472,
+              "caption": "println! 调用 Display，输出 [1, 2, 3]。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "println!",
+                  "p": "println 宏"
+                },
+                {
+                  "i": 9,
+                  "s": "调",
+                  "p": "DIAO4"
+                },
+                {
+                  "i": 23,
+                  "s": "[1, 2, 3]",
+                  "p": "方括号 1 逗号 2 逗号 3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc list_demo.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 80000,
+              "duration_ms": 1374,
+              "caption": "编译成功。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./list_demo",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "[1, 2, 3]"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 82000,
+              "duration_ms": 2723,
+              "caption": "输出 [1, 2, 3]。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "[1, 2, 3]",
+                  "p": "方括号 1 逗号 2 逗号 3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Wait",
+      "duration_ms": 4000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 85000,
+              "duration_ms": 6219,
+              "caption": "输出 [1, 2, 3]，我们对照源码看这一行是怎么来的。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "[1, 2, 3]",
+                  "p": "方括号 1 逗号 2 逗号 3"
+                },
+                {
+                  "i": 22,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

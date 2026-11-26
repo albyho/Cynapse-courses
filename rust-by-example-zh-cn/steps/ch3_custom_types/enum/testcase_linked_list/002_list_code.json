@@ -1,0 +1,517 @@
+{
+  "step_id": "002_list_code",
+  "title": "递归方法",
+  "actions": [
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6001,
+              "caption": "递归类型用枚举表示：一个变体存数据和下一个节点，另一个表示结尾。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 7000,
+              "duration_ms": 2675,
+              "caption": "用 Cons 和 Nil 两个<c.aqua>变体</c.aqua>描述链表。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CreateFile",
+      "path": "linked_list.rs"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 5128,
+              "caption": "接下来定义 Cons 和 Nil，再补上 new、prepend、len 和 stringify 几个方法。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "OpenFile",
+      "path": "linked_list.rs"
+    },
+    {
+      "type": "InsertText",
+      "path": "linked_list.rs",
+      "speed_ms": 15,
+      "target": {
+        "eof": true
+      },
+      "text": "use List::*;\n\nenum List {\n    // Cons：元组结构体，包含链表的一个元素和一个指向下一节点的指针\n    Cons(u32, Box<List>),\n    // Nil：末结点，表明链表结束\n    Nil,\n}\n\n// 可以为 enum 定义方法\nimpl List {\n    // 创建一个空的 List 实例\n    fn new() -> List {\n        // `Nil` 为 `List` 类型（译注：因 `Nil` 的完整名称是 `List::Nil`）\n        Nil\n    }\n\n    // 处理一个 List，在其头部插入新元素，并返回该 List\n    fn prepend(self, elem: u32) -> List {\n        // `Cons` 同样为 List 类型\n        Cons(elem, Box::new(self))\n    }\n\n    // 返回 List 的长度\n    fn len(&self) -> u32 {\n        // 必须对 `self` 进行匹配（match），因为这个方法的行为取决于 `self` 的\n        // 取值种类。\n        // `self` 为 `&List` 类型，`*self` 为 `List` 类型，匹配一个具体的 `T`\n        // 类型要好过匹配引用 `&T`。\n        match *self {\n            // 不能得到 tail 的所有权，因为 `self` 是借用的；\n            // 因此使用一个对 tail 的引用\n            Cons(_, ref tail) => 1 + tail.len(),\n            // （递归的）基准情形（base case）：一个长度为 0 的空列表\n            Nil => 0\n        }\n    }\n\n    // 返回列表的字符串表示（该字符串是堆分配的）\n    fn stringify(&self) -> String {\n        match *self {\n            Cons(head, ref tail) => {\n                // `format!` 和 `print!` 类似，但返回的是一个堆分配的字符串，\n                // 而不是打印结果到控制台上\n                format!(\"{}, {}\", head, tail.stringify())\n            },\n            Nil => {\n                format!(\"Nil\")\n            },\n        }\n    }\n}\n\nfn main() {\n    // 创建一个空链表\n    let mut list = List::new();\n\n    // 追加一些元素\n    list = list.prepend(1);\n    list = list.prepend(2);\n    list = list.prepend(3);\n\n    // 显示链表的最后状态\n    println!(\"linked list has length: {}\", list.len());\n    println!(\"{}\", list.stringify());\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 16000,
+              "duration_ms": 3044,
+              "caption": "逐行写入 Cons、Nil、三个<c.aqua>方法</c.aqua>和 main。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 20000,
+              "duration_ms": 2832,
+              "caption": "先把 List 的<c.aqua>变体</c.aqua>引入当前<c.aqua>作用域</c.aqua>。"
+            },
+            {
+              "offset_ms": 23000,
+              "duration_ms": 3794,
+              "caption": "<c.aqua>枚举</c.aqua>用 Cons 存<c.aqua>元素</c.aqua>和下一个节点，Nil 表示结尾。"
+            },
+            {
+              "offset_ms": 27000,
+              "duration_ms": 3127,
+              "caption": "impl 里先写 new，返回一个空的 Nil 链表。"
+            },
+            {
+              "offset_ms": 31000,
+              "duration_ms": 3043,
+              "caption": "prepend 把新<c.aqua>元素</c.aqua>放到头部并返回新链表。"
+            },
+            {
+              "offset_ms": 35000,
+              "duration_ms": 3154,
+              "caption": "len 用 match <c.aqua>递归</c.aqua>计算，Nil 的<c.aqua>长度</c.aqua>是 0。",
+              "speech_edits": [
+                {
+                  "i": 22,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 39000,
+              "duration_ms": 4256,
+              "caption": "stringify 同样<c.aqua>递归</c.aqua>，把<c.aqua>元素</c.aqua>拼成逗号分隔的<c.aqua>字符串</c.aqua>。"
+            },
+            {
+              "offset_ms": 44000,
+              "duration_ms": 4241,
+              "caption": "main 连续 prepend 三次，<c.aqua>打印</c.aqua><c.aqua>长度</c.aqua>和 3, 2, 1, Nil。",
+              "speech_edits": [
+                {
+                  "i": 21,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "linked_list.rs",
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 8
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 49000,
+              "duration_ms": 5353,
+              "caption": "List 只有两个<c.aqua>变体</c.aqua>：Cons 把当前<c.aqua>元素</c.aqua>和 Box<List> 的尾节点放在一起"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 55000,
+              "duration_ms": 1573,
+              "caption": "Nil 表示空链表。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 57000,
+              "duration_ms": 3356,
+              "caption": "use List::* 让后面能直接写 Cons 和 Nil。",
+              "speech_edits": [
+                {
+                  "i": 8,
+                  "s": "::",
+                  "p": "双冒号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "linked_list.rs",
+      "start": {
+        "line": 10
+      },
+      "end": {
+        "line": 22
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 61000,
+              "duration_ms": 1469,
+              "caption": "new 返回 Nil"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 3536,
+              "caption": "prepend 接收 self 的<c.aqua>所有权</c.aqua>，把新<c.aqua>元素</c.aqua>包成 Cons。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 67000,
+              "duration_ms": 3684,
+              "caption": "再把原来的链表 Box::new(self) 挂到后面。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "::",
+                  "p": "双冒号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "linked_list.rs",
+      "start": {
+        "line": 24
+      },
+      "end": {
+        "line": 37
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 71000,
+              "duration_ms": 4354,
+              "caption": "len 用 match *self <c.aqua>递归</c.aqua>：Cons 返回 1 + tail.len()",
+              "speech_edits": [
+                {
+                  "i": 31,
+                  "s": "+",
+                  "p": "JIA1"
+                },
+                {
+                  "i": 41,
+                  "s": "()",
+                  "p": "一对圆括号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 76000,
+              "duration_ms": 1844,
+              "caption": "Nil 是基准情形返回 0。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 78000,
+              "duration_ms": 2819,
+              "caption": "ref tail 只<c.aqua>借用</c.aqua>尾节点，不抢走<c.aqua>所有权</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "linked_list.rs",
+      "start": {
+        "line": 39
+      },
+      "end": {
+        "line": 52
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 81000,
+              "duration_ms": 5468,
+              "caption": "stringify 同样<c.aqua>递归</c.aqua>，format! 把当前<c.aqua>元素</c.aqua>和尾节点的<c.aqua>字符串</c.aqua>拼起来",
+              "speech_edits": [
+                {
+                  "i": 15,
+                  "s": "format!",
+                  "p": "format 宏"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 87000,
+              "duration_ms": 2919,
+              "caption": "Nil 返回 Nil，所以最终输出以 Nil 结尾。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "linked_list.rs",
+      "start": {
+        "line": 54
+      },
+      "end": {
+        "line": 66
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 90000,
+              "duration_ms": 8329,
+              "caption": "main 先建空链表，再连续 prepend 三次；因为每次插到头部，最终顺序是 3、2、1、Nil，<c.aqua>长度</c.aqua>是 3。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "为",
+                  "p": "WEI4"
+                },
+                {
+                  "i": 51,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc linked_list.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 99000,
+              "duration_ms": 904,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./linked_list",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "linked list has length: 3",
+        "3, 2, 1, Nil"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 100000,
+              "duration_ms": 1741,
+              "caption": "运行，看<c.aqua>长度</c.aqua>和内容。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 4,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 102000,
+              "duration_ms": 3373,
+              "caption": "prepend 依次插入 1、2、3，<c.aqua>长度</c.aqua>是 3。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 106000,
+              "duration_ms": 4099,
+              "caption": "stringify 从头部<c.aqua>递归</c.aqua>拼到最后，输出 3, 2, 1, Nil。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Wait",
+      "duration_ms": 5000,
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+          "clips": [
+            {
+              "offset_ms": 111000,
+              "duration_ms": 6991,
+              "caption": "prepend 依次插入 1、2、3，<c.aqua>长度</c.aqua>是 3，我们对照源码看这一行是怎么来的。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "长",
+                  "p": "CHANG2"
+                },
+                {
+                  "i": 34,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

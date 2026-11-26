@@ -1,0 +1,90 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_introduction_015_attributes",
+  "audio": "assets/narration/introduction/015_attributes.ogg",
+  "source_duration_ms": 18405,
+  "input_hash": "62c315ae34e3d385dab97eb5caca7f505396c3d60dafbffc1da8639f570e91aa",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 1811,
+      "caption": "第 13 章《属性》。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/015_attributes.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "64d9f1b56bccc710c46644a1d60422c8eac2b12177114045877f1fb5a8249199"
+    },
+    {
+      "offset_ms": 2000,
+      "duration_ms": 3326,
+      "caption": "属性是应用于模块、crate 或项的元数据。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/015_attributes.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "c56a79c1530fcbde706c0c535898ad7dcf61f3b7aa1ca5e210a37286499bd198"
+    },
+    {
+      "offset_ms": 6000,
+      "duration_ms": 2768,
+      "caption": "这一章会看属性怎样写在代码上。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/015_attributes.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "077b3bf1bac886576e7c335eb10803ba286e87299478d055f1e4443017f5b911"
+    },
+    {
+      "offset_ms": 9000,
+      "duration_ms": 4524,
+      "caption": "这一章会看作用于整个 crate 和作用于单个项的区别。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/015_attributes.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "7d2275f0beda571b34cf83eae60207cd207482cca2e2fd7518c444f36344d278"
+    },
+    {
+      "offset_ms": 14000,
+      "duration_ms": 3405,
+      "caption": "以及属性怎样把编译策略明确写出来。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/015_attributes.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "32827a1c34c2d32b43086086cc7cdf314af8406a159d5ff2edc0c88c321102ac"
+    }
+  ]
+}

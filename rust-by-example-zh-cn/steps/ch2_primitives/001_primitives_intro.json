@@ -1,0 +1,90 @@
+{
+  "step_id": "001_primitives_intro",
+  "title": "原生类型概览",
+  "actions": [
+    {
+      "type": "OpenPreview",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_001_primitives_intro",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5988,
+              "caption": "这一节概览 Rust 的原生<c.aqua>类型</c.aqua>，理解标量与复合<c.aqua>类型</c.aqua>怎样组成程序里的值。"
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 3259,
+              "caption": "Rust 的原生<c.aqua>类型</c.aqua>分两类：标量是单个值"
+            },
+            {
+              "offset_ms": 10000,
+              "duration_ms": 7086,
+              "caption": "复合<c.aqua>类型</c.aqua>把多个值放在一起，这一章会用到<c.aqua>数组</c.aqua>和<c.aqua>元组</c.aqua>，2.2 和 2.3 分别展开。"
+            },
+            {
+              "offset_ms": 18000,
+              "duration_ms": 7998,
+              "caption": "还需要记住的是<c.aqua>类型</c.aqua>从哪里来：可以显式标注，可以加后缀，也可以交给<c.aqua>编译器</c.aqua>按上下文推断"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_001_primitives_intro",
+          "clips": [
+            {
+              "offset_ms": 26000,
+              "duration_ms": 6670,
+              "caption": "包括各种宽度的有符号与无符号<c.aqua>整数</c.aqua>、f32 和 f64 <c.aqua>浮点</c.aqua>、char <c.aqua>字符</c.aqua>、bool 布尔。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_001_primitives_intro",
+          "clips": [
+            {
+              "offset_ms": 33000,
+              "duration_ms": 3655,
+              "caption": "以及只有 () 一个值的<c.aqua>单元类型</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "()",
+                  "p": "一对圆括号"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_001_primitives_intro",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 4944,
+              "caption": "推断不出来时才落到默认值，<c.aqua>整数</c.aqua>是 i32，<c.aqua>浮点</c.aqua>是 f64。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

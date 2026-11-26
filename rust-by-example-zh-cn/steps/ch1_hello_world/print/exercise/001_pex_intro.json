@@ -1,0 +1,49 @@
+{
+  "step_id": "001_pex_intro",
+  "title": "练习说明",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "print.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_exercise_001_pex_intro",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6744,
+              "caption": "动手试一试：print.rs 里留着两个编译<c.aqua>错误</c.aqua>，先修正它们，再新增一行<c.aqua>打印</c.aqua> Pi",
+              "speech_edits": [
+                {
+                  "i": 35,
+                  "s": "行",
+                  "p": "HANG2"
+                },
+                {
+                  "i": 39,
+                  "s": "Pi",
+                  "p": "PAI4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_exercise_001_pex_intro",
+          "clips": [
+            {
+              "offset_ms": 7000,
+              "duration_ms": 3794,
+              "caption": "最终输出完整的名字和三位小数的近似值。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

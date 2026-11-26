@@ -1,0 +1,122 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch2_primitives_001_primitives_intro",
+  "audio": "assets/narration/ch2_primitives/001_primitives_intro.ogg",
+  "source_duration_ms": 42944,
+  "input_hash": "9aa21eec8faa5e4dafc185459b021d3b3a1f7919cc12cf5cfa9adc7490472bc4",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 5988,
+      "caption": "这一节概览 Rust 的原生<c.aqua>类型</c.aqua>，理解标量与复合<c.aqua>类型</c.aqua>怎样组成程序里的值。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/001_primitives_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "406ddfe2ec216a3b4aa07539e6dd6755618b151ffc397306e1ca7e8736848954"
+    },
+    {
+      "offset_ms": 6000,
+      "duration_ms": 3259,
+      "caption": "Rust 的原生<c.aqua>类型</c.aqua>分两类：标量是单个值",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/001_primitives_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "edf3960ef8fe0402c5c043ad8584b0989b2ea3141a0ef891ec1f59e2ef49de25"
+    },
+    {
+      "offset_ms": 10000,
+      "duration_ms": 7086,
+      "caption": "复合<c.aqua>类型</c.aqua>把多个值放在一起，这一章会用到<c.aqua>数组</c.aqua>和<c.aqua>元组</c.aqua>，2.2 和 2.3 分别展开。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/001_primitives_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "4530f6f5ec6aa90da1a79aacc898e1ba59e766e6b1eecf6859c9fa68413d2d8e"
+    },
+    {
+      "offset_ms": 18000,
+      "duration_ms": 7998,
+      "caption": "还需要记住的是<c.aqua>类型</c.aqua>从哪里来：可以显式标注，可以加后缀，也可以交给<c.aqua>编译器</c.aqua>按上下文推断",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/001_primitives_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 3
+      },
+      "cache_key": "39d3a3ac42301011e0b337f254916997bdb3774c5517eb93ae1caacd106e1e81"
+    },
+    {
+      "offset_ms": 26000,
+      "duration_ms": 6670,
+      "caption": "包括各种宽度的有符号与无符号<c.aqua>整数</c.aqua>、f32 和 f64 <c.aqua>浮点</c.aqua>、char <c.aqua>字符</c.aqua>、bool 布尔。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/001_primitives_intro.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "641cee058d471d3acc80e27a3d7d2208a80de8d679fc0015d874c32887967317"
+    },
+    {
+      "offset_ms": 33000,
+      "duration_ms": 3655,
+      "caption": "以及只有 () 一个值的<c.aqua>单元类型</c.aqua>。",
+      "speech_edits": [
+        {
+          "i": 5,
+          "s": "()",
+          "p": "一对圆括号"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/001_primitives_intro.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "779b450b32246030528d01b9d3afd99048057bb17060de3f286922a6645f69ce"
+    },
+    {
+      "offset_ms": 37000,
+      "duration_ms": 4944,
+      "caption": "推断不出来时才落到默认值，<c.aqua>整数</c.aqua>是 i32，<c.aqua>浮点</c.aqua>是 f64。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/001_primitives_intro.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "83f964d36811e6d3e91a63921f24ff0f06c59653762906ae1e81f794064b7a79"
+    }
+  ]
+}

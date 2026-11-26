@@ -2,6 +2,12 @@
 
 Published Course Packages. Versions match each package's `manifest.json`.
 
+## 2026-11-27
+
+- `rust-by-example-zh-cn` 0.20.27: renumber Steps with three-digit prefixes,
+  split narration into one Ogg per Step, add inline formula captions, render
+  Challenge hints as Markdown, and refresh the introduction transitions.
+
 ## 2026-11-22
 
 - `rust-by-example-zh-cn` 0.20.21: sync the latest source package; `0.20.17`

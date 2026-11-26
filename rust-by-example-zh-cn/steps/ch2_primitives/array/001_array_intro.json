@@ -1,0 +1,91 @@
+{
+  "step_id": "001_array_intro",
+  "title": "数组与切片介绍",
+  "actions": [
+    {
+      "type": "OpenPreview",
+      "path": "INTRO.md",
+      "view": "current",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_array_001_array_intro",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 9614,
+              "caption": "在<c.aqua>元组</c.aqua>之后，这一节学习<c.aqua>数组</c.aqua>和<c.aqua>切片</c.aqua>，观察定长数组与借用一段数据的切片在类型和访问上的区别。",
+              "speech_edits": [
+                {
+                  "i": 14,
+                  "s": "切",
+                  "p": "QIE1"
+                },
+                {
+                  "i": 20,
+                  "s": "长",
+                  "p": "CHANG2"
+                },
+                {
+                  "i": 31,
+                  "s": "切",
+                  "p": "QIE1"
+                }
+              ]
+            },
+            {
+              "offset_ms": 10000,
+              "duration_ms": 5641,
+              "caption": "数组的长度写在类型里，编译时就确定，元素在内存中连续存放。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 16000,
+              "duration_ms": 8481,
+              "caption": "<c.aqua>切片</c.aqua>本身不拥有数据，它<c.aqua>借用</c.aqua><c.aqua>数组</c.aqua>的一段，长度在运行时才知道，类型写成 &[T]。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "切",
+                  "p": "QIE1"
+                },
+                {
+                  "i": 19,
+                  "s": "长",
+                  "p": "CHANG2"
+                },
+                {
+                  "i": 23,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 34,
+                  "s": "&[T]",
+                  "p": "引用方括号 T"
+                }
+              ]
+            },
+            {
+              "offset_ms": 25000,
+              "duration_ms": 4974,
+              "caption": "两者都从 0 开始编号，越界访问会在运行时直接 panic。",
+              "speech_edits": [
+                {
+                  "i": 19,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

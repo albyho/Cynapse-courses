@@ -1,0 +1,352 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch2_primitives_array_002_array_code",
+  "audio": "assets/narration/ch2_primitives/array/002_array_code.ogg",
+  "source_duration_ms": 75690,
+  "input_hash": "f77ecdf10e1f14825c475077acb154ec46f8de5b639817199fa5d0ab2a1df8f7",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 7218,
+      "caption": "数组长度固定，编译期就确定；切片是对数组某一段的借用，可以只借一部分。",
+      "speech_edits": [
+        {
+          "i": 2,
+          "s": "长",
+          "p": "CHANG2"
+        },
+        {
+          "i": 14,
+          "s": "切",
+          "p": "QIE1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "0a9fb0d7e2593c3a8b61eb76dfa70bc4a74a58c690079059a5a761334974dbac"
+    },
+    {
+      "offset_ms": 8000,
+      "duration_ms": 6539,
+      "caption": "接下来在 array.rs 里写入定长<c.aqua>数组</c.aqua>、<c.aqua>长度</c.aqua>、内存占用和<c.aqua>切片</c.aqua>借用的示例。",
+      "speech_edits": [
+        {
+          "i": 18,
+          "s": "长",
+          "p": "CHANG2"
+        },
+        {
+          "i": 22,
+          "s": "长",
+          "p": "CHANG2"
+        },
+        {
+          "i": 30,
+          "s": "切",
+          "p": "QIE1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "7534f80bf62ce9e2cf6c0dafa4ef5ce3aea18f87557d1fc61f98230a64b882b7"
+    },
+    {
+      "offset_ms": 15000,
+      "duration_ms": 3523,
+      "caption": "逐行写入<c.aqua>数组</c.aqua>、<c.aqua>切片</c.aqua>和<c.aqua>借用</c.aqua>的示例。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "行",
+          "p": "HANG2"
+        },
+        {
+          "i": 7,
+          "s": "切",
+          "p": "QIE1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "before",
+        "clip_index": 1
+      },
+      "cache_key": "e5c8c9c5cfb77a3f1df1891aad551c0b6a3a07142c10e74cdb3ad577a3b120eb"
+    },
+    {
+      "offset_ms": 19000,
+      "duration_ms": 3212,
+      "caption": "先导入 mem，用来查<c.aqua>数组</c.aqua>占用的字节数。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "047ae5f810304330120bf00f68d9c99e50e532af42b578f24c579c433aa71ca6"
+    },
+    {
+      "offset_ms": 23000,
+      "duration_ms": 3849,
+      "caption": "analyze_slice <c.aqua>借用切片</c.aqua>，<c.aqua>打印</c.aqua>首元素和长度。",
+      "speech_edits": [
+        {
+          "i": 16,
+          "s": "切",
+          "p": "QIE1"
+        },
+        {
+          "i": 25,
+          "s": "长",
+          "p": "CHANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 1
+      },
+      "cache_key": "0b466df080388c87ad507c0dcc2c139f75e2648c84257ac53a5b8adfcc2b8044"
+    },
+    {
+      "offset_ms": 27000,
+      "duration_ms": 3577,
+      "caption": "main 里先建定长<c.aqua>数组</c.aqua> xs 和全零<c.aqua>数组</c.aqua> ys。",
+      "speech_edits": [
+        {
+          "i": 9,
+          "s": "长",
+          "p": "CHANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 2
+      },
+      "cache_key": "d89e2bf78619f118c02873465ac70814d996df450bc0fe4e0d79606a67a9d29e"
+    },
+    {
+      "offset_ms": 31000,
+      "duration_ms": 3231,
+      "caption": "<c.aqua>下标</c.aqua>从 0 开始，len 返回<c.aqua>数组长度</c.aqua>。",
+      "speech_edits": [
+        {
+          "i": 17,
+          "s": "长",
+          "p": "CHANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 3
+      },
+      "cache_key": "905da47ef42dbcc27d2d00526ccb36da8e3825021a7cc9b1b1a9b290e5bce80d"
+    },
+    {
+      "offset_ms": 35000,
+      "duration_ms": 3477,
+      "caption": "size_of_val 告诉你五个 i32 占二十字节。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 4
+      },
+      "cache_key": "f4a7171090b792d87da0ab0c654ebaa7d0dcdc4f86e0c0309938a64be868500d"
+    },
+    {
+      "offset_ms": 39000,
+      "duration_ms": 3630,
+      "caption": "整个<c.aqua>数组</c.aqua>可以借成<c.aqua>切片</c.aqua>传给 analyze_slice。",
+      "speech_edits": [
+        {
+          "i": 8,
+          "s": "切",
+          "p": "QIE1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 5
+      },
+      "cache_key": "fe0d0e02792c4ac8efc520aaf530b7e5cc60b16246ac0c469ca1c67b4207c228"
+    },
+    {
+      "offset_ms": 43000,
+      "duration_ms": 2293,
+      "caption": "也可以只借 ys 中间的一段。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 6
+      },
+      "cache_key": "437d3471a34144b573cf07e3f45d4e1cb272a399f6b5682393776cbddc3461dd"
+    },
+    {
+      "offset_ms": 46000,
+      "duration_ms": 3534,
+      "caption": "最后越界访问保持<c.aqua>注释</c.aqua>，取消<c.aqua>注释</c.aqua>会 panic。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 7
+      },
+      "cache_key": "158843d368c7c273d6a2e1f9cb11c37306568daf650a69a9351d8f79f56d0e97"
+    },
+    {
+      "offset_ms": 50000,
+      "duration_ms": 904,
+      "caption": "编译通过。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 6,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "462765e076e12a4b788d87729117d866e6db3f22eab617f9d0bc13a5843c64c2"
+    },
+    {
+      "offset_ms": 51000,
+      "duration_ms": 2204,
+      "caption": "运行，注意每一行输出的含义。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "行",
+          "p": "XING2"
+        },
+        {
+          "i": 7,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 7,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "ac6a4d4606d4d1c283d12a58e1510a3627e362001835684a6ef9c87d4c40821e"
+    },
+    {
+      "offset_ms": 54000,
+      "duration_ms": 4921,
+      "caption": "<c.aqua>数组长度</c.aqua>是 5，五个 i32 在栈上正好占 20 字节。",
+      "speech_edits": [
+        {
+          "i": 2,
+          "s": "长",
+          "p": "CHANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 7,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "ca21bf0f1c09507345269011105ec3ec5f75a765afc8e8801ff826a34a94cd89"
+    },
+    {
+      "offset_ms": 59000,
+      "duration_ms": 5622,
+      "caption": "整个<c.aqua>数组</c.aqua>可以借成<c.aqua>切片</c.aqua>，第一段<c.aqua>打印</c.aqua>首元素 1 和长度 5。",
+      "speech_edits": [
+        {
+          "i": 8,
+          "s": "切",
+          "p": "QIE1"
+        },
+        {
+          "i": 23,
+          "s": "长",
+          "p": "CHANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 7,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "11868c730f47df2318a751ea95a904089ac643227dc038ec6172aede0b88b3aa"
+    },
+    {
+      "offset_ms": 65000,
+      "duration_ms": 3231,
+      "caption": "ys 的一段借出 3 个<c.aqua>元素</c.aqua>，首<c.aqua>元素</c.aqua>是 0。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 7,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "7bee753b72bf814bfedb7ed25dbd9a759e5d1b5ead01692702dde29249a44ba5"
+    },
+    {
+      "offset_ms": 69000,
+      "duration_ms": 5690,
+      "caption": "最后一行越界访问已经<c.aqua>注释</c.aqua>掉：取消<c.aqua>注释</c.aqua>会看到运行时 panic。",
+      "speech_edits": [
+        {
+          "i": 3,
+          "s": "行",
+          "p": "HANG2"
+        },
+        {
+          "i": 22,
+          "s": "行",
+          "p": "XING2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/array/002_array_code.json",
+        "action_index": 7,
+        "phase": "after",
+        "clip_index": 3
+      },
+      "cache_key": "4d1866244dd6e9e7812e864dc5eafca1dd4915bd5e915be57ba0601670410178"
+    }
+  ]
+}

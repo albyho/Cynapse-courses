@@ -1,0 +1,29 @@
+{
+  "step_id": "001_tex_intro",
+  "title": "练习说明",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "tuples.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise_001_tex_intro",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 7889,
+              "caption": "动手试一试：tuples.rs 里的 Matrix 目前只有 Debug。接下来先让它按两行两列显示，再补上转置。",
+              "speech_edits": [
+                {
+                  "i": 45,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

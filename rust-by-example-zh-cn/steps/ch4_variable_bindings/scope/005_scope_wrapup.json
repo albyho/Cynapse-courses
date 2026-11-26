@@ -1,0 +1,36 @@
+{
+  "step_id": "005_scope_wrapup",
+  "title": "收尾：E0425",
+  "actions": [
+    {
+      "type": "Present",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch4_variable_bindings_scope_005_scope_wrapup",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 4104,
+              "caption": "E0425 说明 short_lived_binding 已经离开<c.aqua>作用域</c.aqua>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_scope_005_scope_wrapup",
+          "clips": [
+            {
+              "offset_ms": 5000,
+              "duration_ms": 5527,
+              "caption": "<c.aqua>注释</c.aqua>掉越界<c.aqua>引用</c.aqua>后，外层<c.aqua>绑定</c.aqua>和最后的字符遮蔽都能正常打印。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

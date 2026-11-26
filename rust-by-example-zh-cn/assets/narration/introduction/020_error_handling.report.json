@@ -1,0 +1,100 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_introduction_020_error_handling",
+  "audio": "assets/narration/introduction/020_error_handling.ogg",
+  "source_duration_ms": 17543,
+  "input_hash": "b9f20d380f029a69839d2c8fd3044af46eaa73ff667ee75067c153ace219836d",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 2086,
+      "caption": "第 18 章《错误处理》。",
+      "speech_edits": [
+        {
+          "i": 9,
+          "s": "处",
+          "p": "CHU3"
+        }
+      ],
+      "target": {
+        "step_file": "steps/introduction/020_error_handling.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "55c53f760db3792cb53ffd5056538d6e45a4d8f9c417736742478c7cdfb9f59e"
+    },
+    {
+      "offset_ms": 3000,
+      "duration_ms": 3055,
+      "caption": "这一章学习 Rust 处理失败的方式。",
+      "speech_edits": [
+        {
+          "i": 11,
+          "s": "处",
+          "p": "CHU3"
+        }
+      ],
+      "target": {
+        "step_file": "steps/introduction/020_error_handling.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "dcb001988b8f9ce6a6d35f27029b2b59dd79d8173c841470a5de4221cdaae35f"
+    },
+    {
+      "offset_ms": 7000,
+      "duration_ms": 3061,
+      "caption": "这一章会看失败的情况怎样被表达出来。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/020_error_handling.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "5964f7c1f8f5019a98354b3edc5351f888e7395979b37cd3fb06008dd87c3031"
+    },
+    {
+      "offset_ms": 11000,
+      "duration_ms": 5543,
+      "caption": "这一章会看什么时候该用不可恢复的错误，什么时候该让调用方处理。",
+      "speech_edits": [
+        {
+          "i": 25,
+          "s": "调",
+          "p": "DIAO4"
+        },
+        {
+          "i": 28,
+          "s": "处",
+          "p": "CHU3"
+        }
+      ],
+      "target": {
+        "step_file": "steps/introduction/020_error_handling.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "95af827225e749bbcf7a7aa5b7faa40a9411dd63a4c8532341ea1c67248e7af4"
+    }
+  ]
+}

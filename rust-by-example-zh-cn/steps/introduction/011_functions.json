@@ -1,0 +1,47 @@
+{
+  "step_id": "011_functions",
+  "title": "简介: 函数",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 17
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_011_functions",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 1629,
+              "caption": "第 9 章《函数》。"
+            },
+            {
+              "offset_ms": 2000,
+              "duration_ms": 2706,
+              "caption": "这一章学习方法、闭包和高阶函数。"
+            },
+            {
+              "offset_ms": 5000,
+              "duration_ms": 4457,
+              "caption": "这一章会看函数怎样把输入、计算和输出封装起来。"
+            },
+            {
+              "offset_ms": 10000,
+              "duration_ms": 2944,
+              "caption": "参数与返回类型都写在签名里。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

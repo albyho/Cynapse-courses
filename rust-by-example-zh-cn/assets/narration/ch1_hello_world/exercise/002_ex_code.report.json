@@ -1,0 +1,81 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch1_hello_world_exercise_002_ex_code",
+  "audio": "assets/narration/ch1_hello_world/exercise/002_ex_code.ogg",
+  "source_duration_ms": 14659,
+  "input_hash": "f95de166c7db6806e1d02b319c8417c0b2b00a8bd2ac65f0decbb6aff25faa33",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 4484,
+      "caption": "在第一个 println! 之后，追加一行<c.aqua>打印</c.aqua> I'm a Rustacean!。",
+      "speech_edits": [
+        {
+          "i": 5,
+          "s": "println!",
+          "p": "println 宏"
+        },
+        {
+          "i": 20,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/exercise/002_ex_code.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "cb242f9a24ed66cd6d68efa8b30b1b62f00f10c1d609ed5d66265ec4a736ea6a"
+    },
+    {
+      "offset_ms": 5000,
+      "duration_ms": 3116,
+      "caption": "光标停在 main <c.aqua>函数</c.aqua>最后一行下面。",
+      "speech_edits": [
+        {
+          "i": 15,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/exercise/002_ex_code.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "6b8f81a9d47925ea5b831982824d4870dfcec939341b128040b89da126504649"
+    },
+    {
+      "offset_ms": 9000,
+      "duration_ms": 4659,
+      "caption": "终端留给我们自己动手，改完代码后在这里编译验证。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/exercise/002_ex_code.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "1d1c252a8692b07a70dbf9784daf68fef285423450080d513dcb129bd31fe871"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch4_variable_bindings_mut_005_mut_wrapup",
+  "audio": "assets/narration/ch4_variable_bindings/mut/005_mut_wrapup.ogg",
+  "source_duration_ms": 8261,
+  "input_hash": "e8c85c4dc2ac3fb91616bc5e0aed9bd4bf6734d958ce64392ab9a2c7c2ed5d1b",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 7261,
+      "caption": "E0384 说明<c.aqua>不可变</c.aqua><c.aqua>绑定</c.aqua>不能二次<c.aqua>赋值</c.aqua>；注释掉非法行后，可变绑定从 1 变成 2。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/mut/005_mut_wrapup.json",
+        "action_index": 0,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "0023da9fc010adae0ab60a69b0d6b0f8cc6112cd0b8219b55c0a0bc3b0af9db8"
+    }
+  ]
+}

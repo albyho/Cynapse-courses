@@ -1,0 +1,278 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch2_primitives_002_primitives_code",
+  "audio": "assets/narration/ch2_primitives/002_primitives_code.ogg",
+  "source_duration_ms": 75049,
+  "input_hash": "4413850488500ba2d8b964b5db0bb6a0b2066f4c2ad4592e8f1e2fdf2684c849",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 7230,
+      "caption": "整数和浮点都有默认类型，也能用后缀写明；没标注时编译器会从后面的用法推断。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "1d81258cb085452f0861b862ed0fbd55d1d33fc2e8ea840927be3dc6b56253d3"
+    },
+    {
+      "offset_ms": 8000,
+      "duration_ms": 3944,
+      "caption": "逐行写入<c.aqua>类型</c.aqua>标注、默认值和推断的示例。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 3,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "3fa5734256eaee187e09ae4af717db5e32c04443e7c5eedfcb73f94cec2a66e1"
+    },
+    {
+      "offset_ms": 12000,
+      "duration_ms": 4073,
+      "caption": "先写显式<c.aqua>类型</c.aqua>标注，<c.aqua>布尔</c.aqua>、<c.aqua>浮点</c.aqua>和带后缀的整数。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "b89bc78977da645f7ec3f40a44daf112f06257aa9f7e0c22e45c9a8fc05ca4c6"
+    },
+    {
+      "offset_ms": 17000,
+      "duration_ms": 3416,
+      "caption": "不标注时<c.aqua>浮点</c.aqua>默认 f64，<c.aqua>整数</c.aqua>默认 i32。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 1
+      },
+      "cache_key": "3cd42208af50e015384b6c13b230249eb5114a5c598b89cc9c0934cd6cefc0ac"
+    },
+    {
+      "offset_ms": 21000,
+      "duration_ms": 3538,
+      "caption": "inferred_type 由下一行的<c.aqua>赋值</c.aqua>推断成 i64。",
+      "speech_edits": [
+        {
+          "i": 17,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 2
+      },
+      "cache_key": "0c833a08b70b209c9e9945c3a0d4ce1ece08038b101e6adc5b87ad159997aee7"
+    },
+    {
+      "offset_ms": 25000,
+      "duration_ms": 3799,
+      "caption": "mutable <c.aqua>绑定</c.aqua>先改成 21，再<c.aqua>打印遮蔽</c.aqua>前的值。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 3
+      },
+      "cache_key": "849b4cebfa5da4ede02a4fd37c43a110e9abf3d794a442af55d3742baa70f21b"
+    },
+    {
+      "offset_ms": 29000,
+      "duration_ms": 3696,
+      "caption": "那行赋 true 的<c.aqua>报错</c.aqua>保持<c.aqua>注释</c.aqua>，<c.aqua>类型</c.aqua>不能变。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 4
+      },
+      "cache_key": "d1692f537e841f1d3b33515b3d8cf3e6723189d31be8aacb1828310eb58e62ea"
+    },
+    {
+      "offset_ms": 33000,
+      "duration_ms": 3707,
+      "caption": "用同名<c.aqua>绑定遮蔽</c.aqua>成 bool，再<c.aqua>打印</c.aqua>遮蔽后的值。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 5
+      },
+      "cache_key": "fdfe219243d0d8b0b189249f9d6237a28d8ac544414bbe1a18ac9c2b5efb0aac"
+    },
+    {
+      "offset_ms": 37000,
+      "duration_ms": 3525,
+      "caption": "最后把前面几个<c.aqua>变量</c.aqua>的值一起<c.aqua>打印</c.aqua>出来。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 6
+      },
+      "cache_key": "04b7062ffc1aa017e1ce7e0055c80727472a54835f49a83f2e6255f355eb3e6e"
+    },
+    {
+      "offset_ms": 41000,
+      "duration_ms": 1261,
+      "caption": "先编译。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 6,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "146fde9f8c0c92de5289ccfd70de6c8094c3772abfa91d35e3a4ba055948aa06"
+    },
+    {
+      "offset_ms": 43000,
+      "duration_ms": 3379,
+      "caption": "编译通过，说明这些标注和<c.aqua>推断</c.aqua>都成立。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 6,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "ac28573f8bd2bd900240a131e0d3b5ad861659d1463013d936af7017b2bea365"
+    },
+    {
+      "offset_ms": 47000,
+      "duration_ms": 2085,
+      "caption": "运行，看看每个<c.aqua>变量</c.aqua>的实际值。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "行",
+          "p": "XING2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 7,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "2cfb6d89cf2619dd57c63a399e51069b4a82f0809a8ddcdc8c71a437d20d3056"
+    },
+    {
+      "offset_ms": 50000,
+      "duration_ms": 3847,
+      "caption": "输出里 logical 是 true，a_float 是 1，an_integer 是 5。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 7,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "7de9d91ee6408a1eb429d2f05b4950168f5b3577d108b909773880f827b22ae2"
+    },
+    {
+      "offset_ms": 54000,
+      "duration_ms": 6699,
+      "caption": "inferred_type 是 4294967296，说明<c.aqua>编译器</c.aqua>真的把它推成了 i64",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 7,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "eb8cab940c0f3e0a852b4f48eb1aeba322a5301adb0d4d6f0c33e79496ee8f7e"
+    },
+    {
+      "offset_ms": 61000,
+      "duration_ms": 9743,
+      "caption": "示例里那行<c.aqua>报错</c.aqua>的赋值已经注释掉：变量类型不会因为赋值而改变，要换类型得用遮蔽重新声明。",
+      "speech_edits": [
+        {
+          "i": 4,
+          "s": "行",
+          "p": "HANG2"
+        },
+        {
+          "i": 23,
+          "s": "为",
+          "p": "WEI4"
+        },
+        {
+          "i": 34,
+          "s": "得",
+          "p": "DEI3"
+        },
+        {
+          "i": 38,
+          "s": "重",
+          "p": "CHONG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 7,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "97a8cce791239224e822ddc5b785f854b6d4eb1b9d4f57f5e6fbd9452e1f4f1c"
+    },
+    {
+      "offset_ms": 71000,
+      "duration_ms": 3049,
+      "caption": "mutable 在<c.aqua>遮蔽</c.aqua>前是 21，<c.aqua>遮蔽</c.aqua>后是 true。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch2_primitives/002_primitives_code.json",
+        "action_index": 8,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "43146a47a722c3523a7da9c9a8c3f84d30af850262112bac70c39eef31e855ab"
+    }
+  ]
+}

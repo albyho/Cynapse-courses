@@ -1,7 +1,7 @@
 {
   "id": "rust_by_example_zh_cn",
   "title": "通过例子学 Rust（中文版）",
-  "version": "0.20.21",
+  "version": "0.20.27",
   "workspace": "workspace",
   "adapters": [
     "vscode"
@@ -21,103 +21,195 @@
       "environment": [],
       "steps": [
         {
-          "step_file": "steps/introduction/rust.json"
+          "step_file": "steps/introduction/001_rust.json"
         },
         {
-          "step_file": "steps/introduction/book.json"
+          "step_file": "steps/introduction/002_book.json"
         },
         {
-          "step_file": "steps/introduction/hello_world.json"
+          "step_file": "steps/introduction/003_hello_world.json"
         },
         {
-          "step_file": "steps/introduction/primitives.json"
+          "step_file": "steps/introduction/004_primitives.json"
         },
         {
-          "step_file": "steps/introduction/custom_types.json"
+          "step_file": "steps/introduction/005_custom_types.json"
         },
         {
-          "step_file": "steps/introduction/variable_bindings.json"
+          "step_file": "steps/introduction/006_variable_bindings.json"
         },
         {
-          "step_file": "steps/introduction/type_system.json"
+          "step_file": "steps/introduction/007_type_system.json"
         },
         {
-          "step_file": "steps/introduction/conversions.json"
+          "step_file": "steps/introduction/008_conversions.json"
         },
         {
-          "step_file": "steps/introduction/expressions.json"
+          "step_file": "steps/introduction/009_expressions.json"
         },
         {
-          "step_file": "steps/introduction/flow_control.json"
+          "step_file": "steps/introduction/010_flow_control.json"
         },
         {
-          "step_file": "steps/introduction/functions.json"
+          "step_file": "steps/introduction/011_functions.json"
         },
         {
-          "step_file": "steps/introduction/modules.json"
+          "step_file": "steps/introduction/012_modules.json"
         },
         {
-          "step_file": "steps/introduction/crates.json"
+          "step_file": "steps/introduction/013_crates.json"
         },
         {
-          "step_file": "steps/introduction/cargo.json"
+          "step_file": "steps/introduction/014_cargo.json"
         },
         {
-          "step_file": "steps/introduction/attributes.json"
+          "step_file": "steps/introduction/015_attributes.json"
         },
         {
-          "step_file": "steps/introduction/generics.json"
+          "step_file": "steps/introduction/016_generics.json"
         },
         {
-          "step_file": "steps/introduction/scopes.json"
+          "step_file": "steps/introduction/017_scopes.json"
         },
         {
-          "step_file": "steps/introduction/traits.json"
+          "step_file": "steps/introduction/018_traits.json"
         },
         {
-          "step_file": "steps/introduction/macros.json"
+          "step_file": "steps/introduction/019_macros.json"
         },
         {
-          "step_file": "steps/introduction/error_handling.json"
+          "step_file": "steps/introduction/020_error_handling.json"
         },
         {
-          "step_file": "steps/introduction/std_types.json"
+          "step_file": "steps/introduction/021_std_types.json"
         },
         {
-          "step_file": "steps/introduction/std_misc.json"
+          "step_file": "steps/introduction/022_std_misc.json"
         },
         {
-          "step_file": "steps/introduction/testing.json"
+          "step_file": "steps/introduction/023_testing.json"
         },
         {
-          "step_file": "steps/introduction/unsafe.json"
+          "step_file": "steps/introduction/024_unsafe.json"
         },
         {
-          "step_file": "steps/introduction/compatibility.json"
+          "step_file": "steps/introduction/025_compatibility.json"
         },
         {
-          "step_file": "steps/introduction/meta.json"
+          "step_file": "steps/introduction/026_meta.json"
         },
         {
-          "step_file": "steps/introduction/departure.json"
+          "step_file": "steps/introduction/027_departure.json"
         }
       ],
       "assets": [
         {
-          "id": "narration_introduction_rust",
-          "path": "assets/narration/introduction/rust.ogg"
+          "id": "narration_introduction_001_rust",
+          "path": "assets/narration/introduction/001_rust.ogg"
         },
         {
-          "id": "narration_introduction_book",
-          "path": "assets/narration/introduction/book.ogg"
+          "id": "narration_introduction_002_book",
+          "path": "assets/narration/introduction/002_book.ogg"
         },
         {
-          "id": "narration_introduction_chapters",
-          "path": "assets/narration/introduction/chapters.ogg"
+          "id": "narration_introduction_003_hello_world",
+          "path": "assets/narration/introduction/003_hello_world.ogg"
         },
         {
-          "id": "narration_introduction_departure",
-          "path": "assets/narration/introduction/departure.ogg"
+          "id": "narration_introduction_004_primitives",
+          "path": "assets/narration/introduction/004_primitives.ogg"
+        },
+        {
+          "id": "narration_introduction_005_custom_types",
+          "path": "assets/narration/introduction/005_custom_types.ogg"
+        },
+        {
+          "id": "narration_introduction_006_variable_bindings",
+          "path": "assets/narration/introduction/006_variable_bindings.ogg"
+        },
+        {
+          "id": "narration_introduction_007_type_system",
+          "path": "assets/narration/introduction/007_type_system.ogg"
+        },
+        {
+          "id": "narration_introduction_008_conversions",
+          "path": "assets/narration/introduction/008_conversions.ogg"
+        },
+        {
+          "id": "narration_introduction_009_expressions",
+          "path": "assets/narration/introduction/009_expressions.ogg"
+        },
+        {
+          "id": "narration_introduction_010_flow_control",
+          "path": "assets/narration/introduction/010_flow_control.ogg"
+        },
+        {
+          "id": "narration_introduction_011_functions",
+          "path": "assets/narration/introduction/011_functions.ogg"
+        },
+        {
+          "id": "narration_introduction_012_modules",
+          "path": "assets/narration/introduction/012_modules.ogg"
+        },
+        {
+          "id": "narration_introduction_013_crates",
+          "path": "assets/narration/introduction/013_crates.ogg"
+        },
+        {
+          "id": "narration_introduction_014_cargo",
+          "path": "assets/narration/introduction/014_cargo.ogg"
+        },
+        {
+          "id": "narration_introduction_015_attributes",
+          "path": "assets/narration/introduction/015_attributes.ogg"
+        },
+        {
+          "id": "narration_introduction_016_generics",
+          "path": "assets/narration/introduction/016_generics.ogg"
+        },
+        {
+          "id": "narration_introduction_017_scopes",
+          "path": "assets/narration/introduction/017_scopes.ogg"
+        },
+        {
+          "id": "narration_introduction_018_traits",
+          "path": "assets/narration/introduction/018_traits.ogg"
+        },
+        {
+          "id": "narration_introduction_019_macros",
+          "path": "assets/narration/introduction/019_macros.ogg"
+        },
+        {
+          "id": "narration_introduction_020_error_handling",
+          "path": "assets/narration/introduction/020_error_handling.ogg"
+        },
+        {
+          "id": "narration_introduction_021_std_types",
+          "path": "assets/narration/introduction/021_std_types.ogg"
+        },
+        {
+          "id": "narration_introduction_022_std_misc",
+          "path": "assets/narration/introduction/022_std_misc.ogg"
+        },
+        {
+          "id": "narration_introduction_023_testing",
+          "path": "assets/narration/introduction/023_testing.ogg"
+        },
+        {
+          "id": "narration_introduction_024_unsafe",
+          "path": "assets/narration/introduction/024_unsafe.ogg"
+        },
+        {
+          "id": "narration_introduction_025_compatibility",
+          "path": "assets/narration/introduction/025_compatibility.ogg"
+        },
+        {
+          "id": "narration_introduction_026_meta",
+          "path": "assets/narration/introduction/026_meta.ogg"
+        },
+        {
+          "id": "narration_introduction_027_departure",
+          "path": "assets/narration/introduction/027_departure.ogg"
         }
       ]
     },
@@ -126,16 +218,20 @@
       "title": "1 Hello World",
       "assets": [
         {
-          "id": "narration_ch1_hello_world",
-          "path": "assets/narration/ch1_hello_world/narration.ogg"
+          "id": "narration_ch1_hello_world_001_hello_intro",
+          "path": "assets/narration/ch1_hello_world/001_hello_intro.ogg"
+        },
+        {
+          "id": "narration_ch1_hello_world_002_hello_code",
+          "path": "assets/narration/ch1_hello_world/002_hello_code.ogg"
         }
       ],
       "steps": [
         {
-          "step_file": "steps/ch1_hello_world/hello_intro.json"
+          "step_file": "steps/ch1_hello_world/001_hello_intro.json"
         },
         {
-          "step_file": "steps/ch1_hello_world/hello_code.json"
+          "step_file": "steps/ch1_hello_world/002_hello_code.json"
         }
       ],
       "children": [
@@ -144,16 +240,20 @@
           "title": "动手试一试：再打印一行",
           "assets": [
             {
-              "id": "narration_ch1_hello_world_exercise",
-              "path": "assets/narration/ch1_hello_world/exercise/narration.ogg"
+              "id": "narration_ch1_hello_world_exercise_001_ex_intro",
+              "path": "assets/narration/ch1_hello_world/exercise/001_ex_intro.ogg"
+            },
+            {
+              "id": "narration_ch1_hello_world_exercise_002_ex_code",
+              "path": "assets/narration/ch1_hello_world/exercise/002_ex_code.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch1_hello_world/exercise/ex_intro.json"
+              "step_file": "steps/ch1_hello_world/exercise/001_ex_intro.json"
             },
             {
-              "step_file": "steps/ch1_hello_world/exercise/ex_code.json"
+              "step_file": "steps/ch1_hello_world/exercise/002_ex_code.json"
             }
           ]
         },
@@ -162,16 +262,20 @@
           "title": "1.1 注释",
           "assets": [
             {
-              "id": "narration_ch1_hello_world_comment",
-              "path": "assets/narration/ch1_hello_world/comment/narration.ogg"
+              "id": "narration_ch1_hello_world_comment_001_comment_intro",
+              "path": "assets/narration/ch1_hello_world/comment/001_comment_intro.ogg"
+            },
+            {
+              "id": "narration_ch1_hello_world_comment_002_comment_code",
+              "path": "assets/narration/ch1_hello_world/comment/002_comment_code.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch1_hello_world/comment/comment_intro.json"
+              "step_file": "steps/ch1_hello_world/comment/001_comment_intro.json"
             },
             {
-              "step_file": "steps/ch1_hello_world/comment/comment_code.json"
+              "step_file": "steps/ch1_hello_world/comment/002_comment_code.json"
             }
           ],
           "children": [
@@ -180,16 +284,20 @@
               "title": "动手试一试：取消注释",
               "assets": [
                 {
-                  "id": "narration_ch1_hello_world_comment_exercise",
-                  "path": "assets/narration/ch1_hello_world/comment/exercise/narration.ogg"
+                  "id": "narration_ch1_hello_world_comment_exercise_001_cex_intro",
+                  "path": "assets/narration/ch1_hello_world/comment/exercise/001_cex_intro.ogg"
+                },
+                {
+                  "id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
+                  "path": "assets/narration/ch1_hello_world/comment/exercise/002_cex_toggle.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch1_hello_world/comment/exercise/cex_intro.json"
+                  "step_file": "steps/ch1_hello_world/comment/exercise/001_cex_intro.json"
                 },
                 {
-                  "step_file": "steps/ch1_hello_world/comment/exercise/cex_toggle.json"
+                  "step_file": "steps/ch1_hello_world/comment/exercise/002_cex_toggle.json"
                 }
               ]
             }
@@ -200,16 +308,20 @@
           "title": "1.2 格式化输出",
           "assets": [
             {
-              "id": "narration_ch1_hello_world_print",
-              "path": "assets/narration/ch1_hello_world/print/narration.ogg"
+              "id": "narration_ch1_hello_world_print_001_print_intro",
+              "path": "assets/narration/ch1_hello_world/print/001_print_intro.ogg"
+            },
+            {
+              "id": "narration_ch1_hello_world_print_002_print_code",
+              "path": "assets/narration/ch1_hello_world/print/002_print_code.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch1_hello_world/print/print_intro.json"
+              "step_file": "steps/ch1_hello_world/print/001_print_intro.json"
             },
             {
-              "step_file": "steps/ch1_hello_world/print/print_code.json"
+              "step_file": "steps/ch1_hello_world/print/002_print_code.json"
             }
           ],
           "children": [
@@ -218,19 +330,27 @@
               "title": "动手试一试：修正并扩展",
               "assets": [
                 {
-                  "id": "narration_ch1_hello_world_print_exercise",
-                  "path": "assets/narration/ch1_hello_world/print/exercise/narration.ogg"
+                  "id": "narration_ch1_hello_world_print_exercise_001_pex_intro",
+                  "path": "assets/narration/ch1_hello_world/print/exercise/001_pex_intro.ogg"
+                },
+                {
+                  "id": "narration_ch1_hello_world_print_exercise_002_pex_error",
+                  "path": "assets/narration/ch1_hello_world/print/exercise/002_pex_error.ogg"
+                },
+                {
+                  "id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
+                  "path": "assets/narration/ch1_hello_world/print/exercise/003_pex_fix.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch1_hello_world/print/exercise/pex_intro.json"
+                  "step_file": "steps/ch1_hello_world/print/exercise/001_pex_intro.json"
                 },
                 {
-                  "step_file": "steps/ch1_hello_world/print/exercise/pex_error.json"
+                  "step_file": "steps/ch1_hello_world/print/exercise/002_pex_error.json"
                 },
                 {
-                  "step_file": "steps/ch1_hello_world/print/exercise/pex_fix.json"
+                  "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json"
                 }
               ]
             },
@@ -239,16 +359,20 @@
               "title": "1.2.1 调试（Debug）",
               "assets": [
                 {
-                  "id": "narration_ch1_hello_world_print_print_debug",
-                  "path": "assets/narration/ch1_hello_world/print/print_debug/narration.ogg"
+                  "id": "narration_ch1_hello_world_print_print_debug_001_dbg_intro",
+                  "path": "assets/narration/ch1_hello_world/print/print_debug/001_dbg_intro.ogg"
+                },
+                {
+                  "id": "narration_ch1_hello_world_print_print_debug_002_dbg_code",
+                  "path": "assets/narration/ch1_hello_world/print/print_debug/002_dbg_code.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch1_hello_world/print/print_debug/dbg_intro.json"
+                  "step_file": "steps/ch1_hello_world/print/print_debug/001_dbg_intro.json"
                 },
                 {
-                  "step_file": "steps/ch1_hello_world/print/print_debug/dbg_code.json"
+                  "step_file": "steps/ch1_hello_world/print/print_debug/002_dbg_code.json"
                 }
               ]
             },
@@ -257,16 +381,20 @@
               "title": "1.2.2 显示（Display）",
               "assets": [
                 {
-                  "id": "narration_ch1_hello_world_print_print_display",
-                  "path": "assets/narration/ch1_hello_world/print/print_display/narration.ogg"
+                  "id": "narration_ch1_hello_world_print_print_display_001_disp_intro",
+                  "path": "assets/narration/ch1_hello_world/print/print_display/001_disp_intro.ogg"
+                },
+                {
+                  "id": "narration_ch1_hello_world_print_print_display_002_disp_code",
+                  "path": "assets/narration/ch1_hello_world/print/print_display/002_disp_code.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch1_hello_world/print/print_display/disp_intro.json"
+                  "step_file": "steps/ch1_hello_world/print/print_display/001_disp_intro.json"
                 },
                 {
-                  "step_file": "steps/ch1_hello_world/print/print_display/disp_code.json"
+                  "step_file": "steps/ch1_hello_world/print/print_display/002_disp_code.json"
                 }
               ],
               "children": [
@@ -275,16 +403,20 @@
                   "title": "动手试一试：复数",
                   "assets": [
                     {
-                      "id": "narration_ch1_hello_world_print_print_display_exercise",
-                      "path": "assets/narration/ch1_hello_world/print/print_display/exercise/narration.ogg"
+                      "id": "narration_ch1_hello_world_print_print_display_exercise_001_dex_intro",
+                      "path": "assets/narration/ch1_hello_world/print/print_display/exercise/001_dex_intro.ogg"
+                    },
+                    {
+                      "id": "narration_ch1_hello_world_print_print_display_exercise_002_dex_code",
+                      "path": "assets/narration/ch1_hello_world/print/print_display/exercise/002_dex_code.ogg"
                     }
                   ],
                   "steps": [
                     {
-                      "step_file": "steps/ch1_hello_world/print/print_display/exercise/dex_intro.json"
+                      "step_file": "steps/ch1_hello_world/print/print_display/exercise/001_dex_intro.json"
                     },
                     {
-                      "step_file": "steps/ch1_hello_world/print/print_display/exercise/dex_code.json"
+                      "step_file": "steps/ch1_hello_world/print/print_display/exercise/002_dex_code.json"
                     }
                   ]
                 }
@@ -295,16 +427,20 @@
               "title": "1.2.3 测试实例：List",
               "assets": [
                 {
-                  "id": "narration_ch1_hello_world_print_testcase_list",
-                  "path": "assets/narration/ch1_hello_world/print/testcase_list/narration.ogg"
+                  "id": "narration_ch1_hello_world_print_testcase_list_001_list_intro",
+                  "path": "assets/narration/ch1_hello_world/print/testcase_list/001_list_intro.ogg"
+                },
+                {
+                  "id": "narration_ch1_hello_world_print_testcase_list_002_list_code",
+                  "path": "assets/narration/ch1_hello_world/print/testcase_list/002_list_code.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch1_hello_world/print/testcase_list/list_intro.json"
+                  "step_file": "steps/ch1_hello_world/print/testcase_list/001_list_intro.json"
                 },
                 {
-                  "step_file": "steps/ch1_hello_world/print/testcase_list/list_code.json"
+                  "step_file": "steps/ch1_hello_world/print/testcase_list/002_list_code.json"
                 }
               ],
               "children": [
@@ -313,19 +449,27 @@
                   "title": "动手试一试：带下标",
                   "assets": [
                     {
-                      "id": "narration_ch1_hello_world_print_testcase_list_exercise",
-                      "path": "assets/narration/ch1_hello_world/print/testcase_list/exercise/narration.ogg"
+                      "id": "narration_ch1_hello_world_print_testcase_list_exercise_001_lex_intro",
+                      "path": "assets/narration/ch1_hello_world/print/testcase_list/exercise/001_lex_intro.ogg"
+                    },
+                    {
+                      "id": "narration_ch1_hello_world_print_testcase_list_exercise_002_lex_baseline",
+                      "path": "assets/narration/ch1_hello_world/print/testcase_list/exercise/002_lex_baseline.ogg"
+                    },
+                    {
+                      "id": "narration_ch1_hello_world_print_testcase_list_exercise_003_lex_code",
+                      "path": "assets/narration/ch1_hello_world/print/testcase_list/exercise/003_lex_code.ogg"
                     }
                   ],
                   "steps": [
                     {
-                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/lex_intro.json"
+                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/001_lex_intro.json"
                     },
                     {
-                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/lex_baseline.json"
+                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/002_lex_baseline.json"
                     },
                     {
-                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/lex_code.json"
+                      "step_file": "steps/ch1_hello_world/print/testcase_list/exercise/003_lex_code.json"
                     }
                   ]
                 }
@@ -336,16 +480,20 @@
               "title": "1.2.4 格式化",
               "assets": [
                 {
-                  "id": "narration_ch1_hello_world_print_fmt",
-                  "path": "assets/narration/ch1_hello_world/print/fmt/narration.ogg"
+                  "id": "narration_ch1_hello_world_print_fmt_001_fmt_intro",
+                  "path": "assets/narration/ch1_hello_world/print/fmt/001_fmt_intro.ogg"
+                },
+                {
+                  "id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
+                  "path": "assets/narration/ch1_hello_world/print/fmt/002_fmt_code.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch1_hello_world/print/fmt/fmt_intro.json"
+                  "step_file": "steps/ch1_hello_world/print/fmt/001_fmt_intro.json"
                 },
                 {
-                  "step_file": "steps/ch1_hello_world/print/fmt/fmt_code.json"
+                  "step_file": "steps/ch1_hello_world/print/fmt/002_fmt_code.json"
                 }
               ],
               "children": [
@@ -354,16 +502,20 @@
                   "title": "动手试一试：为 Color 实现 Display",
                   "assets": [
                     {
-                      "id": "narration_ch1_hello_world_print_fmt_exercise",
-                      "path": "assets/narration/ch1_hello_world/print/fmt/exercise/narration.ogg"
+                      "id": "narration_ch1_hello_world_print_fmt_exercise_001_fex_intro",
+                      "path": "assets/narration/ch1_hello_world/print/fmt/exercise/001_fex_intro.ogg"
+                    },
+                    {
+                      "id": "narration_ch1_hello_world_print_fmt_exercise_002_fex_code",
+                      "path": "assets/narration/ch1_hello_world/print/fmt/exercise/002_fex_code.ogg"
                     }
                   ],
                   "steps": [
                     {
-                      "step_file": "steps/ch1_hello_world/print/fmt/exercise/fex_intro.json"
+                      "step_file": "steps/ch1_hello_world/print/fmt/exercise/001_fex_intro.json"
                     },
                     {
-                      "step_file": "steps/ch1_hello_world/print/fmt/exercise/fex_code.json"
+                      "step_file": "steps/ch1_hello_world/print/fmt/exercise/002_fex_code.json"
                     }
                   ]
                 }
@@ -378,16 +530,20 @@
       "title": "2 原生类型",
       "assets": [
         {
-          "id": "narration_ch2_primitives",
-          "path": "assets/narration/ch2_primitives/narration.ogg"
+          "id": "narration_ch2_primitives_001_primitives_intro",
+          "path": "assets/narration/ch2_primitives/001_primitives_intro.ogg"
+        },
+        {
+          "id": "narration_ch2_primitives_002_primitives_code",
+          "path": "assets/narration/ch2_primitives/002_primitives_code.ogg"
         }
       ],
       "steps": [
         {
-          "step_file": "steps/ch2_primitives/primitives_intro.json"
+          "step_file": "steps/ch2_primitives/001_primitives_intro.json"
         },
         {
-          "step_file": "steps/ch2_primitives/primitives_code.json"
+          "step_file": "steps/ch2_primitives/002_primitives_code.json"
         }
       ],
       "children": [
@@ -396,16 +552,20 @@
           "title": "2.1 字面量和运算符",
           "assets": [
             {
-              "id": "narration_ch2_primitives_literals",
-              "path": "assets/narration/ch2_primitives/literals/narration.ogg"
+              "id": "narration_ch2_primitives_literals_001_literals_intro",
+              "path": "assets/narration/ch2_primitives/literals/001_literals_intro.ogg"
+            },
+            {
+              "id": "narration_ch2_primitives_literals_002_literals_code",
+              "path": "assets/narration/ch2_primitives/literals/002_literals_code.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch2_primitives/literals/literals_intro.json"
+              "step_file": "steps/ch2_primitives/literals/001_literals_intro.json"
             },
             {
-              "step_file": "steps/ch2_primitives/literals/literals_code.json"
+              "step_file": "steps/ch2_primitives/literals/002_literals_code.json"
             }
           ]
         },
@@ -414,16 +574,20 @@
           "title": "2.2 元组",
           "assets": [
             {
-              "id": "narration_ch2_primitives_tuples",
-              "path": "assets/narration/ch2_primitives/tuples/narration.ogg"
+              "id": "narration_ch2_primitives_tuples_001_tuples_intro",
+              "path": "assets/narration/ch2_primitives/tuples/001_tuples_intro.ogg"
+            },
+            {
+              "id": "narration_ch2_primitives_tuples_002_tuples_code",
+              "path": "assets/narration/ch2_primitives/tuples/002_tuples_code.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch2_primitives/tuples/tuples_intro.json"
+              "step_file": "steps/ch2_primitives/tuples/001_tuples_intro.json"
             },
             {
-              "step_file": "steps/ch2_primitives/tuples/tuples_code.json"
+              "step_file": "steps/ch2_primitives/tuples/002_tuples_code.json"
             }
           ],
           "children": [
@@ -432,19 +596,27 @@
               "title": "动手试一试：为 Matrix 实现 Display 并转置",
               "assets": [
                 {
-                  "id": "narration_ch2_primitives_tuples_exercise",
-                  "path": "assets/narration/ch2_primitives/tuples/exercise/narration.ogg"
+                  "id": "narration_ch2_primitives_tuples_exercise_001_tex_intro",
+                  "path": "assets/narration/ch2_primitives/tuples/exercise/001_tex_intro.ogg"
+                },
+                {
+                  "id": "narration_ch2_primitives_tuples_exercise_002_tex_display",
+                  "path": "assets/narration/ch2_primitives/tuples/exercise/002_tex_display.ogg"
+                },
+                {
+                  "id": "narration_ch2_primitives_tuples_exercise_003_tex_transpose",
+                  "path": "assets/narration/ch2_primitives/tuples/exercise/003_tex_transpose.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch2_primitives/tuples/exercise/tex_intro.json"
+                  "step_file": "steps/ch2_primitives/tuples/exercise/001_tex_intro.json"
                 },
                 {
-                  "step_file": "steps/ch2_primitives/tuples/exercise/tex_display.json"
+                  "step_file": "steps/ch2_primitives/tuples/exercise/002_tex_display.json"
                 },
                 {
-                  "step_file": "steps/ch2_primitives/tuples/exercise/tex_transpose.json"
+                  "step_file": "steps/ch2_primitives/tuples/exercise/003_tex_transpose.json"
                 }
               ]
             }
@@ -455,16 +627,20 @@
           "title": "2.3 数组和切片",
           "assets": [
             {
-              "id": "narration_ch2_primitives_array",
-              "path": "assets/narration/ch2_primitives/array/narration.ogg"
+              "id": "narration_ch2_primitives_array_001_array_intro",
+              "path": "assets/narration/ch2_primitives/array/001_array_intro.ogg"
+            },
+            {
+              "id": "narration_ch2_primitives_array_002_array_code",
+              "path": "assets/narration/ch2_primitives/array/002_array_code.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch2_primitives/array/array_intro.json"
+              "step_file": "steps/ch2_primitives/array/001_array_intro.json"
             },
             {
-              "step_file": "steps/ch2_primitives/array/array_code.json"
+              "step_file": "steps/ch2_primitives/array/002_array_code.json"
             }
           ]
         }
@@ -479,19 +655,27 @@
           "title": "3.1 结构体",
           "assets": [
             {
-              "id": "narration_ch3_custom_types_structs",
-              "path": "assets/narration/ch3_custom_types/structs/narration.ogg"
+              "id": "narration_ch3_custom_types_structs_001_structs_intro",
+              "path": "assets/narration/ch3_custom_types/structs/001_structs_intro.ogg"
+            },
+            {
+              "id": "narration_ch3_custom_types_structs_002_structs_def",
+              "path": "assets/narration/ch3_custom_types/structs/002_structs_def.ogg"
+            },
+            {
+              "id": "narration_ch3_custom_types_structs_003_structs_use",
+              "path": "assets/narration/ch3_custom_types/structs/003_structs_use.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch3_custom_types/structs/structs_intro.json"
+              "step_file": "steps/ch3_custom_types/structs/001_structs_intro.json"
             },
             {
-              "step_file": "steps/ch3_custom_types/structs/structs_def.json"
+              "step_file": "steps/ch3_custom_types/structs/002_structs_def.json"
             },
             {
-              "step_file": "steps/ch3_custom_types/structs/structs_use.json"
+              "step_file": "steps/ch3_custom_types/structs/003_structs_use.json"
             }
           ],
           "children": [
@@ -500,16 +684,20 @@
               "title": "动手试一试：面积与正方形",
               "assets": [
                 {
-                  "id": "narration_ch3_custom_types_structs_exercise",
-                  "path": "assets/narration/ch3_custom_types/structs/exercise/narration.ogg"
+                  "id": "narration_ch3_custom_types_structs_exercise_001_sex_intro",
+                  "path": "assets/narration/ch3_custom_types/structs/exercise/001_sex_intro.ogg"
+                },
+                {
+                  "id": "narration_ch3_custom_types_structs_exercise_002_sex_area",
+                  "path": "assets/narration/ch3_custom_types/structs/exercise/002_sex_area.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch3_custom_types/structs/exercise/sex_intro.json"
+                  "step_file": "steps/ch3_custom_types/structs/exercise/001_sex_intro.json"
                 },
                 {
-                  "step_file": "steps/ch3_custom_types/structs/exercise/sex_area.json"
+                  "step_file": "steps/ch3_custom_types/structs/exercise/002_sex_area.json"
                 }
               ]
             }
@@ -520,19 +708,27 @@
           "title": "3.2 枚举",
           "assets": [
             {
-              "id": "narration_ch3_custom_types_enum",
-              "path": "assets/narration/ch3_custom_types/enum/narration.ogg"
+              "id": "narration_ch3_custom_types_enum_001_enum_intro",
+              "path": "assets/narration/ch3_custom_types/enum/001_enum_intro.ogg"
+            },
+            {
+              "id": "narration_ch3_custom_types_enum_002_enum_code",
+              "path": "assets/narration/ch3_custom_types/enum/002_enum_code.ogg"
+            },
+            {
+              "id": "narration_ch3_custom_types_enum_003_enum_alias",
+              "path": "assets/narration/ch3_custom_types/enum/003_enum_alias.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch3_custom_types/enum/enum_intro.json"
+              "step_file": "steps/ch3_custom_types/enum/001_enum_intro.json"
             },
             {
-              "step_file": "steps/ch3_custom_types/enum/enum_code.json"
+              "step_file": "steps/ch3_custom_types/enum/002_enum_code.json"
             },
             {
-              "step_file": "steps/ch3_custom_types/enum/enum_alias.json"
+              "step_file": "steps/ch3_custom_types/enum/003_enum_alias.json"
             }
           ],
           "children": [
@@ -541,16 +737,20 @@
               "title": "3.2.1 使用 use",
               "assets": [
                 {
-                  "id": "narration_ch3_custom_types_enum_enum_use",
-                  "path": "assets/narration/ch3_custom_types/enum/enum_use/narration.ogg"
+                  "id": "narration_ch3_custom_types_enum_enum_use_001_enum_use_intro",
+                  "path": "assets/narration/ch3_custom_types/enum/enum_use/001_enum_use_intro.ogg"
+                },
+                {
+                  "id": "narration_ch3_custom_types_enum_enum_use_002_enum_use_code",
+                  "path": "assets/narration/ch3_custom_types/enum/enum_use/002_enum_use_code.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch3_custom_types/enum/enum_use/enum_use_intro.json"
+                  "step_file": "steps/ch3_custom_types/enum/enum_use/001_enum_use_intro.json"
                 },
                 {
-                  "step_file": "steps/ch3_custom_types/enum/enum_use/enum_use_code.json"
+                  "step_file": "steps/ch3_custom_types/enum/enum_use/002_enum_use_code.json"
                 }
               ]
             },
@@ -559,16 +759,20 @@
               "title": "3.2.2 C 风格用法",
               "assets": [
                 {
-                  "id": "narration_ch3_custom_types_enum_c_like",
-                  "path": "assets/narration/ch3_custom_types/enum/c_like/narration.ogg"
+                  "id": "narration_ch3_custom_types_enum_c_like_001_c_like_intro",
+                  "path": "assets/narration/ch3_custom_types/enum/c_like/001_c_like_intro.ogg"
+                },
+                {
+                  "id": "narration_ch3_custom_types_enum_c_like_002_c_like_code",
+                  "path": "assets/narration/ch3_custom_types/enum/c_like/002_c_like_code.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch3_custom_types/enum/c_like/c_like_intro.json"
+                  "step_file": "steps/ch3_custom_types/enum/c_like/001_c_like_intro.json"
                 },
                 {
-                  "step_file": "steps/ch3_custom_types/enum/c_like/c_like_code.json"
+                  "step_file": "steps/ch3_custom_types/enum/c_like/002_c_like_code.json"
                 }
               ]
             },
@@ -577,16 +781,20 @@
               "title": "3.2.3 测试实例：链表",
               "assets": [
                 {
-                  "id": "narration_ch3_custom_types_enum_testcase_linked_list",
-                  "path": "assets/narration/ch3_custom_types/enum/testcase_linked_list/narration.ogg"
+                  "id": "narration_ch3_custom_types_enum_testcase_linked_list_001_list_intro",
+                  "path": "assets/narration/ch3_custom_types/enum/testcase_linked_list/001_list_intro.ogg"
+                },
+                {
+                  "id": "narration_ch3_custom_types_enum_testcase_linked_list_002_list_code",
+                  "path": "assets/narration/ch3_custom_types/enum/testcase_linked_list/002_list_code.ogg"
                 }
               ],
               "steps": [
                 {
-                  "step_file": "steps/ch3_custom_types/enum/testcase_linked_list/list_intro.json"
+                  "step_file": "steps/ch3_custom_types/enum/testcase_linked_list/001_list_intro.json"
                 },
                 {
-                  "step_file": "steps/ch3_custom_types/enum/testcase_linked_list/list_code.json"
+                  "step_file": "steps/ch3_custom_types/enum/testcase_linked_list/002_list_code.json"
                 }
               ]
             }
@@ -597,25 +805,41 @@
           "title": "3.3 常量",
           "assets": [
             {
-              "id": "narration_ch3_custom_types_constants",
-              "path": "assets/narration/ch3_custom_types/constants/narration.ogg"
+              "id": "narration_ch3_custom_types_constants_001_consts_intro",
+              "path": "assets/narration/ch3_custom_types/constants/001_consts_intro.ogg"
+            },
+            {
+              "id": "narration_ch3_custom_types_constants_002_consts_write",
+              "path": "assets/narration/ch3_custom_types/constants/002_consts_write.ogg"
+            },
+            {
+              "id": "narration_ch3_custom_types_constants_003_consts_error",
+              "path": "assets/narration/ch3_custom_types/constants/003_consts_error.ogg"
+            },
+            {
+              "id": "narration_ch3_custom_types_constants_004_consts_fix",
+              "path": "assets/narration/ch3_custom_types/constants/004_consts_fix.ogg"
+            },
+            {
+              "id": "narration_ch3_custom_types_constants_005_consts_wrapup",
+              "path": "assets/narration/ch3_custom_types/constants/005_consts_wrapup.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch3_custom_types/constants/consts_intro.json"
+              "step_file": "steps/ch3_custom_types/constants/001_consts_intro.json"
             },
             {
-              "step_file": "steps/ch3_custom_types/constants/consts_write.json"
+              "step_file": "steps/ch3_custom_types/constants/002_consts_write.json"
             },
             {
-              "step_file": "steps/ch3_custom_types/constants/consts_error.json"
+              "step_file": "steps/ch3_custom_types/constants/003_consts_error.json"
             },
             {
-              "step_file": "steps/ch3_custom_types/constants/consts_fix.json"
+              "step_file": "steps/ch3_custom_types/constants/004_consts_fix.json"
             },
             {
-              "step_file": "steps/ch3_custom_types/constants/consts_wrapup.json"
+              "step_file": "steps/ch3_custom_types/constants/005_consts_wrapup.json"
             }
           ]
         }
@@ -626,16 +850,20 @@
       "title": "4 变量绑定",
       "assets": [
         {
-          "id": "narration_ch4_variable_bindings",
-          "path": "assets/narration/ch4_variable_bindings/narration.ogg"
+          "id": "narration_ch4_variable_bindings_001_bindings_intro",
+          "path": "assets/narration/ch4_variable_bindings/001_bindings_intro.ogg"
+        },
+        {
+          "id": "narration_ch4_variable_bindings_002_bindings_code",
+          "path": "assets/narration/ch4_variable_bindings/002_bindings_code.ogg"
         }
       ],
       "steps": [
         {
-          "step_file": "steps/ch4_variable_bindings/bindings_intro.json"
+          "step_file": "steps/ch4_variable_bindings/001_bindings_intro.json"
         },
         {
-          "step_file": "steps/ch4_variable_bindings/bindings_code.json"
+          "step_file": "steps/ch4_variable_bindings/002_bindings_code.json"
         }
       ],
       "children": [
@@ -644,25 +872,41 @@
           "title": "4.1 可变变量",
           "assets": [
             {
-              "id": "narration_ch4_variable_bindings_mut",
-              "path": "assets/narration/ch4_variable_bindings/mut/narration.ogg"
+              "id": "narration_ch4_variable_bindings_mut_001_mut_intro",
+              "path": "assets/narration/ch4_variable_bindings/mut/001_mut_intro.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_mut_002_mut_write",
+              "path": "assets/narration/ch4_variable_bindings/mut/002_mut_write.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_mut_003_mut_error",
+              "path": "assets/narration/ch4_variable_bindings/mut/003_mut_error.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_mut_004_mut_fix",
+              "path": "assets/narration/ch4_variable_bindings/mut/004_mut_fix.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_mut_005_mut_wrapup",
+              "path": "assets/narration/ch4_variable_bindings/mut/005_mut_wrapup.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch4_variable_bindings/mut/mut_intro.json"
+              "step_file": "steps/ch4_variable_bindings/mut/001_mut_intro.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/mut/mut_write.json"
+              "step_file": "steps/ch4_variable_bindings/mut/002_mut_write.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/mut/mut_error.json"
+              "step_file": "steps/ch4_variable_bindings/mut/003_mut_error.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/mut/mut_fix.json"
+              "step_file": "steps/ch4_variable_bindings/mut/004_mut_fix.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/mut/mut_wrapup.json"
+              "step_file": "steps/ch4_variable_bindings/mut/005_mut_wrapup.json"
             }
           ]
         },
@@ -671,25 +915,41 @@
           "title": "4.2 作用域和遮蔽",
           "assets": [
             {
-              "id": "narration_ch4_variable_bindings_scope",
-              "path": "assets/narration/ch4_variable_bindings/scope/narration.ogg"
+              "id": "narration_ch4_variable_bindings_scope_001_scope_intro",
+              "path": "assets/narration/ch4_variable_bindings/scope/001_scope_intro.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_scope_002_scope_write",
+              "path": "assets/narration/ch4_variable_bindings/scope/002_scope_write.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_scope_003_scope_error",
+              "path": "assets/narration/ch4_variable_bindings/scope/003_scope_error.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_scope_004_scope_fix",
+              "path": "assets/narration/ch4_variable_bindings/scope/004_scope_fix.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_scope_005_scope_wrapup",
+              "path": "assets/narration/ch4_variable_bindings/scope/005_scope_wrapup.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch4_variable_bindings/scope/scope_intro.json"
+              "step_file": "steps/ch4_variable_bindings/scope/001_scope_intro.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/scope/scope_write.json"
+              "step_file": "steps/ch4_variable_bindings/scope/002_scope_write.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/scope/scope_error.json"
+              "step_file": "steps/ch4_variable_bindings/scope/003_scope_error.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/scope/scope_fix.json"
+              "step_file": "steps/ch4_variable_bindings/scope/004_scope_fix.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/scope/scope_wrapup.json"
+              "step_file": "steps/ch4_variable_bindings/scope/005_scope_wrapup.json"
             }
           ]
         },
@@ -698,25 +958,41 @@
           "title": "4.3 变量先声明",
           "assets": [
             {
-              "id": "narration_ch4_variable_bindings_declare",
-              "path": "assets/narration/ch4_variable_bindings/declare/narration.ogg"
+              "id": "narration_ch4_variable_bindings_declare_001_declare_intro",
+              "path": "assets/narration/ch4_variable_bindings/declare/001_declare_intro.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_declare_002_declare_write",
+              "path": "assets/narration/ch4_variable_bindings/declare/002_declare_write.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_declare_003_declare_error",
+              "path": "assets/narration/ch4_variable_bindings/declare/003_declare_error.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_declare_004_declare_fix",
+              "path": "assets/narration/ch4_variable_bindings/declare/004_declare_fix.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_declare_005_declare_wrapup",
+              "path": "assets/narration/ch4_variable_bindings/declare/005_declare_wrapup.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch4_variable_bindings/declare/declare_intro.json"
+              "step_file": "steps/ch4_variable_bindings/declare/001_declare_intro.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/declare/declare_write.json"
+              "step_file": "steps/ch4_variable_bindings/declare/002_declare_write.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/declare/declare_error.json"
+              "step_file": "steps/ch4_variable_bindings/declare/003_declare_error.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/declare/declare_fix.json"
+              "step_file": "steps/ch4_variable_bindings/declare/004_declare_fix.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/declare/declare_wrapup.json"
+              "step_file": "steps/ch4_variable_bindings/declare/005_declare_wrapup.json"
             }
           ]
         },
@@ -725,25 +1001,41 @@
           "title": "4.4 冻结",
           "assets": [
             {
-              "id": "narration_ch4_variable_bindings_freeze",
-              "path": "assets/narration/ch4_variable_bindings/freeze/narration.ogg"
+              "id": "narration_ch4_variable_bindings_freeze_001_freeze_intro",
+              "path": "assets/narration/ch4_variable_bindings/freeze/001_freeze_intro.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_freeze_002_freeze_write",
+              "path": "assets/narration/ch4_variable_bindings/freeze/002_freeze_write.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_freeze_003_freeze_error",
+              "path": "assets/narration/ch4_variable_bindings/freeze/003_freeze_error.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_freeze_004_freeze_fix",
+              "path": "assets/narration/ch4_variable_bindings/freeze/004_freeze_fix.ogg"
+            },
+            {
+              "id": "narration_ch4_variable_bindings_freeze_005_freeze_wrapup",
+              "path": "assets/narration/ch4_variable_bindings/freeze/005_freeze_wrapup.ogg"
             }
           ],
           "steps": [
             {
-              "step_file": "steps/ch4_variable_bindings/freeze/freeze_intro.json"
+              "step_file": "steps/ch4_variable_bindings/freeze/001_freeze_intro.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/freeze/freeze_write.json"
+              "step_file": "steps/ch4_variable_bindings/freeze/002_freeze_write.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/freeze/freeze_error.json"
+              "step_file": "steps/ch4_variable_bindings/freeze/003_freeze_error.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/freeze/freeze_fix.json"
+              "step_file": "steps/ch4_variable_bindings/freeze/004_freeze_fix.json"
             },
             {
-              "step_file": "steps/ch4_variable_bindings/freeze/freeze_wrapup.json"
+              "step_file": "steps/ch4_variable_bindings/freeze/005_freeze_wrapup.json"
             }
           ]
         }

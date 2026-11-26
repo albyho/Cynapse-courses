@@ -1,0 +1,51 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch4_variable_bindings_scope_004_scope_fix",
+  "audio": "assets/narration/ch4_variable_bindings/scope/004_scope_fix.ogg",
+  "source_duration_ms": 8610,
+  "input_hash": "a2844aa6c36b058bac840f3fcac7247d9df32fce0d1e051b57812cdff2530881",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 2298,
+      "caption": "现在轮到我们修正 scope.rs。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/scope/004_scope_fix.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "73bcca085a8eae1efcd889a67f93269fd0fcf2727b781b6c5d3db4610f2bbd1c"
+    },
+    {
+      "offset_ms": 3000,
+      "duration_ms": 4610,
+      "caption": "终端留给我们自己动手，改完代码后在这里编译验证。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/scope/004_scope_fix.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "1d1c252a8692b07a70dbf9784daf68fef285423450080d513dcb129bd31fe871"
+    }
+  ]
+}

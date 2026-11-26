@@ -1,0 +1,44 @@
+{
+  "step_id": "001_dex_intro",
+  "title": "练习说明",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "display_demo.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise_001_dex_intro",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5292,
+              "caption": "动手试一试：display_demo.rs 里 MinMax 和 Point2D 都已经<c.aqua>实现</c.aqua>好 Display"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch1_hello_world_print_print_display_exercise_001_dex_intro",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 5445,
+              "caption": "仿照 Point2D 增加一个复数<c.aqua>结构体</c.aqua>，最终<c.aqua>打印</c.aqua>成 <c.aqua>\\(a + bi\\)</c.aqua> 的形式。",
+              "speech_edits": [
+                {
+                  "i": 27,
+                  "s": "\\(a + bi\\)",
+                  "p": "a JIA1 b i"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

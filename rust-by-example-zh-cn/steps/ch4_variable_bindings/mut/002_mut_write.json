@@ -1,0 +1,61 @@
+{
+  "step_id": "002_mut_write",
+  "title": "写入可变示例",
+  "actions": [
+    {
+      "type": "CreateFile",
+      "path": "mut.rs"
+    },
+    {
+      "type": "OpenFile",
+      "path": "mut.rs"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_mut_002_mut_write",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5615,
+              "caption": "let 绑定默认不可变，加 mut 才能二次赋值，这是 Rust 默认安全的一环。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "InsertText",
+      "path": "mut.rs",
+      "speed_ms": 40,
+      "target": {
+        "eof": true
+      },
+      "text": "fn main() {\n    let _immutable_binding = 1;\n    let mut mutable_binding = 1;\n\n    println!(\"Before mutation: {}\", mutable_binding);\n\n    // 正确代码\n    mutable_binding += 1;\n\n    println!(\"After mutation: {}\", mutable_binding);\n\n    // 错误！\n    _immutable_binding += 1;\n    // 改正 ^ 将此行注释掉\n}\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch4_variable_bindings_mut_002_mut_write",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 3700,
+              "caption": "逐行写入<c.aqua>不可变</c.aqua><c.aqua>绑定</c.aqua>、<c.aqua>可变</c.aqua>绑定和赋值。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Wait",
+      "duration_ms": 3000
+    }
+  ]
+}

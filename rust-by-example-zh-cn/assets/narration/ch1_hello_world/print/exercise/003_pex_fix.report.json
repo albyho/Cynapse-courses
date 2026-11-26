@@ -1,0 +1,260 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
+  "audio": "assets/narration/ch1_hello_world/print/exercise/003_pex_fix.ogg",
+  "source_duration_ms": 50126,
+  "input_hash": "d42c9a717c48be49edc49d3963867e048f46e28b96508a665f4c94ebe50c7e25",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 7553,
+      "caption": "占位符的个数要和参数一一对应，类型还得实现 Display；这段示例里两处都埋了问题。",
+      "speech_edits": [
+        {
+          "i": 8,
+          "s": "参",
+          "p": "CAN1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "34bb99127e9c1e10b611cd961c358a7298611260d18d116ce93ba8ebe9c38b55"
+    },
+    {
+      "offset_ms": 8000,
+      "duration_ms": 5153,
+      "caption": "第一个<c.aqua>错误</c.aqua>：println! 里用到了 {1}，却只提供了一个<c.aqua>参数</c.aqua>。",
+      "speech_edits": [
+        {
+          "i": 6,
+          "s": "println!",
+          "p": "println 宏"
+        },
+        {
+          "i": 20,
+          "s": "{1}",
+          "p": "大括号一"
+        },
+        {
+          "i": 31,
+          "s": "参",
+          "p": "CAN1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 2,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "6bcda553adae3df34044ba5fa6e94e01a725a8041c3a336f3263f73a9ad3cacd"
+    },
+    {
+      "offset_ms": 14000,
+      "duration_ms": 2698,
+      "caption": "把漏掉的第二个<c.aqua>参数</c.aqua>补在 \"Bond\" 后面。",
+      "speech_edits": [
+        {
+          "i": 7,
+          "s": "参",
+          "p": "CAN1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 2,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "65d590747fa4e2e8c387709505eb5fc55423a47e4638c982ba252a3b3d41fcb9"
+    },
+    {
+      "offset_ms": 17000,
+      "duration_ms": 1522,
+      "caption": "补上 , \"James\"。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "41e900625cfb004f236c8bcccfcaa8e1ea46d8270143d2a96248198b3100b7df"
+    },
+    {
+      "offset_ms": 19000,
+      "duration_ms": 5564,
+      "caption": "第二个<c.aqua>错误</c.aqua>：Structure 没有<c.aqua>实现</c.aqua> Display，不能用 {} 直接<c.aqua>打印</c.aqua>。",
+      "speech_edits": [
+        {
+          "i": 33,
+          "s": "{}",
+          "p": "一对大括号"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 4,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "822a69149a87cf0549ded920d9fe8f0c377737891dcafd0480edea22b79f33b3"
+    },
+    {
+      "offset_ms": 25000,
+      "duration_ms": 2927,
+      "caption": "按书上的做法，先把这行<c.aqua>注释</c.aqua>掉。",
+      "speech_edits": [
+        {
+          "i": 10,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 4,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "52e344df9cc2b6cfb0a639f4573a4ebd06be97ef9385290873f3aff1a7e9e5c3"
+    },
+    {
+      "offset_ms": 28000,
+      "duration_ms": 2033,
+      "caption": "在行首输入 // 。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "行",
+          "p": "HANG2"
+        },
+        {
+          "i": 6,
+          "s": "//",
+          "p": "双斜杠"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 5,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "7e0f4f775a442100d340ffe17059fa308e5b501b36143b089bc87e111649ccc5"
+    },
+    {
+      "offset_ms": 31000,
+      "duration_ms": 4925,
+      "caption": "练习还要求再写一行<c.aqua>打印</c.aqua> Pi 的近似值，保留三位小数。",
+      "speech_edits": [
+        {
+          "i": 8,
+          "s": "行",
+          "p": "HANG2"
+        },
+        {
+          "i": 12,
+          "s": "Pi",
+          "p": "PAI4"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 6,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "227b4c62258fd7b949d83b88c600119fb3ce3e8c029667aa2d14fd989abc6488"
+    },
+    {
+      "offset_ms": 36000,
+      "duration_ms": 2053,
+      "caption": "把这行加到 main 的最后。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 6,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "abf872ed2823e945f51a245f6404b677fe29f4baf6adb61ffaa4614f963d5afc"
+    },
+    {
+      "offset_ms": 39000,
+      "duration_ms": 2699,
+      "caption": "输入 let 和新的一行 println!。",
+      "speech_edits": [
+        {
+          "i": 11,
+          "s": "行",
+          "p": "HANG2"
+        },
+        {
+          "i": 13,
+          "s": "println!",
+          "p": "println 宏"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 7,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "8217a87aeb32ddc282b6e11c4c92ce5ad6b846479088416b3f4e238d31d79116"
+    },
+    {
+      "offset_ms": 42000,
+      "duration_ms": 1700,
+      "caption": "这次编译通过。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 9,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "83aa919335c0047a0aa7db826a7206bb265324542b1885d30c7a108a326c2b41"
+    },
+    {
+      "offset_ms": 44000,
+      "duration_ms": 5126,
+      "caption": "程序依次输出了<c.aqua>格式化</c.aqua>结果，以及 Pi is roughly 3.142。",
+      "speech_edits": [
+        {
+          "i": 16,
+          "s": "Pi",
+          "p": "PAI4"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/exercise/003_pex_fix.json",
+        "action_index": 10,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "206cccdd7792ff76d0b98858575bff3d672a60ef2905f8f2a562be7bf6604968"
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "step_id": "002_tuples_code",
+  "title": "构造、访问与解构",
+  "actions": [
+    {
+      "type": "CreateFile",
+      "path": "tuples.rs"
+    },
+    {
+      "type": "OpenFile",
+      "path": "tuples.rs"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6743,
+              "caption": "元组把不同类型的值组合在一起，可以用下标访问，也能一次解构成多个变量。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "InsertText",
+      "path": "tuples.rs",
+      "speed_ms": 40,
+      "target": {
+        "eof": true
+      },
+      "text": "// 元组可以充当函数的参数和返回值\nfn reverse(pair: (i32, bool)) -> (bool, i32) {\n    // 可以使用 `let` 把一个元组的成员绑定到一些变量\n    let (integer, boolean) = pair;\n\n    (boolean, integer)\n}\n\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 7000,
+              "duration_ms": 5546,
+              "caption": "接下来在 tuples.rs 里写入<c.aqua>下标</c.aqua>访问、嵌套、<c.aqua>解构</c.aqua>和多值返回的示例。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 6692,
+              "caption": "先看 reverse：元组作参数，<c.aqua>解构</c.aqua>出两个元素，再以交换后的顺序返回一个元组。",
+              "speech_edits": [
+                {
+                  "i": 14,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "InsertText",
+      "path": "tuples.rs",
+      "speed_ms": 40,
+      "target": {
+        "eof": true
+      },
+      "text": "// 在 “动手试一试” 的练习中要用到下面这个结构体。\n#[derive(Debug)]\nstruct Matrix(f32, f32, f32, f32);\n\n",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 20000,
+              "duration_ms": 4558,
+              "caption": "Matrix 是一个<c.aqua>元组结构体</c.aqua>，后面的练习要给它<c.aqua>实现</c.aqua> Display。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "InsertText",
+      "path": "tuples.rs",
+      "speed_ms": 17,
+      "target": {
+        "eof": true
+      },
+      "text": "fn main() {\n    // 包含各种不同类型的元组\n    let long_tuple = (1u8, 2u16, 3u32, 4u64,\n                      -1i8, -2i16, -3i32, -4i64,\n                      0.1f32, 0.2f64,\n                      'a', true);\n\n    // 通过元组的下标来访问具体的值\n    println!(\"long tuple first value: {}\", long_tuple.0);\n    println!(\"long tuple second value: {}\", long_tuple.1);\n\n    // 元组也可以充当元组的元素\n    let tuple_of_tuples = ((1u8, 2u16, 2u32), (4u64, -1i8), -2i16);\n\n    // 元组可以打印\n    println!(\"tuple of tuples: {:?}\", tuple_of_tuples);\n\n    // 但很长的元组无法打印\n    // let too_long_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);\n    // println!(\"too long tuple: {:?}\", too_long_tuple);\n    // 试一试 ^ 取消上面两行的注释，阅读编译器给出的错误信息。\n\n    let pair = (1, true);\n    println!(\"pair is {:?}\", pair);\n\n    println!(\"the reversed pair is {:?}\", reverse(pair));\n\n    // 创建单元素元组需要一个额外的逗号，这是为了和被括号包含的字面量作区分。\n    println!(\"one element tuple: {:?}\", (5u32,));\n    println!(\"just an integer: {:?}\", (5u32));\n\n    // 元组可以被解构（deconstruct），从而将值绑定给变量\n    let tuple = (1, \"hello\", 4.5, true);\n\n    let (a, b, c, d) = tuple;\n    println!(\"{:?}, {:?}, {:?}, {:?}\", a, b, c, d);\n\n    let matrix = Matrix(1.1, 1.2, 2.1, 2.2);\n    println!(\"{:?}\", matrix)\n\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 25000,
+              "duration_ms": 4508,
+              "caption": "main 从长元组开始：用 .0、.1 取值，再看元组套元组。",
+              "speech_edits": [
+                {
+                  "i": 6,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 30000,
+              "duration_ms": 5942,
+              "caption": "下面<c.aqua>注释</c.aqua>掉的两行说明超过 12 个元素的元组无法用 Debug 打印。",
+              "speech_edits": [
+                {
+                  "i": 7,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 36000,
+              "duration_ms": 5975,
+              "caption": "后半段是单元素元组的逗号、<c.aqua>解构</c.aqua>成四个变量，最后构造并打印 Matrix。"
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 42000,
+              "duration_ms": 4607,
+              "caption": "先写包含多种<c.aqua>类型</c.aqua>的长<c.aqua>元组</c.aqua>，再用 .0 和 .1 取值。",
+              "speech_edits": [
+                {
+                  "i": 9,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 47000,
+              "duration_ms": 3227,
+              "caption": "接着写元组套元组，并用 Debug 打印。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "着",
+                  "p": "ZHE5"
+                }
+              ]
+            },
+            {
+              "offset_ms": 51000,
+              "duration_ms": 4245,
+              "caption": "超过十二个元素的元组无法 Debug 打印，保持<c.aqua>注释</c.aqua>。"
+            },
+            {
+              "offset_ms": 56000,
+              "duration_ms": 4172,
+              "caption": "再看 reverse 交换二元组，以及单元素元组的逗号。"
+            },
+            {
+              "offset_ms": 61000,
+              "duration_ms": 3003,
+              "caption": "四<c.aqua>元组解构</c.aqua>成四个<c.aqua>变量</c.aqua>，各自打印。"
+            },
+            {
+              "offset_ms": 65000,
+              "duration_ms": 2291,
+              "caption": "最后构造 Matrix，用 Debug <c.aqua>打印</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc tuples.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 68000,
+              "duration_ms": 904,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./tuples",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "long tuple first value: 1",
+        "long tuple second value: 2",
+        "pair is (1, true)",
+        "the reversed pair is (true, 1)",
+        "one element tuple: (5,)",
+        "just an integer: 5",
+        "1, \"hello\", 4.5, true"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 69000,
+              "duration_ms": 2362,
+              "caption": "运行，逐行核对输出。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "XING2"
+                },
+                {
+                  "i": 4,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
+          "clips": [
+            {
+              "offset_ms": 72000,
+              "duration_ms": 5410,
+              "caption": "长<c.aqua>元组</c.aqua>的前两个值、嵌套<c.aqua>元组</c.aqua>、反转后的 pair 都<c.aqua>打印</c.aqua>出来了。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 78000,
+              "duration_ms": 6921,
+              "caption": "(5,) 是单元素元组，(5) 只是一个整数，输出里的逗号就是区别。",
+              "speech_edits": [
+                {
+                  "i": 0,
+                  "s": "(5,)",
+                  "p": "圆括号 5 逗号"
+                },
+                {
+                  "i": 12,
+                  "s": "(5)",
+                  "p": "圆括号 5"
+                }
+              ]
+            },
+            {
+              "offset_ms": 85000,
+              "duration_ms": 3729,
+              "caption": "<c.aqua>解构</c.aqua>之后，四个<c.aqua>变量</c.aqua>各自拿到了对应位置的值。"
+            },
+            {
+              "offset_ms": 89000,
+              "duration_ms": 6995,
+              "caption": "<c.aqua>注释</c.aqua>里的超长<c.aqua>元组</c.aqua>超过 12 个<c.aqua>元素</c.aqua>，Debug 无法打印，取消注释会看到编译错误。",
+              "speech_edits": [
+                {
+                  "i": 5,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Wait",
+      "duration_ms": 4000
+    }
+  ]
+}

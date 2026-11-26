@@ -1,0 +1,51 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch3_custom_types_structs_exercise_001_sex_intro",
+  "audio": "assets/narration/ch3_custom_types/structs/exercise/001_sex_intro.ogg",
+  "source_duration_ms": 10789,
+  "input_hash": "8fd4b7f93bd36dee4c8f0191eb94ddffe837957b1aeeee6fda0844f49830b754",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 4080,
+      "caption": "动手试一试：structs.rs 里 Rectangle 和 Point 都已<c.aqua>定义</c.aqua>好。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/exercise/001_sex_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "4b8e0bf914852127784d09c890e89c17165351b6b325b14774c12f0ce62f76c0"
+    },
+    {
+      "offset_ms": 5000,
+      "duration_ms": 4789,
+      "caption": "接下来把这两个<c.aqua>类型</c.aqua>组合起来，算出可<c.aqua>打印</c.aqua>的面积结果。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/exercise/001_sex_intro.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "1936858d0a3f60bbd6ac4312b87aa2481c44eaf3151bd2a9f0c964711cc68b1e"
+    }
+  ]
+}

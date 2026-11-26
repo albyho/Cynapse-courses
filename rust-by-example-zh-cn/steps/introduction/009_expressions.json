@@ -1,0 +1,72 @@
+{
+  "step_id": "009_expressions",
+  "title": "简介: 表达式",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 15
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_009_expressions",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 1695,
+              "caption": "第 7 章《表达式》。"
+            },
+            {
+              "offset_ms": 2000,
+              "duration_ms": 3051,
+              "caption": "这一章看表达式怎样构成 Rust 代码。"
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 2732,
+              "caption": "很多结构本身就是一个表达式。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_009_expressions",
+          "clips": [
+            {
+              "offset_ms": 9000,
+              "duration_ms": 2967,
+              "caption": "这一章会看代码块最后一行怎样产生值。",
+              "speech_edits": [
+                {
+                  "i": 11,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_009_expressions",
+          "clips": [
+            {
+              "offset_ms": 12000,
+              "duration_ms": 3155,
+              "caption": "以及分号在什么时候把它变成语句。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

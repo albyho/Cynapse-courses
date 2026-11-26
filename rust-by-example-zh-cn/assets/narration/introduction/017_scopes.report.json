@@ -1,0 +1,96 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_introduction_017_scopes",
+  "audio": "assets/narration/introduction/017_scopes.ogg",
+  "source_duration_ms": 17624,
+  "input_hash": "4748823ffa62034b8dc381c51f75b61eb1ce25d6551437cdc3bb4db34f4515ff",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 1880,
+      "caption": "第 15 章《作用域规则》。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/017_scopes.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "00ba74e9b4db38290ff7434ef7a78ce5ef01a17e1e99a57039e51eefb6cdfd08"
+    },
+    {
+      "offset_ms": 2000,
+      "duration_ms": 4550,
+      "caption": "作用域在所有权、借用和生命周期中起重要作用。",
+      "speech_edits": [
+        {
+          "i": 17,
+          "s": "重",
+          "p": "ZHONG4"
+        }
+      ],
+      "target": {
+        "step_file": "steps/introduction/017_scopes.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "2a561666eea492e216ac7feba875991ef7fb60530419e23c7d28fca457a9a0bf"
+    },
+    {
+      "offset_ms": 7000,
+      "duration_ms": 3581,
+      "caption": "这一章会看一个名字从创建到失效的过程。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/017_scopes.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "49c43100e16129e7cb19069b4174726e4702ce40b5b50bb55ee17156dde37345"
+    },
+    {
+      "offset_ms": 11000,
+      "duration_ms": 2499,
+      "caption": "这一章会看每个名字的有效范围。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/017_scopes.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "e48d8ec352199b94c8ebb256dc7d73210a3483e96b5467ced2d294e26876ec7a"
+    },
+    {
+      "offset_ms": 14000,
+      "duration_ms": 2624,
+      "caption": "再判断移动或借用为什么被允许。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/017_scopes.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "ef50f14714db9b206a3cad14b1051a6430c33f6f2474d0079edcfa5a62261491"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_introduction_021_std_types",
+  "audio": "assets/narration/introduction/021_std_types.ogg",
+  "source_duration_ms": 18429,
+  "input_hash": "880637873025510ec6a344bf386effa5a8e6e393fc44e85ff1cecadd55c806f1",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 1898,
+      "caption": "第 19 章《标准库类型》。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/021_std_types.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "53f532b7fa8e093b3cd30bf33af77eaeafbb85b3d6c4efd7d985532213f8e330"
+    },
+    {
+      "offset_ms": 2000,
+      "duration_ms": 3574,
+      "caption": "这一章学习标准库提供的一些自定义类型。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/021_std_types.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "2a32b808e55429b66f600928c24feac8ffe8d719cbed2c6bae758f23f2d82aa9"
+    },
+    {
+      "offset_ms": 6000,
+      "duration_ms": 3214,
+      "caption": "这一章介绍标准库里几个最常用的容器。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/021_std_types.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "d9bdb8c1f490d2ab28032f6ef95c174337edcb92af8a5d9706125c702e1172b4"
+    },
+    {
+      "offset_ms": 10000,
+      "duration_ms": 3019,
+      "caption": "这一章会看每个容器解决什么问题。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/021_std_types.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "19e3847a2420ebbed78e7d0307ba8f386fa8eb25d040f85d85b6a07420a0ecd4"
+    },
+    {
+      "offset_ms": 14000,
+      "duration_ms": 3429,
+      "caption": "把它们连起来理解，会比逐个记更容易。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/021_std_types.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "18f049392d2c7d1ee50ea1c5117dd586be2b4b770ff7a45c6a6c094fbde87590"
+    }
+  ]
+}

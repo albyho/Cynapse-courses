@@ -1,0 +1,262 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch3_custom_types_structs_003_structs_use",
+  "audio": "assets/narration/ch3_custom_types/structs/003_structs_use.ogg",
+  "source_duration_ms": 78976,
+  "input_hash": "56aa933984b01e88260abe0bf3609bb9e1380ab04fa0924115533eaca73703aa",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 7133,
+      "caption": "构造结构体时字段名和变量名相同可以简写；访问、更新和解构各有对应语法。",
+      "speech_edits": [
+        {
+          "i": 13,
+          "s": "相",
+          "p": "XIANG1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 0,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "a6a866b42c9f3a7e12a8f08466b31337d6a74a454bba0316a6ea35aba8109d42"
+    },
+    {
+      "offset_ms": 8000,
+      "duration_ms": 4385,
+      "caption": "准备在 main 里用<c.aqua>字段</c.aqua>名与<c.aqua>变量</c.aqua>同名的简写构造 Person。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "d7c1588c225adabf2e47041c3d25e9b3e423f334bef3389f746da74ae5514a2c"
+    },
+    {
+      "offset_ms": 13000,
+      "duration_ms": 6773,
+      "caption": "main 里用<c.aqua>字段</c.aqua>名与<c.aqua>变量</c.aqua>同名的简写构造 Person，再用 Debug <c.aqua>打印</c.aqua>整个结构体的字段。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 3,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "641b27319c8b56a0f7ed519d5e5e64344742b7529861f20e70cdd74e875a6ed2"
+    },
+    {
+      "offset_ms": 20000,
+      "duration_ms": 4703,
+      "caption": "Point <c.aqua>实例</c.aqua>化之后，用点号访问<c.aqua>字段</c.aqua>，读出两个坐标分量。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 4,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "80861fcae61a62a481f081e0b18932f84c5f8dcd749b6ef5e4142f8fd38a604a"
+    },
+    {
+      "offset_ms": 25000,
+      "duration_ms": 7863,
+      "caption": "更新语法只写要改的字段，其余用 ..point 从旧值搬过来；let 配合模式把字段<c.aqua>解构</c.aqua>成两个变量。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 5,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "c22dc5aeb32e1eab6aed3bd4db2b9aa646432dc3ee7df3c21cfa37a7f63b37d1"
+    },
+    {
+      "offset_ms": 33000,
+      "duration_ms": 6901,
+      "caption": "最后是嵌套<c.aqua>结构体</c.aqua>、<c.aqua>单元</c.aqua><c.aqua>结构体</c.aqua>和元组结构体：后者用 .0、.1 访问，也能一次解构。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 6,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "10aefcebe7af87a1ab0b0a43320feafdfacb3285ff70dcc75d90ba87d5a8b8a1"
+    },
+    {
+      "offset_ms": 40000,
+      "duration_ms": 2735,
+      "caption": "先用两个 Point 构造嵌套的 Rectangle。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 6,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "39b2e9505a98d30b5a1f6786bb413c845a60dc1e76ea564e15c819861cddddfc"
+    },
+    {
+      "offset_ms": 43000,
+      "duration_ms": 2078,
+      "caption": "再实例化单元结构体 Unit。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 6,
+        "phase": "during",
+        "clip_index": 1
+      },
+      "cache_key": "668c76b735a71362e87403c7c6c7e75dc7ea70496bf67781718afdd4114fac80"
+    },
+    {
+      "offset_ms": 46000,
+      "duration_ms": 3109,
+      "caption": "<c.aqua>元组结构体</c.aqua> Pair 可以用 .0 和 .1 访问。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 6,
+        "phase": "during",
+        "clip_index": 2
+      },
+      "cache_key": "bee21e6b44530b54d6d77696049c24699edf1d1f2df54029ed8c78f1605236ee"
+    },
+    {
+      "offset_ms": 50000,
+      "duration_ms": 2766,
+      "caption": "最后把 Pair <c.aqua>解构</c.aqua>成两个<c.aqua>变量</c.aqua><c.aqua>打印</c.aqua>。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 6,
+        "phase": "during",
+        "clip_index": 3
+      },
+      "cache_key": "7cd76ef072324dec50f652a5fd2e8fca56b7370202d4c54a0053e7c66a33e363"
+    },
+    {
+      "offset_ms": 53000,
+      "duration_ms": 904,
+      "caption": "编译通过。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 8,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "462765e076e12a4b788d87729117d866e6db3f22eab617f9d0bc13a5843c64c2"
+    },
+    {
+      "offset_ms": 54000,
+      "duration_ms": 2362,
+      "caption": "运行，逐行核对输出。",
+      "speech_edits": [
+        {
+          "i": 1,
+          "s": "行",
+          "p": "XING2"
+        },
+        {
+          "i": 4,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 9,
+        "phase": "before",
+        "clip_index": 0
+      },
+      "cache_key": "f9bb4af924e699047113e5e9a731147e4607c9a376bc6814c5e4c25fb370b125"
+    },
+    {
+      "offset_ms": 57000,
+      "duration_ms": 2502,
+      "caption": "Person 按 Debug <c.aqua>打印</c.aqua>出全部<c.aqua>字段</c.aqua>。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 9,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "6fcc5cb652f5323b1746967f07ffa31e50c7dc7f8c577805f4212941ed9a28d1"
+    },
+    {
+      "offset_ms": 60000,
+      "duration_ms": 6857,
+      "caption": "point 的坐标是 (10.3, 0.4)，更新语法造出的第二个点<c.aqua>借用</c.aqua>了它的 y。",
+      "speech_edits": [
+        {
+          "i": 11,
+          "s": "(10.3, 0.4)",
+          "p": "圆括号 10.3 逗号 0.4"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 9,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "e2516a61ef0ed5f65bd2273f9b8413bfbef0b9d5b52d2af79f668f6e4d54c870"
+    },
+    {
+      "offset_ms": 67000,
+      "duration_ms": 4749,
+      "caption": "<c.aqua>元组结构体</c.aqua> Pair 既能用<c.aqua>下标</c.aqua>访问，也能解构成两个变量。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 9,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "85ef54ad3ecf64748979730bdcd94198f2d925f445b546b5e3a868f64d0a04ef"
+    },
+    {
+      "offset_ms": 72000,
+      "duration_ms": 5976,
+      "caption": "Person 按 Debug <c.aqua>打印</c.aqua>出全部<c.aqua>字段</c.aqua>，我们对照源码看这一行是怎么来的。",
+      "speech_edits": [
+        {
+          "i": 32,
+          "s": "行",
+          "p": "HANG2"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch3_custom_types/structs/003_structs_use.json",
+        "action_index": 10,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "49a8bc49dd4a85a446c66cb578824882286d4f96fbfd538a1aadb7834fcb04dd"
+    }
+  ]
+}

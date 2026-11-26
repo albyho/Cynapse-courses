@@ -1,0 +1,70 @@
+{
+  "step_id": "003_tex_transpose",
+  "title": "挑战：补上 transpose",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "tuples.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise_003_tex_transpose",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5196,
+              "caption": "仿照 reverse，写一个 transpose：把矩阵右上和左下两个<c.aqua>元素</c.aqua>交换。"
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 3937,
+              "caption": "最后把原矩阵和转置后的矩阵一起<c.aqua>打印</c.aqua>出来。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch2_primitives_tuples_exercise_003_tex_transpose",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 4610,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    }
+  ],
+  "challenge": {
+    "instructions": "补上 transpose，让终端依次输出 Matrix:、原矩阵、Transpose:、转置矩阵；1.2 与 2.1 应互换位置。",
+    "checks": [
+      {
+        "type": "COMMAND",
+        "session_key": "main",
+        "cwd": ".",
+        "command": "rustc tuples.rs; ./tuples",
+        "accepted_exit_codes": [
+          0
+        ],
+        "expected_output": [
+          "Matrix:",
+          "Transpose:",
+          "( 1.1 2.1 )",
+          "( 1.2 2.2 )"
+        ],
+        "timeout_ms": 300000
+      }
+    ],
+    "hint": "`transpose` 交换 `matrix.1` 和 `matrix.2`，打印用：\n\n```rust\nprintln!(\"Matrix:\\n{}\\nTranspose:\\n{}\", matrix, transpose(matrix));\n```",
+    "allow_skip": true
+  }
+}

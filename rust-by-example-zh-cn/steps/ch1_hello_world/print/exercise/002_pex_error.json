@@ -1,0 +1,106 @@
+{
+  "step_id": "002_pex_error",
+  "title": "观察真实报错",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "print.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_exercise_002_pex_error",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 4062,
+              "caption": "print.rs 现在编译不过：两处<c.aqua>报错</c.aqua>都是故意留着的。"
+            },
+            {
+              "offset_ms": 5000,
+              "duration_ms": 3686,
+              "caption": "先原样编译一次，看<c.aqua>编译器</c.aqua>指向哪两行。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc print.rs",
+      "accepted_exit_codes": [
+        1
+      ],
+      "expected_output": [
+        "invalid reference to positional argument 1",
+        "E0277"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch1_hello_world_print_exercise_002_pex_error",
+          "clips": [
+            {
+              "offset_ms": 9000,
+              "duration_ms": 5971,
+              "caption": "第一个<c.aqua>报错</c.aqua>停在第 26 行：<c.aqua>位置参数</c.aqua> {1} 没有对应的<c.aqua>参数</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 16,
+                  "s": "参",
+                  "p": "CAN1"
+                },
+                {
+                  "i": 19,
+                  "s": "{1}",
+                  "p": "大括号一"
+                },
+                {
+                  "i": 28,
+                  "s": "参",
+                  "p": "CAN1"
+                }
+              ]
+            },
+            {
+              "offset_ms": 15000,
+              "duration_ms": 6896,
+              "caption": "第二个错误码是 E0277：Structure 没有<c.aqua>实现</c.aqua> Display，不能用 {} 直接<c.aqua>打印</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 41,
+                  "s": "{}",
+                  "p": "一对大括号"
+                }
+              ]
+            },
+            {
+              "offset_ms": 22000,
+              "duration_ms": 3474,
+              "caption": "记住这两行的位置，下一步逐个修正。",
+              "speech_edits": [
+                {
+                  "i": 4,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

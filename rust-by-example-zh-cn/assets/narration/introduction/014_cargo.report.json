@@ -1,0 +1,90 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_introduction_014_cargo",
+  "audio": "assets/narration/introduction/014_cargo.ogg",
+  "source_duration_ms": 18159,
+  "input_hash": "4024af364349231393579afb1268d10092ca9525cddd175d33d0de182628acf7",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 1749,
+      "caption": "第 12 章《Cargo》。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/014_cargo.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "704b80543eb465908b63a40e92420e8b7ea0f2f782ca658141a751dbc4bbfb09"
+    },
+    {
+      "offset_ms": 2000,
+      "duration_ms": 3669,
+      "caption": "这一章学官方包管理工具的一些基本功能。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/014_cargo.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "67a89716145830b5a5a0945283c386a52e1d7f39f8edd883c478aaab62e0e26c"
+    },
+    {
+      "offset_ms": 6000,
+      "duration_ms": 2960,
+      "caption": "这一章介绍它怎样串起日常的构建流程。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/014_cargo.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "fffbf8f57fb7a7eb12e4088db0f218a076c7a1ee82beb69ff46152004a11b858"
+    },
+    {
+      "offset_ms": 9000,
+      "duration_ms": 3567,
+      "caption": "这一章会看项目配置怎样影响构建结果。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/014_cargo.json",
+        "action_index": 1,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "f3df2cb7a3317b69df1a68b6c69b87625f29330fdac7511fc750b40e3b618a20"
+    },
+    {
+      "offset_ms": 13000,
+      "duration_ms": 4159,
+      "caption": "这里不追求完整手册，而是建立工具的心智模型。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/introduction/014_cargo.json",
+        "action_index": 2,
+        "phase": "during",
+        "clip_index": 0
+      },
+      "cache_key": "e8b680212e456f12695d70a4e2e67d8a4110ede59606e52ea1c2237f4125bb4a"
+    }
+  ]
+}

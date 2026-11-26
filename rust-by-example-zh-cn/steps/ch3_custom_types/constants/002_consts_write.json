@@ -1,0 +1,184 @@
+{
+  "step_id": "002_consts_write",
+  "title": "写入常量示例",
+  "actions": [
+    {
+      "type": "CreateFile",
+      "path": "consts.rs"
+    },
+    {
+      "type": "OpenFile",
+      "path": "consts.rs"
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_constants_002_consts_write",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5725,
+              "caption": "常量和静态变量在函数外声明，类型必须写清楚，函数里也能读取。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "InsertText",
+      "path": "consts.rs",
+      "speed_ms": 40,
+      "target": {
+        "eof": true
+      },
+      "text": "// 全局变量是在所有其他作用域之外声明的。\nstatic LANGUAGE: &'static str = \"Rust\";\nconst  THRESHOLD: i32 = 10;\n\nfn is_big(n: i32) -> bool {\n    // 在一般函数中访问常量\n    n > THRESHOLD\n}\n\nfn main() {\n    let n = 16;\n\n    // 在 main 函数（主函数）中访问常量\n    println!(\"This is {}\", LANGUAGE);\n    println!(\"The threshold is {}\", THRESHOLD);\n    println!(\"{} is {}\", n, if is_big(n) { \"big\" } else { \"small\" });\n\n    // 报错！不能修改一个 `const` 常量。\n    THRESHOLD = 5;\n    // 改正 ^ 注释掉此行\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_constants_002_consts_write",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 2660,
+              "caption": "逐行写入<c.aqua>常量</c.aqua>、static 和 is_big。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch3_custom_types_constants_002_consts_write",
+          "clips": [
+            {
+              "offset_ms": 9000,
+              "duration_ms": 3683,
+              "caption": "先在函数外声明 static LANGUAGE 和 const THRESHOLD。"
+            },
+            {
+              "offset_ms": 13000,
+              "duration_ms": 2868,
+              "caption": "is_big <c.aqua>函数</c.aqua>读取<c.aqua>常量</c.aqua> THRESHOLD 做比较。"
+            },
+            {
+              "offset_ms": 16000,
+              "duration_ms": 3589,
+              "caption": "main 里<c.aqua>打印</c.aqua>两个<c.aqua>常量</c.aqua>，并用 is_big 判断 16。"
+            },
+            {
+              "offset_ms": 20000,
+              "duration_ms": 4987,
+              "caption": "给 const <c.aqua>赋值</c.aqua>的那行保持<c.aqua>注释</c.aqua>，下一页会观察 E0070。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "consts.rs",
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 3
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_constants_002_consts_write",
+          "clips": [
+            {
+              "offset_ms": 25000,
+              "duration_ms": 5115,
+              "caption": "static LANGUAGE 和 const THRESHOLD 都在全局<c.aqua>作用域</c.aqua>，<c.aqua>类型</c.aqua>必须写清楚。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "consts.rs",
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 8
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_constants_002_consts_write",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 4488,
+              "caption": "is_big 直接比较 n > THRESHOLD，<c.aqua>函数</c.aqua>内部也能访问全局<c.aqua>常量</c.aqua>。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "consts.rs",
+      "start": {
+        "line": 10
+      },
+      "end": {
+        "line": 16
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_constants_002_consts_write",
+          "clips": [
+            {
+              "offset_ms": 36000,
+              "duration_ms": 4658,
+              "caption": "main 读取<c.aqua>静态</c.aqua><c.aqua>字符串</c.aqua>和<c.aqua>常量</c.aqua>，再根据 is_big 打印 big 或 small。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "RevealText",
+      "path": "consts.rs",
+      "start": {
+        "line": 18
+      },
+      "end": {
+        "line": 20
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_constants_002_consts_write",
+          "clips": [
+            {
+              "offset_ms": 41000,
+              "duration_ms": 6438,
+              "caption": "最后一行给 THRESHOLD <c.aqua>赋值</c.aqua>是故意的；const <c.aqua>不可变</c.aqua>，下一步会看到 E0070。",
+              "speech_edits": [
+                {
+                  "i": 3,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

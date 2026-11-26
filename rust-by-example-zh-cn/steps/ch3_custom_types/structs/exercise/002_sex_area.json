@@ -1,0 +1,85 @@
+{
+  "step_id": "002_sex_area",
+  "title": "挑战：面积与正方形",
+  "actions": [
+    {
+      "type": "OpenFile",
+      "path": "structs.rs",
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_structs_exercise_002_sex_area",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5198,
+              "caption": "rect_area 接受一个 Rectangle，用嵌套<c.aqua>解构</c.aqua>一次取出左上角和右下角。"
+            },
+            {
+              "offset_ms": 6000,
+              "duration_ms": 2936,
+              "caption": "横纵两个方向的差相乘就是<c.aqua>\\(A = w \\times h\\)</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 12,
+                  "s": "\\(A = w \\times h\\)",
+                  "p": "面积"
+                }
+              ]
+            },
+            {
+              "offset_ms": 9000,
+              "duration_ms": 4554,
+              "caption": "再在 main 末尾造一个 3 乘 4 的矩形，把面积<c.aqua>打印</c.aqua>出来。"
+            },
+            {
+              "offset_ms": 14000,
+              "duration_ms": 5465,
+              "caption": "最后用 square 生成一个边长 2 的正方形，再用同一个<c.aqua>函数</c.aqua>算面积。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_structs_exercise_002_sex_area",
+          "clips": [
+            {
+              "offset_ms": 20000,
+              "duration_ms": 4610,
+              "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    }
+  ],
+  "challenge": {
+    "instructions": "实现 rect_area 和 square，构造 3 乘 4 的矩形和边长 2 的正方形，让终端输出 rectangle area: 12 与 square area: 4。",
+    "checks": [
+      {
+        "type": "COMMAND",
+        "session_key": "main",
+        "cwd": ".",
+        "command": "rustc structs.rs; ./structs",
+        "accepted_exit_codes": [
+          0
+        ],
+        "expected_output": [
+          "rectangle area: 12",
+          "square area: 4"
+        ],
+        "timeout_ms": 300000
+      }
+    ],
+    "hint": "`rect_area` 解构出坐标再算面积：\n\n```rust\nlet Rectangle { top_left: Point { x: x1, y: y1 }, bottom_right: Point { x: x2, y: y2 } } = rect;\n(x2 - x1).abs() * (y2 - y1).abs()\n```\n\n`square` 返回：\n\n```rust\nRectangle {\n    top_left: Point { x: point.x, y: point.y },\n    bottom_right: Point { x: point.x + size, y: point.y + size },\n}\n```",
+    "allow_skip": true
+  }
+}

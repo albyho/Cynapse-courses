@@ -1,0 +1,65 @@
+{
+  "step_id": "019_macros",
+  "title": "简介: 使用 macro_rules! 来创建宏",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 25
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_019_macros",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 1281,
+              "caption": "第 17 章《宏》。"
+            },
+            {
+              "offset_ms": 2000,
+              "duration_ms": 2854,
+              "caption": "这一章看 macro rules 宏怎样创建宏。"
+            },
+            {
+              "offset_ms": 5000,
+              "duration_ms": 2969,
+              "caption": "这一章会看宏在编译前怎样展开。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_019_macros",
+          "clips": [
+            {
+              "offset_ms": 8000,
+              "duration_ms": 2953,
+              "caption": "这一章会看匹配模式和展开结果。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_019_macros",
+          "clips": [
+            {
+              "offset_ms": 11000,
+              "duration_ms": 3122,
+              "caption": "以及它为什么比字符串替换更可靠。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

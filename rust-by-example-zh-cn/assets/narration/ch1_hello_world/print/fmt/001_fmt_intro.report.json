@@ -1,0 +1,81 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch1_hello_world_print_fmt_001_fmt_intro",
+  "audio": "assets/narration/ch1_hello_world/print/fmt/001_fmt_intro.ogg",
+  "source_duration_ms": 17279,
+  "input_hash": "da4670ed0f558c3ff03bf318002ae762587fa29a404838a2e9d6c4073088f231",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 5918,
+      "caption": "这一节学习<c.aqua>格式化</c.aqua> trait，观察不同<c.aqua>类型</c.aqua>怎样由各自的 trait 决定输出外观。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/001_fmt_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "2c51ae59e1291352b9a473a42d655860969032b8ef93861b07bc3b31b19629e4"
+    },
+    {
+      "offset_ms": 6000,
+      "duration_ms": 4672,
+      "caption": "<c.aqua>格式化</c.aqua>能力由 trait <c.aqua>实现</c.aqua>，每种<c.aqua>参数</c.aqua>类型对应一种 trait。",
+      "speech_edits": [
+        {
+          "i": 18,
+          "s": "参",
+          "p": "CAN1"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/001_fmt_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "5f1846e810eb38bec9b5310fcaa833856c8dac7f94b4a2945e882fa1b13fbe3e"
+    },
+    {
+      "offset_ms": 11000,
+      "duration_ms": 5279,
+      "caption": "最常用的 Display 处理未指定<c.aqua>类型</c.aqua>的情况，也就是 {}。",
+      "speech_edits": [
+        {
+          "i": 13,
+          "s": "处",
+          "p": "CHU3"
+        },
+        {
+          "i": 28,
+          "s": "{}",
+          "p": "一对大括号"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch1_hello_world/print/fmt/001_fmt_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "4f8b89ea1c1b0b153120f7dfe02efdfac0bec6bbd3f060fe98324acc038397e1"
+    }
+  ]
+}

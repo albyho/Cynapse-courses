@@ -1,0 +1,199 @@
+{
+  "step_id": "003_enum_alias",
+  "title": "类型别名与 Self",
+  "actions": [
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_003_enum_alias",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 5331,
+              "caption": "名字太长的类型可以用 type 取别名，impl 里用 Self 指代类型本身。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_003_enum_alias",
+          "clips": [
+            {
+              "offset_ms": 6000,
+              "duration_ms": 3707,
+              "caption": "把很长的<c.aqua>枚举</c.aqua>名收进<c.aqua>类型</c.aqua>别名 Operations。",
+              "speech_edits": [
+                {
+                  "i": 2,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "CreateFile",
+      "path": "operations.rs"
+    },
+    {
+      "type": "OpenFile",
+      "path": "operations.rs"
+    },
+    {
+      "type": "InsertText",
+      "path": "operations.rs",
+      "speed_ms": 37,
+      "target": {
+        "eof": true
+      },
+      "text": "enum VeryVerboseEnumOfThingsToDoWithNumbers {\n    Add,\n    Subtract,\n}\n\n// 创建一个类型别名\ntype Operations = VeryVerboseEnumOfThingsToDoWithNumbers;\n\nimpl VeryVerboseEnumOfThingsToDoWithNumbers {\n    fn run(&self, x: i32, y: i32) -> i32 {\n        match self {\n            Self::Add => x + y,\n            Self::Subtract => x - y,\n        }\n    }\n}\n\nfn main() {\n    // 通过别名引用枚举变量，避免写出又长又不方便的枚举名字。\n    let add = Operations::Add;\n    let subtract = Operations::Subtract;\n\n    println!(\"10 + 4 = {}\", add.run(10, 4));\n    println!(\"10 - 4 = {}\", subtract.run(10, 4));\n}\n",
+      "narration": {
+        "before": {
+          "asset_id": "narration_ch3_custom_types_enum_003_enum_alias",
+          "clips": [
+            {
+              "offset_ms": 10000,
+              "duration_ms": 5657,
+              "caption": "接下来在 operations.rs 里把很长的<c.aqua>枚举</c.aqua>名收进<c.aqua>类型</c.aqua>别名 Operations。",
+              "speech_edits": [
+                {
+                  "i": 22,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 16000,
+              "duration_ms": 3241,
+              "caption": "逐行写入<c.aqua>枚举</c.aqua>、<c.aqua>类型</c.aqua>别名和 run <c.aqua>方法</c.aqua>。",
+              "speech_edits": [
+                {
+                  "i": 1,
+                  "s": "行",
+                  "p": "HANG2"
+                }
+              ]
+            }
+          ]
+        },
+        "during": {
+          "asset_id": "narration_ch3_custom_types_enum_003_enum_alias",
+          "clips": [
+            {
+              "offset_ms": 20000,
+              "duration_ms": 4181,
+              "caption": "先写一个名字很长的<c.aqua>枚举</c.aqua>，只有 Add 和 Subtract。",
+              "speech_edits": [
+                {
+                  "i": 7,
+                  "s": "长",
+                  "p": "CHANG2"
+                }
+              ]
+            },
+            {
+              "offset_ms": 25000,
+              "duration_ms": 2395,
+              "caption": "再用 type 给它取别名 Operations。"
+            },
+            {
+              "offset_ms": 28000,
+              "duration_ms": 2683,
+              "caption": "impl 里用 Self 写 run，按<c.aqua>变体</c.aqua>做加减。"
+            },
+            {
+              "offset_ms": 31000,
+              "duration_ms": 4180,
+              "caption": "main 通过别名取<c.aqua>变体</c.aqua>，调用 run 算出 14 和 6。",
+              "speech_edits": [
+                {
+                  "i": 13,
+                  "s": "调",
+                  "p": "DIAO4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Wait",
+      "duration_ms": 3000
+    },
+    {
+      "type": "TerminalEnsure",
+      "session_key": "main",
+      "cwd": "."
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "rustc operations.rs",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_003_enum_alias",
+          "clips": [
+            {
+              "offset_ms": 36000,
+              "duration_ms": 904,
+              "caption": "编译通过。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TerminalCommand",
+      "session_key": "main",
+      "cwd": ".",
+      "command": "./operations",
+      "accepted_exit_codes": [
+        0
+      ],
+      "expected_output": [
+        "10 + 4 = 14",
+        "10 - 4 = 6"
+      ],
+      "timeout_ms": 300000,
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_custom_types_enum_003_enum_alias",
+          "clips": [
+            {
+              "offset_ms": 37000,
+              "duration_ms": 4822,
+              "caption": "两个<c.aqua>变体</c.aqua>分别算出 14 和 6，说明别名不影响行为。",
+              "speech_edits": [
+                {
+                  "i": 23,
+                  "s": "行",
+                  "p": "XING2"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Wait",
+      "duration_ms": 4000
+    }
+  ]
+}

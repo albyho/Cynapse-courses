@@ -4,8 +4,6 @@
 
 《通过例子学 Rust》（Rust By Example, RBE）内容由一系列可运行的实例组成，通过这些例子阐明了各种 Rust 的概念和基本库。想获取这些例子外的更多内容，不要忘了[安装 Rust 到本地](https://www.rust-lang.org/tools/install)并查阅[官方标准库文档](https://rustwiki.org/zh-CN/std/)。另外为了满足您的好奇心，您还可以[查阅本网站的源代码](https://github.com/rust-lang-cn/rust-by-example-cn)。
 
-现在让我们开始学习吧！
-
 ## 全书目录
 
 - 第 1 章：[Hello World](https://rustwiki.org/zh-CN/rust-by-example/hello.html) - 从经典的 “Hello World” 程序开始学习。

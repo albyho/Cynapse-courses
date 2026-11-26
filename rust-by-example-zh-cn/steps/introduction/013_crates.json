@@ -1,0 +1,80 @@
+{
+  "step_id": "013_crates",
+  "title": "简介: crate",
+  "actions": [
+    {
+      "type": "RevealText",
+      "path": "INTRO.md",
+      "start": {
+        "line": 19
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_introduction_013_crates",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 1380,
+              "caption": "第 11 章《crate》。"
+            },
+            {
+              "offset_ms": 2000,
+              "duration_ms": 2128,
+              "caption": "crate 是 Rust 中的编译单元。"
+            },
+            {
+              "offset_ms": 5000,
+              "duration_ms": 2414,
+              "caption": "这一章学习怎样创建一个库。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_013_crates",
+          "clips": [
+            {
+              "offset_ms": 8000,
+              "duration_ms": 4156,
+              "caption": "这一章会看模块要先纳入 crate，才一起参与编译。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_013_crates",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 5100,
+              "caption": "理解了这层边界，就能判断一个文件为什么不能独立编译。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Present",
+      "narration": {
+        "during": {
+          "asset_id": "narration_introduction_013_crates",
+          "clips": [
+            {
+              "offset_ms": 19000,
+              "duration_ms": 3928,
+              "caption": "也能看出项目里为什么同时需要模块和 crate。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "provider": "voicestudio",
+  "asset_id": "narration_ch4_variable_bindings_mut_001_mut_intro",
+  "audio": "assets/narration/ch4_variable_bindings/mut/001_mut_intro.ogg",
+  "source_duration_ms": 27697,
+  "input_hash": "b05cb0fcd4ef292ba6fbb4e050e74b40261d323ed1f1c3673b7e41481c03aefa",
+  "synthesis": {
+    "provider": "voicestudio",
+    "voice": "2febe741",
+    "language": "zh",
+    "speed": 1.0,
+    "seed": null,
+    "num_step": null,
+    "guidance_scale": null,
+    "effect_preset": null,
+    "denoise": null,
+    "instruct": null,
+    "engine": null,
+    "trim": true,
+    "trim_threshold_db": -40.0,
+    "trim_padding_ms": 50.0
+  },
+  "clips": [
+    {
+      "offset_ms": 0,
+      "duration_ms": 7484,
+      "caption": "在 let <c.aqua>绑定</c.aqua>之后，这一节学习<c.aqua>可变</c.aqua><c.aqua>变量</c.aqua>，观察默认不可变的绑定怎样通过 mut 获得改写能力。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/mut/001_mut_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 0
+      },
+      "cache_key": "7d9a250dbf1fdebd842dd3cddf7925e51e9915ff41fa66bf6f0740d52943785c"
+    },
+    {
+      "offset_ms": 8000,
+      "duration_ms": 6375,
+      "caption": "<c.aqua>变量</c.aqua><c.aqua>绑定</c.aqua>默认是<c.aqua>不可变</c.aqua>的：声明之后不能再改它的值，这正是 Rust 鼓励的写法。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/mut/001_mut_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 1
+      },
+      "cache_key": "ea675c79057e05bd2f24411d70dadbc79e2523951b0f73ac465d31d8cb4d933c"
+    },
+    {
+      "offset_ms": 15000,
+      "duration_ms": 4779,
+      "caption": "在 `let` 后面加 `mut` 修饰语，绑定才可变，之后可以反复赋值。",
+      "speech_edits": [
+        {
+          "i": 2,
+          "s": "`let`",
+          "p": "let"
+        },
+        {
+          "i": 12,
+          "s": "`mut`",
+          "p": "mut"
+        }
+      ],
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/mut/001_mut_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 2
+      },
+      "cache_key": "7ed57eb68b965a7412ab23ca3d14dd1f84f9631b5aa79a2f9586dbccebe28890"
+    },
+    {
+      "offset_ms": 20000,
+      "duration_ms": 6697,
+      "caption": "下面故意给一个<c.aqua>不可变</c.aqua><c.aqua>绑定</c.aqua>再次<c.aqua>赋值</c.aqua>，看看编译器怎么拦下来，再把它注释掉。",
+      "speech_edits": null,
+      "target": {
+        "step_file": "steps/ch4_variable_bindings/mut/001_mut_intro.json",
+        "action_index": 0,
+        "phase": "after",
+        "clip_index": 3
+      },
+      "cache_key": "927b52b491c4593ce4eac6c8026f0c15cf75a2a3e45714eddeba4341976bf0e3"
+    }
+  ]
+}
