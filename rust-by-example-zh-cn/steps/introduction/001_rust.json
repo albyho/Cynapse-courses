@@ -11,7 +11,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 4744,
+              "duration_ms": 4823,
               "caption": "今天我们开始学习《通过例子学 Rust》这本官方电子教程。"
             }
           ]
@@ -31,17 +31,17 @@
             {
               "offset_ms": 5000,
               "duration_ms": 2137,
-              "caption": "Rust 注重<c.aqua>安全</c.aqua>、<c.aqua>速度</c.aqua>和<c.aqua>并发</c.aqua>。"
+              "caption": "Rust 注重<emphasis level=\"strong\">安全</emphasis>、<emphasis level=\"strong\">速度</emphasis>和<emphasis level=\"strong\">并发</emphasis>。"
             },
             {
               "offset_ms": 8000,
-              "duration_ms": 2291,
-              "caption": "它用<c.aqua>内存安全</c.aqua>实现这些目标。"
+              "duration_ms": 2523,
+              "caption": "它用<emphasis level=\"strong\">内存安全</emphasis>实现这些目标。"
             },
             {
               "offset_ms": 11000,
-              "duration_ms": 1950,
-              "caption": "同时<c.aqua>不依赖</c.aqua><c.aqua>垃圾回收</c.aqua>。"
+              "duration_ms": 1942,
+              "caption": "同时<emphasis level=\"strong\">不依赖</emphasis><emphasis level=\"strong\">垃圾回收</emphasis>。"
             }
           ]
         }
@@ -55,8 +55,8 @@
           "clips": [
             {
               "offset_ms": 13000,
-              "duration_ms": 3548,
-              "caption": "内存安全把许多常见错误挡在编译阶段。"
+              "duration_ms": 3566,
+              "caption": "内存安全把许多常见错误挡在<emphasis level=\"strong\">编译阶段</emphasis>。"
             }
           ]
         }
@@ -70,15 +70,8 @@
           "clips": [
             {
               "offset_ms": 17000,
-              "duration_ms": 3774,
-              "caption": "不依赖垃圾回收，则让运行开销更可预测。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 3935,
+              "caption": "不依赖垃圾回收，则让运<sub alias=\"XING2\">行</sub>开销更可预测。"
             }
           ]
         }
@@ -93,7 +86,7 @@
             {
               "offset_ms": 21000,
               "duration_ms": 3215,
-              "caption": "这些特性让<c.aqua>Rust</c.aqua>适合编写系统级程序。"
+              "caption": "这些特性让<emphasis level=\"strong\">Rust</emphasis>适合编写<emphasis level=\"strong\">系统级程序</emphasis>。"
             }
           ]
         }
@@ -107,7 +100,7 @@
           "clips": [
             {
               "offset_ms": 25000,
-              "duration_ms": 2925,
+              "duration_ms": 2687,
               "caption": "这三点会贯穿后面的每一个例子。"
             }
           ]

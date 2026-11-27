@@ -12,37 +12,23 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7894,
-              "caption": "在<c.aqua>可变</c.aqua><c.aqua>变量</c.aqua>之后，这一节学习<c.aqua>作用域</c.aqua>和遮蔽，观察绑定怎样随代码块开始和结束生效、失效。"
+              "duration_ms": 7690,
+              "caption": "在<emphasis level=\"strong\">可变</emphasis><emphasis level=\"strong\">变量</emphasis>之后，这一节学习<emphasis level=\"strong\">作用域</emphasis>和遮蔽，观察绑定怎样随代码块开始和结束生效、失效。"
             },
             {
               "offset_ms": 8000,
-              "duration_ms": 7812,
-              "caption": "<c.aqua>绑定</c.aqua>只活在<c.aqua>声明</c.aqua>它的<c.aqua>代码块</c.aqua>里，块结束绑定就失效；`{}` 围起来的语句就是一个块。",
-              "speech_edits": [
-                {
-                  "i": 23,
-                  "s": "`{}`",
-                  "p": "一对大括号"
-                }
-              ]
+              "duration_ms": 7683,
+              "caption": "<emphasis level=\"strong\">绑定</emphasis>只活在<emphasis level=\"strong\">声明</emphasis>它的<emphasis level=\"strong\">代码块</emphasis>里，块结束绑定就失效；<sub alias=\"一对大括号\">`{}`</sub> 围起来的语句就是一个块。"
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 6591,
-              "caption": "同一名字可以在内层重新<c.aqua>绑定</c.aqua>，这叫<c.aqua>遮蔽</c.aqua>，内层的新值会暂时盖住外层。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "duration_ms": 6351,
+              "caption": "同一名字可以在内层<sub alias=\"CHONG2\">重</sub>新<emphasis level=\"strong\">绑定</emphasis>，这叫<emphasis level=\"strong\">遮蔽</emphasis>，内层的新值会暂时盖住外层。"
             },
             {
               "offset_ms": 23000,
-              "duration_ms": 7300,
-              "caption": "下面故意在块外面<c.aqua>引用</c.aqua>只在块里存在的<c.aqua>绑定</c.aqua>，看<c.aqua>编译器</c.aqua>报 E0425，再注释掉这行。"
+              "duration_ms": 7442,
+              "caption": "下面故意在块外面<emphasis level=\"strong\">引用</emphasis>只在块里存在的<emphasis level=\"strong\">绑定</emphasis>，看<emphasis level=\"strong\">编译器</emphasis>报 E0425，再注释掉这行。"
             }
           ]
         }

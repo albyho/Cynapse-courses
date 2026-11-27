@@ -12,76 +12,23 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 9614,
-              "caption": "在<c.aqua>元组</c.aqua>之后，这一节学习<c.aqua>数组</c.aqua>和<c.aqua>切片</c.aqua>，观察定长数组与借用一段数据的切片在类型和访问上的区别。",
-              "speech_edits": [
-                {
-                  "i": 14,
-                  "s": "切",
-                  "p": "QIE1"
-                },
-                {
-                  "i": 20,
-                  "s": "长",
-                  "p": "CHANG2"
-                },
-                {
-                  "i": 31,
-                  "s": "切",
-                  "p": "QIE1"
-                }
-              ]
+              "duration_ms": 9432,
+              "caption": "在<emphasis level=\"strong\">元组</emphasis>之后，这一节学习<emphasis level=\"strong\">数组</emphasis>和<emphasis level=\"strong\"><sub alias=\"QIE1\">切</sub>片</emphasis>，观察定<sub alias=\"CHANG2\">长</sub>数组与借用一段数据的<sub alias=\"QIE1\">切</sub>片在类型和访问上的区别。"
             },
             {
               "offset_ms": 10000,
-              "duration_ms": 5641,
-              "caption": "数组的长度写在类型里，编译时就确定，元素在内存中连续存放。",
-              "speech_edits": [
-                {
-                  "i": 3,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 5807,
+              "caption": "数组的<sub alias=\"CHANG2\">长</sub>度写在类型里，编译时就确定，元素在内存中连续存放。"
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 8481,
-              "caption": "<c.aqua>切片</c.aqua>本身不拥有数据，它<c.aqua>借用</c.aqua><c.aqua>数组</c.aqua>的一段，长度在运行时才知道，类型写成 &[T]。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "切",
-                  "p": "QIE1"
-                },
-                {
-                  "i": 19,
-                  "s": "长",
-                  "p": "CHANG2"
-                },
-                {
-                  "i": 23,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 34,
-                  "s": "&[T]",
-                  "p": "引用方括号 T"
-                }
-              ]
+              "duration_ms": 8538,
+              "caption": "<emphasis level=\"strong\"><sub alias=\"QIE1\">切</sub>片</emphasis>本身不拥有数据，它<emphasis level=\"strong\">借用</emphasis><emphasis level=\"strong\">数组</emphasis>的一段，<sub alias=\"CHANG2\">长</sub>度在运<sub alias=\"XING2\">行</sub>时才知道，类型写成 <sub alias=\"引用方括号 T\">&[T]</sub>。"
             },
             {
               "offset_ms": 25000,
-              "duration_ms": 4974,
-              "caption": "两者都从 0 开始编号，越界访问会在运行时直接 panic。",
-              "speech_edits": [
-                {
-                  "i": 19,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 4953,
+              "caption": "两者都从 0 开始编号，越界访问会在运<sub alias=\"XING2\">行</sub>时直接 panic。"
             }
           ]
         }

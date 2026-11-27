@@ -16,8 +16,8 @@
           "clips": [
             {
               "offset_ms": 26000,
-              "duration_ms": 6583,
-              "caption": "这套课程的<c.aqua>参考项目</c.aqua>是 Signal processing roadmap；我们借鉴它的章节骨架和主题。"
+              "duration_ms": 6407,
+              "caption": "这套课程的<emphasis level=\"strong\">参考项目</emphasis>是 Signal processing roadmap；我们借鉴它的章节骨架和主题。"
             }
           ]
         }
@@ -31,15 +31,8 @@
           "clips": [
             {
               "offset_ms": 33000,
-              "duration_ms": 7643,
-              "caption": "原仓库提供主题顺序；中文讲解、<c.aqua>Notebook</c.aqua>、练习和图表都是重新创作，不是翻译或镜像。",
-              "speech_edits": [
-                {
-                  "i": 31,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "duration_ms": 7565,
+              "caption": "原仓库提供主题顺序；中文讲解、<emphasis level=\"strong\">Notebook</emphasis>、练习和图表都是<sub alias=\"CHONG2\">重</sub>新创作，不是翻译或镜像。"
             }
           ]
         }
@@ -59,8 +52,8 @@
           "clips": [
             {
               "offset_ms": 41000,
-              "duration_ms": 5694,
-              "caption": "<c.aqua>课程地图</c.aqua>分为基础与应用两段，共 16 周；我们先从第 1 周开始。"
+              "duration_ms": 5691,
+              "caption": "<emphasis level=\"strong\">课程地图</emphasis>分为基础与应用两段，共 16 周；我们先从第 1 周开始。"
             }
           ]
         }
@@ -74,8 +67,8 @@
           "clips": [
             {
               "offset_ms": 47000,
-              "duration_ms": 6746,
-              "caption": "每个子章节就是一个<c.aqua>学习单元</c.aqua>，对应一个 <c.aqua>Notebook</c.aqua>、一个 <c.aqua>Kernel</c.aqua> 和一个独立工作区。"
+              "duration_ms": 6828,
+              "caption": "每个子章节就是一个<emphasis level=\"strong\">学习单元</emphasis>，对应一个 <emphasis level=\"strong\">Notebook</emphasis>、一个 <emphasis level=\"strong\">Kernel</emphasis> 和一个独立工作区。"
             }
           ]
         }
@@ -89,20 +82,8 @@
           "clips": [
             {
               "offset_ms": 54000,
-              "duration_ms": 8703,
-              "caption": "学习时跟着步骤看、改、运行；练习需要你自己动手，完成后点继续。<c.aqua>Stop</c.aqua> 后可以从当前步骤<c.aqua>重放</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 12,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 44,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "duration_ms": 8765,
+              "caption": "学习时跟着步骤看、改、运<sub alias=\"XING2\">行</sub>；练习需要你自己动手，完成后点继续。<emphasis level=\"strong\">Stop</emphasis> 后可以从当前步骤<emphasis level=\"strong\"><sub alias=\"CHONG2\">重</sub>放</emphasis>。"
             }
           ]
         }

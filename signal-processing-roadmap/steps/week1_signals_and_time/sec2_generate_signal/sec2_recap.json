@@ -15,9 +15,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 199000,
-              "duration_ms": 5695,
-              "caption": "Three things to keep from this section: <c.aqua>amplitude</c.aqua> sets the height, <c.aqua>frequency</c.aqua> sets the density, <c.aqua>phase</c.aqua> sets where it starts."
+              "offset_ms": 201000,
+              "duration_ms": 5657,
+              "caption": "Three things to keep from this section: <emphasis level=\"strong\">amplitude</emphasis> sets the height, <emphasis level=\"strong\">frequency</emphasis> sets the density, <emphasis level=\"strong\">phase</emphasis> sets where it starts."
             }
           ]
         }
@@ -30,9 +30,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 205000,
-              "duration_ms": 6729,
-              "caption": "The <c.aqua>period</c.aqua> is the reciprocal of the <c.aqua>frequency</c.aqua>, and the <c.aqua>angular frequency</c.aqua> is 2π times the frequency; they describe the same rate of change."
+              "offset_ms": 207000,
+              "duration_ms": 6795,
+              "caption": "The <emphasis level=\"strong\">period</emphasis> is the reciprocal of the <emphasis level=\"strong\">frequency</emphasis>, and the <emphasis level=\"strong\">angular frequency</emphasis> is 2π times the frequency; they describe the same rate of change."
             }
           ]
         }
@@ -45,9 +45,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 212000,
-              "duration_ms": 4671,
-              "caption": "The next section adds, scales, shifts and reverses these <c.aqua>signals</c.aqua>, and watches the combined waveform."
+              "offset_ms": 214000,
+              "duration_ms": 4847,
+              "caption": "The next section adds, scales, shifts and reverses these <emphasis level=\"strong\">signals</emphasis>, and watches the combined waveform."
             }
           ]
         }

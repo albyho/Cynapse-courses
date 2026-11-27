@@ -7,9 +7,11 @@
       "path": "../../resources/agent-desktop/crates/core/src/actionability/evaluate.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 6000,
+              "offset_ms": 0,
+              "duration_ms": 5574,
               "caption": "这一节把预检拆开：不是一句“能不能点”，而是一串按顺序执行的门。"
             }
           ]
@@ -27,9 +29,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 9000,
+              "offset_ms": 6000,
+              "duration_ms": 9811,
               "caption": "先看请求怎么决定要求：动作类型决定要不要可见、稳定、启用、可编辑；投递方式由动作能力和当前策略共同决定。"
             }
           ]
@@ -47,17 +51,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 8000,
-              "caption": "第一道门是<c.aqua>可见性</c.aqua>：动作要求可见时，先算 visibility；某些动作还必须拿到几何信息。",
-              "speech_edits": [
-                {
-                  "i": 35,
-                  "s": "还",
-                  "p": "HAI2"
-                }
-              ]
+              "offset_ms": 16000,
+              "duration_ms": 7290,
+              "caption": "第一道门是<emphasis level=\"strong\">可见性</emphasis>：动作要求可见时，先算 visibility；某些动作<sub alias=\"HAI2\">还</sub>必须拿到几何信息。"
             }
           ]
         }
@@ -74,9 +73,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 9000,
+              "offset_ms": 24000,
+              "duration_ms": 8207,
               "caption": "如果既没有边界、又拿不到指针位置，就直接返回拒绝，而不是猜一个点。这是“宁可拒绝，也不乱点”。"
             }
           ]
@@ -94,10 +95,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 8500,
-              "caption": "第二道是<c.aqua>稳定性</c.aqua>：元素位置要在采样窗口里稳定；语义投递可以不检查指针稳定性。"
+              "offset_ms": 33000,
+              "duration_ms": 7235,
+              "caption": "第二道是<emphasis level=\"strong\">稳定性</emphasis>：元素位置要在采样窗口里稳定；语义投递可以不检查指针稳定性。"
             }
           ]
         }
@@ -114,10 +117,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 6500,
-              "caption": "第三道：元素必须是<c.aqua>启用</c.aqua>状态，disabled 直接失败。"
+              "offset_ms": 41000,
+              "duration_ms": 3950,
+              "caption": "第三道：元素必须是<emphasis level=\"strong\">启用</emphasis>状态，disabled 直接失败。"
             }
           ]
         }
@@ -134,10 +139,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 7000,
-              "caption": "第四道：<c.aqua>可编辑性</c.aqua>，只有文本类动作才要求；普通点击不看这一项。"
+              "offset_ms": 45000,
+              "duration_ms": 5636,
+              "caption": "第四道：<emphasis level=\"strong\">可编辑性</emphasis>，只有文本类动作才要求；普通点击不看这一项。"
             }
           ]
         }
@@ -154,10 +161,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 7000,
-              "caption": "第五道：元素必须声明<c.aqua>支持这个动作</c.aqua>；不支持就不该尝试。"
+              "offset_ms": 51000,
+              "duration_ms": 4945,
+              "caption": "第五道：元素必须声明<emphasis level=\"strong\">支持这个动作</emphasis>；不支持就不该尝试。"
             }
           ]
         }
@@ -174,10 +183,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 7000,
-              "caption": "第六道：策略检查，确认 headed / <c.aqua>headless</c.aqua> 规则允许这个动作。"
+              "offset_ms": 56000,
+              "duration_ms": 4726,
+              "caption": "第六道：策略检查，确认 headed / <emphasis level=\"strong\">headless</emphasis> 规则允许这个动作。"
             }
           ]
         }
@@ -194,10 +205,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 8500,
-              "caption": "任何一道不是 Pass，就立即返回报告，不再做后面的 <c.aqua>hit test</c.aqua>。这就是“先便宜、后昂贵”。"
+              "offset_ms": 61000,
+              "duration_ms": 6844,
+              "caption": "任何一道不是 Pass，就立即返回报告，不再做后面的 <emphasis level=\"strong\">hit test</emphasis>。这就是“先便宜、后昂贵”。"
             }
           ]
         }
@@ -214,10 +227,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 8500,
-              "caption": "只有<c.aqua>物理投递</c.aqua>才做 hit test；没有上下文就记 unknown，而不是假装通过。遮挡和指针到达都在这一步。"
+              "offset_ms": 68000,
+              "duration_ms": 8011,
+              "caption": "只有<emphasis level=\"strong\">物理投递</emphasis>才做 hit test；没有上下文就记 unknown，而不是假装通过。遮挡和指针到达都在这一步。"
             }
           ]
         }
@@ -228,9 +243,11 @@
       "path": "../../resources/agent-desktop/crates/core/src/actionability/check.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 6000,
+              "offset_ms": 77000,
+              "duration_ms": 3670,
               "caption": "现在跳到 check.rs，看每一道门怎么记录结果。"
             }
           ]
@@ -248,9 +265,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec3_gates",
           "clips": [
             {
-              "duration_ms": 9000,
+              "offset_ms": 81000,
+              "duration_ms": 9359,
               "caption": "每道门都记 check 名称、status、reason、occluder、hit_test、stability。失败时能定位到具体门，而不是只看到一句 action failed。"
             }
           ]

@@ -1,7 +1,7 @@
 {
   "id": "agent_desktop_source_analysis",
   "title": "agent-desktop 源码分析",
-  "version": "0.39.0",
+  "version": "0.39.2",
   "adapters": [
     "vscode"
   ],
@@ -163,6 +163,12 @@
             {
               "step_file": "steps/ch2_act/sec1_preflight/act_preflight.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch2_act_sec1_preflight",
+              "path": "assets/narration/ch2_act/sec1_preflight/narration.ogg"
+            }
           ]
         },
         {
@@ -172,6 +178,12 @@
             {
               "step_file": "steps/ch2_act/sec2_dispatch/act_pipeline.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch2_act_sec2_dispatch",
+              "path": "assets/narration/ch2_act/sec2_dispatch/narration.ogg"
+            }
           ]
         },
         {
@@ -180,6 +192,12 @@
           "steps": [
             {
               "step_file": "steps/ch2_act/sec3_gates/gates.json"
+            }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch2_act_sec3_gates",
+              "path": "assets/narration/ch2_act/sec3_gates/narration.ogg"
             }
           ]
         },
@@ -193,7 +211,19 @@
             {
               "step_file": "steps/ch2_act/sec4_recovery/error_recovery_matrix.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch2_act_sec4_recovery",
+              "path": "assets/narration/ch2_act/sec4_recovery/narration.ogg"
+            }
           ]
+        }
+      ],
+      "assets": [
+        {
+          "id": "narration_ch2_act",
+          "path": "assets/narration/ch2_act/narration.ogg"
         }
       ]
     },
@@ -213,6 +243,12 @@
             {
               "step_file": "steps/ch3_platform/sec1_contract/contract.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch3_platform_sec1_contract",
+              "path": "assets/narration/ch3_platform/sec1_contract/narration.ogg"
+            }
           ]
         },
         {
@@ -221,6 +257,12 @@
           "steps": [
             {
               "step_file": "steps/ch3_platform/sec2_windows/windows_end_to_end.json"
+            }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch3_platform_sec2_windows",
+              "path": "assets/narration/ch3_platform/sec2_windows/narration.ogg"
             }
           ]
         },
@@ -237,7 +279,19 @@
             {
               "step_file": "steps/ch3_platform/sec3_differences/capability_table.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch3_platform_sec3_differences",
+              "path": "assets/narration/ch3_platform/sec3_differences/narration.ogg"
+            }
           ]
+        }
+      ],
+      "assets": [
+        {
+          "id": "narration_ch3_platform",
+          "path": "assets/narration/ch3_platform/narration.ogg"
         }
       ]
     },
@@ -257,6 +311,12 @@
             {
               "step_file": "steps/ch4_interface/sec1_cli/cli_path.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch4_interface_sec1_cli",
+              "path": "assets/narration/ch4_interface/sec1_cli/narration.ogg"
+            }
           ]
         },
         {
@@ -272,6 +332,12 @@
             {
               "step_file": "steps/ch4_interface/sec2_cabi/ffi_api_surface.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch4_interface_sec2_cabi",
+              "path": "assets/narration/ch4_interface/sec2_cabi/narration.ogg"
+            }
           ]
         },
         {
@@ -280,6 +346,12 @@
           "steps": [
             {
               "step_file": "steps/ch4_interface/sec3_mcp/mcp_path.json"
+            }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch4_interface_sec3_mcp",
+              "path": "assets/narration/ch4_interface/sec3_mcp/narration.ogg"
             }
           ]
         },
@@ -293,7 +365,19 @@
             {
               "step_file": "steps/ch4_interface/sec4_batch/batch_semantics.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch4_interface_sec4_batch",
+              "path": "assets/narration/ch4_interface/sec4_batch/narration.ogg"
+            }
           ]
+        }
+      ],
+      "assets": [
+        {
+          "id": "narration_ch4_interface",
+          "path": "assets/narration/ch4_interface/narration.ogg"
         }
       ]
     },
@@ -313,6 +397,12 @@
             {
               "step_file": "steps/ch5_trace/sec1_record/record.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch5_trace_sec1_record",
+              "path": "assets/narration/ch5_trace/sec1_record/narration.ogg"
+            }
           ]
         },
         {
@@ -325,6 +415,12 @@
             {
               "step_file": "steps/ch5_trace/sec2_replay/visual_debug.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch5_trace_sec2_replay",
+              "path": "assets/narration/ch5_trace/sec2_replay/narration.ogg"
+            }
           ]
         },
         {
@@ -333,6 +429,12 @@
           "steps": [
             {
               "step_file": "steps/ch5_trace/sec3_session/session_recovery.json"
+            }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch5_trace_sec3_session",
+              "path": "assets/narration/ch5_trace/sec3_session/narration.ogg"
             }
           ]
         },
@@ -343,7 +445,19 @@
             {
               "step_file": "steps/ch5_trace/sec4_config/configuration.json"
             }
+          ],
+          "assets": [
+            {
+              "id": "narration_ch5_trace_sec4_config",
+              "path": "assets/narration/ch5_trace/sec4_config/narration.ogg"
+            }
           ]
+        }
+      ],
+      "assets": [
+        {
+          "id": "narration_ch5_trace",
+          "path": "assets/narration/ch5_trace/narration.ogg"
         }
       ]
     }

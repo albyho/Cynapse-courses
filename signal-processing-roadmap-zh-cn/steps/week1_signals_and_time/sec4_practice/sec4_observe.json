@@ -22,16 +22,9 @@
           "asset_id": "narration_sec4_practice",
           "clips": [
             {
-              "offset_ms": 77000,
-              "duration_ms": 7318,
-              "caption": "在下面的 Markdown Cell 里写三句话：你用了哪些参数；你<c.aqua>预测</c.aqua>会看到什么；实际看到了什么。",
-              "speech_edits": [
-                {
-                  "i": 30,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "offset_ms": 75000,
+              "duration_ms": 7706,
+              "caption": "在下面的 Markdown Cell 里写三句话：你用了哪些<sub alias=\"CAN1\">参</sub>数；你<emphasis level=\"strong\">预测</emphasis>会看到什么；实际看到了什么。"
             }
           ]
         }
@@ -44,21 +37,9 @@
           "asset_id": "narration_sec4_practice",
           "clips": [
             {
-              "offset_ms": 85000,
-              "duration_ms": 6180,
-              "caption": "如果<c.aqua>预测</c.aqua>和结果不同，先检查公式和<c.aqua>采样时间</c.aqua>轴。完成后点继续。",
-              "speech_edits": [
-                {
-                  "i": 16,
-                  "s": "采",
-                  "p": "CAI3"
-                },
-                {
-                  "i": 20,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                }
-              ]
+              "offset_ms": 83000,
+              "duration_ms": 6116,
+              "caption": "如果<emphasis level=\"strong\">预测</emphasis>和结果不同，先检查公式和<emphasis level=\"strong\"><sub alias=\"CAI3\">采</sub>样时间</emphasis><sub alias=\"ZHOU2\">轴</sub>。完成后点继续。"
             }
           ]
         }

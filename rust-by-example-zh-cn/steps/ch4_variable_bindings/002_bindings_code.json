@@ -10,7 +10,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7469,
+              "duration_ms": 7383,
               "caption": "let 把值绑定到名字上；没用到的变量用下划线开头消除警告，复制和字面量也各有写法。"
             }
           ]
@@ -25,8 +25,8 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 2351,
-              "caption": "写入 let <c.aqua>绑定</c.aqua>、复制和<c.aqua>字面量</c.aqua>。"
+              "duration_ms": 2364,
+              "caption": "写入 let <emphasis level=\"strong\">绑定</emphasis>、复制和<emphasis level=\"strong\">字面量</emphasis>。"
             }
           ]
         }
@@ -54,20 +54,13 @@
           "clips": [
             {
               "offset_ms": 11000,
-              "duration_ms": 5415,
-              "caption": "接下来在 variable_bindings.rs 里写入 let <c.aqua>绑定</c.aqua>、复制和<c.aqua>字面量</c.aqua>的示例。"
+              "duration_ms": 5300,
+              "caption": "接下来在 variable_bindings.rs 里写入 let <emphasis level=\"strong\">绑定</emphasis>、复制和<emphasis level=\"strong\">字面量</emphasis>的示例。"
             },
             {
               "offset_ms": 17000,
-              "duration_ms": 4129,
-              "caption": "逐行写入 let <c.aqua>绑定</c.aqua>、复制和未使用<c.aqua>变量</c.aqua>的示例。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 4192,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入 let <emphasis level=\"strong\">绑定</emphasis>、复制和未使用<emphasis level=\"strong\">变量</emphasis>的示例。"
             }
           ]
         },
@@ -76,30 +69,23 @@
           "clips": [
             {
               "offset_ms": 22000,
-              "duration_ms": 2741,
-              "caption": "先写<c.aqua>整数</c.aqua>、<c.aqua>布尔</c.aqua>和<c.aqua>单元</c.aqua>值三个绑定。"
+              "duration_ms": 3000,
+              "caption": "先写<emphasis level=\"strong\">整数</emphasis>、<emphasis level=\"strong\">布尔</emphasis>和<emphasis level=\"strong\">单元</emphasis>值三个绑定。"
             },
             {
               "offset_ms": 25000,
-              "duration_ms": 2777,
-              "caption": "复制<c.aqua>绑定</c.aqua>后，把三个值依次<c.aqua>打印</c.aqua>。"
+              "duration_ms": 2853,
+              "caption": "复制<emphasis level=\"strong\">绑定</emphasis>后，把三个值依次打印。"
             },
             {
               "offset_ms": 28000,
-              "duration_ms": 3742,
-              "caption": "未使用的<c.aqua>绑定</c.aqua>加下划线前缀就能消除警告。"
+              "duration_ms": 3798,
+              "caption": "未使用的<emphasis level=\"strong\">绑定</emphasis>加下划线前缀就能消除警告。"
             },
             {
               "offset_ms": 32000,
-              "duration_ms": 4012,
-              "caption": "noisy_unused_variable 会留下警告，下一行提示改法。",
-              "speech_edits": [
-                {
-                  "i": 30,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 4260,
+              "caption": "noisy_unused_variable 会留下警告，下一<sub alias=\"HANG2\">行</sub>提示改法。"
             }
           ]
         }
@@ -130,8 +116,8 @@
           "clips": [
             {
               "offset_ms": 37000,
-              "duration_ms": 5250,
-              "caption": "编译通过；那个没用到的 noisy <c.aqua>变量</c.aqua>只会带来警告，不会拦下编译。"
+              "duration_ms": 5484,
+              "caption": "编译通过；那个没用到的 noisy <emphasis level=\"strong\">变量</emphasis>只会带来警告，不会拦下编译。"
             }
           ]
         }
@@ -157,20 +143,8 @@
           "clips": [
             {
               "offset_ms": 43000,
-              "duration_ms": 2362,
-              "caption": "运行，逐行核对输出。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 4,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 2348,
+              "caption": "运<sub alias=\"XING2\">行</sub>，逐<sub alias=\"HANG2\">行</sub>核对输出。"
             }
           ]
         },
@@ -179,20 +153,13 @@
           "clips": [
             {
               "offset_ms": 46000,
-              "duration_ms": 5006,
-              "caption": "an_integer 是 1，a_boolean 是 true，<c.aqua>单元</c.aqua>值 () 也<c.aqua>打印</c.aqua>出来了。",
-              "speech_edits": [
-                {
-                  "i": 36,
-                  "s": "()",
-                  "p": "一对圆括号"
-                }
-              ]
+              "duration_ms": 5295,
+              "caption": "an_integer 是 1，a_boolean 是 true，<emphasis level=\"strong\">单元</emphasis>值 <sub alias=\"一对圆括号\">()</sub> 也打印出来了。"
             },
             {
               "offset_ms": 52000,
-              "duration_ms": 4367,
-              "caption": "把未使用的<c.aqua>变量</c.aqua>命名成 _ 开头，就能消除<c.aqua>编译器</c.aqua>警告。"
+              "duration_ms": 4498,
+              "caption": "把未使用的<emphasis level=\"strong\">变量</emphasis>命名成 _ 开头，就能消除<emphasis level=\"strong\">编译器</emphasis>警告。"
             }
           ]
         }

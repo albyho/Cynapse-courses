@@ -28,9 +28,9 @@
           "asset_id": "narration_sec3_combine_transform",
           "clips": [
             {
-              "offset_ms": 110000,
-              "duration_ms": 5322,
-              "caption": "Combine <c.aqua>scaling</c.aqua> with a <c.aqua>time shift</c.aqua>: shrink a 1 Hz sine to 0.6 and shift it 0.2 s to the right."
+              "offset_ms": 109000,
+              "duration_ms": 5061,
+              "caption": "Combine <emphasis level=\"strong\">scaling</emphasis> with a <emphasis level=\"strong\">time shift</emphasis>: shrink a 1 Hz sine to 0.6 and shift it 0.2 s to the right."
             }
           ]
         }
@@ -43,9 +43,9 @@
           "asset_id": "narration_sec3_combine_transform",
           "clips": [
             {
-              "offset_ms": 116000,
-              "duration_ms": 9314,
-              "caption": "Draw the original and the transformed <c.aqua>signal</c.aqua> and mark both with a legend. Success criteria: <c.aqua>amplitude</c.aqua> 0.6, shifted right by 0.2 s, <c.aqua>period</c.aqua> still one second. Check, then continue."
+              "offset_ms": 115000,
+              "duration_ms": 9397,
+              "caption": "Draw the original and the transformed <emphasis level=\"strong\">signal</emphasis> and mark both with a legend. Success criteria: <emphasis level=\"strong\">amplitude</emphasis> 0.6, shifted right by 0.2 s, <emphasis level=\"strong\">period</emphasis> still one second. Check, then continue."
             }
           ]
         }

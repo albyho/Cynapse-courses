@@ -2,6 +2,12 @@
 
 Published Course Packages. Versions match each package's `manifest.json`.
 
+## 2026-11-28
+
+- `rust-by-example-zh-cn` 0.20.31: swap the `aqua` caption markers for `<emphasis>`, move speech edits inline as `<sub alias>`, correct misleading narration wording, and resynthesize every track.
+- `agent-desktop-source-analysis-zh-cn` 0.39.2: drop the obsolete `speech_edits` field from the narration reports.
+- `signal-processing-roadmap` 0.2.5 and `signal-processing-roadmap-zh-cn` 0.2.5: rebuild the narration tracks under the current track hash; the Chinese edition resynthesizes the clips whose pronunciation aliases moved inline.
+
 ## 2026-11-27
 
 - `rust-by-example-zh-cn` 0.20.27: renumber Steps with three-digit prefixes,

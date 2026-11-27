@@ -14,18 +14,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1773,
+              "duration_ms": 1244,
               "caption": "第 10 章《模块》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 2301,
-              "caption": "这一章用模块来组织代码。"
+              "duration_ms": 1745,
+              "caption": "用模块来组织代码。"
             },
             {
-              "offset_ms": 5000,
-              "duration_ms": 3785,
-              "caption": "这一章会看模块怎样分层管理函数与类型。"
+              "offset_ms": 4000,
+              "duration_ms": 2373,
+              "caption": "模块怎样分层管理函数与类型。"
             }
           ]
         }
@@ -38,9 +38,9 @@
           "asset_id": "narration_introduction_012_modules",
           "clips": [
             {
-              "offset_ms": 9000,
-              "duration_ms": 3038,
-              "caption": "这一章会看 pub 改变了哪条访问路径。"
+              "offset_ms": 7000,
+              "duration_ms": 2048,
+              "caption": "pub 改变了哪条访问路径。"
             }
           ]
         }
@@ -53,8 +53,8 @@
           "asset_id": "narration_introduction_012_modules",
           "clips": [
             {
-              "offset_ms": 13000,
-              "duration_ms": 3239,
+              "offset_ms": 10000,
+              "duration_ms": 3574,
               "caption": "画出模块树会比逐个记语法更容易理解。"
             }
           ]

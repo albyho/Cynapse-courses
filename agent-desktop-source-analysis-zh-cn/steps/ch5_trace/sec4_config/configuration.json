@@ -7,9 +7,11 @@
       "path": "../../resources/agent-desktop/crates/core/src/storage/state_root.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch5_trace_sec4_config",
           "clips": [
             {
-              "duration_ms": 6000,
+              "offset_ms": 0,
+              "duration_ms": 8177,
               "caption": "最后一个缺口：配置。agent-desktop 没有配置文件，行为来自全局 flag、少量环境变量和一个状态目录。"
             }
           ]
@@ -27,17 +29,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch5_trace_sec4_config",
           "clips": [
             {
-              "duration_ms": 9500,
-              "caption": "状态根默认是家目录下的 .agent-desktop；AGENT_DESKTOP_HOME 可以整体搬走，但必须是绝对路径、由当前用户拥有，且不能是符号链接。启动时先校验，失败就返回 INVALID_ARGS。",
-              "speech_edits": [
-                {
-                  "i": 83,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "offset_ms": 9000,
+              "duration_ms": 14060,
+              "caption": "状态根默认是家目录下的 .agent-desktop；AGENT_DESKTOP_HOME 可以整体搬走，但必须是绝对路径、由当前用户拥有，且不能是符号链接。启动时先<sub alias=\"JIAO4\">校</sub>验，失败就返回 INVALID_ARGS。"
             }
           ]
         }
@@ -48,9 +45,11 @@
       "path": "../../resources/agent-desktop/src/cli/identity.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch5_trace_sec4_config",
           "clips": [
             {
-              "duration_ms": 5500,
+              "offset_ms": 24000,
+              "duration_ms": 3692,
               "caption": "状态根里怎么分命名空间？由身份 flag 决定。"
             }
           ]
@@ -68,9 +67,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch5_trace_sec4_config",
           "clips": [
             {
-              "duration_ms": 8500,
+              "offset_ms": 28000,
+              "duration_ms": 10890,
               "caption": "--session 选择 refmap 与 trace 的命名空间，--agent-id 标识会话里的子代理；两者都能用 AGENT_DESKTOP_SESSION / AGENT_DESKTOP_AGENT_ID 提供，flag 优先。"
             }
           ]
@@ -82,9 +83,11 @@
       "path": "../../resources/agent-desktop/src/cli/root.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch5_trace_sec4_config",
           "clips": [
             {
-              "duration_ms": 5500,
+              "offset_ms": 39000,
+              "duration_ms": 2616,
               "caption": "其余全局 flag 都挂在根命令上。"
             }
           ]
@@ -102,9 +105,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch5_trace_sec4_config",
           "clips": [
             {
-              "duration_ms": 9000,
+              "offset_ms": 42000,
+              "duration_ms": 8560,
               "caption": "--trace 指定 JSONL 输出，--trace-strict 让 trace 写失败直接报错，--headed 改变交互策略；它们都在命令前后生效。"
             }
           ]

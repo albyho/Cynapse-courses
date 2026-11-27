@@ -12,37 +12,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5918,
-              "caption": "这一节学习<c.aqua>格式化</c.aqua> trait，观察不同<c.aqua>类型</c.aqua>怎样由各自的 trait 决定输出外观。"
+              "duration_ms": 6206,
+              "caption": "这一节学习<emphasis level=\"strong\">格式化</emphasis> trait，观察不同<emphasis level=\"strong\">类型</emphasis>怎样由各自的 trait 决定<emphasis level=\"strong\">输出外观</emphasis>。"
             },
             {
-              "offset_ms": 6000,
-              "duration_ms": 4672,
-              "caption": "<c.aqua>格式化</c.aqua>能力由 trait <c.aqua>实现</c.aqua>，每种<c.aqua>参数</c.aqua>类型对应一种 trait。",
-              "speech_edits": [
-                {
-                  "i": 18,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "offset_ms": 7000,
+              "duration_ms": 4728,
+              "caption": "<emphasis level=\"strong\">格式化</emphasis>能力由 trait <emphasis level=\"strong\">实现</emphasis>，每种<emphasis level=\"strong\"><sub alias=\"CAN1\">参</sub>数</emphasis>类型对应一种 trait。"
             },
             {
-              "offset_ms": 11000,
-              "duration_ms": 5279,
-              "caption": "最常用的 Display 处理未指定<c.aqua>类型</c.aqua>的情况，也就是 {}。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "处",
-                  "p": "CHU3"
-                },
-                {
-                  "i": 28,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "offset_ms": 12000,
+              "duration_ms": 5342,
+              "caption": "最常用的 Display <sub alias=\"CHU3\">处</sub>理未指定<emphasis level=\"strong\">类型</emphasis>的情况，也就是 <sub alias=\"一对大括号\">{}</sub>。"
             }
           ]
         }

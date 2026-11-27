@@ -29,36 +29,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 108000,
-              "duration_ms": 5679,
-              "caption": "把时间 t 作为横轴、<c.aqua>振幅</c.aqua> x 作为纵轴，先把曲线画出来。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "为",
-                  "p": "WEI2"
-                },
-                {
-                  "i": 9,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                },
-                {
-                  "i": 12,
-                  "s": "幅",
-                  "p": "FU2"
-                },
-                {
-                  "i": 17,
-                  "s": "为",
-                  "p": "WEI2"
-                },
-                {
-                  "i": 19,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                }
-              ]
+              "offset_ms": 109000,
+              "duration_ms": 5818,
+              "caption": "把时间 t 作<sub alias=\"WEI2\">为</sub>横<sub alias=\"ZHOU2\">轴</sub>、<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis> x 作<sub alias=\"WEI2\">为</sub>纵<sub alias=\"ZHOU2\">轴</sub>，先把曲线画出来。"
             }
           ]
         }
@@ -78,16 +51,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 114000,
-              "duration_ms": 5634,
-              "caption": "再补上标题和坐标轴标签，读图时才能知道每个轴代表什么。",
-              "speech_edits": [
-                {
-                  "i": 8,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                }
-              ]
+              "offset_ms": 115000,
+              "duration_ms": 5420,
+              "caption": "再补上标题和坐标<sub alias=\"ZHOU2\">轴</sub>标签，读图时才能知道每个轴代表什么。"
             }
           ]
         }
@@ -103,9 +69,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 120000,
-              "duration_ms": 5686,
-              "caption": "现在把刚才生成的 x 画出来，先<c.aqua>预测</c.aqua> 1 秒内能看到几个完整<c.aqua>周期</c.aqua>。"
+              "offset_ms": 121000,
+              "duration_ms": 5618,
+              "caption": "现在把刚才生成的 x 画出来，先<emphasis level=\"strong\">预测</emphasis> 1 秒内能看到几个完整<emphasis level=\"strong\">周期</emphasis>。"
             }
           ]
         },
@@ -113,26 +79,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 126000,
-              "duration_ms": 8953,
-              "caption": "画出波形。1 秒内应该看到两个完整<c.aqua>周期</c.aqua>。横轴是时间，纵轴是<c.aqua>振幅</c.aqua>；读图时先找峰、谷和过零点。",
-              "speech_edits": [
-                {
-                  "i": 21,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                },
-                {
-                  "i": 27,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                },
-                {
-                  "i": 30,
-                  "s": "幅",
-                  "p": "FU2"
-                }
-              ]
+              "offset_ms": 127000,
+              "duration_ms": 9031,
+              "caption": "画出波形。1 秒内应该看到两个完整<emphasis level=\"strong\">周期</emphasis>。横<sub alias=\"ZHOU2\">轴</sub>是时间，纵<sub alias=\"ZHOU2\">轴</sub>是<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis>；读图时先找峰、谷和过零点。"
             }
           ]
         }

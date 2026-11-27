@@ -12,18 +12,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6263,
-              "caption": "这一节学习 C 风格的<c.aqua>枚举</c.aqua>，观察不携带数据的<c.aqua>变体</c.aqua>怎样获得稳定的<c.aqua>整数</c.aqua>值。"
+              "duration_ms": 6388,
+              "caption": "这一节学习 C 风格的<emphasis level=\"strong\">枚举</emphasis>，观察不携带数据的<emphasis level=\"strong\">变体</emphasis>怎样获得稳定的<emphasis level=\"strong\">整数</emphasis>值。"
             },
             {
               "offset_ms": 7000,
-              "duration_ms": 6989,
-              "caption": "不携带数据的<c.aqua>枚举</c.aqua>可以像 C 一样带辨别值：默认从 0 开始递增，也可以显式指定。"
+              "duration_ms": 6892,
+              "caption": "不携带数据的<emphasis level=\"strong\">枚举</emphasis>可以像 C 一样带辨别值：默认从 0 开始递增，也可以显式指定。"
             },
             {
               "offset_ms": 14000,
-              "duration_ms": 6196,
-              "caption": "用 as 可以把<c.aqua>枚举</c.aqua>值转成<c.aqua>整数</c.aqua>，Color 的三个<c.aqua>变体</c.aqua>就是三个十六进制颜色码。"
+              "duration_ms": 6242,
+              "caption": "用 as 可以把<emphasis level=\"strong\">枚举</emphasis>值转成<emphasis level=\"strong\">整数</emphasis>，Color 的三个<emphasis level=\"strong\">变体</emphasis>就是三个十六进制颜色码。"
             }
           ]
         }

@@ -14,18 +14,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1801,
+              "duration_ms": 1800,
               "caption": "第 4 章《变量绑定》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 3364,
-              "caption": "这一章讲变量绑定、作用域和变量遮蔽。"
+              "duration_ms": 3168,
+              "caption": "内容有变量绑定、作用域和变量遮蔽。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 3379,
-              "caption": "这一章会看 let 怎样把值交给一个名字。"
+              "duration_ms": 2658,
+              "caption": "先看 let 怎样把值赋给一个变量。"
             }
           ]
         }
@@ -38,9 +38,9 @@
           "asset_id": "narration_introduction_006_variable_bindings",
           "clips": [
             {
-              "offset_ms": 10000,
-              "duration_ms": 3128,
-              "caption": "这一章会看名字在什么范围内有效。"
+              "offset_ms": 9000,
+              "duration_ms": 2608,
+              "caption": "接着看变量名在什么范围内有效。"
             }
           ]
         }
@@ -53,16 +53,9 @@
           "asset_id": "narration_introduction_006_variable_bindings",
           "clips": [
             {
-              "offset_ms": 14000,
-              "duration_ms": 3291,
-              "caption": "以及同一个名字怎样被重新绑定。",
-              "speech_edits": [
-                {
-                  "i": 10,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "offset_ms": 12000,
+              "duration_ms": 3615,
+              "caption": "以及同一个变量名怎样被新的绑定遮蔽。"
             }
           ]
         }
@@ -75,8 +68,8 @@
           "asset_id": "narration_introduction_006_variable_bindings",
           "clips": [
             {
-              "offset_ms": 18000,
-              "duration_ms": 2420,
+              "offset_ms": 16000,
+              "duration_ms": 2066,
               "caption": "这些是阅读后面例子的基础。"
             }
           ]

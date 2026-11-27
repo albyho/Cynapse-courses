@@ -7,10 +7,12 @@
       "path": "../../resources/agent-desktop/crates/core/src/commands/execute_by_ref.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec2_dispatch",
           "clips": [
             {
-              "duration_ms": 6000,
-              "caption": "最后一步，把观察、引用和预检串成一条<c.aqua>完整管线</c.aqua>。"
+              "offset_ms": 0,
+              "duration_ms": 4226,
+              "caption": "最后一步，把观察、引用和预检串成一条<emphasis level=\"strong\">完整管线</emphasis>。"
             }
           ]
         }
@@ -27,10 +29,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec2_dispatch",
           "clips": [
             {
-              "duration_ms": 8500,
-              "caption": "注释写清<c.aqua>五步</c.aqua>：RefStore 读取、RefMap 查找、严格元素解析、实时可操作性预检、派发。"
+              "offset_ms": 5000,
+              "duration_ms": 6695,
+              "caption": "注释写清<emphasis level=\"strong\">五步</emphasis>：RefStore 读取、RefMap 查找、严格元素解析、实时可操作性预检、派发。"
             }
           ]
         }
@@ -47,10 +51,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec2_dispatch",
           "clips": [
             {
-              "duration_ms": 7500,
-              "caption": "ref 必须带快照限定；裸 @eN 会以 <c.aqua>INVALID_ARGS</c.aqua> 拒绝。"
+              "offset_ms": 12000,
+              "duration_ms": 3797,
+              "caption": "ref 必须带快照限定；裸 @eN 会以 <emphasis level=\"strong\">INVALID_ARGS</emphasis> 拒绝。"
             }
           ]
         }
@@ -67,17 +73,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec2_dispatch",
           "clips": [
             {
-              "duration_ms": 7500,
-              "caption": "交互策略是“调用方要求”和“动作自身要求”的 join：取更严格的那一个。语义动作默认严格 <c.aqua>headless</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 6,
-                  "s": "调",
-                  "p": "DIAO4"
-                }
-              ]
+              "offset_ms": 16000,
+              "duration_ms": 8562,
+              "caption": "交互策略是“<sub alias=\"DIAO4\">调</sub>用方要求”和“动作自身要求”的 join：取更严格的那一个。语义动作默认严格 <emphasis level=\"strong\">headless</emphasis>。"
             }
           ]
         }
@@ -94,10 +95,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec2_dispatch",
           "clips": [
             {
-              "duration_ms": 7500,
-              "caption": "代码里就是 base.join(caller_policy)，再组装 <c.aqua>ActionRequest</c.aqua>。"
+              "offset_ms": 25000,
+              "duration_ms": 4218,
+              "caption": "代码里就是 base.join(caller_policy)，再组装 <emphasis level=\"strong\">ActionRequest</emphasis>。"
             }
           ]
         }
@@ -114,9 +117,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec2_dispatch",
           "clips": [
             {
-              "duration_ms": 7500,
+              "offset_ms": 30000,
+              "duration_ms": 5691,
               "caption": "构造 ActionRequest：动作、策略、超时；verified_point 与 expected_process 先留空。"
             }
           ]
@@ -134,10 +139,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec2_dispatch",
           "clips": [
             {
-              "duration_ms": 7500,
-              "caption": "交给 execute_<c.aqua>ref</c.aqua>_action_with_context；ref_id 与 timeout 一起传入。"
+              "offset_ms": 36000,
+              "duration_ms": 4442,
+              "caption": "交给 execute_<emphasis level=\"strong\">ref</emphasis>_action_with_context；ref_id 与 timeout 一起传入。"
             }
           ]
         }

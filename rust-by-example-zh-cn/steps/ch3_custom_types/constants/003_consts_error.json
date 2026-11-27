@@ -14,20 +14,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6550,
-              "caption": "常量一旦定义就不能在运行时重新赋值，这是 const 和 let 的关键区别。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 13,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "duration_ms": 6310,
+              "caption": "常量一旦定义就不能在代码里<sub alias=\"CHONG2\">重</sub>新赋值，这是 const 和 let 的关键区别。"
             }
           ]
         }
@@ -56,8 +44,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 4918,
-              "caption": "<c.aqua>编译器</c.aqua>直接指出不能给<c.aqua>常量赋值</c.aqua>，错误码是 E0070。"
+              "duration_ms": 4921,
+              "caption": "<emphasis level=\"strong\">编译器</emphasis>直接指出不能给<emphasis level=\"strong\">常量赋值</emphasis>，错误码是 E0070。"
             }
           ]
         }
@@ -72,15 +60,8 @@
           "clips": [
             {
               "offset_ms": 12000,
-              "duration_ms": 5668,
-              "caption": "E0070 的<c.aqua>报错</c.aqua>停在终端，我们对照源码看它指向哪一行。",
-              "speech_edits": [
-                {
-                  "i": 26,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 5510,
+              "caption": "E0070 的<emphasis level=\"strong\">报错</emphasis>停在终端，我们对照源码看它指向哪一<sub alias=\"HANG2\">行</sub>。"
             }
           ]
         }

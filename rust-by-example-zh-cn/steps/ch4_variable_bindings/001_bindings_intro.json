@@ -12,30 +12,23 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5405,
-              "caption": "这一节学习<c.aqua>变量</c.aqua><c.aqua>绑定</c.aqua>与<c.aqua>类型</c.aqua>推导，观察 let 怎样把值绑定到名字上。"
+              "duration_ms": 5767,
+              "caption": "这一节学习<emphasis level=\"strong\">变量</emphasis><emphasis level=\"strong\">绑定</emphasis>与<emphasis level=\"strong\">类型</emphasis>推导，观察 let 怎样把值绑定到名字上。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 8444,
-              "caption": "Rust 用<c.aqua>静态类型</c.aqua>保证<c.aqua>类型</c.aqua>安全；变量绑定的类型多数时候会被编译器推断出来，只在必要时显式标注。"
+              "duration_ms": 8422,
+              "caption": "Rust 用<emphasis level=\"strong\">静态类型</emphasis>保证<emphasis level=\"strong\">类型</emphasis>安全；变量绑定的类型多数时候会被编译器推断出来，只在必要时显式标注。"
             },
             {
               "offset_ms": 15000,
-              "duration_ms": 6707,
-              "caption": "用 `let` 可以把<c.aqua>字面量</c.aqua>、<c.aqua>表达式</c.aqua>的结果绑到<c.aqua>变量</c.aqua>上，也可以把已有绑定复制到新绑定。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "`let`",
-                  "p": "let"
-                }
-              ]
+              "duration_ms": 6983,
+              "caption": "用 <sub alias=\"let\">`let`</sub> 可以把<emphasis level=\"strong\">字面量</emphasis>、<emphasis level=\"strong\">表达式</emphasis>的结果绑到<emphasis level=\"strong\">变量</emphasis>上，也可以把已有绑定复制到新绑定。"
             },
             {
               "offset_ms": 22000,
-              "duration_ms": 10740,
-              "caption": "未使用的<c.aqua>绑定</c.aqua>会触发警告，<c.aqua>变量</c.aqua>名加下划线前缀就能关掉这个警告——本章后面的页面会进一步展开<c.aqua>可变性</c.aqua>、作用域与先声明。"
+              "duration_ms": 10764,
+              "caption": "未使用的<emphasis level=\"strong\">绑定</emphasis>会触发警告，<emphasis level=\"strong\">变量</emphasis>名加下划线前缀就能关掉这个警告——本章后面的页面会进一步展开<emphasis level=\"strong\">可变性</emphasis>、作用域与先声明。"
             }
           ]
         }

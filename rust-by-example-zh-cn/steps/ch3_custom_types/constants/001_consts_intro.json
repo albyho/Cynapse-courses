@@ -12,30 +12,23 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7649,
-              "caption": "这一节学习<c.aqua>常量</c.aqua>和<c.aqua>静态</c.aqua><c.aqua>变量</c.aqua>，观察 const 与 static 在作用域、类型标注和可变性上的差异。",
-              "speech_edits": [
-                {
-                  "i": 46,
-                  "s": "差",
-                  "p": "CHA1"
-                }
-              ]
+              "duration_ms": 7534,
+              "caption": "这一节学习<emphasis level=\"strong\">常量</emphasis>和<emphasis level=\"strong\">静态</emphasis><emphasis level=\"strong\">变量</emphasis>，观察 const 与 static 在作用域、类型标注和可变性上的<sub alias=\"CHA1\">差</sub>异。"
             },
             {
               "offset_ms": 8000,
-              "duration_ms": 6268,
-              "caption": "const 和 static 都能<c.aqua>声明</c.aqua>在任意<c.aqua>作用域</c.aqua>，包括全局，而且都必须显式标注<c.aqua>类型</c.aqua>。"
+              "duration_ms": 6332,
+              "caption": "const 和 static 都能<emphasis level=\"strong\">声明</emphasis>在任意<emphasis level=\"strong\">作用域</emphasis>，包括全局，而且都必须显式标注<emphasis level=\"strong\">类型</emphasis>。"
             },
             {
               "offset_ms": 15000,
-              "duration_ms": 6385,
-              "caption": "const 是<c.aqua>不可变</c.aqua>的值；static 带 'static <c.aqua>生命周期</c.aqua>，<c.aqua>字符串</c.aqua>字面量可以直接赋给它。"
+              "duration_ms": 6303,
+              "caption": "const 是<emphasis level=\"strong\">不可变</emphasis>的值；static 带 'static <emphasis level=\"strong\">生命周期</emphasis>，<emphasis level=\"strong\">字符串</emphasis>字面量可以直接赋给它。"
             },
             {
               "offset_ms": 22000,
-              "duration_ms": 6103,
-              "caption": "接下来我们故意给<c.aqua>常量赋值</c.aqua>一次，看<c.aqua>编译器</c.aqua>怎么拦下来，再把它注释掉。"
+              "duration_ms": 5987,
+              "caption": "接下来我们故意给<emphasis level=\"strong\">常量赋值</emphasis>一次，看<emphasis level=\"strong\">编译器</emphasis>怎么拦下来，再把它注释掉。"
             }
           ]
         }

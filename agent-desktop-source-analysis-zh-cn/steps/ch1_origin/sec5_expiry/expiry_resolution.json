@@ -12,14 +12,7 @@
             {
               "offset_ms": 126000,
               "duration_ms": 4358,
-              "caption": "最后一节：快照过期以后，同一个 <c.aqua>ref</c.aqua> 还能不能用。",
-              "speech_edits": [
-                {
-                  "i": 20,
-                  "s": "还",
-                  "p": "HAI2"
-                }
-              ]
+              "caption": "最后一节：快照过期以后，同一个 <emphasis level=\"strong\">ref</emphasis> <sub alias=\"HAI2\">还</sub>能不能用。"
             }
           ]
         }
@@ -41,14 +34,7 @@
             {
               "offset_ms": 131000,
               "duration_ms": 10544,
-              "caption": "先看最硬的规则：捕获时就不唯一的引用，直接拒绝，不搜索——因为搜索也没法在两个一模一样的元素里选出正确那个。",
-              "speech_edits": [
-                {
-                  "i": 30,
-                  "s": "为",
-                  "p": "WEI4"
-                }
-              ]
+              "caption": "先看最硬的规则：捕获时就不唯一的引用，直接拒绝，不搜索——因<sub alias=\"WEI4\">为</sub>搜索也没法在两个一模一样的元素里选出正确那个。"
             }
           ]
         }
@@ -70,14 +56,7 @@
             {
               "offset_ms": 142000,
               "duration_ms": 5558,
-              "caption": "有稳定 <c.aqua>token</c.aqua> 的引用走快路径：让平台按 token 严格解析，不重读整窗。",
-              "speech_edits": [
-                {
-                  "i": 35,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "caption": "有稳定 <emphasis level=\"strong\">token</emphasis> 的引用走快路径：让平台按 token 严格解析，不<sub alias=\"CHONG2\">重</sub>读整窗。"
             }
           ]
         }
@@ -99,14 +78,7 @@
             {
               "offset_ms": 148000,
               "duration_ms": 10782,
-              "caption": "没有 token 就重读整个窗口，按记录的位置和谓词找到唯一匹配，再确认落到的元素确实是它；找不到是 stale，多个是 <c.aqua>ambiguous</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 10,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "caption": "没有 token 就<sub alias=\"CHONG2\">重</sub>读整个窗口，按记录的位置和谓词找到唯一匹配，再确认落到的元素确实是它；找不到是 stale，多个是 <emphasis level=\"strong\">ambiguous</emphasis>。"
             }
           ]
         }
@@ -128,14 +100,7 @@
             {
               "offset_ms": 159000,
               "duration_ms": 9817,
-              "caption": "整窗读取会先检查捕获时是否唯一，再记录窗口、设置观察选项，用 <c.aqua>saved_ref_node</c.aqua> 找到节点，最后校验元素上下文。",
-              "speech_edits": [
-                {
-                  "i": 53,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "caption": "整窗读取会先检查捕获时是否唯一，再记录窗口、设置观察选项，用 <emphasis level=\"strong\">saved_ref_node</emphasis> 找到节点，最后<sub alias=\"JIAO4\">校</sub>验元素上下文。"
             }
           ]
         }

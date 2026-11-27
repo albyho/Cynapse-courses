@@ -11,15 +11,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7889,
-              "caption": "动手试一试：tuples.rs 里的 Matrix 目前只有 Debug。接下来先让它按两行两列显示，再补上转置。",
-              "speech_edits": [
-                {
-                  "i": 45,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 7918,
+              "caption": "动手试一试：tuples.rs 里的 Matrix 目前只有 Debug。接下来先让它按两<sub alias=\"HANG2\">行</sub>两列显示，再补上转置。"
             }
           ]
         }

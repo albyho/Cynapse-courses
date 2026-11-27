@@ -14,30 +14,23 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1629,
+              "duration_ms": 1077,
               "caption": "第 9 章《函数》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 2706,
-              "caption": "这一章学习方法、闭包和高阶函数。"
+              "duration_ms": 2771,
+              "caption": "还能学到方法、闭包和高阶函数。"
             },
             {
               "offset_ms": 5000,
-              "duration_ms": 4457,
-              "caption": "这一章会看函数怎样把输入、计算和输出封装起来。"
+              "duration_ms": 3635,
+              "caption": "看函数怎样把输入、计算和输出封装起来。"
             },
             {
-              "offset_ms": 10000,
-              "duration_ms": 2944,
-              "caption": "参数与返回类型都写在签名里。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "offset_ms": 9000,
+              "duration_ms": 3047,
+              "caption": "<sub alias=\"CAN1\">参</sub>数与返回类型都写在签名里。"
             }
           ]
         }

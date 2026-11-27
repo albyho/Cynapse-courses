@@ -18,25 +18,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6151,
-              "caption": "一个 Rust 程序从 main 函数开始执行，这个例子用 println! 打印一行问候。",
-              "speech_edits": [
-                {
-                  "i": 22,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 30,
-                  "s": "println!",
-                  "p": "println 宏"
-                },
-                {
-                  "i": 42,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 6543,
+              "caption": "一个 Rust 程序从 main 函数开始执<sub alias=\"XING2\">行</sub>，这个例子用 <sub alias=\"println 宏\">println!</sub> 打印一<sub alias=\"HANG2\">行</sub>问候。"
             }
           ]
         }
@@ -56,20 +39,13 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 3705,
-              "caption": "先写<c.aqua>注释</c.aqua>和 main <c.aqua>函数</c.aqua>，再把<c.aqua>打印</c.aqua>语句放进去。"
+              "duration_ms": 3709,
+              "caption": "先写<emphasis level=\"strong\">注释</emphasis>和 main 函数，再把打印语句放进去。"
             },
             {
               "offset_ms": 11000,
-              "duration_ms": 3773,
-              "caption": "println! 是一个<c.aqua>宏</c.aqua>，负责把文本输出到控制台。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "println!",
-                  "p": "println 宏"
-                }
-              ]
+              "duration_ms": 3948,
+              "caption": "<sub alias=\"println 宏\">println!</sub> 是一个<emphasis level=\"strong\">宏</emphasis>，负责把文本输出到控制台。"
             }
           ]
         }
@@ -100,15 +76,8 @@
           "clips": [
             {
               "offset_ms": 15000,
-              "duration_ms": 3231,
-              "caption": "用 rustc 把源码编译成可执行程序。",
-              "speech_edits": [
-                {
-                  "i": 16,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 3220,
+              "caption": "用 rustc 把源码编译成可执<sub alias=\"XING2\">行</sub>程序。"
             }
           ]
         },
@@ -117,8 +86,8 @@
           "clips": [
             {
               "offset_ms": 19000,
-              "duration_ms": 1709,
-              "caption": "编译成功，没有<c.aqua>报错</c.aqua>。"
+              "duration_ms": 1879,
+              "caption": "编译成功，没有<emphasis level=\"strong\">报错</emphasis>。"
             }
           ]
         }
@@ -142,20 +111,8 @@
           "clips": [
             {
               "offset_ms": 21000,
-              "duration_ms": 2024,
-              "caption": "运行生成的可执行程序。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 7,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 2073,
+              "caption": "运<sub alias=\"XING2\">行</sub>生成的可执<sub alias=\"XING2\">行</sub>程序。"
             }
           ]
         },
@@ -164,7 +121,7 @@
           "clips": [
             {
               "offset_ms": 24000,
-              "duration_ms": 2050,
+              "duration_ms": 2060,
               "caption": "控制台输出了 Hello World!。"
             }
           ]
@@ -180,15 +137,8 @@
           "clips": [
             {
               "offset_ms": 27000,
-              "duration_ms": 5521,
-              "caption": "控制台输出了 Hello World!，我们对照源码看这一行是怎么来的。",
-              "speech_edits": [
-                {
-                  "i": 29,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 2441,
+              "caption": "我们对照源码看这一<sub alias=\"HANG2\">行</sub>是怎么来的。"
             }
           ]
         }

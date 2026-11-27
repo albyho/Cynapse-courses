@@ -12,35 +12,23 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7484,
-              "caption": "在 let <c.aqua>绑定</c.aqua>之后，这一节学习<c.aqua>可变</c.aqua><c.aqua>变量</c.aqua>，观察默认不可变的绑定怎样通过 mut 获得改写能力。"
+              "duration_ms": 7420,
+              "caption": "在 let <emphasis level=\"strong\">绑定</emphasis>之后，这一节学习<emphasis level=\"strong\">可变</emphasis><emphasis level=\"strong\">变量</emphasis>，观察默认不可变的绑定怎样通过 mut 获得改写能力。"
             },
             {
               "offset_ms": 8000,
-              "duration_ms": 6375,
-              "caption": "<c.aqua>变量</c.aqua><c.aqua>绑定</c.aqua>默认是<c.aqua>不可变</c.aqua>的：声明之后不能再改它的值，这正是 Rust 鼓励的写法。"
+              "duration_ms": 6505,
+              "caption": "<emphasis level=\"strong\">变量</emphasis><emphasis level=\"strong\">绑定</emphasis>默认是<emphasis level=\"strong\">不可变</emphasis>的：声明之后不能再改它的值，这正是 Rust 鼓励的写法。"
             },
             {
               "offset_ms": 15000,
-              "duration_ms": 4779,
-              "caption": "在 `let` 后面加 `mut` 修饰语，绑定才可变，之后可以反复赋值。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "`let`",
-                  "p": "let"
-                },
-                {
-                  "i": 12,
-                  "s": "`mut`",
-                  "p": "mut"
-                }
-              ]
+              "duration_ms": 4633,
+              "caption": "在 <sub alias=\"let\">`let`</sub> 后面加 <sub alias=\"mut\">`mut`</sub> 修饰语，绑定才可变，之后可以反复赋值。"
             },
             {
               "offset_ms": 20000,
-              "duration_ms": 6697,
-              "caption": "下面故意给一个<c.aqua>不可变</c.aqua><c.aqua>绑定</c.aqua>再次<c.aqua>赋值</c.aqua>，看看编译器怎么拦下来，再把它注释掉。"
+              "duration_ms": 6842,
+              "caption": "下面故意给一个<emphasis level=\"strong\">不可变</emphasis><emphasis level=\"strong\">绑定</emphasis>再次<emphasis level=\"strong\">赋值</emphasis>，看看编译器怎么拦下来，再把它注释掉。"
             }
           ]
         }

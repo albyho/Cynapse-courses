@@ -10,8 +10,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 8850,
-              "caption": "E0384 说明冻结期内不能写入；<c.aqua>注释</c.aqua>掉冻结期<c.aqua>赋值</c.aqua>后，外层<c.aqua>可变</c.aqua>绑定恢复可写，程序通过类型检查。"
+              "duration_ms": 8789,
+              "caption": "E0384 说明冻结期内不能写入；<emphasis level=\"strong\">注释</emphasis>掉冻结期<emphasis level=\"strong\">赋值</emphasis>后，外层<emphasis level=\"strong\">可变</emphasis>绑定恢复可写，程序通过类型检查。"
             }
           ]
         }

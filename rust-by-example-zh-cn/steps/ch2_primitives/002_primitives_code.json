@@ -18,7 +18,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7230,
+              "duration_ms": 7167,
               "caption": "整数和浮点都有默认类型，也能用后缀写明；没标注时编译器会从后面的用法推断。"
             }
           ]
@@ -39,15 +39,8 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 3944,
-              "caption": "逐行写入<c.aqua>类型</c.aqua>标注、默认值和推断的示例。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 3962,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入<emphasis level=\"strong\">类型</emphasis>标注、默认值和推断的示例。"
             }
           ]
         },
@@ -56,52 +49,38 @@
           "clips": [
             {
               "offset_ms": 12000,
-              "duration_ms": 4073,
-              "caption": "先写显式<c.aqua>类型</c.aqua>标注，<c.aqua>布尔</c.aqua>、<c.aqua>浮点</c.aqua>和带后缀的整数。"
+              "duration_ms": 4294,
+              "caption": "先写显式<emphasis level=\"strong\">类型标注</emphasis>，<emphasis level=\"strong\">布尔</emphasis>、<emphasis level=\"strong\">浮点数</emphasis>和<emphasis level=\"strong\">带后缀的整数</emphasis>。"
             },
             {
               "offset_ms": 17000,
-              "duration_ms": 3416,
-              "caption": "不标注时<c.aqua>浮点</c.aqua>默认 f64，<c.aqua>整数</c.aqua>默认 i32。"
+              "duration_ms": 3777,
+              "caption": "不标注时<emphasis level=\"strong\">浮点数</emphasis>默认 f64，<emphasis level=\"strong\">整数</emphasis>默认 i32。"
             },
             {
               "offset_ms": 21000,
-              "duration_ms": 3538,
-              "caption": "inferred_type 由下一行的<c.aqua>赋值</c.aqua>推断成 i64。",
-              "speech_edits": [
-                {
-                  "i": 17,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 3852,
+              "caption": "inferred_type 由下一<sub alias=\"HANG2\">行</sub>的<emphasis level=\"strong\">赋值</emphasis>推断成 i64。"
             },
             {
               "offset_ms": 25000,
-              "duration_ms": 3799,
-              "caption": "mutable <c.aqua>绑定</c.aqua>先改成 21，再<c.aqua>打印遮蔽</c.aqua>前的值。"
+              "duration_ms": 3807,
+              "caption": "mutable <emphasis level=\"strong\">绑定</emphasis>先改成 21，再<emphasis level=\"strong\">打印遮蔽</emphasis>前的值。"
             },
             {
               "offset_ms": 29000,
-              "duration_ms": 3696,
-              "caption": "那行赋 true 的<c.aqua>报错</c.aqua>保持<c.aqua>注释</c.aqua>，<c.aqua>类型</c.aqua>不能变。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 3785,
+              "caption": "那<sub alias=\"HANG2\">行</sub>赋 true 的<emphasis level=\"strong\">报错</emphasis>保持<emphasis level=\"strong\">注释</emphasis>，<emphasis level=\"strong\">类型</emphasis>不能变。"
             },
             {
               "offset_ms": 33000,
-              "duration_ms": 3707,
-              "caption": "用同名<c.aqua>绑定遮蔽</c.aqua>成 bool，再<c.aqua>打印</c.aqua>遮蔽后的值。"
+              "duration_ms": 3726,
+              "caption": "用同名<emphasis level=\"strong\">绑定遮蔽</emphasis>成 bool，再打印遮蔽后的值。"
             },
             {
               "offset_ms": 37000,
-              "duration_ms": 3525,
-              "caption": "最后把前面几个<c.aqua>变量</c.aqua>的值一起<c.aqua>打印</c.aqua>出来。"
+              "duration_ms": 2962,
+              "caption": "最后把前面几个<emphasis level=\"strong\">变量</emphasis>的值一起打印出来。"
             }
           ]
         }
@@ -131,8 +110,8 @@
           "asset_id": "narration_ch2_primitives_002_primitives_code",
           "clips": [
             {
-              "offset_ms": 41000,
-              "duration_ms": 1261,
+              "offset_ms": 40000,
+              "duration_ms": 1187,
               "caption": "先编译。"
             }
           ]
@@ -141,9 +120,9 @@
           "asset_id": "narration_ch2_primitives_002_primitives_code",
           "clips": [
             {
-              "offset_ms": 43000,
-              "duration_ms": 3379,
-              "caption": "编译通过，说明这些标注和<c.aqua>推断</c.aqua>都成立。"
+              "offset_ms": 42000,
+              "duration_ms": 3289,
+              "caption": "编译通过，说明这些标注和<emphasis level=\"strong\">推断</emphasis>都成立。"
             }
           ]
         }
@@ -171,16 +150,9 @@
           "asset_id": "narration_ch2_primitives_002_primitives_code",
           "clips": [
             {
-              "offset_ms": 47000,
-              "duration_ms": 2085,
-              "caption": "运行，看看每个<c.aqua>变量</c.aqua>的实际值。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 46000,
+              "duration_ms": 2877,
+              "caption": "运<sub alias=\"XING2\">行</sub>，看看每个<emphasis level=\"strong\">变量</emphasis>的实际值。"
             }
           ]
         },
@@ -188,41 +160,19 @@
           "asset_id": "narration_ch2_primitives_002_primitives_code",
           "clips": [
             {
-              "offset_ms": 50000,
-              "duration_ms": 3847,
+              "offset_ms": 49000,
+              "duration_ms": 3552,
               "caption": "输出里 logical 是 true，a_float 是 1，an_integer 是 5。"
             },
             {
-              "offset_ms": 54000,
-              "duration_ms": 6699,
-              "caption": "inferred_type 是 4294967296，说明<c.aqua>编译器</c.aqua>真的把它推成了 i64"
+              "offset_ms": 53000,
+              "duration_ms": 6663,
+              "caption": "inferred_type 是 4294967296，说明<emphasis level=\"strong\">编译器</emphasis>真的把它推成了 i64"
             },
             {
-              "offset_ms": 61000,
-              "duration_ms": 9743,
-              "caption": "示例里那行<c.aqua>报错</c.aqua>的赋值已经注释掉：变量类型不会因为赋值而改变，要换类型得用遮蔽重新声明。",
-              "speech_edits": [
-                {
-                  "i": 4,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 23,
-                  "s": "为",
-                  "p": "WEI4"
-                },
-                {
-                  "i": 34,
-                  "s": "得",
-                  "p": "DEI3"
-                },
-                {
-                  "i": 38,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "offset_ms": 60000,
+              "duration_ms": 9729,
+              "caption": "示例里那<sub alias=\"HANG2\">行</sub><emphasis level=\"strong\">报错</emphasis>的赋值已经注释掉：变量类型不会因<sub alias=\"WEI4\">为</sub>赋值而改变，要换类型<sub alias=\"DEI3\">得</sub>用遮蔽<sub alias=\"CHONG2\">重</sub>新声明。"
             }
           ]
         }
@@ -235,9 +185,9 @@
           "asset_id": "narration_ch2_primitives_002_primitives_code",
           "clips": [
             {
-              "offset_ms": 71000,
-              "duration_ms": 3049,
-              "caption": "mutable 在<c.aqua>遮蔽</c.aqua>前是 21，<c.aqua>遮蔽</c.aqua>后是 true。"
+              "offset_ms": 70000,
+              "duration_ms": 3252,
+              "caption": "mutable 在<emphasis level=\"strong\">遮蔽</emphasis>前是 21，<emphasis level=\"strong\">遮蔽</emphasis>后是 true。"
             }
           ]
         }

@@ -15,16 +15,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 128000,
-              "duration_ms": 9201,
-              "caption": "记住三件事：<c.aqua>信号</c.aqua>是随时间变化的量；<c.aqua>离散信号</c.aqua>用<c.aqua>样本</c.aqua>和采样间隔描述；stem 比 plot 更适合显示离散样本。",
-              "speech_edits": [
-                {
-                  "i": 25,
-                  "s": "采",
-                  "p": "CAI3"
-                }
-              ]
+              "offset_ms": 130000,
+              "duration_ms": 9170,
+              "caption": "记住三件事：<emphasis level=\"strong\">信号</emphasis>是随时间变化的量；<emphasis level=\"strong\">离散信号</emphasis>用<emphasis level=\"strong\">样本</emphasis>和<sub alias=\"CAI3\">采</sub>样间隔描述；stem 比 plot 更适合显示离散样本。"
             }
           ]
         }
@@ -37,26 +30,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 138000,
-              "duration_ms": 6200,
-              "caption": "下一节开始生成真正的<c.aqua>正弦信号</c.aqua>，并<c.aqua>观察</c.aqua><c.aqua>频率</c.aqua>和相位怎样改变波形。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "弦",
-                  "p": "XIAN2"
-                },
-                {
-                  "i": 19,
-                  "s": "率",
-                  "p": "LV4"
-                },
-                {
-                  "i": 21,
-                  "s": "相",
-                  "p": "XIANG4"
-                }
-              ]
+              "offset_ms": 140000,
+              "duration_ms": 6560,
+              "caption": "下一节开始生成真正的<emphasis level=\"strong\">正<sub alias=\"XIAN2\">弦</sub>信号</emphasis>，并<emphasis level=\"strong\">观察</emphasis><emphasis level=\"strong\">频<sub alias=\"LV4\">率</sub></emphasis>和<sub alias=\"XIANG4\">相</sub>位怎样改变波形。"
             }
           ]
         }

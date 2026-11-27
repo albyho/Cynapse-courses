@@ -10,10 +10,10 @@ published here. Course resources may be normal files or pinned git submodules.
 
 | Course | Version | Package | Based on |
 | --- | --- | --- | --- |
-| Rust by Example (Chinese) | `0.20.27` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.27) | [Rust by Example (Chinese)](https://rustwiki.org/zh-CN/rust-by-example/) |
-| agent-desktop Source Analysis (Chinese) | `0.39.0` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/agent-desktop-source-analysis-zh-cn-0.39.0) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
-| Signal Processing Roadmap (Chinese) | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-zh-cn-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
-| Signal Processing Roadmap (English) | `0.2.4` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-0.2.4) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
+| Rust by Example (Chinese) | `0.20.31` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/rust-by-example-zh-cn-0.20.31) | [Rust by Example (Chinese)](https://rustwiki.org/zh-CN/rust-by-example/) |
+| agent-desktop Source Analysis (Chinese) | `0.39.2` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/agent-desktop-source-analysis-zh-cn-0.39.2) | [agent-desktop](https://github.com/vercel-labs/agent-desktop) |
+| Signal Processing Roadmap (Chinese) | `0.2.5` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-zh-cn-0.2.5) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
+| Signal Processing Roadmap (English) | `0.2.5` | [zip](https://github.com/albyho/Cynapse-courses/releases/tag/signal-processing-roadmap-0.2.5) | [Signal processing roadmap](https://github.com/minthanthtoo/signal-processing-roadmap) |
 
 > `rust-by-example-zh-cn` is an in-progress adaptation. It currently covers the
 > introduction and chapters 1–4 only, not the complete Rust by Example book.

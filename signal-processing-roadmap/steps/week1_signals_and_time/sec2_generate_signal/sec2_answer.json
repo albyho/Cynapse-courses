@@ -29,9 +29,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 178000,
-              "duration_ms": 2625,
-              "caption": "First prepare the <c.aqua>time axis</c.aqua> and a 2 Hz reference <c.aqua>signal</c.aqua>."
+              "offset_ms": 179000,
+              "duration_ms": 2781,
+              "caption": "First prepare the <emphasis level=\"strong\">time axis</emphasis> and a 2 Hz reference <emphasis level=\"strong\">signal</emphasis>."
             }
           ]
         }
@@ -51,9 +51,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 181000,
-              "duration_ms": 3886,
-              "caption": "Put one working set of <c.aqua>amplitude</c.aqua>, <c.aqua>frequency</c.aqua> and <c.aqua>phase</c.aqua> into the same sine formula."
+              "offset_ms": 182000,
+              "duration_ms": 3977,
+              "caption": "Put one working set of <emphasis level=\"strong\">amplitude</emphasis>, <emphasis level=\"strong\">frequency</emphasis> and <emphasis level=\"strong\">phase</emphasis> into the same sine formula."
             }
           ]
         }
@@ -73,9 +73,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 185000,
-              "duration_ms": 4352,
-              "caption": "Draw the worked answer with the original <c.aqua>signal</c.aqua> and compare what the parameters changed."
+              "offset_ms": 186000,
+              "duration_ms": 4296,
+              "caption": "Draw the worked answer with the original <emphasis level=\"strong\">signal</emphasis> and compare what the parameters changed."
             }
           ]
         }
@@ -91,9 +91,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 190000,
-              "duration_ms": 8999,
-              "caption": "Here is one working answer: A is 0.8, f is 1.5 Hz, phi is π/4. It is not the only answer; what matters is that you can explain the figure with <c.aqua>period</c.aqua>, <c.aqua>frequency</c.aqua> and <c.aqua>phase</c.aqua>."
+              "offset_ms": 191000,
+              "duration_ms": 9216,
+              "caption": "Here is one working answer: A is 0.8, f is 1.5 Hz, phi is π/4. It is not the only answer; what matters is that you can explain the figure with <emphasis level=\"strong\">period</emphasis>, <emphasis level=\"strong\">frequency</emphasis> and <emphasis level=\"strong\">phase</emphasis>."
             }
           ]
         }

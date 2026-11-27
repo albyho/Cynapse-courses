@@ -14,15 +14,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7553,
-              "caption": "占位符的个数要和参数一一对应，类型还得实现 Display；这段示例里两处都埋了问题。",
-              "speech_edits": [
-                {
-                  "i": 8,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 7267,
+              "caption": "占位符的个数要和<sub alias=\"CAN1\">参</sub>数一一对应，类型还得实现 Display；这段示例里两处都埋了问题。"
             }
           ]
         }
@@ -40,37 +33,13 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 5153,
-              "caption": "第一个<c.aqua>错误</c.aqua>：println! 里用到了 {1}，却只提供了一个<c.aqua>参数</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 6,
-                  "s": "println!",
-                  "p": "println 宏"
-                },
-                {
-                  "i": 20,
-                  "s": "{1}",
-                  "p": "大括号一"
-                },
-                {
-                  "i": 31,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 5729,
+              "caption": "第一个<emphasis level=\"strong\">错误</emphasis>：<sub alias=\"println 宏\">println!</sub> 里用到了 <sub alias=\"大括号一\">{1}</sub>，却只提供了一个<emphasis level=\"strong\"><sub alias=\"CAN1\">参</sub>数</emphasis>。"
             },
             {
               "offset_ms": 14000,
-              "duration_ms": 2698,
-              "caption": "把漏掉的第二个<c.aqua>参数</c.aqua>补在 \"Bond\" 后面。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 3078,
+              "caption": "把漏掉的第二个<emphasis level=\"strong\"><sub alias=\"CAN1\">参</sub>数</emphasis>补在 \"Bond\" 后面。"
             }
           ]
         }
@@ -92,8 +61,8 @@
           "asset_id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
           "clips": [
             {
-              "offset_ms": 17000,
-              "duration_ms": 1522,
+              "offset_ms": 18000,
+              "duration_ms": 1297,
               "caption": "补上 , \"James\"。"
             }
           ]
@@ -111,28 +80,14 @@
           "asset_id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
           "clips": [
             {
-              "offset_ms": 19000,
-              "duration_ms": 5564,
-              "caption": "第二个<c.aqua>错误</c.aqua>：Structure 没有<c.aqua>实现</c.aqua> Display，不能用 {} 直接<c.aqua>打印</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 33,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "offset_ms": 20000,
+              "duration_ms": 5399,
+              "caption": "第二个<emphasis level=\"strong\">错误</emphasis>：Structure 没有<emphasis level=\"strong\">实现</emphasis> Display，不能用 <sub alias=\"一对大括号\">{}</sub> 直接打印。"
             },
             {
-              "offset_ms": 25000,
-              "duration_ms": 2927,
-              "caption": "按书上的做法，先把这行<c.aqua>注释</c.aqua>掉。",
-              "speech_edits": [
-                {
-                  "i": 10,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 26000,
+              "duration_ms": 2952,
+              "caption": "按书上的做法，先把这<emphasis level=\"strong\"><sub alias=\"HANG2\">行</sub>注释</emphasis>掉。"
             }
           ]
         }
@@ -154,21 +109,9 @@
           "asset_id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
           "clips": [
             {
-              "offset_ms": 28000,
-              "duration_ms": 2033,
-              "caption": "在行首输入 // 。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 6,
-                  "s": "//",
-                  "p": "双斜杠"
-                }
-              ]
+              "offset_ms": 29000,
+              "duration_ms": 2042,
+              "caption": "在<sub alias=\"HANG2\">行</sub>首输入 <sub alias=\"双斜杠\">//</sub> 。"
             }
           ]
         }
@@ -188,25 +131,13 @@
           "asset_id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
           "clips": [
             {
-              "offset_ms": 31000,
-              "duration_ms": 4925,
-              "caption": "练习还要求再写一行<c.aqua>打印</c.aqua> Pi 的近似值，保留三位小数。",
-              "speech_edits": [
-                {
-                  "i": 8,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 12,
-                  "s": "Pi",
-                  "p": "PAI4"
-                }
-              ]
+              "offset_ms": 32000,
+              "duration_ms": 5111,
+              "caption": "练习还要求再写一<sub alias=\"HANG2\">行</sub>打印 <sub alias=\"PAI4\">Pi</sub> 的近似值，保留三位小数。"
             },
             {
-              "offset_ms": 36000,
-              "duration_ms": 2053,
+              "offset_ms": 38000,
+              "duration_ms": 1980,
               "caption": "把这行加到 main 的最后。"
             }
           ]
@@ -229,21 +160,9 @@
           "asset_id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
           "clips": [
             {
-              "offset_ms": 39000,
-              "duration_ms": 2699,
-              "caption": "输入 let 和新的一行 println!。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 13,
-                  "s": "println!",
-                  "p": "println 宏"
-                }
-              ]
+              "offset_ms": 40000,
+              "duration_ms": 2680,
+              "caption": "输入 let 和新的一<sub alias=\"HANG2\">行</sub> <sub alias=\"println 宏\">println!</sub>。"
             }
           ]
         }
@@ -269,8 +188,8 @@
           "asset_id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
           "clips": [
             {
-              "offset_ms": 42000,
-              "duration_ms": 1700,
+              "offset_ms": 43000,
+              "duration_ms": 1628,
               "caption": "这次编译通过。"
             }
           ]
@@ -295,16 +214,9 @@
           "asset_id": "narration_ch1_hello_world_print_exercise_003_pex_fix",
           "clips": [
             {
-              "offset_ms": 44000,
-              "duration_ms": 5126,
-              "caption": "程序依次输出了<c.aqua>格式化</c.aqua>结果，以及 Pi is roughly 3.142。",
-              "speech_edits": [
-                {
-                  "i": 16,
-                  "s": "Pi",
-                  "p": "PAI4"
-                }
-              ]
+              "offset_ms": 45000,
+              "duration_ms": 5136,
+              "caption": "程序依次输出了<emphasis level=\"strong\">格式化</emphasis>结果，以及 <sub alias=\"PAI4\">Pi</sub> is roughly 3.142。"
             }
           ]
         }

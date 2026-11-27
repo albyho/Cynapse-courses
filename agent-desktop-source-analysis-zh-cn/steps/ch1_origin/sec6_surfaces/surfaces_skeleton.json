@@ -110,14 +110,7 @@
             {
               "offset_ms": 35000,
               "duration_ms": 7844,
-              "caption": "skeleton 生效时深度被压到 3 层：先拿一张浅骨架，看清结构，再按 ref 下钻到关心的区域。",
-              "speech_edits": [
-                {
-                  "i": 43,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "skeleton 生效时深度被压到 3 层：先拿一张浅骨架，看清结构，再按 ref 下<sub alias=\"ZUAN1\">钻</sub>到关心的区域。"
             }
           ]
         }
@@ -133,14 +126,7 @@
             {
               "offset_ms": 43000,
               "duration_ms": 5076,
-              "caption": "下钻仍然遵守第 1 章的规则：替换子树引用，必须完整。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "下<sub alias=\"ZUAN1\">钻</sub>仍然遵守第 1 章的规则：替换子树引用，必须完整。"
             }
           ]
         }
@@ -162,19 +148,7 @@
             {
               "offset_ms": 49000,
               "duration_ms": 8693,
-              "caption": "所以两遍观察是：skeleton 看结构 → 按 ref 下钻 → 变化后重新下钻；菜单和弹窗则换 surface 单独观察。",
-              "speech_edits": [
-                {
-                  "i": 30,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                },
-                {
-                  "i": 40,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "所以两遍观察是：skeleton 看结构 → 按 ref 下<sub alias=\"ZUAN1\">钻</sub> → 变化后重新下<sub alias=\"ZUAN1\">钻</sub>；菜单和弹窗则换 surface 单独观察。"
             }
           ]
         }

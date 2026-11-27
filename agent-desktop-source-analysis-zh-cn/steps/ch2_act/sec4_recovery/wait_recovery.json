@@ -5,63 +5,195 @@
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/commands/wait.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "真实应用的状态变化不是瞬时的，所以系统提供等待，而不是让调用方 sleep。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 6420,
+              "caption": "真实应用的状态变化不是瞬时的，所以系统提供等待，而不是让调用方 sleep。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/commands/wait.rs",
-      "start": { "line": 25 },
-      "end": { "line": 107 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "WaitArgs 把等待拆成模式与谓词：等元素、等文本、等菜单、等窗口、等事件；execute 按模式轮询，直到满足或超时。" }] } }
+      "start": {
+        "line": 25
+      },
+      "end": {
+        "line": 107
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 7000,
+              "duration_ms": 8948,
+              "caption": "WaitArgs 把等待拆成模式与谓词：等元素、等文本、等菜单、等窗口、等事件；execute 按模式轮询，直到满足或超时。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/actions/interaction_policy.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "等待之外，还要知道动作允许做什么。看交互策略。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 16000,
+              "duration_ms": 4252,
+              "caption": "等待之外，还要知道动作允许做什么。看交互策略。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actions/interaction_policy.rs",
-      "start": { "line": 3 },
-      "end": { "line": 33 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "headless 不允许抢焦点、不允许移动光标；focus_fallback 只允许焦点；headed 两者都允许。join 取更严格的那个。" }] } }
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 33
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 21000,
+              "duration_ms": 8643,
+              "caption": "headless 不允许抢焦点、不允许移动光标；focus_fallback 只允许焦点；headed 两者都允许。join 取更严格的那个。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/response/error_code.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "失败之后，先看错误码，而不是 message。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 30000,
+              "duration_ms": 2918,
+              "caption": "失败之后，先看错误码，而不是 message。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/response/error_code.rs",
-      "start": { "line": 5 },
-      "end": { "line": 22 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "16 个错误码固定了语义：STALE_REF、AMBIGUOUS_TARGET、POLICY_DENIED、TIMEOUT……调用方按 code 和 disposition.retry 决定重试、换目标，还是直接失败。" }] } }
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 22
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 33000,
+              "duration_ms": 10843,
+              "caption": "16 个错误码固定了语义：STALE_REF、AMBIGUOUS_TARGET、POLICY_DENIED、TIMEOUT……调用方按 code 和 disposition.retry 决定重试、换目标，还是直接失败。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/cli/post_action_wait.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "wait 命令之外，每个动作还能自带等待：--wait-for 与 --wait-for-gone。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 44000,
+              "duration_ms": 4855,
+              "caption": "wait 命令之外，每个动作还能自带等待：--wait-for 与 --wait-for-gone。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/src/cli/post_action_wait.rs",
-      "start": { "line": 3 },
-      "end": { "line": 26 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "两个 flag 互斥，选择器是 role:text；动作先执行，再轮询到出现或消失。超时返回 TIMEOUT，但动作已经发生，error 会保留原 disposition，不能当作未执行而直接重试。" }] } }
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 26
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 49000,
+              "duration_ms": 13155,
+              "caption": "两个 flag 互斥，选择器是 role:text；动作先执行，再轮询到出现或消失。超时返回 TIMEOUT，但动作已经发生，error 会保留原 disposition，不能当作未执行而直接重试。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/cli/root.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "这些 flag 是全局的，放在命令前后都行。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 3330,
+              "caption": "这些 flag 是全局的，放在命令前后都行。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/src/cli/root.rs",
-      "start": { "line": 20 },
-      "end": { "line": 40 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "Cli 用 flatten 把身份、trace、交互策略和 post-action wait 拼进根命令；global = true 让它们出现在每个子命令上。" }] } }
+      "start": {
+        "line": 20
+      },
+      "end": {
+        "line": 40
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 67000,
+              "duration_ms": 8304,
+              "caption": "Cli 用 flatten 把身份、trace、交互策略和 post-action wait 拼进根命令；global = true 让它们出现在每个子命令上。"
+            }
+          ]
+        }
+      }
     },
-    { "type": "ClearReveal" }
+    {
+      "type": "ClearReveal"
+    }
   ]
 }

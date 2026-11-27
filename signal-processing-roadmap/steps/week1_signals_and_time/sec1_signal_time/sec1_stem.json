@@ -35,9 +35,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 83000,
-              "duration_ms": 6342,
-              "caption": "stem draws each <c.aqua>sample</c.aqua> as a vertical line, which suits a <c.aqua>discrete signal</c.aqua> better. Same values, different drawing, more accurate meaning."
+              "offset_ms": 82000,
+              "duration_ms": 6472,
+              "caption": "stem draws each <emphasis level=\"strong\">sample</emphasis> as a vertical line, which suits a <emphasis level=\"strong\">discrete signal</emphasis> better. Same values, different drawing, more accurate meaning."
             }
           ]
         }

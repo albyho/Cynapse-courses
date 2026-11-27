@@ -28,9 +28,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 162000,
-              "duration_ms": 7222,
-              "caption": "Choose your own A, f and phi, <c.aqua>predict</c.aqua> the waveform, then verify it in code. Change the <c.aqua>frequency</c.aqua> at least once and the <c.aqua>phase</c.aqua> at least once, and use a legend."
+              "offset_ms": 163000,
+              "duration_ms": 7319,
+              "caption": "Choose your own A, f and phi, <emphasis level=\"strong\">predict</emphasis> the waveform, then verify it in code. Change the <emphasis level=\"strong\">frequency</emphasis> at least once and the <emphasis level=\"strong\">phase</emphasis> at least once, and use a legend."
             }
           ]
         }
@@ -43,9 +43,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 170000,
-              "duration_ms": 7707,
-              "caption": "Success criteria: a title and both axis labels; you can point out which curve shows the <c.aqua>frequency</c.aqua> change and which the <c.aqua>phase</c.aqua> change. Run it, look, then continue."
+              "offset_ms": 171000,
+              "duration_ms": 7694,
+              "caption": "Success criteria: a title and both axis labels; you can point out which curve shows the <emphasis level=\"strong\">frequency</emphasis> change and which the <emphasis level=\"strong\">phase</emphasis> change. Run it, look, then continue."
             }
           ]
         }

@@ -12,28 +12,28 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6220,
-              "caption": "这一节学习<c.aqua>结构体</c.aqua>，观察三种写法怎样组织具名<c.aqua>字段</c.aqua>、<c.aqua>元组</c.aqua>字段和空字段。"
+              "duration_ms": 7732,
+              "caption": "这一节学习<emphasis level=\"strong\">结构体</emphasis>，观察三种写法怎样组织具名<emphasis level=\"strong\">字段</emphasis>、<emphasis level=\"strong\">元组</emphasis>字段，以及完全不带字段的形式。"
             },
             {
-              "offset_ms": 7000,
-              "duration_ms": 8596,
-              "caption": "自<c.aqua>定义类型</c.aqua>这一章分三节：3.1 <c.aqua>结构体</c.aqua>，3.2 枚举，其中又分 use、C 风格和链表三个小节，3.3 常量。"
+              "offset_ms": 8000,
+              "duration_ms": 7879,
+              "caption": "自<emphasis level=\"strong\">定义类型</emphasis>分三节：3.1 <emphasis level=\"strong\">结构体</emphasis>，3.2 枚举，其中又分 use、C 风格和链表三个小节，3.3 常量。"
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 7124,
-              "caption": "<c.aqua>结构体</c.aqua>有三种写法：具名<c.aqua>字段</c.aqua>的经典<c.aqua>结构体</c.aqua>、元组结构体，以及不带字段的单元结构体。"
+              "duration_ms": 7451,
+              "caption": "<emphasis level=\"strong\">结构体</emphasis>有三种写法：具名<emphasis level=\"strong\">字段</emphasis>的经典<emphasis level=\"strong\">结构体</emphasis>、元组结构体，以及不带字段的单元结构体。"
             },
             {
               "offset_ms": 24000,
-              "duration_ms": 5588,
-              "caption": "具名<c.aqua>字段</c.aqua>用 . 访问，<c.aqua>元组结构体</c.aqua>用 .0、.1 访问，两者都能被 let 解构。"
+              "duration_ms": 5641,
+              "caption": "具名<emphasis level=\"strong\">字段</emphasis>用 . 访问，<emphasis level=\"strong\">元组结构体</emphasis>用 .0、.1 访问，两者都能被 let 解构。"
             },
             {
               "offset_ms": 30000,
-              "duration_ms": 4294,
-              "caption": "更新语法 ..point 会把其余<c.aqua>字段</c.aqua>从另一个值里搬过来。"
+              "duration_ms": 4440,
+              "caption": "更新语法 ..point 会把其余<emphasis level=\"strong\">字段</emphasis>从另一个值里搬过来。"
             }
           ]
         }

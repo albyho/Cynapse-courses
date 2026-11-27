@@ -20,15 +20,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6503,
-              "caption": "这是 1.1 的 Intro <c.aqua>Notebook</c.aqua>；标题 Cell 先标明本单元的主题是<c.aqua>信号</c.aqua>与<c.aqua>时间轴</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 47,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                }
-              ]
+              "duration_ms": 6570,
+              "caption": "这是 1.1 的 Intro <emphasis level=\"strong\">Notebook</emphasis>；标题 Cell 先标明本单元的主题是<emphasis level=\"strong\">信号</emphasis>与<emphasis level=\"strong\">时间<sub alias=\"ZHOU2\">轴</sub></emphasis>。"
             }
           ]
         }
@@ -48,15 +41,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 5597,
-              "caption": "本单元只解决一个问题：怎样把一段<c.aqua>信号</c.aqua>放到<c.aqua>时间轴</c.aqua>上<c.aqua>观察</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 22,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                }
-              ]
+              "duration_ms": 5307,
+              "caption": "本单元只解决一个问题：怎样把一段<emphasis level=\"strong\">信号</emphasis>放到<emphasis level=\"strong\">时间<sub alias=\"ZHOU2\">轴</sub></emphasis>上<emphasis level=\"strong\">观察</emphasis>。"
             }
           ]
         }
@@ -70,15 +56,8 @@
           "clips": [
             {
               "offset_ms": 13000,
-              "duration_ms": 7067,
-              "caption": "先区分连续和离散：<c.aqua>连续信号</c.aqua>在每个时刻都有值；<c.aqua>离散信号</c.aqua>只在<c.aqua>采样</c.aqua>时刻有值。",
-              "speech_edits": [
-                {
-                  "i": 28,
-                  "s": "采",
-                  "p": "CAI3"
-                }
-              ]
+              "duration_ms": 7108,
+              "caption": "先区分连续和离散：<emphasis level=\"strong\">连续信号</emphasis>在每个时刻都有值；<emphasis level=\"strong\">离散信号</emphasis>只在<emphasis level=\"strong\"><sub alias=\"CAI3\">采</sub>样</emphasis>时刻有值。"
             }
           ]
         }
@@ -92,20 +71,8 @@
           "clips": [
             {
               "offset_ms": 21000,
-              "duration_ms": 5421,
-              "caption": "<c.aqua>离散信号</c.aqua>用三个基本量描述：<c.aqua>样本序号</c.aqua> n、<c.aqua>采样时间</c.aqua> t、振幅 x。",
-              "speech_edits": [
-                {
-                  "i": 20,
-                  "s": "采",
-                  "p": "CAI3"
-                },
-                {
-                  "i": 28,
-                  "s": "幅",
-                  "p": "FU2"
-                }
-              ]
+              "duration_ms": 5422,
+              "caption": "<emphasis level=\"strong\">离散信号</emphasis>用三个基本量描述：<emphasis level=\"strong\">样本序号</emphasis> n、<emphasis level=\"strong\"><sub alias=\"CAI3\">采</sub>样时间</emphasis> t、振<sub alias=\"FU2\">幅</sub> x。"
             }
           ]
         }
@@ -125,8 +92,8 @@
           "clips": [
             {
               "offset_ms": 27000,
-              "duration_ms": 6999,
-              "caption": "最后的<c.aqua>观察</c.aqua>任务是：同一组数用 plot 和 stem 画出来，比较哪种画法更符合离散<c.aqua>样本</c.aqua>。"
+              "duration_ms": 6713,
+              "caption": "最后的<emphasis level=\"strong\">观察</emphasis>任务是：同一组数用 plot 和 stem 画出来，比较哪种画法更符合离散<emphasis level=\"strong\">样本</emphasis>。"
             }
           ]
         }

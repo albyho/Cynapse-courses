@@ -10,20 +10,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6699,
-              "caption": "Debug 用 {:?} 打印，方便调试；derive 能自动为类型生成这个实现。",
-              "speech_edits": [
-                {
-                  "i": 8,
-                  "s": "{:?}",
-                  "p": "大括号冒号问号"
-                },
-                {
-                  "i": 18,
-                  "s": "调",
-                  "p": "TIAO2"
-                }
-              ]
+              "duration_ms": 6643,
+              "caption": "Debug 用 <sub alias=\"大括号冒号问号\">{:?}</sub> 打印，方便<sub alias=\"TIAO2\">调</sub>试；derive 能自动为类型生成这个实现。"
             }
           ]
         }
@@ -37,15 +25,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 2318,
-              "caption": "演示 derive(Debug) 的<c.aqua>打印</c.aqua>效果。",
-              "speech_edits": [
-                {
-                  "i": 3,
-                  "s": "derive(Debug)",
-                  "p": "derive Debug"
-                }
-              ]
+              "duration_ms": 2211,
+              "caption": "演示 <sub alias=\"derive Debug\">derive(Debug)</sub> 的打印效果。"
             }
           ]
         }
@@ -63,7 +44,7 @@
           "clips": [
             {
               "offset_ms": 10000,
-              "duration_ms": 5137,
+              "duration_ms": 5098,
               "caption": "先看两个例子的结构：Structure 只有一个字段，Deep 把它嵌进去。"
             }
           ]
@@ -88,15 +69,8 @@
           "clips": [
             {
               "offset_ms": 16000,
-              "duration_ms": 3818,
-              "caption": "逐行写入 Structure、Deep 和它们的<c.aqua>打印</c.aqua>语句。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 3798,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入 Structure、Deep 和它们的打印语句。"
             }
           ]
         },
@@ -105,47 +79,28 @@
           "clips": [
             {
               "offset_ms": 20000,
-              "duration_ms": 3968,
-              "caption": "先给 Structure 推导 Debug，它只有一个 i32 <c.aqua>字段</c.aqua>。"
+              "duration_ms": 3971,
+              "caption": "先给 Structure 推导 Debug，它只有一个 i32 <emphasis level=\"strong\">字段</emphasis>。"
             },
             {
               "offset_ms": 24000,
-              "duration_ms": 3008,
+              "duration_ms": 3030,
               "caption": "再把 Structure 嵌进 Deep，同样推导 Debug。"
             },
             {
               "offset_ms": 28000,
-              "duration_ms": 5389,
-              "caption": "main 里先用 {:?} 打印 12 和带<c.aqua>位置参数</c.aqua>的字符串。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "{:?}",
-                  "p": "大括号冒号问号"
-                },
-                {
-                  "i": 24,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 5703,
+              "caption": "main 里先用 <sub alias=\"大括号冒号问号\">{:?}</sub> 打印 12 和带<emphasis level=\"strong\">位置<sub alias=\"CAN1\">参</sub>数</emphasis>的字符串。"
             },
             {
               "offset_ms": 34000,
-              "duration_ms": 3761,
-              "caption": "接着<c.aqua>打印</c.aqua> Structure(3)，derive 保留了<c.aqua>类型</c.aqua>名。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "着",
-                  "p": "ZHE5"
-                }
-              ]
+              "duration_ms": 3776,
+              "caption": "接<sub alias=\"ZHE5\">着</sub>打印 Structure(3)，derive 保留了<emphasis level=\"strong\">类型</emphasis>名。"
             },
             {
               "offset_ms": 38000,
-              "duration_ms": 3951,
-              "caption": "最后<c.aqua>打印</c.aqua>嵌套的 Deep，但 derive 不能自<c.aqua>定义</c.aqua>外观。"
+              "duration_ms": 3915,
+              "caption": "最后打印嵌套的 Deep，但 derive 不能自<emphasis level=\"strong\">定义</emphasis>外观。"
             }
           ]
         }
@@ -166,15 +121,8 @@
           "clips": [
             {
               "offset_ms": 42000,
-              "duration_ms": 3911,
-              "caption": "#[derive(Debug)] 自动生成 Debug <c.aqua>实现</c.aqua>",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "#[derive(Debug)]",
-                  "p": "井号方括号 derive Debug 属性"
-                }
-              ]
+              "duration_ms": 3901,
+              "caption": "<sub alias=\"井号方括号 derive Debug 属性\">#[derive(Debug)]</sub> 自动生成 Debug <emphasis level=\"strong\">实现</emphasis>"
             }
           ]
         }
@@ -188,8 +136,8 @@
           "clips": [
             {
               "offset_ms": 46000,
-              "duration_ms": 4681,
-              "caption": "Structure 包一个 i32，Deep 又包住 Structure，两层都能<c.aqua>打印</c.aqua>。"
+              "duration_ms": 4713,
+              "caption": "Structure 包一个 i32，Deep 又包住 Structure，两层都能打印。"
             }
           ]
         }
@@ -210,30 +158,8 @@
           "clips": [
             {
               "offset_ms": 51000,
-              "duration_ms": 8266,
-              "caption": "基础值也能用 {:?}；这一行同时用了位置<c.aqua>参数</c.aqua> {1:?}、{0:?} 和命名<c.aqua>参数</c.aqua> {actor:?}。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "{:?}",
-                  "p": "大括号冒号问号"
-                },
-                {
-                  "i": 14,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 21,
-                  "s": "参",
-                  "p": "CAN1"
-                },
-                {
-                  "i": 39,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 8309,
+              "caption": "基础值也能用 <sub alias=\"大括号冒号问号\">{:?}</sub>；这一<sub alias=\"HANG2\">行</sub>同时用了<emphasis level=\"strong\">位置<sub alias=\"CAN1\">参</sub>数</emphasis> {1:?}、{0:?} 和<emphasis level=\"strong\">命名<sub alias=\"CAN1\">参</sub>数</emphasis> {actor:?}。"
             }
           ]
         }
@@ -254,8 +180,8 @@
           "clips": [
             {
               "offset_ms": 60000,
-              "duration_ms": 2090,
-              "caption": "Structure <c.aqua>打印</c.aqua>成 Structure(3)"
+              "duration_ms": 2229,
+              "caption": "Structure 打印成 Structure(3)"
             }
           ]
         }
@@ -269,8 +195,8 @@
           "clips": [
             {
               "offset_ms": 63000,
-              "duration_ms": 2223,
-              "caption": "Deep <c.aqua>打印</c.aqua>成 Deep(Structure(7))。"
+              "duration_ms": 2218,
+              "caption": "Deep 打印成 Deep(Structure(7))。"
             }
           ]
         }
@@ -284,8 +210,8 @@
           "clips": [
             {
               "offset_ms": 66000,
-              "duration_ms": 4490,
-              "caption": "derive 保留了<c.aqua>类型</c.aqua>名和嵌套结构，但不能自<c.aqua>定义</c.aqua>外观。"
+              "duration_ms": 4498,
+              "caption": "derive 保留了<emphasis level=\"strong\">类型</emphasis>名和嵌套结构，但不能自<emphasis level=\"strong\">定义</emphasis>外观。"
             }
           ]
         }
@@ -312,7 +238,7 @@
           "clips": [
             {
               "offset_ms": 71000,
-              "duration_ms": 1374,
+              "duration_ms": 892,
               "caption": "编译成功。"
             }
           ]
@@ -336,8 +262,8 @@
           "asset_id": "narration_ch1_hello_world_print_print_debug_002_dbg_code",
           "clips": [
             {
-              "offset_ms": 73000,
-              "duration_ms": 3936,
+              "offset_ms": 72000,
+              "duration_ms": 3956,
               "caption": "观察 Structure 与嵌套的 Deep 如何以 Debug 形式输出。"
             }
           ]
@@ -352,16 +278,9 @@
           "asset_id": "narration_ch1_hello_world_print_print_debug_002_dbg_code",
           "clips": [
             {
-              "offset_ms": 77000,
-              "duration_ms": 4146,
-              "caption": "运行结果停在终端，我们对照源码核对输出。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 76000,
+              "duration_ms": 4193,
+              "caption": "运<sub alias=\"XING2\">行</sub>结果停在终端，我们对照源码核对输出。"
             }
           ]
         }

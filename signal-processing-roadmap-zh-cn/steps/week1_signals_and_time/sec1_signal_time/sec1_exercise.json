@@ -28,21 +28,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 109000,
-              "duration_ms": 6386,
-              "caption": "现在轮到你。构造 6 个<c.aqua>样本</c.aqua>，<c.aqua>采样间隔</c.aqua> 0.25 秒，<c.aqua>振幅</c.aqua>先上升再下降。",
-              "speech_edits": [
-                {
-                  "i": 15,
-                  "s": "采",
-                  "p": "CAI3"
-                },
-                {
-                  "i": 28,
-                  "s": "幅",
-                  "p": "FU2"
-                }
-              ]
+              "offset_ms": 111000,
+              "duration_ms": 6336,
+              "caption": "现在轮到你。构造 6 个<emphasis level=\"strong\">样本</emphasis>，<emphasis level=\"strong\"><sub alias=\"CAI3\">采</sub>样间隔</emphasis> 0.25 秒，<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis>先上升再下降。"
             }
           ]
         }
@@ -55,31 +43,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 116000,
-              "duration_ms": 11576,
-              "caption": "写出 n、t、x，用 stem 画图，并补上标题、横轴时间和纵轴<c.aqua>振幅</c.aqua>。<c.aqua>完成标准</c.aqua>是 6 个<c.aqua>样本</c.aqua>、时间从 0 到 1.25 秒；运行观察后点继续。",
-              "speech_edits": [
-                {
-                  "i": 26,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                },
-                {
-                  "i": 31,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                },
-                {
-                  "i": 33,
-                  "s": "幅",
-                  "p": "FU2"
-                },
-                {
-                  "i": 63,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 118000,
+              "duration_ms": 11747,
+              "caption": "写出 n、t、x，用 stem 画图，并补上标题、横<sub alias=\"ZHOU2\">轴</sub>时间和纵<sub alias=\"ZHOU2\">轴</sub><emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis>。<emphasis level=\"strong\">完成标准</emphasis>是 6 个<emphasis level=\"strong\">样本</emphasis>、时间从 0 到 1.25 秒；运<sub alias=\"XING2\">行</sub>观察后点继续。"
             }
           ]
         }

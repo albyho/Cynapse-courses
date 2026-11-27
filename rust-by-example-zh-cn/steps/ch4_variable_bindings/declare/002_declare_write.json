@@ -18,7 +18,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6424,
+              "duration_ms": 6411,
               "caption": "绑定可以先声明、后初始化，类型留给赋值推断，但读取必须在初始化之后。"
             }
           ]
@@ -39,8 +39,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 4733,
-              "caption": "接下来在 declare.rs 里先<c.aqua>声明</c.aqua> a_binding，在子块里再初始化它。"
+              "duration_ms": 4890,
+              "caption": "接下来在 declare.rs 里先<emphasis level=\"strong\">声明</emphasis> a_binding，在子块里再初始化它。"
             }
           ]
         },
@@ -49,15 +49,8 @@
           "clips": [
             {
               "offset_ms": 12000,
-              "duration_ms": 2827,
-              "caption": "逐行写入延迟初始化的示例。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 2762,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入延迟初始化的示例。"
             }
           ]
         }
@@ -78,8 +71,8 @@
           "clips": [
             {
               "offset_ms": 15000,
-              "duration_ms": 4766,
-              "caption": "let a_binding; 只<c.aqua>声明</c.aqua>，不初始化；<c.aqua>类型</c.aqua>留给后面的<c.aqua>赋值</c.aqua>推断。"
+              "duration_ms": 4537,
+              "caption": "let a_binding; 只<emphasis level=\"strong\">声明</emphasis>，不初始化；<emphasis level=\"strong\">类型</emphasis>留给后面的<emphasis level=\"strong\">赋值</emphasis>推断。"
             }
           ]
         }
@@ -100,7 +93,7 @@
           "clips": [
             {
               "offset_ms": 20000,
-              "duration_ms": 5777,
+              "duration_ms": 5764,
               "caption": "进入子块，x = 2，再用 a_binding = x * x 初始化；子块结束时 a_binding 仍然有效。"
             }
           ]
@@ -122,8 +115,8 @@
           "clips": [
             {
               "offset_ms": 26000,
-              "duration_ms": 6127,
-              "caption": "另一个<c.aqua>绑定</c.aqua> another_binding 在初始化之前就被<c.aqua>打印</c.aqua>，<c.aqua>编译器</c.aqua>会报 E0381。"
+              "duration_ms": 6274,
+              "caption": "另一个<emphasis level=\"strong\">绑定</emphasis> another_binding 在初始化之前就被打印，<emphasis level=\"strong\">编译器</emphasis>会报 E0381。"
             }
           ]
         }
@@ -144,7 +137,7 @@
           "clips": [
             {
               "offset_ms": 33000,
-              "duration_ms": 5916,
+              "duration_ms": 5919,
               "caption": "先赋值再打印，another_binding 就有值了；这也是延迟初始化的正确顺序。"
             }
           ]

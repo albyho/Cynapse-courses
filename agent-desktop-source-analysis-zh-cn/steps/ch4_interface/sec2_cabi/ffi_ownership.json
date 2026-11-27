@@ -7,9 +7,11 @@
       "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec2_cabi",
           "clips": [
             {
-              "duration_ms": 6000,
+              "offset_ms": 54000,
+              "duration_ms": 8153,
               "caption": "第 4.2 节讲了 ABI 和错误模型，这里补三个最容易踩的边界：谁释放、哪个线程能调、API 分几层。"
             }
           ]
@@ -27,9 +29,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec2_cabi",
           "clips": [
             {
-              "duration_ms": 9500,
+              "offset_ms": 63000,
+              "duration_ms": 11423,
               "caption": "adapter 可以跨线程调用，但原生元素句柄是线程绑定的：在哪个线程解析，就在哪个线程使用和释放；桌面变更仍由跨进程租约串行化。"
             }
           ]
@@ -41,9 +45,11 @@
       "path": "../../resources/agent-desktop/crates/ffi/src/resource.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec2_cabi",
           "clips": [
             {
-              "duration_ms": 5500,
+              "offset_ms": 75000,
+              "duration_ms": 3613,
               "caption": "谁负责释放？FFI 用一个分配登记表来兜底。"
             }
           ]
@@ -61,9 +67,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec2_cabi",
           "clips": [
             {
-              "duration_ms": 9000,
+              "offset_ms": 79000,
+              "duration_ms": 11398,
               "caption": "每种返回给 C 的堆对象都登记了种类和地址：字符串、树节点、动作步骤、通知动作……释放时按种类回收，重复释放或释放错类型会被发现。"
             }
           ]
@@ -75,9 +83,11 @@
       "path": "../../resources/agent-desktop/crates/ffi/src/adapter.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec2_cabi",
           "clips": [
             {
-              "duration_ms": 5500,
+              "offset_ms": 91000,
+              "duration_ms": 3189,
               "caption": "再看生命周期：创建和销毁成对出现。"
             }
           ]
@@ -95,9 +105,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec2_cabi",
           "clips": [
             {
-              "duration_ms": 9000,
+              "offset_ms": 95000,
+              "duration_ms": 11319,
               "caption": "ad_adapter_create 返回不透明句柄，ad_adapter_destroy 释放；带 session 的版本把 refmap 限定到会话。句柄由调用方持有，跨线程共享要自己同步。"
             }
           ]
@@ -109,9 +121,11 @@
       "path": "../../resources/agent-desktop/crates/ffi/src/abi_version.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec2_cabi",
           "clips": [
             {
-              "duration_ms": 5500,
+              "offset_ms": 107000,
+              "duration_ms": 2779,
               "caption": "最后看 ABI 版本怎么约束调用方。"
             }
           ]
@@ -129,17 +143,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec2_cabi",
           "clips": [
             {
-              "duration_ms": 9000,
-              "caption": "AD_ABI_VERSION_MAJOR 是 7；新函数和新结果码只做加法，删除符号或改结构布局才升主版本。ad_init 校验不匹配就返回 INVALID_ARGS，调用方应停止后续调用。",
-              "speech_edits": [
-                {
-                  "i": 62,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "offset_ms": 110000,
+              "duration_ms": 12980,
+              "caption": "AD_ABI_VERSION_MAJOR 是 7；新函数和新结果码只做加法，删除符号或改结构布局才升主版本。ad_init <sub alias=\"JIAO4\">校</sub>验不匹配就返回 INVALID_ARGS，调用方应停止后续调用。"
             }
           ]
         }

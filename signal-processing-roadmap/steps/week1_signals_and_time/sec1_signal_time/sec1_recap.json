@@ -15,9 +15,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 105000,
-              "duration_ms": 8321,
-              "caption": "Three things to keep: a <c.aqua>signal</c.aqua> is a quantity that changes over time; a <c.aqua>discrete signal</c.aqua> is described by <c.aqua>samples</c.aqua> and the sample interval; stem suits discrete samples better than plot."
+              "offset_ms": 104000,
+              "duration_ms": 8583,
+              "caption": "Three things to keep: a <emphasis level=\"strong\">signal</emphasis> is a quantity that changes over time; a <emphasis level=\"strong\">discrete signal</emphasis> is described by <emphasis level=\"strong\">samples</emphasis> and the sample interval; stem suits discrete samples better than plot."
             }
           ]
         }
@@ -30,9 +30,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 114000,
-              "duration_ms": 4946,
-              "caption": "The next section generates real <c.aqua>sine signals</c.aqua> and watches how <c.aqua>frequency</c.aqua> and <c.aqua>phase</c.aqua> change the waveform."
+              "offset_ms": 113000,
+              "duration_ms": 4990,
+              "caption": "The next section generates real <emphasis level=\"strong\">sine signals</emphasis> and watches how <emphasis level=\"strong\">frequency</emphasis> and <emphasis level=\"strong\">phase</emphasis> change the waveform."
             }
           ]
         }

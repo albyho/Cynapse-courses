@@ -20,8 +20,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6030,
-              "caption": "This is the Intro notebook for 1.3; the title cell states that the unit is about combining and transforming <c.aqua>signals</c.aqua>."
+              "duration_ms": 6173,
+              "caption": "This is the Intro notebook for 1.3; the title cell states that the unit is about combining and transforming <emphasis level=\"strong\">signals</emphasis>."
             }
           ]
         }
@@ -41,8 +41,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 5244,
-              "caption": "This section treats a <c.aqua>signal</c.aqua> as something that can be combined and transformed: added, scaled, shifted, reversed."
+              "duration_ms": 5449,
+              "caption": "This section treats a <emphasis level=\"strong\">signal</emphasis> as something that can be combined and transformed: added, scaled, shifted, reversed."
             }
           ]
         }
@@ -56,7 +56,7 @@
           "clips": [
             {
               "offset_ms": 13000,
-              "duration_ms": 6071,
+              "duration_ms": 6033,
               "caption": "These operations underlie filtering, modulation and system analysis later. For now, watch the waveform only; no new formulas."
             }
           ]
@@ -77,7 +77,7 @@
           "clips": [
             {
               "offset_ms": 20000,
-              "duration_ms": 5195,
+              "duration_ms": 5162,
               "caption": "The last Intro cell says in one line where these operations are used; the code that follows shows each of them."
             }
           ]

@@ -18,7 +18,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5888,
+              "duration_ms": 5782,
               "caption": "枚举变体可以用 use 引入当前作用域，之后 match 分支里就能写短名字。"
             }
           ]
@@ -39,15 +39,8 @@
           "clips": [
             {
               "offset_ms": 6000,
-              "duration_ms": 2823,
-              "caption": "逐行写入两个<c.aqua>枚举</c.aqua>和两组 use。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 2829,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入两个<emphasis level=\"strong\">枚举</emphasis>和两组 use。"
             }
           ]
         },
@@ -56,29 +49,22 @@
           "clips": [
             {
               "offset_ms": 9000,
-              "duration_ms": 2934,
-              "caption": "先用 allow(dead_code) 隐藏未使用警告。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "dead_code",
-                  "p": "dead code"
-                }
-              ]
+              "duration_ms": 2907,
+              "caption": "先用 allow(<sub alias=\"dead code\">dead_code</sub>) 隐藏未使用警告。"
             },
             {
               "offset_ms": 12000,
-              "duration_ms": 3445,
-              "caption": "<c.aqua>定义</c.aqua> Status 和 Work 两个<c.aqua>枚举</c.aqua>，各有两个<c.aqua>变体</c.aqua>。"
+              "duration_ms": 3324,
+              "caption": "<emphasis level=\"strong\">定义</emphasis> Status 和 Work 两个<emphasis level=\"strong\">枚举</emphasis>，各有两个<emphasis level=\"strong\">变体</emphasis>。"
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 3837,
+              "duration_ms": 3856,
               "caption": "main 里用显式 use 和通配符 use 各引入一组成员。"
             },
             {
               "offset_ms": 20000,
-              "duration_ms": 2718,
+              "duration_ms": 2515,
               "caption": "两个 match 直接用短名字写分支。"
             }
           ]
@@ -110,7 +96,7 @@
           "clips": [
             {
               "offset_ms": 23000,
-              "duration_ms": 904,
+              "duration_ms": 1363,
               "caption": "编译通过。"
             }
           ]
@@ -135,8 +121,8 @@
           "asset_id": "narration_ch3_custom_types_enum_enum_use_002_enum_use_code",
           "clips": [
             {
-              "offset_ms": 24000,
-              "duration_ms": 5072,
+              "offset_ms": 25000,
+              "duration_ms": 4853,
               "caption": "引入之后，match 分支里可以直接写 Rich、Civilian 这样的短名字。"
             }
           ]

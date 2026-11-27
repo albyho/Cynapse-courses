@@ -18,15 +18,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6337,
-              "caption": "字面量可以带类型后缀，下划线只为可读性；位运算按二进制逐位处理。",
-              "speech_edits": [
-                {
-                  "i": 29,
-                  "s": "处",
-                  "p": "CHU3"
-                }
-              ]
+              "duration_ms": 6245,
+              "caption": "字面量可以带类型后缀，下划线只为可读性；位运算按二进制逐位<sub alias=\"CHU3\">处</sub>理。"
             }
           ]
         }
@@ -46,25 +39,18 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 4363,
-              "caption": "接下来在 literals.rs 里写入<c.aqua>字面量</c.aqua>和运算符的示例。"
+              "duration_ms": 4345,
+              "caption": "接下来在 literals.rs 里写入<emphasis level=\"strong\">字面量</emphasis>和运算符的示例。"
             },
             {
               "offset_ms": 12000,
-              "duration_ms": 4443,
-              "caption": "示例会覆盖<c.aqua>整数</c.aqua>加减、<c.aqua>布尔</c.aqua>短路求值和四种位运算。"
+              "duration_ms": 4461,
+              "caption": "示例会覆盖<emphasis level=\"strong\">整数</emphasis>加减、<emphasis level=\"strong\">布尔</emphasis>短路求值和四种位运算。"
             },
             {
               "offset_ms": 17000,
-              "duration_ms": 3483,
-              "caption": "逐行写入<c.aqua>整数</c.aqua>、<c.aqua>布尔</c.aqua>和位运算的示例。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 3400,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入<emphasis level=\"strong\">整数</emphasis>、<emphasis level=\"strong\">布尔</emphasis>和位运算的示例。"
             }
           ]
         },
@@ -73,29 +59,22 @@
           "clips": [
             {
               "offset_ms": 21000,
-              "duration_ms": 4242,
-              "caption": "先写<c.aqua>整数</c.aqua>加法和减法，注意 1i32 的<c.aqua>类型</c.aqua>标注。"
+              "duration_ms": 4272,
+              "caption": "先写<emphasis level=\"strong\">整数</emphasis>加法和减法，注意 1i32 的<emphasis level=\"strong\">类型</emphasis>标注。"
             },
             {
               "offset_ms": 26000,
-              "duration_ms": 3092,
-              "caption": "接着是<c.aqua>布尔</c.aqua>与、或、非的短路求值。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "着",
-                  "p": "ZHE5"
-                }
-              ]
+              "duration_ms": 3815,
+              "caption": "接<sub alias=\"ZHE5\">着</sub>是<emphasis level=\"strong\">布尔</emphasis>与、或的短路求值，以及非运算。"
             },
             {
               "offset_ms": 30000,
-              "duration_ms": 3207,
+              "duration_ms": 3413,
               "caption": "四种位运算按四位二进制和位移输出。"
             },
             {
               "offset_ms": 34000,
-              "duration_ms": 4776,
+              "duration_ms": 5358,
               "caption": "最后用下划线写 1000000，输出里不会出现下划线。"
             }
           ]
@@ -116,16 +95,9 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 39000,
-              "duration_ms": 9766,
-              "caption": "先看<c.aqua>整数</c.aqua>加减：1u32 + 2 是无符号，1i32 - 2 是有符号；把 1i32 改成 1u32 就会在减法处下溢。",
-              "speech_edits": [
-                {
-                  "i": 12,
-                  "s": "+",
-                  "p": "JIA1"
-                }
-              ]
+              "offset_ms": 40000,
+              "duration_ms": 9714,
+              "caption": "先看<emphasis level=\"strong\">整数</emphasis>加减：1u32 <sub alias=\"JIA1\">+</sub> 2 是无符号，1i32 - 2 是有符号；把 1i32 改成 1u32 就会在减法处下溢。"
             }
           ]
         }
@@ -145,9 +117,9 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 49000,
-              "duration_ms": 6289,
-              "caption": "<c.aqua>布尔</c.aqua>运算使用短路求值：&& 左边为 false 时不再算右边，|| 左边为 true 时也一样。"
+              "offset_ms": 50000,
+              "duration_ms": 6328,
+              "caption": "<emphasis level=\"strong\">布尔</emphasis>运算使用短路求值：&& 左边为 false 时不再算右边，|| 左边为 true 时也一样。"
             }
           ]
         }
@@ -167,16 +139,9 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 56000,
-              "duration_ms": 5930,
-              "caption": "位运算按二进制逐位处理：&、|、^ 分别是与、或、异或，<< 和 >> 负责左右移位",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "处",
-                  "p": "CHU3"
-                }
-              ]
+              "offset_ms": 57000,
+              "duration_ms": 5890,
+              "caption": "位运算按二进制逐位<sub alias=\"CHU3\">处</sub>理：&、|、^ 分别是与、或、异或，<< 和 >> 负责左右移位"
             }
           ]
         }
@@ -189,8 +154,8 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 62000,
-              "duration_ms": 2784,
+              "offset_ms": 63000,
+              "duration_ms": 2791,
               "caption": "{:04b} 把结果补足四位二进制。"
             }
           ]
@@ -211,8 +176,8 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 65000,
-              "duration_ms": 8718,
+              "offset_ms": 66000,
+              "duration_ms": 8703,
               "caption": "数字里的下划线只是可读性分隔，1_000_000u32 和 1000000u32 完全等价。"
             }
           ]
@@ -239,8 +204,8 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 74000,
-              "duration_ms": 904,
+              "offset_ms": 75000,
+              "duration_ms": 1254,
               "caption": "编译通过。"
             }
           ]
@@ -269,16 +234,9 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 75000,
-              "duration_ms": 2456,
-              "caption": "运行程序，逐个核对输出。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 77000,
+              "duration_ms": 2506,
+              "caption": "运<sub alias=\"XING2\">行</sub>程序，逐个核对输出。"
             }
           ]
         },
@@ -286,21 +244,14 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 78000,
-              "duration_ms": 4378,
+              "offset_ms": 80000,
+              "duration_ms": 4303,
               "caption": "加法和减法、短路求值、四种位运算，结果都对得上。"
             },
             {
-              "offset_ms": 83000,
-              "duration_ms": 6255,
-              "caption": "最后一行的 One million 是 1000000，下划线在输出里不会出现。",
-              "speech_edits": [
-                {
-                  "i": 3,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 85000,
+              "duration_ms": 5855,
+              "caption": "最后一<sub alias=\"HANG2\">行</sub>的 One million 是 1000000，下划线在输出里不会出现。"
             }
           ]
         }
@@ -314,16 +265,9 @@
           "asset_id": "narration_ch2_primitives_literals_002_literals_code",
           "clips": [
             {
-              "offset_ms": 90000,
-              "duration_ms": 7715,
-              "caption": "加法和减法、短路求值、四种位运算，结果都对得上，我们对照源码看这一行是怎么来的。",
-              "speech_edits": [
-                {
-                  "i": 33,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 91000,
+              "duration_ms": 2537,
+              "caption": "我们对照源码看这一<sub alias=\"HANG2\">行</sub>是怎么来的。"
             }
           ]
         }

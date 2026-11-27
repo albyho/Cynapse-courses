@@ -14,18 +14,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1811,
+              "duration_ms": 1808,
               "caption": "第 13 章《属性》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 3326,
+              "duration_ms": 3347,
               "caption": "属性是应用于模块、crate 或项的元数据。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 2768,
-              "caption": "这一章会看属性怎样写在代码上。"
+              "duration_ms": 2102,
+              "caption": "看属性怎样写在代码上。"
             }
           ]
         }
@@ -39,8 +39,8 @@
           "clips": [
             {
               "offset_ms": 9000,
-              "duration_ms": 4524,
-              "caption": "这一章会看作用于整个 crate 和作用于单个项的区别。"
+              "duration_ms": 3730,
+              "caption": "作用于整个 crate 和作用于单个项有什么区别。"
             }
           ]
         }
@@ -53,8 +53,8 @@
           "asset_id": "narration_introduction_015_attributes",
           "clips": [
             {
-              "offset_ms": 14000,
-              "duration_ms": 3405,
+              "offset_ms": 13000,
+              "duration_ms": 3409,
               "caption": "以及属性怎样把编译策略明确写出来。"
             }
           ]

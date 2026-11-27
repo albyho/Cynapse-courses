@@ -14,32 +14,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 2086,
-              "caption": "第 18 章《错误处理》。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "处",
-                  "p": "CHU3"
-                }
-              ]
+              "duration_ms": 1663,
+              "caption": "第 18 章《错误<sub alias=\"CHU3\">处</sub>理》。"
             },
             {
-              "offset_ms": 3000,
-              "duration_ms": 3055,
-              "caption": "这一章学习 Rust 处理失败的方式。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "处",
-                  "p": "CHU3"
-                }
-              ]
+              "offset_ms": 2000,
+              "duration_ms": 1990,
+              "caption": "Rust <sub alias=\"CHU3\">处</sub>理失败的方式。"
             },
             {
-              "offset_ms": 7000,
-              "duration_ms": 3061,
-              "caption": "这一章会看失败的情况怎样被表达出来。"
+              "offset_ms": 4000,
+              "duration_ms": 2542,
+              "caption": "失败的情况怎样被表达出来。"
             }
           ]
         }
@@ -52,21 +38,9 @@
           "asset_id": "narration_introduction_020_error_handling",
           "clips": [
             {
-              "offset_ms": 11000,
-              "duration_ms": 5543,
-              "caption": "这一章会看什么时候该用不可恢复的错误，什么时候该让调用方处理。",
-              "speech_edits": [
-                {
-                  "i": 25,
-                  "s": "调",
-                  "p": "DIAO4"
-                },
-                {
-                  "i": 28,
-                  "s": "处",
-                  "p": "CHU3"
-                }
-              ]
+              "offset_ms": 7000,
+              "duration_ms": 5183,
+              "caption": "什么时候该用不可恢复的错误，什么时候该让<sub alias=\"DIAO4\">调</sub>用方<sub alias=\"CHU3\">处</sub>理。"
             }
           ]
         }

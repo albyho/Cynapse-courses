@@ -5,41 +5,125 @@
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/mcp/mod.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "最后看 MCP：它把 CLI 命令变成 agent 可调用的 tool。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_interface_sec3_mcp",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 3822,
+              "caption": "最后看 MCP：它把 CLI 命令变成 agent 可调用的 tool。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/src/mcp/mod.rs",
-      "start": { "line": 1 },
-      "end": { "line": 5 },
-      "narration": { "after": { "clips": [{ "duration_ms": 7500, "caption": "模块注释一句话说清定位：每个叶子 CLI 命令就是一个 tool，每次调用都走那条命令。" }] } }
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 5
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_interface_sec3_mcp",
+          "clips": [
+            {
+              "offset_ms": 4000,
+              "duration_ms": 7156,
+              "caption": "模块注释一句话说清定位：每个叶子 CLI 命令就是一个 tool，每次调用都走那条命令。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/src/mcp/mod.rs",
-      "start": { "line": 15 },
-      "end": { "line": 32 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "协议版本、并发上限、消息大小都在这段；instructions 还明确告诉 agent：先读 desktop 和 platform 两份 skill，STALE_REF 就重新 snapshot。" }] } }
+      "start": {
+        "line": 15
+      },
+      "end": {
+        "line": 32
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_interface_sec3_mcp",
+          "clips": [
+            {
+              "offset_ms": 12000,
+              "duration_ms": 10131,
+              "caption": "协议版本、并发上限、消息大小都在这段；instructions 还明确告诉 agent：先读 desktop 和 platform 两份 skill，STALE_REF 就重新 snapshot。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/src/mcp/mod.rs",
-      "start": { "line": 41 },
-      "end": { "line": 48 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "serve 构建工具目录和全局标志，然后逐行读 stdin；每个请求都是一个 JSON-RPC 对象，工具调用最终落到 CLI 命令。" }] } }
+      "start": {
+        "line": 41
+      },
+      "end": {
+        "line": 48
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_interface_sec3_mcp",
+          "clips": [
+            {
+              "offset_ms": 23000,
+              "duration_ms": 9219,
+              "caption": "serve 构建工具目录和全局标志，然后逐行读 stdin；每个请求都是一个 JSON-RPC 对象，工具调用最终落到 CLI 命令。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/mcp/calls.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "再看 calls.rs，处理正在运行的调用。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_interface_sec3_mcp",
+          "clips": [
+            {
+              "offset_ms": 33000,
+              "duration_ms": 2966,
+              "caption": "再看 calls.rs，处理正在运行的调用。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/src/mcp/calls.rs",
-      "start": { "line": 1 },
-      "end": { "line": 18 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "每个请求按 JSON-RPC id 登记成子进程；收到 notifications/cancelled 时，能准确终止那一个调用，而不是全部。" }] } }
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 18
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch4_interface_sec3_mcp",
+          "clips": [
+            {
+              "offset_ms": 36000,
+              "duration_ms": 8533,
+              "caption": "每个请求按 JSON-RPC id 登记成子进程；收到 notifications/cancelled 时，能准确终止那一个调用，而不是全部。"
+            }
+          ]
+        }
+      }
     },
-    { "type": "ClearReveal" }
+    {
+      "type": "ClearReveal"
+    }
   ]
 }

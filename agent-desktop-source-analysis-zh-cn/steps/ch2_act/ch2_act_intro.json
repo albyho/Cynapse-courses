@@ -7,10 +7,12 @@
       "path": "INTRO.md",
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 3600,
-              "caption": "第 2 章，<c.aqua>可操作性：预检、派发与门控</c.aqua>。"
+              "offset_ms": 0,
+              "duration_ms": 2889,
+              "caption": "第 2 章，<emphasis level=\"strong\">可操作性：预检、派发与门控</emphasis>。"
             }
           ]
         }
@@ -27,10 +29,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 8500,
-              "caption": "第 1 章结束时我们有了 <c.aqua>ref</c.aqua>，但这不代表动作能成功。本章回答：怎么判断能操作、怎么投递、哪些失败值得恢复。"
+              "offset_ms": 3000,
+              "duration_ms": 9302,
+              "caption": "第 1 章结束时我们有了 <emphasis level=\"strong\">ref</emphasis>，但这不代表动作能成功。本章回答：怎么判断能操作、怎么投递、哪些失败值得恢复。"
             }
           ]
         }
@@ -47,9 +51,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 9500,
+              "offset_ms": 13000,
+              "duration_ms": 9501,
               "caption": "元素存在不等于能操作：可能被禁用、被隐藏、滚出视口、被遮挡、正在动画、不支持该动作，或者需要先获得焦点。"
             }
           ]
@@ -67,9 +73,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 7000,
+              "offset_ms": 23000,
+              "duration_ms": 3678,
               "caption": "预检有顺序：先便宜、后昂贵；先静态、后动态。"
             }
           ]
@@ -87,10 +95,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 9000,
-              "caption": "顺序是：可见性、稳定性、启用状态、可编辑性、动作支持、策略检查；只有需要物理投递时才做 <c.aqua>hit test</c.aqua> 和遮挡检查。"
+              "offset_ms": 27000,
+              "duration_ms": 9442,
+              "caption": "顺序是：可见性、稳定性、启用状态、可编辑性、动作支持、策略检查；只有需要物理投递时才做 <emphasis level=\"strong\">hit test</emphasis> 和遮挡检查。"
             }
           ]
         }
@@ -107,17 +117,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 7000,
-              "caption": "前面的检查失败，就不再做后面的昂贵检查——这就是预检作为“边界”的意义。",
-              "speech_edits": [
-                {
-                  "i": 27,
-                  "s": "为",
-                  "p": "WEI2"
-                }
-              ]
+              "offset_ms": 37000,
+              "duration_ms": 6563,
+              "caption": "前面的检查失败，就不再做后面的昂贵检查——这就是预检作<sub alias=\"WEI2\">为</sub>“边界”的意义。"
             }
           ]
         }
@@ -134,17 +139,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 9000,
-              "caption": "投递分语义和物理：语义直接调用平台动作，不移动真实光标；物理要真实事件，必须先确认指针能到达。策略由两边 join，取更严格的。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "调",
-                  "p": "DIAO4"
-                }
-              ]
+              "offset_ms": 44000,
+              "duration_ms": 11633,
+              "caption": "投递分语义和物理：语义直接<sub alias=\"DIAO4\">调</sub>用平台动作，不移动真实光标；物理要真实事件，必须先确认指针能到达。策略由两边 join，取更严格的。"
             }
           ]
         }
@@ -161,17 +161,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 8000,
-              "caption": "三节按“结论 → 调用 → 内部”排：2.1 预检、2.2 派发、2.3 门控；会跨 ref_action、commands、<c.aqua>actionability</c.aqua> 三个目录。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "调",
-                  "p": "DIAO4"
-                }
-              ]
+              "offset_ms": 56000,
+              "duration_ms": 9109,
+              "caption": "三节按“结论 → <sub alias=\"DIAO4\">调</sub>用 → 内部”排：2.1 预检、2.2 派发、2.3 门控；会跨 ref_action、commands、<emphasis level=\"strong\">actionability</emphasis> 三个目录。"
             }
           ]
         }
@@ -188,9 +183,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 7000,
+              "offset_ms": 66000,
+              "duration_ms": 4424,
               "caption": "阅读约定不变：只读、跨文件、先问失败在防止哪种误判。"
             }
           ]
@@ -208,9 +205,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act",
           "clips": [
             {
-              "duration_ms": 8000,
+              "offset_ms": 71000,
+              "duration_ms": 7167,
               "caption": "读完应能说清预检顺序、两种投递、五种不可操作原因，以及什么时候触发滚动恢复。"
             }
           ]

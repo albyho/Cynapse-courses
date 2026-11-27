@@ -5,27 +5,81 @@
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/src/visual_debug/mod.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "trace 是事件流；可视调试是把一次观察画成可检查的 HTML。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch5_trace_sec2_replay",
+          "clips": [
+            {
+              "offset_ms": 48000,
+              "duration_ms": 4921,
+              "caption": "trace 是事件流；可视调试是把一次观察画成可检查的 HTML。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/src/visual_debug/mod.rs",
-      "start": { "line": 1 },
-      "end": { "line": 24 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "capture 负责截图与节点数据，render 生成页面，options 控制边界、过滤和输出路径；它只用于 snapshot 或 click 的调试。" }] } }
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 24
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch5_trace_sec2_replay",
+          "clips": [
+            {
+              "offset_ms": 53000,
+              "duration_ms": 9303,
+              "caption": "capture 负责截图与节点数据，render 生成页面，options 控制边界、过滤和输出路径；它只用于 snapshot 或 click 的调试。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/trace/trace_artifacts.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "trace 里的 artifact 目录和它是什么关系？" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch5_trace_sec2_replay",
+          "clips": [
+            {
+              "offset_ms": 63000,
+              "duration_ms": 3249,
+              "caption": "trace 里的 artifact 目录和它是什么关系？"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/trace/trace_artifacts.rs",
-      "start": { "line": 46 },
-      "end": { "line": 62 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "trace 会话把 refmap 和截图分别放在 refmaps/ 与 screens/；可视调试生成的是独立 HTML，把同一批证据按人可读的方式排在一起。" }] } }
+      "start": {
+        "line": 46
+      },
+      "end": {
+        "line": 62
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch5_trace_sec2_replay",
+          "clips": [
+            {
+              "offset_ms": 67000,
+              "duration_ms": 10054,
+              "caption": "trace 会话把 refmap 和截图分别放在 refmaps/ 与 screens/；可视调试生成的是独立 HTML，把同一批证据按人可读的方式排在一起。"
+            }
+          ]
+        }
+      }
     },
-    { "type": "ClearReveal" }
+    {
+      "type": "ClearReveal"
+    }
   ]
 }

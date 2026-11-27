@@ -14,17 +14,17 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1807,
+              "duration_ms": 1421,
               "caption": "第 1 章《Hello World》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 2801,
+              "duration_ms": 2837,
               "caption": "从经典的 Hello World 程序开始学习。"
             },
             {
               "offset_ms": 5000,
-              "duration_ms": 2929,
+              "duration_ms": 2706,
               "caption": "Hello World 是 Rust 里最短的入门程序。"
             }
           ]
@@ -39,8 +39,8 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 4113,
-              "caption": "这一章会看 Hello World 怎样从代码走到终端输出。"
+              "duration_ms": 3185,
+              "caption": "看 Hello World 怎样从代码走到终端输出。"
             }
           ]
         }

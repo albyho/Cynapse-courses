@@ -7,17 +7,12 @@
       "path": "../../resources/agent-desktop/src/batch/preparation.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 6000,
-              "caption": "batch 的第一原则是：所有条目先校验，再运行第一条。",
-              "speech_edits": [
-                {
-                  "i": 18,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "offset_ms": 46000,
+              "duration_ms": 4393,
+              "caption": "batch 的第一原则是：所有条目先<sub alias=\"JIAO4\">校</sub>验，再运行第一条。"
             }
           ]
         }
@@ -34,17 +29,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 9500,
-              "caption": "上限是 1MB / 64 条；prepare 逐条检查 JSON、命令名、参数、ref 语法和权限。任何一条失败就整批拒绝，nothing runs；但校验不接触真实桌面。",
-              "speech_edits": [
-                {
-                  "i": 76,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "offset_ms": 51000,
+              "duration_ms": 11526,
+              "caption": "上限是 1MB / 64 条；prepare 逐条检查 JSON、命令名、参数、ref 语法和权限。任何一条失败就整批拒绝，nothing runs；但<sub alias=\"JIAO4\">校</sub>验不接触真实桌面。"
             }
           ]
         }
@@ -55,17 +45,12 @@
       "path": "../../resources/agent-desktop/src/batch/execution.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 5500,
-              "caption": "校验通过后才进入执行循环，超时从整批开始算。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "offset_ms": 63000,
+              "duration_ms": 4539,
+              "caption": "<sub alias=\"JIAO4\">校</sub>验通过后才进入执行循环，超时从整批开始算。"
             }
           ]
         }
@@ -82,9 +67,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 9000,
+              "offset_ms": 68000,
+              "duration_ms": 8810,
               "caption": "Deadline 按 --timeout-ms 建立（默认 60s），prepare 也在这个预算里；然后逐条 dispatch，各条目共享同一个上下文。"
             }
           ]
@@ -102,9 +89,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 10000,
+              "offset_ms": 77000,
+              "duration_ms": 13352,
               "caption": "默认某条失败后继续跑；--stop-on-error 才在第一条失败处停下。超时把下一条标成 not_started/deadline；输出超限也会停。batch 不是事务，已经执行的条目不会回滚。"
             }
           ]
@@ -116,9 +105,11 @@
       "path": "../../resources/agent-desktop/src/batch/result_entry.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 5500,
+              "offset_ms": 91000,
+              "duration_ms": 4015,
               "caption": "结果逐条返回，所以调用方必须读每一条的 ok。"
             }
           ]
@@ -136,9 +127,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 8500,
+              "offset_ms": 96000,
+              "duration_ms": 8925,
               "caption": "每条保留自己的 error 与 disposition；batch 自己不重试。最后汇总 completed / not_started / stopped，把失败位置说清楚。"
             }
           ]

@@ -12,7 +12,7 @@
             {
               "offset_ms": 74000,
               "duration_ms": 6089,
-              "caption": "进入 snapshot 模块。这里定义观察产出的<c.aqua>形状</c.aqua>，以及这份结果如何被保存。"
+              "caption": "进入 snapshot 模块。这里定义观察产出的<emphasis level=\"strong\">形状</emphasis>，以及这份结果如何被保存。"
             }
           ]
         }
@@ -34,7 +34,7 @@
             {
               "offset_ms": 81000,
               "duration_ms": 12887,
-              "caption": "<c.aqua>SnapshotResult</c.aqua> 的前五个字段：tree 是观察到的树；refmap 是编号表；owner 表示观察的是哪个应用或窗口；snapshot_id 是这次快照的名字；complete 表示有没有看全。"
+              "caption": "<emphasis level=\"strong\">SnapshotResult</emphasis> 的前五个字段：tree 是观察到的树；refmap 是编号表；owner 表示观察的是哪个应用或窗口；snapshot_id 是这次快照的名字；complete 表示有没有看全。"
             }
           ]
         }
@@ -56,7 +56,7 @@
             {
               "offset_ms": 94000,
               "duration_ms": 11980,
-              "caption": "另外两个：nodes_observed 是看到了多少个节点；identity_unproven 记录哪些没有稳定标识的<c.aqua>引用</c.aqua>没被整窗观察证明——这些引用用的时候会被拒绝。"
+              "caption": "另外两个：nodes_observed 是看到了多少个节点；identity_unproven 记录哪些没有稳定标识的<emphasis level=\"strong\">引用</emphasis>没被整窗观察证明——这些引用用的时候会被拒绝。"
             }
           ]
         }
@@ -78,14 +78,7 @@
             {
               "offset_ms": 106000,
               "duration_ms": 10061,
-              "caption": "save_refmap 按 complete 分两路：完整就存成当前<c.aqua>快照</c.aqua>；不完整就存成 detached，也就是放到旁边，不覆盖当前还能用的快照。",
-              "speech_edits": [
-                {
-                  "i": 66,
-                  "s": "还",
-                  "p": "HAI2"
-                }
-              ]
+              "caption": "save_refmap 按 complete 分两路：完整就存成当前<emphasis level=\"strong\">快照</emphasis>；不完整就存成 detached，也就是放到旁边，不覆盖当前<sub alias=\"HAI2\">还</sub>能用的快照。"
             }
           ]
         }
@@ -107,7 +100,7 @@
             {
               "offset_ms": 117000,
               "duration_ms": 4525,
-              "caption": "<c.aqua>bind_snapshot_id</c.aqua> 把树里的本地引用改写成快照限定形式。"
+              "caption": "<emphasis level=\"strong\">bind_snapshot_id</emphasis> 把树里的本地引用改写成快照限定形式。"
             }
           ]
         }
@@ -151,7 +144,7 @@
             {
               "offset_ms": 127000,
               "duration_ms": 6574,
-              "caption": "<c.aqua>build_for_owners</c.aqua> 先按 owner 捕获界面；owner 就是这次观察锁定的是哪个应用或窗口。"
+              "caption": "<emphasis level=\"strong\">build_for_owners</emphasis> 先按 owner 捕获界面；owner 就是这次观察锁定的是哪个应用或窗口。"
             }
           ]
         }
@@ -173,7 +166,7 @@
             {
               "offset_ms": 134000,
               "duration_ms": 7408,
-              "caption": "捕获结果拆成原始树、是否看全、节点数，以及 <c.aqua>CaptureProof</c.aqua>——“确实看全了整个窗口”的证明。"
+              "caption": "捕获结果拆成原始树、是否看全、节点数，以及 <emphasis level=\"strong\">CaptureProof</emphasis>——“确实看全了整个窗口”的证明。"
             }
           ]
         }
@@ -195,7 +188,7 @@
             {
               "offset_ms": 142000,
               "duration_ms": 3121,
-              "caption": "<c.aqua>RefAllocConfig</c.aqua> 的 options 决定过滤与压缩。"
+              "caption": "<emphasis level=\"strong\">RefAllocConfig</emphasis> 的 options 决定过滤与压缩。"
             }
           ]
         }
@@ -239,7 +232,7 @@
             {
               "offset_ms": 155000,
               "duration_ms": 3224,
-              "caption": "<c.aqua>allocate_refs</c.aqua> 一次性遍历树并分配引用。"
+              "caption": "<emphasis level=\"strong\">allocate_refs</emphasis> 一次性遍历树并分配引用。"
             }
           ]
         }
@@ -265,7 +258,7 @@
             {
               "offset_ms": 159000,
               "duration_ms": 7536,
-              "caption": "现在跳到 <c.aqua>ref</c.aqua>_alloc.rs。allocate_refs 接收树、RefMap 和配置，先做分配计划，再沿路径真正写引用。"
+              "caption": "现在跳到 <emphasis level=\"strong\">ref</emphasis>_alloc.rs。allocate_refs 接收树、RefMap 和配置，先做分配计划，再沿路径真正写引用。"
             }
           ]
         }
@@ -287,7 +280,7 @@
             {
               "offset_ms": 167000,
               "duration_ms": 4132,
-              "caption": "add_structural_hints 补结构提示，最后装进 <c.aqua>SnapshotResult</c.aqua>。"
+              "caption": "add_structural_hints 补结构提示，最后装进 <emphasis level=\"strong\">SnapshotResult</emphasis>。"
             }
           ]
         }

@@ -17,31 +17,17 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5652,
-              "caption": "《通过例子学 Rust》用一系列<c.aqua>可运行程序</c.aqua>解释语言概念和基础库。",
-              "speech_edits": [
-                {
-                  "i": 18,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 5694,
+              "caption": "《通过例子学 Rust》用一系列<emphasis level=\"strong\">可运<sub alias=\"XING2\">行</sub>程序</emphasis>解释语言概念和基础库。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 7273,
-              "caption": "我们看到一段代码时，可以同时关注写法、编译结果与运行输出，再把三者联系起来。",
-              "speech_edits": [
-                {
-                  "i": 25,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 7587,
+              "caption": "我们看到一段代码时，可以同时关注写法、编译结果与运<sub alias=\"XING2\">行</sub>输出，再把三者联系起来。"
             },
             {
               "offset_ms": 14000,
-              "duration_ms": 2560,
+              "duration_ms": 2567,
               "caption": "先从目录看起，建立整体印象。"
             }
           ]

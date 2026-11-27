@@ -5,57 +5,180 @@
     {
       "type": "OpenFileWithPreview",
       "path": "CAPABILITY_MATRIX.md",
-      "narration": { "after": { "clips": [{ "duration_ms": 3500, "caption": "这里是附录页，<c.aqua>平台逐命令能力矩阵</c.aqua>。" }, { "duration_ms": 6500, "caption": "这一页把 60 个命令按平台列成表：✓ 默认可用，H 需要 headed，△ 有条件，✕ 关闭或不支持。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 73000,
+              "duration_ms": 3192,
+              "caption": "这里是附录页，<emphasis level=\"strong\">平台逐命令能力矩阵</emphasis>。"
+            },
+            {
+              "offset_ms": 77000,
+              "duration_ms": 7222,
+              "caption": "这一页把 60 个命令按平台列成表：✓ 默认可用，H 需要 headed，△ 有条件，✕ 关闭或不支持。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
-      "start": { "line": 3 },
-      "end": { "line": 10 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "四个符号先记住：H 不是更可靠，而是允许物理输入或抢焦点；✕ 是设计上的拒绝，不是缺陷。" }] } }
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 85000,
+              "duration_ms": 7667,
+              "caption": "四个符号先记住：H 不是更可靠，而是允许物理输入或抢焦点；✕ 是设计上的拒绝，不是缺陷。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
-      "start": { "line": 12 },
-      "end": { "line": 23 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "观察与截图基本全平台一致；差异在权限与捕获方式：macOS 要屏幕录制，X11 合成窗口下显示器截图受限，Wayland 窗口目标受限。" }] } }
+      "start": {
+        "line": 12
+      },
+      "end": {
+        "line": 23
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 93000,
+              "duration_ms": 10928,
+              "caption": "观察与截图基本全平台一致；差异在权限与捕获方式：macOS 要屏幕录制，X11 合成窗口下显示器截图受限，Wayland 窗口目标受限。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
-      "start": { "line": 25 },
-      "end": { "line": 44 },
-      "narration": { "after": { "clips": [{ "duration_ms": 10000, "caption": "引用动作里，Windows 的 right-click、type、focus 需要 headed；Linux 的 scroll 在 headless 下被拒绝；double-click 在 macOS 只有 AXOpen 时能 headless。" }] } }
+      "start": {
+        "line": 25
+      },
+      "end": {
+        "line": 44
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 104000,
+              "duration_ms": 10123,
+              "caption": "引用动作里，Windows 的 right-click、type、focus 需要 headed；Linux 的 scroll 在 headless 下被拒绝；double-click 在 macOS 只有 AXOpen 时能 headless。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
-      "start": { "line": 46 },
-      "end": { "line": 59 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "指针手势在 macOS / Windows / X11 都需要 headed，Wayland 直接不支持；四个 held-input 命令在所有平台都 fail closed。" }] } }
+      "start": {
+        "line": 46
+      },
+      "end": {
+        "line": 59
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 115000,
+              "duration_ms": 8788,
+              "caption": "指针手势在 macOS / Windows / X11 都需要 headed，Wayland 直接不支持；四个 held-input 命令在所有平台都 fail closed。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
-      "start": { "line": 61 },
-      "end": { "line": 74 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "应用与窗口：Linux Wayland 只保留 launch、list-apps、list-windows，窗口控制与 close-app 都拒绝；Windows 对受保护映像拒绝 close-app。" }] } }
+      "start": {
+        "line": 61
+      },
+      "end": {
+        "line": 74
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 124000,
+              "duration_ms": 9554,
+              "caption": "应用与窗口：Linux Wayland 只保留 launch、list-apps、list-windows，窗口控制与 close-app 都拒绝；Windows 对受保护映像拒绝 close-app。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
-      "start": { "line": 76 },
-      "end": { "line": 95 },
-      "narration": { "after": { "clips": [{ "duration_ms": 10000, "caption": "通知类几乎都需要 headed，Linux 还限定 GNOME Shell；剪贴板与 wait 跨平台，但依赖权限、helper 或已打开的通知中心。" }] } }
+      "start": {
+        "line": 76
+      },
+      "end": {
+        "line": 95
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 134000,
+              "duration_ms": 9067,
+              "caption": "通知类几乎都需要 headed，Linux 还限定 GNOME Shell；剪贴板与 wait 跨平台，但依赖权限、helper 或已打开的通知中心。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "CAPABILITY_MATRIX.md",
-      "start": { "line": 97 },
-      "end": { "line": 102 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "读法：先看命令组，再看 H 与 ✕；不要为了绕过错误自行加 headed，换命令或换平台才是正确恢复。" }] } }
+      "start": {
+        "line": 97
+      },
+      "end": {
+        "line": 102
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 144000,
+              "duration_ms": 7887,
+              "caption": "读法：先看命令组，再看 H 与 ✕；不要为了绕过错误自行加 headed，换命令或换平台才是正确恢复。"
+            }
+          ]
+        }
+      }
     },
-    { "type": "ClearReveal" }
+    {
+      "type": "ClearReveal"
+    }
   ]
 }

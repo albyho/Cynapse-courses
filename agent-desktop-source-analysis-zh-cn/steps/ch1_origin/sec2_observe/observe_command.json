@@ -12,7 +12,7 @@
             {
               "offset_ms": 0,
               "duration_ms": 4697,
-              "caption": "先从对外的 snapshot 命令读起。snapshot 是观察的<c.aqua>唯一入口</c.aqua>。"
+              "caption": "先从对外的 snapshot 命令读起。snapshot 是观察的<emphasis level=\"strong\">唯一入口</emphasis>。"
             }
           ]
         }
@@ -56,14 +56,7 @@
             {
               "offset_ms": 15000,
               "duration_ms": 7111,
-              "caption": "后四个：compact 压缩输出；surface 选界面层；skeleton 只取骨架；root_ref 从已有引用<c.aqua>下钻</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 59,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "后四个：compact 压缩输出；surface 选界面层；skeleton 只取骨架；root_ref 从已有引用<emphasis level=\"strong\">下<sub alias=\"ZUAN1\">钻</sub></emphasis>。"
             }
           ]
         }
@@ -107,14 +100,7 @@
             {
               "offset_ms": 29000,
               "duration_ms": 6948,
-              "caption": "timeout_ms 本身，以及 <c.aqua>force_electron_a11y</c.aqua>：调用方显式要求打开 Chromium 的无障碍树。",
-              "speech_edits": [
-                {
-                  "i": 37,
-                  "s": "调",
-                  "p": "DIAO4"
-                }
-              ]
+              "caption": "timeout_ms 本身，以及 <emphasis level=\"strong\">force_electron_a11y</emphasis>：<sub alias=\"DIAO4\">调</sub>用方显式要求打开 Chromium 的无障碍树。"
             }
           ]
         }
@@ -136,7 +122,7 @@
             {
               "offset_ms": 36000,
               "duration_ms": 4543,
-              "caption": "tree_options 先处理 skeleton：生效时把深度<c.aqua>硬性压到 3 层</c.aqua>。"
+              "caption": "tree_options 先处理 skeleton：生效时把深度<emphasis level=\"strong\">硬性压到 3 层</emphasis>。"
             }
           ]
         }
@@ -202,14 +188,7 @@
             {
               "offset_ms": 50000,
               "duration_ms": 7460,
-              "caption": "执行前先校验 root_<c.aqua>ref</c.aqua>：不能和 wait 选择器同时用，不能和 surface 同时用，格式必须合法。",
-              "speech_edits": [
-                {
-                  "i": 4,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "caption": "执行前先<sub alias=\"JIAO4\">校</sub>验 root_<emphasis level=\"strong\">ref</emphasis>：不能和 wait 选择器同时用，不能和 surface 同时用，格式必须合法。"
             }
           ]
         }
@@ -253,14 +232,7 @@
             {
               "offset_ms": 61000,
               "duration_ms": 3892,
-              "caption": "带 root_ref：走 <c.aqua>snapshot_ref</c.aqua> 下钻，并把 timeout 传进去。",
-              "speech_edits": [
-                {
-                  "i": 27,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "带 root_ref：走 <emphasis level=\"strong\">snapshot_ref</emphasis> 下<sub alias=\"ZUAN1\">钻</sub>，并把 timeout 传进去。"
             }
           ]
         }
@@ -304,7 +276,7 @@
             {
               "offset_ms": 69000,
               "duration_ms": 4844,
-              "caption": "都不带：做一次全量<c.aqua>快照</c.aqua>，再由 format_result 变成对外的 JSON。"
+              "caption": "都不带：做一次全量<emphasis level=\"strong\">快照</emphasis>，再由 format_result 变成对外的 JSON。"
             }
           ]
         }

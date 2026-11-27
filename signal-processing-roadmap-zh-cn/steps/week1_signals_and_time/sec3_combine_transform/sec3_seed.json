@@ -20,8 +20,8 @@
           "clips": [
             {
               "offset_ms": 27000,
-              "duration_ms": 5159,
-              "caption": "先看 intro Cell：本单元要<c.aqua>观察</c.aqua><c.aqua>信号</c.aqua>怎样<c.aqua>相加</c.aqua>、缩放、平移和反转。"
+              "duration_ms": 5176,
+              "caption": "先看 intro Cell：本单元要<emphasis level=\"strong\">观察</emphasis><emphasis level=\"strong\">信号</emphasis>怎样<emphasis level=\"strong\">相加</emphasis>、缩放、平移和反转。"
             }
           ]
         }
@@ -41,7 +41,7 @@
           "clips": [
             {
               "offset_ms": 33000,
-              "duration_ms": 5660,
+              "duration_ms": 5771,
               "caption": "setup_imports 只负责导入 NumPy 和 Matplotlib，是后续所有 Cell 的公共环境。"
             }
           ]
@@ -59,15 +59,8 @@
           "clips": [
             {
               "offset_ms": 39000,
-              "duration_ms": 3931,
-              "caption": "运行后没有可见输出，但基础库已经加载。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 3957,
+              "caption": "运<sub alias=\"XING2\">行</sub>后没有可见输出，但基础库已经加载。"
             }
           ]
         }
@@ -87,15 +80,8 @@
           "clips": [
             {
               "offset_ms": 43000,
-              "duration_ms": 7695,
-              "caption": "setup_exercise 准备练习用的<c.aqua>时间轴</c.aqua> t 和 1 Hz 基准<c.aqua>信号</c.aqua> x1；动手试一试会直接使用它们。",
-              "speech_edits": [
-                {
-                  "i": 23,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                }
-              ]
+              "duration_ms": 7551,
+              "caption": "setup_exercise 准备练习用的<emphasis level=\"strong\">时间<sub alias=\"ZHOU2\">轴</sub></emphasis> t 和 1 Hz 基准<emphasis level=\"strong\">信号</emphasis> x1；动手试一试会直接使用它们。"
             }
           ]
         }
@@ -112,15 +98,8 @@
           "clips": [
             {
               "offset_ms": 51000,
-              "duration_ms": 4123,
-              "caption": "运行后 t 和 x1 已经存在，练习可以直接开始。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 4074,
+              "caption": "运<sub alias=\"XING2\">行</sub>后 t 和 x1 已经存在，练习可以直接开始。"
             }
           ]
         }

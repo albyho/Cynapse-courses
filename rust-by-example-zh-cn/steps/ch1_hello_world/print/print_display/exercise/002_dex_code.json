@@ -10,15 +10,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6500,
-              "caption": "为复数结构体实现 Display，就能按 a + bi 的形式打印，写法可以参照 Point2D。",
-              "speech_edits": [
-                {
-                  "i": 21,
-                  "s": "a + bi",
-                  "p": "a JIA1 b i"
-                }
-              ]
+              "duration_ms": 6400,
+              "caption": "为复数结构体实现 Display，就能按 <sub alias=\"a JIA1 b i\">a + bi</sub> 的形式打印，写法可以参照 Point2D。"
             }
           ]
         }
@@ -32,8 +25,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 3533,
-              "caption": "准备<c.aqua>定义</c.aqua>复数<c.aqua>结构体</c.aqua> Complex 并<c.aqua>实现</c.aqua> Display。"
+              "duration_ms": 3436,
+              "caption": "准备<emphasis level=\"strong\">定义</emphasis>复数<emphasis level=\"strong\">结构体</emphasis> Complex 并<emphasis level=\"strong\">实现</emphasis> Display。"
             }
           ]
         }
@@ -60,27 +53,13 @@
           "clips": [
             {
               "offset_ms": 11000,
-              "duration_ms": 5189,
-              "caption": "<c.aqua>定义</c.aqua>复数<c.aqua>结构体</c.aqua> Complex 并<c.aqua>实现</c.aqua> Display，打印成 a + bi 的形式。",
-              "speech_edits": [
-                {
-                  "i": 32,
-                  "s": "a + bi",
-                  "p": "a JIA1 b i"
-                }
-              ]
+              "duration_ms": 5232,
+              "caption": "<emphasis level=\"strong\">定义</emphasis>复数<emphasis level=\"strong\">结构体</emphasis> Complex 并<emphasis level=\"strong\">实现</emphasis> Display，打印成 <sub alias=\"a JIA1 b i\">a + bi</sub> 的形式。"
             },
             {
               "offset_ms": 17000,
-              "duration_ms": 3852,
-              "caption": "逐行写入 Complex 的<c.aqua>定义</c.aqua>、Display <c.aqua>实现</c.aqua>和<c.aqua>打印</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 3791,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入 Complex 的<emphasis level=\"strong\">定义</emphasis>、Display <emphasis level=\"strong\">实现</emphasis>和打印。"
             }
           ]
         },
@@ -89,25 +68,18 @@
           "clips": [
             {
               "offset_ms": 21000,
-              "duration_ms": 2863,
-              "caption": "仿照 Point2D，先<c.aqua>定义</c.aqua> Complex <c.aqua>结构体</c.aqua>。"
+              "duration_ms": 2943,
+              "caption": "仿照 Point2D，先<emphasis level=\"strong\">定义</emphasis> Complex <emphasis level=\"strong\">结构体</emphasis>。"
             },
             {
               "offset_ms": 24000,
-              "duration_ms": 2972,
-              "caption": "再<c.aqua>实现</c.aqua> Display，按 a + bi 的格式写。",
-              "speech_edits": [
-                {
-                  "i": 14,
-                  "s": "a + bi",
-                  "p": "a JIA1 b i"
-                }
-              ]
+              "duration_ms": 3000,
+              "caption": "再<emphasis level=\"strong\">实现</emphasis> Display，按 <sub alias=\"a JIA1 b i\">a + bi</sub> 的格式写。"
             },
             {
               "offset_ms": 27000,
-              "duration_ms": 3471,
-              "caption": "最后构造复数，分别用 Display 和 Debug <c.aqua>打印</c.aqua>。"
+              "duration_ms": 3437,
+              "caption": "最后构造复数，分别用 Display 和 Debug 打印。"
             }
           ]
         }
@@ -134,7 +106,7 @@
           "clips": [
             {
               "offset_ms": 31000,
-              "duration_ms": 1374,
+              "duration_ms": 1269,
               "caption": "编译成功。"
             }
           ]
@@ -160,15 +132,8 @@
           "clips": [
             {
               "offset_ms": 33000,
-              "duration_ms": 5004,
-              "caption": "输出包含 Display: 3.3 + 7.2i 与 Debug: Complex { real: 3.3",
-              "speech_edits": [
-                {
-                  "i": 18,
-                  "s": "+",
-                  "p": "JIA1"
-                }
-              ]
+              "duration_ms": 5189,
+              "caption": "输出包含 Display 的 3.3 <sub alias=\"JIA1\">+</sub> 7.2i，以及 Debug 的 Complex 结构。"
             }
           ]
         }
@@ -182,8 +147,8 @@
           "clips": [
             {
               "offset_ms": 39000,
-              "duration_ms": 1392,
-              "caption": "imag: 7.2 }。"
+              "duration_ms": 3815,
+              "caption": "Debug 打印出的字段是 real: 3.3 和 imag: 7.2。"
             }
           ]
         }

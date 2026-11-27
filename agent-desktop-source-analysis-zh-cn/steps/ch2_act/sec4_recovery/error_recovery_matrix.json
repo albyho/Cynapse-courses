@@ -5,72 +5,228 @@
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/actions/delivery_semantics.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "先看错误对象的两个维度：delivery 描述输入有没有到达应用，retry 能不能由它直接推出来。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 76000,
+              "duration_ms": 7630,
+              "caption": "先看错误对象的两个维度：delivery 描述输入有没有到达应用，retry 能不能由它直接推出来。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/actions/delivery_semantics.rs",
-      "start": { "line": 5 },
-      "end": { "line": 54 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "五种 delivery：unknown、not_delivered、delivery_uncertain、delivered_unverified、delivered_verified。只有 not_delivered 映射为 safe；其余是 unsafe 或 unknown。" }] } }
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 54
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 84000,
+              "duration_ms": 10271,
+              "caption": "五种 delivery：unknown、not_delivered、delivery_uncertain、delivered_unverified、delivered_verified。只有 not_delivered 映射为 safe；其余是 unsafe 或 unknown。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/response/output.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "再把这个映射落到错误码上：recovery 只在 retry 为 safe 时才出现。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 95000,
+              "duration_ms": 5357,
+              "caption": "再把这个映射落到错误码上：recovery 只在 retry 为 safe 时才出现。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/response/output.rs",
-      "start": { "line": 58 },
-      "end": { "line": 96 },
-      "narration": { "after": { "clips": [{ "duration_ms": 10000, "caption": "三条策略：STALE_REF / SNAPSHOT_NOT_FOUND 先刷新快照再重试；TIMEOUT / APP_UNRESPONSIVE 先观察并等 250ms；POLICY_DENIED 必须由人显式改策略。STALE_REF 若进程已退出则走 inspect。" }] } }
+      "start": {
+        "line": 58
+      },
+      "end": {
+        "line": 96
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 101000,
+              "duration_ms": 13798,
+              "caption": "三条策略：STALE_REF / SNAPSHOT_NOT_FOUND 先刷新快照再重试；TIMEOUT / APP_UNRESPONSIVE 先观察并等 250ms；POLICY_DENIED 必须由人显式改策略。STALE_REF 若进程已退出则走 inspect。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/response/output.rs",
-      "start": { "line": 98 },
-      "end": { "line": 116 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9000, "caption": "还有一层否决：adapter 可以标记 permits_retry_by_default = false，即使错误码本来有策略，也不生成 recovery。其余码（ACTION_FAILED、INVALID_ARGS、AMBIGUOUS_TARGET）永远不带 recovery。" }] } }
+      "start": {
+        "line": 98
+      },
+      "end": {
+        "line": 116
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 115000,
+              "duration_ms": 13095,
+              "caption": "还有一层否决：adapter 可以标记 permits_retry_by_default = false，即使错误码本来有策略，也不生成 recovery。其余码（ACTION_FAILED、INVALID_ARGS、AMBIGUOUS_TARGET）永远不带 recovery。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/core/src/response/retry_disposition.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "retry 本身只有三个值，避免调用方自己解释字符串。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 129000,
+              "duration_ms": 4357,
+              "caption": "retry 本身只有三个值，避免调用方自己解释字符串。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/core/src/response/retry_disposition.rs",
-      "start": { "line": 3 },
-      "end": { "line": 10 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "判断顺序固定：先看 code 是否可修复，再看 retry；unsafe/unknown 必须先观察，safe 且有 recovery 才按策略执行。" }] } }
+      "start": {
+        "line": 3
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 134000,
+              "duration_ms": 8413,
+              "caption": "判断顺序固定：先看 code 是否可修复，再看 retry；unsafe/unknown 必须先观察，safe 且有 recovery 才按策略执行。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFileWithPreview",
       "path": "ERROR_MATRIX.md",
-      "narration": { "after": { "clips": [{ "duration_ms": 3500, "caption": "接着翻到附录，<c.aqua>错误码与恢复速查表</c.aqua>。" }, { "duration_ms": 6000, "caption": "这份速查表把刚才的规则落成三张表，方便失败时直接查。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 143000,
+              "duration_ms": 3072,
+              "caption": "接着翻到附录，<emphasis level=\"strong\">错误码与恢复速查表</emphasis>。"
+            },
+            {
+              "offset_ms": 147000,
+              "duration_ms": 5118,
+              "caption": "这份速查表把刚才的规则落成三张表，方便失败时直接查。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "ERROR_MATRIX.md",
-      "start": { "line": 5 },
-      "end": { "line": 24 },
-      "narration": { "after": { "clips": [{ "duration_ms": 10000, "caption": "16 个码逐个列出含义、是否带 recovery、以及该做什么；带 recovery 的只有 STALE_REF、SNAPSHOT_NOT_FOUND、TIMEOUT、POLICY_DENIED、APP_UNRESPONSIVE。" }] } }
+      "start": {
+        "line": 5
+      },
+      "end": {
+        "line": 24
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 153000,
+              "duration_ms": 10528,
+              "caption": "16 个码逐个列出含义、是否带 recovery、以及该做什么；带 recovery 的只有 STALE_REF、SNAPSHOT_NOT_FOUND、TIMEOUT、POLICY_DENIED、APP_UNRESPONSIVE。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "ERROR_MATRIX.md",
-      "start": { "line": 26 },
-      "end": { "line": 45 },
-      "narration": { "after": { "clips": [{ "duration_ms": 9500, "caption": "第二张表是 delivery 到 retry 的映射，第三张把三条 strategy 对回错误码；STALE_REF 还要看进程是否已退出。" }] } }
+      "start": {
+        "line": 26
+      },
+      "end": {
+        "line": 45
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 164000,
+              "duration_ms": 8543,
+              "caption": "第二张表是 delivery 到 retry 的映射，第三张把三条 strategy 对回错误码；STALE_REF 还要看进程是否已退出。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "ERROR_MATRIX.md",
-      "start": { "line": 46 },
-      "end": { "line": 52 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "三个附加条件：只在 safe 时出现、250ms 只给两个码、adapter 可以否决。记住这三条就不会误读 recovery。" }] } }
+      "start": {
+        "line": 46
+      },
+      "end": {
+        "line": 52
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch2_act_sec4_recovery",
+          "clips": [
+            {
+              "offset_ms": 173000,
+              "duration_ms": 8725,
+              "caption": "三个附加条件：只在 safe 时出现、250ms 只给两个码、adapter 可以否决。记住这三条就不会误读 recovery。"
+            }
+          ]
+        }
+      }
     },
-    { "type": "ClearReveal" }
+    {
+      "type": "ClearReveal"
+    }
   ]
 }

@@ -14,20 +14,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 8049,
-              "caption": "行首两条斜线把语句变成注释，注释掉的代码不参与编译；这次练习要让它重新生效。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 33,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "duration_ms": 8134,
+              "caption": "<sub alias=\"HANG2\">行</sub>首两条斜线把语句变成注释，注释掉的代码不参与编译；这次练习要让它<sub alias=\"CHONG2\">重</sub>新生效。"
             }
           ]
         }
@@ -45,44 +33,18 @@
           "clips": [
             {
               "offset_ms": 9000,
-              "duration_ms": 5842,
-              "caption": "这一行开头的两条斜线把语句变成了<c.aqua>注释</c.aqua>，所以它不会被执行。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 26,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 6118,
+              "caption": "这一<sub alias=\"HANG2\">行</sub>开头的两条斜线把语句变成了<emphasis level=\"strong\">注释</emphasis>，所以它不会被执<sub alias=\"XING2\">行</sub>。"
             },
             {
-              "offset_ms": 15000,
-              "duration_ms": 4234,
-              "caption": "把这两条斜线删掉，语句就会重新参与编译。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "offset_ms": 16000,
+              "duration_ms": 4212,
+              "caption": "把这两条斜线删掉，语句就会<sub alias=\"CHONG2\">重</sub>新参与编译。"
             },
             {
-              "offset_ms": 20000,
-              "duration_ms": 4893,
-              "caption": "注意只删 // 和它后面的一个空格，语句本身要保留。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "//",
-                  "p": "双斜杠"
-                }
-              ]
+              "offset_ms": 21000,
+              "duration_ms": 4436,
+              "caption": "注意只删 <sub alias=\"双斜杠\">//</sub> 和它后面的一个空格，语句本身要保留。"
             }
           ]
         }
@@ -106,16 +68,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 25000,
-              "duration_ms": 2113,
-              "caption": "逐字删掉 // 和空格。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "//",
-                  "p": "双斜杠"
-                }
-              ]
+              "offset_ms": 26000,
+              "duration_ms": 2218,
+              "caption": "逐字删掉 <sub alias=\"双斜杠\">//</sub> 和空格。"
             }
           ]
         }
@@ -141,8 +96,8 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 28000,
-              "duration_ms": 893,
+              "offset_ms": 29000,
+              "duration_ms": 909,
               "caption": "编译通过。"
             }
           ]
@@ -166,8 +121,8 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 29000,
-              "duration_ms": 2955,
+              "offset_ms": 30000,
+              "duration_ms": 2996,
               "caption": "现在先输出 Hello, world!，再输出 x 的值。"
             }
           ]
@@ -189,36 +144,14 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 32000,
-              "duration_ms": 6291,
-              "caption": "再看块<c.aqua>注释</c.aqua>：<c.aqua>表达式</c.aqua>里剩下的是 5 + /* 90 + */ 5",
-              "speech_edits": [
-                {
-                  "i": 17,
-                  "s": "+",
-                  "p": "JIA1"
-                },
-                {
-                  "i": 19,
-                  "s": "/*",
-                  "p": "块注释开始"
-                },
-                {
-                  "i": 25,
-                  "s": "+",
-                  "p": "JIA1"
-                },
-                {
-                  "i": 27,
-                  "s": "*/",
-                  "p": "块注释结束"
-                }
-              ]
+              "offset_ms": 33000,
+              "duration_ms": 6850,
+              "caption": "再看<emphasis level=\"strong\">块注释</emphasis>：<emphasis level=\"strong\">表达式</emphasis>里剩下的是 5 <sub alias=\"JIA1\">+</sub> <sub alias=\"块注释开始\">/*</sub> 90 <sub alias=\"JIA1\">+</sub> <sub alias=\"块注释结束\">*/</sub> 5"
             },
             {
-              "offset_ms": 39000,
-              "duration_ms": 6059,
-              "caption": "删掉这两对分隔符，90 就会真的加进去，结果从 10 变成 100。"
+              "offset_ms": 40000,
+              "duration_ms": 6091,
+              "caption": "删掉这一对分隔符，90 就会真的加进去，结果从 10 变成 100。"
             }
           ]
         }
@@ -231,26 +164,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 46000,
-              "duration_ms": 6295,
-              "caption": "中间的 90 + 被 /* 和 */ 包着，等于没有参与计算。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "+",
-                  "p": "JIA1"
-                },
-                {
-                  "i": 11,
-                  "s": "/*",
-                  "p": "块注释开始"
-                },
-                {
-                  "i": 16,
-                  "s": "*/",
-                  "p": "块注释结束"
-                }
-              ]
+              "offset_ms": 47000,
+              "duration_ms": 6348,
+              "caption": "中间的 90 <sub alias=\"JIA1\">+</sub> 被 <sub alias=\"块注释开始\">/*</sub> 和 <sub alias=\"块注释结束\">*/</sub> 包着，等于没有参与计算。"
             }
           ]
         }
@@ -274,16 +190,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 53000,
-              "duration_ms": 5374,
-              "caption": "先删掉开头的块<c.aqua>注释</c.aqua>起始符 /* ，连同它后面的空格。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "/*",
-                  "p": "块注释开始"
-                }
-              ]
+              "offset_ms": 54000,
+              "duration_ms": 5338,
+              "caption": "先删掉开头的<emphasis level=\"strong\">块注释</emphasis>起始符 <sub alias=\"块注释开始\">/*</sub> ，连同它后面的空格。"
             }
           ]
         },
@@ -291,16 +200,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 59000,
-              "duration_ms": 2563,
-              "caption": "逐字删掉 /* 和空格。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "/*",
-                  "p": "块注释开始"
-                }
-              ]
+              "offset_ms": 60000,
+              "duration_ms": 2577,
+              "caption": "逐字删掉 <sub alias=\"块注释开始\">/*</sub> 和空格。"
             }
           ]
         }
@@ -324,16 +226,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 62000,
-              "duration_ms": 4519,
-              "caption": "再删掉结尾的 */ ，同样带上它前面的空格。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "*/",
-                  "p": "块注释结束"
-                }
-              ]
+              "offset_ms": 63000,
+              "duration_ms": 4521,
+              "caption": "再删掉结尾的 <sub alias=\"块注释结束\">*/</sub> ，同样带上它前面的空格。"
             }
           ]
         },
@@ -341,16 +236,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 67000,
-              "duration_ms": 2503,
-              "caption": "逐字删掉 */ 和空格。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "*/",
-                  "p": "块注释结束"
-                }
-              ]
+              "offset_ms": 68000,
+              "duration_ms": 2559,
+              "caption": "逐字删掉 <sub alias=\"块注释结束\">*/</sub> 和空格。"
             }
           ]
         }
@@ -384,8 +272,8 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 70000,
-              "duration_ms": 1708,
+              "offset_ms": 71000,
+              "duration_ms": 1859,
               "caption": "现在 x 变成 100 了。"
             }
           ]
@@ -400,16 +288,9 @@
           "asset_id": "narration_ch1_hello_world_comment_exercise_002_cex_toggle",
           "clips": [
             {
-              "offset_ms": 72000,
-              "duration_ms": 5361,
-              "caption": "现在 x 变成 100 了，我们对照源码看这一行是怎么来的。",
-              "speech_edits": [
-                {
-                  "i": 23,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 73000,
+              "duration_ms": 2531,
+              "caption": "我们对照源码看这一<sub alias=\"HANG2\">行</sub>是怎么来的。"
             }
           ]
         }

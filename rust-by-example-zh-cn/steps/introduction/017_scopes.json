@@ -14,25 +14,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1880,
+              "duration_ms": 1953,
               "caption": "第 15 章《作用域规则》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 4550,
-              "caption": "作用域在所有权、借用和生命周期中起重要作用。",
-              "speech_edits": [
-                {
-                  "i": 17,
-                  "s": "重",
-                  "p": "ZHONG4"
-                }
-              ]
+              "duration_ms": 4608,
+              "caption": "作用域在所有权、借用和生命周期中起<sub alias=\"ZHONG4\">重</sub>要作用。"
             },
             {
               "offset_ms": 7000,
-              "duration_ms": 3581,
-              "caption": "这一章会看一个名字从创建到失效的过程。"
+              "duration_ms": 2894,
+              "caption": "看一个名字从创建到失效的过程。"
             }
           ]
         }
@@ -45,9 +38,9 @@
           "asset_id": "narration_introduction_017_scopes",
           "clips": [
             {
-              "offset_ms": 11000,
-              "duration_ms": 2499,
-              "caption": "这一章会看每个名字的有效范围。"
+              "offset_ms": 10000,
+              "duration_ms": 2338,
+              "caption": "还有每个名字的有效范围。"
             }
           ]
         }
@@ -60,8 +53,8 @@
           "asset_id": "narration_introduction_017_scopes",
           "clips": [
             {
-              "offset_ms": 14000,
-              "duration_ms": 2624,
+              "offset_ms": 13000,
+              "duration_ms": 2906,
               "caption": "再判断移动或借用为什么被允许。"
             }
           ]

@@ -14,20 +14,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7127,
-              "caption": "Matrix 用 {:?} 打印会带类型名和括号，换成 {} 就得自己实现 Display。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "{:?}",
-                  "p": "大括号冒号问号"
-                },
-                {
-                  "i": 28,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "duration_ms": 7575,
+              "caption": "Matrix 用 <sub alias=\"大括号冒号问号\">{:?}</sub> 打印会带类型名和括号，换成 <sub alias=\"一对大括号\">{}</sub> 就得自己实现 Display。"
             }
           ]
         }
@@ -59,37 +47,13 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 9018,
-              "caption": "当前用的是 {:?}，输出的是 Matrix(1.1, 1.2, 2.1, 2.2) 这样的结构。",
-              "speech_edits": [
-                {
-                  "i": 6,
-                  "s": "{:?}",
-                  "p": "大括号冒号问号"
-                },
-                {
-                  "i": 16,
-                  "s": "Matrix(1.1, 1.2, 2.1, 2.2)",
-                  "p": "Matrix 圆括号 1.1 逗号 1.2 逗号 2.1 逗号 2.2"
-                }
-              ]
+              "duration_ms": 9042,
+              "caption": "当前用的是 <sub alias=\"大括号冒号问号\">{:?}</sub>，输出的是 <sub alias=\"Matrix 圆括号 1.1 逗号 1.2 逗号 2.1 逗号 2.2\">Matrix(1.1, 1.2, 2.1, 2.2)</sub> 这样的结构。"
             },
             {
               "offset_ms": 18000,
-              "duration_ms": 5310,
-              "caption": "把<c.aqua>打印</c.aqua>从 {:?} 换成 {}，并把末尾补上分号。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "{:?}",
-                  "p": "大括号冒号问号"
-                },
-                {
-                  "i": 13,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "duration_ms": 5230,
+              "caption": "把打印从 <sub alias=\"大括号冒号问号\">{:?}</sub> 换成 <sub alias=\"一对大括号\">{}</sub>，并把末尾补上分号。"
             }
           ]
         },
@@ -98,8 +62,8 @@
           "clips": [
             {
               "offset_ms": 24000,
-              "duration_ms": 2569,
-              "caption": "删掉旧的<c.aqua>打印</c.aqua>语句，输入新的。"
+              "duration_ms": 2535,
+              "caption": "删掉旧的打印语句，输入新的。"
             }
           ]
         }
@@ -122,15 +86,8 @@
           "clips": [
             {
               "offset_ms": 27000,
-              "duration_ms": 5437,
-              "caption": "在 Matrix <c.aqua>定义</c.aqua>之后<c.aqua>实现</c.aqua> Display，按两行两列把四个<c.aqua>浮点</c.aqua>数排开。",
-              "speech_edits": [
-                {
-                  "i": 26,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 5280,
+              "caption": "在 Matrix <emphasis level=\"strong\">定义</emphasis>之后<emphasis level=\"strong\">实现</emphasis> Display，按两<sub alias=\"HANG2\">行</sub>两列把四个<emphasis level=\"strong\">浮点数</emphasis>排开。"
             }
           ]
         },
@@ -139,15 +96,8 @@
           "clips": [
             {
               "offset_ms": 33000,
-              "duration_ms": 2651,
-              "caption": "逐行写入 Matrix 的 Display <c.aqua>实现</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 2755,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入 Matrix 的 Display <emphasis level=\"strong\">实现</emphasis>。"
             }
           ]
         }
@@ -174,7 +124,7 @@
           "clips": [
             {
               "offset_ms": 36000,
-              "duration_ms": 904,
+              "duration_ms": 1240,
               "caption": "编译通过。"
             }
           ]
@@ -199,16 +149,9 @@
           "asset_id": "narration_ch2_primitives_tuples_exercise_002_tex_display",
           "clips": [
             {
-              "offset_ms": 37000,
-              "duration_ms": 2183,
-              "caption": "运行，看 Matrix 的新输出。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 38000,
+              "duration_ms": 2184,
+              "caption": "运<sub alias=\"XING2\">行</sub>，看 Matrix 的新输出。"
             }
           ]
         },
@@ -216,16 +159,9 @@
           "asset_id": "narration_ch2_primitives_tuples_exercise_002_tex_display",
           "clips": [
             {
-              "offset_ms": 40000,
-              "duration_ms": 4438,
-              "caption": "Matrix 现在按两行两列<c.aqua>打印</c.aqua>，正是练习要求的形状。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 41000,
+              "duration_ms": 4355,
+              "caption": "Matrix 现在按两<sub alias=\"HANG2\">行</sub>两列打印，正是练习要求的形状。"
             }
           ]
         }

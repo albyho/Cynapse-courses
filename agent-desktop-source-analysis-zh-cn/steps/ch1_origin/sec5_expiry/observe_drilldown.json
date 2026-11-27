@@ -12,14 +12,7 @@
             {
               "offset_ms": 0,
               "duration_ms": 3441,
-              "caption": "带 root_ref 的观察走另一条路径：<c.aqua>下钻</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 22,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "带 root_ref 的观察走另一条路径：<emphasis level=\"strong\">下<sub alias=\"ZUAN1\">钻</sub></emphasis>。"
             }
           ]
         }
@@ -41,14 +34,7 @@
             {
               "offset_ms": 4000,
               "duration_ms": 6088,
-              "caption": "注释先定规则：下钻要观察<c.aqua>完整棵子树</c.aqua>，否则完全不改已存的引用表。",
-              "speech_edits": [
-                {
-                  "i": 8,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "注释先定规则：下<sub alias=\"ZUAN1\">钻</sub>要观察<emphasis level=\"strong\">完整棵子树</emphasis>，否则完全不改已存的引用表。"
             }
           ]
         }
@@ -70,14 +56,7 @@
             {
               "offset_ms": 11000,
               "duration_ms": 6595,
-              "caption": "部分结果只允许全量快照；<c.aqua>下钻</c.aqua>替换引用，所以必须完整，失败也不破坏旧引用。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "部分结果只允许全量快照；<emphasis level=\"strong\">下<sub alias=\"ZUAN1\">钻</sub></emphasis>替换引用，所以必须完整，失败也不破坏旧引用。"
             }
           ]
         }
@@ -99,7 +78,7 @@
             {
               "offset_ms": 18000,
               "duration_ms": 7664,
-              "caption": "实现从<c.aqua>引用</c.aqua>开始：把 @snapshot:eN 拆开，加载这次快照的编号表，再找到那个元素的身份档案。"
+              "caption": "实现从<emphasis level=\"strong\">引用</emphasis>开始：把 @snapshot:eN 拆开，加载这次快照的编号表，再找到那个元素的身份档案。"
             }
           ]
         }
@@ -121,14 +100,7 @@
             {
               "offset_ms": 26000,
               "duration_ms": 6085,
-              "caption": "然后按 deadline 做一次<c.aqua>下钻</c.aqua>捕获；deadline 就是这次观察最多能花多久。",
-              "speech_edits": [
-                {
-                  "i": 17,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "然后按 deadline 做一次<emphasis level=\"strong\">下<sub alias=\"ZUAN1\">钻</sub></emphasis>捕获；deadline 就是这次观察最多能花多久。"
             }
           ]
         }
@@ -172,7 +144,7 @@
             {
               "offset_ms": 38000,
               "duration_ms": 7679,
-              "caption": "scope 告诉分配器：这棵子树挂在哪个<c.aqua>引用</c.aqua>下、在窗口树里的什么位置；capture 指向新的证明。"
+              "caption": "scope 告诉分配器：这棵子树挂在哪个<emphasis level=\"strong\">引用</emphasis>下、在窗口树里的什么位置；capture 指向新的证明。"
             }
           ]
         }
@@ -194,14 +166,7 @@
             {
               "offset_ms": 46000,
               "duration_ms": 4310,
-              "caption": "update_existing_snapshot 先删旧子树<c.aqua>引用</c.aqua>，再重新分配。",
-              "speech_edits": [
-                {
-                  "i": 34,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "caption": "update_existing_snapshot 先删旧子树<emphasis level=\"strong\">引用</emphasis>，再<sub alias=\"CHONG2\">重</sub>新分配。"
             }
           ]
         }
@@ -223,7 +188,7 @@
             {
               "offset_ms": 51000,
               "duration_ms": 4485,
-              "caption": "复制 refmap、把树里的<c.aqua>引用</c.aqua>限定到当前快照、记录 trace。"
+              "caption": "复制 refmap、把树里的<emphasis level=\"strong\">引用</emphasis>限定到当前快照、记录 trace。"
             }
           ]
         }
@@ -245,19 +210,7 @@
             {
               "offset_ms": 56000,
               "duration_ms": 5167,
-              "caption": "返回 SnapshotResult，complete 固定为 true：下钻没有<c.aqua>部分成功</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 29,
-                  "s": "为",
-                  "p": "WEI4"
-                },
-                {
-                  "i": 37,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "返回 SnapshotResult，complete 固定<sub alias=\"WEI4\">为</sub> true：下<sub alias=\"ZUAN1\">钻</sub>没有<emphasis level=\"strong\">部分成功</emphasis>。"
             }
           ]
         }
@@ -279,14 +232,7 @@
             {
               "offset_ms": 62000,
               "duration_ms": 5916,
-              "caption": "<c.aqua>drill_capture</c.aqua> 先校验观察请求：深度、边界等参数不合法就直接失败。",
-              "speech_edits": [
-                {
-                  "i": 15,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "caption": "<emphasis level=\"strong\">drill_capture</emphasis> 先<sub alias=\"JIAO4\">校</sub>验观察请求：深度、边界等参数不合法就直接失败。"
             }
           ]
         }
@@ -330,7 +276,7 @@
             {
               "offset_ms": 75000,
               "duration_ms": 7174,
-              "caption": "没有 token 就在整窗观察里定位根；观察不完整就直接 <c.aqua>drill_incomplete</c.aqua>，不返回部分结果。"
+              "caption": "没有 token 就在整窗观察里定位根；观察不完整就直接 <emphasis level=\"strong\">drill_incomplete</emphasis>，不返回部分结果。"
             }
           ]
         }

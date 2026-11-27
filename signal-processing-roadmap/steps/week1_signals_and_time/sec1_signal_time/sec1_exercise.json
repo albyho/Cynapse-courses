@@ -28,9 +28,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 90000,
-              "duration_ms": 5585,
-              "caption": "Now it is your turn. Build 6 <c.aqua>samples</c.aqua> with a <c.aqua>sample interval</c.aqua> of 0.25 s, <c.aqua>amplitude</c.aqua> rising then falling."
+              "offset_ms": 89000,
+              "duration_ms": 5648,
+              "caption": "Now it is your turn. Build 6 <emphasis level=\"strong\">samples</emphasis> with a <emphasis level=\"strong\">sample interval</emphasis> of 0.25 s, <emphasis level=\"strong\">amplitude</emphasis> rising then falling."
             }
           ]
         }
@@ -43,9 +43,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 96000,
-              "duration_ms": 8493,
-              "caption": "Write n, t and x, plot with stem, and add a title, the <c.aqua>time axis</c.aqua> and the <c.aqua>amplitude</c.aqua> axis. Success criteria: 6 <c.aqua>samples</c.aqua>, time from 0 to 1.25 s. Run it, look, then continue."
+              "offset_ms": 95000,
+              "duration_ms": 8655,
+              "caption": "Write n, t and x, plot with stem, and add a title, the <emphasis level=\"strong\">time axis</emphasis> and the <emphasis level=\"strong\">amplitude</emphasis> axis. Success criteria: 6 <emphasis level=\"strong\">samples</emphasis>, time from 0 to 1.25 s. Run it, look, then continue."
             }
           ]
         }

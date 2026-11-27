@@ -18,20 +18,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7218,
-              "caption": "数组长度固定，编译期就确定；切片是对数组某一段的借用，可以只借一部分。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "长",
-                  "p": "CHANG2"
-                },
-                {
-                  "i": 14,
-                  "s": "切",
-                  "p": "QIE1"
-                }
-              ]
+              "duration_ms": 7226,
+              "caption": "数组<sub alias=\"CHANG2\">长</sub>度固定，编译期就确定；<sub alias=\"QIE1\">切</sub>片是对数组某一段的借用，可以只借一部分。"
             }
           ]
         }
@@ -51,42 +39,13 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 6539,
-              "caption": "接下来在 array.rs 里写入定长<c.aqua>数组</c.aqua>、<c.aqua>长度</c.aqua>、内存占用和<c.aqua>切片</c.aqua>借用的示例。",
-              "speech_edits": [
-                {
-                  "i": 18,
-                  "s": "长",
-                  "p": "CHANG2"
-                },
-                {
-                  "i": 22,
-                  "s": "长",
-                  "p": "CHANG2"
-                },
-                {
-                  "i": 30,
-                  "s": "切",
-                  "p": "QIE1"
-                }
-              ]
+              "duration_ms": 6858,
+              "caption": "接下来在 array.rs 里写入定<sub alias=\"CHANG2\">长</sub><emphasis level=\"strong\">数组</emphasis>、<emphasis level=\"strong\"><sub alias=\"CHANG2\">长</sub>度</emphasis>、内存占用和<emphasis level=\"strong\"><sub alias=\"QIE1\">切</sub>片</emphasis>借用的示例。"
             },
             {
               "offset_ms": 15000,
-              "duration_ms": 3523,
-              "caption": "逐行写入<c.aqua>数组</c.aqua>、<c.aqua>切片</c.aqua>和<c.aqua>借用</c.aqua>的示例。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 7,
-                  "s": "切",
-                  "p": "QIE1"
-                }
-              ]
+              "duration_ms": 3555,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入<emphasis level=\"strong\">数组</emphasis>、<emphasis level=\"strong\"><sub alias=\"QIE1\">切</sub>片</emphasis>和<emphasis level=\"strong\">借用</emphasis>的示例。"
             }
           ]
         },
@@ -95,76 +54,43 @@
           "clips": [
             {
               "offset_ms": 19000,
-              "duration_ms": 3212,
-              "caption": "先导入 mem，用来查<c.aqua>数组</c.aqua>占用的字节数。"
+              "duration_ms": 3245,
+              "caption": "先导入 mem，用来查<emphasis level=\"strong\">数组</emphasis>占用的字节数。"
             },
             {
               "offset_ms": 23000,
-              "duration_ms": 3849,
-              "caption": "analyze_slice <c.aqua>借用切片</c.aqua>，<c.aqua>打印</c.aqua>首元素和长度。",
-              "speech_edits": [
-                {
-                  "i": 16,
-                  "s": "切",
-                  "p": "QIE1"
-                },
-                {
-                  "i": 25,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 3783,
+              "caption": "analyze_slice <emphasis level=\"strong\">借用<sub alias=\"QIE1\">切</sub>片</emphasis>，打印首元素和<sub alias=\"CHANG2\">长</sub>度。"
             },
             {
               "offset_ms": 27000,
-              "duration_ms": 3577,
-              "caption": "main 里先建定长<c.aqua>数组</c.aqua> xs 和全零<c.aqua>数组</c.aqua> ys。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 3554,
+              "caption": "main 里先建定<sub alias=\"CHANG2\">长</sub><emphasis level=\"strong\">数组</emphasis> xs 和全零<emphasis level=\"strong\">数组</emphasis> ys。"
             },
             {
               "offset_ms": 31000,
-              "duration_ms": 3231,
-              "caption": "<c.aqua>下标</c.aqua>从 0 开始，len 返回<c.aqua>数组长度</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 17,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 3155,
+              "caption": "<emphasis level=\"strong\">下标</emphasis>从 0 开始，len 返回<emphasis level=\"strong\">数组<sub alias=\"CHANG2\">长</sub>度</emphasis>。"
             },
             {
               "offset_ms": 35000,
-              "duration_ms": 3477,
-              "caption": "size_of_val 告诉你五个 i32 占二十字节。"
+              "duration_ms": 3216,
+              "caption": "size_of_val 给出五个 i32 占二十字节。"
             },
             {
               "offset_ms": 39000,
-              "duration_ms": 3630,
-              "caption": "整个<c.aqua>数组</c.aqua>可以借成<c.aqua>切片</c.aqua>传给 analyze_slice。",
-              "speech_edits": [
-                {
-                  "i": 8,
-                  "s": "切",
-                  "p": "QIE1"
-                }
-              ]
+              "duration_ms": 3693,
+              "caption": "整个<emphasis level=\"strong\">数组</emphasis>可以借成<emphasis level=\"strong\"><sub alias=\"QIE1\">切</sub>片</emphasis>传给 analyze_slice。"
             },
             {
               "offset_ms": 43000,
-              "duration_ms": 2293,
+              "duration_ms": 2271,
               "caption": "也可以只借 ys 中间的一段。"
             },
             {
               "offset_ms": 46000,
-              "duration_ms": 3534,
-              "caption": "最后越界访问保持<c.aqua>注释</c.aqua>，取消<c.aqua>注释</c.aqua>会 panic。"
+              "duration_ms": 3525,
+              "caption": "最后越界访问保持<emphasis level=\"strong\">注释</emphasis>，取消<emphasis level=\"strong\">注释</emphasis>会 panic。"
             }
           ]
         }
@@ -195,7 +121,7 @@
           "clips": [
             {
               "offset_ms": 50000,
-              "duration_ms": 904,
+              "duration_ms": 890,
               "caption": "编译通过。"
             }
           ]
@@ -229,20 +155,8 @@
           "clips": [
             {
               "offset_ms": 51000,
-              "duration_ms": 2204,
-              "caption": "运行，注意每一行输出的含义。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 7,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 2668,
+              "caption": "运<sub alias=\"XING2\">行</sub>，注意每一<sub alias=\"HANG2\">行</sub>输出的含义。"
             }
           ]
         },
@@ -251,54 +165,23 @@
           "clips": [
             {
               "offset_ms": 54000,
-              "duration_ms": 4921,
-              "caption": "<c.aqua>数组长度</c.aqua>是 5，五个 i32 在栈上正好占 20 字节。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 4679,
+              "caption": "<emphasis level=\"strong\">数组<sub alias=\"CHANG2\">长</sub>度</emphasis>是 5，五个 i32 在栈上正好占 20 字节。"
             },
             {
               "offset_ms": 59000,
-              "duration_ms": 5622,
-              "caption": "整个<c.aqua>数组</c.aqua>可以借成<c.aqua>切片</c.aqua>，第一段<c.aqua>打印</c.aqua>首元素 1 和长度 5。",
-              "speech_edits": [
-                {
-                  "i": 8,
-                  "s": "切",
-                  "p": "QIE1"
-                },
-                {
-                  "i": 23,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 5604,
+              "caption": "整个<emphasis level=\"strong\">数组</emphasis>可以借成<emphasis level=\"strong\"><sub alias=\"QIE1\">切</sub>片</emphasis>，第一段打印首元素 1 和<sub alias=\"CHANG2\">长</sub>度 5。"
             },
             {
               "offset_ms": 65000,
-              "duration_ms": 3231,
-              "caption": "ys 的一段借出 3 个<c.aqua>元素</c.aqua>，首<c.aqua>元素</c.aqua>是 0。"
+              "duration_ms": 3177,
+              "caption": "ys 的一段借出 3 个<emphasis level=\"strong\">元素</emphasis>，首<emphasis level=\"strong\">元素</emphasis>是 0。"
             },
             {
               "offset_ms": 69000,
-              "duration_ms": 5690,
-              "caption": "最后一行越界访问已经<c.aqua>注释</c.aqua>掉：取消<c.aqua>注释</c.aqua>会看到运行时 panic。",
-              "speech_edits": [
-                {
-                  "i": 3,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 22,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 5599,
+              "caption": "最后一<sub alias=\"HANG2\">行</sub>越界访问已经<emphasis level=\"strong\">注释</emphasis>掉：取消<emphasis level=\"strong\">注释</emphasis>会看到运<sub alias=\"XING2\">行</sub>时 panic。"
             }
           ]
         }

@@ -14,7 +14,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6187,
+              "duration_ms": 6182,
               "caption": "名字只在自己的作用域里有效，出了作用域再引用，编译器就找不到了。"
             }
           ]
@@ -44,8 +44,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 5770,
-              "caption": "<c.aqua>编译器</c.aqua>说在当前<c.aqua>作用域</c.aqua>找不到 short_lived_binding，<c.aqua>错误码</c.aqua> E0425。"
+              "duration_ms": 5654,
+              "caption": "<emphasis level=\"strong\">编译器</emphasis>说在当前<emphasis level=\"strong\">作用域</emphasis>找不到 short_lived_binding，<emphasis level=\"strong\">错误码</emphasis> E0425。"
             }
           ]
         }
@@ -60,15 +60,8 @@
           "clips": [
             {
               "offset_ms": 13000,
-              "duration_ms": 5470,
-              "caption": "E0425 的<c.aqua>报错</c.aqua>停在终端，我们对照源码看它指向哪一行。",
-              "speech_edits": [
-                {
-                  "i": 26,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 5652,
+              "caption": "E0425 的报错停在终端，我们对照源码看它指向哪一<sub alias=\"HANG2\">行</sub>。"
             }
           ]
         }

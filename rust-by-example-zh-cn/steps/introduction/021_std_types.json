@@ -14,18 +14,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1898,
+              "duration_ms": 2074,
               "caption": "第 19 章《标准库类型》。"
             },
             {
-              "offset_ms": 2000,
-              "duration_ms": 3574,
-              "caption": "这一章学习标准库提供的一些自定义类型。"
+              "offset_ms": 3000,
+              "duration_ms": 2607,
+              "caption": "标准库提供的一些自定义类型。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 3214,
-              "caption": "这一章介绍标准库里几个最常用的容器。"
+              "duration_ms": 3052,
+              "caption": "重点是标准库里几个最常用的容器。"
             }
           ]
         }
@@ -39,8 +39,8 @@
           "clips": [
             {
               "offset_ms": 10000,
-              "duration_ms": 3019,
-              "caption": "这一章会看每个容器解决什么问题。"
+              "duration_ms": 1764,
+              "caption": "每个容器解决什么问题。"
             }
           ]
         }
@@ -53,8 +53,8 @@
           "asset_id": "narration_introduction_021_std_types",
           "clips": [
             {
-              "offset_ms": 14000,
-              "duration_ms": 3429,
+              "offset_ms": 12000,
+              "duration_ms": 3444,
               "caption": "把它们连起来理解，会比逐个记更容易。"
             }
           ]

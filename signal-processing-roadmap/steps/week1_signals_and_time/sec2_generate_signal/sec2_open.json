@@ -20,8 +20,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5557,
-              "caption": "This is the Intro notebook for 1.2; the title cell states that the unit generates and plots simple <c.aqua>signals</c.aqua>."
+              "duration_ms": 5582,
+              "caption": "This is the Intro notebook for 1.2; the title cell states that the unit generates and plots simple <emphasis level=\"strong\">signals</emphasis>."
             }
           ]
         }
@@ -41,8 +41,8 @@
           "clips": [
             {
               "offset_ms": 6000,
-              "duration_ms": 5506,
-              "caption": "This section generates <c.aqua>sine signals</c.aqua>. Hold on to three parameters first: <c.aqua>amplitude</c.aqua> A, <c.aqua>frequency</c.aqua> f, initial phase phi."
+              "duration_ms": 5617,
+              "caption": "This section generates <emphasis level=\"strong\">sine signals</emphasis>. Hold on to three parameters first: <emphasis level=\"strong\">amplitude</emphasis> A, <emphasis level=\"strong\">frequency</emphasis> f, initial phase phi."
             }
           ]
         }
@@ -56,7 +56,7 @@
           "clips": [
             {
               "offset_ms": 12000,
-              "duration_ms": 6499,
+              "duration_ms": 6459,
               "caption": "The formula is x(t) equals A times sin(2πft plus phi). Do not memorize it yet; watch how the figure changes as each parameter changes."
             }
           ]
@@ -77,7 +77,7 @@
           "clips": [
             {
               "offset_ms": 19000,
-              "duration_ms": 5204,
+              "duration_ms": 5219,
               "caption": "The closing formula cell is a reference to look back at; next we write it line by line in the lesson notebook."
             }
           ]

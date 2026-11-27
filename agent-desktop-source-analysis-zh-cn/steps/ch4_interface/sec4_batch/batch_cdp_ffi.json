@@ -7,9 +7,11 @@
       "path": "../../resources/agent-desktop/src/batch/mod.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 6000,
+              "offset_ms": 0,
+              "duration_ms": 5298,
               "caption": "除了单条命令，还有 batch：一次进程执行多条命令，但不是事务。"
             }
           ]
@@ -27,17 +29,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 9000,
-              "caption": "preparation 先校验所有条目，execution 再逐条执行；前面的条目成功、后面的失败不会回滚。结果按条目返回，失败会标明位置。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "校",
-                  "p": "JIAO4"
-                }
-              ]
+              "offset_ms": 6000,
+              "duration_ms": 10685,
+              "caption": "preparation 先<sub alias=\"JIAO4\">校</sub>验所有条目，execution 再逐条执行；前面的条目成功、后面的失败不会回滚。结果按条目返回，失败会标明位置。"
             }
           ]
         }
@@ -48,9 +45,11 @@
       "path": "../../resources/agent-desktop/src/cli/mod.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 5500,
+              "offset_ms": 17000,
+              "duration_ms": 5954,
               "caption": "再看 Chromium/Electron 的边界：桌面 UI 归 agent-desktop，web 内容交给 agent-browser。"
             }
           ]
@@ -68,9 +67,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 8000,
+              "offset_ms": 23000,
+              "duration_ms": 8480,
               "caption": "launch 的 --cdp 会验证 DevTools 端口，把 web 内容交给 agent-browser；agent-desktop 只继续负责原生窗口和无障碍树。"
             }
           ]
@@ -82,9 +83,11 @@
       "path": "../../resources/agent-desktop/crates/ffi/src/lib.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 5500,
+              "offset_ms": 32000,
+              "duration_ms": 2050,
               "caption": "最后回到 FFI 的线程边界。"
             }
           ]
@@ -102,9 +105,11 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch4_interface_sec4_batch",
           "clips": [
             {
-              "duration_ms": 8500,
+              "offset_ms": 35000,
+              "duration_ms": 10567,
               "caption": "adapter 可以跨线程调用，但原生元素句柄是线程绑定的：在哪个线程解析，就在哪个线程释放；桌面变更由跨进程租约串行化。"
             }
           ]

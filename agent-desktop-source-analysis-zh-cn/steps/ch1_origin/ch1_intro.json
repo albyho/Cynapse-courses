@@ -12,7 +12,7 @@
             {
               "offset_ms": 0,
               "duration_ms": 4362,
-              "caption": "第 1 章，<c.aqua>观察、引用与失效</c.aqua>。三个词就是这一章的顺序。"
+              "caption": "第 1 章，<emphasis level=\"strong\">观察、引用与失效</emphasis>。三个词就是这一章的顺序。"
             }
           ]
         }
@@ -56,14 +56,7 @@
             {
               "offset_ms": 15000,
               "duration_ms": 8315,
-              "caption": "完整链路先放在这里当背景：snapshot 读树，返回 tree、<c.aqua>ref</c.aqua>map 和 snapshot id；后面两步行动属于第 2 章。",
-              "speech_edits": [
-                {
-                  "i": 58,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "caption": "完整链路先放在这里当背景：snapshot 读树，返回 tree、<emphasis level=\"strong\">ref</emphasis>map 和 snapshot id；后面两步<sub alias=\"XING2\">行</sub>动属于第 2 章。"
             }
           ]
         }
@@ -85,7 +78,7 @@
             {
               "offset_ms": 24000,
               "duration_ms": 5530,
-              "caption": "链路里有<c.aqua>两次观察</c.aqua>；本章只处理第一次观察，以及它产出的引用。"
+              "caption": "链路里有<emphasis level=\"strong\">两次观察</emphasis>；本章只处理第一次观察，以及它产出的引用。"
             }
           ]
         }
@@ -107,14 +100,7 @@
             {
               "offset_ms": 30000,
               "duration_ms": 9339,
-              "caption": "五节按“观察 → 引用 → 完整性 → 失效”排：1.1 模块地图、1.2 观察、1.3 引用、1.4 完整性、1.5 下钻与失效。",
-              "speech_edits": [
-                {
-                  "i": 61,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "五节按“观察 → 引用 → 完整性 → 失效”排：1.1 模块地图、1.2 观察、1.3 引用、1.4 完整性、1.5 下<sub alias=\"ZUAN1\">钻</sub>与失效。"
             }
           ]
         }
@@ -158,7 +144,7 @@
             {
               "offset_ms": 47000,
               "duration_ms": 7857,
-              "caption": "关键对象先扫一眼：SnapshotResult、RefMap、RefEntry 属于本章；p<c.aqua>ref</c.aqua>light、ActionRequest、dispatch 留到第 2 章。"
+              "caption": "关键对象先扫一眼：SnapshotResult、RefMap、RefEntry 属于本章；p<emphasis level=\"strong\">ref</emphasis>light、ActionRequest、dispatch 留到第 2 章。"
             }
           ]
         }
@@ -180,29 +166,7 @@
             {
               "offset_ms": 55000,
               "duration_ms": 9480,
-              "caption": "读每节带着三个问题：旧<c.aqua>快照</c.aqua>还能用吗？判断依赖坐标还是身份证据？失败该重试、恢复，还是关闭？",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "还",
-                  "p": "HAI2"
-                },
-                {
-                  "i": 24,
-                  "s": "还",
-                  "p": "HAI2"
-                },
-                {
-                  "i": 34,
-                  "s": "重",
-                  "p": "CHONG2"
-                },
-                {
-                  "i": 40,
-                  "s": "还",
-                  "p": "HAI2"
-                }
-              ]
+              "caption": "读每节带着三个问题：旧<emphasis level=\"strong\">快照</emphasis><sub alias=\"HAI2\">还</sub>能用吗？判断依赖坐标<sub alias=\"HAI2\">还</sub>是身份证据？失败该<sub alias=\"CHONG2\">重</sub>试、恢复，<sub alias=\"HAI2\">还</sub>是关闭？"
             }
           ]
         }
@@ -224,14 +188,7 @@
             {
               "offset_ms": 65000,
               "duration_ms": 7627,
-              "caption": "读完应能说清 snapshot 三条分支、四个完整性字段、下钻规则，以及 <c.aqua>ref</c.aqua> 过期后的两种结局。",
-              "speech_edits": [
-                {
-                  "i": 30,
-                  "s": "钻",
-                  "p": "ZUAN1"
-                }
-              ]
+              "caption": "读完应能说清 snapshot 三条分支、四个完整性字段、下<sub alias=\"ZUAN1\">钻</sub>规则，以及 <emphasis level=\"strong\">ref</emphasis> 过期后的两种结局。"
             }
           ]
         }
@@ -275,7 +232,7 @@
             {
               "offset_ms": 81000,
               "duration_ms": 6581,
-              "caption": "<c.aqua>快照</c.aqua>是某一刻把目录抄下来并贴临时编号；它不是截图，记录结构不是像素。"
+              "caption": "<emphasis level=\"strong\">快照</emphasis>是某一刻把目录抄下来并贴临时编号；它不是截图，记录结构不是像素。"
             }
           ]
         }
@@ -297,7 +254,7 @@
             {
               "offset_ms": 88000,
               "duration_ms": 5896,
-              "caption": "<c.aqua>ref</c.aqua> 是那个临时编号，只在这次快照里有效；跨命令使用必须带快照 id。"
+              "caption": "<emphasis level=\"strong\">ref</emphasis> 是那个临时编号，只在这次快照里有效；跨命令使用必须带快照 id。"
             }
           ]
         }

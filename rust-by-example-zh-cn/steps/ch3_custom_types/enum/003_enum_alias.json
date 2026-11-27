@@ -10,7 +10,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5331,
+              "duration_ms": 5293,
               "caption": "名字太长的类型可以用 type 取别名，impl 里用 Self 指代类型本身。"
             }
           ]
@@ -25,15 +25,8 @@
           "clips": [
             {
               "offset_ms": 6000,
-              "duration_ms": 3707,
-              "caption": "把很长的<c.aqua>枚举</c.aqua>名收进<c.aqua>类型</c.aqua>别名 Operations。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 3753,
+              "caption": "把很<sub alias=\"CHANG2\">长</sub>的<emphasis level=\"strong\">枚举</emphasis>名收进<emphasis level=\"strong\">类型</emphasis>别名 Operations。"
             }
           ]
         }
@@ -61,27 +54,13 @@
           "clips": [
             {
               "offset_ms": 10000,
-              "duration_ms": 5657,
-              "caption": "接下来在 operations.rs 里把很长的<c.aqua>枚举</c.aqua>名收进<c.aqua>类型</c.aqua>别名 Operations。",
-              "speech_edits": [
-                {
-                  "i": 22,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 5806,
+              "caption": "接下来在 operations.rs 里把很<sub alias=\"CHANG2\">长</sub>的<emphasis level=\"strong\">枚举</emphasis>名收进<emphasis level=\"strong\">类型</emphasis>别名 Operations。"
             },
             {
               "offset_ms": 16000,
-              "duration_ms": 3241,
-              "caption": "逐行写入<c.aqua>枚举</c.aqua>、<c.aqua>类型</c.aqua>别名和 run <c.aqua>方法</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 3323,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入<emphasis level=\"strong\">枚举</emphasis>、<emphasis level=\"strong\">类型</emphasis>别名和 run <emphasis level=\"strong\">方法</emphasis>。"
             }
           ]
         },
@@ -90,37 +69,23 @@
           "clips": [
             {
               "offset_ms": 20000,
-              "duration_ms": 4181,
-              "caption": "先写一个名字很长的<c.aqua>枚举</c.aqua>，只有 Add 和 Subtract。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 4140,
+              "caption": "先写一个名字很<sub alias=\"CHANG2\">长</sub>的<emphasis level=\"strong\">枚举</emphasis>，只有 Add 和 Subtract。"
             },
             {
               "offset_ms": 25000,
-              "duration_ms": 2395,
+              "duration_ms": 2514,
               "caption": "再用 type 给它取别名 Operations。"
             },
             {
               "offset_ms": 28000,
-              "duration_ms": 2683,
-              "caption": "impl 里用 Self 写 run，按<c.aqua>变体</c.aqua>做加减。"
+              "duration_ms": 2699,
+              "caption": "impl 里用 Self 写 run，按<emphasis level=\"strong\">变体</emphasis>做加减。"
             },
             {
               "offset_ms": 31000,
-              "duration_ms": 4180,
-              "caption": "main 通过别名取<c.aqua>变体</c.aqua>，调用 run 算出 14 和 6。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "调",
-                  "p": "DIAO4"
-                }
-              ]
+              "duration_ms": 3851,
+              "caption": "main 通过别名取<emphasis level=\"strong\">变体</emphasis>，<sub alias=\"DIAO4\">调</sub>用 run 算出 14 和 6。"
             }
           ]
         }
@@ -150,8 +115,8 @@
           "asset_id": "narration_ch3_custom_types_enum_003_enum_alias",
           "clips": [
             {
-              "offset_ms": 36000,
-              "duration_ms": 904,
+              "offset_ms": 35000,
+              "duration_ms": 1362,
               "caption": "编译通过。"
             }
           ]
@@ -177,15 +142,8 @@
           "clips": [
             {
               "offset_ms": 37000,
-              "duration_ms": 4822,
-              "caption": "两个<c.aqua>变体</c.aqua>分别算出 14 和 6，说明别名不影响行为。",
-              "speech_edits": [
-                {
-                  "i": 23,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 4929,
+              "caption": "两个<emphasis level=\"strong\">变体</emphasis>分别算出 14 和 6，说明别名不影响<sub alias=\"XING2\">行</sub>为。"
             }
           ]
         }

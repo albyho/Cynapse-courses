@@ -10,15 +10,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 3751,
-              "caption": "E0070 说明 const 不能在运行时<c.aqua>赋值</c.aqua>",
-              "speech_edits": [
-                {
-                  "i": 19,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 3498,
+              "caption": "E0070 说明 const 不能在代码里<emphasis level=\"strong\">赋值</emphasis>。"
             }
           ]
         }
@@ -32,8 +25,8 @@
           "clips": [
             {
               "offset_ms": 4000,
-              "duration_ms": 4767,
-              "caption": "<c.aqua>注释</c.aqua>掉非法<c.aqua>赋值</c.aqua>后，程序<c.aqua>打印</c.aqua> Rust、阈值 10 和 16 is big。"
+              "duration_ms": 4988,
+              "caption": "<emphasis level=\"strong\">注释</emphasis>掉非法<emphasis level=\"strong\">赋值</emphasis>后，程序打印 Rust、阈值 10 和 16 is big。"
             }
           ]
         }

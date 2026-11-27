@@ -20,8 +20,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5950,
-              "caption": "Welcome to Signal Processing Roadmap. We do not assume the full mathematics first; we start with <c.aqua>signals</c.aqua> we can see and draw."
+              "duration_ms": 6004,
+              "caption": "Welcome to Signal Processing Roadmap. We do not assume the full mathematics first; we start with <emphasis level=\"strong\">signals</emphasis> we can see and draw."
             }
           ]
         }
@@ -40,9 +40,9 @@
           "asset_id": "narration_introduction",
           "clips": [
             {
-              "offset_ms": 6000,
-              "duration_ms": 6006,
-              "caption": "A <c.aqua>signal</c.aqua> is a quantity that changes over time or space: a sound wave, the rise and fall of an ECG, a radar echo, a sensor reading."
+              "offset_ms": 7000,
+              "duration_ms": 5933,
+              "caption": "A <emphasis level=\"strong\">signal</emphasis> is a quantity that changes over time or space: a sound wave, the rise and fall of an ECG, a radar echo, a sensor reading."
             }
           ]
         }
@@ -56,8 +56,8 @@
           "clips": [
             {
               "offset_ms": 13000,
-              "duration_ms": 5866,
-              "caption": "Signal processing comes down to this: generate or acquire, <c.aqua>observe</c.aqua>, transform, analyze, then use the result to judge or apply."
+              "duration_ms": 6042,
+              "caption": "Signal processing comes down to this: generate or acquire, <emphasis level=\"strong\">observe</emphasis>, transform, analyze, then use the result to judge or apply."
             }
           ]
         }

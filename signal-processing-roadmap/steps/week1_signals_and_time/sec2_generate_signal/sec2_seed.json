@@ -20,8 +20,8 @@
           "clips": [
             {
               "offset_ms": 25000,
-              "duration_ms": 4322,
-              "caption": "The intro cell says which <c.aqua>signal</c.aqua> this unit generates; then come two base cells from the Seed."
+              "duration_ms": 4473,
+              "caption": "The intro cell says which <emphasis level=\"strong\">signal</emphasis> this unit generates; then come two base cells from the Seed."
             }
           ]
         }
@@ -41,7 +41,7 @@
           "clips": [
             {
               "offset_ms": 30000,
-              "duration_ms": 4280,
+              "duration_ms": 4196,
               "caption": "setup_imports imports NumPy and Matplotlib; all the plotting that follows depends on it."
             }
           ]
@@ -59,7 +59,7 @@
           "clips": [
             {
               "offset_ms": 35000,
-              "duration_ms": 3057,
+              "duration_ms": 3056,
               "caption": "Running it shows no output, but both libraries are ready to use."
             }
           ]
@@ -80,8 +80,8 @@
           "clips": [
             {
               "offset_ms": 39000,
-              "duration_ms": 5027,
-              "caption": "setup_exercise prepares the exercise <c.aqua>time axis</c.aqua> t; the hands-on step later uses this variable directly."
+              "duration_ms": 5059,
+              "caption": "setup_exercise prepares the exercise <emphasis level=\"strong\">time axis</emphasis> t; the hands-on step later uses this variable directly."
             }
           ]
         }
@@ -98,8 +98,8 @@
           "clips": [
             {
               "offset_ms": 45000,
-              "duration_ms": 3836,
-              "caption": "After running, t is ready; the exercise does not need to build a <c.aqua>time axis</c.aqua> by hand."
+              "duration_ms": 3810,
+              "caption": "After running, t is ready; the exercise does not need to build a <emphasis level=\"strong\">time axis</emphasis> by hand."
             }
           ]
         }

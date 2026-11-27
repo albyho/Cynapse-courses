@@ -10,8 +10,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7261,
-              "caption": "E0384 说明<c.aqua>不可变</c.aqua><c.aqua>绑定</c.aqua>不能二次<c.aqua>赋值</c.aqua>；注释掉非法行后，可变绑定从 1 变成 2。"
+              "duration_ms": 7162,
+              "caption": "E0384 说明<emphasis level=\"strong\">不可变绑定</emphasis>不能二次<emphasis level=\"strong\">赋值</emphasis>；注释掉非法行后，可变绑定从 1 变成 2。"
             }
           ]
         }

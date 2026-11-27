@@ -36,15 +36,8 @@
           "clips": [
             {
               "offset_ms": 97000,
-              "duration_ms": 6887,
-              "caption": "接下来把 1 Hz 波形向右平移 0.25 秒；只改变发生时间，不改变<c.aqua>频率</c.aqua>和形状。",
-              "speech_edits": [
-                {
-                  "i": 36,
-                  "s": "率",
-                  "p": "LV4"
-                }
-              ]
+              "duration_ms": 6907,
+              "caption": "接下来把 1 Hz 波形向右平移 0.25 秒；只改变发生时间，不改变<emphasis level=\"strong\">频<sub alias=\"LV4\">率</sub></emphasis>和形状。"
             }
           ]
         },
@@ -53,20 +46,8 @@
           "clips": [
             {
               "offset_ms": 104000,
-              "duration_ms": 11492,
-              "caption": "<c.aqua>时移</c.aqua>是把整个波形沿<c.aqua>时间轴</c.aqua>平移。这里把 t 换成 t 减 0.25，波形向右移动 0.25 秒。<c.aqua>频率</c.aqua>和形状不变，只是发生的时间变了。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                },
-                {
-                  "i": 48,
-                  "s": "率",
-                  "p": "LV4"
-                }
-              ]
+              "duration_ms": 11452,
+              "caption": "<emphasis level=\"strong\">时移</emphasis>是把整个波形沿<emphasis level=\"strong\">时间<sub alias=\"ZHOU2\">轴</sub></emphasis>平移。这里把 t 换成 t 减 0.25，波形向右移动 0.25 秒。<emphasis level=\"strong\">频<sub alias=\"LV4\">率</sub></emphasis>和形状不变，只是发生的时间变了。"
             }
           ]
         }

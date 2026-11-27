@@ -54,21 +54,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 60000,
-              "duration_ms": 4288,
-              "caption": "先建立<c.aqua>采样时间</c.aqua>轴：每秒 100 个<c.aqua>样本</c.aqua>，持续 1 秒。",
-              "speech_edits": [
-                {
-                  "i": 3,
-                  "s": "采",
-                  "p": "CAI3"
-                },
-                {
-                  "i": 7,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                }
-              ]
+              "offset_ms": 61000,
+              "duration_ms": 4891,
+              "caption": "先建立<emphasis level=\"strong\"><sub alias=\"CAI3\">采</sub>样时间</emphasis><sub alias=\"ZHOU2\">轴</sub>：每秒 100 个<emphasis level=\"strong\">样本</emphasis>，持续 1 秒。"
             }
           ]
         }
@@ -88,16 +76,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 65000,
-              "duration_ms": 1964,
-              "caption": "接下来写正弦公式。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "弦",
-                  "p": "XIAN2"
-                }
-              ]
+              "offset_ms": 66000,
+              "duration_ms": 2001,
+              "caption": "接下来写正<sub alias=\"XIAN2\">弦</sub>公式。"
             }
           ]
         },
@@ -105,31 +86,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 67000,
-              "duration_ms": 5062,
-              "caption": "注意这一行同时包含<c.aqua>振幅</c.aqua> A、<c.aqua>频率</c.aqua> f 和<c.aqua>初相位</c.aqua> phi。",
-              "speech_edits": [
-                {
-                  "i": 4,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 10,
-                  "s": "幅",
-                  "p": "FU2"
-                },
-                {
-                  "i": 15,
-                  "s": "率",
-                  "p": "LV4"
-                },
-                {
-                  "i": 21,
-                  "s": "相",
-                  "p": "XIANG4"
-                }
-              ]
+              "offset_ms": 69000,
+              "duration_ms": 4698,
+              "caption": "注意这一<sub alias=\"HANG2\">行</sub>同时包含<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis> A、<emphasis level=\"strong\">频<sub alias=\"LV4\">率</sub></emphasis> f 和<emphasis level=\"strong\">初<sub alias=\"XIANG4\">相</sub>位</emphasis> phi。"
             }
           ]
         }
@@ -149,21 +108,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 73000,
-              "duration_ms": 4765,
-              "caption": "最后打印<c.aqua>样本</c.aqua>数、<c.aqua>周期</c.aqua>和<c.aqua>角频率</c.aqua>，运行后逐项核对。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "率",
-                  "p": "LV4"
-                },
-                {
-                  "i": 16,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 74000,
+              "duration_ms": 4799,
+              "caption": "最后打印<emphasis level=\"strong\">样本</emphasis>数、<emphasis level=\"strong\">周期</emphasis>和<emphasis level=\"strong\">角频<sub alias=\"LV4\">率</sub></emphasis>，运<sub alias=\"XING2\">行</sub>后逐项核对。"
             }
           ]
         }
@@ -179,46 +126,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 78000,
-              "duration_ms": 9891,
-              "caption": "先建立 1 秒的<c.aqua>时间轴</c.aqua>，再按<c.aqua>振幅</c.aqua>、<c.aqua>频率</c.aqua>和初相位生成正弦信号。运行后先看样本数量和周期。",
-              "speech_edits": [
-                {
-                  "i": 10,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                },
-                {
-                  "i": 15,
-                  "s": "幅",
-                  "p": "FU2"
-                },
-                {
-                  "i": 18,
-                  "s": "率",
-                  "p": "LV4"
-                },
-                {
-                  "i": 21,
-                  "s": "相",
-                  "p": "XIANG4"
-                },
-                {
-                  "i": 26,
-                  "s": "弦",
-                  "p": "XIAN2"
-                },
-                {
-                  "i": 31,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 38,
-                  "s": "量",
-                  "p": "LIANG4"
-                }
-              ]
+              "offset_ms": 79000,
+              "duration_ms": 9989,
+              "caption": "先建立 1 秒的<emphasis level=\"strong\">时间<sub alias=\"ZHOU2\">轴</sub></emphasis>，再按<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis>、<emphasis level=\"strong\">频<sub alias=\"LV4\">率</sub></emphasis>和初<sub alias=\"XIANG4\">相</sub>位生成正<sub alias=\"XIAN2\">弦</sub>信号。运<sub alias=\"XING2\">行</sub>后先看样本数<sub alias=\"LIANG4\">量</sub>和周期。"
             }
           ]
         },
@@ -226,9 +136,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 88000,
-              "duration_ms": 11153,
-              "caption": "我们以每秒 100 个<c.aqua>样本</c.aqua>生成 1 秒数据，也就是 100 个时间点。A 等于 1，f 等于 2 Hz，phi 等于 0。2 Hz 表示每秒 2 个完整<c.aqua>周期</c.aqua>。"
+              "offset_ms": 89000,
+              "duration_ms": 11353,
+              "caption": "我们以每秒 100 个<emphasis level=\"strong\">样本</emphasis>生成 1 秒数据，也就是 100 个时间点。A 等于 1，f 等于 2 Hz，phi 等于 0。2 Hz 表示每秒 2 个完整<emphasis level=\"strong\">周期</emphasis>。"
             }
           ]
         }
@@ -241,21 +151,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 100000,
-              "duration_ms": 7094,
-              "caption": "运行后先确认<c.aqua>样本</c.aqua>数量和<c.aqua>周期</c.aqua>。周期 T 等于 1 除以 f，所以这里是 0.5 秒。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 9,
-                  "s": "量",
-                  "p": "LIANG4"
-                }
-              ]
+              "offset_ms": 101000,
+              "duration_ms": 7001,
+              "caption": "运<sub alias=\"XING2\">行</sub>后先确认<emphasis level=\"strong\">样本</emphasis>数<sub alias=\"LIANG4\">量</sub>和<emphasis level=\"strong\">周期</emphasis>。周期 T 等于 1 除以 f，所以这里是 0.5 秒。"
             }
           ]
         }

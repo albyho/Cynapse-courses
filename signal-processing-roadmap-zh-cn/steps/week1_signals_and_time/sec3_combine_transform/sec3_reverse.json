@@ -36,15 +36,8 @@
           "clips": [
             {
               "offset_ms": 116000,
-              "duration_ms": 12805,
-              "caption": "<c.aqua>反转</c.aqua>是把<c.aqua>样本</c.aqua>顺序倒过来。对有限长序列，第一个样本变到最后，最后一个变到最前。它和<c.aqua>振幅</c.aqua>取负不是一回事：一个改变顺序，一个改变上下方向。",
-              "speech_edits": [
-                {
-                  "i": 41,
-                  "s": "幅",
-                  "p": "FU2"
-                }
-              ]
+              "duration_ms": 12804,
+              "caption": "<emphasis level=\"strong\">反转</emphasis>是把<emphasis level=\"strong\">样本</emphasis>顺序倒过来。对有限长序列，第一个样本变到最后，最后一个变到最前。它和<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis>取负不是一回事：一个改变顺序，一个改变上下方向。"
             }
           ]
         }

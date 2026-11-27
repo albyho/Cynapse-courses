@@ -12,25 +12,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5810,
-              "caption": "这一节用<c.aqua>枚举</c.aqua><c.aqua>实现</c.aqua>链表，观察<c.aqua>递归</c.aqua>操作怎样遍历 Cons 与 Nil 两种变体。"
+              "duration_ms": 5630,
+              "caption": "这一节用<emphasis level=\"strong\">枚举</emphasis><emphasis level=\"strong\">实现</emphasis>链表，观察<emphasis level=\"strong\">递归</emphasis>操作怎样遍历 Cons 与 Nil 两种变体。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 7093,
-              "caption": "链表天然适合用<c.aqua>枚举</c.aqua>表达：Cons 携带一个<c.aqua>元素</c.aqua>和一个指向后续节点的 Box，Nil 表示结束。"
+              "duration_ms": 7338,
+              "caption": "链表天然适合用<emphasis level=\"strong\">枚举</emphasis>表达：Cons 携带一个<emphasis level=\"strong\">元素</emphasis>和一个指向后续节点的 Box，Nil 表示结束。"
             },
             {
               "offset_ms": 14000,
-              "duration_ms": 4882,
-              "caption": "len 和 stringify 都靠<c.aqua>递归</c.aqua>处理 tail，Nil 是它们的基准情形。",
-              "speech_edits": [
-                {
-                  "i": 20,
-                  "s": "处",
-                  "p": "CHU3"
-                }
-              ]
+              "duration_ms": 4905,
+              "caption": "len 和 stringify 都靠<emphasis level=\"strong\">递归</emphasis><sub alias=\"CHU3\">处</sub>理 tail，Nil 是它们的基准情形。"
             }
           ]
         }

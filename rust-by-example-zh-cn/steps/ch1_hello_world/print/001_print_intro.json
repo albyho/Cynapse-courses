@@ -12,64 +12,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 8130,
-              "caption": "这一节学习 Rust 的<c.aqua>格式化</c.aqua>输出，认识 std::fmt 里的<c.aqua>打印宏</c.aqua>，并观察占位符怎样把值填进输出。",
-              "speech_edits": [
-                {
-                  "i": 24,
-                  "s": "::",
-                  "p": "双冒号"
-                }
-              ]
+              "duration_ms": 8190,
+              "caption": "这一节学习 Rust 的<emphasis level=\"strong\">格式化</emphasis>输出，认识 std<sub alias=\"双冒号\">::</sub>fmt 里的<emphasis level=\"strong\">打印宏</emphasis>，并观察占位符怎样把值填进输出。"
             },
             {
               "offset_ms": 9000,
-              "duration_ms": 5185,
-              "caption": "format!、print!、println!、eprint!、eprintln! 共用一套格式语法",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "format!",
-                  "p": "format 宏"
-                },
-                {
-                  "i": 8,
-                  "s": "print!",
-                  "p": "print 宏"
-                },
-                {
-                  "i": 15,
-                  "s": "println!",
-                  "p": "println 宏"
-                },
-                {
-                  "i": 24,
-                  "s": "eprint!",
-                  "p": "eprint 宏"
-                },
-                {
-                  "i": 32,
-                  "s": "eprintln!",
-                  "p": "eprintln 宏"
-                }
-              ]
+              "duration_ms": 5217,
+              "caption": "<sub alias=\"format 宏\">format!</sub>、<sub alias=\"print 宏\">print!</sub>、<sub alias=\"println 宏\">println!</sub>、<sub alias=\"eprint 宏\">eprint!</sub>、<sub alias=\"eprintln 宏\">eprintln!</sub> 共用一套格式语法"
             },
             {
               "offset_ms": 15000,
-              "duration_ms": 5040,
-              "caption": "下面演示位置<c.aqua>参数</c.aqua>、命名<c.aqua>参数</c.aqua>，以及宽度和对齐格式。",
-              "speech_edits": [
-                {
-                  "i": 6,
-                  "s": "参",
-                  "p": "CAN1"
-                },
-                {
-                  "i": 11,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 4991,
+              "caption": "下面演示<emphasis level=\"strong\">位置<sub alias=\"CAN1\">参</sub>数</emphasis>、<emphasis level=\"strong\">命名<sub alias=\"CAN1\">参</sub>数</emphasis>，以及宽度和对齐格式。"
             }
           ]
         }
@@ -82,8 +36,8 @@
           "asset_id": "narration_ch1_hello_world_print_001_print_intro",
           "clips": [
             {
-              "offset_ms": 21000,
-              "duration_ms": 2778,
+              "offset_ms": 20000,
+              "duration_ms": 2732,
               "caption": "格式是否正确在编译期就被检查。"
             }
           ]

@@ -18,7 +18,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6743,
+              "duration_ms": 6794,
               "caption": "元组把不同类型的值组合在一起，可以用下标访问，也能一次解构成多个变量。"
             }
           ]
@@ -39,8 +39,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 5546,
-              "caption": "接下来在 tuples.rs 里写入<c.aqua>下标</c.aqua>访问、嵌套、<c.aqua>解构</c.aqua>和多值返回的示例。"
+              "duration_ms": 5440,
+              "caption": "接下来在 tuples.rs 里写入<emphasis level=\"strong\">下标</emphasis>访问、嵌套、<emphasis level=\"strong\">解构</emphasis>和多值返回的示例。"
             }
           ]
         },
@@ -49,15 +49,8 @@
           "clips": [
             {
               "offset_ms": 13000,
-              "duration_ms": 6692,
-              "caption": "先看 reverse：元组作参数，<c.aqua>解构</c.aqua>出两个元素，再以交换后的顺序返回一个元组。",
-              "speech_edits": [
-                {
-                  "i": 14,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 6739,
+              "caption": "先看 reverse：元组作<sub alias=\"CAN1\">参</sub>数，<emphasis level=\"strong\">解构</emphasis>出两个元素，再以交换后的顺序返回一个元组。"
             }
           ]
         }
@@ -77,8 +70,8 @@
           "clips": [
             {
               "offset_ms": 20000,
-              "duration_ms": 4558,
-              "caption": "Matrix 是一个<c.aqua>元组结构体</c.aqua>，后面的练习要给它<c.aqua>实现</c.aqua> Display。"
+              "duration_ms": 4653,
+              "caption": "Matrix 是一个<emphasis level=\"strong\">元组结构体</emphasis>，后面的练习要给它<emphasis level=\"strong\">实现</emphasis> Display。"
             }
           ]
         }
@@ -98,32 +91,18 @@
           "clips": [
             {
               "offset_ms": 25000,
-              "duration_ms": 4508,
-              "caption": "main 从长元组开始：用 .0、.1 取值，再看元组套元组。",
-              "speech_edits": [
-                {
-                  "i": 6,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "duration_ms": 4535,
+              "caption": "main 从<sub alias=\"CHANG2\">长</sub>元组开始：用 .0、.1 取值，再看元组套元组。"
             },
             {
               "offset_ms": 30000,
-              "duration_ms": 5942,
-              "caption": "下面<c.aqua>注释</c.aqua>掉的两行说明超过 12 个元素的元组无法用 Debug 打印。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 6027,
+              "caption": "下面<emphasis level=\"strong\">注释</emphasis>掉的两<sub alias=\"HANG2\">行</sub>说明超过 12 个元素的元组无法用 Debug 打印。"
             },
             {
-              "offset_ms": 36000,
-              "duration_ms": 5975,
-              "caption": "后半段是单元素元组的逗号、<c.aqua>解构</c.aqua>成四个变量，最后构造并打印 Matrix。"
+              "offset_ms": 37000,
+              "duration_ms": 5828,
+              "caption": "后半段是单元素元组的逗号、<emphasis level=\"strong\">解构</emphasis>成四个变量，最后构造并打印 Matrix。"
             }
           ]
         },
@@ -131,48 +110,34 @@
           "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
           "clips": [
             {
-              "offset_ms": 42000,
-              "duration_ms": 4607,
-              "caption": "先写包含多种<c.aqua>类型</c.aqua>的长<c.aqua>元组</c.aqua>，再用 .0 和 .1 取值。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "offset_ms": 43000,
+              "duration_ms": 4622,
+              "caption": "先写包含多种<emphasis level=\"strong\">类型</emphasis>的<sub alias=\"CHANG2\">长</sub><emphasis level=\"strong\">元组</emphasis>，再用 .0 和 .1 取值。"
             },
             {
-              "offset_ms": 47000,
-              "duration_ms": 3227,
-              "caption": "接着写元组套元组，并用 Debug 打印。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "着",
-                  "p": "ZHE5"
-                }
-              ]
+              "offset_ms": 48000,
+              "duration_ms": 3186,
+              "caption": "接<sub alias=\"ZHE5\">着</sub>写元组套元组，并用 Debug 打印。"
             },
             {
-              "offset_ms": 51000,
-              "duration_ms": 4245,
-              "caption": "超过十二个元素的元组无法 Debug 打印，保持<c.aqua>注释</c.aqua>。"
+              "offset_ms": 52000,
+              "duration_ms": 4204,
+              "caption": "超过十二个元素的元组无法 Debug 打印，保持<emphasis level=\"strong\">注释</emphasis>。"
             },
             {
-              "offset_ms": 56000,
-              "duration_ms": 4172,
+              "offset_ms": 57000,
+              "duration_ms": 3880,
               "caption": "再看 reverse 交换二元组，以及单元素元组的逗号。"
             },
             {
               "offset_ms": 61000,
-              "duration_ms": 3003,
-              "caption": "四<c.aqua>元组解构</c.aqua>成四个<c.aqua>变量</c.aqua>，各自打印。"
+              "duration_ms": 2995,
+              "caption": "四<emphasis level=\"strong\">元组解构</emphasis>成四个<emphasis level=\"strong\">变量</emphasis>，各自打印。"
             },
             {
-              "offset_ms": 65000,
-              "duration_ms": 2291,
-              "caption": "最后构造 Matrix，用 Debug <c.aqua>打印</c.aqua>。"
+              "offset_ms": 64000,
+              "duration_ms": 2273,
+              "caption": "最后构造 Matrix，用 Debug 打印。"
             }
           ]
         }
@@ -198,8 +163,8 @@
           "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
           "clips": [
             {
-              "offset_ms": 68000,
-              "duration_ms": 904,
+              "offset_ms": 67000,
+              "duration_ms": 924,
               "caption": "编译通过。"
             }
           ]
@@ -229,21 +194,9 @@
           "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
           "clips": [
             {
-              "offset_ms": 69000,
-              "duration_ms": 2362,
-              "caption": "运行，逐行核对输出。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 4,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 68000,
+              "duration_ms": 2368,
+              "caption": "运<sub alias=\"XING2\">行</sub>，逐<sub alias=\"HANG2\">行</sub>核对输出。"
             }
           ]
         },
@@ -251,50 +204,24 @@
           "asset_id": "narration_ch2_primitives_tuples_002_tuples_code",
           "clips": [
             {
-              "offset_ms": 72000,
-              "duration_ms": 5410,
-              "caption": "长<c.aqua>元组</c.aqua>的前两个值、嵌套<c.aqua>元组</c.aqua>、反转后的 pair 都<c.aqua>打印</c.aqua>出来了。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "offset_ms": 71000,
+              "duration_ms": 5298,
+              "caption": "<sub alias=\"CHANG2\">长</sub><emphasis level=\"strong\">元组</emphasis>的前两个值、嵌套<emphasis level=\"strong\">元组</emphasis>、反转后的 pair 都打印出来了。"
             },
             {
-              "offset_ms": 78000,
-              "duration_ms": 6921,
-              "caption": "(5,) 是单元素元组，(5) 只是一个整数，输出里的逗号就是区别。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "(5,)",
-                  "p": "圆括号 5 逗号"
-                },
-                {
-                  "i": 12,
-                  "s": "(5)",
-                  "p": "圆括号 5"
-                }
-              ]
+              "offset_ms": 77000,
+              "duration_ms": 6792,
+              "caption": "<sub alias=\"圆括号 5 逗号\">(5,)</sub> 是单元素元组，<sub alias=\"圆括号 5\">(5)</sub> 只是一个整数，输出里的逗号就是区别。"
             },
             {
-              "offset_ms": 85000,
-              "duration_ms": 3729,
-              "caption": "<c.aqua>解构</c.aqua>之后，四个<c.aqua>变量</c.aqua>各自拿到了对应位置的值。"
+              "offset_ms": 84000,
+              "duration_ms": 3835,
+              "caption": "<emphasis level=\"strong\">解构</emphasis>之后，四个<emphasis level=\"strong\">变量</emphasis>各自拿到了对应位置的值。"
             },
             {
-              "offset_ms": 89000,
-              "duration_ms": 6995,
-              "caption": "<c.aqua>注释</c.aqua>里的超长<c.aqua>元组</c.aqua>超过 12 个<c.aqua>元素</c.aqua>，Debug 无法打印，取消注释会看到编译错误。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "长",
-                  "p": "CHANG2"
-                }
-              ]
+              "offset_ms": 88000,
+              "duration_ms": 6694,
+              "caption": "<emphasis level=\"strong\">注释</emphasis>里的超<sub alias=\"CHANG2\">长</sub><emphasis level=\"strong\">元组</emphasis>超过 12 个<emphasis level=\"strong\">元素</emphasis>，Debug 无法打印，取消注释会看到编译错误。"
             }
           ]
         }

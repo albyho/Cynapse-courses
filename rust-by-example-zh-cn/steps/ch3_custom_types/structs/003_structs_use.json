@@ -10,15 +10,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7133,
-              "caption": "构造结构体时字段名和变量名相同可以简写；访问、更新和解构各有对应语法。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "相",
-                  "p": "XIANG1"
-                }
-              ]
+              "duration_ms": 7160,
+              "caption": "构造结构体时字段名和变量名<sub alias=\"XIANG1\">相</sub>同可以简写；访问、更新和解构各有对应语法。"
             }
           ]
         }
@@ -32,8 +25,8 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 4385,
-              "caption": "准备在 main 里用<c.aqua>字段</c.aqua>名与<c.aqua>变量</c.aqua>同名的简写构造 Person。"
+              "duration_ms": 4513,
+              "caption": "准备在 main 里用<emphasis level=\"strong\">字段</emphasis>名与<emphasis level=\"strong\">变量</emphasis>同名的简写构造 Person。"
             }
           ]
         }
@@ -61,8 +54,8 @@
           "clips": [
             {
               "offset_ms": 13000,
-              "duration_ms": 6773,
-              "caption": "main 里用<c.aqua>字段</c.aqua>名与<c.aqua>变量</c.aqua>同名的简写构造 Person，再用 Debug <c.aqua>打印</c.aqua>整个结构体的字段。"
+              "duration_ms": 6671,
+              "caption": "main 里用<emphasis level=\"strong\">字段</emphasis>名与<emphasis level=\"strong\">变量</emphasis>同名的简写构造 Person，再用 Debug 打印整个结构体的字段。"
             }
           ]
         }
@@ -86,8 +79,8 @@
           "clips": [
             {
               "offset_ms": 20000,
-              "duration_ms": 4703,
-              "caption": "Point <c.aqua>实例</c.aqua>化之后，用点号访问<c.aqua>字段</c.aqua>，读出两个坐标分量。"
+              "duration_ms": 4365,
+              "caption": "Point <emphasis level=\"strong\">实例</emphasis>化之后，用点号访问<emphasis level=\"strong\">字段</emphasis>，读出两个坐标分量。"
             }
           ]
         }
@@ -111,8 +104,8 @@
           "clips": [
             {
               "offset_ms": 25000,
-              "duration_ms": 7863,
-              "caption": "更新语法只写要改的字段，其余用 ..point 从旧值搬过来；let 配合模式把字段<c.aqua>解构</c.aqua>成两个变量。"
+              "duration_ms": 7810,
+              "caption": "更新语法只写要改的字段，其余用 ..point 从旧值搬过来；let 配合模式把字段<emphasis level=\"strong\">解构</emphasis>成两个变量。"
             }
           ]
         }
@@ -136,8 +129,8 @@
           "clips": [
             {
               "offset_ms": 33000,
-              "duration_ms": 6901,
-              "caption": "最后是嵌套<c.aqua>结构体</c.aqua>、<c.aqua>单元</c.aqua><c.aqua>结构体</c.aqua>和元组结构体：后者用 .0、.1 访问，也能一次解构。"
+              "duration_ms": 6874,
+              "caption": "最后是嵌套<emphasis level=\"strong\">结构体</emphasis>、<emphasis level=\"strong\">单元</emphasis><emphasis level=\"strong\">结构体</emphasis>和元组结构体：后者用 .0、.1 访问，也能一次解构。"
             }
           ]
         },
@@ -146,23 +139,23 @@
           "clips": [
             {
               "offset_ms": 40000,
-              "duration_ms": 2735,
+              "duration_ms": 2885,
               "caption": "先用两个 Point 构造嵌套的 Rectangle。"
             },
             {
               "offset_ms": 43000,
-              "duration_ms": 2078,
+              "duration_ms": 2241,
               "caption": "再实例化单元结构体 Unit。"
             },
             {
               "offset_ms": 46000,
-              "duration_ms": 3109,
-              "caption": "<c.aqua>元组结构体</c.aqua> Pair 可以用 .0 和 .1 访问。"
+              "duration_ms": 3222,
+              "caption": "<emphasis level=\"strong\">元组结构体</emphasis> Pair 可以用 .0 和 .1 访问。"
             },
             {
               "offset_ms": 50000,
-              "duration_ms": 2766,
-              "caption": "最后把 Pair <c.aqua>解构</c.aqua>成两个<c.aqua>变量</c.aqua><c.aqua>打印</c.aqua>。"
+              "duration_ms": 2747,
+              "caption": "最后把 Pair <emphasis level=\"strong\">解构</emphasis>成两个<emphasis level=\"strong\">变量</emphasis>打印。"
             }
           ]
         }
@@ -189,7 +182,7 @@
           "clips": [
             {
               "offset_ms": 53000,
-              "duration_ms": 904,
+              "duration_ms": 1324,
               "caption": "编译通过。"
             }
           ]
@@ -216,21 +209,9 @@
           "asset_id": "narration_ch3_custom_types_structs_003_structs_use",
           "clips": [
             {
-              "offset_ms": 54000,
-              "duration_ms": 2362,
-              "caption": "运行，逐行核对输出。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                },
-                {
-                  "i": 4,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 55000,
+              "duration_ms": 2345,
+              "caption": "运<sub alias=\"XING2\">行</sub>，逐<sub alias=\"HANG2\">行</sub>核对输出。"
             }
           ]
         },
@@ -238,26 +219,19 @@
           "asset_id": "narration_ch3_custom_types_structs_003_structs_use",
           "clips": [
             {
-              "offset_ms": 57000,
-              "duration_ms": 2502,
-              "caption": "Person 按 Debug <c.aqua>打印</c.aqua>出全部<c.aqua>字段</c.aqua>。"
+              "offset_ms": 58000,
+              "duration_ms": 2469,
+              "caption": "Person 按 Debug 打印出全部<emphasis level=\"strong\">字段</emphasis>。"
             },
             {
-              "offset_ms": 60000,
-              "duration_ms": 6857,
-              "caption": "point 的坐标是 (10.3, 0.4)，更新语法造出的第二个点<c.aqua>借用</c.aqua>了它的 y。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "(10.3, 0.4)",
-                  "p": "圆括号 10.3 逗号 0.4"
-                }
-              ]
+              "offset_ms": 61000,
+              "duration_ms": 7047,
+              "caption": "point 的坐标是 <sub alias=\"圆括号 10.3 逗号 0.4\">(10.3, 0.4)</sub>，更新语法造出的第二个点<emphasis level=\"strong\">复制</emphasis>了它的 y。"
             },
             {
-              "offset_ms": 67000,
-              "duration_ms": 4749,
-              "caption": "<c.aqua>元组结构体</c.aqua> Pair 既能用<c.aqua>下标</c.aqua>访问，也能解构成两个变量。"
+              "offset_ms": 69000,
+              "duration_ms": 4553,
+              "caption": "<emphasis level=\"strong\">元组结构体</emphasis> Pair 既能用<emphasis level=\"strong\">下标</emphasis>访问，也能解构成两个变量。"
             }
           ]
         }
@@ -271,16 +245,9 @@
           "asset_id": "narration_ch3_custom_types_structs_003_structs_use",
           "clips": [
             {
-              "offset_ms": 72000,
-              "duration_ms": 5976,
-              "caption": "Person 按 Debug <c.aqua>打印</c.aqua>出全部<c.aqua>字段</c.aqua>，我们对照源码看这一行是怎么来的。",
-              "speech_edits": [
-                {
-                  "i": 32,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 74000,
+              "duration_ms": 2653,
+              "caption": "我们对照源码看这一<sub alias=\"HANG2\">行</sub>是怎么来的。"
             }
           ]
         }

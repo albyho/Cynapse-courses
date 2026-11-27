@@ -12,44 +12,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 7221,
-              "caption": "这一节学习为多<c.aqua>元素</c.aqua>容器<c.aqua>实现</c.aqua> Display，观察怎样逐个输出<c.aqua>元素</c.aqua>并用 ? 传递写入错误。",
-              "speech_edits": [
-                {
-                  "i": 34,
-                  "s": " ? ",
-                  "p": "问号"
-                }
-              ]
+              "duration_ms": 7498,
+              "caption": "这一节学习为多<emphasis level=\"strong\">元素</emphasis>容器<emphasis level=\"strong\">实现</emphasis> Display，观察怎样逐个输出<emphasis level=\"strong\">元素</emphasis>并用<sub alias=\"问号\"> ? </sub>传递写入错误。"
             },
             {
               "offset_ms": 8000,
-              "duration_ms": 4641,
-              "caption": "为含有多个<c.aqua>元素</c.aqua>的容器<c.aqua>实现</c.aqua> Display 时，要逐个处理<c.aqua>元素</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 26,
-                  "s": "处",
-                  "p": "CHU3"
-                }
-              ]
+              "duration_ms": 5022,
+              "caption": "为含有多个<emphasis level=\"strong\">元素</emphasis>的容器<emphasis level=\"strong\">实现</emphasis> Display 时，要逐个<sub alias=\"CHU3\">处</sub>理<emphasis level=\"strong\">元素</emphasis>。"
             },
             {
-              "offset_ms": 13000,
-              "duration_ms": 4931,
-              "caption": "借助 ? 操作符，可以把每次 write! 的<c.aqua>错误</c.aqua>统一向上传递。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": " ? ",
-                  "p": "问号"
-                },
-                {
-                  "i": 15,
-                  "s": "write!",
-                  "p": "write 宏"
-                }
-              ]
+              "offset_ms": 14000,
+              "duration_ms": 5081,
+              "caption": "借助<sub alias=\"问号\"> ? </sub>操作符，可以把每次 <sub alias=\"write 宏\">write!</sub> 的<emphasis level=\"strong\">错误</emphasis>统一向上传递。"
             }
           ]
         }

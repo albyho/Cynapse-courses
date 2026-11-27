@@ -30,15 +30,8 @@
           "clips": [
             {
               "offset_ms": 148000,
-              "duration_ms": 3254,
-              "caption": "先准备<c.aqua>时间轴</c.aqua>和 1 Hz 的基准<c.aqua>信号</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "轴",
-                  "p": "ZHOU2"
-                }
-              ]
+              "duration_ms": 3197,
+              "caption": "先准备<emphasis level=\"strong\">时间<sub alias=\"ZHOU2\">轴</sub></emphasis>和 1 Hz 的基准<emphasis level=\"strong\">信号</emphasis>。"
             }
           ]
         }
@@ -59,15 +52,8 @@
           "clips": [
             {
               "offset_ms": 152000,
-              "duration_ms": 5551,
-              "caption": "把<c.aqua>振幅</c.aqua>乘以 0.6，并用 t-0.2 把整个波形向右移动 0.2 秒。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "幅",
-                  "p": "FU2"
-                }
-              ]
+              "duration_ms": 5339,
+              "caption": "把<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis>乘以 0.6，并用 t-0.2 把整个波形向右移动 0.2 秒。"
             }
           ]
         }
@@ -88,15 +74,8 @@
           "clips": [
             {
               "offset_ms": 158000,
-              "duration_ms": 6318,
-              "caption": "把原<c.aqua>信号</c.aqua>和变换后的信号画在一起，检查<c.aqua>振幅</c.aqua>和位置是否都符合预期。",
-              "speech_edits": [
-                {
-                  "i": 19,
-                  "s": "幅",
-                  "p": "FU2"
-                }
-              ]
+              "duration_ms": 6251,
+              "caption": "把原<emphasis level=\"strong\">信号</emphasis>和变换后的信号画在一起，检查<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis>和位置是否都符合预期。"
             }
           ]
         }
@@ -113,15 +92,8 @@
           "clips": [
             {
               "offset_ms": 165000,
-              "duration_ms": 9638,
-              "caption": "一种写法是 0.6 乘以 sin(2π 乘以 1 乘以 (t 减 0.2))。<c.aqua>观察</c.aqua>：<c.aqua>振幅</c.aqua>变成 0.6，波形整体右移；<c.aqua>周期</c.aqua>仍然是 1 秒。",
-              "speech_edits": [
-                {
-                  "i": 43,
-                  "s": "幅",
-                  "p": "FU2"
-                }
-              ]
+              "duration_ms": 9565,
+              "caption": "一种写法是 0.6 乘以 sin(2π 乘以 1 乘以 (t 减 0.2))。<emphasis level=\"strong\">观察</emphasis>：<emphasis level=\"strong\">振<sub alias=\"FU2\">幅</sub></emphasis>变成 0.6，波形整体右移；<emphasis level=\"strong\">周期</emphasis>仍然是 1 秒。"
             }
           ]
         }

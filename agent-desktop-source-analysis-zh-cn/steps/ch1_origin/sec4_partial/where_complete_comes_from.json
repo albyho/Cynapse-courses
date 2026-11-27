@@ -12,7 +12,7 @@
             {
               "offset_ms": 54000,
               "duration_ms": 5828,
-              "caption": "先不看字段，先看结论：<c.aqua>complete</c.aqua> 是捕获结果算出来的，不是命令层猜的。"
+              "caption": "先不看字段，先看结论：<emphasis level=\"strong\">complete</emphasis> 是捕获结果算出来的，不是命令层猜的。"
             }
           ]
         }
@@ -34,7 +34,7 @@
             {
               "offset_ms": 60000,
               "duration_ms": 9216,
-              "caption": "<c.aqua>into_parts</c.aqua> 在这里分叉：有展示深度就按深度投影；没有就投影部分结果，由投影同时返回是否看全和节点数。"
+              "caption": "<emphasis level=\"strong\">into_parts</emphasis> 在这里分叉：有展示深度就按深度投影；没有就投影部分结果，由投影同时返回是否看全和节点数。"
             }
           ]
         }
@@ -56,14 +56,7 @@
             {
               "offset_ms": 70000,
               "duration_ms": 8428,
-              "caption": "回看结构体：捕获保留整窗观察、展示深度，以及 <c.aqua>identity_unproven</c.aqua> 的原因——为什么这些引用没被证明。",
-              "speech_edits": [
-                {
-                  "i": 46,
-                  "s": "为",
-                  "p": "WEI4"
-                }
-              ]
+              "caption": "回看结构体：捕获保留整窗观察、展示深度，以及 <emphasis level=\"strong\">identity_unproven</emphasis> 的原因——<sub alias=\"WEI4\">为</sub>什么这些引用没被证明。"
             }
           ]
         }
@@ -79,7 +72,7 @@
             {
               "offset_ms": 79000,
               "duration_ms": 3529,
-              "caption": "再往前一步：什么叫“被证明”？看 <c.aqua>CaptureProof</c.aqua>。"
+              "caption": "再往前一步：什么叫“被证明”？看 <emphasis level=\"strong\">CaptureProof</emphasis>。"
             }
           ]
         }
@@ -101,7 +94,7 @@
             {
               "offset_ms": 83000,
               "duration_ms": 9229,
-              "caption": "证明有两个条件：观察来源必须是整窗或整应用，并且 <c.aqua>is_exhaustive</c.aqua>；缺一个，引用就只是“看见过”，不算“被证明”。"
+              "caption": "证明有两个条件：观察来源必须是整窗或整应用，并且 <emphasis level=\"strong\">is_exhaustive</emphasis>；缺一个，引用就只是“看见过”，不算“被证明”。"
             }
           ]
         }

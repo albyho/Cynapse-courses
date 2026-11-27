@@ -11,30 +11,23 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5198,
-              "caption": "rect_area 接受一个 Rectangle，用嵌套<c.aqua>解构</c.aqua>一次取出左上角和右下角。"
+              "duration_ms": 5367,
+              "caption": "rect_area 接受一个 Rectangle，用嵌套<emphasis level=\"strong\">解构</emphasis>一次取出左上角和右下角。"
             },
             {
               "offset_ms": 6000,
-              "duration_ms": 2936,
-              "caption": "横纵两个方向的差相乘就是<c.aqua>\\(A = w \\times h\\)</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 12,
-                  "s": "\\(A = w \\times h\\)",
-                  "p": "面积"
-                }
-              ]
+              "duration_ms": 2887,
+              "caption": "横纵两个方向的差相乘就是<emphasis level=\"strong\"><sub alias=\"面积\">\\(A = w \\times h\\)</sub></emphasis>。"
             },
             {
               "offset_ms": 9000,
-              "duration_ms": 4554,
-              "caption": "再在 main 末尾造一个 3 乘 4 的矩形，把面积<c.aqua>打印</c.aqua>出来。"
+              "duration_ms": 4353,
+              "caption": "再在 main 末尾造一个 3 乘 4 的矩形，把面积打印出来。"
             },
             {
               "offset_ms": 14000,
-              "duration_ms": 5465,
-              "caption": "最后用 square 生成一个边长 2 的正方形，再用同一个<c.aqua>函数</c.aqua>算面积。"
+              "duration_ms": 6092,
+              "caption": "最后用 square 生成一个边<sub alias=\"CHANG2\">长</sub>为 2 的正方形，再用同一个函数算面积。"
             }
           ]
         }
@@ -47,8 +40,8 @@
           "asset_id": "narration_ch3_custom_types_structs_exercise_002_sex_area",
           "clips": [
             {
-              "offset_ms": 20000,
-              "duration_ms": 4610,
+              "offset_ms": 21000,
+              "duration_ms": 4644,
               "caption": "终端留给我们自己动手，改完代码后在这里编译验证。"
             }
           ]

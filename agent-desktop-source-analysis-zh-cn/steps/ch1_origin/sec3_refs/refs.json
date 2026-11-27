@@ -12,7 +12,7 @@
             {
               "offset_ms": 0,
               "duration_ms": 4586,
-              "caption": "观察产出的核心是<c.aqua>引用</c.aqua>。refs 模块负责分配、查找和删除。"
+              "caption": "观察产出的核心是<emphasis level=\"strong\">引用</emphasis>。refs 模块负责分配、查找和删除。"
             }
           ]
         }
@@ -34,7 +34,7 @@
             {
               "offset_ms": 5000,
               "duration_ms": 8881,
-              "caption": "<c.aqua>RefMap</c.aqua> 就是一张查找表：一边是 ref 字符串，另一边是元素的身份档案；外加一个计数器，用来发下一个编号。"
+              "caption": "<emphasis level=\"strong\">RefMap</emphasis> 就是一张查找表：一边是 ref 字符串，另一边是元素的身份档案；外加一个计数器，用来发下一个编号。"
             }
           ]
         }
@@ -78,7 +78,7 @@
             {
               "offset_ms": 17000,
               "duration_ms": 8836,
-              "caption": "<c.aqua>try_allocate</c.aqua> 先检查这份身份档案是否完整（进程、角色、稳定名称），再申请编号；检查失败不会浪费一个编号。"
+              "caption": "<emphasis level=\"strong\">try_allocate</emphasis> 先检查这份身份档案是否完整（进程、角色、稳定名称），再申请编号；检查失败不会浪费一个编号。"
             }
           ]
         }
@@ -104,24 +104,7 @@
             {
               "offset_ms": 26000,
               "duration_ms": 9296,
-              "caption": "跳到 <c.aqua>ref</c.aqua>s_validate.rs。校验不是空壳：pid 必须为正、进程实例不能为空、角色必须合法，否则条目直接无效。",
-              "speech_edits": [
-                {
-                  "i": 20,
-                  "s": "校",
-                  "p": "JIAO4"
-                },
-                {
-                  "i": 33,
-                  "s": "为",
-                  "p": "WEI4"
-                },
-                {
-                  "i": 42,
-                  "s": "为",
-                  "p": "WEI4"
-                }
-              ]
+              "caption": "跳到 <emphasis level=\"strong\">ref</emphasis>s_validate.rs。<sub alias=\"JIAO4\">校</sub>验不是空壳：pid 必须<sub alias=\"WEI4\">为</sub>正、进程实例不能<sub alias=\"WEI4\">为</sub>空、角色必须合法，否则条目直接无效。"
             }
           ]
         }
@@ -165,7 +148,7 @@
             {
               "offset_ms": 43000,
               "duration_ms": 5595,
-              "caption": "<c.aqua>remove_by_root_ref</c.aqua> 的注释：删除被替换的子树和它挂出去的引用，根保留。"
+              "caption": "<emphasis level=\"strong\">remove_by_root_ref</emphasis> 的注释：删除被替换的子树和它挂出去的引用，根保留。"
             }
           ]
         }
@@ -187,7 +170,7 @@
             {
               "offset_ms": 49000,
               "duration_ms": 4242,
-              "caption": "实现从根条目开始，遍历<c.aqua>引用</c.aqua>表，标记要删的条目。"
+              "caption": "实现从根条目开始，遍历<emphasis level=\"strong\">引用</emphasis>表，标记要删的条目。"
             }
           ]
         }
@@ -203,7 +186,7 @@
             {
               "offset_ms": 54000,
               "duration_ms": 5223,
-              "caption": "本地编号离开快照时必须带上作用域，这就是 <c.aqua>ref_token</c.aqua> 的职责。"
+              "caption": "本地编号离开快照时必须带上作用域，这就是 <emphasis level=\"strong\">ref_token</emphasis> 的职责。"
             }
           ]
         }
@@ -225,7 +208,7 @@
             {
               "offset_ms": 60000,
               "duration_ms": 2383,
-              "caption": "<c.aqua>qualify_ref_id</c.aqua> 把 @eN 变成 @snapshot:eN。"
+              "caption": "<emphasis level=\"strong\">qualify_ref_id</emphasis> 把 @eN 变成 @snapshot:eN。"
             }
           ]
         }
@@ -247,7 +230,7 @@
             {
               "offset_ms": 63000,
               "duration_ms": 3468,
-              "caption": "qualify_tree_refs 递归改写整棵树里的<c.aqua>引用</c.aqua>。"
+              "caption": "qualify_tree_refs 递归改写整棵树里的<emphasis level=\"strong\">引用</emphasis>。"
             }
           ]
         }
@@ -269,7 +252,7 @@
             {
               "offset_ms": 67000,
               "duration_ms": 4531,
-              "caption": "resolve_ref_target 先去掉 @，再按 :e 拆成<c.aqua>快照</c.aqua> id 和元素编号。"
+              "caption": "resolve_ref_target 先去掉 @，再按 :e 拆成<emphasis level=\"strong\">快照</emphasis> id 和元素编号。"
             }
           ]
         }
@@ -291,7 +274,7 @@
             {
               "offset_ms": 72000,
               "duration_ms": 4703,
-              "caption": "<c.aqua>快照</c.aqua> id 必须合法，元素编号必须是本地 @eN，否则 invalid_ref。"
+              "caption": "<emphasis level=\"strong\">快照</emphasis> id 必须合法，元素编号必须是本地 @eN，否则 invalid_ref。"
             }
           ]
         }

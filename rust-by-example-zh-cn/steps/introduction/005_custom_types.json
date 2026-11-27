@@ -14,18 +14,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1924,
+              "duration_ms": 1753,
               "caption": "第 3 章《自定义类型》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 2707,
-              "caption": "这一章是结构体 struct 和枚举 enum。"
+              "duration_ms": 2655,
+              "caption": "主角是结构体 struct 和枚举 enum。"
             },
             {
               "offset_ms": 5000,
-              "duration_ms": 3801,
-              "caption": "这一章会看怎样把多个值组织成一个类型。"
+              "duration_ms": 3585,
+              "caption": "先看它们怎样把多个值组织成一个类型。"
             }
           ]
         }
@@ -39,8 +39,8 @@
           "clips": [
             {
               "offset_ms": 9000,
-              "duration_ms": 2791,
-              "caption": "这一章会看 struct 怎样把字段聚在一起。"
+              "duration_ms": 2282,
+              "caption": "struct 用字段把值聚在一起。"
             }
           ]
         }
@@ -54,8 +54,8 @@
           "clips": [
             {
               "offset_ms": 12000,
-              "duration_ms": 3787,
-              "caption": "这一章也会看 enum 怎样列出几种可能的取值。"
+              "duration_ms": 2295,
+              "caption": "enum 则列出几种可能的取值。"
             }
           ]
         }

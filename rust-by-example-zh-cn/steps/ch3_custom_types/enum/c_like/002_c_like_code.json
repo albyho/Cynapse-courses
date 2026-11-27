@@ -18,7 +18,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6188,
+              "duration_ms": 6204,
               "caption": "枚举的辨别值可以自动从 0 编号，也可以手动指定，用 as 就能转成整数。"
             }
           ]
@@ -39,20 +39,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 2881,
-              "caption": "逐行写入两个<c.aqua>枚举</c.aqua>和转换<c.aqua>打印</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 9,
-                  "s": "转",
-                  "p": "ZHUAN3"
-                }
-              ]
+              "duration_ms": 3418,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入两个<emphasis level=\"strong\">枚举</emphasis>和<sub alias=\"ZHUAN3\">转</sub>换打印。"
             }
           ]
         },
@@ -60,30 +48,23 @@
           "asset_id": "narration_ch3_custom_types_enum_c_like_002_c_like_code",
           "clips": [
             {
-              "offset_ms": 10000,
-              "duration_ms": 2934,
-              "caption": "先用 allow(dead_code) 隐藏未使用警告。",
-              "speech_edits": [
-                {
-                  "i": 9,
-                  "s": "dead_code",
-                  "p": "dead code"
-                }
-              ]
+              "offset_ms": 11000,
+              "duration_ms": 2933,
+              "caption": "先用 allow(<sub alias=\"dead code\">dead_code</sub>) 隐藏未使用警告。"
             },
             {
-              "offset_ms": 13000,
-              "duration_ms": 3223,
-              "caption": "Number 的三个<c.aqua>变体</c.aqua>从 0 开始自动编号。"
+              "offset_ms": 14000,
+              "duration_ms": 3219,
+              "caption": "Number 的三个<emphasis level=\"strong\">变体</emphasis>从 0 开始自动编号。"
             },
             {
-              "offset_ms": 17000,
-              "duration_ms": 3707,
-              "caption": "Color 的三个<c.aqua>变体</c.aqua>各自指定十六进制颜色码。"
+              "offset_ms": 18000,
+              "duration_ms": 3763,
+              "caption": "Color 的三个<emphasis level=\"strong\">变体</emphasis>各自指定十六进制颜色码。"
             },
             {
-              "offset_ms": 21000,
-              "duration_ms": 3567,
+              "offset_ms": 22000,
+              "duration_ms": 3619,
               "caption": "main 里用 as i32 把枚举转成整数并打印。"
             }
           ]
@@ -114,8 +95,8 @@
           "asset_id": "narration_ch3_custom_types_enum_c_like_002_c_like_code",
           "clips": [
             {
-              "offset_ms": 25000,
-              "duration_ms": 904,
+              "offset_ms": 26000,
+              "duration_ms": 1409,
               "caption": "编译通过。"
             }
           ]
@@ -142,14 +123,14 @@
           "asset_id": "narration_ch3_custom_types_enum_c_like_002_c_like_code",
           "clips": [
             {
-              "offset_ms": 26000,
-              "duration_ms": 3697,
+              "offset_ms": 28000,
+              "duration_ms": 3625,
               "caption": "Number 从 0 开始编号，所以 Zero 是 0、One 是 1。"
             },
             {
-              "offset_ms": 30000,
-              "duration_ms": 4008,
-              "caption": "Color 的辨别值就是颜色码，Red <c.aqua>打印</c.aqua>成 ff0000。"
+              "offset_ms": 32000,
+              "duration_ms": 4316,
+              "caption": "Color 的辨别值就是颜色码，Red 打印成 ff0000。"
             }
           ]
         }

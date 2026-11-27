@@ -14,25 +14,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1762,
-              "caption": "第 16 章《特性 trait》。"
+              "duration_ms": 1711,
+              "caption": "第 16 章《特质 trait》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 2818,
-              "caption": "trait 是对未知类型定义的方法集。"
+              "duration_ms": 3108,
+              "caption": "trait 描述一组类型共同具备的行为。"
             },
             {
-              "offset_ms": 5000,
-              "duration_ms": 3330,
-              "caption": "这一章会看 trait 怎样描述一组行为。",
-              "speech_edits": [
-                {
-                  "i": 18,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 6000,
+              "duration_ms": 2598,
+              "caption": "看 trait 怎样描述一组<sub alias=\"XING2\">行</sub>为。"
             }
           ]
         }
@@ -46,15 +39,8 @@
           "clips": [
             {
               "offset_ms": 9000,
-              "duration_ms": 4767,
-              "caption": "这一章会看声明、实现和调用这三步各自写在哪里。",
-              "speech_edits": [
-                {
-                  "i": 11,
-                  "s": "调",
-                  "p": "DIAO4"
-                }
-              ]
+              "duration_ms": 3530,
+              "caption": "声明、实现和<sub alias=\"DIAO4\">调</sub>用这三步各自写在哪里。"
             }
           ]
         }
@@ -67,8 +53,8 @@
           "asset_id": "narration_introduction_018_traits",
           "clips": [
             {
-              "offset_ms": 14000,
-              "duration_ms": 3603,
+              "offset_ms": 13000,
+              "duration_ms": 3672,
               "caption": "这解释了 Rust 怎样在静态检查下组织多态。"
             }
           ]

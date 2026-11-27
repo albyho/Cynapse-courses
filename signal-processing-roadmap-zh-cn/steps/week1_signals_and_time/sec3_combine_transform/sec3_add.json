@@ -55,8 +55,8 @@
           "clips": [
             {
               "offset_ms": 56000,
-              "duration_ms": 7145,
-              "caption": "先建立 1 Hz 和 3 Hz 两个成分，再把它们逐点<c.aqua>相加</c.aqua>；x_sum 就是同一时刻的两个值相加。"
+              "duration_ms": 7196,
+              "caption": "先建立 1 Hz 和 3 Hz 两个成分，再把它们逐点<emphasis level=\"strong\">相加</emphasis>；x_sum 就是同一时刻的两个值相加。"
             }
           ]
         }
@@ -77,8 +77,8 @@
           "clips": [
             {
               "offset_ms": 64000,
-              "duration_ms": 5466,
-              "caption": "把两个成分和它们的和画在同一张图上，<c.aqua>观察</c.aqua>合成波形的形状。"
+              "duration_ms": 5214,
+              "caption": "把两个成分和它们的和画在同一张图上，<emphasis level=\"strong\">观察</emphasis>合成波形的形状。"
             }
           ]
         }
@@ -95,15 +95,8 @@
           "clips": [
             {
               "offset_ms": 70000,
-              "duration_ms": 6427,
-              "caption": "先把两个正弦逐点<c.aqua>相加</c.aqua>；注意看相加后的波形怎样同时保留两种起伏。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "弦",
-                  "p": "XIAN2"
-                }
-              ]
+              "duration_ms": 6484,
+              "caption": "先把两个正<sub alias=\"XIAN2\">弦</sub>逐点<emphasis level=\"strong\">相加</emphasis>；注意看相加后的波形怎样同时保留两种起伏。"
             }
           ]
         },
@@ -112,20 +105,8 @@
           "clips": [
             {
               "offset_ms": 77000,
-              "duration_ms": 9860,
-              "caption": "先把 1 Hz 和 3 Hz 两个正弦<c.aqua>相加</c.aqua>。每个时刻的值直接相加。相加后的波形不再是单一正弦，会出现新的起伏。",
-              "speech_edits": [
-                {
-                  "i": 18,
-                  "s": "弦",
-                  "p": "XIAN2"
-                },
-                {
-                  "i": 45,
-                  "s": "弦",
-                  "p": "XIAN2"
-                }
-              ]
+              "duration_ms": 9635,
+              "caption": "先把 1 Hz 和 3 Hz 两个正<sub alias=\"XIAN2\">弦</sub><emphasis level=\"strong\">相加</emphasis>。每个时刻的值直接相加。相加后的波形不再是单一正<sub alias=\"XIAN2\">弦</sub>，会出现新的起伏。"
             }
           ]
         }

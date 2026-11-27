@@ -20,8 +20,8 @@
           "clips": [
             {
               "offset_ms": 30000,
-              "duration_ms": 4524,
-              "caption": "Once the lesson notebook is open, look at the top: the intro cell says what this unit <c.aqua>observes</c.aqua>."
+              "duration_ms": 4532,
+              "caption": "Once the lesson notebook is open, look at the top: the intro cell says what this unit <emphasis level=\"strong\">observes</emphasis>."
             }
           ]
         }
@@ -41,7 +41,7 @@
           "clips": [
             {
               "offset_ms": 35000,
-              "duration_ms": 5235,
+              "duration_ms": 5310,
               "caption": "setup_imports is the base environment; it only imports NumPy and Matplotlib, and later cells do not import again."
             }
           ]
@@ -59,7 +59,7 @@
           "clips": [
             {
               "offset_ms": 41000,
-              "duration_ms": 4190,
+              "duration_ms": 4202,
               "caption": "Running it shows no output, but NumPy and Matplotlib are now available in this kernel."
             }
           ]

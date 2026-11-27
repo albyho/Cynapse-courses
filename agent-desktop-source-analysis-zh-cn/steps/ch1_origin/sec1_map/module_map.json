@@ -12,7 +12,7 @@
             {
               "offset_ms": 0,
               "duration_ms": 5287,
-              "caption": "第一章从一个文件开始。lib.rs 不实现功能，只是一张<c.aqua>模块地图</c.aqua>。"
+              "caption": "第一章从一个文件开始。lib.rs 不实现功能，只是一张<emphasis level=\"strong\">模块地图</emphasis>。"
             }
           ]
         }
@@ -34,7 +34,7 @@
             {
               "offset_ms": 6000,
               "duration_ms": 4094,
-              "caption": "<c.aqua>actionability</c.aqua>：判断一个元素当前能不能安全操作。"
+              "caption": "<emphasis level=\"strong\">actionability</emphasis>：判断一个元素当前能不能安全操作。"
             }
           ]
         }
@@ -232,14 +232,7 @@
             {
               "offset_ms": 40000,
               "duration_ms": 2448,
-              "caption": "ref_action：按<c.aqua>引用</c.aqua>执行动作。",
-              "speech_edits": [
-                {
-                  "i": 15,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "caption": "ref_action：按<emphasis level=\"strong\">引用</emphasis>执<sub alias=\"XING2\">行</sub>动作。"
             }
           ]
         }
@@ -261,7 +254,7 @@
             {
               "offset_ms": 43000,
               "duration_ms": 4014,
-              "caption": "refs：<c.aqua>引用</c.aqua>的分配、查找与失效，第 1.3 节会展开。"
+              "caption": "refs：<emphasis level=\"strong\">引用</emphasis>的分配、查找与失效，第 1.3 节会展开。"
             }
           ]
         }
@@ -305,7 +298,7 @@
             {
               "offset_ms": 51000,
               "duration_ms": 3636,
-              "caption": "session：会话管理，快照和<c.aqua>引用</c.aqua>都挂在会话下。"
+              "caption": "session：会话管理，快照和<emphasis level=\"strong\">引用</emphasis>都挂在会话下。"
             }
           ]
         }
@@ -327,7 +320,7 @@
             {
               "offset_ms": 55000,
               "duration_ms": 3298,
-              "caption": "snapshot：观察与<c.aqua>快照</c.aqua>，第 1.2 节会展开。"
+              "caption": "snapshot：观察与<emphasis level=\"strong\">快照</emphasis>，第 1.2 节会展开。"
             }
           ]
         }
@@ -349,7 +342,7 @@
             {
               "offset_ms": 59000,
               "duration_ms": 3074,
-              "caption": "storage：持久化，<c.aqua>引用</c.aqua>表和快照要落盘。"
+              "caption": "storage：持久化，<emphasis level=\"strong\">引用</emphasis>表和快照要落盘。"
             }
           ]
         }
@@ -371,14 +364,7 @@
             {
               "offset_ms": 63000,
               "duration_ms": 4176,
-              "caption": "system：系统与进程信息，用来确认应用没有重启。",
-              "speech_edits": [
-                {
-                  "i": 23,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "caption": "system：系统与进程信息，用来确认应用没有<sub alias=\"CHONG2\">重</sub>启。"
             }
           ]
         }
@@ -400,14 +386,7 @@
             {
               "offset_ms": 68000,
               "duration_ms": 2399,
-              "caption": "trace：可回放的调试记录。",
-              "speech_edits": [
-                {
-                  "i": 10,
-                  "s": "调",
-                  "p": "TIAO2"
-                }
-              ]
+              "caption": "trace：可回放的<sub alias=\"TIAO2\">调</sub>试记录。"
             }
           ]
         }
@@ -434,7 +413,7 @@
             {
               "offset_ms": 73000,
               "duration_ms": 4170,
-              "caption": "这些模块是<c.aqua>并列</c.aqua>的：各自负责一件事，不是层层嵌套。"
+              "caption": "这些模块是<emphasis level=\"strong\">并列</emphasis>的：各自负责一件事，不是层层嵌套。"
             }
           ]
         }

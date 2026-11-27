@@ -14,7 +14,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5687,
+              "duration_ms": 5586,
               "caption": "Rust 要求每个绑定在使用前都初始化，否则会在可能的读取处报错。"
             }
           ]
@@ -44,8 +44,8 @@
           "clips": [
             {
               "offset_ms": 6000,
-              "duration_ms": 4782,
-              "caption": "先编译，第一次<c.aqua>打印</c.aqua> another_binding 是故意写在<c.aqua>赋值</c.aqua>之前的。"
+              "duration_ms": 4875,
+              "caption": "先编译，第一次打印 another_binding 是故意写在<emphasis level=\"strong\">赋值</emphasis>之前的。"
             }
           ]
         },
@@ -54,8 +54,8 @@
           "clips": [
             {
               "offset_ms": 11000,
-              "duration_ms": 5921,
-              "caption": "<c.aqua>编译器</c.aqua>说 another_binding 在某些路径上没有初始化，<c.aqua>错误码</c.aqua> E0381。"
+              "duration_ms": 5857,
+              "caption": "<emphasis level=\"strong\">编译器</emphasis>说 another_binding 在某些路径上没有初始化，<emphasis level=\"strong\">错误码</emphasis> E0381。"
             }
           ]
         }
@@ -70,15 +70,8 @@
           "clips": [
             {
               "offset_ms": 17000,
-              "duration_ms": 5560,
-              "caption": "E0381 的<c.aqua>报错</c.aqua>停在终端，我们对照源码看它指向哪一行。",
-              "speech_edits": [
-                {
-                  "i": 26,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 5630,
+              "caption": "E0381 的<emphasis level=\"strong\">报错</emphasis>停在终端，我们对照源码看它指向哪一<sub alias=\"HANG2\">行</sub>。"
             }
           ]
         }

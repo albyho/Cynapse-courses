@@ -35,9 +35,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 101000,
-              "duration_ms": 7896,
-              "caption": "stem 把每个<c.aqua>样本</c.aqua>画成一根竖线，更适合表示<c.aqua>离散信号</c.aqua>。同一组数，换一种画法，表达的含义更准确。"
+              "offset_ms": 102000,
+              "duration_ms": 8266,
+              "caption": "stem 把每个<emphasis level=\"strong\">样本</emphasis>画成一根竖线，更适合表示<emphasis level=\"strong\">离散信号</emphasis>。同一组数，换一种画法，表达的含义更准确。"
             }
           ]
         }

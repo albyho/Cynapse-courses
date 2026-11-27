@@ -55,8 +55,8 @@
           "clips": [
             {
               "offset_ms": 49000,
-              "duration_ms": 3930,
-              "caption": "First build the <c.aqua>sample time</c.aqua> axis: 100 <c.aqua>samples</c.aqua> per second, lasting one second."
+              "duration_ms": 4144,
+              "caption": "First build the <emphasis level=\"strong\">sample time</emphasis> axis: 100 <emphasis level=\"strong\">samples</emphasis> per second, lasting one second."
             }
           ]
         }
@@ -76,8 +76,8 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 53000,
-              "duration_ms": 1721,
+              "offset_ms": 54000,
+              "duration_ms": 1758,
               "caption": "Now write the sine formula."
             }
           ]
@@ -86,9 +86,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 55000,
-              "duration_ms": 4147,
-              "caption": "Note this line carries the <c.aqua>amplitude</c.aqua> A, the <c.aqua>frequency</c.aqua> f and the <c.aqua>initial phase</c.aqua> phi at once."
+              "offset_ms": 56000,
+              "duration_ms": 4283,
+              "caption": "Note this line carries the <emphasis level=\"strong\">amplitude</emphasis> A, the <emphasis level=\"strong\">frequency</emphasis> f and the <emphasis level=\"strong\">initial phase</emphasis> phi at once."
             }
           ]
         }
@@ -108,9 +108,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 60000,
-              "duration_ms": 4986,
-              "caption": "Finally print the <c.aqua>sample</c.aqua> count, the <c.aqua>period</c.aqua> and the <c.aqua>angular frequency</c.aqua>, then check each one after running."
+              "offset_ms": 61000,
+              "duration_ms": 5011,
+              "caption": "Finally print the <emphasis level=\"strong\">sample</emphasis> count, the <emphasis level=\"strong\">period</emphasis> and the <emphasis level=\"strong\">angular frequency</emphasis>, then check each one after running."
             }
           ]
         }
@@ -126,9 +126,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 65000,
-              "duration_ms": 7639,
-              "caption": "First build a one-second <c.aqua>time axis</c.aqua>, then generate the sine from <c.aqua>amplitude</c.aqua>, <c.aqua>frequency</c.aqua> and initial phase. After running, check the sample count and the period."
+              "offset_ms": 67000,
+              "duration_ms": 7496,
+              "caption": "First build a one-second <emphasis level=\"strong\">time axis</emphasis>, then generate the sine from <emphasis level=\"strong\">amplitude</emphasis>, <emphasis level=\"strong\">frequency</emphasis> and initial phase. After running, check the sample count and the period."
             }
           ]
         },
@@ -136,9 +136,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 73000,
-              "duration_ms": 7701,
-              "caption": "We generate one second of data at 100 <c.aqua>samples</c.aqua> per second, so 100 time points. A is 1, f is 2 Hz, phi is 0. 2 Hz means two full cycles per second."
+              "offset_ms": 75000,
+              "duration_ms": 7912,
+              "caption": "We generate one second of data at 100 <emphasis level=\"strong\">samples</emphasis> per second, so 100 time points. A is 1, f is 2 Hz, phi is 0. 2 Hz means two full cycles per second."
             }
           ]
         }
@@ -151,9 +151,9 @@
           "asset_id": "narration_sec2_generate_signal",
           "clips": [
             {
-              "offset_ms": 81000,
-              "duration_ms": 5043,
-              "caption": "After running, confirm the <c.aqua>sample</c.aqua> count and the <c.aqua>period</c.aqua>. The period T is 1 over f, so 0.5 s here."
+              "offset_ms": 83000,
+              "duration_ms": 4955,
+              "caption": "After running, confirm the <emphasis level=\"strong\">sample</emphasis> count and the <emphasis level=\"strong\">period</emphasis>. The period T is 1 over f, so 0.5 s here."
             }
           ]
         }

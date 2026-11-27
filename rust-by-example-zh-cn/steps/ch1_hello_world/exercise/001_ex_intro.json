@@ -11,8 +11,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 4837,
-              "caption": "动手试一试：hello.rs 里已经有一个能<c.aqua>打印</c.aqua> Hello World 的程序。"
+              "duration_ms": 4783,
+              "caption": "动手试一试：hello.rs 里已经有一个能打印 Hello World 的程序。"
             }
           ]
         }
@@ -26,15 +26,8 @@
           "clips": [
             {
               "offset_ms": 5000,
-              "duration_ms": 5747,
-              "caption": "先运行一次看初始输出，再在不破坏它的前提下多输出一句话。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "duration_ms": 5806,
+              "caption": "先运<sub alias=\"XING2\">行</sub>一次看初始输出，再在不破坏它的前提下多输出一句话。"
             }
           ]
         }
@@ -61,7 +54,7 @@
           "clips": [
             {
               "offset_ms": 11000,
-              "duration_ms": 893,
+              "duration_ms": 1439,
               "caption": "编译通过。"
             }
           ]
@@ -85,8 +78,8 @@
           "asset_id": "narration_ch1_hello_world_exercise_001_ex_intro",
           "clips": [
             {
-              "offset_ms": 12000,
-              "duration_ms": 3117,
+              "offset_ms": 13000,
+              "duration_ms": 3177,
               "caption": "初始输出只有 Hello World!；第二行还没加。"
             }
           ]

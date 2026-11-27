@@ -20,8 +20,8 @@
           "clips": [
             {
               "offset_ms": 34000,
-              "duration_ms": 5504,
-              "caption": "打开教学 <c.aqua>Notebook</c.aqua> 后先看开头：intro Cell 说明这个单元要<c.aqua>观察</c.aqua>什么。"
+              "duration_ms": 5470,
+              "caption": "打开教学 <emphasis level=\"strong\">Notebook</emphasis> 后先看开头：intro Cell 说明这个单元要<emphasis level=\"strong\">观察</emphasis>什么。"
             }
           ]
         }
@@ -41,15 +41,8 @@
           "clips": [
             {
               "offset_ms": 40000,
-              "duration_ms": 6873,
-              "caption": "setup_imports 是基础环境，只负责导入 NumPy 和 Matplotlib；后面的代码不再重复导入。",
-              "speech_edits": [
-                {
-                  "i": 52,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "duration_ms": 7063,
+              "caption": "setup_imports 是基础环境，只负责导入 NumPy 和 Matplotlib；后面的代码不再<sub alias=\"CHONG2\">重</sub>复导入。"
             }
           ]
         }
@@ -65,16 +58,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 47000,
-              "duration_ms": 5836,
-              "caption": "运行后没有可见输出，但 NumPy 和 Matplotlib 已经在当前 <c.aqua>Kernel</c.aqua> 中可用。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 48000,
+              "duration_ms": 5896,
+              "caption": "运<sub alias=\"XING2\">行</sub>后没有可见输出，但 NumPy 和 Matplotlib 已经在当前 <emphasis level=\"strong\">Kernel</emphasis> 中可用。"
             }
           ]
         }

@@ -37,8 +37,8 @@
           "clips": [
             {
               "offset_ms": 48000,
-              "duration_ms": 6258,
-              "caption": "Build a <c.aqua>signal</c.aqua> made of two sines: a low <c.aqua>frequency</c.aqua> component and a high frequency component; at least one with a <c.aqua>phase</c.aqua> or a time shift."
+              "duration_ms": 6052,
+              "caption": "Build a <emphasis level=\"strong\">signal</emphasis> made of two sines: a low <emphasis level=\"strong\">frequency</emphasis> component and a high frequency component; at least one with a <emphasis level=\"strong\">phase</emphasis> or a time shift."
             }
           ]
         }
@@ -52,7 +52,7 @@
           "clips": [
             {
               "offset_ms": 55000,
-              "duration_ms": 7747,
+              "duration_ms": 7715,
               "caption": "Draw the waveform and add a title, axis labels and a legend. Success criteria: both components are visible and every parameter explained. Continue once it runs."
             }
           ]

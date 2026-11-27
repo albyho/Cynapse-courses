@@ -10,8 +10,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 4104,
-              "caption": "E0425 说明 short_lived_binding 已经离开<c.aqua>作用域</c.aqua>"
+              "duration_ms": 4083,
+              "caption": "E0425 说明 short_lived_binding 已经离开<emphasis level=\"strong\">作用域</emphasis>"
             }
           ]
         }
@@ -25,8 +25,8 @@
           "clips": [
             {
               "offset_ms": 5000,
-              "duration_ms": 5527,
-              "caption": "<c.aqua>注释</c.aqua>掉越界<c.aqua>引用</c.aqua>后，外层<c.aqua>绑定</c.aqua>和最后的字符遮蔽都能正常打印。"
+              "duration_ms": 5534,
+              "caption": "<emphasis level=\"strong\">注释</emphasis>掉越界<emphasis level=\"strong\">引用</emphasis>后，外层<emphasis level=\"strong\">绑定</emphasis>和最后的<emphasis level=\"strong\">字符遮蔽</emphasis>都能正常打印。"
             }
           ]
         }

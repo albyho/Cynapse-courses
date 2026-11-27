@@ -5,39 +5,124 @@
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/macos/src/lib.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 6000, "caption": "最后对照另外两个后端。先看 macOS 的模块划分。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 0,
+              "duration_ms": 3979,
+              "caption": "最后对照另外两个后端。先看 macOS 的模块划分。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/macos/src/lib.rs",
-      "start": { "line": 1 },
-      "end": { "line": 10 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8000, "caption": "macOS 也是 actions、adapter、input、notifications、system、tree；只是 MacOSAdapter 底层换成 AX API，并且需要辅助功能授权。" }] } }
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 4000,
+              "duration_ms": 8555,
+              "caption": "macOS 也是 actions、adapter、input、notifications、system、tree；只是 MacOSAdapter 底层换成 AX API，并且需要辅助功能授权。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFile",
       "path": "../../resources/agent-desktop/crates/linux/src/lib.rs",
-      "narration": { "after": { "clips": [{ "duration_ms": 5500, "caption": "再看 Linux。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 13000,
+              "duration_ms": 1441,
+              "caption": "再看 Linux。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/crates/linux/src/lib.rs",
-      "start": { "line": 1 },
-      "end": { "line": 10 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "Linux 同样结构，LinuxAdapter 走 AT-SPI；输入层分 X11 和 Wayland，是三个后端里差异最大的。" }] } }
+      "start": {
+        "line": 1
+      },
+      "end": {
+        "line": 10
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 15000,
+              "duration_ms": 7027,
+              "caption": "Linux 同样结构，LinuxAdapter 走 AT-SPI；输入层分 X11 和 Wayland，是三个后端里差异最大的。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "OpenFileWithPreview",
       "path": "../../resources/agent-desktop/README.md",
-      "narration": { "after": { "clips": [{ "duration_ms": 5400, "caption": "又是 <c.aqua>agent-desktop</c.aqua> 首页，这次只盯平台对照表。" }, { "duration_ms": 5500, "caption": "回到 README 的平台表，把差异收拢成一张对照。" }] } }
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 23000,
+              "duration_ms": 3518,
+              "caption": "又是 <emphasis level=\"strong\">agent-desktop</emphasis> 首页，这次只盯平台对照表。"
+            },
+            {
+              "offset_ms": 27000,
+              "duration_ms": 3750,
+              "caption": "回到 README 的平台表，把差异收拢成一张对照。"
+            }
+          ]
+        }
+      }
     },
     {
       "type": "RevealText",
       "path": "../../resources/agent-desktop/README.md",
-      "start": { "line": 142 },
-      "end": { "line": 150 },
-      "narration": { "after": { "clips": [{ "duration_ms": 8500, "caption": "三套 API、三套最低版本、三套权限模型。课程以 Windows 为主线，macOS 和 Linux 只要求能对照出差异。" }] } }
+      "start": {
+        "line": 142
+      },
+      "end": {
+        "line": 150
+      },
+      "narration": {
+        "after": {
+          "asset_id": "narration_ch3_platform_sec3_differences",
+          "clips": [
+            {
+              "offset_ms": 31000,
+              "duration_ms": 7992,
+              "caption": "三套 API、三套最低版本、三套权限模型。课程以 Windows 为主线，macOS 和 Linux 只要求能对照出差异。"
+            }
+          ]
+        }
+      }
     },
-    { "type": "ClearReveal" }
+    {
+      "type": "ClearReveal"
+    }
   ]
 }

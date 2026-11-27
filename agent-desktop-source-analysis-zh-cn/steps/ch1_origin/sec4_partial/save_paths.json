@@ -34,7 +34,7 @@
             {
               "offset_ms": 98000,
               "duration_ms": 5589,
-              "caption": "<c.aqua>save_refmap</c.aqua> 只做一个判断：complete 走普通保存，不完整走 detached 保存。"
+              "caption": "<emphasis level=\"strong\">save_refmap</emphasis> 只做一个判断：complete 走普通保存，不完整走 detached 保存。"
             }
           ]
         }
@@ -50,7 +50,7 @@
             {
               "offset_ms": 104000,
               "duration_ms": 5343,
-              "caption": "现在跳到 <c.aqua>ref</c.aqua>s_store.rs。先看两条路共同做什么，再看它们的差别。"
+              "caption": "现在跳到 <emphasis level=\"strong\">ref</emphasis>s_store.rs。先看两条路共同做什么，再看它们的差别。"
             }
           ]
         }
@@ -72,7 +72,7 @@
             {
               "offset_ms": 110000,
               "duration_ms": 7709,
-              "caption": "共同动作：生成新的 snapshot id、写入<c.aqua>快照</c.aqua>、更新 latest、清理旧快照。两种保存都不是“只写不认”。"
+              "caption": "共同动作：生成新的 snapshot id、写入<emphasis level=\"strong\">快照</emphasis>、更新 latest、清理旧快照。两种保存都不是“只写不认”。"
             }
           ]
         }
@@ -116,7 +116,7 @@
             {
               "offset_ms": 123000,
               "duration_ms": 8281,
-              "caption": "<c.aqua>detached</c.aqua> 的差别只在锁：写锁使用独立 deadline，所以命令已经超时，恢复路径仍然能把部分快照落盘。"
+              "caption": "<emphasis level=\"strong\">detached</emphasis> 的差别只在锁：写锁使用独立 deadline，所以命令已经超时，恢复路径仍然能把部分快照落盘。"
             }
           ]
         }

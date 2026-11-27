@@ -30,8 +30,8 @@
           "clips": [
             {
               "offset_ms": 74000,
-              "duration_ms": 2791,
-              "caption": "First prepare a uniform <c.aqua>time axis</c.aqua> from 0 to 1 second."
+              "duration_ms": 2747,
+              "caption": "First prepare a uniform <emphasis level=\"strong\">time axis</emphasis> from 0 to 1 second."
             }
           ]
         }
@@ -52,8 +52,8 @@
           "clips": [
             {
               "offset_ms": 77000,
-              "duration_ms": 8735,
-              "caption": "A low <c.aqua>frequency</c.aqua> component at 1 Hz with <c.aqua>amplitude</c.aqua> 0.8 and a π/4 <c.aqua>phase</c.aqua>; a high frequency component at 4 Hz with amplitude 0.3; add them sample by sample."
+              "duration_ms": 8829,
+              "caption": "A low <emphasis level=\"strong\">frequency</emphasis> component at 1 Hz with <emphasis level=\"strong\">amplitude</emphasis> 0.8 and a π/4 <emphasis level=\"strong\">phase</emphasis>; a high frequency component at 4 Hz with amplitude 0.3; add them sample by sample."
             }
           ]
         }
@@ -74,8 +74,8 @@
           "clips": [
             {
               "offset_ms": 86000,
-              "duration_ms": 5896,
-              "caption": "Draw both components and the combined <c.aqua>signal</c.aqua> and check whether the high <c.aqua>frequency</c.aqua> detail rides on the low frequency swing."
+              "duration_ms": 6010,
+              "caption": "Draw both components and the combined <emphasis level=\"strong\">signal</emphasis> and check whether the high <emphasis level=\"strong\">frequency</emphasis> detail rides on the low frequency swing."
             }
           ]
         }
@@ -91,8 +91,8 @@
           "asset_id": "narration_sec4_practice",
           "clips": [
             {
-              "offset_ms": 92000,
-              "duration_ms": 7673,
+              "offset_ms": 93000,
+              "duration_ms": 7702,
               "caption": "Look at one worked example, then compare it with your own parameters and figure; what matters is not the single answer but whether you can explain each parameter."
             }
           ]
@@ -101,9 +101,9 @@
           "asset_id": "narration_sec4_practice",
           "clips": [
             {
-              "offset_ms": 100000,
-              "duration_ms": 12088,
-              "caption": "Here is one worked example: low 1 Hz at <c.aqua>amplitude</c.aqua> 0.8, high 4 Hz at amplitude 0.3, with a π/4 <c.aqua>phase</c.aqua> on the low component. Added together, the high <c.aqua>frequency</c.aqua> detail rides on the low frequency swing; it is not the only answer."
+              "offset_ms": 101000,
+              "duration_ms": 12084,
+              "caption": "Here is one worked example: low 1 Hz at <emphasis level=\"strong\">amplitude</emphasis> 0.8, high 4 Hz at amplitude 0.3, with a π/4 <emphasis level=\"strong\">phase</emphasis> on the low component. Added together, the high <emphasis level=\"strong\">frequency</emphasis> detail rides on the low frequency swing; it is not the only answer."
             }
           ]
         }

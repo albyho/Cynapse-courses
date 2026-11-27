@@ -12,44 +12,18 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6238,
-              "caption": "这一节学习 Display 打印，观察怎样为类型自定义 {} 的输出外观。",
-              "speech_edits": [
-                {
-                  "i": 28,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "duration_ms": 5937,
+              "caption": "这一节学习 Display 打印，观察怎样为类型自定义 <sub alias=\"一对大括号\">{}</sub> 的输出外观。"
             },
             {
-              "offset_ms": 7000,
-              "duration_ms": 6567,
-              "caption": "Debug 输出不太美观，想自<c.aqua>定义</c.aqua>外观就用 fmt::Display，配合 {} 标记。",
-              "speech_edits": [
-                {
-                  "i": 25,
-                  "s": "::",
-                  "p": "双冒号"
-                },
-                {
-                  "i": 38,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "offset_ms": 6000,
+              "duration_ms": 6720,
+              "caption": "Debug 输出不太美观，想自<emphasis level=\"strong\">定义</emphasis>外观就用 fmt<sub alias=\"双冒号\">::</sub>Display，配合 <sub alias=\"一对大括号\">{}</sub> 标记。"
             },
             {
-              "offset_ms": 14000,
-              "duration_ms": 4113,
-              "caption": "Display 需要手动为<c.aqua>类型</c.aqua><c.aqua>实现</c.aqua> fmt::Display trait。",
-              "speech_edits": [
-                {
-                  "i": 21,
-                  "s": "::",
-                  "p": "双冒号"
-                }
-              ]
+              "offset_ms": 13000,
+              "duration_ms": 3976,
+              "caption": "Display 需要手动为<emphasis level=\"strong\">类型</emphasis><emphasis level=\"strong\">实现</emphasis> fmt<sub alias=\"双冒号\">::</sub>Display trait。"
             }
           ]
         }

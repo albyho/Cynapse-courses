@@ -18,15 +18,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5505,
-              "caption": "注释写给人看，编译器会跳过它；Rust 有行注释和块注释两种。",
-              "speech_edits": [
-                {
-                  "i": 21,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 5488,
+              "caption": "注释写给人看，编译器会跳过它；Rust 有<sub alias=\"HANG2\">行</sub>注释和块注释两种。"
             }
           ]
         }
@@ -46,7 +39,7 @@
           "clips": [
             {
               "offset_ms": 6000,
-              "duration_ms": 4714,
+              "duration_ms": 4504,
               "caption": "main 的括号成对写好，后面每一段都插在右大括号之前。"
             }
           ]
@@ -70,20 +63,8 @@
           "clips": [
             {
               "offset_ms": 11000,
-              "duration_ms": 5969,
-              "caption": "行<c.aqua>注释</c.aqua>以两条斜线开头，斜线之后到行尾的内容都不参与编译。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 16,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 6159,
+              "caption": "<emphasis level=\"strong\"><sub alias=\"HANG2\">行</sub>注释</emphasis>以两条斜线开头，斜线之后到<sub alias=\"HANG2\">行</sub>尾的内容都不参与编译。"
             }
           ]
         }
@@ -105,26 +86,9 @@
           "asset_id": "narration_ch1_hello_world_comment_002_comment_code",
           "clips": [
             {
-              "offset_ms": 17000,
-              "duration_ms": 6986,
-              "caption": "这一行代码被<c.aqua>注释</c.aqua>掉了：去掉开头的两条斜线，它就重新参与编译和运行。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 23,
-                  "s": "重",
-                  "p": "CHONG2"
-                },
-                {
-                  "i": 31,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 18000,
+              "duration_ms": 7384,
+              "caption": "这一<sub alias=\"HANG2\">行</sub>代码被<emphasis level=\"strong\">注释</emphasis>掉了：去掉开头的两条斜线，它就<sub alias=\"CHONG2\">重</sub>新参与编译和运<sub alias=\"XING2\">行</sub>。"
             }
           ]
         }
@@ -146,21 +110,9 @@
           "asset_id": "narration_ch1_hello_world_comment_002_comment_code",
           "clips": [
             {
-              "offset_ms": 24000,
-              "duration_ms": 7420,
-              "caption": "块<c.aqua>注释</c.aqua>用 /* 和 */ 包住，而且可以嵌套：内层的<c.aqua>注释</c.aqua>符不影响外层<c.aqua>边界</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "/*",
-                  "p": "块注释开始"
-                },
-                {
-                  "i": 10,
-                  "s": "*/",
-                  "p": "块注释结束"
-                }
-              ]
+              "offset_ms": 26000,
+              "duration_ms": 7551,
+              "caption": "<emphasis level=\"strong\">块注释</emphasis>用 <sub alias=\"块注释开始\">/*</sub> 和 <sub alias=\"块注释结束\">*/</sub> 包住，而且可以嵌套：内层的<emphasis level=\"strong\">注释</emphasis>符不影响外层<emphasis level=\"strong\">边界</emphasis>。"
             }
           ]
         }
@@ -182,9 +134,9 @@
           "asset_id": "narration_ch1_hello_world_comment_002_comment_code",
           "clips": [
             {
-              "offset_ms": 32000,
-              "duration_ms": 4632,
-              "caption": "块<c.aqua>注释</c.aqua>里纵向的星号只是排版风格，语法上并不要求。"
+              "offset_ms": 34000,
+              "duration_ms": 4499,
+              "caption": "<emphasis level=\"strong\">块注释</emphasis>里纵向的星号只是排版风格，语法上并不要求。"
             }
           ]
         }
@@ -206,21 +158,9 @@
           "asset_id": "narration_ch1_hello_world_comment_002_comment_code",
           "clips": [
             {
-              "offset_ms": 37000,
-              "duration_ms": 6149,
-              "caption": "块<c.aqua>注释</c.aqua>还能作用在<c.aqua>表达式</c.aqua>中间：包住 90 + 之后，x 只剩 5 + 5。",
-              "speech_edits": [
-                {
-                  "i": 20,
-                  "s": "+",
-                  "p": "JIA1"
-                },
-                {
-                  "i": 32,
-                  "s": "+",
-                  "p": "JIA1"
-                }
-              ]
+              "offset_ms": 39000,
+              "duration_ms": 6085,
+              "caption": "<emphasis level=\"strong\">块注释</emphasis>还能作用在<emphasis level=\"strong\">表达式</emphasis>中间：包住 90 <sub alias=\"JIA1\">+</sub> 之后，x 只剩 5 <sub alias=\"JIA1\">+</sub> 5。"
             }
           ]
         }
@@ -246,8 +186,8 @@
           "asset_id": "narration_ch1_hello_world_comment_002_comment_code",
           "clips": [
             {
-              "offset_ms": 44000,
-              "duration_ms": 1374,
+              "offset_ms": 46000,
+              "duration_ms": 1234,
               "caption": "编译成功。"
             }
           ]
@@ -271,9 +211,9 @@
           "asset_id": "narration_ch1_hello_world_comment_002_comment_code",
           "clips": [
             {
-              "offset_ms": 46000,
-              "duration_ms": 3666,
-              "caption": "输出说明：块<c.aqua>注释</c.aqua>可以临时改变<c.aqua>表达式</c.aqua>的值。"
+              "offset_ms": 48000,
+              "duration_ms": 3770,
+              "caption": "输出说明：<emphasis level=\"strong\">块注释</emphasis>可以临时改变<emphasis level=\"strong\">表达式</emphasis>的值。"
             }
           ]
         }
@@ -287,16 +227,9 @@
           "asset_id": "narration_ch1_hello_world_comment_002_comment_code",
           "clips": [
             {
-              "offset_ms": 50000,
-              "duration_ms": 7221,
-              "caption": "输出说明：块<c.aqua>注释</c.aqua>可以临时改变<c.aqua>表达式</c.aqua>的值，我们对照源码看这一行是怎么来的。",
-              "speech_edits": [
-                {
-                  "i": 29,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 52000,
+              "duration_ms": 3078,
+              "caption": "我们对照源码看这一<sub alias=\"HANG2\">行</sub>是怎么来的。"
             }
           ]
         }

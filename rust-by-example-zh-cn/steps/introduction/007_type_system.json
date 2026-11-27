@@ -14,17 +14,17 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 1444,
+              "duration_ms": 1817,
               "caption": "第 5 章《类型系统》。"
             },
             {
               "offset_ms": 2000,
-              "duration_ms": 2902,
-              "caption": "这一章学习怎样改变和定义类型。"
+              "duration_ms": 2178,
+              "caption": "重点是改变和定义类型。"
             },
             {
               "offset_ms": 5000,
-              "duration_ms": 2775,
+              "duration_ms": 2740,
               "caption": "先把前面的类型规则串起来看。"
             }
           ]
@@ -39,8 +39,8 @@
           "clips": [
             {
               "offset_ms": 8000,
-              "duration_ms": 4696,
-              "caption": "这一章会看类型别名和推断分别在什么时候派上用场。"
+              "duration_ms": 3425,
+              "caption": "类型别名和推断分别在什么时候用得上。"
             }
           ]
         }
@@ -53,16 +53,9 @@
           "asset_id": "narration_introduction_007_type_system",
           "clips": [
             {
-              "offset_ms": 13000,
-              "duration_ms": 4345,
-              "caption": "重点是理解类型从哪里来，不是记住所有写法。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "重",
-                  "p": "ZHONG4"
-                }
-              ]
+              "offset_ms": 12000,
+              "duration_ms": 4182,
+              "caption": "<sub alias=\"ZHONG4\">重</sub>点是理解类型从哪里来，不是记住所有写法。"
             }
           ]
         }

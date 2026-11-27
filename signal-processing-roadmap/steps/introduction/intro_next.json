@@ -15,8 +15,8 @@
           "asset_id": "narration_introduction",
           "clips": [
             {
-              "offset_ms": 50000,
-              "duration_ms": 5748,
+              "offset_ms": 51000,
+              "duration_ms": 5761,
               "caption": "No formulas yet. Before entering Week 1, ask yourself: given only a series of values over time, how would you look at it?"
             }
           ]
@@ -30,9 +30,9 @@
           "asset_id": "narration_introduction",
           "clips": [
             {
-              "offset_ms": 56000,
-              "duration_ms": 6303,
-              "caption": "The next step is 1.1 Signals and the Time Axis. We put the same <c.aqua>samples</c.aqua> on a <c.aqua>time axis</c.aqua> and compare two ways of drawing them."
+              "offset_ms": 57000,
+              "duration_ms": 6284,
+              "caption": "The next step is 1.1 Signals and the Time Axis. We put the same <emphasis level=\"strong\">samples</emphasis> on a <emphasis level=\"strong\">time axis</emphasis> and compare two ways of drawing them."
             }
           ]
         }

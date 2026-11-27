@@ -20,8 +20,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5188,
-              "caption": "这是 1.4 的 Intro <c.aqua>Notebook</c.aqua>；标题 Cell 标明本周最后的综合练习。"
+              "duration_ms": 5037,
+              "caption": "这是 1.4 的 Intro <emphasis level=\"strong\">Notebook</emphasis>；标题 Cell 标明本周最后的综合练习。"
             }
           ]
         }
@@ -41,8 +41,8 @@
           "clips": [
             {
               "offset_ms": 6000,
-              "duration_ms": 4794,
-              "caption": "最后做一次综合练习。没有<c.aqua>自动判分</c.aqua>，也没有标准唯一答案。"
+              "duration_ms": 4887,
+              "caption": "最后做一次综合练习。没有<emphasis level=\"strong\">自动判分</emphasis>，也没有标准唯一答案。"
             }
           ]
         }
@@ -56,15 +56,8 @@
           "clips": [
             {
               "offset_ms": 11000,
-              "duration_ms": 7864,
-              "caption": "目标是用一个<c.aqua>信号</c.aqua>表达你选择的两个成分，并用文字解释参数。先把任务看清楚，再开始写。",
-              "speech_edits": [
-                {
-                  "i": 25,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 7987,
+              "caption": "目标是用一个<emphasis level=\"strong\">信号</emphasis>表达你选择的两个成分，并用文字解释<sub alias=\"CAN1\">参</sub>数。先把任务看清楚，再开始写。"
             }
           ]
         }
@@ -84,20 +77,8 @@
           "clips": [
             {
               "offset_ms": 19000,
-              "duration_ms": 6933,
-              "caption": "Intro 最后强调没有唯一答案；重点是参数、<c.aqua>预测</c.aqua>和实际<c.aqua>观察</c.aqua>能够对应起来。",
-              "speech_edits": [
-                {
-                  "i": 17,
-                  "s": "重",
-                  "p": "ZHONG4"
-                },
-                {
-                  "i": 20,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 6972,
+              "caption": "Intro 最后强调没有唯一答案；<sub alias=\"ZHONG4\">重</sub>点是<sub alias=\"CAN1\">参</sub>数、<emphasis level=\"strong\">预测</emphasis>和实际<emphasis level=\"strong\">观察</emphasis>能够对应起来。"
             }
           ]
         }

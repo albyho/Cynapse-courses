@@ -18,15 +18,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6047,
-              "caption": "println! 用花括号占位，把后面的值填进字符串，还能指定位置和宽度。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "println!",
-                  "p": "println 宏"
-                }
-              ]
+              "duration_ms": 6043,
+              "caption": "<sub alias=\"println 宏\">println!</sub> 用<emphasis level=\"strong\">大括号</emphasis>占位，把后面的值填进字符串，还能指定位置和宽度。"
             }
           ]
         }
@@ -46,25 +39,8 @@
           "clips": [
             {
               "offset_ms": 7000,
-              "duration_ms": 5071,
-              "caption": "逐行写入位置<c.aqua>参数</c.aqua>、命名<c.aqua>参数</c.aqua>和宽度对齐的示例。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                },
-                {
-                  "i": 6,
-                  "s": "参",
-                  "p": "CAN1"
-                },
-                {
-                  "i": 11,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 5098,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入<emphasis level=\"strong\">位置<sub alias=\"CAN1\">参</sub>数</emphasis>、<emphasis level=\"strong\">命名<sub alias=\"CAN1\">参</sub>数</emphasis>和宽度对齐的示例。"
             }
           ]
         },
@@ -73,65 +49,32 @@
           "clips": [
             {
               "offset_ms": 13000,
-              "duration_ms": 4095,
-              "caption": "先写最基本的 {} <c.aqua>占位符</c.aqua>，用 31 替换。",
-              "speech_edits": [
-                {
-                  "i": 7,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "duration_ms": 4157,
+              "caption": "先写最基本的 <sub alias=\"一对大括号\">{}</sub> <emphasis level=\"strong\">占位符</emphasis>，用 31 替换。"
             },
             {
               "offset_ms": 18000,
-              "duration_ms": 4124,
-              "caption": "接着用位置<c.aqua>参数</c.aqua>，让 Alice 和 Bob 各出现两次。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "着",
-                  "p": "ZHE5"
-                },
-                {
-                  "i": 5,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "duration_ms": 3976,
+              "caption": "接<sub alias=\"ZHE5\">着</sub>用<emphasis level=\"strong\">位置<sub alias=\"CAN1\">参</sub>数</emphasis>，让 Alice 和 Bob 各出现两次。"
             },
             {
-              "offset_ms": 23000,
-              "duration_ms": 4223,
-              "caption": "命名<c.aqua>参数</c.aqua>用 object、subject 和 verb 三个名字对应值。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "offset_ms": 22000,
+              "duration_ms": 4188,
+              "caption": "<emphasis level=\"strong\">命名<sub alias=\"CAN1\">参</sub>数</emphasis>用 object、subject 和 verb 三个名字对应值。"
             },
             {
-              "offset_ms": 28000,
-              "duration_ms": 2471,
+              "offset_ms": 27000,
+              "duration_ms": 2410,
               "caption": "格式标记 :b 把 2 写成二进制。"
             },
             {
-              "offset_ms": 31000,
-              "duration_ms": 2820,
-              "caption": "宽度<c.aqua>参数</c.aqua>让 1 右对齐到六格。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "offset_ms": 30000,
+              "duration_ms": 2797,
+              "caption": "<emphasis level=\"strong\">宽度<sub alias=\"CAN1\">参</sub>数</emphasis>让 1 右对齐到六格。"
             },
             {
-              "offset_ms": 34000,
-              "duration_ms": 3738,
+              "offset_ms": 33000,
+              "duration_ms": 3383,
               "caption": "最后一个在左边补零，输出 000001。"
             }
           ]
@@ -152,21 +95,9 @@
           "asset_id": "narration_ch1_hello_world_print_002_print_code",
           "clips": [
             {
-              "offset_ms": 38000,
-              "duration_ms": 7927,
-              "caption": "最普通的 {} 会把后面的值转成<c.aqua>字符串</c.aqua>再填进去，31 就落在 {} 的位置。",
-              "speech_edits": [
-                {
-                  "i": 5,
-                  "s": "{}",
-                  "p": "一对大括号"
-                },
-                {
-                  "i": 31,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "offset_ms": 37000,
+              "duration_ms": 7980,
+              "caption": "最普通的 <sub alias=\"一对大括号\">{}</sub> 会把后面的值转成<emphasis level=\"strong\">字符串</emphasis>再填进去，31 就落在 <sub alias=\"一对大括号\">{}</sub> 的位置。"
             }
           ]
         }
@@ -186,26 +117,9 @@
           "asset_id": "narration_ch1_hello_world_print_002_print_code",
           "clips": [
             {
-              "offset_ms": 46000,
-              "duration_ms": 8187,
-              "caption": "位置<c.aqua>参数</c.aqua>用 {0}、{1} 指定第几个值，同一值可以重复使用，所以 Alice 和 Bob 会交换位置。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "参",
-                  "p": "CAN1"
-                },
-                {
-                  "i": 10,
-                  "s": "{1}",
-                  "p": "大括号一"
-                },
-                {
-                  "i": 26,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "offset_ms": 45000,
+              "duration_ms": 8436,
+              "caption": "<emphasis level=\"strong\">位置<sub alias=\"CAN1\">参</sub>数</emphasis>用 {0}、<sub alias=\"大括号一\">{1}</sub> 指定第几个值，同一值可以<sub alias=\"CHONG2\">重</sub>复使用，所以 Alice 和 Bob 会交换位置。"
             }
           ]
         }
@@ -225,26 +139,9 @@
           "asset_id": "narration_ch1_hello_world_print_002_print_code",
           "clips": [
             {
-              "offset_ms": 55000,
-              "duration_ms": 7784,
-              "caption": "命名<c.aqua>参数</c.aqua>把名字写在 {} 里，再在<c.aqua>参数</c.aqua>列表用 name=value <c.aqua>绑定</c.aqua>；顺序不影响结果。",
-              "speech_edits": [
-                {
-                  "i": 2,
-                  "s": "参",
-                  "p": "CAN1"
-                },
-                {
-                  "i": 10,
-                  "s": "{}",
-                  "p": "一对大括号"
-                },
-                {
-                  "i": 17,
-                  "s": "参",
-                  "p": "CAN1"
-                }
-              ]
+              "offset_ms": 54000,
+              "duration_ms": 7821,
+              "caption": "<emphasis level=\"strong\">命名<sub alias=\"CAN1\">参</sub>数</emphasis>把名字写在 <sub alias=\"一对大括号\">{}</sub> 里，再在<emphasis level=\"strong\"><sub alias=\"CAN1\">参</sub>数</emphasis>列表用 name=value <emphasis level=\"strong\">绑定</emphasis>；顺序不影响结果。"
             }
           ]
         }
@@ -264,21 +161,9 @@
           "asset_id": "narration_ch1_hello_world_print_002_print_code",
           "clips": [
             {
-              "offset_ms": 63000,
-              "duration_ms": 7951,
-              "caption": "{:b} 把<c.aqua>整数</c.aqua>按二进制输出：2 写成 10，所以这一行显示 1 of 10 people know binary。",
-              "speech_edits": [
-                {
-                  "i": 0,
-                  "s": "{:b}",
-                  "p": "大括号冒号 b"
-                },
-                {
-                  "i": 27,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "offset_ms": 62000,
+              "duration_ms": 7983,
+              "caption": "<sub alias=\"大括号冒号 b\">{:b}</sub> 把<emphasis level=\"strong\">整数</emphasis>按二进制输出：2 写成 10，所以这一<sub alias=\"HANG2\">行</sub>显示 1 of 10 people know binary。"
             }
           ]
         }
@@ -298,8 +183,8 @@
           "asset_id": "narration_ch1_hello_world_print_002_print_code",
           "clips": [
             {
-              "offset_ms": 71000,
-              "duration_ms": 1954,
+              "offset_ms": 70000,
+              "duration_ms": 2213,
               "caption": "{number:>width$} 按宽度右对齐"
             }
           ]
@@ -314,7 +199,7 @@
           "clips": [
             {
               "offset_ms": 73000,
-              "duration_ms": 2017,
+              "duration_ms": 2158,
               "caption": "{number:>0width$} 在左边补 0。"
             }
           ]
@@ -329,7 +214,7 @@
           "clips": [
             {
               "offset_ms": 76000,
-              "duration_ms": 5172,
+              "duration_ms": 5169,
               "caption": "所以一个输出五个空格加 1，另一个输出 000001。"
             }
           ]
@@ -357,7 +242,7 @@
           "clips": [
             {
               "offset_ms": 82000,
-              "duration_ms": 1374,
+              "duration_ms": 900,
               "caption": "编译成功。"
             }
           ]
@@ -381,16 +266,9 @@
           "asset_id": "narration_ch1_hello_world_print_002_print_code",
           "clips": [
             {
-              "offset_ms": 84000,
-              "duration_ms": 3138,
-              "caption": "观察不同格式<c.aqua>字符串</c.aqua>的输出差异。",
-              "speech_edits": [
-                {
-                  "i": 12,
-                  "s": "差",
-                  "p": "CHA1"
-                }
-              ]
+              "offset_ms": 83000,
+              "duration_ms": 2859,
+              "caption": "观察不同格式<emphasis level=\"strong\">字符串</emphasis>的输出<sub alias=\"CHA1\">差</sub>异。"
             }
           ]
         }
@@ -404,16 +282,9 @@
           "asset_id": "narration_ch1_hello_world_print_002_print_code",
           "clips": [
             {
-              "offset_ms": 88000,
-              "duration_ms": 4146,
-              "caption": "运行结果停在终端，我们对照源码核对输出。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "XING2"
-                }
-              ]
+              "offset_ms": 86000,
+              "duration_ms": 4167,
+              "caption": "运<sub alias=\"XING2\">行</sub>结果停在终端，我们对照源码核对输出。"
             }
           ]
         }

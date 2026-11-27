@@ -7,10 +7,12 @@
       "path": "../../resources/agent-desktop/crates/core/src/ref_action/mod.rs",
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 6000,
-              "caption": "引用解析出来之后，动作不会立刻发出去。先过一遍<c.aqua>可操作性预检</c.aqua>。"
+              "offset_ms": 0,
+              "duration_ms": 5735,
+              "caption": "引用解析出来之后，动作不会立刻发出去。先过一遍<emphasis level=\"strong\">可操作性预检</emphasis>。"
             }
           ]
         }
@@ -27,10 +29,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 7500,
-              "caption": "<c.aqua>preflight_resolved</c.aqua> 拿到目标、动作请求和稳定性期望，跑一次带 trace 的检查；稳定性期望的意思是“这个元素要稳定多久才算能操作”。"
+              "offset_ms": 6000,
+              "duration_ms": 10730,
+              "caption": "<emphasis level=\"strong\">preflight_resolved</emphasis> 拿到目标、动作请求和稳定性期望，跑一次带 trace 的检查；稳定性期望的意思是“这个元素要稳定多久才算能操作”。"
             }
           ]
         }
@@ -51,10 +55,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 8000,
-              "caption": "跳到 ref_action_<c.aqua>actionability</c.aqua>.rs。预检真正跑的是 check_report_with_trace，ref_action 里的函数只负责包 trace 和转成预检结果。"
+              "offset_ms": 17000,
+              "duration_ms": 9497,
+              "caption": "跳到 ref_action_<emphasis level=\"strong\">actionability</emphasis>.rs。预检真正跑的是 check_report_with_trace，ref_action 里的函数只负责包 trace 和转成预检结果。"
             }
           ]
         }
@@ -71,22 +77,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 7500,
-              "caption": "dispatch 先确认进程实例还在：应用一旦重启，旧<c.aqua>引用</c.aqua>就作废。确认后解析出真实元素句柄。",
-              "speech_edits": [
-                {
-                  "i": 16,
-                  "s": "还",
-                  "p": "HAI2"
-                },
-                {
-                  "i": 23,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "offset_ms": 27000,
+              "duration_ms": 8306,
+              "caption": "dispatch 先确认进程实例<sub alias=\"HAI2\">还</sub>在：应用一旦<sub alias=\"CHONG2\">重</sub>启，旧<emphasis level=\"strong\">引用</emphasis>就作废。确认后解析出真实元素句柄。"
             }
           ]
         }
@@ -103,17 +99,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 7000,
-              "caption": "解析成功或失败都会记进 trace；trace 是可回放的调试记录，出问题能倒查。",
-              "speech_edits": [
-                {
-                  "i": 29,
-                  "s": "调",
-                  "p": "TIAO2"
-                }
-              ]
+              "offset_ms": 36000,
+              "duration_ms": 6572,
+              "caption": "解析成功或失败都会记进 trace；trace 是可回放的<sub alias=\"TIAO2\">调</sub>试记录，出问题能倒查。"
             }
           ]
         }
@@ -130,10 +121,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 7000,
-              "caption": "<c.aqua>预检</c.aqua>失败时，先判断错误是否属于可滚动恢复的范围。"
+              "offset_ms": 43000,
+              "duration_ms": 4495,
+              "caption": "<emphasis level=\"strong\">预检</emphasis>失败时，先判断错误是否属于可滚动恢复的范围。"
             }
           ]
         }
@@ -150,17 +143,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 7500,
-              "caption": "滚动恢复：先 <c.aqua>scroll_ref_into_view</c.aqua>，拿不到句柄就重新解析。",
-              "speech_edits": [
-                {
-                  "i": 34,
-                  "s": "重",
-                  "p": "CHONG2"
-                }
-              ]
+              "offset_ms": 48000,
+              "duration_ms": 4668,
+              "caption": "滚动恢复：先 <emphasis level=\"strong\">scroll_ref_into_view</emphasis>，拿不到句柄就<sub alias=\"CHONG2\">重</sub>新解析。"
             }
           ]
         }
@@ -177,10 +165,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 7500,
-              "caption": "用滚后的目标再做一次 stable_p<c.aqua>ref</c.aqua>light，仍失败就 after_scroll 报错。"
+              "offset_ms": 53000,
+              "duration_ms": 5293,
+              "caption": "用滚后的目标再做一次 stable_p<emphasis level=\"strong\">ref</emphasis>light，仍失败就 after_scroll 报错。"
             }
           ]
         }
@@ -197,17 +187,12 @@
       },
       "narration": {
         "after": {
+          "asset_id": "narration_ch2_act_sec1_preflight",
           "clips": [
             {
-              "duration_ms": 8000,
-              "caption": "如果这次投递是语义操作，就把策略降为 <c.aqua>headless</c.aqua>——不弹窗、不移动真实光标，只做语义动作；同时把已验证点和预期进程写进请求。",
-              "speech_edits": [
-                {
-                  "i": 17,
-                  "s": "为",
-                  "p": "WEI4"
-                }
-              ]
+              "offset_ms": 59000,
+              "duration_ms": 11342,
+              "caption": "如果这次投递是语义操作，就把策略降<sub alias=\"WEI4\">为</sub> <emphasis level=\"strong\">headless</emphasis>——不弹窗、不移动真实光标，只做语义动作；同时把已验证点和预期进程写进请求。"
             }
           ]
         }

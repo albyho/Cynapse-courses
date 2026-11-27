@@ -18,15 +18,8 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 6020,
-              "caption": "Display 决定类型用 {} 打印时的样子，实现它就能自定义输出。",
-              "speech_edits": [
-                {
-                  "i": 14,
-                  "s": "{}",
-                  "p": "一对大括号"
-                }
-              ]
+              "duration_ms": 5971,
+              "caption": "Display 决定类型用 <sub alias=\"一对大括号\">{}</sub> 打印时的样子，实现它就能自定义输出。"
             }
           ]
         }
@@ -45,9 +38,9 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
           "clips": [
             {
-              "offset_ms": 7000,
-              "duration_ms": 5063,
-              "caption": "接下来在 fmt_demo.rs 里为 City <c.aqua>实现</c.aqua> Display，Color 暂时用 Debug <c.aqua>打印</c.aqua>。"
+              "offset_ms": 6000,
+              "duration_ms": 5007,
+              "caption": "接下来在 fmt_demo.rs 里为 City <emphasis level=\"strong\">实现</emphasis> Display，Color 暂时用 Debug 打印。"
             }
           ]
         },
@@ -55,26 +48,19 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
           "clips": [
             {
-              "offset_ms": 13000,
-              "duration_ms": 3451,
-              "caption": "先导入<c.aqua>格式化</c.aqua>需要的 fmt、Formatter 和 Display。"
+              "offset_ms": 12000,
+              "duration_ms": 3485,
+              "caption": "先导入<emphasis level=\"strong\">格式化</emphasis>需要的 fmt、Formatter 和 Display。"
             },
             {
-              "offset_ms": 17000,
-              "duration_ms": 3183,
-              "caption": "接着<c.aqua>定义</c.aqua> City，存名字、纬度和经度。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "着",
-                  "p": "ZHE5"
-                }
-              ]
+              "offset_ms": 16000,
+              "duration_ms": 3132,
+              "caption": "接<sub alias=\"ZHE5\">着</sub><emphasis level=\"strong\">定义</emphasis> City，存名字、纬度和经度。"
             },
             {
-              "offset_ms": 21000,
-              "duration_ms": 4643,
-              "caption": "再为 City <c.aqua>实现</c.aqua> Display，按南北纬和东西经输出三位小数。"
+              "offset_ms": 20000,
+              "duration_ms": 4561,
+              "caption": "再为 City <emphasis level=\"strong\">实现</emphasis> Display，按南北纬和东西经输出三位小数。"
             }
           ]
         }
@@ -87,8 +73,8 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
           "clips": [
             {
-              "offset_ms": 26000,
-              "duration_ms": 4116,
+              "offset_ms": 25000,
+              "duration_ms": 4138,
               "caption": "Display 先用两个条件判断挑出南北纬和东西经。"
             }
           ]
@@ -102,16 +88,9 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
           "clips": [
             {
-              "offset_ms": 31000,
-              "duration_ms": 3998,
-              "caption": "再用 write! 按三位小数把经纬度写进缓冲区。",
-              "speech_edits": [
-                {
-                  "i": 3,
-                  "s": "write!",
-                  "p": "write 宏"
-                }
-              ]
+              "offset_ms": 30000,
+              "duration_ms": 3825,
+              "caption": "再用 <sub alias=\"write 宏\">write!</sub> 按三位小数把经纬度写进缓冲区。"
             }
           ]
         }
@@ -130,26 +109,19 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
           "clips": [
             {
-              "offset_ms": 35000,
-              "duration_ms": 2675,
-              "caption": "先用 derive 给 Color 加上 Debug <c.aqua>实现</c.aqua>。"
+              "offset_ms": 34000,
+              "duration_ms": 2644,
+              "caption": "先用 derive 给 Color 加上 Debug <emphasis level=\"strong\">实现</emphasis>。"
             },
             {
-              "offset_ms": 38000,
-              "duration_ms": 3430,
-              "caption": "main 的前半段遍历三座城市，用 Display <c.aqua>打印</c.aqua>。"
+              "offset_ms": 37000,
+              "duration_ms": 3563,
+              "caption": "main 的前半段遍历三座城市，用 Display 打印。"
             },
             {
-              "offset_ms": 42000,
-              "duration_ms": 4948,
-              "caption": "后半段遍历三个颜色，先用 {:?} 观察 Debug 输出。",
-              "speech_edits": [
-                {
-                  "i": 13,
-                  "s": "{:?}",
-                  "p": "大括号冒号问号"
-                }
-              ]
+              "offset_ms": 41000,
+              "duration_ms": 5003,
+              "caption": "后半段遍历三个颜色，先用 <sub alias=\"大括号冒号问号\">{:?}</sub> 观察 Debug 输出。"
             }
           ]
         }
@@ -163,15 +135,8 @@
           "clips": [
             {
               "offset_ms": 47000,
-              "duration_ms": 8321,
-              "caption": "main 把三座城市和三个颜色放进<c.aqua>数组</c.aqua>循环<c.aqua>打印</c.aqua>，颜色这一页先用 {:?} 观察<c.aqua>结构体</c.aqua>形式。",
-              "speech_edits": [
-                {
-                  "i": 32,
-                  "s": "{:?}",
-                  "p": "大括号冒号问号"
-                }
-              ]
+              "duration_ms": 8385,
+              "caption": "main 把三座城市和三个颜色放进<emphasis level=\"strong\">数组</emphasis>循环打印，颜色这一页先用 <sub alias=\"大括号冒号问号\">{:?}</sub> 观察<emphasis level=\"strong\">结构体</emphasis>形式。"
             }
           ]
         }
@@ -198,18 +163,18 @@
           "clips": [
             {
               "offset_ms": 56000,
-              "duration_ms": 1374,
+              "duration_ms": 1490,
               "caption": "编译成功。"
             },
             {
               "offset_ms": 58000,
-              "duration_ms": 4163,
-              "caption": "刚才的警告是在说 Color 的三个<c.aqua>字段</c.aqua>从未被读取。"
+              "duration_ms": 3947,
+              "caption": "刚才的警告是在说 Color 的三个<emphasis level=\"strong\">字段</emphasis>从未被读取。"
             },
             {
-              "offset_ms": 63000,
-              "duration_ms": 2213,
-              "caption": "<c.aqua>字段</c.aqua>只被<c.aqua>派生</c.aqua>的 Debug 使用"
+              "offset_ms": 62000,
+              "duration_ms": 2135,
+              "caption": "<emphasis level=\"strong\">字段</emphasis>只被<emphasis level=\"strong\">派生</emphasis>的 Debug 使用"
             }
           ]
         }
@@ -222,16 +187,9 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
           "clips": [
             {
-              "offset_ms": 66000,
-              "duration_ms": 3252,
-              "caption": "而 rustc 的 dead_code 分析会忽略<c.aqua>派生实现</c.aqua>。",
-              "speech_edits": [
-                {
-                  "i": 10,
-                  "s": "dead_code",
-                  "p": "dead code"
-                }
-              ]
+              "offset_ms": 65000,
+              "duration_ms": 3326,
+              "caption": "而 rustc 的 <sub alias=\"dead code\">dead_code</sub> 分析会忽略<emphasis level=\"strong\">派生实现</emphasis>。"
             }
           ]
         }
@@ -244,9 +202,9 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
           "clips": [
             {
-              "offset_ms": 70000,
-              "duration_ms": 5001,
-              "caption": "这不是编译<c.aqua>错误</c.aqua>，练习<c.aqua>实现</c.aqua> Display 后<c.aqua>字段</c.aqua>就会被真正读取。"
+              "offset_ms": 69000,
+              "duration_ms": 4604,
+              "caption": "这不是编译<emphasis level=\"strong\">错误</emphasis>，练习<emphasis level=\"strong\">实现</emphasis> Display 后<emphasis level=\"strong\">字段</emphasis>就会被真正读取。"
             }
           ]
         }
@@ -269,8 +227,8 @@
           "asset_id": "narration_ch1_hello_world_print_fmt_002_fmt_code",
           "clips": [
             {
-              "offset_ms": 76000,
-              "duration_ms": 3307,
+              "offset_ms": 74000,
+              "duration_ms": 3175,
               "caption": "城市用 Display 输出，颜色先用 Debug 输出。"
             }
           ]

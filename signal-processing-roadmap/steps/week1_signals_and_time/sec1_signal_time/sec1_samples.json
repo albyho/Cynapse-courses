@@ -55,8 +55,8 @@
           "clips": [
             {
               "offset_ms": 46000,
-              "duration_ms": 5032,
-              "caption": "First set up the <c.aqua>sample index</c.aqua>, the <c.aqua>sample time</c.aqua> and the <c.aqua>amplitude</c.aqua>; note that t is the real time of each sample."
+              "duration_ms": 4888,
+              "caption": "First set up the <emphasis level=\"strong\">sample index</emphasis>, the <emphasis level=\"strong\">sample time</emphasis> and the <emphasis level=\"strong\">amplitude</emphasis>; note that t is the real time of each sample."
             }
           ]
         }
@@ -76,8 +76,8 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 52000,
-              "duration_ms": 3697,
+              "offset_ms": 51000,
+              "duration_ms": 3534,
               "caption": "Print the three arrays; the next step checks their lengths and how they line up."
             }
           ]
@@ -94,9 +94,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 56000,
-              "duration_ms": 4247,
-              "caption": "Run this cell first and see how the index, time and <c.aqua>amplitude</c.aqua> of the 8 <c.aqua>samples</c.aqua> line up."
+              "offset_ms": 55000,
+              "duration_ms": 4261,
+              "caption": "Run this cell first and see how the index, time and <emphasis level=\"strong\">amplitude</emphasis> of the 8 <emphasis level=\"strong\">samples</emphasis> line up."
             }
           ]
         },
@@ -104,9 +104,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 61000,
-              "duration_ms": 8725,
-              "caption": "Here 8 <c.aqua>samples</c.aqua> stand for one <c.aqua>discrete signal</c.aqua>. n is the <c.aqua>sample index</c.aqua> and t is the sample time. The sample interval is 0.5 s, so the 4th sample sits at 1.5 s."
+              "offset_ms": 60000,
+              "duration_ms": 8758,
+              "caption": "Here 8 <emphasis level=\"strong\">samples</emphasis> stand for one <emphasis level=\"strong\">discrete signal</emphasis>. n is the <emphasis level=\"strong\">sample index</emphasis> and t is the sample time. The sample interval is 0.5 s, so the 4th sample sits at 1.5 s."
             }
           ]
         }
@@ -119,9 +119,9 @@
           "asset_id": "narration_sec1_signal_time",
           "clips": [
             {
-              "offset_ms": 70000,
-              "duration_ms": 4714,
-              "caption": "After running, read the printed arrays and confirm that index, time and <c.aqua>amplitude</c.aqua> line up one to one."
+              "offset_ms": 69000,
+              "duration_ms": 4787,
+              "caption": "After running, read the printed arrays and confirm that index, time and <emphasis level=\"strong\">amplitude</emphasis> line up one to one."
             }
           ]
         }

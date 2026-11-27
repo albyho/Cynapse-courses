@@ -18,7 +18,7 @@
           "clips": [
             {
               "offset_ms": 0,
-              "duration_ms": 5615,
+              "duration_ms": 5638,
               "caption": "let 绑定默认不可变，加 mut 才能二次赋值，这是 Rust 默认安全的一环。"
             }
           ]
@@ -39,15 +39,8 @@
           "clips": [
             {
               "offset_ms": 6000,
-              "duration_ms": 3700,
-              "caption": "逐行写入<c.aqua>不可变</c.aqua><c.aqua>绑定</c.aqua>、<c.aqua>可变</c.aqua>绑定和赋值。",
-              "speech_edits": [
-                {
-                  "i": 1,
-                  "s": "行",
-                  "p": "HANG2"
-                }
-              ]
+              "duration_ms": 3704,
+              "caption": "逐<sub alias=\"HANG2\">行</sub>写入<emphasis level=\"strong\">不可变</emphasis><emphasis level=\"strong\">绑定</emphasis>、<emphasis level=\"strong\">可变</emphasis>绑定和赋值。"
             }
           ]
         }
